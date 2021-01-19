@@ -1,6 +1,7 @@
 # cadrypt
 
 A tool designed to assist with solving pages in the Liber Primus
+https://www.discord.gg/PuyyVnybRK
  
 # Current features
 - Fully functioning cipher grid
