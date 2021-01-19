@@ -17,7 +17,7 @@ A tool designed to assist with solving pages in the Liber Primus
 
 # Installing
 
-## Prebuilt files
+**Prebuilt files**
 Depending on your operating system
 - Windows
 Navigate to releases, download zip, extract, run.
@@ -26,5 +26,11 @@ Navigate to releases, download zip, extract, run.
 - Linux
 TODO, but will involve snap
 
-## Building
+**Building**
 WIP
+
+# Contributing
+All contributions are welcome
+
+# License
+GPL v3
