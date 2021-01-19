@@ -2,6 +2,8 @@
 
 A tool designed to assist with solving pages in the Liber Primus
 
+![Alt Text](https://i.imgur.com/uae5KCm.gif)
+
 https://www.discord.gg/PuyyVnybRK
  
 # Current features
