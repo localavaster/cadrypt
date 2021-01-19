@@ -29,6 +29,11 @@ TODO, but will involve snap
 **Building**
 WIP
 
+# FAQ / I'm having an issue
+Check out the wiki.
+
+or contact me on discord avaster#5567
+
 # Contributing
 All contributions are welcome
 
