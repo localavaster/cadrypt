@@ -159,7 +159,7 @@ abstract class _AnalyzeStateBase with Store {
   }
 
   @observable
-  String cipherMode = 'regular';
+  String cipherMode = 'true';
 
   @action
   void select_cipher_mode(String cipherMode) {

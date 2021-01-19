@@ -87,6 +87,22 @@ class _RuneContainerState extends State<RuneContainer> {
   }
 
   Color get_color(BuildContext context) {
+    if (widget.state.readingMode == 'color') {
+      try {
+        final index = runeToEnglish.keys.toList().indexOf(widget.rune);
+        if (index == -1) {
+          return const Color.fromARGB(255, 0, 0, 0);
+        }
+        final colorCodeR = (index * 29) % 240;
+        final colorCodeG = (index * 29) % 180;
+        final colorCodeB = (index * 29) % 140;
+
+        return Color.fromARGB(255, colorCodeR, colorCodeG, colorCodeB);
+      } catch (e) {
+        return const Color.fromARGB(255, 0, 0, 0);
+      }
+    }
+
     final runeComparison = RuneSelection(widget.index, widget.rune, '');
     final selectedRunes = List<String>.generate(widget.state.selectedRunes.length, (index) => widget.state.selectedRunes[index].rune);
 
@@ -99,6 +115,10 @@ class _RuneContainerState extends State<RuneContainer> {
     }
 
     return Theme.of(context).scaffoldBackgroundColor;
+  }
+
+  bool shouldShowText() {
+    return widget.state.readingMode != 'color';
   }
 
   Widget _buildRuneContainer() {
@@ -122,21 +142,26 @@ class _RuneContainerState extends State<RuneContainer> {
             maxLines: 1,
             minFontSize: 8,
             style: TextStyle(
-                //fontSize: get_font_size(),
-                //height: 1.0,
-                color: widget.index < GetIt.instance<Cipher>().header_size ? Colors.red : Colors.white),
+              //fontSize: get_font_size(),
+              //height: 1.0,
+              color: shouldShowText() == true
+                  ? widget.index < GetIt.instance<Cipher>().header_size
+                      ? Colors.red
+                      : Colors.white
+                  : Colors.transparent,
+            ),
           ),
         ),
       ),
     );
   }
 
-  Widget _buildSpecialRuneContainer() {
+  Widget _buildSpecialRuneContainer(BuildContext context) {
     return Material(
       shape: RoundedRectangleBorder(
         side: BorderSide(color: Theme.of(context).cardColor, width: 0.5),
       ),
-      color: Theme.of(context).scaffoldBackgroundColor,
+      color: get_color(context),
     );
   }
 
@@ -146,7 +171,7 @@ class _RuneContainerState extends State<RuneContainer> {
       final bool isSpecialGridCell = ['%'].contains(widget.rune);
 
       if (isSpecialGridCell) {
-        return _buildSpecialRuneContainer();
+        return _buildSpecialRuneContainer(context);
       }
 
       return _buildRuneContainer();

@@ -164,6 +164,17 @@ class _AnalyzePageState extends State<AnalyzePage> {
                                       ),
                                     ),
                                   ),
+                                  Expanded(
+                                    child: TextButton(
+                                      onPressed: () {
+                                        state.select_reading_mode('color');
+                                      },
+                                      child: const Text(
+                                        'Color',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ),
                             )

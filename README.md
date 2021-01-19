@@ -29,7 +29,9 @@ Navigate to releases, download zip, extract, run.
 TODO, but will involve snap
 
 **Building**
-WIP
+Refer to https://flutter.dev/desktop#set-up
+
+For any questions, refer to FAQ
 
 # FAQ / I'm having an issue
 Check out the wiki.
