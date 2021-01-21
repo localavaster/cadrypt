@@ -26,10 +26,30 @@ abstract class _AnalyzeStateBase with Store {
       final result = <String>[];
 
       for (final line in temporary) {
-        result.add(line.padRight(GetIt.I<Cipher>().longest_row));
+        result.add(line.padRight(GetIt.I<Cipher>().longest_row, '%'));
       }
 
       return result.join();
+    } else if (cipherMode == '3x3') {
+      // not the best
+      final flat_cipher = GetIt.I<Cipher>().get_flat_cipher();
+      final StringBuffer buffer = StringBuffer();
+
+      for (int i = 0; i <= flat_cipher.length; i = i + 3) {
+        buffer.write('${flat_cipher.split('').sublist(i, (i + 3).clamp(0, flat_cipher.length).toInt()).join()} ');
+      }
+
+      return buffer.toString();
+    } else if (cipherMode == '5x5') {
+      // not the best
+      final flat_cipher = GetIt.I<Cipher>().get_flat_cipher();
+      final StringBuffer buffer = StringBuffer();
+
+      for (int i = 0; i <= flat_cipher.length; i = i + 5) {
+        buffer.write('${flat_cipher.split('').sublist(i, (i + 5).clamp(0, flat_cipher.length).toInt()).join()} ');
+      }
+
+      return buffer.toString();
     }
 
     return GetIt.I<Cipher>().get_flat_cipher();
@@ -42,10 +62,16 @@ abstract class _AnalyzeStateBase with Store {
         return List<int>.generate(GetIt.I<Cipher>().raw_cipher.length, (index) => GetIt.I<Cipher>().raw_cipher[index].length).average().toInt();
 
       case 'flat':
-        return List<int>.generate(GetIt.I<Cipher>().raw_cipher.length, (index) => GetIt.I<Cipher>().raw_cipher[index].length).sum().toInt() ~/ 24;
+        return List<int>.generate(GetIt.I<Cipher>().raw_cipher.length, (index) => GetIt.I<Cipher>().raw_cipher[index].length).sum().toInt() ~/ GetIt.I<Cipher>().raw_cipher.length;
 
       case 'true':
         return GetIt.I<Cipher>().get_longest_row();
+
+      case '5x5':
+        return 30;
+
+      case '3x3':
+        return 28;
     }
 
     return 20;
@@ -204,6 +230,17 @@ abstract class _AnalyzeStateBase with Store {
 
           result.forEach((match) {
             highlight_rune('', match, 'highlighter');
+          });
+        }
+        break;
+
+      case 'doubleletterrunes':
+        {
+          final pattern = RegExp('[ᚦᛇᛝᚫᛡᛠ]', dotAll: true);
+          final matches = pattern.allMatches(cipher);
+
+          matches.forEach((match) {
+            highlight_rune('', match.start, 'highlighter');
           });
         }
         break;

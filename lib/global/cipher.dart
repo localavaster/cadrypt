@@ -75,7 +75,7 @@ class Cipher {
   }
 
   String get_flat_cipher() {
-    return raw_cipher.join().replaceAll('-', '').replaceAll(r'\', '').replaceAll(' ', '').replaceAll('.', '');
+    return raw_cipher.join().replaceAll('-', '').replaceAll(r'\', '').replaceAll(' ', '').replaceAll('.', '').replaceAll('%', '').replaceAll(r'$', '').replaceAll('&', '');
   }
 
   Map<String, int> get_character_frequencies({bool runeOnly = true}) {
@@ -160,6 +160,27 @@ class Cipher {
     }
 
     return sum;
+  }
+
+  double get_normalized_bigram_repeats() {
+    // not dry
+    final bigrams = get_ngrams(2);
+    final repeated_bigrams = <String, int>{};
+    for (final bigram in bigrams) {
+      final count = bigrams.count((string) => string == bigram);
+      if (count <= 1) continue;
+
+      if (!repeated_bigrams.containsKey(bigram)) {
+        repeated_bigrams[bigram] = count;
+      }
+    }
+
+    int sum_of_bigram_occurences = repeated_bigrams.values.sum();
+    int pattern_character_occurences = (sum_of_bigram_occurences * 2).toInt();
+
+    if (cipher_length == 0 || pattern_character_occurences == 0) return 0.0;
+
+    return pattern_character_occurences / cipher_length;
   }
 
   List<String> get_ngrams(int n) {

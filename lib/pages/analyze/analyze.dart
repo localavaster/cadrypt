@@ -66,6 +66,13 @@ class _AnalyzePageState extends State<AnalyzePage> {
                                             case 2:
                                               state.select_cipher_mode('true');
                                               break;
+
+                                            case 3:
+                                              state.select_cipher_mode('3x3');
+                                              break;
+                                            case 4:
+                                              state.select_cipher_mode('5x5');
+                                              break;
                                           }
                                         });
                                       },
@@ -81,6 +88,14 @@ class _AnalyzePageState extends State<AnalyzePage> {
                                         const PopupMenuItem<int>(
                                           value: 2,
                                           child: Text('True'),
+                                        ),
+                                        const PopupMenuItem<int>(
+                                          value: 3,
+                                          child: Text('3x3'),
+                                        ),
+                                        const PopupMenuItem<int>(
+                                          value: 4,
+                                          child: Text('5x5'),
                                         ),
                                       ],
                                       child: const Icon(
@@ -411,11 +426,9 @@ class _AnalyzePageState extends State<AnalyzePage> {
                               name: 'Entropy',
                               value: GetIt.I<Cipher>().get_entropy().toStringAsFixed(6),
                             ),
-                            ContainerItem(
-                              name: 'Unigrams',
-                              value: GetIt.I<Cipher>().flat_cipher_length.toString(),
-                            ),
-                            ContainerItem(name: 'Unused Runes', value: GetIt.I<Cipher>().get_characters_not_used().join(',')),
+                            ContainerItem(name: 'n. Bigrams', value: GetIt.I<Cipher>().get_normalized_bigram_repeats().toStringAsFixed(6)),
+                            ContainerItem(name: 'Unused Runes', value: GetIt.I<Cipher>().get_characters_not_used().length.toString()),
+                            Expanded(child: SizedBox()),
                             const Text('Dimensions'),
                             ContainerItem(name: 'Length', value: GetIt.I<Cipher>().flat_cipher_length.toString()),
                             ContainerItem(name: 'Width', value: GetIt.I<Cipher>().raw_cipher[0].length.toString()),
@@ -463,6 +476,13 @@ class _AnalyzePageState extends State<AnalyzePage> {
                                                   child: Padding(
                                                     padding: EdgeInsets.symmetric(horizontal: 4.0),
                                                     child: Text('Double Letters', style: TextStyle(fontSize: 14)),
+                                                  ),
+                                                ),
+                                                const DropdownMenuItem(
+                                                  value: 'doubleletterrunes',
+                                                  child: Padding(
+                                                    padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                                    child: Text('Double Letter Runes', style: TextStyle(fontSize: 14)),
                                                   ),
                                                 ),
                                                 const DropdownMenuItem(

@@ -93,9 +93,9 @@ class _RuneContainerState extends State<RuneContainer> {
         if (index == -1) {
           return const Color.fromARGB(255, 0, 0, 0);
         }
-        final colorCodeR = (index * 29) % 240;
-        final colorCodeG = (index * 29) % 180;
-        final colorCodeB = (index * 29) % 140;
+        final colorCodeR = ((index + 1) * 29) % 240;
+        final colorCodeG = ((index + 1) * 29) % 180;
+        final colorCodeB = ((index + 1) * 29) % 140;
 
         return Color.fromARGB(255, colorCodeR, colorCodeG, colorCodeB);
       } catch (e) {
@@ -168,7 +168,7 @@ class _RuneContainerState extends State<RuneContainer> {
   @override
   Widget build(BuildContext context) {
     return Observer(builder: (context) {
-      final bool isSpecialGridCell = ['%'].contains(widget.rune);
+      final bool isSpecialGridCell = ['%', '&'].contains(widget.rune);
 
       if (isSpecialGridCell) {
         return _buildSpecialRuneContainer(context);

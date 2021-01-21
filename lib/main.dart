@@ -11,7 +11,7 @@ import 'pages/analyze/analyze.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await DesktopWindow.setWindowSize(const Size(880, 820));
+  await DesktopWindow.setWindowSize(const Size(880, 880));
 
   GetIt.instance.registerSingleton(Cipher([]));
   GetIt.instance<Cipher>().load_from_file('${Directory.current.path}/liberprimus_pages/welcome0.txt');
@@ -136,6 +136,7 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                                                           print(pathTextController.text);
                                                           GetIt.I<Cipher>().load_from_file(pathTextController.text);
                                                         });
+                                                        Navigator.of(context).pop();
                                                       },
                                                       child: const Text('Load', style: TextStyle(color: Colors.white)),
                                                     ),
@@ -218,6 +219,8 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                                                                   setState(() {
                                                                     GetIt.I<Cipher>().load_from_file(basePath.path + rawPageName);
                                                                   });
+
+                                                                  Navigator.of(context).pop();
                                                                 },
                                                                 child: Padding(
                                                                   padding: const EdgeInsets.all(4.0),
@@ -274,7 +277,7 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                         ),
                         const PopupMenuItem<int>(
                           value: 1,
-                          child: Text('Load page from LP '),
+                          child: Text('Load page from LP'),
                         ),
                       ],
                       child: const Padding(
