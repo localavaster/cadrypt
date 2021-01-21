@@ -30,8 +30,8 @@ Navigate to releases, download zip, extract, run.
 - Linux
 TODO, but will involve snap
 
-**Building**
-Refer to https://flutter.dev/desktop#set-up
+**Running it without prebuilt files**
+Refer to https://flutter.dev/desktop#set-up and wiki
 
 For any questions, refer to FAQ
 
