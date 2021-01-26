@@ -7,7 +7,6 @@ analyzer:
     avoid_print: ignore
   strong-mode:
     implicit-casts: false
-    implicit-dynamic: false
   language:
     strict-inference: true
     strict-raw-types: true

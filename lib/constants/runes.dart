@@ -1,3 +1,11 @@
+const List<String> runes = ['ᚠ', 'ᚢ', 'ᚦ', 'ᚩ', 'ᚱ', 'ᚳ', 'ᚷ', 'ᚹ', 'ᚻ', 'ᚾ', 'ᛁ', 'ᛄ', 'ᛇ', 'ᛈ', 'ᛉ', 'ᛋ', 'ᛏ', 'ᛒ', 'ᛖ', 'ᛗ', 'ᛚ', 'ᛝ', 'ᛟ', 'ᛞ', 'ᚪ', 'ᚫ', 'ᚣ', 'ᛡ', 'ᛠ'];
+
+const List<String> rune_english = ['f', 'u', 'th', 'o', 'r', 'c', 'g', 'w', 'h', 'n', 'i', 'j', 'eo', 'p', 'x', 's', 't', 'b', 'e', 'm', 'l', 'ng', 'oe', 'd', 'a', 'ae', 'y', 'io', 'ea'];
+
+const List<String> alt_rune_english = ['', 'v', '', '', '', 'k', '', '', '', '', '', '', '', '', '', 'z', 't', 'b', 'e', 'm', 'l', 'ng', 'oe', 'd', 'a', 'ae', 'y', 'io', 'ea'];
+
+const List<String> english_double_runes = ['th', 'eo', 'ng', 'oe', 'ae', 'ea'];
+
 const Map<String, String> runeToEnglish = {
   'ᚠ': 'F',
   'ᚢ': 'U',

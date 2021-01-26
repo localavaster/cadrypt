@@ -7,9 +7,12 @@ import 'package:supercharged_dart/supercharged_dart.dart';
 import '../constants/runes.dart';
 
 class Cipher {
+  Cipher(this.raw_cipher) {
+    cipher = raw_cipher.join();
+  }
+
   List<String> raw_cipher;
   String cipher;
-  int header_size = 0;
   int flat_cipher_length = 0;
   int cipher_length = 0;
   Map<String, int> frequencies = {};
@@ -18,9 +21,6 @@ class Cipher {
   String current_cipher_file = '';
   int longest_row = 0;
   List<int> spacer_row_indexes = [];
-  Cipher(this.raw_cipher) {
-    cipher = raw_cipher.join();
-  }
 
   bool load_from_file(String path) {
     try {
@@ -29,10 +29,6 @@ class Cipher {
 
       cipher_length = unparsed.join().length;
       flat_cipher_length = unparsed.join().replaceAll('-', '').replaceAll('.', '').replaceAll(' ', '').length;
-
-      if (unparsed.isNotEmpty && unparsed[0].contains('.')) {
-        header_size = unparsed[0].indexOf('.');
-      }
 
       for (final line in unparsed) {
         final formatted = line.replaceAll('-', ' ');
@@ -101,7 +97,6 @@ class Cipher {
   }
 
   int get_regex_frequency(String pattern) {
-    print('====== $pattern');
     final regex = RegExp('($pattern)');
     final matches = regex.allMatches(this.raw_cipher.join());
 
@@ -160,6 +155,38 @@ class Cipher {
     }
 
     return sum;
+  }
+
+  double get_average_distance_until_letter_repeat() {
+    // first, iterate the entire text
+    final flat_cipher = get_flat_cipher();
+
+    final letter_seen_indexes = <String, List<int>>{};
+
+    flat_cipher.characters.forEachIndexed((index, rune) {
+      letter_seen_indexes[rune] ??= [];
+
+      letter_seen_indexes[rune].add(index);
+    });
+
+    final List<int> distances = [];
+
+    for (final seenIndexes in letter_seen_indexes.values) {
+      for (int i = 0; i < seenIndexes.length; i++) {
+        try {
+          final current = seenIndexes[i];
+          final next = seenIndexes[i + 1];
+
+          final distance = (next - current);
+
+          distances.add(distance);
+        } catch (e) {
+          continue;
+        }
+      }
+    }
+
+    return distances.average();
   }
 
   double get_normalized_bigram_repeats() {
@@ -247,4 +274,6 @@ class Cipher {
 
     return characters;
   }
+
+  //////////////////////////////////////////
 }

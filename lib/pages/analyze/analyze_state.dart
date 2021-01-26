@@ -1,4 +1,5 @@
 import 'package:cicadrypt/global/cipher.dart';
+import 'package:cicadrypt/models/console_state.dart';
 import 'package:cicadrypt/models/rune_selection.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
@@ -102,10 +103,7 @@ abstract class _AnalyzeStateBase with Store {
 
     final selections = List<RuneSelection>.generate(split_runes.length, (index) => RuneSelection(-1, split_runes[index], type));
 
-    print(selections);
-
     selections.forEach((selection) {
-      print('${selection.rune} ${selection.index}');
       selectedRunes.add(selection);
     });
   }
@@ -131,7 +129,9 @@ abstract class _AnalyzeStateBase with Store {
 
   @action
   void highlight_all_instances_of_rune(String rune) {
-    final pattern = RegExp('($rune)');
+    String runeToHighlight = rune;
+    if (runeToHighlight == '.') runeToHighlight = r'\.';
+    final pattern = RegExp('($runeToHighlight)');
     final matches = pattern.allMatches(get_grid_cipher());
 
     //final matchIndexes = List<int>.generate(matches.length, (index) => matches.elementAt(index).start);
@@ -171,9 +171,9 @@ abstract class _AnalyzeStateBase with Store {
   void get_distance_between_selected_runes() {
     final indexes = List<int>.generate(selectedRunes.length, (index) => selectedRunes[index].index);
 
-    final distance = ((indexes[0] - indexes[1]).abs() + 1);
+    final distance = ((indexes[0] - indexes[1]).abs());
 
-    Clipboard.setData(ClipboardData(text: distance.toString()));
+    GetIt.I.get<ConsoleState>(instanceName: 'analyze').write_to_console('Distance: ${selectedRunes[0].rune} <-> ${selectedRunes[1].rune} == $distance');
   }
 
   @observable
@@ -248,6 +248,27 @@ abstract class _AnalyzeStateBase with Store {
       case 'smallwords':
         {
           final pattern = RegExp(' ([^ ]{1,3}) ', dotAll: true);
+          final matches = pattern.allMatches(cipher);
+          final indexesToHighlight = <int>[];
+
+          for (final match in matches) {
+            final start = match.start + 1; // +1 and -1 because of space, not a regex god
+            final end = match.end - 1;
+
+            for (int i = start; i != end; i++) {
+              indexesToHighlight.add(i);
+            }
+          }
+
+          indexesToHighlight.forEach((match) {
+            highlight_rune('', match, 'highlighter');
+          });
+        }
+        break;
+
+      case 'knownwords':
+        {
+          final pattern = RegExp('( [^ ]{8} )', dotAll: true);
           final matches = pattern.allMatches(cipher);
           final indexesToHighlight = <int>[];
 

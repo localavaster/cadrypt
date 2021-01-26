@@ -6,7 +6,9 @@ import 'package:supercharged_dart/supercharged_dart.dart';
 import 'package:desktop_window/desktop_window.dart';
 
 import 'global/cipher.dart';
+import 'models/console_state.dart';
 import 'pages/analyze/analyze.dart';
+import 'pages/solve/solve.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,7 +16,7 @@ Future<void> main() async {
   await DesktopWindow.setWindowSize(const Size(880, 880));
 
   GetIt.instance.registerSingleton(Cipher([]));
-  GetIt.instance<Cipher>().load_from_file('${Directory.current.path}/liberprimus_pages/welcome0.txt');
+  GetIt.instance<Cipher>().load_from_file('${Directory.current.path}/solved_liberprimus_pages/lossofdivinity0.txt');
 
   runApp(MyApp());
 }
@@ -52,11 +54,14 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
   @override
   void initState() {
     tabController = TabController(length: 3, vsync: this);
+
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -268,6 +273,236 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                               );
                             }
                             break;
+
+                          case 2:
+                            {
+                              showDialog<void>(
+                                barrierColor: Colors.black.withOpacity(0.30),
+                                context: context,
+                                builder: (context) => AlertDialog(
+                                  contentPadding: EdgeInsets.zero,
+                                  content: Builder(
+                                    builder: (context) {
+                                      final width = MediaQuery.of(context).size.width * 0.30;
+                                      final height = MediaQuery.of(context).size.height * 0.80;
+                                      return Container(
+                                        width: width,
+                                        height: height,
+                                        child: Material(
+                                          color: Theme.of(context).cardColor,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                const Text('Solved Liber Primus Pages'),
+                                                Builder(builder: (_) {
+                                                  final basePath = Directory('${Directory.current.path}/solved_liberprimus_pages/');
+
+                                                  final rawFileList = basePath.listSync();
+
+                                                  List<String> pagesSortedByNum;
+
+                                                  try {
+                                                    print('a');
+                                                    final pages = List<String>.generate(rawFileList.length, (index) => rawFileList[index].path.split('/').last).sortedByString((element) => element);
+                                                    pages.removeWhere((element) => !element.endsWith('.txt'));
+                                                    print('b');
+
+                                                    final numberRegex = RegExp('[^0-9]');
+                                                    print('c');
+                                                    pagesSortedByNum = pages.sortedByNum((element) {
+                                                      //print('parsing $element');
+                                                      return int.parse(element.replaceAll(numberRegex, ''));
+                                                    });
+                                                  } catch (e) {
+                                                    print(e);
+                                                  }
+
+                                                  return Expanded(
+                                                    child: Padding(
+                                                      padding: const EdgeInsets.all(8),
+                                                      child: Material(
+                                                        color: Theme.of(context).scaffoldBackgroundColor,
+                                                        child: ListView.builder(
+                                                          itemCount: pagesSortedByNum.length,
+                                                          itemBuilder: (context, index) {
+                                                            final rawPageName = pagesSortedByNum[index];
+                                                            final pageName = pagesSortedByNum[index].replaceAll('.txt', '');
+
+                                                            return Material(
+                                                              color: Theme.of(context).scaffoldBackgroundColor,
+                                                              child: InkWell(
+                                                                onTap: () {
+                                                                  print('loading ${basePath.path + rawPageName}');
+                                                                  setState(() {
+                                                                    GetIt.I<Cipher>().load_from_file(basePath.path + rawPageName);
+                                                                  });
+
+                                                                  Navigator.of(context).pop();
+                                                                },
+                                                                child: Padding(
+                                                                  padding: const EdgeInsets.all(4.0),
+                                                                  child: Row(
+                                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                    children: [Text(pageName), const Icon(Icons.arrow_right)],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            );
+                                                          },
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  );
+                                                }),
+                                                Row(
+                                                  children: [
+                                                    Expanded(
+                                                      child: Padding(
+                                                        padding: const EdgeInsets.all(8.0),
+                                                        child: Material(
+                                                          child: TextButton(
+                                                            onPressed: () {
+                                                              Navigator.of(context).pop();
+                                                            },
+                                                            child: const Text(
+                                                              'Close',
+                                                              style: TextStyle(color: Colors.white),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                ),
+                              );
+                            }
+                            break;
+
+                          case 3:
+                            {
+                              showDialog<void>(
+                                barrierColor: Colors.black.withOpacity(0.30),
+                                context: context,
+                                builder: (context) => AlertDialog(
+                                  contentPadding: EdgeInsets.zero,
+                                  content: Builder(
+                                    builder: (context) {
+                                      final width = MediaQuery.of(context).size.width * 0.30;
+                                      final height = MediaQuery.of(context).size.height * 0.80;
+                                      return Container(
+                                        width: width,
+                                        height: height,
+                                        child: Material(
+                                          color: Theme.of(context).cardColor,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                const Text('Challenge / Training pages'),
+                                                Builder(builder: (_) {
+                                                  final basePath = Directory('${Directory.current.path}/training_pages/');
+
+                                                  final rawFileList = basePath.listSync();
+
+                                                  List<String> pagesSortedByNum;
+
+                                                  try {
+                                                    print('a');
+                                                    final pages = List<String>.generate(rawFileList.length, (index) => rawFileList[index].path.split('/').last).sortedByString((element) => element);
+                                                    pages.removeWhere((element) => !element.endsWith('.txt'));
+                                                    print('b');
+
+                                                    final numberRegex = RegExp('[^0-9]');
+                                                    print('c');
+                                                    pagesSortedByNum = pages.sortedByNum((element) {
+                                                      //print('parsing $element');
+                                                      return int.parse(element.replaceAll(numberRegex, ''));
+                                                    });
+                                                  } catch (e) {
+                                                    print(e);
+                                                  }
+
+                                                  return Expanded(
+                                                    child: Padding(
+                                                      padding: const EdgeInsets.all(8),
+                                                      child: Material(
+                                                        color: Theme.of(context).scaffoldBackgroundColor,
+                                                        child: ListView.builder(
+                                                          itemCount: pagesSortedByNum.length,
+                                                          itemBuilder: (context, index) {
+                                                            final rawPageName = pagesSortedByNum[index];
+                                                            final pageName = pagesSortedByNum[index].replaceAll('.txt', '');
+
+                                                            return Material(
+                                                              color: Theme.of(context).scaffoldBackgroundColor,
+                                                              child: InkWell(
+                                                                onTap: () {
+                                                                  print('loading ${basePath.path + rawPageName}');
+                                                                  setState(() {
+                                                                    GetIt.I<Cipher>().load_from_file(basePath.path + rawPageName);
+                                                                  });
+
+                                                                  Navigator.of(context).pop();
+                                                                },
+                                                                child: Padding(
+                                                                  padding: const EdgeInsets.all(4.0),
+                                                                  child: Row(
+                                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                    children: [Text(pageName), const Icon(Icons.arrow_right)],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            );
+                                                          },
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  );
+                                                }),
+                                                Row(
+                                                  children: [
+                                                    Expanded(
+                                                      child: Padding(
+                                                        padding: const EdgeInsets.all(8.0),
+                                                        child: Material(
+                                                          child: TextButton(
+                                                            onPressed: () {
+                                                              Navigator.of(context).pop();
+                                                            },
+                                                            child: const Text(
+                                                              'Close',
+                                                              style: TextStyle(color: Colors.white),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                ),
+                              );
+                            }
+                            break;
                         }
                       },
                       itemBuilder: (BuildContext context) => <PopupMenuEntry<int>>[
@@ -278,6 +513,14 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                         const PopupMenuItem<int>(
                           value: 1,
                           child: Text('Load page from LP'),
+                        ),
+                        const PopupMenuItem<int>(
+                          value: 2,
+                          child: Text('Load solved page from LP'),
+                        ),
+                        const PopupMenuItem<int>(
+                          value: 3,
+                          child: Text('Load challenge/training page'),
                         ),
                       ],
                       child: const Padding(
@@ -311,7 +554,7 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                 physics: const NeverScrollableScrollPhysics(),
                 children: [
                   AnalyzePage(),
-                  Container(),
+                  SolvePage(),
                   Container(),
                 ],
               ),

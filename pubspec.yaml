@@ -27,6 +27,7 @@ dependencies:
   characters: ^1.0.0
   cupertino_icons: ^1.0.0
   desktop_window: ^0.3.0
+  dio: ^3.0.10
   equatable: ^1.2.5
   flutter_mobx: ^1.1.0+2
   get_it: ^5.0.4

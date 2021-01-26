@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 
@@ -114,7 +115,7 @@ class _RuneContainerState extends State<RuneContainer> {
       return widget.state.highlighedRunes.where((element) => element.index == widget.index).first.get_highlighted_color(context);
     }
 
-    return Theme.of(context).scaffoldBackgroundColor;
+    return Colors.black.withOpacity(0.495);
   }
 
   bool shouldShowText() {
@@ -122,33 +123,32 @@ class _RuneContainerState extends State<RuneContainer> {
   }
 
   Widget _buildRuneContainer() {
-    return Material(
-      shape: RoundedRectangleBorder(
-        side: BorderSide(color: Theme.of(context).cardColor, width: 0.5),
-      ),
-      color: get_color(context),
-      child: InkWell(
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      onHover: (event) {},
+      onExit: (event) {},
+      child: GestureDetector(
         onTap: () {
-          print(widget.index);
           widget.state.select_rune(widget.rune, widget.index, 'mouse');
-          print('== ${widget.state.selectedRunes}');
         },
         onDoubleTap: () {
           widget.state.highlight_all_instances_of_rune(widget.rune);
         },
-        child: Center(
-          child: AutoSizeText(
-            get_letter(),
-            maxLines: 1,
-            minFontSize: 8,
-            style: TextStyle(
-              //fontSize: get_font_size(),
-              //height: 1.0,
-              color: shouldShowText() == true
-                  ? widget.index < GetIt.instance<Cipher>().header_size
-                      ? Colors.red
-                      : Colors.white
-                  : Colors.transparent,
+        child: Container(
+          decoration: BoxDecoration(
+            border: Border.all(color: Theme.of(context).cardColor, width: 0.5),
+            color: get_color(context),
+          ),
+          child: Center(
+            child: AutoSizeText(
+              get_letter(),
+              maxLines: 1,
+              minFontSize: 8,
+              style: TextStyle(
+                //fontSize: get_font_size(),
+                //height: 1.0,
+                color: shouldShowText() == true ? Colors.white : Colors.transparent,
+              ),
             ),
           ),
         ),
@@ -157,18 +157,27 @@ class _RuneContainerState extends State<RuneContainer> {
   }
 
   Widget _buildSpecialRuneContainer(BuildContext context) {
-    return Material(
-      shape: RoundedRectangleBorder(
-        side: BorderSide(color: Theme.of(context).cardColor, width: 0.5),
+    return GestureDetector(
+      onTap: () {
+        widget.state.clear_selected_runes();
+      },
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(color: Theme.of(context).cardColor, width: 0.5),
+          color: Colors.black.withOpacity(0.165),
+        ),
       ),
-      color: get_color(context),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Observer(builder: (context) {
-      final bool isSpecialGridCell = ['%', '&'].contains(widget.rune);
+      final bool isSpecialGridCell = [
+        '%',
+        '&',
+        r'$',
+      ].contains(widget.rune);
 
       if (isSpecialGridCell) {
         return _buildSpecialRuneContainer(context);

@@ -23,7 +23,7 @@ class RuneSelection extends Equatable {
         return Colors.red.withOpacity(0.33);
 
       default:
-        return Theme.of(context).scaffoldBackgroundColor;
+        return Colors.black.withOpacity(0.66);
     }
   }
 }
