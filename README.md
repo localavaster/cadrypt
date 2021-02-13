@@ -7,8 +7,10 @@ A tool designed to assist with solving pages in the Liber Primus
 https://www.discord.gg/PuyyVnybRK
  
 # Current features
+- Basic Solving using a console
+- Full cribbing functionality, aswell as neat and maybe useful extension methods
 - Fully functioning cipher grid with multiple view modes (Regular, Flat, True to LP, 5x5, 3x3,)
-- Load any page from the liber primus (some missing)
+- Load any page from the liber primus, aswell as solved ones.
 - nGram visualization
 - Frequency visualization
 - Pattern analysis
@@ -28,10 +30,10 @@ Navigate to releases, download zip, extract, run.
 - Mac OS
 Navigate to releases, download zip, extract, run.
 - Linux
-TODO, but will involve snap
+TODO
 
 **Running it without prebuilt files**
-Refer to https://flutter.dev/desktop#set-up and wiki
+Refer to https://flutter.dev/desktop#set-up and wiki, The build process should be similar for all 3 operating systems.
 
 For any questions, refer to FAQ
 
