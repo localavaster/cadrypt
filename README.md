@@ -8,7 +8,7 @@ https://www.discord.gg/PuyyVnybRK
  
 # Current features
 - Basic Solving using a console
-- Full cribbing functionality, aswell as neat and maybe useful extension methods
+- Full cribbing functionality, aswell as neat and maybe useful extension methods / filtering methods
 - Fully functioning cipher grid with multiple view modes (Regular, Flat, True to LP, 5x5, 3x3,)
 - Load any page from the liber primus, aswell as solved ones.
 - nGram visualization
@@ -17,6 +17,7 @@ https://www.discord.gg/PuyyVnybRK
 - Statistics on a cipher (IoC, nGram Ratio, Entropy)
 - Highlight areas of interest (double letters, small words, double rune letters, etc)
 - Distance calculator
+- Much more
 
 # Road map
 - Eventually this will become a full suite of tools designed for the Liber Primus and other things relating to it.
