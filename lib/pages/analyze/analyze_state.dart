@@ -1,5 +1,8 @@
+import 'package:cicadrypt/constants/runes.dart';
 import 'package:cicadrypt/global/cipher.dart';
 import 'package:cicadrypt/models/console_state.dart';
+import 'package:cicadrypt/models/crib_settings.dart';
+import 'package:cicadrypt/models/magic_square_settings.dart';
 import 'package:cicadrypt/models/rune_selection.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
@@ -41,6 +44,16 @@ abstract class _AnalyzeStateBase with Store {
       }
 
       return buffer.toString();
+    } else if (cipherMode == '4x4') {
+      // not the best
+      final flat_cipher = GetIt.I<Cipher>().get_flat_cipher();
+      final StringBuffer buffer = StringBuffer();
+
+      for (int i = 0; i <= flat_cipher.length; i = i + 4) {
+        buffer.write('${flat_cipher.split('').sublist(i, (i + 4).clamp(0, flat_cipher.length).toInt()).join()} ');
+      }
+
+      return buffer.toString();
     } else if (cipherMode == '5x5') {
       // not the best
       final flat_cipher = GetIt.I<Cipher>().get_flat_cipher();
@@ -60,19 +73,24 @@ abstract class _AnalyzeStateBase with Store {
   int get_grid_x_axis_count() {
     switch (cipherMode) {
       case 'regular':
-        return List<int>.generate(GetIt.I<Cipher>().raw_cipher.length, (index) => GetIt.I<Cipher>().raw_cipher[index].length).average().toInt();
+        //return 13;
+        return List<int>.generate(GetIt.I<Cipher>().raw_cipher.length, (index) => GetIt.I<Cipher>().raw_cipher[index].length).average().clamp(0, 28).toInt();
 
       case 'flat':
+        //return 16;
         return List<int>.generate(GetIt.I<Cipher>().raw_cipher.length, (index) => GetIt.I<Cipher>().raw_cipher[index].length).sum().toInt() ~/ GetIt.I<Cipher>().raw_cipher.length;
 
       case 'true':
         return GetIt.I<Cipher>().get_longest_row();
 
-      case '5x5':
-        return 30;
-
       case '3x3':
         return 28;
+
+      case '4x4':
+        return 20;
+
+      case '5x5':
+        return 30;
     }
 
     return 20;
@@ -83,6 +101,11 @@ abstract class _AnalyzeStateBase with Store {
 
   @action
   void select_rune(String rune, int index, String type) {
+    if (rune == 'auto') {
+      final grid_cipher = get_grid_cipher();
+      rune = grid_cipher.split('').elementAt(index);
+      if (['%', r'$', '&'].contains(rune)) return;
+    }
     selectedRunes ??= ObservableList();
 
     final selection = RuneSelection(index, rune, type);
@@ -176,6 +199,33 @@ abstract class _AnalyzeStateBase with Store {
     GetIt.I.get<ConsoleState>(instanceName: 'analyze').write_to_console('Distance: ${selectedRunes[0].rune} <-> ${selectedRunes[1].rune} == $distance');
   }
 
+  @action
+  void get_selected_runes_information() {
+    final console = GetIt.I.get<ConsoleState>(instanceName: 'analyze');
+
+    final selectedRuneLetters = List<String>.generate(selectedRunes.length, (index) => selectedRunes[index].rune);
+
+    final primes = List<int>.generate(selectedRuneLetters.length, (index) => Conversions.runeToPrime(selectedRuneLetters[index]));
+    final primesMod29 = List<int>.generate(selectedRuneLetters.length, (index) => (Conversions.runeToPrime(selectedRuneLetters[index]) % 29));
+    final positions = List<int>.generate(selectedRuneLetters.length, (index) => runes.indexOf(selectedRuneLetters[index]));
+
+    final primeSum = primes.sum();
+    final positionsSum = positions.sum();
+
+    console.write_to_console('=== Selection Info (${selectedRuneLetters.join()})');
+    console.write_to_console('Length: ${selectedRuneLetters.length}');
+    console.write_to_console('Prime Conversion: $primes');
+    console.write_to_console('Prime(%29) Conversion: $primesMod29');
+    console.write_to_console('Prime Conv. Sum: $primeSum');
+    console.write_to_console('Position Conversion: $positions');
+    console.write_to_console('Position Conv. Sum: $positionsSum');
+
+    final word = List<String>.generate(positions.length, (index) => runeEnglish[positions[index]]);
+    final atbashedWord = List<String>.generate(word.length, (index) => runeEnglish.reversed.toList()[positions[index]]);
+    console.write_to_console('Word: ${word.join('')} | ${word.join('').reverse}');
+    console.write_to_console('Atbash: ${atbashedWord.join('')} | ${atbashedWord.join('').reverse}');
+  }
+
   @observable
   String readingMode = 'rune';
 
@@ -247,7 +297,8 @@ abstract class _AnalyzeStateBase with Store {
 
       case 'smallwords':
         {
-          final pattern = RegExp(' ([^ ]{1,3}) ', dotAll: true);
+          print(cipher);
+          final pattern = RegExp(r'[-%&$ ][^ %$&]{1,2}[-%&$ ]', dotAll: true);
           final matches = pattern.allMatches(cipher);
           final indexesToHighlight = <int>[];
 
@@ -266,25 +317,143 @@ abstract class _AnalyzeStateBase with Store {
         }
         break;
 
-      case 'knownwords':
+      case 'repeatwords':
         {
-          final pattern = RegExp('( [^ ]{8} )', dotAll: true);
-          final matches = pattern.allMatches(cipher);
-          final indexesToHighlight = <int>[];
+          print(cipher);
+          final Map<String, int> seen = {};
+          final cipherWords = GetIt.I<Cipher>().raw_cipher.join('').replaceAll('.', '-').replaceAll(r'$', '').replaceAll('%', '').replaceAll('&', '').replaceAll(' ', '-').split('-');
 
-          for (final match in matches) {
-            final start = match.start + 1; // +1 and -1 because of space, not a regex god
-            final end = match.end - 1;
-
-            for (int i = start; i != end; i++) {
-              indexesToHighlight.add(i);
+          for (final word in cipherWords) {
+            if (seen.containsKey(word)) {
+              seen[word] += 1;
+            } else {
+              seen[word] = 1;
             }
           }
 
+          seen.removeWhere((key, value) => value == 1);
+
+          List<int> indexesToHighlight = <int>[];
+          seen.keys.forEach((word) {
+            final pattern = RegExp('[-%& ]($word)[-%& ]');
+            final matches = pattern.allMatches(cipher);
+
+            print(matches.length);
+
+            for (final match in matches) {
+              int start = match.start;
+              int end = match.end;
+
+              if (start == end) {
+                indexesToHighlight.add(start);
+                continue;
+              }
+
+              start = start + 1; // else spaces will be highlighted
+              end = end - 1;
+
+              for (int i = start; i != end; i++) {
+                indexesToHighlight.add(i);
+              }
+            }
+          });
+
+          indexesToHighlight = indexesToHighlight.toSet().toList();
           indexesToHighlight.forEach((match) {
             highlight_rune('', match, 'highlighter');
           });
         }
+        break;
+
+      case 'allvowels':
+        {
+          final pattern = RegExp('[ᚪᛖᛁᚩᚢᚫᛡ]', dotAll: true);
+          final matches = pattern.allMatches(cipher);
+
+          matches.forEach((match) {
+            highlight_rune('', match.start, 'highlighter');
+          });
+        }
+        break;
+
+      case 'vowels':
+        {
+          final pattern = RegExp('[ᚪᛖᛁᚩᚢ]', dotAll: true);
+          final matches = pattern.allMatches(cipher);
+
+          matches.forEach((match) {
+            highlight_rune('', match.start, 'highlighter');
+          });
+        }
+        break;
+
+      case 'rows':
+        {
+          final rows = GetIt.I<Cipher>().raw_cipher.length;
+          final row_length = get_grid_x_axis_count();
+
+          print('rows $rows');
+
+          print('row length $row_length');
+
+          for (int x = 0; x < rows; x++) {
+            if (x.isOdd) continue;
+
+            final row_start = row_length * x;
+            final row_end = row_start + row_length;
+
+            print('highlightinf $row_start to $row_end');
+
+            for (int i = row_start; i < row_end; i++) {
+              highlight_rune('', i, 'highlighter');
+            }
+          }
+        }
+        break;
+
+      case 'columns':
+        {
+          final columns = GetIt.I<Cipher>().raw_cipher.length;
+          final row_length = get_grid_x_axis_count();
+
+          for (int x = 0; x < columns; x++) {
+            final row_start = row_length * x;
+            final row_end = row_start + row_length;
+
+            print('highlightinf $row_start to $row_end');
+
+            for (int i = row_start; i < row_end; i = i + 2) {
+              highlight_rune('', i, 'highlighter');
+            }
+          }
+        }
+        break;
+
+      case 'checkerboard':
+        {
+          final length = get_grid_x_axis_count() * GetIt.I<Cipher>().raw_cipher.length;
+
+          for (int x = 0; x < length; x++) {
+            if (x.isOdd) continue;
+
+            highlight_rune('', x, 'highlighter');
+          }
+        }
+        break;
     }
   }
+
+  @observable
+  String repeatedGramsSortedBy = 'count';
+
+  @action
+  void changeGramSortedBy(String value) {
+    repeatedGramsSortedBy = value;
+  }
+
+  //
+
+  final CribSettings cribSettings = CribSettings();
+
+  final MagicSquareCribSettings magicSquareCribSettings = MagicSquareCribSettings();
 }

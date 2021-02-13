@@ -122,13 +122,9 @@ linter:
 
     - avoid_web_libraries_in_flutter
 
-    - camel_case_extensions
-    - camel_case_types
-
     - cast_nullable_to_non_nullable
 
     - comment_references
-    - constant_identifier_names
     - control_flow_in_finally
     - curly_braces_in_flow_control_structures
     #- diagnostic_describe_all_properties
@@ -149,7 +145,6 @@ linter:
     - no_duplicate_case_values
     - no_logic_in_create_state
     - no_runtimeType_toString
-    - non_constant_identifier_names
     - null_check_on_nullable_type_parameter
     - null_closures
 

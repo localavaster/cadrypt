@@ -3,43 +3,70 @@ import 'package:dio/dio.dart';
 
 // A class containing functions relating to https://www.oeis.org
 class OEISLookUp {
+  final bool localLookUp;
+  List<String> localSequences;
+
+  List<List<int>> localSequencesList;
+
+  File localFile;
   File cacheFile;
   Dio client;
-  OEISLookUp() {
-    BaseOptions options = BaseOptions(
-      baseUrl: "https://www.oeis.org/",
-      connectTimeout: 5000,
-      receiveTimeout: 3000,
-    );
 
-    client = Dio(options);
+  OEISLookUp({this.localLookUp}) {
+    if (!localLookUp) {
+      BaseOptions options = BaseOptions(
+        baseUrl: "https://www.oeis.org/",
+        connectTimeout: 5000,
+        receiveTimeout: 3000,
+      );
 
-    // cache file
+      client = Dio(options);
 
-    cacheFile = File('${Directory.current.path}/invalid_oeis_sequence_cache.txt');
-    if (!cacheFile.existsSync()) {
-      cacheFile.createSync();
+      cacheFile = File('${Directory.current.path}/invalid_oeis_sequence_cache.txt');
+      if (!cacheFile.existsSync()) {
+        cacheFile.createSync();
+      }
+    } else {
+      cacheFile = File('${Directory.current.path}/invalid_oeis_sequence_cache.txt');
+      if (!cacheFile.existsSync()) {
+        cacheFile.createSync();
+      }
+
+      localFile = File('${Directory.current.path}/mod29_oeis_sequences.txt');
+      localSequences = localFile.readAsLinesSync().toSet().toList();
     }
   }
 
-  void cache_sequence_to_file(List<int> sequence) {
-    cacheFile.writeAsStringSync('${sequence.join(',')}\n', mode: FileMode.append);
+  void cache_sequence_to_file(String sequence) {
+    cacheFile.writeAsStringSync('$sequence\n', mode: FileMode.append);
   }
 
-  Future<bool> oeisContainsSequence(List<int> sequence) async {
-    List<int> copySequence = List<int>.from(sequence);
-
-    copySequence.removeWhere((element) => element == 0);
-
-    copySequence = copySequence.getRange(0, 5.clamp(0, copySequence.length).toInt()).toList();
+  bool localOeisContainsSequnece(List<int> sequence) {
+    final sequence_formatted = ',${sequence.getRange(0, 6.clamp(0, sequence.length).toInt()).join(',')}';
 
     final invalidCacheFileLines = cacheFile.readAsLinesSync();
-    if (invalidCacheFileLines.contains(copySequence.join(','))) {
+    final sequenceInInvalidCache = invalidCacheFileLines.where((element) => element == sequence_formatted);
+    if (sequenceInInvalidCache.isNotEmpty) return false;
+
+    for (final oeisSequence in localSequences) {
+      if (oeisSequence.contains(sequence_formatted)) return true;
+    }
+
+    cache_sequence_to_file(sequence_formatted);
+    return false;
+  }
+
+  Future<bool> internetOeisContainsSequence(List<int> sequence) async {
+    /*List<int> firstPartOfSequence = List<int>.from(sequence).sublist(0, 5.clamp(0, sequence.length).toInt());
+    print('checking sequence $firstPartOfSequence');
+
+    final invalidCacheFileLines = cacheFile.readAsLinesSync();
+    if (invalidCacheFileLines.contains(firstPartOfSequence.join(','))) {
       return false;
     }
 
     final request = await client.get('search', queryParameters: {
-      'q': copySequence.join(','),
+      'q': firstPartOfSequence.join(','),
       'language': 'english',
       'go': 'search',
     });
@@ -48,10 +75,10 @@ class OEISLookUp {
 
     if (response_body.contains('Sorry, but')) {
       // truly not the best, but is it worth parsing html? // TODO: find a keyword closer to the beginning of the HTML body or recode this entirely
-      cache_sequence_to_file(copySequence);
+      cache_sequence_to_file(firstPartOfSequence);
       return false;
     } else {
       return true;
-    }
+    }*/
   }
 }

@@ -6,6 +6,12 @@ import 'package:supercharged_dart/supercharged_dart.dart';
 
 import '../constants/runes.dart';
 
+class HeaderBoundary {
+  int start;
+  int end;
+  HeaderBoundary(this.start, this.end);
+}
+
 class Cipher {
   Cipher(this.raw_cipher) {
     cipher = raw_cipher.join();
@@ -22,13 +28,15 @@ class Cipher {
   int longest_row = 0;
   List<int> spacer_row_indexes = [];
 
+  List<HeaderBoundary> headers = [];
+
   bool load_from_file(String path) {
     try {
       final List<String> parsed = [];
       final List<String> unparsed = File(path).readAsLinesSync();
 
       cipher_length = unparsed.join().length;
-      flat_cipher_length = unparsed.join().replaceAll('-', '').replaceAll('.', '').replaceAll(' ', '').length;
+      flat_cipher_length = unparsed.join().replaceAll('-', '').replaceAll('.', '').replaceAll(' ', '').replaceAll(RegExp(r'[$%&]'), '').length;
 
       for (final line in unparsed) {
         final formatted = line.replaceAll('-', ' ');
@@ -123,22 +131,21 @@ class Cipher {
     return runeToEnglish[rune].length == 2;
   }
 
-  double get_index_of_coincidence() {
-    final flat_cipher = get_flat_cipher();
+  double get_index_of_coincidence({String text = null}) {
+    final List<String> alphabet = runes;
+
+    String flat_cipher = get_flat_cipher();
+    if (text != null) {
+      flat_cipher = text.replaceAll(RegExp('[ .]'), '');
+    }
 
     final length = flat_cipher.length;
 
-    final frequency = get_character_frequencies();
+    final chunked_cipher = flat_cipher.split('');
+    final letters_in_cipher = chunked_cipher.toSet();
+    final frequencies = {for (final letter in letters_in_cipher) letter: chunked_cipher.count((e) => e == letter)}; // fastest frequency counter in the west
 
-    final List<String> alphabet = runeToEnglish.keys.toList();
-
-    double frequency_sum = 0.0;
-
-    alphabet.forEach((rune) {
-      if (frequency.containsKey(rune)) {
-        frequency_sum += frequency[rune] * (frequency[rune] - 1);
-      }
-    });
+    final frequency_sum = alphabet.sumByDouble((s) => frequencies.containsKey(s) ? frequencies[s] * (frequencies[s] - 1) : 0.0);
 
     if (frequency_sum == 0.0) return 0.0;
 
@@ -189,6 +196,76 @@ class Cipher {
     return distances.average();
   }
 
+  double get_average_distance_until_double_rune_repeat() {
+    // first, iterate the entire text
+    final flat_cipher = get_flat_cipher();
+
+    final letter_seen_indexes = <String, List<int>>{};
+
+    flat_cipher.characters.forEachIndexed((index, rune) {
+      if (doubleRunes.contains(rune)) {
+        letter_seen_indexes[rune] ??= [];
+
+        letter_seen_indexes[rune].add(index);
+      }
+    });
+
+    final List<int> distances = [];
+
+    for (final seenIndexes in letter_seen_indexes.values) {
+      for (int i = 0; i < seenIndexes.length; i++) {
+        try {
+          final current = seenIndexes[i];
+          final next = seenIndexes[i + 1];
+
+          final distance = (next - current);
+
+          distances.add(distance);
+        } catch (e) {
+          continue;
+        }
+      }
+    }
+
+    return distances.average();
+  }
+
+  double get_average_distance_until_x_rune_repeat() {
+    // first, iterate the entire text
+    final flat_cipher = get_flat_cipher();
+
+    final letter_seen_indexes = <String, List<int>>{};
+
+    flat_cipher.characters.forEachIndexed((index, rune) {
+      if (rune == 'ᛉ') {
+        letter_seen_indexes[rune] ??= [];
+
+        letter_seen_indexes[rune].add(index);
+      }
+    });
+
+    final List<int> distances = [];
+
+    for (final seenIndexes in letter_seen_indexes.values) {
+      for (int i = 0; i < seenIndexes.length; i++) {
+        try {
+          final current = seenIndexes[i];
+          final next = seenIndexes[i + 1];
+
+          final distance = (next - current);
+
+          distances.add(distance);
+        } catch (e) {
+          continue;
+        }
+      }
+    }
+
+    if (distances.isEmpty) return 0.0;
+
+    return distances.average();
+  }
+
   double get_normalized_bigram_repeats() {
     // not dry
     final bigrams = get_ngrams(2);
@@ -202,8 +279,8 @@ class Cipher {
       }
     }
 
-    int sum_of_bigram_occurences = repeated_bigrams.values.sum();
-    int pattern_character_occurences = (sum_of_bigram_occurences * 2).toInt();
+    final int sum_of_bigram_occurences = repeated_bigrams.values.sum();
+    final int pattern_character_occurences = (sum_of_bigram_occurences * 2).toInt();
 
     if (cipher_length == 0 || pattern_character_occurences == 0) return 0.0;
 
@@ -233,8 +310,30 @@ class Cipher {
     final bigrams = get_ngrams(2);
     final trigrams = get_ngrams(3);
     final quadgrams = get_ngrams(4);
+    final fivegrams = get_ngrams(5);
+    final sixgrams = get_ngrams(6);
 
     final Map<String, int> repeated = {};
+
+    for (final sixgram in sixgrams) {
+      final count = sixgrams.count((string) => string == sixgram);
+
+      if (count == 1) continue;
+
+      if (!repeated.containsKey(sixgram)) {
+        repeated[sixgram] = count;
+      }
+    }
+
+    for (final fivegram in fivegrams) {
+      final count = fivegrams.count((string) => string == fivegram);
+
+      if (count == 1) continue;
+
+      if (!repeated.containsKey(fivegram)) {
+        repeated[fivegram] = count;
+      }
+    }
 
     for (final quadgram in quadgrams) {
       final count = quadgrams.count((string) => string == quadgram);

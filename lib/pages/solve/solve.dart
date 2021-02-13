@@ -19,8 +19,7 @@ class SolvePage extends StatefulWidget {
   _SolvePageState createState() => _SolvePageState();
 }
 
-class _SolvePageState extends State<SolvePage>
-    with AutomaticKeepAliveClientMixin {
+class _SolvePageState extends State<SolvePage> with AutomaticKeepAliveClientMixin {
   @override
   bool get wantKeepAlive => true;
 
@@ -62,22 +61,14 @@ class _SolvePageState extends State<SolvePage>
                               child: TextFormField(
                                 decoration: const InputDecoration().copyWith(
                                   filled: true,
-                                  fillColor:
-                                      Theme.of(context).scaffoldBackgroundColor,
+                                  fillColor: Theme.of(context).scaffoldBackgroundColor,
                                   labelText: 'Cipher',
-                                  labelStyle: const TextStyle(
-                                      height: 1.0, fontSize: 18),
-                                  floatingLabelBehavior:
-                                      FloatingLabelBehavior.always,
-                                  border: const OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                          color: Colors.transparent)),
-                                  focusedBorder: const OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                          color: Colors.transparent)),
+                                  labelStyle: const TextStyle(height: 1.0, fontSize: 18),
+                                  floatingLabelBehavior: FloatingLabelBehavior.always,
+                                  border: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
+                                  focusedBorder: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
                                 ),
-                                style: TextStyle(
-                                    fontSize: 14, fontWeight: FontWeight.w600),
+                                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
                                 textAlignVertical: TextAlignVertical.top,
                                 cursorWidth: 1,
                                 cursorColor: Colors.cyan,
@@ -107,19 +98,12 @@ class _SolvePageState extends State<SolvePage>
                               child: TextFormField(
                                 decoration: const InputDecoration().copyWith(
                                   filled: true,
-                                  fillColor:
-                                      Theme.of(context).scaffoldBackgroundColor,
+                                  fillColor: Theme.of(context).scaffoldBackgroundColor,
                                   labelText: 'Command Console',
-                                  labelStyle: const TextStyle(
-                                      height: 1.0, fontSize: 18),
-                                  floatingLabelBehavior:
-                                      FloatingLabelBehavior.always,
-                                  border: const OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                          color: Colors.transparent)),
-                                  focusedBorder: const OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                          color: Colors.transparent)),
+                                  labelStyle: const TextStyle(height: 1.0, fontSize: 18),
+                                  floatingLabelBehavior: FloatingLabelBehavior.always,
+                                  border: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
+                                  focusedBorder: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
                                 ),
                                 style: TextStyle(fontSize: 14),
                                 textAlignVertical: TextAlignVertical.top,
@@ -137,8 +121,7 @@ class _SolvePageState extends State<SolvePage>
                                 final event_type = event.runtimeType;
                                 final key_id = event.logicalKey.keyId;
 
-                                if (key_id == 4295426088 &&
-                                    event_type == RawKeyDownEvent) // enter
+                                if (key_id == 4295426088 && event_type == RawKeyDownEvent) // enter
                                 {
                                   inputGlobalKey.currentState.save();
                                 }
@@ -148,19 +131,12 @@ class _SolvePageState extends State<SolvePage>
                                 key: inputGlobalKey,
                                 decoration: const InputDecoration().copyWith(
                                   filled: true,
-                                  fillColor:
-                                      Theme.of(context).scaffoldBackgroundColor,
+                                  fillColor: Theme.of(context).scaffoldBackgroundColor,
                                   labelText: 'Command Input',
-                                  labelStyle: const TextStyle(
-                                      height: 1.0, fontSize: 18),
-                                  floatingLabelBehavior:
-                                      FloatingLabelBehavior.always,
-                                  border: const OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                          color: Colors.transparent)),
-                                  focusedBorder: const OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                          color: Colors.transparent)),
+                                  labelStyle: const TextStyle(height: 1.0, fontSize: 18),
+                                  floatingLabelBehavior: FloatingLabelBehavior.always,
+                                  border: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
+                                  focusedBorder: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
                                 ),
                                 style: TextStyle(fontSize: 14),
                                 textAlignVertical: TextAlignVertical.top,
@@ -168,18 +144,12 @@ class _SolvePageState extends State<SolvePage>
                                 cursorColor: Colors.cyan,
                                 maxLines: null,
                                 controller: state.commandInput,
-                                inputFormatters: [
-                                  FilteringTextInputFormatter.deny(
-                                      RegExp(r'\n'))
-                                ],
+                                inputFormatters: [FilteringTextInputFormatter.deny(RegExp(r'\n'))],
                                 onSaved: (value) {
                                   // ghetto, but flutter desktop is still alpha
                                   state.execute_command(value);
 
-                                  WidgetsBinding.instance
-                                      .addPostFrameCallback((timeStamp) {
-                                    state.commandInput.clear();
-                                  });
+                                  state.commandInput.clear();
                                 },
                               ),
                             ),

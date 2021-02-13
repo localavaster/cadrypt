@@ -1,5 +1,11 @@
 import 'dart:io';
 
+import 'package:cicadrypt/constants/runes.dart';
+import 'package:cicadrypt/services/crib.dart';
+import 'package:cicadrypt/services/oeis_scraper.dart';
+import 'package:flutter/services.dart';
+
+import 'global/keyboard_listener.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:supercharged_dart/supercharged_dart.dart';
@@ -7,8 +13,10 @@ import 'package:desktop_window/desktop_window.dart';
 
 import 'global/cipher.dart';
 import 'models/console_state.dart';
+import 'models/crib_settings.dart';
 import 'pages/analyze/analyze.dart';
 import 'pages/solve/solve.dart';
+import 'services/crib_cache.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,23 +26,41 @@ Future<void> main() async {
   GetIt.instance.registerSingleton(Cipher([]));
   GetIt.instance<Cipher>().load_from_file('${Directory.current.path}/solved_liberprimus_pages/lossofdivinity0.txt');
 
+  GetIt.instance.registerSingleton(Keyboard());
+
+  GetIt.instance.registerSingleton(CribCache());
+
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Cadrypt',
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primarySwatch: Colors.red,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-        fontFamily: 'SegoeUISymbol',
-        inputDecorationTheme: const InputDecorationTheme(filled: true),
+    final focusNode = FocusNode();
+
+    return RawKeyboardListener(
+      focusNode: focusNode,
+      onKey: (event) {
+        final keyboard_listener = GetIt.I<Keyboard>();
+
+        if (event.runtimeType == RawKeyDownEvent) {
+          keyboard_listener.onKeyDown(event.logicalKey.keyId);
+        } else if (event.runtimeType == RawKeyUpEvent) {
+          keyboard_listener.onKeyUp(event.logicalKey.keyId);
+        }
+      },
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Cadrypt',
+        theme: ThemeData(
+          brightness: Brightness.dark,
+          primarySwatch: Colors.red,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          fontFamily: 'SegoeUISymbol',
+          inputDecorationTheme: const InputDecorationTheme(filled: true),
+        ),
+        home: MainPage(),
       ),
-      home: MainPage(),
     );
   }
 }

@@ -86,6 +86,23 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
     });
   }
 
+  final _$repeatedGramsSortedByAtom =
+      Atom(name: '_AnalyzeStateBase.repeatedGramsSortedBy');
+
+  @override
+  String get repeatedGramsSortedBy {
+    _$repeatedGramsSortedByAtom.reportRead();
+    return super.repeatedGramsSortedBy;
+  }
+
+  @override
+  set repeatedGramsSortedBy(String value) {
+    _$repeatedGramsSortedByAtom.reportWrite(value, super.repeatedGramsSortedBy,
+        () {
+      super.repeatedGramsSortedBy = value;
+    });
+  }
+
   final _$_AnalyzeStateBaseActionController =
       ActionController(name: '_AnalyzeStateBase');
 
@@ -200,6 +217,17 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
   }
 
   @override
+  void get_selected_runes_information() {
+    final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
+        name: '_AnalyzeStateBase.get_selected_runes_information');
+    try {
+      return super.get_selected_runes_information();
+    } finally {
+      _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   void select_reading_mode(String readingMode) {
     final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
         name: '_AnalyzeStateBase.select_reading_mode');
@@ -244,13 +272,25 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
   }
 
   @override
+  void changeGramSortedBy(String value) {
+    final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
+        name: '_AnalyzeStateBase.changeGramSortedBy');
+    try {
+      return super.changeGramSortedBy(value);
+    } finally {
+      _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   String toString() {
     return '''
 selectedRunes: ${selectedRunes},
 highlighedRunes: ${highlighedRunes},
 readingMode: ${readingMode},
 cipherMode: ${cipherMode},
-highlightDropdownValue: ${highlightDropdownValue}
+highlightDropdownValue: ${highlightDropdownValue},
+repeatedGramsSortedBy: ${repeatedGramsSortedBy}
     ''';
   }
 }

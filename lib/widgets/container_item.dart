@@ -20,9 +20,12 @@ class ContainerItem extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(name),
-                  Text(
-                    value,
-                    overflow: TextOverflow.fade,
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Text(
+                      value,
+                      overflow: TextOverflow.fade,
+                    ),
                   ),
                 ],
               ),

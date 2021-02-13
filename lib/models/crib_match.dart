@@ -1,67 +1,61 @@
-import 'package:cicadrypt/constants/runes.dart';
+import 'dart:io';
+import 'dart:math';
+
+import 'package:flutter/widgets.dart';
+
+import '../constants/runes.dart';
 import 'package:supercharged_dart/supercharged_dart.dart';
 
-class CribMatch {
-  final String word;
+import 'package:equatable/equatable.dart';
+
+class CribMatch extends Equatable {
+  final String rune_word;
+  final String crib;
   final List<int> shifts;
+  final String shift_word;
+  String shift_word_using_gp;
+  final String shift_rune_word;
   final int shift_sum;
 
-  bool shiftSequenceInOEIS;
+  CribMatch(this.rune_word, this.crib, this.shifts)
+      : shift_sum = shifts.sum(),
+        shift_word = List<String>.generate(shifts.length, (index) => runeEnglish[shifts[index]].toUpperCase()).join(),
+        shift_rune_word = List<String>.generate(shifts.length, (index) => runes[shifts[index]]).join() {
+    final buffer = StringBuffer();
 
-  CribMatch(this.word, this.shifts, {this.shiftSequenceInOEIS = null})
-      : shift_sum = shifts.sum() {}
+    for (final shift in shifts) {
+      final letters = <String>[];
 
-  List<int> shift_difference() {
-    if (shifts.length == 1) {
-      return [shift_sum];
-    }
+      for (int idx = 0; idx < gpPrimesMod29.length; idx++) {
+        final value = gpPrimesMod29[idx];
 
-    final List<int> differences = [];
-    for (int i = 0; i < shifts.length; i++) {
-      try {
-        final int a = shifts[i];
-        final int b = shifts[i + 1];
+        if (value == shift) {
+          letters.add(runeEnglish[idx]);
+        }
+      }
 
-        differences.add((a - b).abs());
-      } catch (e) {
-        continue;
+      if (letters.isEmpty) {
+        buffer.write('?${runeEnglish[shift]}?');
+      } else if (letters.length == 1) {
+        buffer.write(letters.first);
+      } else if (letters.length != 1) {
+        buffer.write('(${letters.join()})');
       }
     }
 
-    return differences;
-  }
-
-  String get_output() {
-    final StringBuffer charBuffer = StringBuffer();
-    shifts.forEach((element) {
-      charBuffer.write(rune_english[element].toUpperCase());
-    });
-
-    final buffer = StringBuffer();
-
-    buffer.writeAll([
-      '$shift_sum',
-      ' | ',
-      word,
-      ' | ',
-      '$shifts',
-      ' | ',
-      (charBuffer.toString()),
-      ' | ',
-      (charBuffer.toString().reverse),
-      ' | ',
-      shift_difference().toString(),
-      if (shiftSequenceInOEIS != null) ...[
-        ' | ',
-        shiftSequenceInOEIS,
-      ]
-    ]);
-
-    return buffer.toString();
+    shift_word_using_gp = buffer.toString();
   }
 
   @override
   String toString() {
-    return '$shift_sum | $word | $shifts';
+    final buffer = StringBuffer();
+
+    buffer.writeAll(['$shift_sum', ' | ', crib, ' | ', '$shifts', ' | ', '$shift_word', ' | ', '$shift_word_using_gp']);
+
+    return buffer.toString();
   }
+
+  // equality props
+  @override
+  List<Object> get props => [rune_word, shifts, shift_word];
 }
