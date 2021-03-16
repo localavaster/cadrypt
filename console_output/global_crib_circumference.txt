@@ -1,0 +1,64 @@
+Starting global crib with output settings...
+shiftsum | shiftdifferencessum | cribword | shiftlist | shiftdifferences | shiftlistfacts | shiftsinwordform | shiftsingpform
+Results for cross0.txt
+Results for cross1.txt
+Results for cross2.txt
+Results for spiral3.txt
+Results for spiral4.txt
+Results for spiral5.txt
+Results for spiral6.txt
+Results for spiral7.txt
+Results for branch8.txt
+Results for branch9.txt
+Results for branch10.txt
+Results for branch11.txt
+ioo(0) 159 | 96 | circumference | [7, 3, 11, 25, 19, 5, 13, 12, 1, 0, 20, 18, 25] | [4, 8, 14, 6, 14, 8, 1, 11, 1, 20, 2, 7] | [hr, dhr] | WOJAEMCPEOUFLEAE | O(UB)ROEWTH(CM)EOTNIOXOE 
+Results for branch12.txt
+Results for branch13.txt
+Results for branch14.txt
+Results for mobius15.txt
+Results for mobius16.txt
+ioo(0) 246 | 88 | circumference | [13, 13, 20, 20, 15, 13, 28, 0, 24, 25, 25, 23, 27] | [0, 7, 0, 5, 2, 15, 28, 24, 1, 0, 2, 4] | [hr, dhr] | PPLLSPEAFAAEAEDIO | (CM)(CM)IOIOL(CM)?EA?NSOEOEH?IO? 
+Results for mobius17.txt
+Results for mobius18.txt
+Results for mobius19.txt
+Results for mobius20.txt
+Results for mobius21.txt
+Results for mobius22.txt
+Results for mayfly23.txt
+Results for mayfly24.txt
+Results for mayfly25.txt
+Results for mayfly26.txt
+Results for wingtree27.txt
+Results for wingtree28.txt
+Results for wingtree29.txt
+Results for wingtree30.txt
+Results for wingtree31.txt
+Results for wingtree32.txt
+Results for cuneiform33.txt
+Results for cuneiform34.txt
+Results for cuneiform35.txt
+Results for cuneiform36.txt
+Results for cuneiform37.txt
+Results for cuneiform38.txt
+Results for cuneiform39.txt
+Results for spiralbranch40.txt
+Results for spiralbranch41.txt
+Results for spiralbranch42.txt
+Results for spiralbranch43.txt
+Results for spiralbranch44.txt
+Results for spiralbranch45.txt
+Results for spiralbranch46.txt
+Results for spiralbranch47.txt
+Results for spiralbranch48.txt
+Results for spiralbranch49.txt
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+Results for spiralbranch54.txt
+ioo(0) 219 | 113 | circumference | [8, 24, 8, 25, 15, 15, 27, 23, 17, 20, 21, 3, 13] | [16, 16, 17, 10, 0, 12, 4, 6, 3, 1, 18, 10] | [hr, dhr] | HAHAESSIODBLINGOP | JSJOELL?IO?HGIOING(UB)(CM) 
+Results for hollow54.txt
+Results for hollow55.txt
+ioo(0) 168 | 89 | circumference | [12, 18, 25, 9, 9, 0, 1, 16, 9, 19, 12, 15, 23] | [6, 7, 16, 0, 9, 1, 15, 7, 10, 7, 3, 8] | [hr, dhr] | EOEAENNFUTNMEOSD | EOXOEEENTYEWEOLH 
+Results for spiralbranch55.txt

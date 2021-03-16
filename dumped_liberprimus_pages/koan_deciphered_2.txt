@@ -1,0 +1,216 @@
+==========================
+== Entire Page Statistics
+==========================
+Total Words: 87 | PRIME: false
+Total Unique Words: 44 | PRIME: false
+Repeated Words: [ᚪ, ᚦᛖ, ᛗᚪᛋᛏᛖᚱ, ᛁ, ᛁᛋ, ᚢᚩᛁᚳᛖ, ᚻᛖ, ᛋᚪᛁᛞ, ᛋᛏᚢᛞᛖᚾᛏ, ᛏᚩ, ᚦᚪᛏ, ᚣᚩᚢᚱ, ᚻᛠᛞ, ᚻᚪᚢᛖ, ᛁᚾ, ᚪᚾᛞ]
+Total Runes: 319 | PRIME: false
+Total Spaces: 87 | PRIME: false
+Total Periods: 0 | PRIME: true
+Total GP sum: 15331 | PRIME: true
+Total Sentences: 1 | PRIME: false
+Total Lines: 16 | PRIME: false
+==========================
+== Character Frequencies
+==========================
+ᚫ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛡ 0 | PRIME: true
+ᛄ 1 | PRIME: false
+ᛒ 1 | PRIME: false
+ᛝ 1 | PRIME: false
+ᚠ 2 | PRIME: true
+ᚷ 2 | PRIME: true
+ᛉ 2 | PRIME: true
+ᚹ 3 | PRIME: true
+ᛈ 4 | PRIME: false
+ᛠ 4 | PRIME: false
+ᚣ 5 | PRIME: true
+ᛚ 6 | PRIME: false
+ᛗ 7 | PRIME: true
+ᚳ 10 | PRIME: false
+ᚱ 11 | PRIME: true
+ᚻ 13 | PRIME: true
+ᚦ 16 | PRIME: false
+ᚩ 17 | PRIME: true
+ᚢ 18 | PRIME: false
+ᚾ 22 | PRIME: false
+ᛞ 23 | PRIME: true
+ᛋ 24 | PRIME: false
+ᛏ 25 | PRIME: false
+ᚪ 27 | PRIME: false
+ᛁ 27 | PRIME: false
+ᛖ 48 | PRIME: false
+==========================
+== Character Frequencies As Sums
+==========================
+ᚫ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛡ 0 | PRIME: true
+ᛄ 37 | PRIME: true
+ᛒ 61 | PRIME: true
+ᛝ 79 | PRIME: true
+ᚠ 4 | PRIME: false
+ᚷ 34 | PRIME: false
+ᛉ 94 | PRIME: false
+ᚹ 57 | PRIME: false
+ᛈ 172 | PRIME: false
+ᛠ 436 | PRIME: false
+ᚣ 515 | PRIME: false
+ᛚ 438 | PRIME: false
+ᛗ 497 | PRIME: false
+ᚳ 130 | PRIME: false
+ᚱ 121 | PRIME: false
+ᚻ 299 | PRIME: false
+ᚦ 80 | PRIME: false
+ᚩ 119 | PRIME: false
+ᚢ 54 | PRIME: false
+ᚾ 638 | PRIME: false
+ᛞ 2047 | PRIME: false
+ᛋ 1272 | PRIME: false
+ᛏ 1475 | PRIME: false
+ᚪ 2619 | PRIME: false
+ᛁ 837 | PRIME: false
+ᛖ 3216 | PRIME: false
+==========================
+== Sentence Characteristics
+==========================
+Sentence: ᚪ-ᚳᚩᚪᚾ-ᛞᚢᚱᛝ-ᚪ-ᛚᛖᛋᛋᚩᚾ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᛖᛉᛈᛚᚪᛁᚾᛖᛞ-ᚦᛖ-ᛁ-ᚦᛖ-ᛁ-ᛁᛋ-ᚦᛖ-ᚢᚩᛁᚳᛖ-ᚩᚠ-ᚦᛖ-ᚳᛁᚱᚳᚢᛗᚠᛖᚱᛖᚾᚳᛖ-ᚻᛖ-ᛋᚪᛁᛞ-ᚹᚻᛖᚾ-ᚪᛋᚳᛖᛞ-ᛒᚣ-ᚪ-ᛋᛏᚢᛞᛖᚾᛏ-ᛏᚩ-ᛖᛉᛈᛚᚪᛁᚾ-ᚹᚻᚪᛏ-ᚦᚪᛏ-ᛗᛠᚾᛏ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᛋᚪᛁᛞ-ᛁᛏ-ᛁᛋ-ᚪ-ᚢᚩᛁᚳᛖ-ᛁᚾᛋᛁᛞᛖ-ᚣᚩᚢᚱ-ᚻᛠᛞ-ᛁ-ᛞᚩᚾᛏ-ᚻᚪᚢᛖ-ᚪ-ᚢᚩᛁᚳᛖ-ᛁᚾ-ᛗᚣ-ᚻᛠᛞ-ᚦᚩᚢᚷᚻᛏ-ᚦᛖ-ᛋᛏᚢᛞᛖᚾᛏ-ᚪᚾᛞ-ᚻᛖ-ᚱᚪᛁᛋᛖᛞ-ᚻᛁᛋ-ᚻᚪᚾᛞ-ᛏᚩ-ᛏᛖᛚᛚ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᛋᛏᚩᛈᛈᛖᛞ-ᚦᛖ-ᛋᛏᚢᛞᛖᚾᛏ-ᚪᚾᛞ-ᛋᚪᛁᛞ-ᚦᛖ-ᚢᚩᛁᚳᛖ-ᚦᚪᛏ-ᛄᚢᛋᛏ-ᛋᚪᛁᛞ-ᚣᚩᚢ-ᚻᚪᚢᛖ-ᚾᚩ-ᚢᚩᛁᚳᛖ-ᛁᚾ-ᚣᚩᚢᚱ-ᚻᛠᛞ-ᛁᛋ-ᚦᛖ-ᛁ-ᚪᚾᛞ-ᚦᛖ-ᛋᛏᚢᛞᛖᚾᛏᛋ-ᚹᛖᚱᛖ-ᛖᚾᛚᛁᚷᚻᛏᛖᚾᛖᛞ-
+English Sentence: A-CKOAN-DURING-A-LESSON-THE-MASTER-EXPLAINED-THE-I-THE-I-IS-THE-UOICKE-OF-THE-CKIRCKUMFERENCKE-HE-SAID-WHEN-ASCKED-BY-A-STUDENT-TO-EXPLAIN-WHAT-THAT-MEANT-THE-MASTER-SAID-IT-IS-A-UOICKE-INSIDE-YOUR-HEAD-I-DONT-HAUE-A-UOICKE-IN-MY-HEAD-THOUGHT-THE-STUDENT-AND-HE-RAISED-HIS-HAND-TO-TELL-THE-MASTER-THE-MASTER-STOPPED-THE-STUDENT-AND-SAID-THE-UOICKE-THAT-JUST-SAID-YOU-HAUE-NO-UOICKE-IN-YOUR-HEAD-IS-THE-I-AND-THE-STUDENTS-WERE-ENLIGHTENED-
+Total Characters: 406 | PRIME: false
+Total Runes: 319 | PRIME: false
+Total Spaces: 87 | PRIME: false
+GP Sum: 15331 | PRIME: true
+IoC: 0.04306999939183847
+==========================
+== Line Characteristics
+==========================
+Line: ᚪ-ᚳᚩᚪᚾ.ᛞᚢᚱᛝ-ᚪ-ᛚᛖᛋᛋᚩᚾ-ᚦᛖ-ᛗᚪᛋ
+English Line: A-CKOAN.DURING-A-LESSON-THE-MAS
+Total Characters: 27 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1097 | PRIME: true
+IoC: 0.036923076923076927
+
+Line: ᛏᛖᚱ-ᛖᛉᛈᛚᚪᛁᚾᛖᛞ-ᚦᛖ-ᛁ.ᚦᛖ
+English Line: TER-EXPLAINED-THE-I.THE
+Total Characters: 21 | PRIME: false
+Total Runes: 17 | PRIME: true
+Total Spaces: 3 | PRIME: true
+GP Sum: 855 | PRIME: false
+IoC: 0.06315789473684211
+
+Line: -ᛁ-ᛁᛋ-ᚦᛖ-ᚢᚩᛁᚳᛖ-ᚩᚠ-ᚦᛖ-ᚳᛁᚱᚳᚢ
+English Line: -I-IS-THE-UOICKE-OF-THE-CKIRCKU
+Total Characters: 26 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 7 | PRIME: true
+GP Sum: 460 | PRIME: false
+IoC: 0.046153846153846156
+
+Line: ᛗᚠᛖᚱᛖᚾᚳᛖ-ᚻᛖ-ᛋᚪᛁᛞ.ᚹᚻᛖᚾ-ᚪᛋ
+English Line: MFERENCKE-HE-SAID.WHEN-AS
+Total Characters: 24 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 975 | PRIME: false
+IoC: 0.05533596837944664
+
+Line: ᚳᛖᛞ-ᛒᚣ-ᚪ-ᛋᛏᚢᛞᛖᚾᛏ-ᛏᚩ-ᛖᛉᛈᛚᚪᛁᚾ
+English Line: CKED-BY-A-STUDENT-TO-EXPLAIN
+Total Characters: 27 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1242 | PRIME: false
+IoC: 0.02564102564102564
+
+Line: -ᚹᚻᚪᛏ-ᚦᚪᛏ-ᛗᛠᚾᛏ.ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᛋᚪ
+English Line: -WHAT-THAT-MEANT.THE-MASTER-SA
+Total Characters: 27 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1207 | PRIME: false
+IoC: 0.04923076923076923
+
+Line: ᛁᛞ-ᛁᛏ-ᛁᛋ-ᚪ-ᚢᚩᛁᚳᛖ-ᛁᚾᛋᛁᛞᛖ-ᚣᚩᚢᚱ-ᚻ
+English Line: ID-IT-IS-A-UOICKE-INSIDE-YOUR-H
+Total Characters: 30 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 7 | PRIME: true
+GP Sum: 959 | PRIME: false
+IoC: 0.04597701149425287
+
+Line: ᛠᛞ.ᛁ-ᛞᚩᚾᛏ-ᚻᚪᚢᛖ-ᚪ-ᚢᚩᛁᚳᛖ-ᛁ
+English Line: EAD.I-DONT-HAUE-A-UOICKE-I
+Total Characters: 24 | PRIME: false
+Total Runes: 18 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 852 | PRIME: false
+IoC: 0.03162055335968379
+
+Line: ᚾ-ᛗᚣ-ᚻᛠᛞ-ᚦᚩᚢᚷᚻᛏ-ᚦᛖ-ᛋᛏᚢᛞᛖᚾᛏ-
+English Line: N-MY-HEAD-THOUGHT-THE-STUDENT-
+Total Characters: 27 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 969 | PRIME: false
+IoC: 0.02564102564102564
+
+Line: ᚪᚾᛞ-ᚻᛖ-ᚱᚪᛁᛋᛖᛞ-ᚻᛁᛋ-ᚻᚪᚾᛞ-ᛏᚩ-ᛏᛖ
+English Line: AND-HE-RAISED-HIS-HAND-TO-TE
+Total Characters: 28 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1190 | PRIME: false
+IoC: 0.042328042328042326
+
+Line: ᛚᛚ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ.ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᛋᛏᚩᛈ
+English Line: LL-THE-MASTER.THE-MASTER-STOP
+Total Characters: 27 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1168 | PRIME: false
+IoC: 0.052307692307692305
+
+Line: ᛈᛖᛞ-ᚦᛖ-ᛋᛏᚢᛞᛖᚾᛏ-ᚪᚾᛞ-ᛋᚪᛁᛞ-ᚦᛖ-
+English Line: PED-THE-STUDENT-AND-SAID-THE-
+Total Characters: 27 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1187 | PRIME: true
+IoC: 0.04843304843304843
+
+Line: ᚢᚩᛁᚳᛖ-ᚦᚪᛏ-ᛄᚢᛋᛏ-ᛋᚪᛁᛞ-ᚣᚩᚢ-ᚻᚪᚢ
+English Line: UOICKE-THAT-JUST-SAID-YOU-HAU
+Total Characters: 27 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 940 | PRIME: false
+IoC: 0.037037037037037035
+
+Line: ᛖ-ᚾᚩ-ᚢᚩᛁᚳᛖ-ᛁᚾ-ᚣᚩᚢᚱ-ᚻᛠᛞ-ᛁᛋ-ᚦᛖ-
+English Line: E-NO-UOICKE-IN-YOUR-HEAD-IS-THE-
+Total Characters: 29 | PRIME: true
+Total Runes: 21 | PRIME: false
+Total Spaces: 8 | PRIME: false
+GP Sum: 785 | PRIME: false
+IoC: 0.027093596059113302
+
+Line: ᛁ.ᚪᚾᛞ-ᚦᛖ-ᛋᛏᚢᛞᛖᚾᛏᛋ-ᚹᛖᚱᛖ-ᛖᚾᛚ
+English Line: I.AND-THE-STUDENTS-WERE-ENL
+Total Characters: 26 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1063 | PRIME: true
+IoC: 0.05333333333333334
+
+Line: ᛁᚷᚻᛏᛖᚾᛖᛞ.
+English Line: IGHTENED.
+Total Characters: 9 | PRIME: false
+Total Runes: 8 | PRIME: false
+Total Spaces: 0 | PRIME: true
+GP Sum: 382 | PRIME: false
+IoC: 0.03571428571428571

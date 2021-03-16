@@ -1,19 +1,21 @@
-import 'package:cicadrypt/global/cipher.dart';
-import 'package:flutter/material.dart';
+import 'package:cicadrypt/constants/libertext.dart';
 import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-
 import 'package:supercharged_dart/supercharged_dart.dart';
+import 'package:collection/collection.dart';
+
+import '../../../global/cipher.dart';
 
 class FrequencyBarChart extends StatefulWidget {
-  FrequencyBarChart({Key key}) : super(key: key);
+  const FrequencyBarChart({Key key}) : super(key: key);
 
   @override
   _FrequencyBarChartState createState() => _FrequencyBarChartState();
 }
 
 class _FrequencyBarChartState extends State<FrequencyBarChart> {
-  Map<String, int> frequencies;
+  Map<LiberTextClass, int> frequencies;
 
   final Color barColor = Colors.cyan[300];
   final Color bottomTitleColor = Colors.white;
@@ -29,7 +31,7 @@ class _FrequencyBarChartState extends State<FrequencyBarChart> {
 
   @override
   void initState() {
-    frequencies = GetIt.I<Cipher>().get_character_frequencies(runeOnly: true);
+    frequencies = GetIt.I<Cipher>().get_character_frequencies();
 
     frequencies.keys.forEachIndexed((index, rune) {
       final count = frequencies[rune];
@@ -59,7 +61,6 @@ class _FrequencyBarChartState extends State<FrequencyBarChart> {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const Text('Frequency Graph', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
@@ -79,7 +80,7 @@ class _FrequencyBarChartState extends State<FrequencyBarChart> {
                               margin: 4,
                               getTextStyles: (value) => TextStyle(color: bottomTitleColor, fontWeight: FontWeight.bold, fontSize: 16, fontFamily: 'SegoeUISymbol'),
                               getTitles: (value) {
-                                return frequencies.keys.elementAt(value.toInt());
+                                return frequencies.keys.elementAt(value.toInt()).rune;
                               },
                             ),
                             leftTitles: SideTitles(

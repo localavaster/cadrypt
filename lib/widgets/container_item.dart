@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ContainerItem extends StatelessWidget {
-  const ContainerItem({Key key, this.name, this.value}) : super(key: key);
+  const ContainerItem({Key key, this.name, this.value, this.valueTextStyle}) : super(key: key);
 
   final String name;
 
   final String value;
+  final TextStyle valueTextStyle;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,9 @@ class ContainerItem extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Text(
                       value,
+                      style: valueTextStyle,
                       overflow: TextOverflow.fade,
+                      softWrap: true,
                     ),
                   ),
                 ],

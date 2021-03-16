@@ -1,0 +1,424 @@
+==========================
+== Entire Page Statistics
+==========================
+Total Words: 208 | PRIME: false
+Total Unique Words: 80 | PRIME: false
+Repeated Words: [ᚪ, ᛗᚪᚾ, ᛏᚩ, ᚪᚾᛞ, ᛋᛏᚢᛞᚣ, ᛗᚪᛋᛏᛖᚱ, ᚻᛖ, ᚦᛖ, ᚩᚠ, ᚹᚻᚩ, ᚪᚱᛖ, ᚣᚩᚢ, ᚹᛁᛋᚻᛖᛋ, ᚻᛖᚱᛖ, ᚪᛋᚳᛖᛞ, ᚦᚪᛏ, ᛁᛋ, ᚾᚩᛏ, ᚩᚾᛚᚣ, ᚹᚻᚪᛏ, ᚪᚷᚪᛁᚾ, ᚦᚩᚢᚷᚻᛏ, ᛗᚩᛗᛖᚾᛏ, ᚱᛖᛈᛚᛁᛖᛞ, ᛁ, ᚪᛗ, ᛈᚱᚩᚠᛖᛋᛋᚩᚱ, ᛞᚩ, ᚪᚠᛏᛖᚱ, ᚪᚾ]
+Total Runes: 778 | PRIME: false
+Total Spaces: 208 | PRIME: false
+Total Periods: 0 | PRIME: true
+Total GP sum: 36291 | PRIME: false
+Total Sentences: 1 | PRIME: false
+Total Lines: 42 | PRIME: false
+==========================
+== Character Frequencies
+==========================
+ᚫ 0 | PRIME: true
+ᛄ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛠ 2 | PRIME: true
+ᛡ 2 | PRIME: true
+ᛒ 6 | PRIME: false
+ᛝ 6 | PRIME: false
+ᚷ 7 | PRIME: true
+ᛈ 8 | PRIME: false
+ᚠ 13 | PRIME: true
+ᚳ 16 | PRIME: false
+ᛚ 18 | PRIME: false
+ᚦ 25 | PRIME: false
+ᛗ 26 | PRIME: false
+ᚹ 27 | PRIME: false
+ᚣ 30 | PRIME: false
+ᛁ 33 | PRIME: false
+ᛞ 33 | PRIME: false
+ᚢ 34 | PRIME: false
+ᚾ 37 | PRIME: true
+ᚻ 40 | PRIME: false
+ᚱ 50 | PRIME: false
+ᛋ 56 | PRIME: false
+ᛏ 59 | PRIME: true
+ᚪ 75 | PRIME: false
+ᚩ 77 | PRIME: false
+ᛖ 98 | PRIME: false
+==========================
+== Character Frequencies As Sums
+==========================
+ᚫ 0 | PRIME: true
+ᛄ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛠ 218 | PRIME: false
+ᛡ 214 | PRIME: false
+ᛒ 366 | PRIME: false
+ᛝ 474 | PRIME: false
+ᚷ 119 | PRIME: false
+ᛈ 344 | PRIME: false
+ᚠ 26 | PRIME: false
+ᚳ 208 | PRIME: false
+ᛚ 1314 | PRIME: false
+ᚦ 125 | PRIME: false
+ᛗ 1846 | PRIME: false
+ᚹ 513 | PRIME: false
+ᚣ 3090 | PRIME: false
+ᛁ 1023 | PRIME: false
+ᛞ 2937 | PRIME: false
+ᚢ 102 | PRIME: false
+ᚾ 1073 | PRIME: false
+ᚻ 920 | PRIME: false
+ᚱ 550 | PRIME: false
+ᛋ 2968 | PRIME: false
+ᛏ 3481 | PRIME: false
+ᚪ 7275 | PRIME: false
+ᚩ 539 | PRIME: false
+ᛖ 6566 | PRIME: false
+==========================
+== Sentence Characteristics
+==========================
+Sentence: ᚪ-ᚳᚩᚪᚾ-ᚪ-ᛗᚪᚾ-ᛞᛖᚳᛁᛞᛖᛞ-ᛏᚩ-ᚷᚩ-ᚪᚾᛞ-ᛋᛏᚢᛞᚣ-ᚹᛁᚦ-ᚪ-ᛗᚪᛋᛏᛖᚱ-ᚻᛖ-ᚹᛖᚾᛏ-ᛏᚩ-ᚦᛖ-ᛞᚩᚩᚱ-ᚩᚠ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᚹᚻᚩ-ᚪᚱᛖ-ᚣᚩᚢ-ᚹᚻᚩ-ᚹᛁᛋᚻᛖᛋ-ᛏᚩ-ᛋᛏᚢᛞᚣ-ᚻᛖᚱᛖ-ᚪᛋᚳᛖᛞ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᚦᛖ-ᛋᛏᚢᛞᛖᚾᛏ-ᛏᚩᛚᛞ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᚻᛁᛋ-ᚾᚪᛗᛖ-ᚦᚪᛏ-ᛁᛋ-ᚾᚩᛏ-ᚹᚻᚩ-ᚣᚩᚢ-ᚪᚱᛖ-ᚦᚪᛏ-ᛁᛋ-ᚩᚾᛚᚣ-ᚹᚻᚪᛏ-ᚣᚩᚢ-ᚪᚱᛖ-ᚳᚪᛚᛚᛖᛞ-ᚹᚻᚩ-ᚪᚱᛖ-ᚣᚩᚢ-ᚹᚻᚩ-ᚹᛁᛋᚻᛖᛋ-ᛏᚩ-ᛋᛏᚢᛞᚣ-ᚻᛖᚱᛖ-ᚻᛖ-ᚪᛋᚳᛖᛞ-ᚪᚷᚪᛁᚾ-ᚦᛖ-ᛗᚪᚾ-ᚦᚩᚢᚷᚻᛏ-ᚠᚩᚱ-ᚪ-ᛗᚩᛗᛖᚾᛏ-ᚪᚾᛞ-ᚱᛖᛈᛚᛁᛖᛞ-ᛁ-ᚪᛗ-ᚪ-ᛈᚱᚩᚠᛖᛋᛋᚩᚱ-ᚦᚪᛏ-ᛁᛋ-ᚹᚻᚪᛏ-ᚣᚩᚢ-ᛞᚩ-ᚾᚩᛏ-ᚹᚻᚩ-ᚣᚩᚢ-ᚪᚱᛖ-ᚱᛖᛈᛚᛁᛖᛞ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᚹᚻᚩ-ᚪᚱᛖ-ᚣᚩᚢ-ᚹᚻᚩ-ᚹᛁᛋᚻᛖᛋ-ᛏᚩ-ᛋᛏᚢᛞᚣ-ᚻᛖᚱᛖ-ᚳᚩᚾᚠᚢᛋᛖᛞ-ᚦᛖ-ᛗᚪᚾ-ᚦᚩᚢᚷᚻᛏ-ᛋᚩᛗᛖ-ᛗᚩᚱᛖ-ᚠᛁᚾᚪᛚᛚᚣ-ᚻᛖ-ᚪᚾᛋᚹᛖᚱᛖᛞ-ᛁ-ᚪᛗ-ᚪ-ᚻᚢᛗᚪᚾ-ᛒᛖᛝ-ᚦᚪᛏ-ᛁᛋ-ᚩᚾᛚᚣ-ᚣᚩᚢᚱ-ᛋᛈᛖᚳᛁᛖᛋ-ᚾᚩᛏ-ᚹᚻᚩ-ᚣᚩᚢ-ᚪᚱᛖ-ᚹᚻᚩ-ᚪᚱᛖ-ᚣᚩᚢ-ᚹᚻᚩ-ᚹᛁᛋᚻᛖᛋ-ᛏᚩ-ᛋᛏᚢᛞᚣ-ᚻᛖᚱᛖ-ᚪᛋᚳᛖᛞ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᚪᚷᚪᛁᚾ-ᚪᚠᛏᛖᚱ-ᚪ-ᛗᚩᛗᛖᚾᛏ-ᚩᚠ-ᚦᚩᚢᚷᚻᛏ-ᚦᛖ-ᛈᚱᚩᚠᛖᛋᛋᚩᚱ-ᚱᛖᛈᛚᛁᛖᛞ-ᛁ-ᚪᛗ-ᚪ-ᚳᚩᚾᛋᚳᛡᚢᛋᚾᛖᛋᛋ-ᛁᚾᚻᚪᛒᛁᛏᛝ-ᚪᚾ-ᚪᚱᛒᛁᛏᚱᚪᚱᚣ-ᛒᚩᛞᚣ-ᚦᚪᛏ-ᛁᛋ-ᛗᛖᚱᛖᛚᚣ-ᚹᚻᚪᛏ-ᚣᚩᚢ-ᚪᚱᛖ-ᚾᚩᛏ-ᚹᚻᚩ-ᚣᚩᚢ-ᚪᚱᛖ-ᚹᚻᚩ-ᚪᚱᛖ-ᚣᚩᚢ-ᚹᚻᚩ-ᚹᛁᛋᚻᛖᛋ-ᛏᚩ-ᛋᛏᚢᛞᚣ-ᚻᛖᚱᛖ-ᚦᛖ-ᛗᚪᚾ-ᚹᚪᛋ-ᚷᛖᛏᛏᛝ-ᛁᚱᚱᛁᛏᚪᛏᛖᛞ-ᛁ-ᚪᛗ-ᚻᛖ-ᛋᛏᚪᚱᛏᛖᛞ-ᛒᚢᛏ-ᚻᛖ-ᚳᚩᚢᛚᛞ-ᚾᚩᛏ-ᚦᛁᚾᚳ-ᚩᚠ-ᚪᚾᚣᚦᛝ-ᛖᛚᛋᛖ-ᛏᚩ-ᛋᚪᚣ-ᛋᚩ-ᚻᛖ-ᛏᚱᚪᛁᛚᛖᛞ-ᚩᚠᚠ-ᚪᚠᛏᛖᚱ-ᚪ-ᛚᚩᛝ-ᛈᚪᚢᛋᛖ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᚱᛖᛈᛚᛁᛖᛞ-ᚦᛖᚾ-ᚣᚩᚢ-ᚪᚱᛖ-ᚹᛖᛚᚳᚩᛗᛖ-ᛏᚩ-ᚳᚩᛗᛖ-ᛋᛏᚢᛞᚣ-ᚪᚾ-ᛁᚾᛋᛏᚱᚢᚳᛏᛡᚾ-ᛞᚩ-ᚠᚩᚢᚱ-ᚢᚾᚱᛠᛋᚩᚾᚪᛒᛚᛖ-ᚦᛝᛋ-ᛠᚳᚻ-ᛞᚪᚣ-
+English Sentence: A-CKOAN-A-MAN-DECKIDED-TO-GO-AND-STUDY-WITH-A-MASTER-HE-WENT-TO-THE-DOOR-OF-THE-MASTER-WHO-ARE-YOU-WHO-WISHES-TO-STUDY-HERE-ASCKED-THE-MASTER-THE-STUDENT-TOLD-THE-MASTER-HIS-NAME-THAT-IS-NOT-WHO-YOU-ARE-THAT-IS-ONLY-WHAT-YOU-ARE-CKALLED-WHO-ARE-YOU-WHO-WISHES-TO-STUDY-HERE-HE-ASCKED-AGAIN-THE-MAN-THOUGHT-FOR-A-MOMENT-AND-REPLIED-I-AM-A-PROFESSOR-THAT-IS-WHAT-YOU-DO-NOT-WHO-YOU-ARE-REPLIED-THE-MASTER-WHO-ARE-YOU-WHO-WISHES-TO-STUDY-HERE-CKONFUSED-THE-MAN-THOUGHT-SOME-MORE-FINALLY-HE-ANSWERED-I-AM-A-HUMAN-BEING-THAT-IS-ONLY-YOUR-SPECKIES-NOT-WHO-YOU-ARE-WHO-ARE-YOU-WHO-WISHES-TO-STUDY-HERE-ASCKED-THE-MASTER-AGAIN-AFTER-A-MOMENT-OF-THOUGHT-THE-PROFESSOR-REPLIED-I-AM-A-CKONSCKIOUSNESS-INHABITING-AN-ARBITRARY-BODY-THAT-IS-MERELY-WHAT-YOU-ARE-NOT-WHO-YOU-ARE-WHO-ARE-YOU-WHO-WISHES-TO-STUDY-HERE-THE-MAN-WAS-GETTING-IRRITATED-I-AM-HE-STARTED-BUT-HE-CKOULD-NOT-THINCK-OF-ANYTHING-ELSE-TO-SAY-SO-HE-TRAILED-OFF-AFTER-A-LOING-PAUSE-THE-MASTER-REPLIED-THEN-YOU-ARE-WELCKOME-TO-CKOME-STUDY-AN-INSTRUCKTION-DO-FOUR-UNREASONABLE-THINGS-EACKH-DAY-
+Total Characters: 986 | PRIME: false
+Total Runes: 778 | PRIME: false
+Total Spaces: 208 | PRIME: false
+GP Sum: 36291 | PRIME: false
+IoC: 0.04084801433263661
+==========================
+== Line Characteristics
+==========================
+Line: ᚪ-ᚳᚩᚪᚾ.ᚪ-ᛗᚪᚾ-ᛞᛖᚳᛁᛞᛖᛞ-ᛏᚩ-
+English Line: A-CKOAN.A-MAN-DECKIDED-TO-
+Total Characters: 24 | PRIME: false
+Total Runes: 18 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1048 | PRIME: false
+IoC: 0.05138339920948617
+
+Line: ᚷᚩ-ᚪᚾᛞ-ᛋᛏᚢᛞᚣ-ᚹᛁᚦ-ᚪ-ᛗᚪᛋᛏᛖ
+English Line: GO-AND-STUDY-WITH-A-MASTE
+Total Characters: 24 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 1045 | PRIME: false
+IoC: 0.021739130434782608
+
+Line: ᚱ.ᚻᛖ-ᚹᛖᚾᛏ-ᛏᚩ-ᚦᛖ-ᛞᚩᚩᚱ-
+English Line: R.HE-WENT-TO-THE-DOOR-
+Total Characters: 21 | PRIME: false
+Total Runes: 15 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 527 | PRIME: false
+IoC: 0.042105263157894736
+
+Line: ᚩᚠ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ.ᚹᚻᚩ-ᚪᚱᛖ-ᚣᚩ
+English Line: OF-THE-MASTER.WHO-ARE-YO
+Total Characters: 23 | PRIME: true
+Total Runes: 18 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 773 | PRIME: true
+IoC: 0.03463203463203463
+
+Line: ᚢ-ᚹᚻᚩ-ᚹᛁᛋᚻᛖᛋ-ᛏᚩ-ᛋᛏᚢᛞᚣ-ᚻᛖᚱ
+English Line: U-WHO-WISHES-TO-STUDY-HER
+Total Characters: 25 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 772 | PRIME: false
+IoC: 0.03666666666666667
+
+Line: ᛖ-ᚪᛋᚳᛖᛞ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ.ᚦᛖ-ᛋᛏᚢᛞᛖ
+English Line: E-ASCKED-THE-MASTER.THE-STUDE
+Total Characters: 26 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1159 | PRIME: false
+IoC: 0.07333333333333333
+
+Line: ᚾᛏ-ᛏᚩᛚᛞ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᚻᛁᛋ-ᚾᚪᛗᛖ.
+English Line: NT-TOLD-THE-MASTER-HIS-NAME.
+Total Characters: 27 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1117 | PRIME: true
+IoC: 0.03076923076923077
+
+Line: ᚦᚪᛏ-ᛁᛋ-ᚾᚩᛏ-ᚹᚻᚩ-ᚣᚩᚢ-ᚪᚱᛖ-ᚦᚪ
+English Line: THAT-IS-NOT-WHO-YOU-ARE-THA
+Total Characters: 25 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 6 | PRIME: false
+GP Sum: 779 | PRIME: false
+IoC: 0.02666666666666667
+
+Line: ᛏ-ᛁᛋ-ᚩᚾᛚᚣ-ᚹᚻᚪᛏ-ᚣᚩᚢ-ᚪᚱᛖ-ᚳᚪᛚ
+English Line: T-IS-ONLY-WHAT-YOU-ARE-CKAL
+Total Characters: 26 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1024 | PRIME: false
+IoC: 0.021538461538461538
+
+Line: ᛚᛖᛞ.ᚹᚻᚩ-ᚪᚱᛖ-ᚣᚩᚢ-ᚹᚻᚩ-ᚹᛁᛋᚻ
+English Line: LED.WHO-ARE-YOU-WHO-WISH
+Total Characters: 24 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 741 | PRIME: false
+IoC: 0.039525691699604744
+
+Line: ᛖᛋ-ᛏᚩ-ᛋᛏᚢᛞᚣ-ᚻᛖᚱᛖ-ᚻᛖ-ᚪᛋᚳᛖ
+English Line: ES-TO-STUDY-HERE-HE-ASCKE
+Total Characters: 24 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 981 | PRIME: false
+IoC: 0.05434782608695652
+
+Line: ᛞ-ᚪᚷᚪᛁᚾ.ᚦᛖ-ᛗᚪᚾ-ᚦᚩᚢᚷᚻᛏ-ᚠᚩᚱ-ᚪ-
+English Line: D-AGAIN.THE-MAN-THOUGHT-FOR-A-
+Total Characters: 28 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 860 | PRIME: false
+IoC: 0.02849002849002849
+
+Line: ᛗᚩᛗᛖᚾᛏ-ᚪᚾᛞ-ᚱᛖᛈᛚᛁᛖᛞ-ᛁ-ᚪᛗ-ᚪ-
+English Line: MOMENT-AND-REPLIED-I-AM-A-
+Total Characters: 26 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1196 | PRIME: false
+IoC: 0.036923076923076927
+
+Line: ᛈᚱᚩᚠᛖᛋᛋᚩᚱ.ᚦᚪᛏ-ᛁᛋ-ᚹᚻᚪᛏ-
+English Line: PROFESSOR.THAT-IS-WHAT-
+Total Characters: 22 | PRIME: false
+Total Runes: 18 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 697 | PRIME: false
+IoC: 0.03333333333333333
+
+Line: ᚣᚩᚢ-ᛞᚩ-ᚾᚩᛏ-ᚹᚻᚩ-ᚣᚩᚢ-ᚪᚱᛖ-
+English Line: YOU-DO-NOT-WHO-YOU-ARE-
+Total Characters: 23 | PRIME: true
+Total Runes: 17 | PRIME: true
+Total Spaces: 6 | PRIME: false
+GP Sum: 641 | PRIME: true
+IoC: 0.04743083003952569
+
+Line: ᚱᛖᛈᛚᛁᛖᛞ-ᚦᛖ-ᛗᚪᛋᛏᛖᚱ.ᚹᚻᚩ-ᚪᚱ
+English Line: REPLIED-THE-MASTER.WHO-AR
+Total Characters: 24 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 968 | PRIME: false
+IoC: 0.039525691699604744
+
+Line: ᛖ-ᚣᚩᚢ-ᚹᚻᚩ-ᚹᛁᛋᚻᛖᛋ-ᛏᚩ-ᛋᛏᚢᛞ
+English Line: E-YOU-WHO-WISHES-TO-STUD
+Total Characters: 24 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 745 | PRIME: false
+IoC: 0.03985507246376811
+
+Line: ᚣ-ᚻᛖᚱᛖ.ᚳᚩᚾᚠᚢᛋᛖᛞ-ᚦᛖ-ᛗᚪᚾ-ᚦ
+English Line: Y-HERE.CKONFUSED-THE-MAN-TH
+Total Characters: 24 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 808 | PRIME: false
+IoC: 0.03162055335968379
+
+Line: ᚩᚢᚷᚻᛏ-ᛋᚩᛗᛖ-ᛗᚩᚱᛖ.ᚠᛁᚾᚪᛚᛚᚣ-
+English Line: OUGHT-SOME-MORE.FINALLY-
+Total Characters: 24 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 871 | PRIME: false
+IoC: 0.023715415019762844
+
+Line: ᚻᛖ-ᚪᚾᛋᚹᛖᚱᛖᛞ-ᛁ-ᚪᛗ-ᚪ-ᚻᚢᛗᚪᚾ-ᛒ
+English Line: HE-ANSWERED-I-AM-A-HUMAN-B
+Total Characters: 26 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1102 | PRIME: false
+IoC: 0.036923076923076927
+
+Line: ᛖᛝ.ᚦᚪᛏ-ᛁᛋ-ᚩᚾᛚᚣ-ᚣᚩᚢᚱ-ᛋᛈᛖ
+English Line: EING.THAT-IS-ONLY-YOUR-SPE
+Total Characters: 23 | PRIME: true
+Total Runes: 18 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 890 | PRIME: false
+IoC: 0.017316017316017316
+
+Line: ᚳᛁᛖᛋ-ᚾᚩᛏ-ᚹᚻᚩ-ᚣᚩᚢ-ᚪᚱᛖ.ᚹᚻ
+English Line: CKIES-NOT-WHO-YOU-ARE.WH
+Total Characters: 23 | PRIME: true
+Total Runes: 18 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 638 | PRIME: false
+IoC: 0.025974025974025976
+
+Line: ᚩ-ᚪᚱᛖ-ᚣᚩᚢ-ᚹᚻᚩ-ᚹᛁᛋᚻᛖᛋ-ᛏᚩ-
+English Line: O-ARE-YOU-WHO-WISHES-TO-
+Total Characters: 24 | PRIME: false
+Total Runes: 18 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 656 | PRIME: false
+IoC: 0.036231884057971016
+
+Line: ᛋᛏᚢᛞᚣ-ᚻᛖᚱᛖ-ᚪᛋᚳᛖᛞ-ᚦᛖ-ᛗᚪᛋᛏᛖ
+English Line: STUDY-HERE-ASCKED-THE-MASTE
+Total Characters: 25 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1213 | PRIME: true
+IoC: 0.05333333333333334
+
+Line: ᚱ-ᚪᚷᚪᛁᚾ.ᚪᚠᛏᛖᚱ-ᚪ-ᛗᚩᛗᛖᚾᛏ-ᚩᚠ-ᚦ
+English Line: R-AGAIN.AFTER-A-MOMENT-OF-TH
+Total Characters: 27 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 933 | PRIME: false
+IoC: 0.04
+
+Line: ᚩᚢᚷᚻᛏ-ᚦᛖ-ᛈᚱᚩᚠᛖᛋᛋᚩᚱ-ᚱᛖᛈᛚ
+English Line: OUGHT-THE-PROFESSOR-REPL
+Total Characters: 23 | PRIME: true
+Total Runes: 20 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 629 | PRIME: false
+IoC: 0.043478260869565216
+
+Line: ᛁᛖᛞ-ᛁ-ᚪᛗ-ᚪ-ᚳᚩᚾᛋᚳᛡᚢᛋᚾᛖᛋᛋ-ᛁ
+English Line: IED-I-AM-A-CKONSCKIOUSNESS-I
+Total Characters: 25 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 994 | PRIME: false
+IoC: 0.043333333333333335
+
+Line: ᚾᚻᚪᛒᛁᛏᛝ-ᚪᚾ-ᚪᚱᛒᛁᛏᚱᚪᚱᚣ-ᛒᚩᛞᚣ
+English Line: NHABITING-AN-ARBITRARY-BODY
+Total Characters: 25 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 1246 | PRIME: false
+IoC: 0.05333333333333334
+
+Line: .ᚦᚪᛏ-ᛁᛋ-ᛗᛖᚱᛖᛚᚣ-ᚹᚻᚪᛏ-ᚣᚩᚢ-ᚪ
+English Line: .THAT-IS-MERELY-WHAT-YOU-A
+Total Characters: 25 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 1045 | PRIME: false
+IoC: 0.021739130434782608
+
+Line: ᚱᛖ-ᚾᚩᛏ-ᚹᚻᚩ-ᚣᚩᚢ-ᚪᚱᛖ.ᚹᚻᚩ-ᚪ
+English Line: RE-NOT-WHO-YOU-ARE.WHO-A
+Total Characters: 24 | PRIME: false
+Total Runes: 18 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 656 | PRIME: false
+IoC: 0.043478260869565216
+
+Line: ᚱᛖ-ᚣᚩᚢ-ᚹᚻᚩ-ᚹᛁᛋᚻᛖᛋ-ᛏᚩ-ᛋᛏᚢ
+English Line: RE-YOU-WHO-WISHES-TO-STU
+Total Characters: 24 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 667 | PRIME: false
+IoC: 0.03985507246376811
+
+Line: ᛞᚣ-ᚻᛖᚱᛖ.ᚦᛖ-ᛗᚪᚾ-ᚹᚪᛋ-ᚷᛖᛏᛏᛝ-ᛁᚱ
+English Line: DY-HERE.THE-MAN-WAS-GETTING-IR
+Total Characters: 27 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1121 | PRIME: false
+IoC: 0.027692307692307693
+
+Line: ᚱᛁᛏᚪᛏᛖᛞ.ᛁ-ᚪᛗ-ᚻᛖ-ᛋᛏᚪᚱᛏᛖᛞ-
+English Line: RITATED.I-AM-HE-STARTED-
+Total Characters: 24 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 1137 | PRIME: false
+IoC: 0.05928853754940711
+
+Line: ᛒᚢᛏ-ᚻᛖ-ᚳᚩᚢᛚᛞ-ᚾᚩᛏ-ᚦᛁᚾᚳ-ᚩᚠ-
+English Line: BUT-HE-CKOULD-NOT-THINCK-OF-
+Total Characters: 25 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 6 | PRIME: false
+GP Sum: 580 | PRIME: false
+IoC: 0.023333333333333334
+
+Line: ᚪᚾᚣᚦᛝ-ᛖᛚᛋᛖ-ᛏᚩ-ᛋᚪᚣ-ᛋᚩ-ᚻᛖ-ᛏᚱᚪ
+English Line: ANYTHING-ELSE-TO-SAY-SO-HE-TRA
+Total Characters: 27 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1209 | PRIME: false
+IoC: 0.03418803418803419
+
+Line: ᛁᛚᛖᛞ-ᚩᚠᚠ.ᚪᚠᛏᛖᚱ-ᚪ-ᛚᚩᛝ-ᛈᚪᚢᛋᛖ-
+English Line: ILED-OFF.AFTER-A-LOING-PAUSE-
+Total Characters: 27 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1026 | PRIME: false
+IoC: 0.033846153846153845
+
+Line: ᚦᛖ-ᛗᚪᛋᛏᛖᚱ-ᚱᛖᛈᛚᛁᛖᛞ-ᚦᛖᚾ-ᚣᚩ
+English Line: THE-MASTER-REPLIED-THEN-YO
+Total Characters: 24 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1022 | PRIME: false
+IoC: 0.043478260869565216
+
+Line: ᚢ-ᚪᚱᛖ-ᚹᛖᛚᚳᚩᛗᛖ-ᛏᚩ-ᚳᚩᛗᛖ-ᛋᛏᚢ
+English Line: U-ARE-WELCKOME-TO-CKOME-STU
+Total Characters: 25 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 834 | PRIME: false
+IoC: 0.043333333333333335
+
+Line: ᛞᚣ.
+English Line: DY.
+Total Characters: 3 | PRIME: true
+Total Runes: 2 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 192 | PRIME: false
+IoC: 0.0
+
+Line: ᚪᚾ-ᛁᚾᛋᛏᚱᚢᚳᛏᛡᚾ.ᛞᚩ-ᚠᚩᚢᚱ-
+English Line: AN-INSTRUCKTION.DO-FOUR-
+Total Characters: 22 | PRIME: false
+Total Runes: 18 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 639 | PRIME: false
+IoC: 0.03333333333333333
+
+Line: ᚢᚾᚱᛠᛋᚩᚾᚪᛒᛚᛖ-ᚦᛝᛋ-ᛠᚳᚻ-ᛞᚪ
+English Line: UNREASONABLE-THINGS-EACKH-DA
+Total Characters: 22 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 3 | PRIME: true
+GP Sum: 1007 | PRIME: false
+IoC: 0.017316017316017316
+
+Line: ᚣ.
+English Line: Y.
+Total Characters: 2 | PRIME: true
+Total Runes: 1 | PRIME: false
+Total Spaces: 0 | PRIME: true
+GP Sum: 103 | PRIME: true
+IoC: 0.0

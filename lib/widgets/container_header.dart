@@ -10,6 +10,7 @@ class ContainerHeader extends StatelessWidget {
     return Material(
       color: Colors.black.withOpacity(0.33),
       shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).cardColor, width: 0.5)),
+      elevation: 1,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 2.0, horizontal: 2.0),
         child: Column(

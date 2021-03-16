@@ -1,11 +1,13 @@
 import 'package:supercharged_dart/supercharged_dart.dart';
+import 'package:collection/collection.dart';
 
 class Sequence {
-  final List<int> sequence;
   Sequence({this.sequence});
 
+  final List<int> sequence;
+
   int sum() {
-    return sequence.sum();
+    return sequence.sum;
   }
 
   Sequence get unique_numbers => Sequence(sequence: sequence.toSet().toList());
@@ -18,7 +20,7 @@ class Sequence {
         final int current = sequence[i];
         final int next = sequence[i + 1];
 
-        differences.add((next - current));
+        differences.add(next - current);
       } catch (e) {
         // end of list
       }

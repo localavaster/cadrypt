@@ -1,7 +1,9 @@
-import 'package:cicadrypt/constants/runes.dart';
-import 'package:cicadrypt/models/magic_square_match.dart';
-import 'package:cicadrypt/models/magic_square_settings.dart';
 import 'package:supercharged_dart/supercharged_dart.dart';
+
+import '../constants/runes.dart';
+import '../models/magic_square_match.dart';
+import '../models/magic_square_settings.dart';
+import 'package:collection/collection.dart';
 
 class MagicSquareCrib {
   final MagicSquareCribSettings settings;
@@ -29,7 +31,7 @@ class MagicSquareCrib {
         primeListOfWord.add(prime);
       }
 
-      final int sum = primeListOfWord.sum();
+      final int sum = primeListOfWord.sum;
 
       if (sum != magicNumber) continue wordLoop;
 

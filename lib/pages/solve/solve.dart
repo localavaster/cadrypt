@@ -1,19 +1,10 @@
-import 'package:cicadrypt/models/console_state.dart';
-import 'package:cicadrypt/models/crib_match.dart';
-import 'package:cicadrypt/models/crib_settings.dart';
-import 'package:cicadrypt/pages/solve/solve_state.dart';
-import 'package:cicadrypt/services/crib.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:get_it/get_it.dart';
-import 'package:sortedmap/sortedmap.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
 
-import '../../global/cipher.dart';
+import 'solve_state.dart';
 
 class SolvePage extends StatefulWidget {
-  SolvePage({Key key}) : super(key: key);
+  const SolvePage({Key key}) : super(key: key);
 
   @override
   _SolvePageState createState() => _SolvePageState();
@@ -68,7 +59,7 @@ class _SolvePageState extends State<SolvePage> with AutomaticKeepAliveClientMixi
                                   border: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
                                   focusedBorder: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
                                 ),
-                                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+                                style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600, fontFamily: 'RobotoMono'),
                                 textAlignVertical: TextAlignVertical.top,
                                 cursorWidth: 1,
                                 cursorColor: Colors.cyan,
@@ -105,7 +96,7 @@ class _SolvePageState extends State<SolvePage> with AutomaticKeepAliveClientMixi
                                   border: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
                                   focusedBorder: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
                                 ),
-                                style: TextStyle(fontSize: 14),
+                                style: const TextStyle(fontSize: 14),
                                 textAlignVertical: TextAlignVertical.top,
                                 cursorWidth: 1,
                                 cursorColor: Colors.cyan,
@@ -115,7 +106,7 @@ class _SolvePageState extends State<SolvePage> with AutomaticKeepAliveClientMixi
                                 controller: state.console.controller,
                               ),
                             ),
-                            SizedBox(height: 8),
+                            const SizedBox(height: 8),
                             RawKeyboardListener(
                               onKey: (event) {
                                 final event_type = event.runtimeType;
@@ -138,7 +129,7 @@ class _SolvePageState extends State<SolvePage> with AutomaticKeepAliveClientMixi
                                   border: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
                                   focusedBorder: const OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
                                 ),
-                                style: TextStyle(fontSize: 14),
+                                style: const TextStyle(fontSize: 14),
                                 textAlignVertical: TextAlignVertical.top,
                                 cursorWidth: 1,
                                 cursorColor: Colors.cyan,

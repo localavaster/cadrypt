@@ -1,0 +1,144 @@
+==========================
+== Entire Page Statistics
+==========================
+Total Words: 31 | PRIME: true
+Total Unique Words: 31 | PRIME: true
+Repeated Words: []
+Total Runes: 137 | PRIME: true
+Total Spaces: 32 | PRIME: false
+Total Periods: 0 | PRIME: true
+Total GP sum: 7503 | PRIME: false
+Total Sentences: 1 | PRIME: false
+Total Lines: 7 | PRIME: true
+==========================
+== Character Frequencies
+==========================
+ᛁ 1 | PRIME: false
+ᚠ 2 | PRIME: true
+ᛄ 2 | PRIME: true
+ᛗ 2 | PRIME: true
+ᚹ 3 | PRIME: true
+ᛇ 3 | PRIME: true
+ᛏ 3 | PRIME: true
+ᛒ 3 | PRIME: true
+ᛖ 3 | PRIME: true
+ᚢ 4 | PRIME: false
+ᚩ 4 | PRIME: false
+ᚫ 4 | PRIME: false
+ᚱ 4 | PRIME: false
+ᛞ 4 | PRIME: false
+ᚪ 5 | PRIME: true
+ᚷ 5 | PRIME: true
+ᛈ 5 | PRIME: true
+ᛚ 5 | PRIME: true
+ᛝ 5 | PRIME: true
+ᚦ 6 | PRIME: false
+ᚻ 6 | PRIME: false
+ᚾ 6 | PRIME: false
+ᛟ 6 | PRIME: false
+ᛠ 6 | PRIME: false
+ᚣ 7 | PRIME: true
+ᚳ 7 | PRIME: true
+ᛉ 8 | PRIME: false
+ᛋ 9 | PRIME: false
+ᛡ 9 | PRIME: false
+==========================
+== Character Frequencies As Sums
+==========================
+ᛁ 31 | PRIME: true
+ᚠ 4 | PRIME: false
+ᛄ 74 | PRIME: false
+ᛗ 142 | PRIME: false
+ᚹ 57 | PRIME: false
+ᛇ 123 | PRIME: false
+ᛏ 177 | PRIME: false
+ᛒ 183 | PRIME: false
+ᛖ 201 | PRIME: false
+ᚢ 12 | PRIME: false
+ᚩ 28 | PRIME: false
+ᚫ 404 | PRIME: false
+ᚱ 44 | PRIME: false
+ᛞ 356 | PRIME: false
+ᚪ 485 | PRIME: false
+ᚷ 85 | PRIME: false
+ᛈ 215 | PRIME: false
+ᛚ 365 | PRIME: false
+ᛝ 395 | PRIME: false
+ᚦ 30 | PRIME: false
+ᚻ 138 | PRIME: false
+ᚾ 174 | PRIME: false
+ᛟ 498 | PRIME: false
+ᛠ 654 | PRIME: false
+ᚣ 721 | PRIME: false
+ᚳ 91 | PRIME: false
+ᛉ 376 | PRIME: false
+ᛋ 477 | PRIME: false
+ᛡ 963 | PRIME: false
+==========================
+== Sentence Characteristics
+==========================
+Sentence: -ᛏᛄ-ᚠᚩᛚᛞ-ᚾᚷᚳ-ᛚᚷᛗ-ᛠᚦᚢ-ᛟᚻᚾᛟᚣᛡ-ᛇᚻᚣᚪᛈ-ᚾᛋ-ᛞᚫᛠᚳᛉᛄ-ᚦᚹᛋᚱᚦᚫᚾ-ᛡᛚᚣᚫᛋᛖ-ᛟᚣᛝᛡ-ᚦᚣᚷᛇᚱ-ᛋᛠᛏ-ᛡᚳᛉ-ᛠᚷ-ᚳᛒᛋ-ᚹᚾᚻᛖᛝᛋ-ᚩᛡᛗᛉᛝ-ᛉᚦ-ᛠᛞᚳᛒᚷᛉᚹᛝᚢ-ᛉᛞᛈ-ᛉᛡᛈᛟ-ᚾᛡᚠᛡᚢᛋ-ᛉᚪᛖᚻᚱᚣᛠᛇ-ᛒᛟ-ᚪᛝᛡ-ᚳᚱᚳᛈᚩᛏ-ᚻᚣᚫᛁᛋᚩᚦᛚ-ᛟᛚ-ᛋᚪᚢᚪᛈᚻ-
+English Sentence: -TJ-FOLD-NGCK-LGM-EATHU-OEHNOEYIO-EOHYAP-NS-DAEEACKXJ-THWSRTHAEN-IOLYAESE-OEYINGIO-THYGEOR-SEAT-IOCKX-EAG-CKBS-WNHEINGS-OIOMXING-XTH-EADCKBGXWINGU-XDP-XIOPOE-NIOFIOUS-XAEHRYEAEO-BOE-AINGIO-CKRCKPOT-HYAEISOTHL-OEL-SAUAPH-
+Total Characters: 169 | PRIME: false
+Total Runes: 137 | PRIME: true
+Total Spaces: 32 | PRIME: false
+GP Sum: 7503 | PRIME: false
+IoC: 0.022189349112426034
+==========================
+== Line Characteristics
+==========================
+Line: -ᛏᛄ-ᚠᚩᛚᛞ-ᚾᚷᚳ-ᛚᚷᛗ-ᛠᚦᚢ-ᛟᚻᚾᛟᚣᛡ.
+English Line: -TJ-FOLD-NGCK-LGM-EATHU-OEHNOEYIO.
+Total Characters: 28 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1032 | PRIME: false
+IoC: 0.011396011396011397
+
+Line: ᛇᚻᚣᚪᛈ-ᚾᛋ.ᛞᚫᛠᚳᛉᛄ-ᚦᚹᛋᚱᚦᚫᚾ-ᛡᛚᚣ
+English Line: EOHYAP-NS.DAEEACKXJ-THWSRTHAEN-IOLY
+Total Characters: 27 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 3 | PRIME: true
+GP Sum: 1291 | PRIME: true
+IoC: 0.015384615384615385
+
+Line: ᚫᛋᛖ-ᛟᚣᛝᛡ-ᚦᚣᚷᛇᚱ-ᛋᛠᛏ-ᛡᚳᛉ-ᛠᚷ-
+English Line: AESE-OEYINGIO-THYGEOR-SEAT-IOCKX-EAG-
+Total Characters: 26 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1284 | PRIME: false
+IoC: 0.015384615384615385
+
+Line: ᚳᛒᛋ-ᚹᚾᚻᛖᛝᛋ-ᚩᛡᛗᛉᛝ-ᛉᚦ-ᛠᛞᚳᛒᚷ
+English Line: CKBS-WNHEINGS-OIOMXING-XTH-EADCKBG
+Total Characters: 25 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1049 | PRIME: true
+IoC: 0.016666666666666666
+
+Line: ᛉᚹᛝᚢ-ᛉᛞᛈ.ᛉᛡᛈᛟ-ᚾᛡᚠᛡᚢᛋ-ᛉᚪᛖ
+English Line: XWINGU-XDP.XIOPOE-NIOFIOUS-XAE
+Total Characters: 24 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 1119 | PRIME: false
+IoC: 0.043478260869565216
+
+Line: ᚻᚱᚣᛠᛇ-ᛒᛟ-ᚪᛝᛡ-ᚳᚱᚳᛈᚩᛏ-ᚻᚣᚫᛁᛋᚩᚦᛚ
+English Line: HRYEAEO-BOE-AINGIO-CKRCKPOT-HYAEISOTHL
+Total Characters: 28 | PRIME: false
+Total Runes: 24 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1256 | PRIME: false
+IoC: 0.013227513227513227
+
+Line: -ᛟᛚ-ᛋᚪᚢᚪᛈᚻ.
+English Line: -OEL-SAUAPH.
+Total Characters: 11 | PRIME: true
+Total Runes: 8 | PRIME: false
+Total Spaces: 2 | PRIME: true
+GP Sum: 472 | PRIME: false
+IoC: 0.022222222222222223

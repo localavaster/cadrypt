@@ -1,11 +1,12 @@
 import 'dart:io';
 
-import 'package:cicadrypt/constants/runes.dart';
+import '../constants/runes.dart';
 
 class CribChipFilter {
+  CribChipFilter({this.text, this.value});
+
   final String text;
   final String value;
-  CribChipFilter({this.text, this.value});
 }
 
 final cribFilters = <CribChipFilter>[
@@ -14,10 +15,9 @@ final cribFilters = <CribChipFilter>[
   CribChipFilter(text: 'Shift In OEIS', value: 'shiftisinoeis'),
   CribChipFilter(text: 'No Vowel Start', value: 'novowelstart'), //
   CribChipFilter(text: 'No Plurals', value: 'noplural'), //
-  CribChipFilter(text: 'No Uncommon Shifts', value: 'nouncommonshifts'),
-  CribChipFilter(text: 'No Double Letters In Word', value: 'nodoubleletters'),
   CribChipFilter(text: 'Only Prime Shifts', value: 'onlyprimeshifts'),
-  CribChipFilter(text: 'Only Totient Prime Shifts', value: 'onlytotprimeshifts'),
+  CribChipFilter(text: 'Only Prime Shift Sums', value: 'onlyprimeshiftsums'),
+  CribChipFilter(text: 'Only Prime Word Sums', value: 'onlyprimewordsums'),
   CribChipFilter(text: 'Only Unique Shifts', value: 'onlyunique'), //
   CribChipFilter(text: 'Only Similar Shifts', value: 'onlysimilar'), //
   CribChipFilter(text: 'Only Incrementing Shifts', value: 'onlyincshifts'),
@@ -25,6 +25,11 @@ final cribFilters = <CribChipFilter>[
   CribChipFilter(text: 'Only GP Shifts', value: 'onlygpshifts'),
   CribChipFilter(text: 'Only Pure GP Shifts', value: 'onlypuregpshifts'),
   CribChipFilter(text: 'Only Impure GP Shifts', value: 'onlyimpuregpshifts'),
+  CribChipFilter(text: 'Only Far Shifts', value: 'onlyfarshifts'),
+  CribChipFilter(text: 'Only Close Shifts', value: 'onlycloseshifts'),
+  CribChipFilter(text: 'Only Even Shifts', value: 'onlyevenshifts'),
+  CribChipFilter(text: 'Only Odd Shifts', value: 'onlyoddshifts'),
+  CribChipFilter(text: 'No Zero Shift Differences', value: 'nozeroshiftdifferences'),
 ];
 
 final cribWordFilters = <CribChipFilter>[
@@ -32,9 +37,22 @@ final cribWordFilters = <CribChipFilter>[
   CribChipFilter(text: 'Only Liber Primus words', value: 'onlylp'),
   CribChipFilter(text: 'Only Exact Length', value: 'strictlength'),
   CribChipFilter(text: 'Only Words With Magic Square Sum', value: 'onlymagicsquaresums'),
+  CribChipFilter(text: 'Use Crib Cache Homophones', value: 'usecribcachehomophones'),
 ];
 
 final cribInterruptorFilters = List<CribChipFilter>.generate(runes.length, (index) => CribChipFilter(text: runes[index], value: runes[index]));
+
+final cribOutputSelection = <CribChipFilter>[
+  CribChipFilter(text: 'Shift Sum', value: 'shiftsum'),
+  CribChipFilter(text: 'Shift Differences Sum', value: 'shiftdifferencessum'),
+  CribChipFilter(text: 'Crib Word', value: 'cribword'),
+  CribChipFilter(text: 'Shift List', value: 'shiftlist'),
+  CribChipFilter(text: 'Shift Differences', value: 'shiftdifferences'),
+  CribChipFilter(text: 'Shifts In Word Form', value: 'shiftsinwordform'),
+  CribChipFilter(text: 'Shifts In GP Form', value: 'shiftsingpform'),
+  CribChipFilter(text: 'Matching Homophones', value: 'matchinghomophones'),
+  CribChipFilter(text: 'Shift List Facts', value: 'shiftlistfacts'),
+];
 
 enum CribPartOfSpeech { all, noun, verb, adjective, adverb }
 
@@ -46,6 +64,14 @@ class CribSettings {
   List<String> wordFilters = [];
 
   List<String> interruptors = [];
+
+  List<String> outputFillers = ['shiftsum', 'shiftlist', 'shiftsinwordform', 'cribword'];
+
+  String outputSortedBy = 'shiftsum';
+
+  String endsWith = '';
+  String startsWith = '';
+  String pattern = '';
 
   @override
   String toString() {
@@ -69,12 +95,13 @@ class CribSettings {
       case CribPartOfSpeech.adverb:
         return File('${Directory.current.path}/english_words/adverbs');
 
+      // ignore: no_default_cases
       default:
         return File('${Directory.current.path}/english_words/all');
     }
   }
 
-  List<String> get_crib_words({int minimumLength, int maximumLengthOffset}) {
+  List<String> get_crib_words({int minimumLength, int maximumLengthOffset, List<String> onlyIncludeWords}) {
     final words = get_crib_file().readAsLinesSync();
 
     words.removeWhere((word) => word.length < minimumLength - 1 || word.length > (minimumLength + maximumLengthOffset));
@@ -97,6 +124,24 @@ class CribSettings {
       final popularWords = File('${Directory.current.path}/english_words/popular').readAsLinesSync();
 
       words.removeWhere((element) => !popularWords.contains(element.toLowerCase()));
+    }
+
+    if (startsWith.isNotEmpty) {
+      words.removeWhere((element) => !element.startsWith(startsWith));
+    }
+
+    if (endsWith.isNotEmpty) {
+      words.removeWhere((element) => !element.endsWith(endsWith));
+    }
+
+    if (pattern.isNotEmpty) {
+      final regex = RegExp(pattern);
+
+      words.removeWhere((element) => !regex.hasMatch(element));
+    }
+
+    if (onlyIncludeWords != null && onlyIncludeWords.isNotEmpty) {
+      words.removeWhere((element) => onlyIncludeWords.contains(element) == false);
     }
 
     return words;

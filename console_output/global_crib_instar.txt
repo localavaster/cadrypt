@@ -1,0 +1,312 @@
+Starting global crib with output settings...
+shiftsum | shiftdifferencessum | cribword | shiftlist | shiftdifferences | shiftlistfacts | shiftsinwordform | shiftsingpform
+Results for cross0.txt
+ioo(0) 103 | 57 | instar | [8, 18, 14, 27, 11, 25] | [10, 4, 13, 16, 14] | [ad, dad] | HEXIOJAE | JX(PAE)?IO?ROE 
+ioo(1) 114 | 60 | instar | [7, 25, 28, 7, 22, 25] | [18, 3, 21, 15, 3] | [hr, dhr] | WAEEAWOEAE | OOE?EA?OEAOE 
+ioo(2) 71 | 65 | instar | [18, 2, 23, 4, 11, 13] | [16, 21, 19, 7, 2] | [ad, dad] | ETHDRJP | X(FID)H?R?R(CM) 
+ioo(3) 81 | 51 | instar | [19, 5, 10, 26, 11, 10] | [14, 5, 16, 15, 1] | [hr, dad] | MCIYJI | WTHA?Y?RA 
+ioo(4) 118 | 26 | instar | [19, 11, 21, 25, 21, 21] | [8, 10, 4, 4, 0] | [is_odd, hr, diffs_is_even, dhr] | MJINGAEINGING | WRINGOEINGING 
+Results for cross1.txt
+ioo(0) 87 | 52 | instar | [23, 8, 17, 7, 7, 25] | [15, 9, 10, 0, 18] | [hr, dad] | DHBWWAE | HJGOOOE 
+ioo(1) 117 | 37 | instar | [15, 28, 23, 16, 13, 22] | [13, 5, 7, 3, 9] | [ad, diffs_is_odd, dad] | SEADTPOE | L?EA?HY(CM)EA 
+ioo(2) 67 | 103 | instar | [3, 20, 0, 25, 1, 18] | [17, 20, 25, 24, 17] | [ad, dhr] | OLFAEUE | (UB)IONOETX 
+ioo(3) 100 | 49 | instar | [11, 4, 26, 16, 23, 20] | [7, 22, 10, 7, 3] | [ad, dhr] | JRYTDL | R?R??Y?YHIO 
+ioo(4) 93 | 43 | instar | [25, 16, 12, 5, 7, 28] | [9, 4, 7, 2, 21] | [ad, dad] | AETEOCWEA | OEYEOTHO?EA? 
+ioo(5) 63 | 70 | instar | [24, 6, 2, 25, 2, 4] | [18, 4, 23, 23, 2] | [hr, dhr] | AGTHAETHR | S?G?(FID)OE(FID)?R? 
+ioo(6) 105 | 45 | instar | [19, 24, 8, 5, 23, 26] | [5, 16, 3, 18, 3] | [ad, dhr] | MAHCDY | WSJTHH?Y? 
+ioo(7) 33 | 44 | instar | [0, 18, 4, 8, 1, 2] | [18, 14, 4, 7, 1] | [ad, dad] | FERHUTH | NX?R?JT(FID) 
+ioo(8) 92 | 24 | instar | [8, 19, 16, 13, 16, 20] | [11, 3, 3, 3, 4] | [hr, dhr] | HMTPTL | JWY(CM)YIO 
+Results for cross2.txt
+ioo(0) 79 | 38 | instar | [28, 28, 2, 2, 11, 8] | [0, 26, 0, 9, 3] | [hr, dhr] | EAEATHTHJH | ?EA??EA?(FID)(FID)RJ 
+ioo(1) 79 | 58 | instar | [8, 23, 24, 0, 14, 10] | [15, 1, 24, 14, 4] | [ad, dad] | HDAFXI | JHSN(PAE)A 
+ioo(2) 88 | 46 | instar | [18, 5, 8, 20, 13, 24] | [13, 3, 12, 7, 11] | [ad, dad] | ECHLPA | XTHJIO(CM)S 
+Results for spiral3.txt
+ioo(0) 119 | 32 | instar | [22, 8, 18, 22, 25, 24] | [14, 10, 4, 3, 1] | [hr, diffs_decremental, dad] | OEHEOEAEA | EAJXEAOES 
+ioo(1) 103 | 43 | instar | [18, 6, 16, 13, 27, 23] | [12, 10, 3, 14, 4] | [ad, dad] | EGTPIOD | X?G?Y(CM)?IO?H 
+ioo(2) 67 | 65 | instar | [24, 2, 5, 18, 3, 15] | [22, 3, 13, 15, 12] | [ad, dad] | ATHCEOS | S(FID)THX(UB)L 
+ioo(3) 72 | 35 | instar | [13, 19, 3, 11, 14, 12] | [6, 16, 8, 3, 2] | [ad, dad] | PMOJXEO | (CM)W(UB)R(PAE)EO 
+ioo(4) 97 | 38 | instar | [27, 7, 16, 17, 13, 17] | [20, 9, 1, 4, 4] | [hr, dhr] | IOWTBPB | ?IO?OYG(CM)G 
+ioo(5) 112 | 26 | instar | [28, 16, 13, 19, 20, 16] | [12, 3, 6, 1, 4] | [hr, dad] | EATPMLT | ?EA?Y(CM)WIOY 
+ioo(6) 130 | 41 | instar | [19, 21, 28, 12, 22, 28] | [2, 7, 16, 10, 6] | [hr, dad] | MINGEAEOOEEA | WING?EA?EOEA?EA? 
+Results for spiral4.txt
+ioo(0) 96 | 47 | instar | [20, 10, 26, 12, 11, 17] | [10, 16, 14, 1, 6] | [ad, dad] | LIYEOJB | IOA?Y?EORG 
+ioo(1) 81 | 53 | instar | [9, 14, 6, 21, 9, 22] | [5, 8, 15, 12, 13] | [hr, dad] | NXGINGNOE | E(PAE)?G?INGEEA 
+ioo(2) 119 | 26 | instar | [15, 12, 25, 25, 19, 23] | [3, 13, 0, 6, 4] | [hr, dad] | SEOAEAEMD | LEOOEOEWH 
+ioo(3) 82 | 56 | instar | [28, 22, 2, 14, 16, 0] | [6, 20, 12, 2, 16] | [is_even, ad, diffs_is_even, dad] | EAOETHXTF | ?EA?EA(FID)(PAE)YN 
+ioo(4) 60 | 54 | instar | [8, 10, 3, 0, 27, 12] | [2, 7, 3, 27, 15] | [ad, dad] | HIOFIOEO | JA(UB)N?IO?EO 
+ioo(5) 69 | 80 | instar | [9, 24, 4, 26, 3, 3] | [15, 20, 22, 23, 0] | [hr, dad] | NARYOO | ES?R??Y?(UB)(UB) 
+Results for spiral5.txt
+ioo(0) 54 | 36 | instar | [8, 6, 20, 5, 5, 10] | [2, 14, 15, 0, 5] | [hr, dad] | HGLCCI | J?G?IOTHTHA 
+ioo(1) 81 | 57 | instar | [2, 14, 26, 5, 17, 17] | [12, 12, 21, 12, 0] | [hr, dhr] | THXYCBB | (FID)(PAE)?Y?THGG 
+ioo(2) 74 | 66 | instar | [12, 10, 28, 6, 16, 2] | [2, 18, 22, 10, 14] | [is_even, ad, diffs_is_even, dad] | EOIEAGTTH | EOA?EA??G?Y(FID) 
+ioo(3) 53 | 47 | instar | [0, 24, 11, 7, 4, 7] | [24, 13, 4, 3, 3] | [hr, diffs_decremental, dhr] | FAJWRW | NSRO?R?O 
+ioo(4) 107 | 73 | instar | [16, 27, 4, 25, 14, 21] | [11, 23, 21, 11, 7] | [ad, diffs_is_odd, dhr] | TIORAEXING | Y?IO??R?OE(PAE)ING 
+ioo(5) 85 | 32 | instar | [12, 2, 6, 18, 23, 24] | [10, 4, 12, 5, 1] | [ad, dad] | EOTHGEDA | EO(FID)?G?XHS 
+Results for spiral6.txt
+ioo(0) 87 | 92 | instar | [4, 25, 1, 21, 28, 8] | [21, 24, 20, 7, 20] | [ad, dhr] | RAEUINGEAH | ?R?OETING?EA?J 
+ioo(1) 105 | 33 | instar | [17, 14, 11, 17, 28, 18] | [3, 3, 6, 11, 10] | [hr, dhr] | BXJBEAE | G(PAE)RG?EA?X 
+ioo(2) 91 | 27 | instar | [13, 15, 18, 8, 19, 18] | [2, 3, 10, 11, 1] | [hr, dad] | PSEHME | (CM)LXJWX 
+ioo(3) 64 | 45 | instar | [4, 9, 1, 16, 11, 23] | [5, 8, 15, 5, 12] | [ad, dhr] | RNUTJD | ?R?ETYRH 
+ioo(4) 45 | 34 | instar | [16, 3, 12, 4, 6, 4] | [13, 9, 8, 2, 2] | [hr, diffs_decremental, dhr] | TOEORGR | Y(UB)EO?R??G??R? 
+ioo(5) 83 | 56 | instar | [3, 27, 25, 4, 11, 13] | [24, 2, 21, 7, 2] | [ad, dhr] | OIOAERJP | (UB)?IO?OE?R?R(CM) 
+ioo(6) 70 | 27 | instar | [15, 11, 9, 4, 11, 20] | [4, 2, 5, 7, 9] | [hr, dad] | SJNRJL | LRE?R?RIO 
+Results for spiral7.txt
+ioo(0) 94 | 58 | instar | [5, 25, 15, 18, 8, 23] | [20, 10, 3, 10, 15] | [ad, dhr] | CAESEHD | THOELXJH 
+ioo(1) 53 | 21 | instar | [6, 6, 4, 12, 16, 9] | [0, 2, 8, 4, 7] | [hr, dad] | GGREOTN | ?G??G??R?EOYE 
+ioo(2) 67 | 46 | instar | [17, 11, 7, 20, 3, 9] | [6, 4, 13, 17, 6] | [ad, dhr] | BJWLON | GROIO(UB)E 
+ioo(3) 110 | 57 | instar | [25, 8, 27, 28, 14, 8] | [17, 19, 1, 14, 6] | [hr, dad] | AEHIOEAXH | OEJ?IO??EA?(PAE)J 
+ioo(4) 109 | 44 | instar | [13, 27, 27, 9, 12, 21] | [14, 0, 18, 3, 9] | [hr, dad] | PIOIONEOING | (CM)?IO??IO?EEOING 
+ioo(5) 125 | 31 | instar | [18, 25, 17, 25, 23, 17] | [7, 8, 8, 2, 6] | [hr, dhr] | EAEBAEDB | XOEGOEHG 
+ioo(6) 88 | 65 | instar | [24, 28, 7, 21, 1, 7] | [4, 21, 14, 20, 6] | [hr, dad] | AEAWINGUW | S?EA?OINGTO 
+Results for branch8.txt
+ioo(0) 101 | 64 | instar | [23, 14, 21, 0, 16, 27] | [9, 7, 21, 16, 11] | [ad, dad] | DXINGFTIO | H(PAE)INGNY?IO? 
+ioo(1) 98 | 60 | instar | [25, 8, 19, 26, 19, 1] | [17, 11, 7, 7, 18] | [hr, dhr] | AEHMYMU | OEJW?Y?WT 
+ioo(2) 109 | 47 | instar | [28, 4, 13, 16, 21, 27] | [24, 9, 3, 5, 6] | [ad, dad] | EARPTINGIO | ?EA??R?(CM)YING?IO? 
+ioo(3) 62 | 52 | instar | [9, 20, 11, 5, 16, 1] | [11, 9, 6, 11, 15] | [ad, dhr] | NLJCTU | EIORTHYT 
+ioo(4) 68 | 62 | instar | [8, 22, 0, 4, 8, 26] | [14, 22, 4, 4, 18] | [is_even, hr, diffs_is_even, dhr] | HOEFRHY | JEAN?R?J?Y? 
+ioo(5) 100 | 54 | instar | [23, 4, 23, 13, 18, 19] | [19, 19, 10, 5, 1] | [hr, diffs_decremental, dhr] | DRDPEM | H?R?H(CM)XW 
+ioo(6) 71 | 44 | instar | [5, 23, 24, 12, 2, 5] | [18, 1, 12, 10, 3] | [hr, dad] | CDAEOTHC | THHSEO(FID)TH 
+Results for branch9.txt
+ioo(0) 73 | 67 | instar | [3, 18, 4, 2, 28, 18] | [15, 14, 2, 26, 10] | [hr, dad] | OERTHEAE | (UB)X?R?(FID)?EA?X 
+ioo(1) 115 | 32 | instar | [21, 20, 14, 10, 27, 23] | [1, 6, 4, 17, 4] | [ad, dhr] | INGLXIIOD | INGIO(PAE)A?IO?H 
+ioo(2) 81 | 79 | instar | [2, 25, 11, 1, 25, 17] | [23, 14, 10, 24, 8] | [hr, dad] | THAEJUAEB | (FID)OERTOEG 
+ioo(3) 76 | 47 | instar | [18, 17, 4, 20, 14, 3] | [1, 13, 16, 6, 11] | [ad, dad] | EBRLXO | XG?R?IO(PAE)(UB) 
+ioo(4) 113 | 44 | instar | [28, 27, 14, 22, 22, 0] | [1, 13, 8, 0, 22] | [hr, dad] | EAIOXOEOEF | ?EA??IO?(PAE)EAEAN 
+ioo(5) 66 | 55 | instar | [14, 18, 1, 19, 11, 3] | [4, 17, 18, 8, 8] | [ad, dhr] | XEUMJO | (PAE)XTWR(UB) 
+Results for branch10.txt
+ioo(0) 98 | 56 | instar | [6, 13, 23, 9, 27, 20] | [7, 10, 14, 18, 7] | [ad, dhr] | GPDNIOL | ?G?(CM)HE?IO?IO 
+Results for branch11.txt
+ioo(0) 82 | 43 | instar | [28, 20, 4, 14, 11, 5] | [8, 16, 10, 3, 6] | [ad, dad] | EALRXJC | ?EA?IO?R?(PAE)RTH 
+ioo(1) 54 | 26 | instar | [19, 21, 9, 2, 0, 3] | [2, 12, 7, 2, 3] | [ad, dhr] | MINGNTHFO | WINGE(FID)N(UB) 
+Results for branch12.txt
+ioo(0) 98 | 47 | instar | [7, 25, 9, 19, 20, 18] | [18, 16, 10, 1, 2] | [ad, dad] | WAENMLE | OOEEWIOX 
+ioo(1) 83 | 49 | instar | [17, 16, 1, 20, 21, 8] | [1, 15, 19, 1, 13] | [ad, diffs_is_odd, dhr] | BTULINGH | GYTIOINGJ 
+ioo(2) 69 | 34 | instar | [19, 15, 21, 2, 5, 7] | [4, 6, 19, 3, 2] | [ad, dad] | MSINGTHCW | WLING(FID)THO 
+Results for branch13.txt
+ioo(0) 97 | 44 | instar | [25, 22, 14, 24, 11, 1] | [3, 8, 10, 13, 10] | [ad, dhr] | AEOEXAJU | OEEA(PAE)SRT 
+ioo(1) 80 | 55 | instar | [22, 28, 9, 0, 14, 7] | [6, 19, 9, 14, 7] | [ad, dad] | OEEANFXW | EA?EA?EN(PAE)O 
+ioo(2) 78 | 68 | instar | [8, 23, 10, 19, 2, 16] | [15, 13, 9, 17, 14] | [ad, dad] | HDIMTHT | JHAW(FID)Y 
+ioo(3) 107 | 52 | instar | [26, 13, 9, 21, 12, 26] | [13, 4, 12, 9, 14] | [hr, dad] | YPNINGEOY | ?Y?(CM)EINGEO?Y? 
+ioo(4) 108 | 52 | instar | [21, 24, 10, 1, 25, 27] | [3, 14, 9, 24, 2] | [ad, dad] | INGAIUAEIO | INGSATOE?IO? 
+ioo(5) 91 | 22 | instar | [14, 9, 13, 13, 16, 26] | [5, 4, 0, 3, 10] | [hr, dad] | XNPPTY | (PAE)E(CM)(CM)Y?Y? 
+ioo(6) 32 | 32 | instar | [5, 7, 4, 0, 13, 3] | [2, 3, 4, 13, 10] | [ad, dad] | CWRFPO | THO?R?N(CM)(UB) 
+ioo(7) 112 | 28 | instar | [14, 9, 24, 25, 22, 18] | [5, 15, 1, 3, 4] | [ad, dad] | XNAAEOEE | (PAE)ESOEEAX 
+Results for branch14.txt
+ioo(0) 94 | 63 | instar | [12, 28, 23, 6, 2, 23] | [16, 5, 17, 4, 21] | [hr, dad] | EOEADGTHD | EO?EA?H?G?(FID)H 
+ioo(1) 86 | 24 | instar | [13, 16, 13, 18, 19, 7] | [3, 3, 5, 1, 12] | [hr, dhr] | PTPEMW | (CM)Y(CM)XWO 
+ioo(2) 82 | 25 | instar | [17, 11, 11, 9, 20, 14] | [6, 0, 2, 11, 6] | [hr, dhr] | BJJNLX | GRREIO(PAE) 
+ioo(3) 87 | 107 | instar | [26, 0, 22, 2, 26, 11] | [26, 22, 20, 24, 15] | [hr, dad] | YFOETHYJ | ?Y?NEA(FID)?Y?R 
+ioo(4) 88 | 27 | instar | [28, 18, 14, 11, 6, 11] | [10, 4, 3, 5, 5] | [hr, dhr] | EAEXJGJ | ?EA?X(PAE)R?G?R 
+ioo(5) 113 | 34 | instar | [24, 24, 19, 26, 8, 12] | [0, 5, 7, 18, 4] | [hr, dad] | AAMYHEO | SSW?Y?JEO 
+ioo(6) 65 | 41 | instar | [5, 15, 15, 8, 18, 4] | [10, 0, 7, 10, 14] | [hr, dhr] | CSSHER | THLLJX?R? 
+Results for mobius15.txt
+ioo(0) 127 | 26 | instar | [20, 26, 28, 25, 18, 10] | [6, 2, 3, 7, 8] | [ad, dad] | LYEAAEEI | IO?Y??EA?OEXA 
+ioo(1) 81 | 30 | instar | [12, 5, 12, 15, 13, 24] | [7, 7, 3, 2, 11] | [hr, dhr, diffs_all_prime] | EOCEOSPA | EOTHEOL(CM)S 
+ioo(2) 78 | 77 | instar | [7, 28, 10, 24, 3, 6] | [21, 18, 14, 21, 3] | [ad, dhr] | WEAIAOG | O?EA?AS(UB)?G? 
+ioo(3) 45 | 45 | instar | [4, 10, 2, 16, 4, 9] | [6, 8, 14, 12, 5] | [hr, dad] | RITHTRN | ?R?A(FID)Y?R?E 
+Results for mobius16.txt
+ioo(0) 87 | 64 | instar | [11, 27, 0, 17, 15, 17] | [16, 27, 17, 2, 2] | [hr, dhr] | JIOFBSB | R?IO?NGLG 
+ioo(1) 75 | 51 | instar | [6, 24, 12, 9, 5, 19] | [18, 12, 3, 4, 14] | [ad, dad] | GAEONCM | ?G?SEOETHW 
+ioo(2) 73 | 80 | instar | [17, 9, 0, 19, 1, 27] | [8, 9, 19, 18, 26] | [ad, dad] | BNFMUIO | GENWT?IO? 
+ioo(3) 105 | 45 | instar | [24, 4, 12, 24, 20, 21] | [20, 8, 12, 4, 1] | [hr, dad] | AREOALING | S?R?EOSIOING 
+ioo(4) 102 | 58 | instar | [27, 14, 13, 27, 6, 15] | [13, 1, 14, 21, 9] | [hr, dad] | IOXPIOGS | ?IO?(PAE)(CM)?IO??G?L 
+ioo(5) 80 | 50 | instar | [12, 0, 21, 11, 18, 18] | [12, 21, 10, 7, 0] | [hr, dad] | EOFINGJEE | EONINGRXX 
+Results for mobius17.txt
+ioo(0) 83 | 43 | instar | [19, 24, 13, 3, 4, 20] | [5, 11, 10, 1, 16] | [ad, dad] | MAPORL | WS(CM)(UB)?R?IO 
+ioo(1) 78 | 46 | instar | [6, 4, 24, 10, 14, 20] | [2, 20, 14, 4, 6] | [is_even, ad, diffs_is_even, dad] | GRAIXL | ?G??R?SA(PAE)IO 
+ioo(2) 109 | 30 | instar | [28, 24, 23, 9, 15, 10] | [4, 1, 14, 6, 5] | [ad, dad] | EAADNSI | ?EA?SHELA 
+ioo(3) 65 | 38 | instar | [11, 17, 10, 11, 1, 15] | [6, 7, 1, 10, 14] | [hr, dad] | JBIJUS | RGARTL 
+ioo(4) 102 | 48 | instar | [3, 25, 11, 18, 22, 23] | [22, 14, 7, 4, 1] | [ad, diffs_decremental, dad] | OAEJEOED | (UB)OERXEAH 
+ioo(5) 91 | 23 | instar | [19, 15, 10, 10, 13, 24] | [4, 5, 0, 3, 11] | [hr, dad] | MSIIPA | WLAA(CM)S 
+ioo(6) 69 | 38 | instar | [22, 15, 16, 0, 10, 6] | [7, 1, 16, 10, 4] | [ad, dad] | OESTFIG | EALYNA?G? 
+Results for mobius18.txt
+ioo(0) 103 | 46 | instar | [18, 15, 25, 25, 4, 16] | [3, 10, 0, 21, 12] | [hr, dad] | ESAEAERT | XLOEOE?R?Y 
+ioo(1) 115 | 26 | instar | [13, 24, 21, 16, 18, 23] | [11, 3, 5, 2, 5] | [ad, dhr, diffs_all_prime] | PAINGTED | (CM)SINGYXH 
+ioo(2) 104 | 51 | instar | [13, 20, 11, 28, 14, 18] | [7, 9, 17, 14, 4] | [ad, dad] | PLJEAXE | (CM)IOR?EA?(PAE)X 
+ioo(3) 81 | 57 | instar | [3, 24, 21, 6, 17, 10] | [21, 3, 15, 11, 7] | [ad, diffs_is_odd, dad] | OAINGGBI | (UB)SING?G?GA 
+Results for mobius19.txt
+ioo(0) 76 | 55 | instar | [22, 1, 14, 14, 20, 5] | [21, 13, 0, 6, 15] | [hr, dad] | OEUXXLC | EAT(PAE)(PAE)IOTH 
+ioo(1) 65 | 98 | instar | [13, 1, 23, 3, 24, 1] | [12, 22, 20, 21, 23] | [hr, dad] | PUDOAU | (CM)TH(UB)ST 
+ioo(2) 104 | 51 | instar | [4, 23, 24, 24, 28, 1] | [19, 1, 0, 4, 27] | [hr, dad] | RDAAEAU | ?R?HSS?EA?T 
+ioo(3) 112 | 51 | instar | [21, 18, 26, 21, 4, 22] | [3, 8, 5, 17, 18] | [hr, dad] | INGEYINGROE | INGX?Y?ING?R?EA 
+ioo(4) 117 | 11 | instar | [14, 19, 22, 21, 20, 21] | [5, 3, 1, 1, 1] | [hr, diffs_decremental, diffs_is_odd, dhr] | XMOEINGLING | (PAE)WEAINGIOING 
+ioo(5) 76 | 48 | instar | [11, 5, 18, 7, 20, 15] | [6, 13, 11, 13, 5] | [ad, dhr] | JCEWLS | RTHXOIOL 
+Results for mobius20.txt
+ioo(0) 104 | 64 | instar | [8, 17, 26, 21, 4, 28] | [9, 9, 5, 17, 24] | [ad, dhr] | HBYINGREA | JG?Y?ING?R??EA? 
+ioo(1) 70 | 36 | instar | [4, 14, 10, 6, 20, 16] | [10, 4, 4, 14, 4] | [is_even, ad, diffs_is_even, dhr] | RXIGLT | ?R?(PAE)A?G?IOY 
+ioo(2) 43 | 44 | instar | [0, 2, 5, 5, 25, 6] | [2, 3, 0, 20, 19] | [hr, dad] | FTHCCAEG | N(FID)THTHOE?G? 
+ioo(3) 76 | 46 | instar | [4, 10, 10, 28, 10, 14] | [6, 0, 18, 18, 4] | [is_even, hr, diffs_is_even, dhr] | RIIEAIX | ?R?AA?EA?A(PAE) 
+Results for mobius21.txt
+ioo(0) 81 | 49 | instar | [13, 9, 19, 3, 15, 22] | [4, 10, 16, 12, 7] | [ad, dad] | PNMOSOE | (CM)EW(UB)LEA 
+ioo(1) 73 | 64 | instar | [26, 1, 9, 23, 8, 6] | [25, 8, 14, 15, 2] | [ad, dad] | YUNDHG | ?Y?TEHJ?G? 
+ioo(2) 119 | 52 | instar | [19, 26, 27, 15, 5, 27] | [7, 1, 12, 10, 22] | [hr, dad] | MYIOSCIO | W?Y??IO?LTH?IO? 
+Results for mobius22.txt
+ioo(0) 79 | 27 | instar | [24, 23, 16, 2, 7, 7] | [1, 7, 14, 5, 0] | [hr, dad] | ADTTHWW | SHY(FID)OO 
+ioo(1) 131 | 33 | instar | [21, 25, 25, 11, 23, 26] | [4, 0, 14, 12, 3] | [hr, dad] | INGAEAEJDY | INGOEOERH?Y? 
+Results for mayfly23.txt
+ioo(0) 115 | 56 | instar | [26, 12, 20, 27, 28, 2] | [14, 8, 7, 1, 26] | [ad, dad] | YEOLIOEATH | ?Y?EOIO?IO??EA?(FID) 
+ioo(1) 73 | 58 | instar | [13, 22, 3, 17, 17, 1] | [9, 19, 14, 0, 16] | [hr, dad] | POEOBBU | (CM)EA(UB)GGT 
+ioo(2) 95 | 33 | instar | [16, 24, 13, 9, 14, 19] | [8, 11, 4, 5, 5] | [ad, dhr] | TAPNXM | YS(CM)E(PAE)W 
+ioo(3) 54 | 56 | instar | [11, 4, 26, 3, 3, 7] | [7, 22, 23, 0, 4] | [hr, dad] | JRYOOW | R?R??Y?(UB)(UB)O 
+ioo(4) 98 | 66 | instar | [19, 17, 28, 6, 1, 27] | [2, 11, 22, 5, 26] | [ad, dad] | MBEAGUIO | WG?EA??G?T?IO? 
+ioo(5) 64 | 47 | instar | [17, 20, 9, 0, 14, 4] | [3, 11, 9, 14, 10] | [ad, dad] | BLNFXR | GIOEN(PAE)?R? 
+ioo(6) 102 | 34 | instar | [24, 22, 15, 17, 6, 18] | [2, 7, 2, 11, 12] | [ad, dhr] | AOESBGE | SEALG?G?X 
+ioo(7) 127 | 58 | instar | [25, 27, 1, 26, 23, 25] | [2, 26, 25, 3, 2] | [hr, dhr] | AEIOUYDAE | OE?IO?T?Y?HOE 
+Results for mayfly24.txt
+ioo(0) 75 | 66 | instar | [3, 20, 6, 9, 26, 11] | [17, 14, 3, 17, 15] | [ad, dhr] | OLGNYJ | (UB)IO?G?E?Y?R 
+ioo(1) 97 | 65 | instar | [17, 19, 2, 28, 13, 18] | [2, 17, 26, 15, 5] | [ad, dad] | BMTHEAPE | GW(FID)?EA?(CM)X 
+Results for mayfly25.txt
+ioo(0) 83 | 73 | instar | [7, 17, 25, 5, 23, 6] | [10, 8, 20, 18, 17] | [ad, dad] | WBAECDG | OGOETHH?G? 
+ioo(1) 67 | 23 | instar | [3, 14, 17, 13, 12, 8] | [11, 3, 4, 1, 4] | [ad, dhr] | OXBPEOH | (UB)(PAE)G(CM)EOJ 
+Results for mayfly26.txt
+ioo(0) 50 | 21 | instar | [7, 1, 7, 8, 11, 16] | [6, 6, 1, 3, 5] | [hr, dhr] | WUWHJT | OTOJRY 
+ioo(1) 84 | 54 | instar | [12, 26, 11, 19, 14, 2] | [14, 15, 8, 5, 12] | [ad, dad] | EOYJMXTH | EO?Y?RW(PAE)(FID) 
+ioo(2) 83 | 43 | instar | [7, 21, 14, 8, 9, 24] | [14, 7, 6, 1, 15] | [ad, dad] | WINGXHNA | OING(PAE)JES 
+ioo(3) 46 | 52 | instar | [2, 22, 11, 0, 1, 10] | [20, 11, 11, 1, 9] | [ad, dhr] | THOEJFUI | (FID)EARNTA 
+ioo(4) 106 | 49 | instar | [28, 28, 21, 1, 17, 11] | [0, 7, 20, 16, 6] | [hr, dad] | EAEAINGUBJ | ?EA??EA?INGTGR 
+ioo(5) 66 | 66 | instar | [1, 26, 1, 5, 16, 17] | [25, 25, 4, 11, 1] | [hr, dhr] | UYUCTB | T?Y?TTHYG 
+Results for wingtree27.txt
+ioo(0) 101 | 24 | instar | [26, 19, 17, 17, 8, 14] | [7, 2, 0, 9, 6] | [hr, dad] | YMBBHX | ?Y?WGGJ(PAE) 
+Results for wingtree28.txt
+ioo(0) 98 | 52 | instar | [23, 7, 26, 23, 10, 9] | [16, 19, 3, 13, 1] | [hr, dad] | DWYDIN | HO?Y?HAE 
+ioo(1) 67 | 42 | instar | [0, 16, 5, 7, 19, 20] | [16, 11, 2, 12, 1] | [ad, dad] | FTCWML | NYTHOWIO 
+ioo(2) 68 | 63 | instar | [13, 13, 9, 1, 28, 4] | [0, 4, 8, 27, 24] | [hr, dad] | PPNUEAR | (CM)(CM)ET?EA??R? 
+ioo(3) 94 | 79 | instar | [18, 2, 26, 23, 4, 21] | [16, 24, 3, 19, 17] | [ad, dad] | ETHYDRING | X(FID)?Y?H?R?ING 
+ioo(4) 73 | 54 | instar | [22, 5, 20, 22, 2, 2] | [17, 15, 2, 20, 0] | [hr, dad] | OECLOETHTH | EATHIOEA(FID)(FID) 
+Results for wingtree29.txt
+ioo(0) 101 | 24 | instar | [21, 21, 18, 8, 14, 19] | [0, 3, 10, 6, 5] | [hr, dad] | INGINGEHXM | INGINGXJ(PAE)W 
+ioo(1) 71 | 69 | instar | [12, 2, 6, 28, 6, 17] | [10, 4, 22, 22, 11] | [hr, dhr] | EOTHGEAGB | EO(FID)?G??EA??G?G 
+ioo(2) 89 | 39 | instar | [0, 10, 12, 23, 17, 27] | [10, 2, 11, 6, 10] | [ad, dhr] | FIEODBIO | NAEOHG?IO? 
+ioo(3) 78 | 46 | instar | [13, 20, 21, 7, 16, 1] | [7, 1, 14, 9, 15] | [ad, dad] | PLINGWTU | (CM)IOINGOYT 
+ioo(4) 129 | 13 | instar | [26, 23, 23, 24, 18, 15] | [3, 0, 1, 6, 3] | [hr, dhr] | YDDAES | ?Y?HHSXL 
+Results for wingtree30.txt
+ioo(0) 83 | 73 | instar | [15, 24, 8, 28, 8, 0] | [9, 16, 20, 20, 8] | [hr, dhr] | SAHEAHF | LSJ?EA?JN 
+ioo(1) 74 | 32 | instar | [25, 25, 8, 12, 3, 1] | [0, 17, 4, 9, 2] | [hr, dad] | AEAEHEOOU | OEOEJEO(UB)T 
+ioo(2) 76 | 47 | instar | [11, 18, 20, 2, 3, 22] | [7, 2, 18, 1, 19] | [ad, dad] | JELTHOOE | RXIO(FID)(UB)EA 
+ioo(3) 100 | 38 | instar | [23, 22, 14, 6, 8, 27] | [1, 8, 8, 2, 19] | [ad, dhr] | DOEXGHIO | HEA(PAE)?G?J?IO? 
+ioo(4) 61 | 62 | instar | [22, 9, 1, 13, 0, 16] | [13, 8, 12, 13, 16] | [ad, dhr] | OENUPFT | EAET(CM)NY 
+ioo(5) 108 | 70 | instar | [15, 3, 27, 11, 27, 25] | [12, 24, 16, 16, 2] | [is_odd, hr, diffs_is_even, dhr] | SOIOJIOAE | L(UB)?IO?R?IO?OE 
+Results for wingtree31.txt
+ioo(0) 81 | 60 | instar | [10, 1, 22, 22, 26, 0] | [9, 21, 0, 4, 26] | [hr, dad] | IUOEOEYF | ATEAEA?Y?N 
+ioo(1) 80 | 19 | instar | [6, 11, 12, 16, 20, 15] | [5, 1, 4, 4, 5] | [ad, dhr] | GJEOTLS | ?G?REOYIOL 
+ioo(2) 88 | 30 | instar | [0, 8, 12, 25, 21, 22] | [8, 4, 13, 4, 1] | [ad, dhr] | FHEOAEINGOE | NJEOOEINGEA 
+ioo(3) 70 | 66 | instar | [8, 0, 27, 25, 2, 8] | [8, 27, 2, 23, 6] | [hr, dad] | HFIOAETHH | JN?IO?OE(FID)J 
+ioo(4) 46 | 27 | instar | [1, 0, 8, 5, 12, 20] | [1, 8, 3, 7, 8] | [ad, dhr] | UFHCEOL | TNJTHEOIO 
+Results for wingtree32.txt
+ioo(0) 101 | 55 | instar | [11, 8, 26, 11, 25, 20] | [3, 18, 15, 14, 5] | [hr, dad] | JHYJAEL | RJ?Y?ROEIO 
+Results for cuneiform33.txt
+ioo(0) 74 | 30 | instar | [16, 19, 23, 15, 1, 0] | [3, 4, 8, 14, 1] | [ad, dad] | TMDSUF | YWHLTN 
+ioo(1) 126 | 18 | instar | [22, 21, 23, 20, 24, 16] | [1, 2, 3, 4, 8] | [ad, diffs_incremental, dad] | OEINGDLAT | EAINGHIOSY 
+ioo(2) 71 | 41 | instar | [13, 8, 11, 11, 2, 26] | [5, 3, 0, 9, 24] | [hr, dad] | PHJJTHY | (CM)JRR(FID)?Y? 
+Results for cuneiform34.txt
+ioo(0) 104 | 46 | instar | [6, 22, 26, 28, 18, 4] | [16, 4, 2, 10, 14] | [is_even, ad, diffs_is_even, dad] | GOEYEAER | ?G?EA?Y??EA?X?R? 
+ioo(1) 103 | 50 | instar | [26, 23, 26, 8, 18, 2] | [3, 3, 18, 10, 16] | [hr, dhr] | YDYHETH | ?Y?H?Y?JX(FID) 
+ioo(2) 73 | 44 | instar | [2, 10, 5, 24, 20, 12] | [8, 5, 19, 4, 8] | [ad, dhr] | THICALEO | (FID)ATHSIOEO 
+ioo(3) 61 | 56 | instar | [16, 14, 0, 18, 3, 10] | [2, 14, 18, 15, 7] | [ad, dad] | TXFEOI | Y(PAE)NX(UB)A 
+Results for cuneiform35.txt
+ioo(0) 42 | 45 | instar | [0, 4, 11, 4, 0, 23] | [4, 7, 7, 4, 23] | [hr, dhr] | FRJRFD | N?R?R?R?NH 
+ioo(1) 97 | 41 | instar | [18, 15, 3, 15, 25, 21] | [3, 12, 12, 10, 4] | [hr, dhr] | ESOSAEING | XL(UB)LOEING 
+Results for cuneiform36.txt
+ioo(0) 27 | 30 | instar | [4, 0, 0, 6, 1, 16] | [4, 0, 6, 5, 15] | [hr, dad] | RFFGUT | ?R?NN?G?TY 
+ioo(1) 60 | 46 | instar | [3, 1, 26, 14, 9, 7] | [2, 25, 12, 5, 2] | [ad, dhr] | OUYXNW | (UB)T?Y?(PAE)EO 
+ioo(2) 100 | 64 | instar | [20, 22, 0, 14, 28, 16] | [2, 22, 14, 14, 12] | [is_even, ad, diffs_is_even, dhr] | LOEFXEAT | IOEAN(PAE)?EA?Y 
+ioo(3) 68 | 53 | instar | [25, 1, 11, 5, 8, 18] | [24, 10, 6, 3, 10] | [ad, dhr] | AEUJCHE | OETRTHJX 
+Results for cuneiform37.txt
+ioo(0) 107 | 33 | instar | [11, 7, 27, 20, 20, 22] | [4, 20, 7, 0, 2] | [hr, dad] | JWIOLLOE | RO?IO?IOIOEA 
+ioo(1) 63 | 51 | instar | [11, 8, 3, 17, 4, 20] | [3, 5, 14, 13, 16] | [ad, dad] | JHOBRL | RJ(UB)G?R?IO 
+ioo(2) 68 | 29 | instar | [13, 2, 6, 10, 17, 20] | [11, 4, 4, 7, 3] | [ad, dhr] | PTHGIBL | (CM)(FID)?G?AGIO 
+ioo(3) 99 | 42 | instar | [18, 27, 19, 24, 7, 4] | [9, 8, 5, 17, 3] | [ad, dad] | EIOMAWR | X?IO?WSO?R? 
+Results for cuneiform38.txt
+ioo(0) 112 | 40 | instar | [20, 16, 19, 25, 10, 22] | [4, 3, 6, 15, 12] | [ad, dad] | LTMAEIOE | IOYWOEAEA 
+ioo(1) 71 | 40 | instar | [17, 16, 1, 2, 10, 25] | [1, 15, 1, 8, 15] | [ad, dhr] | BTUTHIAE | GYT(FID)AOE 
+ioo(2) 126 | 47 | instar | [27, 16, 28, 15, 22, 18] | [11, 12, 13, 7, 4] | [ad, dad] | IOTEASOEE | ?IO?Y?EA?LEAX 
+ioo(3) 127 | 49 | instar | [27, 27, 4, 21, 26, 22] | [0, 23, 17, 5, 4] | [hr, dad] | IOIORINGYOE | ?IO??IO??R?ING?Y?EA 
+ioo(4) 87 | 40 | instar | [15, 14, 7, 9, 27, 15] | [1, 7, 2, 18, 12] | [hr, dad] | SXWNIOS | L(PAE)OE?IO?L 
+Results for cuneiform39.txt
+ioo(0) 50 | 32 | instar | [7, 21, 5, 6, 6, 5] | [14, 16, 1, 0, 1] | [hr, dhr] | WINGCGGC | OINGTH?G??G?TH 
+ioo(1) 71 | 53 | instar | [0, 18, 9, 13, 22, 9] | [18, 9, 4, 9, 13] | [hr, dhr] | FENPOEN | NXE(CM)EAE 
+ioo(2) 57 | 67 | instar | [9, 7, 20, 1, 18, 2] | [2, 13, 19, 17, 16] | [ad, dad] | NWLUETH | EOIOTX(FID) 
+ioo(3) 82 | 60 | instar | [9, 17, 21, 1, 21, 13] | [8, 4, 20, 20, 8] | [is_odd, hr, diffs_is_even, dhr] | NBINGUINGP | EGINGTING(CM) 
+ioo(4) 100 | 88 | instar | [25, 9, 26, 6, 25, 9] | [16, 17, 20, 19, 16] | [hr, dhr] | AENYGAEN | OEE?Y??G?OEE 
+ioo(5) 87 | 76 | instar | [26, 10, 0, 20, 27, 4] | [16, 10, 20, 7, 23] | [ad, dad] | YIFLIOR | ?Y?ANIO?IO??R? 
+ioo(6) 90 | 68 | instar | [14, 27, 1, 18, 12, 18] | [13, 26, 17, 6, 6] | [hr, dhr] | XIOUEEOE | (PAE)?IO?TXEOX 
+ioo(7) 75 | 31 | instar | [16, 15, 5, 7, 7, 25] | [1, 10, 2, 0, 18] | [hr, dad] | TSCWWAE | YLTHOOOE 
+ioo(8) 47 | 55 | instar | [19, 0, 1, 18, 3, 6] | [19, 1, 17, 15, 3] | [ad, diffs_is_odd, dad] | MFUEOG | WNTX(UB)?G? 
+Results for spiralbranch40.txt
+ioo(0) 67 | 65 | instar | [23, 1, 15, 6, 16, 6] | [22, 14, 9, 10, 10] | [hr, dhr] | DUSGTG | HTL?G?Y?G? 
+ioo(1) 80 | 44 | instar | [8, 7, 9, 24, 10, 22] | [1, 2, 15, 14, 12] | [ad, dad] | HWNAIOE | JOESAEA 
+ioo(2) 68 | 52 | instar | [12, 25, 5, 7, 3, 16] | [13, 20, 2, 4, 13] | [ad, dhr] | EOAECWOT | EOOETHO(UB)Y 
+Results for spiralbranch41.txt
+ioo(0) 46 | 42 | instar | [5, 17, 4, 7, 2, 11] | [12, 13, 3, 5, 9] | [ad, dad] | CBRWTHJ | THG?R?O(FID)R 
+ioo(1) 78 | 49 | instar | [12, 15, 2, 23, 15, 11] | [3, 13, 21, 8, 4] | [hr, dad] | EOSTHDSJ | EOL(FID)HLR 
+ioo(2) 77 | 43 | instar | [21, 20, 7, 19, 4, 6] | [1, 13, 12, 15, 2] | [ad, dad] | INGLWMRG | INGIOOW?R??G? 
+ioo(3) 43 | 58 | instar | [4, 2, 5, 26, 0, 6] | [2, 3, 21, 26, 6] | [ad, dad] | RTHCYFG | ?R?(FID)TH?Y?N?G? 
+Results for spiralbranch42.txt
+ioo(0) 74 | 73 | instar | [23, 3, 10, 7, 27, 4] | [20, 7, 3, 20, 23] | [ad, dhr] | DOIWIOR | H(UB)AO?IO??R? 
+ioo(1) 91 | 60 | instar | [15, 28, 12, 5, 4, 27] | [13, 16, 7, 1, 23] | [ad, dad] | SEAEOCRIO | L?EA?EOTH?R??IO? 
+ioo(2) 78 | 33 | instar | [13, 12, 18, 24, 7, 4] | [1, 6, 6, 17, 3] | [ad, dhr] | PEOEAWR | (CM)EOXSO?R? 
+ioo(3) 81 | 60 | instar | [14, 26, 11, 23, 5, 2] | [12, 15, 12, 18, 3] | [ad, dhr] | XYJDCTH | (PAE)?Y?RHTH(FID) 
+ioo(4) 77 | 54 | instar | [15, 6, 26, 22, 3, 5] | [9, 20, 4, 19, 2] | [ad, dad] | SGYOEOC | L?G??Y?EA(UB)TH 
+Results for spiralbranch43.txt
+ioo(0) 78 | 47 | instar | [14, 0, 12, 8, 23, 21] | [14, 12, 4, 15, 2] | [ad, dad] | XFEOHDING | (PAE)NEOJHING 
+ioo(1) 51 | 29 | instar | [8, 6, 1, 1, 12, 23] | [2, 5, 0, 11, 11] | [hr, dhr, diffs_all_prime] | HGUUEOD | J?G?TTEOH 
+ioo(2) 93 | 44 | instar | [15, 4, 7, 26, 26, 15] | [11, 3, 19, 0, 11] | [hr, dhr, diffs_all_prime] | SRWYYS | L?R?O?Y??Y?L 
+ioo(3) 96 | 69 | instar | [9, 20, 6, 27, 28, 6] | [11, 14, 21, 1, 22] | [hr, dad] | NLGIOEAG | EIO?G??IO??EA??G? 
+Results for spiralbranch44.txt
+ioo(0) 71 | 68 | instar | [19, 0, 25, 13, 13, 1] | [19, 25, 12, 0, 12] | [hr, dhr] | MFAEPPU | WNOE(CM)(CM)T 
+ioo(1) 108 | 44 | instar | [27, 14, 13, 10, 27, 17] | [13, 1, 3, 17, 10] | [hr, dad] | IOXPIIOB | ?IO?(PAE)(CM)A?IO?G 
+ioo(2) 69 | 46 | instar | [4, 3, 22, 16, 20, 4] | [1, 19, 6, 4, 16] | [hr, dad] | ROOETLR | ?R?(UB)EAYIO?R? 
+ioo(3) 69 | 77 | instar | [21, 1, 10, 24, 1, 12] | [20, 9, 14, 23, 11] | [hr, dad] | INGUIAUEO | INGTASTEO 
+ioo(4) 47 | 51 | instar | [4, 5, 4, 22, 1, 11] | [1, 1, 18, 21, 10] | [hr, dhr] | RCROEUJ | ?R?TH?R?EATR 
+Results for spiralbranch45.txt
+ioo(0) 94 | 39 | instar | [5, 13, 20, 12, 24, 20] | [8, 7, 8, 12, 4] | [hr, dhr] | CPLEOAL | TH(CM)IOEOSIO 
+ioo(1) 81 | 58 | instar | [9, 11, 22, 7, 23, 9] | [2, 11, 15, 16, 14] | [hr, dad] | NJOEWDN | EREAOHE 
+ioo(2) 90 | 61 | instar | [9, 25, 14, 27, 9, 6] | [16, 11, 13, 18, 3] | [hr, dad] | NAEXIONG | EOE(PAE)?IO?E?G? 
+ioo(3) 102 | 44 | instar | [10, 27, 19, 24, 12, 10] | [17, 8, 5, 12, 2] | [hr, dad] | IIOMAEOI | A?IO?WSEOA 
+ioo(4) 65 | 57 | instar | [18, 3, 1, 16, 6, 21] | [15, 2, 15, 10, 15] | [ad, dhr] | EOUTGING | X(UB)TY?G?ING 
+ioo(5) 91 | 51 | instar | [22, 7, 21, 24, 12, 5] | [15, 14, 3, 12, 7] | [ad, dad] | OEWINGAEOC | EAOINGSEOTH 
+Results for spiralbranch46.txt
+ioo(0) 87 | 39 | instar | [6, 5, 17, 18, 28, 13] | [1, 12, 1, 10, 15] | [ad, dhr] | GCBEEAP | ?G?THGX?EA?(CM) 
+ioo(1) 95 | 62 | instar | [12, 23, 13, 22, 5, 20] | [11, 10, 9, 17, 15] | [ad, dad] | EODPOECL | EOH(CM)EATHIO 
+ioo(2) 99 | 95 | instar | [24, 3, 28, 2, 17, 25] | [21, 25, 26, 15, 8] | [ad, dad] | AOEATHBAE | S(UB)?EA?(FID)GOE 
+Results for spiralbranch47.txt
+ioo(0) 82 | 90 | instar | [7, 27, 12, 2, 27, 7] | [20, 15, 10, 25, 20] | [hr, dhr] | WIOEOTHIOW | O?IO?EO(FID)?IO?O 
+ioo(1) 117 | 61 | instar | [5, 26, 27, 8, 23, 28] | [21, 1, 19, 15, 5] | [ad, diffs_is_odd, dad] | CYIOHDEA | TH?Y??IO?JH?EA? 
+ioo(2) 74 | 69 | instar | [10, 25, 2, 7, 21, 9] | [15, 23, 5, 14, 12] | [ad, dad] | IAETHWINGN | AOE(FID)OINGE 
+ioo(3) 62 | 35 | instar | [24, 9, 1, 9, 8, 11] | [15, 8, 8, 1, 3] | [hr, dhr] | ANUNHJ | SETEJR 
+ioo(4) 109 | 45 | instar | [9, 21, 24, 11, 16, 28] | [12, 3, 13, 5, 12] | [ad, dhr] | NINGAJTEA | EINGSRY?EA? 
+ioo(5) 69 | 51 | instar | [5, 3, 10, 25, 26, 0] | [2, 7, 15, 1, 26] | [ad, dad] | COIAEYF | TH(UB)AOE?Y?N 
+ioo(6) 124 | 34 | instar | [23, 28, 13, 14, 19, 27] | [5, 15, 1, 5, 8] | [ad, dhr] | DEAPXMIO | H?EA?(CM)(PAE)W?IO? 
+Results for spiralbranch48.txt
+ioo(0) 69 | 42 | instar | [7, 12, 16, 5, 4, 25] | [5, 4, 11, 1, 21] | [ad, dad] | WEOTCRAE | OEOYTH?R?OE 
+ioo(1) 126 | 42 | instar | [26, 27, 7, 16, 22, 28] | [1, 20, 9, 6, 6] | [ad, dhr] | YIOWTOEEA | ?Y??IO?OYEA?EA? 
+ioo(2) 74 | 54 | instar | [22, 2, 8, 15, 21, 6] | [20, 6, 7, 6, 15] | [ad, dhr] | OETHHSINGG | EA(FID)JLING?G? 
+ioo(3) 89 | 55 | instar | [11, 23, 15, 25, 15, 0] | [12, 8, 10, 10, 15] | [hr, dhr] | JDSAESF | RHLOELN 
+ioo(4) 91 | 71 | instar | [20, 5, 15, 22, 4, 25] | [15, 10, 7, 18, 21] | [ad, dad] | LCSOERAE | IOTHLEA?R?OE 
+Results for spiralbranch49.txt
+ioo(0) 68 | 59 | instar | [9, 6, 10, 19, 0, 24] | [3, 4, 9, 19, 24] | [ad, diffs_incremental, dad] | NGIMFA | E?G?AWNS 
+ioo(1) 63 | 46 | instar | [8, 28, 14, 8, 3, 2] | [20, 14, 6, 5, 1] | [hr, diffs_decremental, dad] | HEAXHOTH | J?EA?(PAE)J(UB)(FID) 
+ioo(2) 90 | 54 | instar | [8, 15, 27, 20, 4, 16] | [7, 12, 7, 16, 12] | [ad, dhr] | HSIOLRT | JL?IO?IO?R?Y 
+ioo(3) 97 | 37 | instar | [12, 3, 21, 24, 18, 19] | [9, 18, 3, 6, 1] | [ad, dad] | EOOINGAEM | EO(UB)INGSXW 
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+ioo(0) 96 | 58 | instar | [19, 18, 5, 27, 22, 5] | [1, 13, 22, 5, 17] | [hr, dad] | MECIOOEC | WXTH?IO?EATH 
+Results for spiralbranch54.txt
+ioo(0) 100 | 38 | instar | [26, 7, 20, 17, 16, 14] | [19, 13, 3, 1, 2] | [ad, dad] | YWLBTX | ?Y?OIOGY(PAE) 
+ioo(1) 93 | 50 | instar | [5, 23, 13, 18, 23, 11] | [18, 10, 5, 5, 12] | [hr, dhr] | CDPEDJ | THH(CM)XHR 
+ioo(2) 73 | 33 | instar | [19, 11, 7, 5, 7, 24] | [8, 4, 2, 2, 17] | [hr, dhr] | MJWCWA | WROTHOS 
+Results for hollow54.txt
+ioo(0) 89 | 45 | instar | [11, 22, 12, 20, 20, 4] | [11, 10, 8, 0, 16] | [hr, dad] | JOEEOLLR | REAEOIOIO?R? 
+ioo(1) 118 | 32 | instar | [12, 28, 26, 22, 18, 12] | [16, 2, 4, 4, 6] | [is_even, hr, diffs_is_even, dhr] | EOEAYOEEEO | EO?EA??Y?EAXEO 
+ioo(2) 94 | 28 | instar | [24, 26, 14, 7, 9, 14] | [2, 12, 7, 2, 5] | [hr, dhr] | AYXWNX | S?Y?(PAE)OE(PAE) 
+ioo(3) 94 | 23 | instar | [13, 9, 21, 16, 17, 18] | [4, 12, 5, 1, 1] | [ad, dhr] | PNINGTBE | (CM)EINGYGX 
+Results for hollow55.txt
+ioo(0) 63 | 46 | instar | [5, 3, 20, 7, 7, 21] | [2, 17, 13, 0, 14] | [hr, dad] | COLWWING | TH(UB)IOOOING 
+ioo(1) 83 | 43 | instar | [19, 18, 9, 1, 10, 26] | [1, 9, 8, 9, 16] | [ad, dhr] | MENUIY | WXETA?Y? 
+ioo(2) 77 | 22 | instar | [9, 6, 8, 11, 18, 25] | [3, 2, 3, 7, 7] | [ad, dhr, diffs_all_prime] | NGHJEAE | E?G?JRXOE 
+ioo(3) 90 | 38 | instar | [24, 19, 24, 3, 10, 10] | [5, 5, 21, 7, 0] | [hr, dhr] | AMAOII | SWS(UB)AA 
+Results for spiralbranch55.txt
+ioo(0) 93 | 59 | instar | [20, 22, 4, 2, 28, 17] | [2, 18, 2, 26, 11] | [ad, dhr] | LOERTHEAB | IOEA?R?(FID)?EA?G 
+ioo(1) 111 | 41 | instar | [21, 4, 8, 24, 26, 28] | [17, 4, 16, 2, 2] | [ad, dhr] | INGRHAYEA | ING?R?JS?Y??EA? 

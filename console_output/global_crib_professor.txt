@@ -1,0 +1,137 @@
+Starting global crib with output settings...
+shiftsum | shiftdifferencessum | cribword | shiftlist | shiftdifferences | shiftlistfacts | shiftsinwordform | shiftsingpform
+Results for cross0.txt
+ioo(0) 135 | 67 | professor | [16, 28, 15, 7, 10, 7, 5, 26, 21] | [12, 13, 8, 3, 3, 2, 21, 5] | [hr, dhr] | TEASWIWCYING | Y?EA?LOAOTH?Y?ING 
+Results for cross1.txt
+ioo(0) 143 | 64 | professor | [20, 28, 19, 19, 19, 4, 20, 10, 4] | [8, 9, 0, 0, 15, 16, 10, 6] | [hr, dhr] | LEAMMMRLIR | IO?EA?WWW?R?IOA?R? 
+ioo(1) 155 | 85 | professor | [10, 1, 17, 28, 26, 28, 19, 3, 23] | [9, 16, 11, 2, 2, 9, 16, 20] | [hr, dhr] | IUBEAYEAMOD | ATG?EA??Y??EA?W(UB)H 
+Results for cross2.txt
+ioo(0) 110 | 100 | professor | [0, 12, 26, 8, 15, 8, 3, 26, 12] | [12, 14, 18, 7, 7, 5, 23, 14] | [hr, dhr] | FEOYHSHOYEO | NEO?Y?JLJ(UB)?Y?EO 
+ioo(1) 113 | 81 | professor | [27, 1, 17, 7, 10, 8, 15, 20, 8] | [26, 16, 10, 3, 2, 7, 5, 12] | [hr, dad] | IOUBWIHSLH | ?IO?TGOAJLIOJ 
+ioo(2) 145 | 147 | professor | [24, 19, 6, 27, 12, 27, 0, 27, 3] | [5, 13, 21, 15, 15, 27, 27, 24] | [hr, dhr] | AMGIOEOIOFIOO | SW?G??IO?EO?IO?N?IO?(UB) 
+Results for spiral3.txt
+ioo(0) 127 | 92 | professor | [20, 20, 24, 6, 4, 26, 1, 16, 10] | [0, 4, 18, 2, 22, 25, 15, 6] | [hr, dad] | LLAGRYUTI | IOIOS?G??R??Y?TYA 
+Results for spiral4.txt
+ioo(0) 114 | 65 | professor | [28, 22, 18, 11, 3, 4, 21, 2, 5] | [6, 4, 7, 8, 1, 17, 19, 3] | [ad, dad] | EAOEEJORINGTHC | ?EA?EAXR(UB)?R?ING(FID)TH 
+ioo(1) 142 | 56 | professor | [27, 11, 19, 19, 20, 18, 3, 14, 11] | [16, 8, 0, 1, 2, 15, 11, 3] | [hr, dad] | IOJMMLEOXJ | ?IO?RWWIOX(UB)(PAE)R 
+ioo(2) 138 | 62 | professor | [20, 2, 13, 12, 10, 24, 25, 14, 18] | [18, 11, 1, 2, 14, 1, 11, 4] | [ad, dhr] | LTHPEOIAAEXE | IO(FID)(CM)EOASOE(PAE)X 
+Results for spiral5.txt
+ioo(0) 122 | 79 | professor | [0, 17, 9, 13, 14, 24, 5, 15, 25] | [17, 8, 4, 1, 10, 19, 10, 10] | [ad, dhr] | FBNPXACSAE | NGE(CM)(PAE)STHLOE 
+ioo(1) 157 | 70 | professor | [16, 19, 17, 10, 10, 27, 7, 23, 28] | [3, 2, 7, 0, 17, 20, 16, 5] | [hr, dad] | TMBIIIOWDEA | YWGAA?IO?OH?EA? 
+Results for spiral6.txt
+Results for spiral7.txt
+Results for branch8.txt
+ioo(0) 158 | 109 | professor | [19, 1, 25, 19, 3, 20, 28, 17, 26] | [18, 24, 6, 16, 17, 8, 11, 9] | [hr, dad] | MUAEMOLEABY | WTOEW(UB)IO?EA?G?Y? 
+ioo(1) 146 | 80 | professor | [22, 20, 14, 0, 21, 10, 14, 27, 18] | [2, 6, 14, 21, 11, 4, 13, 9] | [hr, dad] | OELXFINGIXIOE | EAIO(PAE)NINGA(PAE)?IO?X 
+ioo(2) 132 | 67 | professor | [25, 19, 14, 3, 20, 16, 12, 5, 18] | [6, 5, 11, 17, 4, 4, 7, 13] | [ad, dhr] | AEMXOLTEOCE | OEW(PAE)(UB)IOYEOTHX 
+Results for branch9.txt
+Results for branch10.txt
+ioo(0) 129 | 67 | professor | [16, 0, 2, 17, 12, 25, 18, 22, 17] | [16, 2, 15, 5, 13, 7, 4, 5] | [hr, dhr] | TFTHBEOAEEOEB | YN(FID)GEOOEXEAG 
+Results for branch11.txt
+ioo(0) 99 | 67 | professor | [8, 22, 11, 15, 6, 7, 18, 11, 1] | [14, 11, 4, 9, 1, 11, 7, 10] | [hr, dhr] | HOEJSGWEJU | JEARL?G?OXRT 
+ioo(1) 117 | 58 | professor | [10, 10, 25, 21, 11, 18, 12, 2, 8] | [0, 15, 4, 10, 7, 6, 10, 6] | [hr, dhr] | IIAEINGJEEOTHH | AAOEINGRXEO(FID)J 
+ioo(2) 101 | 82 | professor | [1, 18, 10, 19, 5, 19, 16, 4, 9] | [17, 8, 9, 14, 14, 3, 12, 5] | [hr, dhr] | UEIMCMTRN | TXAWTHWY?R?E 
+ioo(3) 160 | 50 | professor | [15, 23, 25, 10, 12, 12, 26, 18, 19] | [8, 2, 15, 2, 0, 14, 8, 1] | [hr, dhr] | SDAEIEOEOYEM | LHOEAEOEO?Y?XW 
+Results for branch12.txt
+ioo(0) 113 | 69 | professor | [23, 1, 15, 21, 15, 13, 8, 13, 4] | [22, 14, 6, 6, 2, 5, 5, 9] | [hr, dhr] | DUSINGSPHPR | HTLINGL(CM)J(CM)?R? 
+ioo(1) 111 | 78 | professor | [27, 6, 10, 8, 11, 28, 6, 10, 5] | [21, 4, 2, 3, 17, 22, 4, 5] | [hr, dhr] | IOGIHJEAGIC | ?IO??G?AJR?EA??G?ATH 
+ioo(2) 136 | 43 | professor | [24, 16, 6, 15, 15, 12, 10, 17, 21] | [8, 10, 9, 0, 3, 2, 7, 4] | [hr, dad] | ATGSSEOIBING | SY?G?LLEOAGING 
+Results for branch13.txt
+ioo(0) 116 | 50 | professor | [14, 18, 4, 9, 14, 15, 21, 15, 6] | [4, 14, 5, 5, 1, 6, 6, 9] | [hr, dhr] | XERNXSINGSG | (PAE)X?R?E(PAE)LINGL?G? 
+ioo(1) 107 | 50 | professor | [9, 14, 14, 11, 15, 25, 3, 7, 9] | [5, 0, 3, 4, 10, 22, 4, 2] | [hr, dhr] | NXXJSAEOWN | E(PAE)(PAE)RLOE(UB)OE 
+Results for branch14.txt
+ioo(0) 163 | 65 | professor | [15, 19, 2, 17, 17, 28, 21, 18, 26] | [4, 17, 15, 0, 11, 7, 3, 8] | [hr, dad] | SMTHBBEAINGEY | LW(FID)GG?EA?INGX?Y? 
+Results for mobius15.txt
+ioo(0) 99 | 72 | professor | [0, 14, 6, 2, 14, 15, 24, 24, 0] | [14, 8, 4, 12, 1, 9, 0, 24] | [hr, dad] | FXGTHXSAAF | N(PAE)?G?(FID)(PAE)LSSN 
+Results for mobius16.txt
+Results for mobius17.txt
+Results for mobius18.txt
+ioo(0) 136 | 35 | professor | [15, 19, 9, 14, 16, 13, 17, 19, 14] | [4, 10, 5, 2, 3, 4, 2, 5] | [hr, dhr] | SMNXTPBMX | LWE(PAE)Y(CM)GW(PAE) 
+ioo(1) 145 | 66 | professor | [28, 18, 15, 21, 16, 14, 1, 20, 12] | [10, 3, 6, 5, 2, 13, 19, 8] | [ad, dad] | EAESINGTXULEO | ?EA?XLINGY(PAE)TIOEO 
+ioo(2) 152 | 107 | professor | [17, 14, 18, 28, 16, 8, 27, 0, 24] | [3, 4, 10, 12, 8, 19, 27, 24] | [ad, dad] | BXEEATHIOFA | G(PAE)X?EA?YJ?IO?NS 
+Results for mobius19.txt
+ioo(0) 107 | 68 | professor | [14, 28, 13, 23, 20, 0, 3, 2, 4] | [14, 15, 10, 3, 20, 3, 1, 2] | [ad, dhr] | XEAPDLFOTHR | (PAE)?EA?(CM)HION(UB)(FID)?R? 
+Results for mobius20.txt
+Results for mobius21.txt
+Results for mobius22.txt
+Results for mayfly23.txt
+ioo(0) 125 | 69 | professor | [0, 13, 24, 15, 12, 8, 3, 23, 27] | [13, 11, 9, 3, 4, 5, 20, 4] | [ad, dhr] | FPASEOHODIO | N(CM)SLEOJ(UB)H?IO? 
+Results for mayfly24.txt
+ioo(0) 142 | 100 | professor | [24, 3, 13, 9, 9, 28, 10, 28, 18] | [21, 10, 4, 0, 19, 18, 18, 10] | [hr, dhr] | AOPNNEAIEAE | S(UB)(CM)EE?EA?A?EA?X 
+Results for mayfly25.txt
+ioo(0) 136 | 66 | professor | [19, 11, 19, 24, 15, 4, 16, 19, 9] | [8, 8, 5, 9, 11, 12, 3, 10] | [hr, dhr] | MJMASRTMN | WRWSL?R?YWE 
+ioo(1) 89 | 86 | professor | [4, 6, 22, 8, 0, 15, 1, 17, 16] | [2, 16, 14, 8, 15, 14, 16, 1] | [ad, dhr] | RGOEHFSUBT | ?R??G?EAJNLTGY 
+ioo(2) 128 | 87 | professor | [15, 14, 8, 17, 20, 24, 5, 25, 0] | [1, 6, 9, 3, 4, 19, 20, 25] | [ad, dad] | SXHBLACAEF | L(PAE)JGIOSTHOEN 
+Results for mayfly26.txt
+ioo(0) 90 | 41 | professor | [5, 10, 14, 6, 7, 14, 17, 7, 10] | [5, 4, 8, 1, 7, 3, 10, 3] | [hr, dhr] | CIXGWXBWI | THA(PAE)?G?O(PAE)GOA 
+ioo(1) 103 | 89 | professor | [19, 6, 20, 15, 2, 16, 3, 14, 8] | [13, 14, 5, 13, 14, 13, 11, 6] | [ad, dhr] | MGLSTHTOXH | W?G?IOL(FID)Y(UB)(PAE)J 
+Results for wingtree27.txt
+ioo(0) 168 | 73 | professor | [6, 25, 24, 28, 16, 2, 20, 22, 25] | [19, 1, 4, 12, 14, 18, 2, 3] | [hr, dad] | GAEAEATTHLOEAE | ?G?OES?EA?Y(FID)IOEAOE 
+Results for wingtree28.txt
+ioo(0) 103 | 81 | professor | [28, 0, 5, 9, 3, 13, 14, 6, 25] | [28, 5, 4, 6, 10, 1, 8, 19] | [ad, dad] | EAFCNOPXGAE | ?EA?NTHE(UB)(CM)(PAE)?G?OE 
+Results for wingtree29.txt
+ioo(0) 81 | 57 | professor | [0, 4, 18, 18, 5, 7, 17, 5, 7] | [4, 14, 0, 13, 2, 10, 12, 2] | [hr, dhr] | FREECWBCW | N?R?XXTHOGTHO 
+Results for wingtree30.txt
+ioo(0) 121 | 80 | professor | [14, 13, 1, 17, 11, 15, 5, 27, 18] | [1, 12, 16, 6, 4, 10, 22, 9] | [ad, dad] | XPUBJSCIOE | (PAE)(CM)TGRLTH?IO?X 
+ioo(1) 102 | 51 | professor | [17, 27, 19, 6, 0, 9, 7, 9, 8] | [10, 8, 13, 6, 9, 2, 2, 1] | [hr, dhr] | BIOMGFNWNH | G?IO?W?G?NEOEJ 
+Results for wingtree31.txt
+ioo(0) 148 | 71 | professor | [24, 28, 22, 0, 8, 20, 18, 21, 7] | [4, 6, 22, 8, 12, 2, 3, 14] | [ad, dad] | AEAOEFHLEINGW | S?EA?EANJIOXINGO 
+ioo(1) 125 | 67 | professor | [12, 7, 15, 13, 16, 2, 16, 27, 17] | [5, 8, 2, 3, 14, 14, 11, 10] | [hr, dhr] | EOWSPTTHTIOB | EOOL(CM)Y(FID)Y?IO?G 
+Results for wingtree32.txt
+ioo(0) 128 | 89 | professor | [23, 19, 6, 25, 25, 1, 11, 16, 2] | [4, 13, 19, 0, 24, 10, 5, 14] | [hr, dad] | DMGAEAEUJTTH | HW?G?OEOETRY(FID) 
+ioo(1) 148 | 104 | professor | [23, 17, 27, 8, 23, 6, 12, 25, 7] | [6, 10, 19, 15, 17, 6, 13, 18] | [hr, dhr] | DBIOHDGEOAEW | HG?IO?JH?G?EOOEO 
+Results for cuneiform33.txt
+ioo(0) 110 | 40 | professor | [16, 12, 15, 22, 10, 9, 12, 12, 2] | [4, 3, 7, 12, 1, 3, 0, 10] | [hr, dhr] | TEOSOEINEOEOTH | YEOLEAAEEOEO(FID) 
+ioo(1) 92 | 50 | professor | [5, 9, 8, 3, 18, 15, 13, 18, 3] | [4, 1, 5, 15, 3, 2, 5, 15] | [hr, dhr] | CNHOESPEO | THEJ(UB)XL(CM)X(UB) 
+ioo(2) 158 | 98 | professor | [4, 28, 13, 20, 23, 24, 2, 24, 20] | [24, 15, 7, 3, 1, 22, 22, 4] | [hr, dhr] | REAPLDATHAL | ?R??EA?(CM)IOHS(FID)SIO 
+Results for cuneiform34.txt
+ioo(0) 141 | 91 | professor | [21, 27, 12, 28, 11, 15, 6, 17, 4] | [6, 15, 16, 17, 4, 9, 11, 13] | [ad, dad] | INGIOEOEAJSGBR | ING?IO?EO?EA?RL?G?G?R? 
+ioo(1) 131 | 74 | professor | [25, 26, 11, 25, 1, 1, 8, 13, 21] | [1, 15, 14, 24, 0, 7, 5, 8] | [hr, dad] | AEYJAEUUHPING | OE?Y?ROETTJ(CM)ING 
+Results for cuneiform35.txt
+ioo(0) 146 | 75 | professor | [20, 14, 28, 26, 27, 6, 12, 0, 13] | [6, 14, 2, 1, 21, 6, 12, 13] | [ad, dhr] | LXEAYIOGEOFP | IO(PAE)?EA??Y??IO??G?EON(CM) 
+ioo(1) 124 | 90 | professor | [28, 18, 5, 22, 16, 0, 1, 6, 28] | [10, 13, 17, 6, 16, 1, 5, 22] | [hr, dad] | EAECOETFUGEA | ?EA?XTHEAYNT?G??EA? 
+Results for cuneiform36.txt
+ioo(0) 155 | 91 | professor | [1, 13, 27, 16, 23, 4, 27, 22, 22] | [12, 14, 11, 7, 19, 23, 5, 0] | [hr, dad] | UPIOTDRIOOEOE | T(CM)?IO?YH?R??IO?EAEA 
+Results for cuneiform37.txt
+ioo(0) 140 | 81 | professor | [25, 28, 28, 5, 13, 23, 4, 0, 14] | [3, 0, 23, 8, 10, 19, 4, 14] | [hr, dad] | AEEAEACPDRFX | OE?EA??EA?TH(CM)H?R?N(PAE) 
+ioo(1) 126 | 87 | professor | [24, 11, 3, 24, 21, 7, 8, 21, 7] | [13, 8, 21, 3, 14, 1, 13, 14] | [hr, dhr] | AJOAINGWHINGW | SR(UB)SINGOJINGO 
+ioo(2) 141 | 73 | professor | [25, 13, 12, 19, 25, 8, 22, 11, 6] | [12, 1, 7, 6, 17, 14, 11, 5] | [hr, dad] | AEPEOMAEHOEJG | OE(CM)EOWOEJEAR?G? 
+Results for cuneiform38.txt
+ioo(0) 154 | 95 | professor | [24, 0, 0, 23, 28, 12, 27, 25, 15] | [24, 0, 23, 5, 16, 15, 2, 10] | [hr, dad] | AFFDEAEOIOAES | SNNH?EA?EO?IO?OEL 
+ioo(1) 144 | 51 | professor | [24, 12, 18, 8, 6, 20, 17, 18, 21] | [12, 6, 10, 2, 14, 3, 1, 3] | [hr, dhr] | AEOEHGLBEING | SEOXJ?G?IOGXING 
+Results for cuneiform39.txt
+Results for spiralbranch40.txt
+ioo(0) 124 | 94 | professor | [10, 28, 17, 10, 25, 13, 6, 15, 0] | [18, 11, 7, 15, 12, 7, 9, 15] | [hr, dhr] | IEABIAEPGSF | A?EA?GAOE(CM)?G?LN 
+Results for spiralbranch41.txt
+ioo(0) 100 | 54 | professor | [12, 20, 26, 3, 8, 12, 9, 6, 4] | [8, 6, 23, 5, 4, 3, 3, 2] | [hr, dhr] | EOLYOHEONGR | EOIO?Y?(UB)JEOE?G??R? 
+Results for spiralbranch42.txt
+ioo(0) 126 | 89 | professor | [0, 10, 27, 25, 13, 2, 14, 8, 27] | [10, 17, 2, 12, 11, 12, 6, 19] | [hr, dhr] | FIIOAEPTHXHIO | NA?IO?OE(CM)(FID)(PAE)J?IO? 
+ioo(1) 162 | 66 | professor | [16, 1, 28, 19, 22, 21, 18, 21, 16] | [15, 27, 9, 3, 1, 3, 3, 5] | [hr, diffs_is_odd, dhr] | TUEAMOEINGEINGT | YT?EA?WEAINGXINGY 
+ioo(2) 106 | 105 | professor | [2, 0, 26, 23, 3, 22, 3, 8, 19] | [2, 26, 3, 20, 19, 19, 5, 11] | [hr, dhr] | THFYDOOEOHM | (FID)N?Y?H(UB)EA(UB)JW 
+ioo(3) 146 | 75 | professor | [10, 24, 27, 9, 3, 14, 23, 15, 21] | [14, 3, 18, 6, 11, 9, 8, 6] | [ad, dhr] | IAIONOXDSING | AS?IO?E(UB)(PAE)HLING 
+Results for spiralbranch43.txt
+Results for spiralbranch44.txt
+ioo(0) 110 | 70 | professor | [0, 1, 7, 24, 28, 20, 2, 10, 18] | [1, 6, 17, 4, 8, 18, 8, 8] | [ad, dhr] | FUWAEALTHIE | NTOS?EA?IO(FID)AX 
+ioo(1) 152 | 66 | professor | [13, 14, 21, 15, 4, 26, 15, 21, 23] | [1, 7, 6, 11, 22, 11, 6, 2] | [hr, dhr] | PXINGSRYSINGD | (CM)(PAE)INGL?R??Y?LINGH 
+Results for spiralbranch45.txt
+ioo(0) 124 | 98 | professor | [12, 7, 1, 24, 12, 22, 18, 28, 0] | [5, 6, 23, 12, 10, 4, 10, 28] | [hr, dhr] | EOWUAEOOEEEAF | EOOTSEOEAX?EA?N 
+ioo(1) 131 | 85 | professor | [11, 17, 10, 7, 1, 25, 7, 25, 28] | [6, 7, 3, 6, 24, 18, 18, 3] | [hr, dhr] | JBIWUAEWAEEA | RGAOTOEOOE?EA? 
+ioo(2) 140 | 95 | professor | [22, 26, 5, 26, 19, 24, 2, 11, 5] | [4, 21, 21, 7, 5, 22, 9, 6] | [hr, dhr] | OEYCYMATHJC | EA?Y?TH?Y?WS(FID)RTH 
+Results for spiralbranch46.txt
+ioo(0) 168 | 53 | professor | [11, 10, 18, 17, 5, 28, 25, 28, 26] | [1, 8, 1, 12, 23, 3, 3, 2] | [hr, dhr] | JIEBCEAAEEAY | RAXGTH?EA?OE?EA??Y? 
+ioo(1) 127 | 80 | professor | [28, 20, 0, 9, 22, 19, 5, 14, 10] | [8, 20, 9, 13, 3, 14, 9, 4] | [ad, dhr] | EALFNOEMCXI | ?EA?IONEEAWTH(PAE)A 
+Results for spiralbranch47.txt
+ioo(0) 76 | 45 | professor | [8, 11, 1, 1, 18, 18, 11, 5, 3] | [3, 10, 0, 17, 0, 7, 6, 2] | [hr, dhr] | HJUUEEJCO | JRTTXXRTH(UB) 
+ioo(1) 110 | 61 | professor | [4, 22, 11, 8, 12, 14, 16, 20, 3] | [18, 11, 3, 4, 2, 2, 4, 17] | [ad, dhr] | ROEJHEOXTLO | ?R?EARJEO(PAE)YIO(UB) 
+Results for spiralbranch48.txt
+ioo(0) 96 | 82 | professor | [3, 20, 8, 5, 13, 15, 1, 4, 27] | [17, 12, 3, 8, 2, 14, 3, 23] | [ad, dhr] | OLHCPSURIO | (UB)IOJTH(CM)LT?R??IO? 
+Results for spiralbranch49.txt
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+Results for spiralbranch54.txt
+Results for hollow54.txt
+Results for hollow55.txt
+Results for spiralbranch55.txt
+ioo(0) 137 | 67 | professor | [13, 11, 26, 18, 12, 0, 10, 23, 24] | [2, 15, 8, 6, 12, 10, 13, 1] | [ad, dad] | PJYEEOFIDA | (CM)R?Y?XEONAHS 

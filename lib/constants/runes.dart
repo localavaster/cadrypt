@@ -1,26 +1,30 @@
-final gematriaRegex = RegExp('((th)|(ng)|(ea)|(oe)|(io)|(eo))|(.)', dotAll: true, caseSensitive: false);
+// ENGLISH RELATED
+final List<String> alphabet = 'abcdefghijklmnopqrstuvwxyz'.toLowerCase().split('');
+
+// CICADA RELATED
+final gematriaRegex = RegExp('((th)|(ing)|(ea)|(oe)|(io)|(eo))|(.)', dotAll: true, caseSensitive: false);
 
 const List<String> runes = ['ᚠ', 'ᚢ', 'ᚦ', 'ᚩ', 'ᚱ', 'ᚳ', 'ᚷ', 'ᚹ', 'ᚻ', 'ᚾ', 'ᛁ', 'ᛄ', 'ᛇ', 'ᛈ', 'ᛉ', 'ᛋ', 'ᛏ', 'ᛒ', 'ᛖ', 'ᛗ', 'ᛚ', 'ᛝ', 'ᛟ', 'ᛞ', 'ᚪ', 'ᚫ', 'ᚣ', 'ᛡ', 'ᛠ'];
 
 const List<String> doubleRunes = ['ᛇ', 'ᛝ', 'ᛟ', 'ᚫ', 'ᛡ', 'ᛠ'];
 
-const List<String> runeEnglish = ['f', 'u', 'th', 'o', 'r', 'c', 'g', 'w', 'h', 'n', 'i', 'j', 'eo', 'p', 'x', 's', 't', 'b', 'e', 'm', 'l', 'ng', 'oe', 'd', 'a', 'ae', 'y', 'io', 'ea'];
+const List<String> runeEnglish = ['f', 'u', 'th', 'o', 'r', 'c', 'g', 'w', 'h', 'n', 'i', 'j', 'eo', 'p', 'x', 's', 't', 'b', 'e', 'm', 'l', 'ing', 'oe', 'd', 'a', 'ae', 'y', 'io', 'ea'];
 
-const List<String> altRuneEnglish = ['', 'v', '', '', '', 'k', '', '', '', '', '', '', '', '', '', 'z', 't', 'b', 'e', 'm', 'l', 'ng', 'oe', 'd', 'a', 'ae', 'y', 'io', 'ea'];
+const List<String> altRuneEnglish = ['', 'v', '', '', '', 'k', '', '', '', '', '', '', '', '', '', 'z', 't', 'b', 'e', 'm', 'l', 'ing', 'oe', 'd', 'a', 'ae', 'y', 'io', 'ea'];
 
-const List<String> englishDoubleRunes = ['th', 'eo', 'ng', 'oe', 'ae', 'ea'];
+const List<String> englishDoubleRunes = ['th', 'eo', 'ing', 'oe', 'ae', 'ea'];
 
-const Map<String, String> runeToEnglish = {'ᚠ': 'F', 'ᚢ': 'U', 'ᚦ': 'TH', 'ᚩ': 'O', 'ᚱ': 'R', 'ᚳ': 'CK', 'ᚷ': 'G', 'ᚹ': 'W', 'ᚻ': 'H', 'ᚾ': 'N', 'ᛁ': 'I', 'ᛄ': 'J', 'ᛇ': 'EO', 'ᛈ': 'P', 'ᛉ': 'X', 'ᛋ': 'SZ', 'ᛏ': 'T', 'ᛒ': 'B', 'ᛖ': 'E', 'ᛗ': 'M', 'ᛚ': 'L', 'ᛝ': 'NG', 'ᛟ': 'OE', 'ᛞ': 'D', 'ᚪ': 'A', 'ᚫ': 'AE', 'ᚣ': 'Y', 'ᛡ': 'IO', 'ᛠ': 'EA'};
+const Map<String, String> runeToEnglish = {'ᚠ': 'F', 'ᚢ': 'U', 'ᚦ': 'TH', 'ᚩ': 'O', 'ᚱ': 'R', 'ᚳ': 'CK', 'ᚷ': 'G', 'ᚹ': 'W', 'ᚻ': 'H', 'ᚾ': 'N', 'ᛁ': 'I', 'ᛄ': 'J', 'ᛇ': 'EO', 'ᛈ': 'P', 'ᛉ': 'X', 'ᛋ': 'S', 'ᛏ': 'T', 'ᛒ': 'B', 'ᛖ': 'E', 'ᛗ': 'M', 'ᛚ': 'L', 'ᛝ': 'ING', 'ᛟ': 'OE', 'ᛞ': 'D', 'ᚪ': 'A', 'ᚫ': 'AE', 'ᚣ': 'Y', 'ᛡ': 'IO', 'ᛠ': 'EA'};
 
-const Map<String, int> letterToPrime = {'F': 2, 'U': 3, 'TH': 5, 'O': 7, 'R': 11, 'C': 13, 'G': 17, 'W': 19, 'H': 23, 'N': 29, 'I': 31, 'J': 37, 'EO': 41, 'P': 43, 'X': 47, 'S': 53, 'T': 59, 'B': 61, 'E': 67, 'M': 71, 'L': 73, 'NG': 79, 'OE': 83, 'D': 89, 'A': 97, 'AE': 101, 'Y': 103, 'IO': 107, 'EA': 109};
+const Map<String, int> letterToPrime = {'F': 2, 'U': 3, 'TH': 5, 'O': 7, 'R': 11, 'C': 13, 'G': 17, 'W': 19, 'H': 23, 'N': 29, 'I': 31, 'J': 37, 'EO': 41, 'P': 43, 'X': 47, 'S': 53, 'T': 59, 'B': 61, 'E': 67, 'M': 71, 'L': 73, 'ING': 79, 'OE': 83, 'D': 89, 'A': 97, 'AE': 101, 'Y': 103, 'IO': 107, 'EA': 109};
 
-const Map<String, int> altLetterToPrime = {'F': 2, 'V': 3, 'TH': 5, 'O': 7, 'R': 11, 'K': 13, 'G': 17, 'W': 19, 'H': 23, 'N': 29, 'I': 31, 'J': 37, 'EO': 41, 'P': 43, 'X': 47, 'Z': 53, 'T': 59, 'B': 61, 'E': 67, 'M': 71, 'L': 73, 'NG': 79, 'OE': 83, 'D': 89, 'A': 97, 'AE': 101, 'Y': 103, 'IO': 107, 'EA': 109};
+const Map<String, int> altLetterToPrime = {'F': 2, 'V': 3, 'TH': 5, 'O': 7, 'R': 11, 'K': 13, 'G': 17, 'W': 19, 'H': 23, 'N': 29, 'I': 31, 'J': 37, 'EO': 41, 'P': 43, 'X': 47, 'Z': 53, 'T': 59, 'B': 61, 'E': 67, 'M': 71, 'L': 73, 'ING': 79, 'OE': 83, 'D': 89, 'A': 97, 'AE': 101, 'Y': 103, 'IO': 107, 'EA': 109};
 
 const Map<String, String> runePositions = {'ᚠ': '0', 'ᚢ': '1', 'ᚦ': '2', 'ᚩ': '3', 'ᚱ': '4', 'ᚳ': '5', 'ᚷ': '6', 'ᚹ': '7', 'ᚻ': '8', 'ᚾ': '9', 'ᛁ': '10', 'ᛄ': '11', 'ᛇ': '12', 'ᛈ': '13', 'ᛉ': '14', 'ᛋ': '15', 'ᛏ': '16', 'ᛒ': '17', 'ᛖ': '18', 'ᛗ': '19', 'ᛚ': '20', 'ᛝ': '21', 'ᛟ': '22', 'ᛞ': '23', 'ᚪ': '24', 'ᚫ': '25', 'ᚣ': '26', 'ᛡ': '27', 'ᛠ': '28'};
 
 const Map<String, String> runePrimes = {'ᚠ': '2', 'ᚢ': '3', 'ᚦ': '5', 'ᚩ': '7', 'ᚱ': '11', 'ᚳ': '13', 'ᚷ': '17', 'ᚹ': '19', 'ᚻ': '23', 'ᚾ': '29', 'ᛁ': '31', 'ᛄ': '37', 'ᛇ': '41', 'ᛈ': '43', 'ᛉ': '47', 'ᛋ': '53', 'ᛏ': '59', 'ᛒ': '61', 'ᛖ': '67', 'ᛗ': '71', 'ᛚ': '73', 'ᛝ': '79', 'ᛟ': '83', 'ᛞ': '89', 'ᚪ': '97', 'ᚫ': '101', 'ᚣ': '103', 'ᛡ': '107', 'ᛠ': '109'};
 
-const Map<String, String> englishToRune = {'ᚠ': 'F', 'ᚢ': 'U', 'ᚦ': 'TH', 'ᚩ': 'O', 'ᚱ': 'R', 'ᚳ': 'CK', 'ᚷ': 'G', 'ᚹ': 'W', 'ᚻ': 'H', 'ᚾ': 'N', 'ᛁ': 'I', 'ᛄ': 'J', 'ᛇ': 'EO', 'ᛈ': 'P', 'ᛉ': 'X', 'ᛋ': 'SZ', 'ᛏ': 'T', 'ᛒ': 'B', 'ᛖ': 'E', 'ᛗ': 'M', 'ᛚ': 'L', 'ᛝ': 'NG', 'ᛟ': 'OE', 'ᛞ': 'D', 'ᚪ': 'A', 'ᚫ': 'AE', 'ᚣ': 'Y', 'ᛡ': 'IO', 'ᛠ': 'EA'};
+const Map<String, String> englishToRune = {'ᚠ': 'F', 'ᚢ': 'U', 'ᚦ': 'TH', 'ᚩ': 'O', 'ᚱ': 'R', 'ᚳ': 'CK', 'ᚷ': 'G', 'ᚹ': 'W', 'ᚻ': 'H', 'ᚾ': 'N', 'ᛁ': 'I', 'ᛄ': 'J', 'ᛇ': 'EO', 'ᛈ': 'P', 'ᛉ': 'X', 'ᛋ': 'S', 'ᛏ': 'T', 'ᛒ': 'B', 'ᛖ': 'E', 'ᛗ': 'M', 'ᛚ': 'L', 'ᛝ': 'ING', 'ᛟ': 'OE', 'ᛞ': 'D', 'ᚪ': 'A', 'ᚫ': 'AE', 'ᚣ': 'Y', 'ᛡ': 'IO', 'ᛠ': 'EA'};
 
 const List<int> primes = [0, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
 
@@ -64,7 +68,7 @@ class Conversions {
   }
 
   static String positionToRune(int position) {
-    return runes.elementAt((position) % runes.length);
+    return runes.elementAt(position % runes.length);
   }
 
   static int runeToPosition(String rune) {

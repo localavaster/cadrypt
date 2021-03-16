@@ -1,0 +1,297 @@
+==========================
+== Entire Page Statistics
+==========================
+Total Words: 124 | PRIME: false
+Total Unique Words: 74 | PRIME: false
+Repeated Words: [ᚹᛖᛚᚳᚩᛗᛖ, ᛏᚩ, ᚦᛖ, ᛄᚩᚢᚱᚾᛖᚣ, ᛖᚾᛞ, ᚪᛚᛚ, ᛁᛏ, ᛁᛋ, ᚪᚾ, ᚠᚩᚱ, ᚠᛁᚾᛞ, ᚹᚪᚣ, ᚪ, ᚣᚩᚢ, ᚹᛁᛚᛚ, ᚪᚾᛞ, ᚣᚩᚢᚱ, ᛋᛖᛚᚠ, ᚦᚱᚩᚢᚷᚻ, ᚦᚪᛏ, ᚹᛖ, ᚹᛁᚦᛁᚾ, ᚪᚱᛖ, ᚢᚾᛏᚩ, ᚣᚩᚢᚱᛋᛖᛚᚠ, ᚻᚩᛚᚣ]
+Total Runes: 515 | PRIME: false
+Total Spaces: 124 | PRIME: false
+Total Periods: 0 | PRIME: true
+Total GP sum: 23012 | PRIME: false
+Total Sentences: 1 | PRIME: false
+Total Lines: 27 | PRIME: false
+==========================
+== Character Frequencies
+==========================
+ᚫ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛄ 2 | PRIME: true
+ᛒ 2 | PRIME: true
+ᛡ 2 | PRIME: true
+ᛈ 5 | PRIME: true
+ᛝ 5 | PRIME: true
+ᛠ 5 | PRIME: true
+ᚻ 8 | PRIME: false
+ᛗ 10 | PRIME: false
+ᚠ 11 | PRIME: true
+ᚷ 11 | PRIME: true
+ᚳ 12 | PRIME: false
+ᚦ 15 | PRIME: false
+ᛞ 15 | PRIME: false
+ᚹ 16 | PRIME: false
+ᚣ 25 | PRIME: false
+ᛏ 29 | PRIME: true
+ᛋ 30 | PRIME: false
+ᚢ 31 | PRIME: true
+ᚪ 33 | PRIME: false
+ᚾ 35 | PRIME: false
+ᚱ 36 | PRIME: false
+ᛚ 37 | PRIME: true
+ᛁ 43 | PRIME: true
+ᚩ 44 | PRIME: false
+ᛖ 53 | PRIME: true
+==========================
+== Character Frequencies As Sums
+==========================
+ᚫ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛄ 74 | PRIME: false
+ᛒ 122 | PRIME: false
+ᛡ 214 | PRIME: false
+ᛈ 215 | PRIME: false
+ᛝ 395 | PRIME: false
+ᛠ 545 | PRIME: false
+ᚻ 184 | PRIME: false
+ᛗ 710 | PRIME: false
+ᚠ 22 | PRIME: false
+ᚷ 187 | PRIME: false
+ᚳ 156 | PRIME: false
+ᚦ 75 | PRIME: false
+ᛞ 1335 | PRIME: false
+ᚹ 304 | PRIME: false
+ᚣ 2575 | PRIME: false
+ᛏ 1711 | PRIME: false
+ᛋ 1590 | PRIME: false
+ᚢ 93 | PRIME: false
+ᚪ 3201 | PRIME: false
+ᚾ 1015 | PRIME: false
+ᚱ 396 | PRIME: false
+ᛚ 2701 | PRIME: false
+ᛁ 1333 | PRIME: false
+ᚩ 308 | PRIME: false
+ᛖ 3551 | PRIME: false
+==========================
+== Sentence Characteristics
+==========================
+Sentence: ᚹᛖᛚᚳᚩᛗᛖ-ᚹᛖᛚᚳᚩᛗᛖ-ᛈᛁᛚᚷᚱᛁᛗ-ᛏᚩ-ᚦᛖ-ᚷᚱᛠᛏ-ᛄᚩᚢᚱᚾᛖᚣ-ᛏᚩᚹᚪᚱᛞ-ᚦᛖ-ᛖᚾᛞ-ᚩᚠ-ᚪᛚᛚ-ᚦᛝᛋ-ᛁᛏ-ᛁᛋ-ᚾᚩᛏ-ᚪᚾ-ᛠᛋᚣ-ᛏᚱᛁᛈ-ᛒᚢᛏ-ᚠᚩᚱ-ᚦᚩᛋᛖ-ᚹᚻᚩ-ᚠᛁᚾᛞ-ᚦᛖᛁᚱ-ᚹᚪᚣ-ᚻᛖᚱᛖ-ᛁᛏ-ᛁᛋ-ᚪ-ᚾᛖᚳᛖᛋᛋᚪᚱᚣ-ᚩᚾᛖ-ᚪᛚᚩᛝ-ᚦᛖ-ᚹᚪᚣ-ᚣᚩᚢ-ᚹᛁᛚᛚ-ᚠᛁᚾᛞ-ᚪᚾ-ᛖᚾᛞ-ᛏᚩ-ᚪᛚᛚ-ᛋᛏᚱᚢᚷᚷᛚᛖ-ᚪᚾᛞ-ᛋᚢᚠᚠᛖᚱᛝ-ᚣᚩᚢᚱ-ᛁᚾᚾᚩᚳᛖᚾᚳᛖ-ᚣᚩᚢᚱ-ᛁᛚᛚᚢᛋᛡᚾᛋ-ᚣᚩᚢᚱ-ᚳᛖᚱᛏᚪᛁᚾᛏᚣ-ᚪᚾᛞ-ᚣᚩᚢᚱ-ᚱᛠᛚᛁᛏᚣ-ᚢᛚᛏᛁᛗᚪᛏᛖᛚᚣ-ᚣᚩᚢ-ᚹᛁᛚᛚ-ᛞᛁᛋᚳᚩᚢᛖᚱ-ᚪᚾ-ᛖᚾᛞ-ᛏᚩ-ᛋᛖᛚᚠ-ᛁᛏ-ᛁᛋ-ᚦᚱᚩᚢᚷᚻ-ᚦᛁᛋ-ᛈᛁᛚᚷᚱᛁᛗᚪᚷᛖ-ᚦᚪᛏ-ᚹᛖ-ᛋᚻᚪᛈᛖ-ᚩᚢᚱᛋᛖᛚᚢᛖᛋ-ᚪᚾᛞ-ᚩᚢᚱ-ᚱᛠᛚᛁᛏᛁᛖᛋ-ᛄᚩᚢᚱᚾᛖᚣ-ᛞᛖᛖᛈ-ᚹᛁᚦᛁᚾ-ᚪᚾᛞ-ᚣᚩᚢ-ᚹᛁᛚᛚ-ᚪᚱᚱᛁᚢᛖ-ᚩᚢᛏᛋᛁᛞᛖ-ᛚᛁᚳᛖ-ᚦᛖ-ᛁᚾᛋᛏᚪᚱ-ᛁᛏ-ᛁᛋ-ᚩᚾᛚᚣ-ᚦᚱᚩᚢᚷᚻ-ᚷᚩᛝ-ᚹᛁᚦᛁᚾ-ᚦᚪᛏ-ᚹᛖ-ᛗᚪᚣ-ᛖᛗᛖᚱᚷᛖ-ᚹᛁᛞᛋᚩᛗ-ᚣᚩᚢ-ᚪᚱᛖ-ᚪ-ᛒᛖᛝ-ᚢᚾᛏᚩ-ᚣᚩᚢᚱᛋᛖᛚᚠ-ᚣᚩᚢ-ᚪᚱᛖ-ᚪ-ᛚᚪᚹ-ᚢᚾᛏᚩ-ᚣᚩᚢᚱᛋᛖᛚᚠ-ᛠᚳᚻ-ᛁᚾᛏᛖᛚᛚᛁᚷᛖᚾᚳᛖ-ᛁᛋ-ᚻᚩᛚᚣ-ᚠᚩᚱ-ᚪᛚᛚ-ᚦᚪᛏ-ᛚᛁᚢᛖᛋ-ᛁᛋ-ᚻᚩᛚᚣ-ᚪᚾ-ᛁᚾᛋᛏᚱᚢᚳᛏᛡᚾ-ᚳᚩᛗᛗᚪᚾᛞ-ᚣᚩᚢᚱ-ᚩᚹᚾ-ᛋᛖᛚᚠ-
+English Sentence: WELCKOME-WELCKOME-PILGRIM-TO-THE-GREAT-JOURNEY-TOWARD-THE-END-OF-ALL-THINGS-IT-IS-NOT-AN-EASY-TRIP-BUT-FOR-THOSE-WHO-FIND-THEIR-WAY-HERE-IT-IS-A-NECKESSARY-ONE-ALOING-THE-WAY-YOU-WILL-FIND-AN-END-TO-ALL-STRUGGLE-AND-SUFFERING-YOUR-INNOCKENCKE-YOUR-ILLUSIONS-YOUR-CKERTAINTY-AND-YOUR-REALITY-ULTIMATELY-YOU-WILL-DISCKOUER-AN-END-TO-SELF-IT-IS-THROUGH-THIS-PILGRIMAGE-THAT-WE-SHAPE-OURSELUES-AND-OUR-REALITIES-JOURNEY-DEEP-WITHIN-AND-YOU-WILL-ARRIUE-OUTSIDE-LICKE-THE-INSTAR-IT-IS-ONLY-THROUGH-GOING-WITHIN-THAT-WE-MAY-EMERGE-WIDSOM-YOU-ARE-A-BEING-UNTO-YOURSELF-YOU-ARE-A-LAW-UNTO-YOURSELF-EACKH-INTELLIGENCKE-IS-HOLY-FOR-ALL-THAT-LIUES-IS-HOLY-AN-INSTRUCKTION-CKOMMAND-YOUR-OWN-SELF-
+Total Characters: 639 | PRIME: false
+Total Runes: 515 | PRIME: false
+Total Spaces: 124 | PRIME: false
+GP Sum: 23012 | PRIME: false
+IoC: 0.03857908860337224
+==========================
+== Line Characteristics
+==========================
+Line: ᚹᛖᛚᚳᚩᛗᛖ.ᚹᛖᛚᚳᚩᛗᛖ-ᛈᛁᛚ
+English Line: WELCKOME.WELCKOME-PIL
+Total Characters: 19 | PRIME: true
+Total Runes: 17 | PRIME: true
+Total Spaces: 1 | PRIME: false
+GP Sum: 781 | PRIME: false
+IoC: 0.08496732026143791
+
+Line: ᚷᚱᛁᛗ-ᛏᚩ-ᚦᛖ-ᚷᚱᛠᛏ-ᛄᚩᚢ
+English Line: GRIM-TO-THE-GREAT-JOU
+Total Characters: 19 | PRIME: true
+Total Runes: 15 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 511 | PRIME: false
+IoC: 0.023391812865497075
+
+Line: ᚱᚾᛖᚣ-ᛏᚩᚹᚪᚱᛞ-ᚦᛖ-ᛖᚾᛞ-ᚩᚠ-
+English Line: RNEY-TOWARD-THE-END-OF-
+Total Characters: 22 | PRIME: false
+Total Runes: 17 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 758 | PRIME: false
+IoC: 0.030303030303030304
+
+Line: ᚪᛚᛚ-ᚦᛝᛋ.ᛁᛏ-ᛁᛋ-ᚾᚩᛏ-ᚪᚾ-ᛠᛋᚣ-ᛏᚱᛁᛈ
+English Line: ALL-THINGS.IT-IS-NOT-AN-EASY-TRIP
+Total Characters: 29 | PRIME: true
+Total Runes: 22 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1184 | PRIME: false
+IoC: 0.031746031746031744
+
+Line: -ᛒᚢᛏ-ᚠᚩᚱ-ᚦᚩᛋᛖ-ᚹᚻᚩ-ᚠᛁᚾᛞ-ᚦᛖᛁᚱ-ᚹᚪᚣ-
+English Line: -BUT-FOR-THOSE-WHO-FIND-THEIR-WAY-
+Total Characters: 32 | PRIME: false
+Total Runes: 24 | PRIME: false
+Total Spaces: 8 | PRIME: false
+GP Sum: 808 | PRIME: false
+IoC: 0.018145161290322582
+
+Line: ᚻᛖᚱᛖ-ᛁᛏ-ᛁᛋ-ᚪ-ᚾᛖᚳᛖᛋᛋᚪᚱᚣ-ᚩᚾᛖ.ᚪ
+English Line: HERE-IT-IS-A-NECKESSARY-ONE.A
+Total Characters: 28 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1132 | PRIME: false
+IoC: 0.05413105413105413
+
+Line: ᛚᚩᛝ-ᚦᛖ-ᚹᚪᚣ-ᚣᚩᚢ-ᚹᛁᛚᛚ-ᚠᛁᚾᛞ-ᚪᚾ-ᛖᚾ
+English Line: LOING-THE-WAY-YOU-WILL-FIND-AN-EN
+Total Characters: 30 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 7 | PRIME: true
+GP Sum: 1132 | PRIME: false
+IoC: 0.027586206896551724
+
+Line: ᛞ-ᛏᚩ-ᚪᛚᛚ-ᛋᛏᚱᚢᚷᚷᛚᛖ-ᚪᚾᛞ-ᛋᚢᚠᚠᛖ
+English Line: D-TO-ALL-STRUGGLE-AND-SUFFE
+Total Characters: 27 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1040 | PRIME: false
+IoC: 0.03133903133903134
+
+Line: ᚱᛝ-ᚣᚩᚢᚱ-ᛁᚾᚾᚩᚳᛖᚾᚳᛖ-ᚣᚩᚢᚱ-ᛁᛚᛚᚢ
+English Line: RING-YOUR-INNOCKENCKE-YOUR-ILLU
+Total Characters: 27 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 803 | PRIME: false
+IoC: 0.04843304843304843
+
+Line: ᛋᛡᚾᛋ-ᚣᚩᚢᚱ-ᚳᛖᚱᛏᚪᛁᚾᛏᚣ-ᚪᚾᛞ-ᚣᚩᚢ
+English Line: SIONS-YOUR-CKERTAINTY-AND-YOU
+Total Characters: 27 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 1163 | PRIME: true
+IoC: 0.03418803418803419
+
+Line: ᚱ-ᚱᛠᛚᛁᛏᚣ.ᚢᛚᛏᛁᛗᚪᛏᛖᛚᚣ-ᚣᚩᚢ-ᚹ
+English Line: R-REALITY.ULTIMATELY-YOU-W
+Total Characters: 25 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 1165 | PRIME: false
+IoC: 0.043478260869565216
+
+Line: ᛁᛚᛚ-ᛞᛁᛋᚳᚩᚢᛖᚱ-ᚪᚾ-ᛖᚾᛞ-ᛏᚩ-ᛋᛖᛚᚠ
+English Line: ILL-DISCKOUER-AN-END-TO-SELF
+Total Characters: 27 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1023 | PRIME: false
+IoC: 0.03133903133903134
+
+Line: .ᛁᛏ-ᛁᛋ-ᚦᚱᚩᚢᚷᚻ-ᚦᛁᛋ-ᛈᛁᛚᚷᚱᛁᛗ
+English Line: .IT-IS-THROUGH-THIS-PILGRIM
+Total Characters: 25 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 606 | PRIME: false
+IoC: 0.050724637681159424
+
+Line: ᚪᚷᛖ-ᚦᚪᛏ-ᚹᛖ-ᛋᚻᚪᛈᛖ-ᚩᚢᚱᛋᛖᛚᚢᛖ
+English Line: AGE-THAT-WE-SHAPE-OURSELUE
+Total Characters: 25 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 995 | PRIME: false
+IoC: 0.05
+
+Line: ᛋ-ᚪᚾᛞ-ᚩᚢᚱ-ᚱᛠᛚᛁᛏᛁᛖᛋ.ᛄᚩᚢᚱᚾᛖᚣ-ᛞ
+English Line: S-AND-OUR-REALITIES.JOURNEY-D
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 1069 | PRIME: true
+IoC: 0.02849002849002849
+
+Line: ᛖᛖᛈ-ᚹᛁᚦᛁᚾ-ᚪᚾᛞ-ᚣᚩᚢ-ᚹᛁᛚᛚ-ᚪᚱᚱᛁᚢ
+English Line: EEP-WITHIN-AND-YOU-WILL-ARRIU
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 969 | PRIME: false
+IoC: 0.03439153439153439
+
+Line: ᛖ-ᚩᚢᛏᛋᛁᛞᛖ.ᛚᛁᚳᛖ-ᚦᛖ-ᛁᚾᛋᛏᚪᚱ-ᛁᛏ-ᛁ
+English Line: E-OUTSIDE.LICKE-THE-INSTAR-IT-I
+Total Characters: 29 | PRIME: true
+Total Runes: 23 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 1033 | PRIME: true
+IoC: 0.05291005291005291
+
+Line: ᛋ-ᚩᚾᛚᚣ-ᚦᚱᚩᚢᚷᚻ-ᚷᚩᛝ-ᚹᛁᚦᛁᚾ-ᚦᚪ
+English Line: S-ONLY-THROUGH-GOING-WITHIN-THA
+Total Characters: 26 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 651 | PRIME: false
+IoC: 0.027692307692307693
+
+Line: ᛏ-ᚹᛖ-ᛗᚪᚣ-ᛖᛗᛖᚱᚷᛖ.
+English Line: T-WE-MAY-EMERGE.
+Total Characters: 16 | PRIME: false
+Total Runes: 12 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 716 | PRIME: false
+IoC: 0.06666666666666667
+
+Line: ᚹᛁᛞᛋᚩᛗ.ᚣᚩᚢ-ᚪᚱᛖ-ᚪ-ᛒᛖᛝ-ᚢᚾ
+English Line: WIDSOM.YOU-ARE-A-BEING-UN
+Total Characters: 23 | PRIME: true
+Total Runes: 18 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 894 | PRIME: false
+IoC: 0.017316017316017316
+
+Line: ᛏᚩ-ᚣᚩᚢᚱᛋᛖᛚᚠ.ᚣᚩᚢ-ᚪᚱᛖ-ᚪ-
+English Line: TO-YOURSELF.YOU-ARE-A-
+Total Characters: 22 | PRIME: false
+Total Runes: 17 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 770 | PRIME: false
+IoC: 0.0380952380952381
+
+Line: ᛚᚪᚹ-ᚢᚾᛏᚩ-ᚣᚩᚢᚱᛋᛖᛚᚠ.ᛠᚳᚻ-
+English Line: LAW-UNTO-YOURSELF.EACKH-
+Total Characters: 22 | PRIME: false
+Total Runes: 18 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 751 | PRIME: true
+IoC: 0.014285714285714285
+
+Line: ᛁᚾᛏᛖᛚᛚᛁᚷᛖᚾᚳᛖ-ᛁᛋ-ᚻᚩᛚᚣ.ᚠᚩ
+English Line: INTELLIGENCKE-IS-HOLY.FO
+Total Characters: 23 | PRIME: true
+Total Runes: 20 | PRIME: false
+Total Spaces: 2 | PRIME: true
+GP Sum: 855 | PRIME: false
+IoC: 0.047619047619047616
+
+Line: ᚱ-ᚪᛚᛚ-ᚦᚪᛏ-ᛚᛁᚢᛖᛋ-ᛁᛋ-ᚻᚩᛚᚣ.
+English Line: R-ALL-THAT-LIUES-IS-HOLY.
+Total Characters: 24 | PRIME: false
+Total Runes: 18 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 932 | PRIME: false
+IoC: 0.03557312252964427
+
+Line: ᚪᚾ-ᛁᚾᛋᛏᚱᚢᚳᛏᛡᚾ.ᚳᚩᛗᛗᚪᚾᛞ-
+English Line: AN-INSTRUCKTION.CKOMMAND-
+Total Characters: 22 | PRIME: false
+Total Runes: 19 | PRIME: true
+Total Spaces: 2 | PRIME: true
+GP Sum: 897 | PRIME: false
+IoC: 0.047619047619047616
+
+Line: ᚣᚩᚢᚱ-ᚩᚹᚾ-ᛋᛖᛚᚠ.
+English Line: YOUR-OWN-SELF.
+Total Characters: 14 | PRIME: false
+Total Runes: 11 | PRIME: true
+Total Spaces: 2 | PRIME: true
+GP Sum: 374 | PRIME: false
+IoC: 0.01282051282051282
+

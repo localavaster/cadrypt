@@ -2,11 +2,6 @@ import 'dart:io';
 
 // A class containing functions relating to https://www.oeis.org
 class OEISParser {
-  static const currentAmountOfSequences = 340699;
-
-  File sequenceFile;
-  File modifiedSequenceFile;
-
   OEISParser() {
     sequenceFile = File('${Directory.current.path}/raw_oeis_sequences');
     if (!sequenceFile.existsSync()) {
@@ -18,6 +13,11 @@ class OEISParser {
       modifiedSequenceFile.createSync();
     }
   }
+
+  static const currentAmountOfSequences = 340699;
+
+  File sequenceFile;
+  File modifiedSequenceFile;
 
   void write_invalid_sequence() {
     modifiedSequenceFile.writeAsStringSync('0,0,0,\n', mode: FileMode.append);

@@ -1,0 +1,160 @@
+==========================
+== Entire Page Statistics
+==========================
+Total Words: 1 | PRIME: false
+Total Unique Words: 1 | PRIME: false
+Repeated Words: []
+Total Runes: 0 | PRIME: true
+Total Spaces: 0 | PRIME: true
+Total Periods: 0 | PRIME: true
+Total GP sum: 0 | PRIME: true
+Total Sentences: 1 | PRIME: false
+Total Lines: 9 | PRIME: false
+==========================
+== Character Frequencies
+==========================
+ᚠ 0 | PRIME: true
+ᚢ 0 | PRIME: true
+ᚣ 0 | PRIME: true
+ᚦ 0 | PRIME: true
+ᚩ 0 | PRIME: true
+ᚪ 0 | PRIME: true
+ᚫ 0 | PRIME: true
+ᚱ 0 | PRIME: true
+ᚳ 0 | PRIME: true
+ᚷ 0 | PRIME: true
+ᚹ 0 | PRIME: true
+ᚻ 0 | PRIME: true
+ᚾ 0 | PRIME: true
+ᛁ 0 | PRIME: true
+ᛄ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛈ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛋ 0 | PRIME: true
+ᛏ 0 | PRIME: true
+ᛒ 0 | PRIME: true
+ᛖ 0 | PRIME: true
+ᛗ 0 | PRIME: true
+ᛚ 0 | PRIME: true
+ᛝ 0 | PRIME: true
+ᛞ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛠ 0 | PRIME: true
+ᛡ 0 | PRIME: true
+==========================
+== Character Frequencies As Sums
+==========================
+ᚠ 0 | PRIME: true
+ᚢ 0 | PRIME: true
+ᚣ 0 | PRIME: true
+ᚦ 0 | PRIME: true
+ᚩ 0 | PRIME: true
+ᚪ 0 | PRIME: true
+ᚫ 0 | PRIME: true
+ᚱ 0 | PRIME: true
+ᚳ 0 | PRIME: true
+ᚷ 0 | PRIME: true
+ᚹ 0 | PRIME: true
+ᚻ 0 | PRIME: true
+ᚾ 0 | PRIME: true
+ᛁ 0 | PRIME: true
+ᛄ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛈ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛋ 0 | PRIME: true
+ᛏ 0 | PRIME: true
+ᛒ 0 | PRIME: true
+ᛖ 0 | PRIME: true
+ᛗ 0 | PRIME: true
+ᛚ 0 | PRIME: true
+ᛝ 0 | PRIME: true
+ᛞ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛠ 0 | PRIME: true
+ᛡ 0 | PRIME: true
+==========================
+== Sentence Characteristics
+==========================
+Sentence: 28	2a	0J	1L	0c	3C	2o	0X00	2Z	2d	1T	2u	1t	1j	0l1o	1E	3T	18	3E	1G	27	0L0v	2t	06	11	1A	2U	4B	1O2M	3d	2S	0x	0w	0q	0p	2V18	0q	1D	49	2O	00	1v	2t1k	3s	3G	21	3w	0W	29	2r2O	2L	0g	3Y	0M	0u	3i	3C1r	2c	2q	3o	30	0a	39	1K
+English Sentence: 28	2a	0J	1L	0c	3C	2o	0X00	2Z	2d	1T	2u	1t	1j	0l1o	1E	3T	18	3E	1G	27	0L0v	2t	06	11	1A	2U	4B	1O2M	3d	2S	0x	0w	0q	0p	2V18	0q	1D	49	2O	00	1v	2t1k	3s	3G	21	3w	0W	29	2r2O	2L	0g	3Y	0M	0u	3i	3C1r	2c	2q	3o	30	0a	39	1K
+Total Characters: 85 | PRIME: false
+Total Runes: 0 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+==========================
+== Line Characteristics
+==========================
+Line: 28	2a	0J	1L	0c	3C	2o	0X
+English Line: 28	2a	0J	1L	0c	3C	2o	0X
+Total Characters: 9 | PRIME: false
+Total Runes: 0 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line: 00	2Z	2d	1T	2u	1t	1j	0l
+English Line: 00	2Z	2d	1T	2u	1t	1j	0l
+Total Characters: 9 | PRIME: false
+Total Runes: 0 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line: 1o	1E	3T	18	3E	1G	27	0L
+English Line: 1o	1E	3T	18	3E	1G	27	0L
+Total Characters: 10 | PRIME: false
+Total Runes: 0 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line: 0v	2t	06	11	1A	2U	4B	1O
+English Line: 0v	2t	06	11	1A	2U	4B	1O
+Total Characters: 10 | PRIME: false
+Total Runes: 0 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line: 2M	3d	2S	0x	0w	0q	0p	2V
+English Line: 2M	3d	2S	0x	0w	0q	0p	2V
+Total Characters: 8 | PRIME: false
+Total Runes: 0 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line: 18	0q	1D	49	2O	00	1v	2t
+English Line: 18	0q	1D	49	2O	00	1v	2t
+Total Characters: 11 | PRIME: true
+Total Runes: 0 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line: 1k	3s	3G	21	3w	0W	29	2r
+English Line: 1k	3s	3G	21	3w	0W	29	2r
+Total Characters: 10 | PRIME: false
+Total Runes: 0 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line: 2O	2L	0g	3Y	0M	0u	3i	3C
+English Line: 2O	2L	0g	3Y	0M	0u	3i	3C
+Total Characters: 8 | PRIME: false
+Total Runes: 0 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line: 1r	2c	2q	3o	30	0a	39	1K
+English Line: 1r	2c	2q	3o	30	0a	39	1K
+Total Characters: 10 | PRIME: false
+Total Runes: 0 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0

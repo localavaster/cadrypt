@@ -1,0 +1,312 @@
+Starting global crib with output settings...
+shiftsum | shiftdifferencessum | cribword | shiftlist | shiftdifferences | shiftlistfacts | shiftsinwordform | shiftsingpform
+Results for cross0.txt
+ioo(0) 63 | 53 | sacred | [3, 3, 24, 10, 17, 6] | [0, 21, 14, 7, 11] | [hr, dad] | OOAIBG | (UB)(UB)SAG?G? 
+ioo(1) 74 | 50 | sacred | [2, 10, 9, 19, 28, 6] | [8, 1, 10, 9, 22] | [ad, dad] | THINMEAG | (FID)AEW?EA??G? 
+ioo(2) 89 | 34 | sacred | [13, 16, 4, 16, 17, 23] | [3, 12, 12, 1, 6] | [hr, dhr] | PTRTBD | (CM)Y?R?YGH 
+ioo(3) 99 | 28 | sacred | [14, 19, 20, 9, 17, 20] | [5, 1, 11, 8, 3] | [hr, dad] | XMLNBL | (PAE)WIOEGIO 
+ioo(4) 78 | 84 | sacred | [14, 25, 2, 8, 27, 2] | [11, 23, 6, 19, 25] | [hr, dad] | XAETHHIOTH | (PAE)OE(FID)J?IO?(FID) 
+Results for cross1.txt
+ioo(0) 105 | 30 | sacred | [18, 22, 27, 19, 13, 6] | [4, 5, 8, 6, 7] | [ad, dad] | EOEIOMPG | XEA?IO?W(CM)?G? 
+ioo(1) 77 | 61 | sacred | [10, 13, 4, 28, 19, 3] | [3, 9, 24, 9, 16] | [ad, dhr] | IPREAMO | A(CM)?R??EA?W(UB) 
+ioo(2) 85 | 51 | sacred | [27, 5, 10, 8, 7, 28] | [22, 5, 2, 1, 21] | [ad, dad] | IOCIHWEA | ?IO?THAJO?EA? 
+ioo(3) 60 | 73 | sacred | [6, 18, 7, 28, 0, 1] | [12, 11, 21, 28, 1] | [ad, dad] | GEWEAFU | ?G?XO?EA?NT 
+ioo(4) 82 | 53 | sacred | [20, 1, 22, 17, 13, 9] | [19, 21, 5, 4, 4] | [ad, dhr] | LUOEBPN | IOTEAG(CM)E 
+ioo(5) 81 | 19 | sacred | [19, 20, 12, 8, 8, 14] | [1, 8, 4, 0, 6] | [hr, dad] | MLEOHHX | WIOEOJJ(PAE) 
+ioo(6) 65 | 39 | sacred | [14, 9, 18, 17, 0, 7] | [5, 9, 1, 17, 7] | [ad, diffs_is_odd, dad] | XNEBFW | (PAE)EXGNO 
+ioo(7) 80 | 56 | sacred | [24, 3, 14, 20, 7, 12] | [21, 11, 6, 13, 5] | [ad, dad] | AOXLWEO | S(UB)(PAE)IOOEO 
+ioo(8) 81 | 48 | sacred | [3, 4, 26, 25, 22, 1] | [1, 22, 1, 3, 21] | [ad, dhr] | ORYAEOEU | (UB)?R??Y?OEEAT 
+Results for cross2.txt
+ioo(0) 97 | 17 | sacred | [23, 13, 12, 14, 17, 18] | [10, 1, 2, 3, 1] | [ad, dhr] | DPEOXBE | H(CM)EO(PAE)GX 
+ioo(1) 68 | 23 | sacred | [3, 8, 5, 12, 20, 20] | [5, 3, 7, 8, 0] | [hr, dad] | OHCEOLL | (UB)JTHEOIOIO 
+ioo(2) 77 | 52 | sacred | [13, 19, 18, 3, 19, 5] | [6, 1, 15, 16, 14] | [hr, dad] | PMEOMC | (CM)WX(UB)WTH 
+Results for spiral3.txt
+ioo(0) 79 | 40 | sacred | [17, 22, 28, 5, 2, 5] | [5, 6, 23, 3, 3] | [hr, dhr] | BOEEACTHC | GEA?EA?TH(FID)TH 
+ioo(1) 92 | 35 | sacred | [13, 20, 26, 25, 4, 4] | [7, 6, 1, 21, 0] | [hr, dad] | PLYAERR | (CM)IO?Y?OE?R??R? 
+ioo(2) 85 | 42 | sacred | [19, 16, 15, 1, 9, 25] | [3, 1, 14, 8, 16] | [ad, dad] | MTSUNAE | WYLTEOE 
+ioo(3) 90 | 28 | sacred | [8, 4, 13, 23, 20, 22] | [4, 9, 10, 3, 2] | [ad, dad] | HRPDLOE | J?R?(CM)HIOEA 
+ioo(4) 115 | 59 | sacred | [22, 21, 26, 0, 19, 27] | [1, 5, 26, 19, 8] | [ad, dad] | OEINGYFMIO | EAING?Y?NW?IO? 
+ioo(5) 101 | 89 | sacred | [23, 1, 23, 2, 26, 26] | [22, 22, 21, 24, 0] | [hr, dhr] | DUDTHYY | HTH(FID)?Y??Y? 
+ioo(6) 90 | 49 | sacred | [14, 6, 9, 24, 28, 9] | [8, 3, 15, 4, 19] | [hr, dad] | XGNAEAN | (PAE)?G?ES?EA?E 
+Results for spiral4.txt
+ioo(0) 114 | 60 | sacred | [15, 24, 7, 24, 17, 27] | [9, 17, 17, 7, 10] | [hr, dhr] | SAWABIO | LSOSG?IO? 
+ioo(1) 70 | 71 | sacred | [4, 28, 16, 4, 15, 3] | [24, 12, 12, 11, 12] | [hr, dhr] | REATRSO | ?R??EA?Y?R?L(UB) 
+ioo(2) 79 | 76 | sacred | [10, 26, 6, 8, 25, 4] | [16, 20, 2, 17, 21] | [ad, dad] | IYGHAER | A?Y??G?JOE?R? 
+ioo(3) 100 | 51 | sacred | [23, 7, 12, 26, 22, 10] | [16, 5, 14, 4, 12] | [ad, dad] | DWEOYOEI | HOEO?Y?EAA 
+ioo(4) 78 | 59 | sacred | [3, 24, 13, 12, 4, 22] | [21, 11, 1, 8, 18] | [ad, dad] | OAPEOROE | (UB)S(CM)EO?R?EA 
+ioo(5) 58 | 19 | sacred | [4, 9, 14, 9, 9, 13] | [5, 5, 5, 0, 4] | [hr, dhr] | RNXNNP | ?R?E(PAE)EE(CM) 
+Results for spiral5.txt
+ioo(0) 72 | 67 | sacred | [3, 20, 1, 17, 11, 20] | [17, 19, 16, 6, 9] | [hr, dad] | OLUBJL | (UB)IOTGRIO 
+ioo(1) 128 | 43 | sacred | [26, 28, 7, 17, 23, 27] | [2, 21, 10, 6, 4] | [ad, dad] | YEAWBDIO | ?Y??EA?OGH?IO? 
+ioo(2) 92 | 55 | sacred | [7, 24, 9, 18, 22, 12] | [17, 15, 9, 4, 10] | [ad, dad] | WANEOEEO | OSEXEAEO 
+ioo(3) 100 | 45 | sacred | [24, 9, 21, 19, 10, 17] | [15, 12, 2, 9, 7] | [ad, dad] | ANINGMIB | SEINGWAG 
+ioo(4) 67 | 39 | sacred | [11, 12, 14, 8, 20, 2] | [1, 2, 6, 12, 18] | [ad, diffs_incremental, dad] | JEOXHLTH | REO(PAE)JIO(FID) 
+ioo(5) 45 | 30 | sacred | [7, 16, 16, 1, 0, 5] | [9, 0, 15, 1, 5] | [hr, dad] | WTTUFC | OYYTNTH 
+Results for spiral6.txt
+ioo(0) 76 | 40 | sacred | [28, 10, 11, 4, 5, 18] | [18, 1, 7, 1, 13] | [ad, dhr] | EAIJRCE | ?EA?AR?R?THX 
+ioo(1) 94 | 72 | sacred | [12, 28, 21, 0, 5, 28] | [16, 7, 21, 5, 23] | [hr, dad] | EOEAINGFCEA | EO?EA?INGNTH?EA? 
+ioo(2) 109 | 52 | sacred | [8, 0, 28, 20, 25, 28] | [8, 28, 8, 5, 3] | [hr, dhr] | HFEALAEEA | JN?EA?IOOE?EA? 
+ioo(3) 111 | 58 | sacred | [28, 23, 11, 28, 17, 4] | [5, 12, 17, 11, 13] | [hr, dad] | EADJEABR | ?EA?HR?EA?G?R? 
+ioo(4) 92 | 23 | sacred | [11, 17, 22, 16, 12, 14] | [6, 5, 6, 4, 2] | [ad, dhr] | JBOETEOX | RGEAYEO(PAE) 
+ioo(5) 101 | 38 | sacred | [27, 12, 6, 16, 17, 23] | [15, 6, 10, 1, 6] | [ad, dhr] | IOEOGTBD | ?IO?EO?G?YGH 
+ioo(6) 88 | 41 | sacred | [10, 25, 19, 16, 17, 1] | [15, 6, 3, 1, 16] | [ad, dad] | IAEMTBU | AOEWYGT 
+Results for spiral7.txt
+ioo(0) 54 | 72 | sacred | [0, 10, 25, 1, 14, 4] | [10, 15, 24, 13, 10] | [ad, dhr] | FIAEUXR | NAOET(PAE)?R? 
+ioo(1) 100 | 40 | sacred | [1, 20, 14, 24, 22, 19] | [19, 6, 10, 2, 3] | [ad, dad] | ULXAOEM | TIO(PAE)SEAW 
+ioo(2) 85 | 51 | sacred | [12, 25, 17, 3, 9, 19] | [13, 8, 14, 6, 10] | [ad, dad] | EOAEBONM | EOOEG(UB)EW 
+ioo(3) 99 | 30 | sacred | [20, 22, 8, 11, 20, 18] | [2, 14, 3, 9, 2] | [hr, dhr] | LOEHJLE | IOEAJRIOX 
+ioo(4) 69 | 40 | sacred | [8, 12, 8, 21, 18, 2] | [4, 4, 13, 3, 16] | [hr, dhr] | HEOHINGETH | JEOJINGX(FID) 
+ioo(5) 85 | 74 | sacred | [13, 10, 27, 8, 0, 27] | [3, 17, 19, 8, 27] | [hr, dad] | PIIOHFIO | (CM)A?IO?JN?IO? 
+ioo(6) 77 | 36 | sacred | [19, 13, 17, 4, 7, 17] | [6, 4, 13, 3, 10] | [hr, dad] | MPBRWB | W(CM)G?R?OG 
+Results for branch8.txt
+ioo(0) 90 | 70 | sacred | [18, 28, 2, 12, 22, 8] | [10, 26, 10, 10, 14] | [is_even, ad, diffs_is_even, dhr] | EEATHEOOEH | X?EA?(FID)EOEAJ 
+ioo(1) 87 | 63 | sacred | [20, 22, 0, 9, 25, 11] | [2, 22, 9, 16, 14] | [ad, dad] | LOEFNAEJ | IOEANEOER 
+ioo(2) 127 | 35 | sacred | [23, 18, 23, 28, 27, 8] | [5, 5, 5, 1, 19] | [hr, diffs_is_odd, dhr] | DEDEAIOH | HXH?EA??IO?J 
+ioo(3) 80 | 37 | sacred | [4, 5, 21, 17, 22, 11] | [1, 16, 4, 5, 11] | [ad, dad] | RCINGBOEJ | ?R?THINGGEAR 
+ioo(4) 57 | 22 | sacred | [3, 7, 10, 16, 14, 7] | [4, 3, 6, 2, 7] | [hr, dad] | OWITXW | (UB)OAY(PAE)O 
+ioo(5) 89 | 60 | sacred | [18, 18, 4, 25, 24, 0] | [0, 14, 21, 1, 24] | [hr, dad] | EERAEAF | XX?R?OESN 
+ioo(6) 60 | 53 | sacred | [0, 8, 5, 24, 8, 15] | [8, 3, 19, 16, 7] | [hr, dad] | FHCAHS | NJTHSJL 
+Results for branch9.txt
+ioo(0) 91 | 67 | sacred | [27, 3, 14, 14, 5, 28] | [24, 11, 0, 9, 23] | [hr, dad] | IOOXXCEA | ?IO?(UB)(PAE)(PAE)TH?EA? 
+ioo(1) 75 | 50 | sacred | [16, 5, 24, 22, 4, 4] | [11, 19, 2, 18, 0] | [hr, dad] | TCAOERR | YTHSEA?R??R? 
+ioo(2) 99 | 71 | sacred | [26, 10, 21, 13, 2, 27] | [16, 11, 8, 11, 25] | [ad, dhr] | YIINGPTHIO | ?Y?AING(CM)(FID)?IO? 
+ioo(3) 65 | 58 | sacred | [13, 2, 14, 3, 20, 13] | [11, 12, 11, 17, 7] | [hr, dhr] | PTHXOLP | (CM)(FID)(PAE)(UB)IO(CM) 
+ioo(4) 102 | 83 | sacred | [23, 12, 24, 5, 28, 10] | [11, 12, 19, 23, 18] | [ad, dad] | DEOACEAI | HEOSTH?EA?A 
+ioo(5) 55 | 42 | sacred | [9, 3, 11, 2, 17, 13] | [6, 8, 9, 15, 4] | [ad, dad] | NOJTHBP | E(UB)R(FID)G(CM) 
+Results for branch10.txt
+ioo(0) 58 | 86 | sacred | [1, 27, 4, 21, 4, 1] | [26, 23, 17, 17, 3] | [hr, diffs_decremental, dhr] | UIORINGRU | T?IO??R?ING?R?T 
+Results for branch11.txt
+ioo(0) 100 | 50 | sacred | [23, 5, 14, 26, 17, 15] | [18, 9, 12, 9, 2] | [ad, dhr] | DCXYBS | HTH(PAE)?Y?GL 
+ioo(1) 72 | 41 | sacred | [14, 6, 19, 14, 6, 13] | [8, 13, 5, 8, 7] | [hr, dhr] | XGMXGP | (PAE)?G?W(PAE)?G?(CM) 
+Results for branch12.txt
+ioo(0) 87 | 60 | sacred | [2, 10, 19, 2, 26, 28] | [8, 9, 17, 24, 2] | [hr, dad] | THIMTHYEA | (FID)AW(FID)?Y??EA? 
+ioo(1) 72 | 62 | sacred | [12, 1, 11, 3, 27, 18] | [11, 10, 8, 24, 9] | [ad, dad] | EOUJOIOE | EOTR(UB)?IO?X 
+ioo(2) 58 | 37 | sacred | [14, 0, 2, 14, 11, 17] | [14, 2, 12, 3, 6] | [hr, dad] | XFTHXJB | (PAE)N(FID)(PAE)RG 
+Results for branch13.txt
+ioo(0) 86 | 63 | sacred | [20, 7, 24, 7, 17, 11] | [13, 17, 17, 10, 6] | [hr, dhr] | LWAWBJ | IOOSOGR 
+ioo(1) 98 | 28 | sacred | [17, 13, 19, 12, 20, 17] | [4, 6, 7, 8, 3] | [hr, dad] | BPMEOLB | G(CM)WEOIOG 
+ioo(2) 67 | 59 | sacred | [3, 8, 20, 2, 8, 26] | [5, 12, 18, 6, 18] | [hr, dhr] | OHLTHHY | (UB)JIO(FID)J?Y? 
+ioo(3) 96 | 54 | sacred | [21, 27, 19, 4, 18, 7] | [6, 8, 15, 14, 11] | [ad, dad] | INGIOMREW | ING?IO?W?R?XO 
+ioo(4) 68 | 42 | sacred | [16, 9, 20, 13, 2, 8] | [7, 11, 7, 11, 6] | [ad, dhr] | TNLPTHH | YEIO(CM)(FID)J 
+ioo(5) 109 | 34 | sacred | [9, 23, 23, 25, 22, 7] | [14, 0, 2, 3, 15] | [hr, dad] | NDDAEOEW | EHHOEEAO 
+ioo(6) 79 | 43 | sacred | [0, 21, 14, 12, 19, 13] | [21, 7, 2, 7, 6] | [ad, dhr] | FINGXEOMP | NING(PAE)EOW(CM) 
+ioo(7) 101 | 55 | sacred | [9, 23, 5, 8, 28, 28] | [14, 18, 3, 20, 0] | [hr, dad] | NDCHEAEA | EHTHJ?EA??EA? 
+Results for branch14.txt
+ioo(0) 54 | 43 | sacred | [7, 13, 4, 18, 8, 4] | [6, 9, 14, 10, 4] | [hr, dad] | WPREHR | O(CM)?R?XJ?R? 
+ioo(1) 75 | 83 | sacred | [8, 1, 23, 1, 25, 17] | [7, 22, 22, 24, 8] | [hr, dhr] | HUDUAEB | JTHTOEG 
+ioo(2) 129 | 24 | sacred | [12, 25, 21, 21, 26, 24] | [13, 4, 0, 5, 2] | [hr, dad] | EOAEINGINGYA | EOOEINGING?Y?S 
+ioo(3) 76 | 58 | sacred | [21, 14, 3, 14, 3, 21] | [7, 11, 11, 11, 18] | [hr, diffs_incremental, dhr] | INGXOXOING | ING(PAE)(UB)(PAE)(UB)ING 
+ioo(4) 106 | 62 | sacred | [23, 3, 24, 23, 12, 21] | [20, 21, 1, 11, 9] | [hr, dad] | DOADEOING | H(UB)SHEOING 
+ioo(5) 73 | 41 | sacred | [19, 9, 0, 9, 14, 22] | [10, 9, 9, 5, 8] | [hr, dhr] | MNFNXOE | WENE(PAE)EA 
+ioo(6) 83 | 44 | sacred | [0, 0, 25, 20, 24, 14] | [0, 25, 5, 4, 10] | [hr, dad] | FFAELAX | NNOEIOS(PAE) 
+Results for mobius15.txt
+ioo(0) 87 | 27 | sacred | [15, 11, 9, 8, 24, 20] | [4, 2, 1, 16, 4] | [ad, dhr] | SJNHAL | LREJSIO 
+ioo(1) 99 | 42 | sacred | [7, 19, 22, 27, 19, 5] | [12, 3, 5, 8, 14] | [hr, dad] | WMOEIOMC | OWEA?IO?WTH 
+ioo(2) 67 | 40 | sacred | [2, 13, 20, 7, 9, 16] | [11, 7, 13, 2, 7] | [ad, dhr, diffs_all_prime] | THPLWNT | (FID)(CM)IOOEY 
+ioo(3) 121 | 59 | sacred | [28, 24, 12, 28, 10, 19] | [4, 12, 16, 18, 9] | [hr, dad] | EAAEOEAIM | ?EA?SEO?EA?AW 
+Results for mobius16.txt
+ioo(0) 76 | 45 | sacred | [6, 12, 10, 0, 21, 27] | [6, 2, 10, 21, 6] | [ad, dhr] | GEOIFINGIO | ?G?EOANING?IO? 
+ioo(1) 64 | 43 | sacred | [1, 9, 22, 21, 11, 0] | [8, 13, 1, 10, 11] | [ad, dad] | UNOEINGJF | TEEAINGRN 
+ioo(2) 62 | 38 | sacred | [12, 23, 10, 2, 7, 8] | [11, 13, 8, 5, 1] | [ad, dad] | EODITHWH | EOHA(FID)OJ 
+ioo(3) 94 | 63 | sacred | [19, 18, 22, 7, 26, 2] | [1, 4, 15, 19, 24] | [ad, diffs_incremental, dad] | MEOEWYTH | WXEAO?Y?(FID) 
+ioo(4) 120 | 39 | sacred | [22, 28, 23, 10, 12, 25] | [6, 5, 13, 2, 13] | [ad, dhr] | OEEADIEOAE | EA?EA?HAEOOE 
+ioo(5) 98 | 45 | sacred | [7, 14, 2, 23, 24, 28] | [7, 12, 21, 1, 4] | [ad, dad] | WXTHDAEA | O(PAE)(FID)HS?EA? 
+Results for mobius17.txt
+ioo(0) 72 | 41 | sacred | [14, 9, 23, 15, 10, 1] | [5, 14, 8, 5, 9] | [ad, dhr] | XNDSIU | (PAE)EHLAT 
+ioo(1) 67 | 68 | sacred | [1, 18, 5, 22, 20, 1] | [17, 13, 17, 2, 19] | [hr, dhr, diffs_all_prime] | UECOELU | TXTHEAIOT 
+ioo(2) 98 | 37 | sacred | [23, 9, 4, 21, 21, 20] | [14, 5, 17, 0, 1] | [hr, dad] | DNRINGINGL | HE?R?INGINGIO 
+ioo(3) 83 | 59 | sacred | [6, 2, 20, 23, 7, 25] | [4, 18, 3, 16, 18] | [ad, dhr] | GTHLDWAE | ?G?(FID)IOHOOE 
+ioo(4) 91 | 99 | sacred | [27, 10, 21, 1, 28, 4] | [17, 11, 20, 27, 24] | [ad, dad] | IOIINGUEAR | ?IO?AINGT?EA??R? 
+ioo(5) 80 | 53 | sacred | [14, 0, 20, 22, 19, 5] | [14, 20, 2, 3, 14] | [ad, dhr] | XFLOEMC | (PAE)NIOEAWTH 
+ioo(6) 87 | 61 | sacred | [17, 0, 26, 12, 16, 16] | [17, 26, 14, 4, 0] | [hr, dad] | BFYEOTT | GN?Y?EOYY 
+Results for mobius18.txt
+ioo(0) 63 | 39 | sacred | [13, 0, 6, 8, 10, 26] | [13, 6, 2, 2, 16] | [ad, dhr] | PFGHIY | (CM)N?G?JA?Y? 
+ioo(1) 75 | 58 | sacred | [8, 9, 2, 28, 24, 4] | [1, 7, 26, 4, 20] | [ad, dad] | HNTHEAAR | JE(FID)?EA?S?R? 
+ioo(2) 93 | 46 | sacred | [8, 5, 21, 11, 20, 28] | [3, 16, 10, 9, 8] | [ad, dad] | HCINGJLEA | JTHINGRIO?EA? 
+ioo(3) 99 | 49 | sacred | [27, 9, 2, 18, 23, 20] | [18, 7, 16, 5, 3] | [ad, dad] | IONTHEDL | ?IO?E(FID)XHIO 
+Results for mobius19.txt
+ioo(0) 123 | 24 | sacred | [17, 15, 24, 26, 26, 15] | [2, 9, 2, 0, 11] | [hr, dhr] | BSAYYS | GLS?Y??Y?L 
+ioo(1) 54 | 53 | sacred | [8, 15, 4, 15, 1, 11] | [7, 11, 11, 14, 10] | [hr, dhr] | HSRSUJ | JL?R?LTR 
+ioo(2) 64 | 33 | sacred | [28, 8, 5, 7, 5, 11] | [20, 3, 2, 2, 6] | [hr, dhr] | EAHCWCJ | ?EA?JTHOTHR 
+ioo(3) 43 | 33 | sacred | [16, 3, 7, 4, 10, 3] | [13, 4, 3, 6, 7] | [hr, dad] | TOWRIO | Y(UB)O?R?A(UB) 
+ioo(4) 48 | 53 | sacred | [9, 4, 3, 4, 26, 2] | [5, 1, 1, 22, 24] | [hr, dhr] | NRORYTH | E?R?(UB)?R??Y?(FID) 
+ioo(5) 123 | 39 | sacred | [6, 19, 28, 19, 26, 25] | [13, 9, 9, 7, 1] | [hr, diffs_decremental, diffs_is_odd, dhr] | GMEAMYAE | ?G?W?EA?W?Y?OE 
+Results for mobius20.txt
+ioo(0) 35 | 16 | sacred | [3, 2, 7, 4, 10, 9] | [1, 5, 3, 6, 1] | [ad, dhr] | OTHWRIN | (UB)(FID)O?R?AE 
+ioo(1) 146 | 18 | sacred | [28, 28, 20, 18, 26, 26] | [0, 8, 2, 8, 0] | [is_even, hr, diffs_is_even, dhr] | EAEALEYY | ?EA??EA?IOX?Y??Y? 
+ioo(2) 90 | 40 | sacred | [24, 16, 15, 17, 2, 16] | [8, 1, 2, 15, 14] | [hr, dad] | ATSBTHT | SYLG(FID)Y 
+ioo(3) 123 | 30 | sacred | [28, 24, 20, 11, 16, 24] | [4, 4, 9, 5, 8] | [hr, dhr] | EAALJTA | ?EA?SIORYS 
+Results for mobius21.txt
+ioo(0) 70 | 77 | sacred | [8, 23, 0, 15, 21, 3] | [15, 23, 15, 6, 18] | [ad, dhr] | HDFSINGO | JHNLING(UB) 
+ioo(1) 91 | 33 | sacred | [21, 15, 19, 6, 14, 16] | [6, 4, 13, 8, 2] | [ad, dad] | INGSMGXT | INGLW?G?(PAE)Y 
+ioo(2) 79 | 44 | sacred | [14, 11, 8, 27, 11, 8] | [3, 3, 19, 16, 3] | [hr, dhr] | XJHIOJH | (PAE)RJ?IO?RJ 
+Results for mobius22.txt
+ioo(0) 97 | 46 | sacred | [19, 8, 26, 14, 13, 17] | [11, 18, 12, 1, 4] | [ad, dad] | MHYXPB | WJ?Y?(PAE)(CM)G 
+ioo(1) 62 | 57 | sacred | [16, 10, 6, 23, 0, 7] | [6, 4, 17, 23, 7] | [ad, dad] | TIGDFW | YA?G?HNO 
+Results for mayfly23.txt
+ioo(0) 75 | 51 | sacred | [21, 26, 1, 10, 5, 12] | [5, 25, 9, 5, 7] | [ad, diffs_is_odd, dhr] | INGYUICEO | ING?Y?TATHEO 
+ioo(1) 62 | 55 | sacred | [8, 7, 13, 0, 23, 11] | [1, 6, 13, 23, 12] | [ad, dad] | HWPFDJ | JO(CM)NHR 
+ioo(2) 84 | 39 | sacred | [11, 9, 23, 21, 20, 0] | [2, 14, 2, 1, 20] | [ad, dhr] | JNDINGLF | REHINGION 
+ioo(3) 72 | 45 | sacred | [6, 18, 7, 15, 9, 17] | [12, 11, 8, 6, 8] | [ad, dhr] | GEWSNB | ?G?XOLEG 
+ioo(4) 58 | 40 | sacred | [14, 2, 9, 18, 7, 8] | [12, 7, 9, 11, 1] | [ad, dad] | XTHNEWH | (PAE)(FID)EXOJ 
+ioo(5) 82 | 42 | sacred | [12, 5, 19, 12, 20, 14] | [7, 14, 7, 8, 6] | [hr, dhr] | EOCMEOLX | EOTHWEOIO(PAE) 
+ioo(6) 91 | 83 | sacred | [19, 7, 25, 0, 12, 28] | [12, 18, 25, 12, 16] | [ad, dhr] | MWAEFEOEA | WOOENEO?EA? 
+ioo(7) 58 | 26 | sacred | [20, 12, 11, 9, 0, 6] | [8, 1, 2, 9, 6] | [ad, dad] | LEOJNFG | IOEOREN?G? 
+Results for mayfly24.txt
+ioo(0) 93 | 74 | sacred | [27, 5, 16, 21, 3, 21] | [22, 11, 5, 18, 18] | [hr, dhr] | IOCTINGOING | ?IO?THYING(UB)ING 
+ioo(1) 86 | 34 | sacred | [12, 4, 12, 11, 19, 28] | [8, 8, 1, 8, 9] | [hr, dhr] | EOREOJMEA | EO?R?EORW?EA? 
+Results for mayfly25.txt
+ioo(0) 43 | 48 | sacred | [2, 2, 6, 17, 0, 16] | [0, 4, 11, 17, 16] | [hr, dad] | THTHGBFT | (FID)(FID)?G?GNY 
+ioo(1) 143 | 11 | sacred | [27, 28, 27, 25, 18, 18] | [1, 1, 2, 7, 0] | [hr, dhr] | IOEAIOAEEE | ?IO??EA??IO?OEXX 
+Results for mayfly26.txt
+ioo(0) 97 | 30 | sacred | [2, 15, 17, 20, 17, 26] | [13, 2, 3, 3, 9] | [hr, dhr] | THSBLBY | (FID)LGIOG?Y? 
+ioo(1) 73 | 59 | sacred | [7, 11, 21, 2, 20, 12] | [4, 10, 19, 18, 8] | [ad, dad] | WJINGTHLEO | ORING(FID)IOEO 
+ioo(2) 72 | 41 | sacred | [2, 6, 24, 20, 15, 5] | [4, 18, 4, 5, 10] | [ad, dhr] | THGALSC | (FID)?G?SIOLTH 
+ioo(3) 93 | 60 | sacred | [26, 7, 21, 12, 7, 20] | [19, 14, 9, 5, 13] | [hr, dad] | YWINGEOWL | ?Y?OINGEOOIO 
+ioo(4) 95 | 44 | sacred | [23, 13, 2, 13, 23, 21] | [10, 11, 11, 10, 2] | [hr, dhr] | DPTHPDING | H(CM)(FID)(CM)HING 
+ioo(5) 113 | 30 | sacred | [25, 11, 11, 17, 22, 27] | [14, 0, 6, 5, 5] | [hr, dhr] | AEJJBOEIO | OERRGEA?IO? 
+Results for wingtree27.txt
+ioo(0) 90 | 91 | sacred | [21, 4, 27, 0, 14, 24] | [17, 23, 27, 14, 10] | [ad, dad] | INGRIOFXA | ING?R??IO?N(PAE)S 
+Results for wingtree28.txt
+ioo(0) 87 | 31 | sacred | [18, 21, 7, 6, 16, 19] | [3, 14, 1, 10, 3] | [ad, dhr] | EINGWGTM | XINGO?G?YW 
+ioo(1) 85 | 71 | sacred | [24, 1, 15, 19, 25, 1] | [23, 14, 4, 6, 24] | [hr, dad] | AUSMAEU | STLWOET 
+ioo(2) 86 | 50 | sacred | [8, 27, 19, 13, 5, 14] | [19, 8, 6, 8, 9] | [ad, dhr] | HIOMPCX | J?IO?W(CM)TH(PAE) 
+ioo(3) 54 | 25 | sacred | [13, 16, 7, 6, 10, 2] | [3, 9, 1, 4, 8] | [ad, dad] | PTWGITH | (CM)YO?G?A(FID) 
+ioo(4) 62 | 31 | sacred | [17, 19, 1, 5, 8, 12] | [2, 18, 4, 3, 4] | [ad, dhr] | BMUCHEO | GWTTHJEO 
+Results for wingtree29.txt
+ioo(0) 90 | 60 | sacred | [16, 6, 28, 20, 20, 0] | [10, 22, 8, 0, 20] | [is_even, hr, diffs_is_even, dad] | TGEALLF | Y?G??EA?IOION 
+ioo(1) 89 | 30 | sacred | [7, 16, 16, 11, 12, 27] | [9, 0, 5, 1, 15] | [hr, dad] | WTTJEOIO | OYYREO?IO? 
+ioo(2) 107 | 50 | sacred | [24, 24, 22, 6, 23, 8] | [0, 2, 16, 17, 15] | [hr, dad] | AAOEGDH | SSEA?G?HJ 
+ioo(3) 67 | 37 | sacred | [8, 5, 2, 19, 22, 11] | [3, 3, 17, 3, 11] | [ad, diffs_is_odd, dhr, diffs_all_prime] | HCTHMOEJ | JTH(FID)WEAR 
+ioo(4) 89 | 38 | sacred | [21, 8, 4, 7, 24, 25] | [13, 4, 3, 17, 1] | [ad, dad] | INGHRWAAE | INGJ?R?OSOE 
+Results for wingtree30.txt
+ioo(0) 72 | 24 | sacred | [10, 9, 18, 11, 14, 10] | [1, 9, 7, 3, 4] | [hr, dad] | INEJXI | AEXR(PAE)A 
+ioo(1) 92 | 41 | sacred | [20, 10, 18, 24, 9, 11] | [10, 8, 6, 15, 2] | [ad, dad] | LIEANJ | IOAXSER 
+ioo(2) 36 | 29 | sacred | [6, 3, 1, 14, 9, 3] | [3, 2, 13, 5, 6] | [hr, dad] | GOUXNO | ?G?(UB)T(PAE)E(UB) 
+ioo(3) 89 | 44 | sacred | [18, 7, 24, 18, 14, 8] | [11, 17, 6, 4, 6] | [hr, dhr] | EWAEXH | XOSX(PAE)J 
+ioo(4) 108 | 71 | sacred | [17, 23, 11, 25, 6, 26] | [6, 12, 14, 19, 20] | [ad, diffs_incremental, dad] | BDJAEGY | GHROE?G??Y? 
+ioo(5) 68 | 52 | sacred | [10, 17, 8, 23, 4, 6] | [7, 9, 15, 19, 2] | [ad, dad] | IBHDRG | AGJH?R??G? 
+Results for wingtree31.txt
+ioo(0) 41 | 33 | sacred | [5, 15, 3, 5, 3, 10] | [10, 12, 2, 2, 7] | [hr, dhr] | CSOCOI | THL(UB)TH(UB)A 
+ioo(1) 127 | 36 | sacred | [1, 25, 22, 28, 26, 25] | [24, 3, 6, 2, 1] | [hr, dad] | UAEOEEAYAE | TOEEA?EA??Y?OE 
+ioo(2) 106 | 59 | sacred | [24, 22, 22, 8, 27, 3] | [2, 0, 14, 19, 24] | [hr, dad] | AOEOEHIOO | SEAEAJ?IO?(UB) 
+ioo(3) 59 | 27 | sacred | [3, 14, 8, 8, 8, 18] | [11, 6, 0, 0, 10] | [hr, dhr] | OXHHHE | (UB)(PAE)JJJX 
+ioo(4) 93 | 34 | sacred | [25, 14, 18, 17, 18, 1] | [11, 4, 1, 1, 17] | [hr, dhr] | AEXEBEU | OE(PAE)XGXT 
+Results for wingtree32.txt
+ioo(0) 61 | 69 | sacred | [6, 22, 7, 23, 2, 1] | [16, 15, 16, 21, 1] | [ad, dhr] | GOEWDTHU | ?G?EAOH(FID)T 
+Results for cuneiform33.txt
+ioo(0) 63 | 53 | sacred | [11, 4, 4, 27, 7, 10] | [7, 0, 23, 20, 3] | [hr, dad] | JRRIOWI | R?R??R??IO?OA 
+ioo(1) 57 | 41 | sacred | [17, 6, 4, 3, 1, 26] | [11, 2, 1, 2, 25] | [ad, dhr] | BGROUY | G?G??R?(UB)T?Y? 
+ioo(2) 89 | 33 | sacred | [8, 22, 21, 23, 8, 7] | [14, 1, 2, 15, 1] | [hr, dhr] | HOEINGDHW | JEAINGHJO 
+Results for cuneiform34.txt
+ioo(0) 64 | 33 | sacred | [1, 7, 7, 11, 24, 14] | [6, 0, 4, 13, 10] | [hr, dad] | UWWJAX | TOORS(PAE) 
+ioo(1) 92 | 43 | sacred | [21, 8, 7, 20, 24, 12] | [13, 1, 13, 4, 12] | [ad, dhr] | INGHWLAEO | INGJOIOSEO 
+ioo(2) 120 | 42 | sacred | [26, 24, 15, 7, 26, 22] | [2, 9, 8, 19, 4] | [hr, dad] | YASWYOE | ?Y?SLO?Y?EA 
+ioo(3) 79 | 63 | sacred | [11, 28, 10, 1, 9, 20] | [17, 18, 9, 8, 11] | [ad, dad] | JEAIUNL | R?EA?ATEIO 
+Results for cuneiform35.txt
+ioo(0) 89 | 26 | sacred | [24, 18, 21, 16, 6, 4] | [6, 3, 5, 10, 2] | [ad, dad] | AEINGTGR | SXINGY?G??R? 
+ioo(1) 57 | 65 | sacred | [13, 0, 13, 27, 2, 2] | [13, 13, 14, 25, 0] | [hr, dhr] | PFPIOTHTH | (CM)N(CM)?IO?(FID)(FID) 
+Results for cuneiform36.txt
+ioo(0) 103 | 56 | sacred | [28, 14, 10, 18, 7, 26] | [14, 4, 8, 11, 19] | [ad, dad] | EAXIEWY | ?EA?(PAE)AXO?Y? 
+ioo(1) 107 | 52 | sacred | [27, 15, 7, 26, 15, 17] | [12, 8, 19, 11, 2] | [hr, dad] | IOSWYSB | ?IO?LO?Y?LG 
+ioo(2) 89 | 69 | sacred | [15, 7, 10, 26, 5, 26] | [8, 3, 16, 21, 21] | [hr, dhr] | SWIYCY | LOA?Y?TH?Y? 
+ioo(3) 115 | 32 | sacred | [20, 15, 21, 17, 14, 28] | [5, 6, 4, 3, 14] | [ad, dad] | LSINGBXEA | IOLINGG(PAE)?EA? 
+Results for cuneiform37.txt
+ioo(0) 67 | 79 | sacred | [6, 21, 8, 3, 26, 3] | [15, 13, 5, 23, 23] | [hr, diffs_is_odd, dhr] | GINGHOYO | ?G?INGJ(UB)?Y?(UB) 
+ioo(1) 52 | 57 | sacred | [6, 22, 13, 0, 10, 1] | [16, 9, 13, 10, 9] | [ad, dhr] | GOEPFIU | ?G?EA(CM)NAT 
+ioo(2) 86 | 37 | sacred | [8, 16, 16, 22, 23, 1] | [8, 0, 6, 1, 22] | [hr, dad] | HTTOEDU | JYYEAHT 
+ioo(3) 59 | 27 | sacred | [13, 12, 0, 7, 13, 14] | [1, 12, 7, 6, 1] | [hr, dhr] | PEOFWPX | (CM)EONO(CM)(PAE) 
+Results for cuneiform38.txt
+ioo(0) 43 | 44 | sacred | [15, 1, 0, 8, 16, 3] | [14, 1, 8, 8, 13] | [ad, dhr] | SUFHTO | LTNJY(UB) 
+ioo(1) 60 | 36 | sacred | [12, 1, 11, 14, 16, 6] | [11, 10, 3, 2, 10] | [ad, dhr] | EOUJXTG | EOTR(PAE)Y?G? 
+ioo(2) 115 | 48 | sacred | [22, 1, 9, 27, 28, 28] | [21, 8, 18, 1, 0] | [hr, dad] | OEUNIOEAEA | EATE?IO??EA??EA? 
+ioo(3) 58 | 23 | sacred | [22, 12, 14, 4, 3, 3] | [10, 2, 10, 1, 0] | [hr, dhr] | OEEOXROO | EAEO(PAE)?R?(UB)(UB) 
+ioo(4) 105 | 71 | sacred | [10, 28, 17, 21, 4, 25] | [18, 11, 4, 17, 21] | [ad, dad] | IEABINGRAE | A?EA?GING?R?OE 
+Results for cuneiform39.txt
+ioo(0) 68 | 25 | sacred | [2, 6, 15, 18, 12, 15] | [4, 9, 3, 6, 3] | [hr, dhr] | THGSEEOS | (FID)?G?LXEOL 
+ioo(1) 118 | 55 | sacred | [24, 3, 19, 25, 28, 19] | [21, 16, 6, 3, 9] | [hr, dad] | AOMAEEAM | S(UB)WOE?EA?W 
+ioo(2) 75 | 72 | sacred | [4, 21, 1, 13, 24, 12] | [17, 20, 12, 11, 12] | [ad, dhr] | RINGUPAEO | ?R?INGT(CM)SEO 
+ioo(3) 71 | 31 | sacred | [4, 2, 2, 13, 27, 23] | [2, 0, 11, 14, 4] | [hr, dad] | RTHTHPIOD | ?R?(FID)(FID)(CM)?IO?H 
+ioo(4) 89 | 63 | sacred | [20, 23, 7, 18, 2, 19] | [3, 16, 11, 16, 17] | [ad, dhr] | LDWETHM | IOHOX(FID)W 
+ioo(5) 76 | 35 | sacred | [21, 24, 10, 3, 4, 14] | [3, 14, 7, 1, 10] | [ad, dad] | INGAIORX | INGSA(UB)?R?(PAE) 
+ioo(6) 79 | 41 | sacred | [9, 12, 11, 1, 18, 28] | [3, 1, 10, 17, 10] | [ad, dhr] | NEOJUEEA | EEORTX?EA? 
+ioo(7) 64 | 43 | sacred | [11, 0, 15, 19, 13, 6] | [11, 15, 4, 6, 7] | [ad, dad] | JFSMPG | RNLW(CM)?G? 
+ioo(8) 65 | 28 | sacred | [14, 14, 11, 1, 9, 16] | [0, 3, 10, 8, 7] | [hr, dad] | XXJUNT | (PAE)(PAE)RTEY 
+Results for spiralbranch40.txt
+ioo(0) 114 | 30 | sacred | [18, 15, 25, 18, 22, 16] | [3, 10, 7, 4, 6] | [hr, dad] | ESAEEOET | XLOEXEAY 
+ioo(1) 69 | 54 | sacred | [3, 21, 19, 7, 16, 3] | [18, 2, 12, 9, 13] | [hr, dad] | OINGMWTO | (UB)INGWOY(UB) 
+ioo(2) 86 | 39 | sacred | [7, 10, 15, 19, 9, 26] | [3, 5, 4, 10, 17] | [ad, dad] | WISMNY | OALWE?Y? 
+Results for spiralbranch41.txt
+ioo(0) 64 | 43 | sacred | [0, 2, 14, 19, 8, 21] | [2, 12, 5, 11, 13] | [ad, dad] | FTHXMHING | N(FID)(PAE)WJING 
+ioo(1) 67 | 40 | sacred | [7, 0, 12, 6, 21, 21] | [7, 12, 6, 15, 0] | [hr, dad] | WFEOGINGING | ONEO?G?INGING 
+ioo(2) 66 | 52 | sacred | [16, 5, 17, 2, 10, 16] | [11, 12, 15, 8, 6] | [hr, dad] | TCBTHIT | YTHG(FID)AY 
+ioo(3) 90 | 32 | sacred | [28, 16, 15, 9, 6, 16] | [12, 1, 6, 3, 10] | [hr, dad] | EATSNGT | ?EA?YLE?G?Y 
+Results for spiralbranch42.txt
+ioo(0) 92 | 30 | sacred | [18, 17, 20, 19, 4, 14] | [1, 3, 1, 15, 10] | [ad, dhr] | EBLMRX | XGIOW?R?(PAE) 
+ioo(1) 80 | 26 | sacred | [10, 13, 22, 17, 10, 8] | [3, 9, 5, 7, 2] | [hr, dad] | IPOEBIH | A(CM)EAGAJ 
+ioo(2) 96 | 48 | sacred | [8, 26, 28, 7, 13, 14] | [18, 2, 21, 6, 1] | [ad, dad] | HYEAWPX | J?Y??EA?O(CM)(PAE) 
+ioo(3) 70 | 33 | sacred | [9, 11, 21, 6, 11, 12] | [2, 10, 15, 5, 1] | [hr, dad] | NJINGGJEO | ERING?G?REO 
+ioo(4) 66 | 35 | sacred | [10, 20, 7, 5, 9, 15] | [10, 13, 2, 4, 6] | [ad, dad] | ILWCNS | AIOOTHEL 
+Results for spiralbranch43.txt
+ioo(0) 67 | 37 | sacred | [9, 14, 22, 20, 0, 2] | [5, 8, 2, 20, 2] | [ad, dhr] | NXOELFTH | E(PAE)EAION(FID) 
+ioo(1) 69 | 47 | sacred | [3, 20, 11, 13, 18, 4] | [17, 9, 2, 5, 14] | [ad, dad] | OLJPER | (UB)IOR(CM)X?R? 
+ioo(2) 82 | 45 | sacred | [10, 18, 17, 9, 3, 25] | [8, 1, 8, 6, 22] | [ad, dhr] | IEBNOAE | AXGE(UB)OE 
+ioo(3) 56 | 34 | sacred | [4, 5, 16, 10, 5, 16] | [1, 11, 6, 5, 11] | [hr, dhr] | RCTICT | ?R?THYATHY 
+Results for spiralbranch44.txt
+ioo(0) 89 | 41 | sacred | [14, 14, 6, 25, 19, 11] | [0, 8, 19, 6, 8] | [hr, dhr] | XXGAEMJ | (PAE)(PAE)?G?OEWR 
+ioo(1) 126 | 53 | sacred | [22, 28, 23, 22, 4, 27] | [6, 5, 1, 18, 23] | [hr, dad] | OEEADOERIO | EA?EA?HEA?R??IO? 
+ioo(2) 116 | 64 | sacred | [28, 17, 3, 28, 26, 14] | [11, 14, 25, 2, 12] | [hr, dad] | EABOEAYX | ?EA?G(UB)?EA??Y?(PAE) 
+ioo(3) 87 | 34 | sacred | [16, 15, 20, 7, 7, 22] | [1, 5, 13, 0, 15] | [hr, dad] | TSLWWOE | YLIOOOEA 
+ioo(4) 94 | 39 | sacred | [28, 19, 14, 5, 7, 21] | [9, 5, 9, 2, 14] | [ad, dhr] | EAMXCWING | ?EA?W(PAE)THOING 
+Results for spiralbranch45.txt
+ioo(0) 54 | 99 | sacred | [0, 27, 1, 24, 1, 1] | [27, 26, 23, 23, 0] | [hr, diffs_decremental, dhr] | FIOUAUU | N?IO?TSTT 
+ioo(1) 70 | 97 | sacred | [4, 25, 3, 19, 0, 19] | [21, 22, 16, 19, 19] | [hr, dhr] | RAEOMFM | ?R?OE(UB)WNW 
+ioo(2) 79 | 40 | sacred | [4, 10, 24, 10, 15, 16] | [6, 14, 14, 5, 1] | [hr, dhr] | RIAIST | ?R?ASALY 
+ioo(3) 62 | 39 | sacred | [5, 12, 0, 7, 18, 20] | [7, 12, 7, 11, 2] | [ad, dhr] | CEOFWEL | THEONOXIO 
+ioo(4) 83 | 53 | sacred | [13, 17, 11, 28, 12, 2] | [4, 6, 17, 16, 10] | [ad, dad] | PBJEAEOTH | (CM)GR?EA?EO(FID) 
+ioo(5) 80 | 42 | sacred | [17, 21, 2, 7, 18, 15] | [4, 19, 5, 11, 3] | [ad, dad] | BINGTHWES | GING(FID)OXL 
+Results for spiralbranch46.txt
+ioo(0) 76 | 74 | sacred | [1, 19, 27, 1, 5, 23] | [18, 8, 26, 4, 18] | [is_odd, hr, diffs_is_even, dhr] | UMIOUCD | TW?IO?TTHH 
+ioo(1) 55 | 50 | sacred | [7, 8, 23, 5, 11, 1] | [1, 15, 18, 6, 10] | [ad, dad] | WHDCJU | OJHTHRT 
+ioo(2) 88 | 41 | sacred | [19, 17, 9, 14, 23, 6] | [2, 8, 5, 9, 17] | [ad, dad] | MBNXDG | WGE(PAE)H?G? 
+Results for spiralbranch47.txt
+ioo(0) 71 | 51 | sacred | [2, 12, 22, 14, 4, 17] | [10, 10, 8, 10, 13] | [ad, dhr] | THEOOEXRB | (FID)EOEA(PAE)?R?G 
+ioo(1) 48 | 55 | sacred | [0, 11, 8, 20, 0, 9] | [11, 3, 12, 20, 9] | [hr, dad] | FJHLFN | NRJIONE 
+ioo(2) 92 | 30 | sacred | [5, 10, 12, 19, 27, 19] | [5, 2, 7, 8, 8] | [hr, dhr] | CIEOMIOM | THAEOW?IO?W 
+ioo(3) 109 | 40 | sacred | [19, 23, 11, 21, 14, 21] | [4, 12, 10, 7, 7] | [hr, dhr] | MDJINGXING | WHRING(PAE)ING 
+ioo(4) 69 | 35 | sacred | [4, 6, 5, 23, 22, 9] | [2, 1, 18, 1, 13] | [ad, dhr] | RGCDOEN | ?R??G?THHEAE 
+ioo(5) 58 | 44 | sacred | [0, 17, 20, 8, 3, 10] | [17, 3, 12, 5, 7] | [ad, dad] | FBLHOI | NGIOJ(UB)A 
+ioo(6) 113 | 36 | sacred | [18, 13, 23, 26, 25, 8] | [5, 10, 3, 1, 17] | [ad, dad] | EPDYAEH | X(CM)H?Y?OEJ 
+Results for spiralbranch48.txt
+ioo(0) 87 | 44 | sacred | [2, 26, 26, 17, 10, 6] | [24, 0, 9, 7, 4] | [hr, dad] | THYYBIG | (FID)?Y??Y?GA?G? 
+ioo(1) 115 | 44 | sacred | [21, 12, 17, 28, 28, 9] | [9, 5, 11, 0, 19] | [hr, dad] | INGEOBEAEAN | INGEOG?EA??EA?E 
+ioo(2) 121 | 23 | sacred | [17, 16, 18, 27, 27, 16] | [1, 2, 9, 0, 11] | [hr, dad] | BTEIOIOT | GYX?IO??IO?Y 
+ioo(3) 78 | 60 | sacred | [6, 8, 25, 8, 21, 10] | [2, 17, 17, 13, 11] | [hr, dhr, diffs_all_prime] | GHAEHINGI | ?G?JOEJINGA 
+ioo(4) 80 | 39 | sacred | [15, 19, 25, 5, 10, 6] | [4, 6, 20, 5, 4] | [ad, dhr] | SMAECIG | LWOETHA?G? 
+Results for spiralbranch49.txt
+ioo(0) 57 | 39 | sacred | [4, 20, 20, 2, 6, 5] | [16, 0, 18, 4, 1] | [hr, dad] | RLLTHGC | ?R?IOIO(FID)?G?TH 
+ioo(1) 81 | 39 | sacred | [3, 13, 24, 20, 9, 12] | [10, 11, 4, 11, 3] | [ad, dhr] | OPALNEO | (UB)(CM)SIOEEO 
+ioo(2) 50 | 39 | sacred | [3, 0, 8, 3, 10, 26] | [3, 8, 5, 7, 16] | [hr, dad] | OFHOIY | (UB)NJ(UB)A?Y? 
+ioo(3) 57 | 71 | sacred | [7, 17, 2, 7, 24, 0] | [10, 15, 5, 17, 24] | [hr, dad] | WBTHWAF | OG(FID)OSN 
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+ioo(0) 85 | 59 | sacred | [14, 3, 15, 10, 28, 15] | [11, 12, 5, 18, 13] | [hr, dad] | XOSIEAS | (PAE)(UB)LA?EA?L 
+Results for spiralbranch54.txt
+ioo(0) 89 | 45 | sacred | [21, 21, 1, 0, 22, 24] | [0, 20, 1, 22, 2] | [hr, dad] | INGINGUFOEA | INGINGTNEAS 
+ioo(1) 53 | 67 | sacred | [0, 8, 23, 1, 0, 21] | [8, 15, 22, 1, 21] | [hr, dad] | FHDUFING | NJHTNING 
+ioo(2) 91 | 31 | sacred | [14, 25, 17, 17, 13, 5] | [11, 8, 0, 4, 8] | [hr, dhr] | XAEBBPC | (PAE)OEGG(CM)TH 
+Results for hollow54.txt
+ioo(0) 78 | 70 | sacred | [6, 7, 22, 3, 26, 14] | [1, 15, 19, 23, 12] | [ad, dad] | GWOEOYX | ?G?OEA(UB)?Y?(PAE) 
+ioo(1) 78 | 35 | sacred | [7, 13, 7, 5, 24, 22] | [6, 6, 2, 19, 2] | [hr, dhr] | WPWCAOE | O(CM)OTHSEA 
+ioo(2) 112 | 39 | sacred | [19, 11, 24, 19, 15, 24] | [8, 13, 5, 4, 9] | [hr, dad] | MJAMSA | WRSWLS 
+ioo(3) 112 | 72 | sacred | [8, 23, 2, 28, 23, 28] | [15, 21, 26, 5, 5] | [hr, dhr] | HDTHEADEA | JH(FID)?EA?H?EA? 
+Results for hollow55.txt
+ioo(0) 52 | 68 | sacred | [0, 17, 1, 19, 13, 2] | [17, 16, 18, 6, 11] | [ad, dad] | FBUMPTH | NGTW(CM)(FID) 
+ioo(1) 72 | 45 | sacred | [14, 3, 19, 13, 16, 7] | [11, 16, 6, 3, 9] | [ad, dad] | XOMPTW | (PAE)(UB)W(CM)YO 
+ioo(2) 95 | 42 | sacred | [4, 20, 18, 23, 24, 6] | [16, 2, 5, 1, 18] | [ad, dad] | RLEDAG | ?R?IOXHS?G? 
+ioo(3) 79 | 31 | sacred | [19, 4, 5, 15, 16, 20] | [15, 1, 10, 1, 4] | [ad, dhr] | MRCSTL | W?R?THLYIO 
+Results for spiralbranch55.txt
+ioo(0) 82 | 46 | sacred | [15, 7, 14, 14, 5, 27] | [8, 7, 0, 9, 22] | [hr, dad] | SWXXCIO | LO(PAE)(PAE)TH?IO? 
+ioo(1) 71 | 23 | sacred | [16, 18, 18, 7, 3, 9] | [2, 0, 11, 4, 6] | [hr, dad] | TEEWON | YXXO(UB)E 

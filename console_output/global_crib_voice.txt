@@ -1,0 +1,378 @@
+Starting global crib with output settings...
+shiftsum | shiftdifferencessum | cribword | shiftlist | shiftdifferences | shiftlistfacts | shiftsinwordform | shiftsingpform
+Results for cross0.txt
+ioo(0) 77 | 32 | voice | [14, 23, 8, 16, 16] | [9, 15, 8, 0] | [hr, dad] | XDHTT | (PAE)HJYY 
+ioo(1) 73 | 45 | voice | [8, 22, 25, 5, 13] | [14, 3, 20, 8] | [ad, dad] | HOEAECP | JEAOETH(CM) 
+ioo(2) 84 | 49 | voice | [25, 26, 11, 0, 22] | [1, 15, 11, 22] | [ad, dad] | AEYJFOE | OE?Y?RNEA 
+ioo(3) 58 | 56 | voice | [11, 28, 1, 5, 13] | [17, 27, 4, 8] | [ad, dad] | JEAUCP | R?EA?TTH(CM) 
+ioo(4) 92 | 35 | voice | [20, 16, 19, 28, 9] | [4, 3, 9, 19] | [ad, dad] | LTMEAN | IOYW?EA?E 
+Results for cross1.txt
+ioo(0) 69 | 29 | voice | [23, 7, 9, 10, 20] | [16, 2, 1, 10] | [ad, dad] | DWNIL | HOEAIO 
+ioo(1) 67 | 39 | voice | [21, 2, 7, 15, 22] | [19, 5, 8, 7] | [ad, dad] | INGTHWSOE | ING(FID)OLEA 
+ioo(2) 64 | 14 | voice | [15, 11, 8, 15, 15] | [4, 3, 7, 0] | [hr, dad] | SJHSS | LRJLL 
+ioo(3) 77 | 16 | voice | [8, 10, 14, 21, 24] | [2, 4, 7, 3] | [incremental, ad, dad] | HIXINGA | JA(PAE)INGS 
+ioo(4) 87 | 52 | voice | [28, 15, 1, 23, 20] | [13, 14, 22, 3] | [ad, dad] | EASUDL | ?EA?LTHIO 
+ioo(5) 105 | 41 | voice | [18, 26, 10, 24, 27] | [8, 16, 14, 3] | [ad, dad] | EYIAIO | X?Y?AS?IO? 
+Results for cross2.txt
+ioo(0) 60 | 49 | voice | [6, 7, 23, 5, 19] | [1, 16, 18, 14] | [ad, dad] | GWDCM | ?G?OHTHW 
+ioo(1) 58 | 63 | voice | [1, 21, 28, 0, 8] | [20, 7, 28, 8] | [ad, dad] | UINGEAFH | TING?EA?NJ 
+Results for spiral3.txt
+ioo(0) 76 | 34 | voice | [6, 16, 16, 26, 12] | [10, 0, 10, 14] | [is_even, hr, diffs_is_even, dhr] | GTTYEO | ?G?YY?Y?EO 
+ioo(1) 91 | 24 | voice | [4, 23, 24, 20, 20] | [19, 1, 4, 0] | [hr, dad] | RDALL | ?R?HSIOIO 
+ioo(2) 84 | 36 | voice | [7, 22, 15, 23, 17] | [15, 7, 8, 6] | [ad, dad] | WOESDB | OEALHG 
+ioo(3) 44 | 63 | voice | [9, 8, 0, 27, 0] | [1, 8, 27, 27] | [hr, diffs_incremental, dhr] | NHFIOF | EJN?IO?N 
+Results for spiral4.txt
+ioo(0) 69 | 23 | voice | [13, 8, 19, 17, 12] | [5, 11, 2, 5] | [ad, dhr, diffs_all_prime] | PHMBEO | (CM)JWGEO 
+ioo(1) 48 | 47 | voice | [5, 7, 19, 1, 16] | [2, 12, 18, 15] | [ad, dad] | CWMUT | THOWTY 
+ioo(2) 41 | 48 | voice | [12, 4, 22, 3, 0] | [8, 18, 19, 3] | [ad, dad] | EOROEOF | EO?R?EA(UB)N 
+ioo(3) 75 | 23 | voice | [17, 11, 17, 12, 18] | [6, 6, 5, 6] | [hr, dhr] | BJBEOE | GRGEOX 
+ioo(4) 70 | 49 | voice | [4, 27, 19, 7, 13] | [23, 8, 12, 6] | [ad, dad] | RIOMWP | ?R??IO?WO(CM) 
+Results for spiral5.txt
+ioo(0) 100 | 29 | voice | [13, 13, 28, 20, 26] | [0, 15, 8, 6] | [hr, dad] | PPEALY | (CM)(CM)?EA?IO?Y? 
+ioo(1) 85 | 32 | voice | [0, 24, 23, 22, 16] | [24, 1, 1, 6] | [ad, dhr] | FADOET | NSHEAY 
+ioo(2) 70 | 37 | voice | [27, 11, 17, 13, 2] | [16, 6, 4, 11] | [ad, dad] | IOJBPTH | ?IO?RG(CM)(FID) 
+Results for spiral6.txt
+ioo(0) 41 | 17 | voice | [1, 1, 4, 17, 18] | [0, 3, 13, 1] | [incremental, hr, dad] | UURBE | TT?R?GX 
+ioo(1) 98 | 55 | voice | [21, 0, 27, 28, 22] | [21, 27, 1, 6] | [ad, dad] | INGFIOEAOE | INGN?IO??EA?EA 
+ioo(2) 63 | 24 | voice | [13, 7, 12, 10, 21] | [6, 5, 2, 11] | [ad, dad] | PWEOIING | (CM)OEOAING 
+ioo(3) 73 | 16 | voice | [19, 22, 12, 11, 9] | [3, 10, 1, 2] | [ad, dad] | MOEEOJN | WEAEORE 
+ioo(4) 43 | 52 | voice | [2, 27, 5, 3, 6] | [25, 22, 2, 3] | [ad, dad] | THIOCOG | (FID)?IO?TH(UB)?G? 
+Results for spiral7.txt
+ioo(0) 94 | 54 | voice | [13, 21, 28, 7, 25] | [8, 7, 21, 18] | [ad, dad] | PINGEAWAE | (CM)ING?EA?OOE 
+ioo(1) 80 | 57 | voice | [18, 26, 10, 23, 3] | [8, 16, 13, 20] | [ad, dad] | EYIDO | X?Y?AH(UB) 
+ioo(2) 48 | 31 | voice | [2, 11, 8, 18, 9] | [9, 3, 10, 9] | [ad, dhr] | THJHEN | (FID)RJXE 
+Results for branch8.txt
+ioo(0) 83 | 28 | voice | [27, 21, 23, 9, 3] | [6, 2, 14, 6] | [is_odd, ad, diffs_is_even, dhr] | IOINGDNO | ?IO?INGHE(UB) 
+ioo(1) 91 | 53 | voice | [25, 12, 27, 25, 2] | [13, 15, 2, 23] | [hr, dad] | AEEOIOAETH | OEEO?IO?OE(FID) 
+ioo(2) 70 | 19 | voice | [3, 11, 17, 17, 22] | [8, 6, 0, 5] | [incremental, hr, dad] | OJBBOE | (UB)RGGEA 
+ioo(3) 74 | 29 | voice | [9, 4, 10, 23, 28] | [5, 6, 13, 5] | [ad, dhr] | NRIDEA | E?R?AH?EA? 
+ioo(4) 61 | 24 | voice | [7, 13, 19, 15, 7] | [6, 6, 4, 8] | [is_odd, hr, diffs_is_even, dhr] | WPMSW | O(CM)WLO 
+Results for branch9.txt
+ioo(0) 67 | 67 | voice | [25, 4, 15, 1, 22] | [21, 11, 14, 21] | [ad, dhr] | AERSUOE | OE?R?LTEA 
+ioo(1) 76 | 40 | voice | [20, 16, 14, 2, 24] | [4, 2, 12, 22] | [is_even, ad, diffs_is_even, dad] | LTXTHA | IOY(PAE)(FID)S 
+ioo(2) 67 | 33 | voice | [14, 10, 4, 22, 17] | [4, 6, 18, 5] | [ad, dad] | XIROEB | (PAE)A?R?EAG 
+ioo(3) 98 | 49 | voice | [24, 1, 19, 27, 27] | [23, 18, 8, 0] | [hr, diffs_decremental, dad] | AUMIOIO | STW?IO??IO? 
+ioo(4) 81 | 23 | voice | [12, 8, 22, 22, 17] | [4, 14, 0, 5] | [hr, dad] | EOHOEOEB | EOJEAEAG 
+ioo(5) 48 | 55 | voice | [21, 6, 2, 19, 0] | [15, 4, 17, 19] | [ad, dad] | INGGTHMF | ING?G?(FID)WN 
+Results for branch10.txt
+ioo(0) 55 | 54 | voice | [12, 13, 5, 25, 0] | [1, 8, 20, 25] | [ad, diffs_incremental, dad] | EOPCAEF | EO(CM)THOEN 
+ioo(1) 50 | 26 | voice | [6, 14, 18, 8, 4] | [8, 4, 10, 4] | [is_even, ad, diffs_is_even, dhr] | GXEHR | ?G?(PAE)XJ?R? 
+ioo(2) 37 | 23 | voice | [9, 3, 4, 3, 18] | [6, 1, 1, 15] | [hr, dhr] | NOROE | E(UB)?R?(UB)X 
+ioo(3) 104 | 17 | voice | [25, 28, 20, 17, 14] | [3, 8, 3, 3] | [ad, dhr] | AEEALBX | OE?EA?IOG(PAE) 
+ioo(4) 77 | 25 | voice | [21, 25, 20, 5, 6] | [4, 5, 15, 1] | [ad, dad] | INGAELCG | INGOEIOTH?G? 
+ioo(5) 47 | 16 | voice | [8, 5, 11, 9, 14] | [3, 6, 2, 5] | [ad, dad] | HCJNX | JTHRE(PAE) 
+ioo(6) 68 | 56 | voice | [25, 7, 15, 2, 19] | [18, 8, 13, 17] | [ad, dad] | AEWSTHM | OEOL(FID)W 
+ioo(7) 68 | 47 | voice | [13, 5, 13, 27, 10] | [8, 8, 14, 17] | [hr, diffs_incremental, dhr] | PCPIOI | (CM)TH(CM)?IO?A 
+ioo(8) 65 | 29 | voice | [24, 12, 11, 15, 3] | [12, 1, 4, 12] | [ad, dhr] | AEOJSO | SEORL(UB) 
+Results for branch11.txt
+ioo(0) 92 | 34 | voice | [23, 26, 12, 20, 11] | [3, 14, 8, 9] | [ad, dad] | DYEOLJ | H?Y?EOIOR 
+ioo(1) 111 | 9 | voice | [21, 20, 19, 25, 26] | [1, 1, 6, 1] | [ad, dhr] | INGLMAEY | INGIOWOE?Y? 
+ioo(2) 83 | 46 | voice | [15, 8, 27, 26, 7] | [7, 19, 1, 19] | [ad, diffs_is_odd, dhr] | SHIOYW | LJ?IO??Y?O 
+ioo(3) 63 | 64 | voice | [1, 25, 2, 16, 19] | [24, 23, 14, 3] | [ad, diffs_decremental, dad] | UAETHTM | TOE(FID)YW 
+ioo(4) 79 | 38 | voice | [12, 4, 13, 28, 22] | [8, 9, 15, 6] | [ad, dad] | EORPEAOE | EO?R?(CM)?EA?EA 
+Results for branch12.txt
+ioo(0) 68 | 40 | voice | [5, 23, 20, 19, 1] | [18, 3, 1, 18] | [ad, dhr] | CDLMU | THHIOWT 
+ioo(1) 85 | 25 | voice | [27, 27, 19, 10, 2] | [0, 8, 9, 8] | [decremental, hr, dhr] | IOIOMITH | ?IO??IO?WA(FID) 
+ioo(2) 61 | 65 | voice | [1, 21, 9, 24, 6] | [20, 12, 15, 18] | [ad, dad] | UINGNAG | TINGES?G? 
+ioo(3) 74 | 32 | voice | [8, 18, 25, 11, 12] | [10, 7, 14, 1] | [ad, dad] | HEAEJEO | JXOEREO 
+ioo(4) 80 | 39 | voice | [12, 0, 16, 25, 27] | [12, 16, 9, 2] | [ad, dad] | EOFTAEIO | EONYOE?IO? 
+Results for branch13.txt
+ioo(0) 74 | 54 | voice | [25, 18, 6, 22, 3] | [7, 12, 16, 19] | [ad, diffs_incremental, dad] | AEEGOEO | OEX?G?EA(UB) 
+ioo(1) 63 | 33 | voice | [28, 12, 15, 7, 1] | [16, 3, 8, 6] | [ad, dad] | EAEOSWU | ?EA?EOLOT 
+ioo(2) 80 | 58 | voice | [8, 28, 15, 23, 6] | [20, 13, 8, 17] | [ad, dad] | HEASDG | J?EA?LH?G? 
+ioo(3) 78 | 37 | voice | [20, 17, 14, 24, 3] | [3, 3, 10, 21] | [ad, diffs_incremental, dhr] | LBXAO | IOG(PAE)S(UB) 
+ioo(4) 43 | 32 | voice | [9, 21, 6, 6, 1] | [12, 15, 0, 5] | [hr, dad] | NINGGGU | EING?G??G?T 
+ioo(5) 75 | 23 | voice | [17, 21, 21, 14, 2] | [4, 0, 7, 12] | [hr, dad] | BINGINGXTH | GINGING(PAE)(FID) 
+ioo(6) 47 | 60 | voice | [13, 3, 22, 0, 9] | [10, 19, 22, 9] | [ad, dad] | POOEFN | (CM)(UB)EANE 
+ioo(7) 67 | 48 | voice | [11, 16, 13, 0, 27] | [5, 3, 13, 27] | [ad, diffs_is_odd, dad] | JTPFIO | RY(CM)N?IO? 
+Results for branch14.txt
+ioo(0) 75 | 25 | voice | [11, 5, 16, 19, 24] | [6, 11, 3, 5] | [ad, dad] | JCTMA | RTHYWS 
+ioo(1) 71 | 50 | voice | [1, 23, 25, 7, 15] | [22, 2, 18, 8] | [is_odd, ad, diffs_is_even, dad] | UDAEWS | THOEOL 
+ioo(2) 47 | 43 | voice | [2, 24, 9, 9, 3] | [22, 15, 0, 6] | [hr, dad] | THANNO | (FID)SEE(UB) 
+Results for mobius15.txt
+ioo(0) 87 | 23 | voice | [23, 25, 16, 17, 6] | [2, 9, 1, 11] | [ad, dad] | DAETBG | HOEYG?G? 
+ioo(1) 55 | 49 | voice | [16, 6, 6, 24, 3] | [10, 0, 18, 21] | [hr, dad] | TGGAO | Y?G??G?S(UB) 
+ioo(2) 75 | 62 | voice | [21, 22, 1, 24, 7] | [1, 21, 23, 17] | [ad, diffs_is_odd, dad] | INGOEUAW | INGEATSO 
+ioo(3) 104 | 30 | voice | [25, 25, 10, 19, 25] | [0, 15, 9, 6] | [hr, dad] | AEAEIMAE | OEOEAWOE 
+ioo(4) 96 | 29 | voice | [9, 10, 27, 22, 28] | [1, 17, 5, 6] | [ad, dad] | NIIOOEEA | EA?IO?EA?EA? 
+ioo(5) 95 | 45 | voice | [20, 27, 19, 26, 3] | [7, 8, 7, 23] | [ad, dhr] | LIOMYO | IO?IO?W?Y?(UB) 
+ioo(6) 61 | 53 | voice | [7, 3, 27, 22, 2] | [4, 24, 5, 20] | [ad, dad] | WOIOOETH | O(UB)?IO?EA(FID) 
+Results for mobius16.txt
+ioo(0) 42 | 43 | voice | [5, 7, 24, 2, 4] | [2, 17, 22, 2] | [ad, dhr] | CWATHR | THOS(FID)?R? 
+ioo(1) 64 | 38 | voice | [23, 27, 7, 0, 7] | [4, 20, 7, 7] | [hr, dhr] | DIOWFW | H?IO?ONO 
+ioo(2) 59 | 40 | voice | [16, 7, 14, 20, 2] | [9, 7, 6, 18] | [ad, dad] | TWXLTH | YO(PAE)IO(FID) 
+ioo(3) 70 | 27 | voice | [18, 19, 14, 4, 15] | [1, 5, 10, 11] | [ad, diffs_incremental, dad] | EMXRS | XW(PAE)?R?L 
+ioo(4) 80 | 50 | voice | [15, 25, 8, 21, 11] | [10, 17, 13, 10] | [ad, dhr] | SAEHINGJ | LOEJINGR 
+ioo(5) 99 | 38 | voice | [25, 7, 19, 25, 23] | [18, 12, 6, 2] | [is_odd, hr, diffs_decremental, diffs_is_even, dad] | AEWMAED | OEOWOEH 
+ioo(6) 48 | 36 | voice | [19, 13, 3, 12, 1] | [6, 10, 9, 11] | [ad, dad] | MPOEOU | W(CM)(UB)EOT 
+ioo(7) 71 | 77 | voice | [17, 26, 2, 24, 2] | [9, 24, 22, 22] | [hr, dhr] | BYTHATH | G?Y?(FID)S(FID) 
+Results for mobius17.txt
+ioo(0) 66 | 57 | voice | [3, 5, 23, 7, 28] | [2, 18, 16, 21] | [ad, dad] | OCDWEA | (UB)THHO?EA? 
+ioo(1) 65 | 58 | voice | [21, 21, 0, 20, 3] | [0, 21, 20, 17] | [hr, dad] | INGINGFLO | INGINGNIO(UB) 
+ioo(2) 58 | 37 | voice | [13, 13, 1, 5, 26] | [0, 12, 4, 21] | [hr, dad] | PPUCY | (CM)(CM)TTH?Y? 
+ioo(3) 55 | 58 | voice | [11, 3, 27, 13, 1] | [8, 24, 14, 12] | [is_odd, ad, diffs_is_even, dad] | JOIOPU | R(UB)?IO?(CM)T 
+ioo(4) 72 | 21 | voice | [18, 9, 15, 17, 13] | [9, 6, 2, 4] | [ad, dad] | ENSBP | XELG(CM) 
+ioo(5) 94 | 36 | voice | [28, 23, 20, 5, 18] | [5, 3, 15, 13] | [ad, diffs_is_odd, dad] | EADLCE | ?EA?HIOTHX 
+Results for mobius18.txt
+ioo(0) 87 | 54 | voice | [21, 28, 19, 0, 19] | [7, 9, 19, 19] | [hr, diffs_incremental, diffs_is_odd, dhr] | INGEAMFM | ING?EA?WNW 
+ioo(1) 80 | 46 | voice | [24, 1, 11, 20, 24] | [23, 10, 9, 4] | [hr, diffs_decremental, dad] | AUJLA | STRIOS 
+ioo(2) 51 | 28 | voice | [2, 10, 18, 15, 6] | [8, 8, 3, 9] | [ad, dhr] | THIESG | (FID)AXL?G? 
+ioo(3) 70 | 47 | voice | [20, 17, 9, 23, 1] | [3, 8, 14, 22] | [ad, diffs_incremental, dad] | LBNDU | IOGEHT 
+ioo(4) 68 | 44 | voice | [14, 15, 28, 3, 8] | [1, 13, 25, 5] | [ad, diffs_is_odd, dad] | XSEAOH | (PAE)L?EA?(UB)J 
+ioo(5) 45 | 14 | voice | [10, 12, 13, 8, 2] | [2, 1, 5, 6] | [ad, dad] | IEOPHTH | AEO(CM)J(FID) 
+ioo(6) 83 | 34 | voice | [28, 18, 23, 6, 8] | [10, 5, 17, 2] | [ad, dad] | EAEDGH | ?EA?XH?G?J 
+Results for mobius19.txt
+ioo(0) 35 | 35 | voice | [8, 0, 12, 4, 11] | [8, 12, 8, 7] | [ad, dhr] | HFEORJ | JNEO?R?R 
+ioo(1) 75 | 60 | voice | [22, 4, 18, 7, 24] | [18, 14, 11, 17] | [ad, dad] | OEREWA | EA?R?XOS 
+ioo(2) 29 | 22 | voice | [10, 7, 3, 9, 0] | [3, 4, 6, 9] | [ad, diffs_incremental, dad] | IWONF | AO(UB)EN 
+ioo(3) 79 | 44 | voice | [26, 25, 5, 17, 6] | [1, 20, 12, 11] | [ad, dad] | YAECBG | ?Y?OETHG?G? 
+ioo(4) 90 | 28 | voice | [15, 22, 14, 22, 17] | [7, 8, 8, 5] | [hr, dhr] | SOEXOEB | LEA(PAE)EAG 
+ioo(5) 69 | 20 | voice | [4, 10, 10, 21, 24] | [6, 0, 11, 3] | [incremental, hr, dad] | RIIINGA | ?R?AAINGS 
+ioo(6) 63 | 36 | voice | [14, 20, 19, 0, 10] | [6, 1, 19, 10] | [ad, dad] | XLMFI | (PAE)IOWNA 
+ioo(7) 45 | 36 | voice | [1, 20, 13, 8, 3] | [19, 7, 5, 5] | [ad, diffs_decremental, diffs_is_odd, dhr, diffs_all_prime] | ULPHO | TIO(CM)J(UB) 
+Results for mobius20.txt
+ioo(0) 111 | 30 | voice | [28, 18, 19, 28, 18] | [10, 1, 9, 10] | [hr, dhr] | EAEMEAE | ?EA?XW?EA?X 
+ioo(1) 43 | 40 | voice | [5, 8, 7, 22, 1] | [3, 1, 15, 21] | [ad, diffs_is_odd, dad] | CHWOEU | THJOEAT 
+ioo(2) 78 | 29 | voice | [18, 18, 27, 8, 7] | [0, 9, 19, 1] | [hr, dad] | EEIOHW | XX?IO?JO 
+ioo(3) 72 | 44 | voice | [1, 12, 26, 26, 7] | [11, 14, 0, 19] | [hr, dad] | UEOYYW | TEO?Y??Y?O 
+ioo(4) 85 | 19 | voice | [22, 17, 20, 17, 9] | [5, 3, 3, 8] | [hr, dhr] | OEBLBN | EAGIOGE 
+Results for mobius21.txt
+ioo(0) 88 | 57 | voice | [28, 1, 17, 15, 27] | [27, 16, 2, 12] | [ad, dad] | EAUBSIO | ?EA?TGL?IO? 
+ioo(1) 42 | 19 | voice | [9, 4, 5, 6, 18] | [5, 1, 1, 12] | [ad, dhr] | NRCGE | E?R?TH?G?X 
+ioo(2) 82 | 40 | voice | [24, 8, 21, 19, 10] | [16, 13, 2, 9] | [ad, dad] | AHINGMI | SJINGWA 
+ioo(3) 75 | 42 | voice | [22, 10, 21, 8, 14] | [12, 11, 13, 6] | [ad, dad] | OEIINGHX | EAAINGJ(PAE) 
+ioo(4) 67 | 43 | voice | [15, 1, 12, 11, 28] | [14, 11, 1, 17] | [ad, dad] | SUEOJEA | LTEOR?EA? 
+ioo(5) 69 | 41 | voice | [21, 0, 17, 15, 16] | [21, 17, 2, 1] | [ad, diffs_decremental, dad] | INGFBST | INGNGLY 
+ioo(6) 73 | 47 | voice | [5, 16, 26, 26, 0] | [11, 10, 0, 26] | [hr, dad] | CTYYF | THY?Y??Y?N 
+Results for mobius22.txt
+ioo(0) 84 | 58 | voice | [19, 2, 25, 15, 23] | [17, 23, 10, 8] | [ad, dad] | MTHAESD | W(FID)OELH 
+ioo(1) 103 | 30 | voice | [26, 28, 19, 10, 20] | [2, 9, 9, 10] | [ad, diffs_incremental, dhr] | YEAMIL | ?Y??EA?WAIO 
+Results for mayfly23.txt
+ioo(0) 44 | 13 | voice | [11, 13, 7, 5, 8] | [2, 6, 2, 3] | [ad, dhr] | JPWCH | R(CM)OTHJ 
+ioo(1) 98 | 42 | voice | [20, 4, 20, 28, 26] | [16, 16, 8, 2] | [is_even, hr, diffs_decremental, diffs_is_even, dhr] | LRLEAY | IO?R?IO?EA??Y? 
+ioo(2) 77 | 42 | voice | [2, 24, 19, 22, 10] | [22, 5, 3, 12] | [ad, dad] | THAMOEI | (FID)SWEAA 
+Results for mayfly24.txt
+ioo(0) 79 | 59 | voice | [11, 24, 3, 23, 18] | [13, 21, 20, 5] | [ad, dad] | JAODE | RS(UB)HX 
+ioo(1) 70 | 32 | voice | [5, 17, 19, 10, 19] | [12, 2, 9, 9] | [hr, dhr] | CBMIM | THGWAW 
+ioo(2) 90 | 30 | voice | [17, 28, 20, 16, 9] | [11, 8, 4, 7] | [ad, dad] | BEALTN | G?EA?IOYE 
+ioo(3) 78 | 21 | voice | [19, 12, 11, 20, 16] | [7, 1, 9, 4] | [ad, dad] | MEOJLT | WEORIOY 
+Results for mayfly25.txt
+ioo(0) 58 | 34 | voice | [6, 11, 24, 9, 8] | [5, 13, 15, 1] | [ad, diffs_is_odd, dad] | GJANH | ?G?RSEJ 
+ioo(1) 80 | 27 | voice | [14, 10, 24, 17, 15] | [4, 14, 7, 2] | [ad, dad] | XIABS | (PAE)ASGL 
+ioo(2) 54 | 50 | voice | [20, 11, 4, 19, 0] | [9, 7, 15, 19] | [ad, diffs_is_odd, dad] | LJRMF | IOR?R?WN 
+ioo(3) 85 | 61 | voice | [16, 28, 4, 22, 15] | [12, 24, 18, 7] | [ad, dad] | TEAROES | Y?EA??R?EAL 
+ioo(4) 62 | 54 | voice | [0, 16, 10, 26, 10] | [16, 6, 16, 16] | [is_even, hr, diffs_is_even, dhr] | FTIYI | NYA?Y?A 
+ioo(5) 52 | 59 | voice | [2, 17, 0, 6, 27] | [15, 17, 6, 21] | [ad, dad] | THBFGIO | (FID)GN?G??IO? 
+ioo(6) 92 | 35 | voice | [16, 21, 19, 9, 27] | [5, 2, 10, 18] | [ad, dad] | TINGMNIO | YINGWE?IO? 
+ioo(7) 44 | 30 | voice | [8, 7, 19, 8, 2] | [1, 12, 11, 6] | [hr, dad] | HWMHTH | JOWJ(FID) 
+ioo(8) 42 | 52 | voice | [5, 2, 5, 27, 3] | [3, 3, 22, 24] | [hr, diffs_incremental, dhr] | CTHCIOO | TH(FID)TH?IO?(UB) 
+ioo(9) 82 | 48 | voice | [26, 15, 6, 23, 12] | [11, 9, 17, 11] | [ad, diffs_is_odd, dhr] | YSGDEO | ?Y?L?G?HEO 
+Results for mayfly26.txt
+ioo(0) 98 | 30 | voice | [12, 25, 27, 22, 12] | [13, 2, 5, 10] | [hr, dad] | EOAEIOOEEO | EOOE?IO?EAEO 
+ioo(1) 80 | 42 | voice | [8, 13, 21, 10, 28] | [5, 8, 11, 18] | [ad, diffs_incremental, dad] | HPINGIEA | J(CM)INGA?EA? 
+ioo(2) 41 | 47 | voice | [2, 26, 7, 3, 3] | [24, 19, 4, 0] | [hr, diffs_decremental, dad] | THYWOO | (FID)?Y?O(UB)(UB) 
+ioo(3) 67 | 46 | voice | [16, 1, 21, 19, 10] | [15, 20, 2, 9] | [ad, dad] | TUINGMI | YTINGWA 
+ioo(4) 76 | 10 | voice | [13, 15, 17, 18, 13] | [2, 2, 1, 5] | [hr, dhr] | PSBEP | (CM)LGX(CM) 
+ioo(5) 45 | 14 | voice | [15, 12, 7, 4, 7] | [3, 5, 3, 3] | [hr, diffs_is_odd, dhr, diffs_all_prime] | SEOWRW | LEOO?R?O 
+ioo(6) 51 | 75 | voice | [0, 15, 0, 27, 9] | [15, 15, 27, 18] | [hr, dhr] | FSFION | NLN?IO?E 
+Results for wingtree27.txt
+ioo(0) 66 | 65 | voice | [6, 25, 3, 5, 27] | [19, 22, 2, 22] | [ad, dhr] | GAEOCIO | ?G?OE(UB)TH?IO? 
+Results for wingtree28.txt
+ioo(0) 68 | 54 | voice | [10, 28, 7, 5, 18] | [18, 21, 2, 13] | [ad, dad] | IEAWCE | A?EA?OTHX 
+ioo(1) 65 | 46 | voice | [6, 8, 28, 19, 4] | [2, 20, 9, 15] | [ad, dad] | GHEAMR | ?G?J?EA?W?R? 
+ioo(2) 64 | 50 | voice | [1, 19, 25, 6, 13] | [18, 6, 19, 7] | [ad, dad] | UMAEGP | TWOE?G?(CM) 
+ioo(3) 56 | 70 | voice | [16, 0, 26, 4, 10] | [16, 26, 22, 6] | [is_even, ad, diffs_is_even, dad] | TFYRI | YN?Y??R?A 
+ioo(4) 76 | 24 | voice | [14, 15, 9, 12, 26] | [1, 6, 3, 14] | [ad, dad] | XSNEOY | (PAE)LEEO?Y? 
+ioo(5) 66 | 51 | voice | [22, 27, 0, 12, 5] | [5, 27, 12, 7] | [ad, dad] | OEIOFEOC | EA?IO?NEOTH 
+ioo(6) 77 | 46 | voice | [11, 18, 3, 24, 21] | [7, 15, 21, 3] | [ad, diffs_is_odd, dad] | JEOAING | RX(UB)SING 
+ioo(7) 62 | 51 | voice | [23, 8, 9, 22, 0] | [15, 1, 13, 22] | [ad, dad] | DHNOEF | HJEEAN 
+ioo(8) 67 | 20 | voice | [11, 8, 19, 14, 15] | [3, 11, 5, 1] | [ad, diffs_is_odd, dad] | JHMXS | RJW(PAE)L 
+ioo(9) 75 | 75 | voice | [27, 21, 0, 25, 2] | [6, 21, 25, 23] | [ad, dad] | IOINGFAETH | ?IO?INGNOE(FID) 
+ioo(10) 69 | 42 | voice | [9, 15, 3, 23, 19] | [6, 12, 20, 4] | [is_odd, ad, diffs_is_even, dad] | NSODM | EL(UB)HW 
+ioo(11) 58 | 43 | voice | [6, 19, 7, 17, 9] | [13, 12, 10, 8] | [ad, diffs_decremental, dad] | GMWBN | ?G?WOGE 
+ioo(12) 99 | 50 | voice | [28, 23, 11, 27, 10] | [5, 12, 16, 17] | [ad, diffs_incremental, dad] | EADJIOI | ?EA?HR?IO?A 
+ioo(13) 90 | 40 | voice | [22, 8, 22, 16, 22] | [14, 14, 6, 6] | [is_even, hr, diffs_decremental, diffs_is_even, dhr] | OEHOETOE | EAJEAYEA 
+ioo(14) 75 | 27 | voice | [23, 15, 9, 8, 20] | [8, 6, 1, 12] | [ad, dad] | DSNHL | HLEJIO 
+ioo(15) 124 | 20 | voice | [28, 25, 25, 18, 28] | [3, 0, 7, 10] | [hr, dad] | EAAEAEEEA | ?EA?OEOEX?EA? 
+Results for wingtree29.txt
+ioo(0) 42 | 20 | voice | [0, 13, 10, 11, 8] | [13, 3, 1, 3] | [ad, diffs_is_odd, dhr] | FPIJH | N(CM)ARJ 
+ioo(1) 49 | 29 | voice | [26, 6, 9, 5, 3] | [20, 3, 4, 2] | [ad, dad] | YGNCO | ?Y??G?ETH(UB) 
+ioo(2) 81 | 46 | voice | [15, 16, 5, 28, 17] | [1, 11, 23, 11] | [ad, diffs_is_odd, dhr] | STCEAB | LYTH?EA?G 
+ioo(3) 52 | 34 | voice | [11, 15, 4, 15, 7] | [4, 11, 11, 8] | [hr, dhr] | JSRSW | RL?R?LO 
+Results for wingtree30.txt
+ioo(0) 64 | 32 | voice | [13, 22, 7, 7, 15] | [9, 15, 0, 8] | [hr, dad] | POEWWS | (CM)EAOOL 
+ioo(1) 66 | 81 | voice | [3, 25, 3, 25, 10] | [22, 22, 22, 15] | [hr, diffs_decremental, dhr] | OAEOAEI | (UB)OE(UB)OEA 
+ioo(2) 86 | 40 | voice | [5, 22, 22, 12, 25] | [17, 0, 10, 13] | [hr, dad] | COEOEEOAE | THEAEAEOOE 
+ioo(3) 95 | 44 | voice | [3, 24, 14, 27, 27] | [21, 10, 13, 0] | [hr, dad] | OAXIOIO | (UB)S(PAE)?IO??IO? 
+ioo(4) 73 | 47 | voice | [2, 25, 25, 20, 1] | [23, 0, 5, 19] | [hr, dad, diffs_all_prime] | THAEAELU | (FID)OEOEIOT 
+ioo(5) 70 | 59 | voice | [4, 17, 20, 2, 27] | [13, 3, 18, 25] | [ad, dad] | RBLTHIO | ?R?GIO(FID)?IO? 
+ioo(6) 71 | 21 | voice | [6, 7, 11, 20, 27] | [1, 4, 9, 7] | [incremental, ad, dad] | GWJLIO | ?G?ORIO?IO? 
+ioo(7) 47 | 31 | voice | [23, 13, 3, 0, 8] | [10, 10, 3, 8] | [ad, dhr] | DPOFH | H(CM)(UB)NJ 
+Results for wingtree31.txt
+ioo(0) 71 | 19 | voice | [12, 15, 13, 10, 21] | [3, 2, 3, 11] | [ad, dhr, diffs_all_prime] | EOSPIING | EOL(CM)AING 
+ioo(1) 52 | 43 | voice | [19, 5, 4, 0, 24] | [14, 1, 4, 24] | [ad, dad] | MCRFA | WTH?R?NS 
+ioo(2) 104 | 36 | voice | [10, 22, 28, 18, 26] | [12, 6, 10, 8] | [is_even, ad, diffs_is_even, dad] | IOEEAEY | AEA?EA?X?Y? 
+ioo(3) 65 | 54 | voice | [12, 22, 6, 1, 24] | [10, 16, 5, 23] | [ad, dad] | EOOEGUA | EOEA?G?TS 
+ioo(4) 54 | 27 | voice | [3, 15, 18, 12, 6] | [12, 3, 6, 6] | [ad, dhr] | OSEEOG | (UB)LXEO?G? 
+Results for wingtree32.txt
+ioo(0) 92 | 52 | voice | [24, 27, 3, 22, 16] | [3, 24, 19, 6] | [ad, dad] | AIOOOET | S?IO?(UB)EAY 
+ioo(1) 77 | 77 | voice | [21, 4, 21, 3, 28] | [17, 17, 18, 25] | [hr, diffs_incremental, dhr] | INGRINGOEA | ING?R?ING(UB)?EA? 
+ioo(2) 70 | 65 | voice | [26, 1, 6, 26, 11] | [25, 5, 20, 15] | [hr, dad] | YUGYJ | ?Y?T?G??Y?R 
+ioo(3) 44 | 30 | voice | [1, 4, 4, 22, 13] | [3, 0, 18, 9] | [hr, dad] | URROEP | T?R??R?EA(CM) 
+ioo(4) 65 | 53 | voice | [0, 13, 19, 6, 27] | [13, 6, 13, 21] | [ad, dhr] | FPMGIO | N(CM)W?G??IO? 
+Results for cuneiform33.txt
+ioo(0) 78 | 26 | voice | [25, 20, 7, 11, 15] | [5, 13, 4, 4] | [ad, dhr] | AELWJS | OEIOORL 
+ioo(1) 84 | 60 | voice | [14, 28, 18, 2, 22] | [14, 10, 16, 20] | [is_even, ad, diffs_is_even, dad] | XEAETHOE | (PAE)?EA?X(FID)EA 
+ioo(2) 99 | 32 | voice | [9, 26, 24, 17, 23] | [17, 2, 7, 6] | [ad, dad] | NYABD | E?Y?SGH 
+ioo(3) 86 | 49 | voice | [17, 26, 18, 25, 0] | [9, 8, 7, 25] | [ad, dad] | BYEAEF | G?Y?XOEN 
+ioo(4) 73 | 35 | voice | [12, 12, 26, 18, 5] | [0, 14, 8, 13] | [hr, dad] | EOEOYEC | EOEO?Y?XTH 
+ioo(5) 92 | 27 | voice | [24, 21, 25, 17, 5] | [3, 4, 8, 12] | [ad, diffs_incremental, dad] | AINGAEBC | SINGOEGTH 
+Results for cuneiform34.txt
+ioo(0) 70 | 34 | voice | [7, 9, 24, 23, 7] | [2, 15, 1, 16] | [hr, dad] | WNADW | OESHO 
+ioo(1) 67 | 58 | voice | [10, 28, 8, 3, 18] | [18, 20, 5, 15] | [ad, dad] | IEAHOE | A?EA?J(UB)X 
+ioo(2) 65 | 34 | voice | [24, 11, 8, 4, 18] | [13, 3, 4, 14] | [ad, dad] | AJHRE | SRJ?R?X 
+ioo(3) 49 | 53 | voice | [12, 0, 0, 26, 11] | [12, 0, 26, 15] | [hr, dad] | EOFFYJ | EONN?Y?R 
+ioo(4) 63 | 52 | voice | [10, 1, 25, 21, 6] | [9, 24, 4, 15] | [ad, dad] | IUAEINGG | ATOEING?G? 
+ioo(5) 56 | 22 | voice | [18, 18, 16, 0, 4] | [0, 2, 16, 4] | [is_even, hr, diffs_is_even, dad] | EETFR | XXYN?R? 
+ioo(6) 69 | 40 | voice | [18, 15, 22, 2, 12] | [3, 7, 20, 10] | [ad, dad] | ESOETHEO | XLEA(FID)EO 
+ioo(7) 42 | 38 | voice | [13, 5, 17, 2, 5] | [8, 12, 15, 3] | [hr, all_primes, dad] | PCBTHC | (CM)THG(FID)TH 
+Results for cuneiform35.txt
+ioo(0) 89 | 37 | voice | [22, 21, 5, 22, 19] | [1, 16, 17, 3] | [hr, dad] | OEINGCOEM | EAINGTHEAW 
+ioo(1) 73 | 88 | voice | [18, 26, 1, 28, 0] | [8, 25, 27, 28] | [ad, diffs_incremental, dad] | EYUEAF | X?Y?T?EA?N 
+ioo(2) 55 | 65 | voice | [21, 5, 2, 25, 2] | [16, 3, 23, 23] | [hr, dhr] | INGCTHAETH | INGTH(FID)OE(FID) 
+ioo(3) 56 | 47 | voice | [9, 1, 25, 11, 10] | [8, 24, 14, 1] | [ad, dad] | NUAEJI | ETOERA 
+Results for cuneiform36.txt
+ioo(0) 102 | 24 | voice | [28, 25, 15, 20, 14] | [3, 10, 5, 6] | [ad, dad] | EAAESLX | ?EA?OELIO(PAE) 
+ioo(1) 74 | 52 | voice | [1, 27, 18, 21, 7] | [26, 9, 3, 14] | [ad, dad] | UIOEINGW | T?IO?XINGO 
+ioo(2) 103 | 35 | voice | [26, 27, 22, 7, 21] | [1, 5, 15, 14] | [ad, dad] | YIOOEWING | ?Y??IO?EAOING 
+ioo(3) 50 | 43 | voice | [10, 26, 3, 6, 5] | [16, 23, 3, 1] | [ad, dad] | IYOGC | A?Y?(UB)?G?TH 
+ioo(4) 83 | 37 | voice | [2, 12, 24, 18, 27] | [10, 12, 6, 9] | [ad, dad] | THEOAEIO | (FID)EOSX?IO? 
+ioo(5) 56 | 30 | voice | [13, 6, 9, 19, 9] | [7, 3, 10, 10] | [hr, dhr] | PGNMN | (CM)?G?EWE 
+ioo(6) 71 | 43 | voice | [7, 15, 6, 25, 18] | [8, 9, 19, 7] | [ad, dad] | WSGAEE | OL?G?OEX 
+ioo(7) 66 | 36 | voice | [10, 1, 13, 14, 28] | [9, 12, 1, 14] | [ad, dad] | IUPXEA | AT(CM)(PAE)?EA? 
+ioo(8) 70 | 47 | voice | [1, 19, 23, 25, 2] | [18, 4, 2, 23] | [ad, dad] | UMDAETH | TWHOE(FID) 
+ioo(9) 62 | 22 | voice | [22, 23, 7, 4, 6] | [1, 16, 3, 2] | [ad, dad] | OEDWRG | EAHO?R??G? 
+Results for cuneiform37.txt
+ioo(0) 67 | 27 | voice | [19, 19, 8, 15, 6] | [0, 11, 7, 9] | [hr, dad] | MMHSG | WWJL?G? 
+ioo(1) 46 | 38 | voice | [12, 17, 0, 11, 6] | [5, 17, 11, 5] | [ad, diffs_is_odd, dhr, diffs_all_prime] | EOBFJG | EOGNR?G? 
+ioo(2) 89 | 33 | voice | [20, 26, 13, 19, 11] | [6, 13, 6, 8] | [ad, dhr] | LYPMJ | IO?Y?(CM)WR 
+ioo(3) 74 | 23 | voice | [13, 16, 14, 21, 10] | [3, 2, 7, 11] | [ad, dad, diffs_all_prime] | PTXINGI | (CM)Y(PAE)INGA 
+Results for cuneiform38.txt
+ioo(0) 87 | 30 | voice | [18, 22, 12, 21, 14] | [4, 10, 9, 7] | [ad, dad] | EOEEOINGX | XEAEOING(PAE) 
+ioo(1) 74 | 23 | voice | [15, 7, 8, 22, 22] | [8, 1, 14, 0] | [hr, dad] | SWHOEOE | LOJEAEA 
+ioo(2) 75 | 36 | voice | [26, 5, 11, 13, 20] | [21, 6, 2, 7] | [ad, dad] | YCJPL | ?Y?THR(CM)IO 
+ioo(3) 52 | 35 | voice | [7, 8, 10, 23, 4] | [1, 2, 13, 19] | [ad, diffs_incremental, dad] | WHIDR | OJAH?R? 
+ioo(4) 96 | 24 | voice | [19, 14, 11, 25, 27] | [5, 3, 14, 2] | [ad, dad] | MXJAEIO | W(PAE)ROE?IO? 
+ioo(5) 62 | 26 | voice | [7, 13, 18, 19, 5] | [6, 5, 1, 14] | [ad, dad] | WPEMC | O(CM)XWTH 
+Results for cuneiform39.txt
+ioo(0) 51 | 44 | voice | [8, 12, 0, 3, 28] | [4, 12, 3, 25] | [ad, dad] | HEOFOEA | JEON(UB)?EA? 
+ioo(1) 70 | 50 | voice | [0, 28, 22, 14, 6] | [28, 6, 8, 8] | [is_even, ad, diffs_is_even, dhr] | FEAOEXG | N?EA?EA(PAE)?G? 
+ioo(2) 74 | 75 | voice | [27, 2, 27, 16, 2] | [25, 25, 11, 14] | [hr, dhr] | IOTHIOTTH | ?IO?(FID)?IO?Y(FID) 
+ioo(3) 66 | 60 | voice | [8, 28, 2, 12, 16] | [20, 26, 10, 4] | [is_even, ad, diffs_is_even, dad] | HEATHEOT | J?EA?(FID)EOY 
+ioo(4) 67 | 60 | voice | [7, 3, 23, 7, 27] | [4, 20, 16, 20] | [is_odd, hr, diffs_is_even, dhr] | WODWIO | O(UB)HO?IO? 
+ioo(5) 39 | 37 | voice | [18, 4, 0, 12, 5] | [14, 4, 12, 7] | [ad, dad] | ERFEOC | X?R?NEOTH 
+ioo(6) 90 | 39 | voice | [21, 5, 10, 26, 28] | [16, 5, 16, 2] | [ad, dhr] | INGCIYEA | INGTHA?Y??EA? 
+ioo(7) 95 | 32 | voice | [16, 6, 17, 28, 28] | [10, 11, 11, 0] | [hr, dhr] | TGBEAEA | Y?G?G?EA??EA? 
+ioo(8) 55 | 32 | voice | [6, 17, 16, 4, 12] | [11, 1, 12, 8] | [ad, dad] | GBTREO | ?G?GY?R?EO 
+ioo(9) 87 | 38 | voice | [26, 6, 8, 23, 24] | [20, 2, 15, 1] | [ad, dad] | YGHDA | ?Y??G?JHS 
+Results for spiralbranch40.txt
+ioo(0) 80 | 40 | voice | [25, 3, 13, 20, 19] | [22, 10, 7, 1] | [ad, diffs_decremental, dad] | AEOPLM | OE(UB)(CM)IOW 
+ioo(1) 77 | 38 | voice | [23, 10, 4, 21, 19] | [13, 6, 17, 2] | [ad, dad] | DIRINGM | HA?R?INGW 
+ioo(2) 69 | 48 | voice | [19, 7, 6, 26, 11] | [12, 1, 20, 15] | [ad, dad] | MWGYJ | WO?G??Y?R 
+ioo(3) 37 | 17 | voice | [8, 10, 8, 2, 9] | [2, 2, 6, 7] | [hr, diffs_incremental, dhr] | HIHTHN | JAJ(FID)E 
+ioo(4) 33 | 33 | voice | [14, 0, 5, 11, 3] | [14, 5, 6, 8] | [ad, dad] | XFCJO | (PAE)NTHR(UB) 
+ioo(5) 72 | 17 | voice | [9, 18, 16, 13, 16] | [9, 2, 3, 3] | [hr, dhr] | NETPT | EXY(CM)Y 
+ioo(6) 102 | 32 | voice | [19, 22, 10, 26, 25] | [3, 12, 16, 1] | [ad, dad] | MOEIYAE | WEAA?Y?OE 
+ioo(7) 111 | 17 | voice | [28, 20, 23, 23, 17] | [8, 3, 0, 6] | [hr, dad] | EALDDB | ?EA?IOHHG 
+ioo(8) 44 | 44 | voice | [5, 26, 4, 4, 5] | [21, 22, 0, 1] | [hr, dad] | CYRRC | TH?Y??R??R?TH 
+Results for spiralbranch41.txt
+ioo(0) 71 | 31 | voice | [22, 13, 9, 6, 21] | [9, 4, 3, 15] | [ad, dad] | OEPNGING | EA(CM)E?G?ING 
+ioo(1) 65 | 35 | voice | [13, 10, 24, 8, 10] | [3, 14, 16, 2] | [hr, dad] | PIAHI | (CM)ASJA 
+ioo(2) 83 | 39 | voice | [22, 2, 19, 19, 21] | [20, 17, 0, 2] | [hr, dad] | OETHMMING | EA(FID)WWING 
+ioo(3) 85 | 25 | voice | [15, 25, 19, 16, 10] | [10, 6, 3, 6] | [ad, dhr] | SAEMTI | LOEWYA 
+ioo(4) 80 | 29 | voice | [15, 26, 16, 15, 8] | [11, 10, 1, 7] | [hr, dad] | SYTSH | L?Y?YLJ 
+ioo(5) 77 | 41 | voice | [19, 8, 22, 22, 6] | [11, 14, 0, 16] | [hr, dad] | MHOEOEG | WJEAEA?G? 
+ioo(6) 64 | 26 | voice | [6, 13, 12, 21, 12] | [7, 1, 9, 9] | [hr, diffs_is_odd, dhr] | GPEOINGEO | ?G?(CM)EOINGEO 
+ioo(7) 59 | 28 | voice | [23, 12, 16, 5, 3] | [11, 4, 11, 2] | [ad, dhr] | DEOTCO | HEOYTH(UB) 
+ioo(8) 97 | 31 | voice | [21, 19, 24, 11, 22] | [2, 5, 13, 11] | [ad, dad, diffs_all_prime] | INGMAJOE | INGWSREA 
+Results for spiralbranch42.txt
+ioo(0) 64 | 23 | voice | [6, 4, 16, 15, 23] | [2, 12, 1, 8] | [ad, dad] | GRTSD | ?G??R?YLH 
+ioo(1) 64 | 47 | voice | [10, 17, 20, 0, 17] | [7, 3, 20, 17] | [hr, dad] | IBLFB | AGIONG 
+ioo(2) 59 | 41 | voice | [19, 13, 1, 2, 24] | [6, 12, 1, 22] | [ad, dad] | MPUTHA | W(CM)T(FID)S 
+ioo(3) 84 | 46 | voice | [17, 24, 8, 22, 13] | [7, 16, 14, 9] | [ad, dad] | BAHOEP | GSJEA(CM) 
+ioo(4) 87 | 41 | voice | [13, 21, 25, 8, 20] | [8, 4, 17, 12] | [ad, dad] | PINGAEHL | (CM)INGOEJIO 
+ioo(5) 68 | 80 | voice | [2, 25, 5, 26, 10] | [23, 20, 21, 16] | [ad, dad] | THAECYI | (FID)OETH?Y?A 
+Results for spiralbranch43.txt
+ioo(0) 44 | 29 | voice | [5, 17, 16, 2, 4] | [12, 1, 14, 2] | [ad, dad] | CBTTHR | THGY(FID)?R? 
+ioo(1) 45 | 43 | voice | [12, 4, 13, 1, 15] | [8, 9, 12, 14] | [ad, diffs_incremental, dad] | EORPUS | EO?R?(CM)TL 
+ioo(2) 89 | 61 | voice | [28, 6, 16, 28, 11] | [22, 10, 12, 17] | [hr, dad] | EAGTEAJ | ?EA??G?Y?EA?R 
+Results for spiralbranch44.txt
+ioo(0) 106 | 33 | voice | [28, 11, 17, 23, 27] | [17, 6, 6, 4] | [ad, diffs_decremental, dhr] | EAJBDIO | ?EA?RGH?IO? 
+ioo(1) 67 | 43 | voice | [21, 8, 19, 19, 0] | [13, 11, 0, 19] | [hr, dad, diffs_all_prime] | INGHMMF | INGJWWN 
+ioo(2) 112 | 10 | voice | [25, 26, 26, 18, 17] | [1, 0, 8, 1] | [hr, dhr] | AEYYEB | OE?Y??Y?XG 
+ioo(3) 59 | 38 | voice | [15, 2, 12, 9, 21] | [13, 10, 3, 12] | [ad, dad] | STHEONING | L(FID)EOEING 
+ioo(4) 40 | 47 | voice | [18, 1, 10, 0, 11] | [17, 9, 10, 11] | [ad, dad] | EUIFJ | XTANR 
+Results for spiralbranch45.txt
+ioo(0) 69 | 36 | voice | [22, 24, 7, 2, 14] | [2, 17, 5, 12] | [ad, dad] | OEAWTHX | EASO(FID)(PAE) 
+ioo(1) 103 | 26 | voice | [21, 16, 22, 17, 27] | [5, 6, 5, 10] | [ad, dhr] | INGTOEBIO | INGYEAG?IO? 
+ioo(2) 78 | 51 | voice | [18, 0, 25, 18, 17] | [18, 25, 7, 1] | [hr, dad] | EFAEEB | XNOEXG 
+ioo(3) 66 | 44 | voice | [10, 19, 9, 4, 24] | [9, 10, 5, 20] | [ad, dad] | IMNRA | AWE?R?S 
+ioo(4) 75 | 62 | voice | [2, 24, 24, 3, 22] | [22, 0, 21, 19] | [hr, dad] | THAAOOE | (FID)SS(UB)EA 
+ioo(5) 66 | 25 | voice | [25, 26, 5, 4, 6] | [1, 21, 1, 2] | [ad, dhr] | AEYCRG | OE?Y?TH?R??G? 
+Results for spiralbranch46.txt
+ioo(0) 87 | 44 | voice | [14, 7, 26, 16, 24] | [7, 19, 10, 8] | [ad, dad] | XWYTA | (PAE)O?Y?YS 
+ioo(1) 104 | 34 | voice | [25, 9, 18, 25, 27] | [16, 9, 7, 2] | [hr, diffs_decremental, dad] | AENEAEIO | OEEXOE?IO? 
+ioo(2) 76 | 41 | voice | [26, 14, 6, 5, 25] | [12, 8, 1, 20] | [ad, dad] | YXGCAE | ?Y?(PAE)?G?THOE 
+ioo(3) 52 | 27 | voice | [2, 1, 3, 19, 27] | [1, 2, 16, 8] | [ad, dad] | THUOMIO | (FID)T(UB)W?IO? 
+ioo(4) 73 | 18 | voice | [17, 19, 14, 16, 7] | [2, 5, 2, 9] | [ad, dhr] | BMXTW | GW(PAE)YO 
+ioo(5) 72 | 48 | voice | [9, 28, 7, 13, 15] | [19, 21, 6, 2] | [ad, dad] | NEAWPS | E?EA?O(CM)L 
+ioo(6) 81 | 46 | voice | [12, 26, 13, 8, 22] | [14, 13, 5, 14] | [ad, dhr] | EOYPHOE | EO?Y?(CM)JEA 
+Results for spiralbranch47.txt
+ioo(0) 95 | 60 | voice | [27, 12, 22, 7, 27] | [15, 10, 15, 20] | [hr, dhr] | IOEOOEWIO | ?IO?EOEAO?IO? 
+ioo(1) 60 | 64 | voice | [9, 5, 28, 3, 15] | [4, 23, 25, 12] | [ad, dad] | NCEAOS | ETH?EA?(UB)L 
+ioo(2) 82 | 17 | voice | [20, 22, 17, 16, 7] | [2, 5, 1, 9] | [ad, dad] | LOEBTW | IOEAGYO 
+Results for spiralbranch48.txt
+ioo(0) 89 | 50 | voice | [28, 6, 3, 24, 28] | [22, 3, 21, 4] | [hr, dad] | EAGOAEA | ?EA??G?(UB)S?EA? 
+ioo(1) 78 | 75 | voice | [21, 28, 0, 23, 6] | [7, 28, 23, 17] | [ad, dad] | INGEAFDG | ING?EA?NH?G? 
+ioo(2) 46 | 28 | voice | [8, 0, 1, 17, 20] | [8, 1, 16, 3] | [ad, dad] | HFUBL | JNTGIO 
+ioo(3) 82 | 34 | voice | [12, 6, 14, 28, 22] | [6, 8, 14, 6] | [is_even, ad, diffs_is_even, dhr] | EOGXEAOE | EO?G?(PAE)?EA?EA 
+ioo(4) 74 | 41 | voice | [18, 18, 15, 0, 23] | [0, 3, 15, 23] | [hr, diffs_incremental, dad] | EESFD | XXLNH 
+ioo(5) 102 | 37 | voice | [12, 24, 28, 15, 23] | [12, 4, 13, 8] | [ad, dad] | EOAEASD | EOS?EA?LH 
+ioo(6) 90 | 51 | voice | [19, 28, 14, 5, 24] | [9, 14, 9, 19] | [ad, dhr] | MEAXCA | W?EA?(PAE)THS 
+ioo(7) 92 | 56 | voice | [18, 26, 2, 24, 22] | [8, 24, 22, 2] | [is_even, ad, diffs_is_even, dad] | EYTHAOE | X?Y?(FID)SEA 
+ioo(8) 61 | 22 | voice | [12, 19, 15, 11, 4] | [7, 4, 4, 7] | [ad, dhr] | EOMSJR | EOWLR?R? 
+Results for spiralbranch49.txt
+ioo(0) 92 | 34 | voice | [16, 27, 23, 22, 4] | [11, 4, 1, 18] | [ad, dad] | TIODOER | Y?IO?HEA?R? 
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+ioo(0) 77 | 51 | voice | [4, 16, 28, 28, 1] | [12, 12, 0, 27] | [hr, dhr] | RTEAEAU | ?R?Y?EA??EA?T 
+ioo(1) 90 | 41 | voice | [7, 28, 15, 18, 22] | [21, 13, 3, 4] | [ad, dad] | WEASEOE | O?EA?LXEA 
+Results for spiralbranch54.txt
+ioo(0) 82 | 49 | voice | [27, 10, 15, 24, 6] | [17, 5, 9, 18] | [ad, dad] | IOISAG | ?IO?ALS?G? 
+ioo(1) 24 | 12 | voice | [9, 9, 3, 0, 3] | [0, 6, 3, 3] | [hr, dhr] | NNOFO | EE(UB)N(UB) 
+ioo(2) 73 | 44 | voice | [20, 25, 1, 11, 16] | [5, 24, 10, 5] | [ad, dhr] | LAEUJT | IOOETRY 
+ioo(3) 81 | 28 | voice | [14, 21, 26, 10, 10] | [7, 5, 16, 0] | [hr, dad] | XINGYII | (PAE)ING?Y?AA 
+ioo(4) 47 | 41 | voice | [2, 23, 10, 9, 3] | [21, 13, 1, 6] | [ad, dad] | THDINO | (FID)HAE(UB) 
+ioo(5) 57 | 51 | voice | [20, 2, 15, 5, 15] | [18, 13, 10, 10] | [hr, diffs_decremental, dhr] | LTHSCS | IO(FID)LTHL 
+ioo(6) 99 | 39 | voice | [26, 14, 27, 15, 17] | [12, 13, 12, 2] | [ad, dhr] | YXIOSB | ?Y?(PAE)?IO?LG 
+ioo(7) 100 | 16 | voice | [16, 15, 18, 27, 24] | [1, 3, 9, 3] | [ad, diffs_is_odd, dhr] | TSEIOA | YLX?IO?S 
+ioo(8) 91 | 50 | voice | [21, 3, 27, 21, 19] | [18, 24, 6, 2] | [is_odd, hr, diffs_is_even, dad] | INGOIOINGM | ING(UB)?IO?INGW 
+Results for hollow54.txt
+ioo(0) 64 | 46 | voice | [24, 10, 15, 1, 14] | [14, 5, 14, 13] | [ad, dhr] | AISUX | SALT(PAE) 
+ioo(1) 104 | 28 | voice | [28, 23, 20, 11, 22] | [5, 3, 9, 11] | [ad, diffs_is_odd, dad] | EADLJOE | ?EA?HIOREA 
+ioo(2) 69 | 40 | voice | [13, 21, 24, 2, 9] | [8, 3, 22, 7] | [ad, dad] | PINGATHN | (CM)INGS(FID)E 
+ioo(3) 51 | 45 | voice | [18, 10, 1, 17, 5] | [8, 9, 16, 12] | [ad, dad] | EIUBC | XATGTH 
+ioo(4) 78 | 17 | voice | [18, 18, 16, 19, 7] | [0, 2, 3, 12] | [hr, diffs_incremental, dad] | EETMW | XXYWO 
+ioo(5) 82 | 42 | voice | [8, 17, 20, 9, 28] | [9, 3, 11, 19] | [ad, diffs_is_odd, dad] | HBLNEA | JGIOE?EA? 
+ioo(6) 55 | 55 | voice | [7, 10, 1, 27, 10] | [3, 9, 26, 17] | [hr, dad] | WIUIOI | OAT?IO?A 
+ioo(7) 99 | 46 | voice | [27, 23, 7, 25, 17] | [4, 16, 18, 8] | [is_odd, ad, diffs_is_even, dad] | IODWAEB | ?IO?HOOEG 
+ioo(8) 76 | 19 | voice | [25, 24, 12, 7, 8] | [1, 12, 5, 1] | [ad, dhr] | AEAEOWH | OESEOOJ 
+Results for hollow55.txt
+Results for spiralbranch55.txt
+ioo(0) 79 | 29 | voice | [11, 22, 18, 20, 8] | [11, 4, 2, 12] | [ad, dad] | JOEELH | REAXIOJ 
+ioo(1) 76 | 38 | voice | [27, 11, 16, 7, 15] | [16, 5, 9, 8] | [ad, dad] | IOJTWS | ?IO?RYOL 
+ioo(2) 84 | 59 | voice | [15, 10, 26, 7, 26] | [5, 16, 19, 19] | [hr, diffs_incremental, dhr] | SIYWY | LA?Y?O?Y? 
+ioo(3) 63 | 59 | voice | [5, 26, 2, 14, 16] | [21, 24, 12, 2] | [ad, dad] | CYTHXT | TH?Y?(FID)(PAE)Y 
+ioo(4) 76 | 31 | voice | [7, 20, 22, 11, 16] | [13, 2, 11, 5] | [ad, dad, diffs_all_prime] | WLOEJT | OIOEARY 

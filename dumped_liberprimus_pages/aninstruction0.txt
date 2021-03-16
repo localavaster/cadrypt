@@ -1,0 +1,168 @@
+==========================
+== Entire Page Statistics
+==========================
+Total Words: 18 | PRIME: false
+Total Unique Words: 17 | PRIME: true
+Repeated Words: [ᛏᚱᚢᚦ]
+Total Runes: 89 | PRIME: true
+Total Spaces: 54 | PRIME: false
+Total Periods: 0 | PRIME: true
+Total GP sum: 3329 | PRIME: true
+Total Sentences: 1 | PRIME: false
+Total Lines: 10 | PRIME: false
+==========================
+== Character Frequencies
+==========================
+ᚫ 0 | PRIME: true
+ᚷ 0 | PRIME: true
+ᚻ 0 | PRIME: true
+ᛄ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛒ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛠ 0 | PRIME: true
+ᛈ 1 | PRIME: false
+ᛗ 1 | PRIME: false
+ᚠ 2 | PRIME: true
+ᚣ 2 | PRIME: true
+ᚪ 2 | PRIME: true
+ᛝ 2 | PRIME: true
+ᛞ 2 | PRIME: true
+ᛡ 2 | PRIME: true
+ᚹ 3 | PRIME: true
+ᚳ 4 | PRIME: false
+ᛏ 5 | PRIME: true
+ᛚ 5 | PRIME: true
+ᚢ 6 | PRIME: false
+ᚦ 6 | PRIME: false
+ᛁ 6 | PRIME: false
+ᛖ 6 | PRIME: false
+ᚱ 7 | PRIME: true
+ᚾ 8 | PRIME: false
+ᛋ 9 | PRIME: false
+ᚩ 10 | PRIME: false
+==========================
+== Character Frequencies As Sums
+==========================
+ᚫ 0 | PRIME: true
+ᚷ 0 | PRIME: true
+ᚻ 0 | PRIME: true
+ᛄ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛒ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛠ 0 | PRIME: true
+ᛈ 43 | PRIME: true
+ᛗ 71 | PRIME: true
+ᚠ 4 | PRIME: false
+ᚣ 206 | PRIME: false
+ᚪ 194 | PRIME: false
+ᛝ 158 | PRIME: false
+ᛞ 178 | PRIME: false
+ᛡ 214 | PRIME: false
+ᚹ 57 | PRIME: false
+ᚳ 52 | PRIME: false
+ᛏ 295 | PRIME: false
+ᛚ 365 | PRIME: false
+ᚢ 18 | PRIME: false
+ᚦ 30 | PRIME: false
+ᛁ 186 | PRIME: false
+ᛖ 402 | PRIME: false
+ᚱ 77 | PRIME: false
+ᚾ 232 | PRIME: false
+ᛋ 477 | PRIME: false
+ᚩ 70 | PRIME: false
+==========================
+== Sentence Characteristics
+==========================
+Sentence: ᚪᚾ-ᛁᚾᛋᛏᚱᚢᚳᛏᛡᚾ-ᚳᚹᛖᛋᛏᛡᚾ-ᚪᛚᛚ-ᚦᛝᛋ-ᛞᛁᛋᚳᚩᚢᛖᚱ-ᛏᚱᚢᚦ-ᛁᚾᛋᛁᛞᛖ-ᚣᚩᚢᚱᛋᛖᛚᚠ-ᚠᚩᛚᛚᚩᚹ-ᚣᚩᚢᚱ-ᛏᚱᚢᚦ-ᛁᛗᛈᚩᛋᛖ-ᚾᚩᚦᛝ-ᚩᚾ-ᚩᚦᛖᚱᛋ-ᚳᚾᚩᚹ-ᚦᛁᛋ--434-1311-312--278--966-204--812-934--280-1071-626--620-809--620--6261071--280-934--812--204-966--278-312-1311--434
+English Sentence: AN-INSTRUCKTION-CKWESTION-ALL-THINGS-DISCKOUER-TRUTH-INSIDE-YOURSELF-FOLLOW-YOUR-TRUTH-IMPOSE-NOTHING-ON-OTHERS-CKNOW-THIS--434-1311-312--278--966-204--812-934--280-1071-626--620-809--620--6261071--280-934--812--204-966--278-312-1311--434
+Total Characters: 222 | PRIME: false
+Total Runes: 89 | PRIME: true
+Total Spaces: 54 | PRIME: false
+GP Sum: 3329 | PRIME: true
+IoC: 0.0221609376538954
+==========================
+== Line Characteristics
+==========================
+Line: ᚪᚾ-ᛁᚾᛋᛏᚱᚢᚳᛏᛡᚾ.ᚳᚹᛖᛋᛏᛡᚾ-ᚪᛚᛚ-
+English Line: AN-INSTRUCKTION.CKWESTION-ALL-
+Total Characters: 26 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 1110 | PRIME: false
+IoC: 0.04666666666666667
+
+Line: ᚦᛝᛋ.ᛞᛁᛋᚳᚩᚢᛖᚱ-ᛏᚱᚢᚦ-ᛁᚾᛋᛁᛞᛖ-
+English Line: THINGS.DISCKOUER-TRUTH-INSIDE-
+Total Characters: 25 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 789 | PRIME: false
+IoC: 0.03985507246376811
+
+Line: ᚣᚩᚢᚱᛋᛖᛚᚠ.ᚠᚩᛚᛚᚩᚹ-ᚣᚩᚢᚱ-ᛏᚱᚢ
+English Line: YOURSELF.FOLLOW-YOUR-TRU
+Total Characters: 24 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 2 | PRIME: true
+GP Sum: 697 | PRIME: false
+IoC: 0.06719367588932806
+
+Line: ᚦ.ᛁᛗᛈᚩᛋᛖ-ᚾᚩᚦᛝ-ᚩᚾ-ᚩᚦᛖᚱᛋ.
+English Line: TH.IMPOSE-NOTHING-ON-OTHERS.
+Total Characters: 23 | PRIME: true
+Total Runes: 18 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 576 | PRIME: false
+IoC: 0.05714285714285714
+
+Line: ᚳᚾᚩᚹ-ᚦᛁᛋ.
+English Line: CKNOW-THIS.
+Total Characters: 9 | PRIME: false
+Total Runes: 7 | PRIME: true
+Total Spaces: 1 | PRIME: false
+GP Sum: 157 | PRIME: true
+IoC: 0.0
+
+Line:  434 1311 312  278  966
+English Line:  434 1311 312  278  966
+Total Characters: 23 | PRIME: true
+Total Runes: 0 | PRIME: true
+Total Spaces: 7 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line:  204  812 934  280 1071
+English Line:  204  812 934  280 1071
+Total Characters: 23 | PRIME: true
+Total Runes: 0 | PRIME: true
+Total Spaces: 7 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line:  626  620 809  620  626
+English Line:  626  620 809  620  626
+Total Characters: 23 | PRIME: true
+Total Runes: 0 | PRIME: true
+Total Spaces: 8 | PRIME: false
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line: 1071  280 934  812  204
+English Line: 1071  280 934  812  204
+Total Characters: 23 | PRIME: true
+Total Runes: 0 | PRIME: true
+Total Spaces: 7 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line:  966  278 312 1311  434
+English Line:  966  278 312 1311  434
+Total Characters: 23 | PRIME: true
+Total Runes: 0 | PRIME: true
+Total Spaces: 7 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0

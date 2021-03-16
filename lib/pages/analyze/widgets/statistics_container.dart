@@ -1,11 +1,13 @@
-import 'package:cicadrypt/global/cipher.dart';
-import 'package:cicadrypt/widgets/container_header.dart';
-import 'package:cicadrypt/widgets/container_item.dart';
+import 'package:cicadrypt/constants/runes.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
+import '../../../global/cipher.dart';
+import '../../../widgets/container_header.dart';
+import '../../../widgets/container_item.dart';
+
 class StatisticsContainer extends StatelessWidget {
-  StatisticsContainer({
+  const StatisticsContainer({
     Key key,
   }) : super(key: key);
 
@@ -41,7 +43,8 @@ class StatisticsContainer extends StatelessWidget {
                     ContainerItem(name: 'n. Bigrams', value: GetIt.I<Cipher>().get_normalized_bigram_repeats().toStringAsFixed(6)),
                     ContainerItem(name: 'Avg. Rune Repeat Dist.', value: GetIt.I<Cipher>().get_average_distance_until_letter_repeat().toStringAsFixed(1)),
                     ContainerItem(name: 'Avg. Dbl Rune Repeat Dist.', value: GetIt.I<Cipher>().get_average_distance_until_double_rune_repeat().toStringAsFixed(1)),
-                    ContainerItem(name: 'Avg. X Repeat Dist.', value: GetIt.I<Cipher>().get_average_distance_until_x_rune_repeat().toStringAsFixed(1)),
+                    ContainerItem(name: 'Avg. X Repeat Dist.', value: GetIt.I<Cipher>().get_average_distance_until_rune_repeat('ᛉ').toStringAsFixed(1)),
+                    ContainerItem(name: 'Avg. F Repeat Dist.', value: GetIt.I<Cipher>().get_average_distance_until_rune_repeat(runes.first).toStringAsFixed(1)),
                     ContainerItem(name: 'Unused Runes', value: GetIt.I<Cipher>().get_characters_not_used().length.toString()),
                     const Padding(
                       padding: EdgeInsets.all(4.0),

@@ -1,0 +1,224 @@
+==========================
+== Entire Page Statistics
+==========================
+Total Words: 49 | PRIME: false
+Total Unique Words: 31 | PRIME: true
+Repeated Words: [ᚦᛖ, ᛋᚪᚳᚱᛖᛞ, ᛋᚻᚪᛞᚩᚹᛋ, ᚫᚦᛖᚱᛠᛚ, ᛒᚢᚠᚠᛖᚱᛋ, ᚢᚩᛁᛞ, ᚳᚪᚱᚾᚪᛚ, ᚩᛒᛋᚳᚢᚱᚪ, ᚠᚩᚱᛗ, ᚪᚾᚪᛚᚩᚷ, ᛗᚩᚢᚱᚾᚠᚢᛚ, ᚳᚪᛒᚪᛚ, ᚠᚢᚦᚪᚱᚳ]
+Total Runes: 262 | PRIME: false
+Total Spaces: 63 | PRIME: false
+Total Periods: 0 | PRIME: true
+Total GP sum: 11071 | PRIME: true
+Total Sentences: 1 | PRIME: false
+Total Lines: 17 | PRIME: true
+==========================
+== Character Frequencies
+==========================
+ᛄ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᚣ 1 | PRIME: false
+ᛝ 1 | PRIME: false
+ᛡ 1 | PRIME: false
+ᚷ 2 | PRIME: true
+ᛈ 2 | PRIME: true
+ᚻ 3 | PRIME: true
+ᚫ 4 | PRIME: false
+ᚹ 4 | PRIME: false
+ᛠ 4 | PRIME: false
+ᛏ 5 | PRIME: true
+ᚦ 10 | PRIME: false
+ᛗ 10 | PRIME: false
+ᚠ 11 | PRIME: true
+ᚾ 11 | PRIME: true
+ᛒ 11 | PRIME: true
+ᛞ 11 | PRIME: true
+ᛁ 12 | PRIME: false
+ᚳ 14 | PRIME: false
+ᛚ 15 | PRIME: false
+ᛖ 17 | PRIME: true
+ᚢ 20 | PRIME: false
+ᛋ 21 | PRIME: false
+ᚪ 23 | PRIME: true
+ᚱ 24 | PRIME: false
+ᚩ 25 | PRIME: false
+==========================
+== Character Frequencies As Sums
+==========================
+ᛄ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᚣ 103 | PRIME: true
+ᛝ 79 | PRIME: true
+ᛡ 107 | PRIME: true
+ᚷ 34 | PRIME: false
+ᛈ 86 | PRIME: false
+ᚻ 69 | PRIME: false
+ᚫ 404 | PRIME: false
+ᚹ 76 | PRIME: false
+ᛠ 436 | PRIME: false
+ᛏ 295 | PRIME: false
+ᚦ 50 | PRIME: false
+ᛗ 710 | PRIME: false
+ᚠ 22 | PRIME: false
+ᚾ 319 | PRIME: false
+ᛒ 671 | PRIME: false
+ᛞ 979 | PRIME: false
+ᛁ 372 | PRIME: false
+ᚳ 182 | PRIME: false
+ᛚ 1095 | PRIME: false
+ᛖ 1139 | PRIME: false
+ᚢ 60 | PRIME: false
+ᛋ 1113 | PRIME: false
+ᚪ 2231 | PRIME: false
+ᚱ 264 | PRIME: false
+ᚩ 175 | PRIME: false
+==========================
+== Sentence Characteristics
+==========================
+Sentence: ᛋᚩᛗᛖ-ᚹᛁᛋᛞᚩᛗ-ᚦᛖ-ᛈᚱᛁᛗᛖᛋ-ᚪᚱᛖ-ᛋᚪᚳᚱᛖᛞ-ᚦᛖ-ᛏᚩᛏᛁᛖᚾᛏ-ᚠᚢᚾᚳᛏᛡᚾ-ᛁᛋ-ᛋᚪᚳᚱᛖᛞ-ᚪᛚᛚ-ᚦᛝᛋ-ᛋᚻᚩᚢᛚᛞ-ᛒᛖ-ᛖᚾᚳᚱᚣᛈᛏᛖᛞ-ᚳᚾᚩᚹ-ᚦᛁᛋ272-138-ᛋᚻᚪᛞᚩᚹᛋ-131-151ᚫᚦᛖᚱᛠᛚ-ᛒᚢᚠᚠᛖᚱᛋ-ᚢᚩᛁᛞ-ᚳᚪᚱᚾᚪᛚ-18226-ᚩᛒᛋᚳᚢᚱᚪ-ᚠᚩᚱᛗ-245-ᛗᚩᛒᛁᚢᛋ18-ᚪᚾᚪᛚᚩᚷ-ᚢᚩᛁᛞ-ᛗᚩᚢᚱᚾᚠᚢᛚ-ᚫᚦᛖᚱᛠᛚ151-131-ᚳᚪᛒᚪᛚ-138-272NOT-CICADA-RELATED-BELOW,JUST-MY-PERSONAL-TRANSLATE272-138-ᛋᚻᚪᛞᚩᚹᛋ-ᚠᚢᚦᚪᚱᚳ-151ᚫᚦᛖᚱᛠᛚ-ᛒᚢᚠᚠᛖᚱᛋ-ᚢᚩᛁᛞ-ᚳᚪᚱᚾᚪᛚ-ᚩᚱᛗᚩᛒᛁᚢᛋ-ᚩᛒᛋᚳᚢᚱᚪ-ᚠᚩᚱᛗ-ᚩᛒᛋᚳᚢᚱᚪ-ᛗᚩᛒᛁᚢᛋᚩᚱ-ᚪᚾᚪᛚᚩᚷ-ᚢᚩᛁᛞ-ᛗᚩᚢᚱᚾᚠᚢᛚ-ᚫᚦᛖᚱᛠᛚ151-ᚠᚢᚦᚪᚱᚳ-ᚳᚪᛒᚪᛚ-138-272
+English Sentence: SOME-WISDOM-THE-PRIMES-ARE-SACKRED-THE-TOTIENT-FUNCKTION-IS-SACKRED-ALL-THINGS-SHOULD-BE-ENCKRYPTED-CKNOW-THIS272-138-SHADOWS-131-151AETHEREAL-BUFFERS-UOID-CKARNAL-18226-OBSCKURA-FORM-245-MOBIUS18-ANALOG-UOID-MOURNFUL-AETHEREAL151-131-CKABAL-138-272NOT-CICADA-RELATED-BELOW,JUST-MY-PERSONAL-TRANSLATE272-138-SHADOWS-FUTHARCK-151AETHEREAL-BUFFERS-UOID-CKARNAL-ORMOBIUS-OBSCKURA-FORM-OBSCKURA-MOBIUSOR-ANALOG-UOID-MOURNFUL-AETHEREAL151-FUTHARCK-CKABAL-138-272
+Total Characters: 377 | PRIME: false
+Total Runes: 262 | PRIME: false
+Total Spaces: 63 | PRIME: false
+GP Sum: 11071 | PRIME: true
+IoC: 0.02885812641910203
+==========================
+== Line Characteristics
+==========================
+Line: ᛋᚩᛗᛖ-ᚹᛁᛋᛞᚩᛗ.ᚦᛖ-ᛈᚱᛁᛗᛖᛋ-ᚪᚱᛖ-ᛋᚪᚳ
+English Line: SOME-WISDOM.THE-PRIMES-ARE-SACK
+Total Characters: 29 | PRIME: true
+Total Runes: 24 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1154 | PRIME: false
+IoC: 0.05026455026455026
+
+Line: ᚱᛖᛞ.ᚦᛖ-ᛏᚩᛏᛁᛖᚾᛏ-ᚠᚢᚾᚳᛏᛡᚾ-ᛁᛋ-ᛋᚪ
+English Line: RED.THE-TOTIENT-FUNCKTION-IS-SA
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 1026 | PRIME: false
+IoC: 0.039886039886039885
+
+Line: ᚳᚱᛖᛞ.ᚪᛚᛚ-ᚦᛝᛋ-ᛋᚻᚩᚢᛚᛞ-ᛒᛖ-ᛖᚾᚳᚱᚣ
+English Line: CKRED.ALL-THINGS-SHOULD-BE-ENCKRY
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 1159 | PRIME: false
+IoC: 0.02849002849002849
+
+Line: ᛈᛏᛖᛞ.
+English Line: PTED.
+Total Characters: 5 | PRIME: true
+Total Runes: 4 | PRIME: false
+Total Spaces: 0 | PRIME: true
+GP Sum: 258 | PRIME: false
+IoC: 0.0
+
+Line: ᚳᚾᚩᚹ-ᚦᛁᛋ
+English Line: CKNOW-THIS
+Total Characters: 8 | PRIME: false
+Total Runes: 7 | PRIME: true
+Total Spaces: 1 | PRIME: false
+GP Sum: 157 | PRIME: true
+IoC: 0.0
+
+Line: 272 138 ᛋᚻᚪᛞᚩᚹᛋ 131 151
+English Line: 272 138 SHADOWS 131 151
+Total Characters: 23 | PRIME: true
+Total Runes: 7 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 341 | PRIME: false
+IoC: 0.047619047619047616
+
+Line: ᚫᚦᛖᚱᛠᛚ ᛒᚢᚠᚠᛖᚱᛋ ᚢᚩᛁᛞ ᚳᚪᚱᚾᚪᛚ 18
+English Line: AETHEREAL BUFFERS UOID CKARNAL 18
+Total Characters: 29 | PRIME: true
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 1015 | PRIME: false
+IoC: 0.03162055335968379
+
+Line: 226 ᚩᛒᛋᚳᚢᚱᚪ ᚠᚩᚱᛗ 245 ᛗᚩᛒᛁᚢᛋ
+English Line: 226 OBSCKURA FORM 245 MOBIUS
+Total Characters: 27 | PRIME: false
+Total Runes: 17 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 562 | PRIME: false
+IoC: 0.058823529411764705
+
+Line: 18 ᚪᚾᚪᛚᚩᚷ ᚢᚩᛁᛞ ᛗᚩᚢᚱᚾᚠᚢᛚ ᚫᚦᛖᚱᛠᛚ
+English Line: 18 ANALOG UOID MOURNFUL AETHEREAL
+Total Characters: 30 | PRIME: false
+Total Runes: 24 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1015 | PRIME: false
+IoC: 0.043478260869565216
+
+Line: 151 131 ᚳᚪᛒᚪᛚ 138 272
+English Line: 151 131 CKABAL 138 272
+Total Characters: 21 | PRIME: false
+Total Runes: 5 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 341 | PRIME: false
+IoC: 0.1
+
+Line: NOT CICADA RELATED BELOW,
+English Line: NOT CICADA RELATED BELOW,
+Total Characters: 3 | PRIME: true
+Total Runes: 0 | PRIME: true
+Total Spaces: 3 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line: JUST MY PERSONAL TRANSLATE
+English Line: JUST MY PERSONAL TRANSLATE
+Total Characters: 3 | PRIME: true
+Total Runes: 0 | PRIME: true
+Total Spaces: 3 | PRIME: true
+GP Sum: 0 | PRIME: true
+IoC: 0.0
+
+Line: 272 138 ᛋᚻᚪᛞᚩᚹᛋ ᚠᚢᚦᚪᚱᚳ 151
+English Line: 272 138 SHADOWS FUTHARCK 151
+Total Characters: 26 | PRIME: false
+Total Runes: 13 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 472 | PRIME: false
+IoC: 0.02564102564102564
+
+Line: ᚫᚦᛖᚱᛠᛚ ᛒᚢᚠᚠᛖᚱᛋ ᚢᚩᛁᛞ ᚳᚪᚱᚾᚪᛚ ᚩᚱ
+English Line: AETHEREAL BUFFERS UOID CKARNAL OR
+Total Characters: 29 | PRIME: true
+Total Runes: 25 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1033 | PRIME: true
+IoC: 0.04
+
+Line: ᛗᚩᛒᛁᚢᛋ ᚩᛒᛋᚳᚢᚱᚪ ᚠᚩᚱᛗ ᚩᛒᛋᚳᚢᚱᚪ ᛗᚩᛒᛁᚢᛋ
+English Line: MOBIUS OBSCKURA FORM OBSCKURA MOBIUS
+Total Characters: 34 | PRIME: false
+Total Runes: 30 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1033 | PRIME: true
+IoC: 0.08505747126436781
+
+Line: ᚩᚱ ᚪᚾᚪᛚᚩᚷ ᚢᚩᛁᛞ ᛗᚩᚢᚱᚾᚠᚢᛚ ᚫᚦᛖᚱᛠᛚ
+English Line: OR ANALOG UOID MOURNFUL AETHEREAL
+Total Characters: 30 | PRIME: false
+Total Runes: 26 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1033 | PRIME: true
+IoC: 0.052307692307692305
+
+Line: 151 ᚠᚢᚦᚪᚱᚳ ᚳᚪᛒᚪᛚ 138 272
+English Line: 151 FUTHARCK CKABAL 138 272
+Total Characters: 24 | PRIME: false
+Total Runes: 11 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 472 | PRIME: false
+IoC: 0.07272727272727272

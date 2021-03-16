@@ -1,0 +1,456 @@
+==========================
+== Entire Page Statistics
+==========================
+Total Words: 224 | PRIME: false
+Total Unique Words: 224 | PRIME: false
+Repeated Words: []
+Total Runes: 1021 | PRIME: true
+Total Spaces: 224 | PRIME: false
+Total Periods: 0 | PRIME: true
+Total GP sum: 52024 | PRIME: false
+Total Sentences: 1 | PRIME: false
+Total Lines: 46 | PRIME: false
+==========================
+== Character Frequencies
+==========================
+ᛇ 21 | PRIME: false
+ᛞ 25 | PRIME: false
+ᛄ 27 | PRIME: false
+ᚳ 30 | PRIME: false
+ᚫ 31 | PRIME: true
+ᛉ 32 | PRIME: false
+ᛗ 32 | PRIME: false
+ᚹ 33 | PRIME: false
+ᚻ 33 | PRIME: false
+ᚱ 34 | PRIME: false
+ᛈ 34 | PRIME: false
+ᛚ 34 | PRIME: false
+ᛁ 35 | PRIME: false
+ᛟ 35 | PRIME: false
+ᛡ 35 | PRIME: false
+ᚠ 37 | PRIME: true
+ᚣ 37 | PRIME: true
+ᚦ 37 | PRIME: true
+ᚷ 37 | PRIME: true
+ᛒ 37 | PRIME: true
+ᛝ 37 | PRIME: true
+ᛏ 38 | PRIME: false
+ᚾ 39 | PRIME: false
+ᚩ 40 | PRIME: false
+ᚪ 41 | PRIME: true
+ᛠ 41 | PRIME: true
+ᛖ 42 | PRIME: false
+ᛋ 43 | PRIME: true
+ᚢ 44 | PRIME: false
+==========================
+== Character Frequencies As Sums
+==========================
+ᛇ 861 | PRIME: false
+ᛞ 2225 | PRIME: false
+ᛄ 999 | PRIME: false
+ᚳ 390 | PRIME: false
+ᚫ 3131 | PRIME: false
+ᛉ 1504 | PRIME: false
+ᛗ 2272 | PRIME: false
+ᚹ 627 | PRIME: false
+ᚻ 759 | PRIME: false
+ᚱ 374 | PRIME: false
+ᛈ 1462 | PRIME: false
+ᛚ 2482 | PRIME: false
+ᛁ 1085 | PRIME: false
+ᛟ 2905 | PRIME: false
+ᛡ 3745 | PRIME: false
+ᚠ 74 | PRIME: false
+ᚣ 3811 | PRIME: false
+ᚦ 185 | PRIME: false
+ᚷ 629 | PRIME: false
+ᛒ 2257 | PRIME: false
+ᛝ 2923 | PRIME: false
+ᛏ 2242 | PRIME: false
+ᚾ 1131 | PRIME: false
+ᚩ 280 | PRIME: false
+ᚪ 3977 | PRIME: false
+ᛠ 4469 | PRIME: false
+ᛖ 2814 | PRIME: false
+ᛋ 2279 | PRIME: false
+ᚢ 132 | PRIME: false
+==========================
+== Sentence Characteristics
+==========================
+Sentence: ᚢᚪ-ᚹᛝᚷᛉᛞᚷ-ᛁᛒᛁ-ᛇᛏᛒᛁᚣ-ᛠᚷᛋᚫᛈᚹᛗᛠ-ᛇᛄᛇ-ᚹᚻᛁ-ᚷᛠᛒᚢᚣᚻᚣ-ᛝᚹᚢᚱᛋ-ᚩᛡᚠᛡᛠ-ᛞᛟᚦᛗᚳᚾᛉ-ᛞᚦᛖᚱᛇᚳ-ᚪᛄᛋᛟ-ᚢᚹᚱᛏ-ᛋᛖᛋᛏ-ᚣᚱᛠᚫᚾᛞ-ᛈᛒᛡᛋᚢᛞᛖᚣᚦ-ᛚᚹᛟᛋ-ᚷᛚᛄ-ᚫᛖᚩᚳᚦᚹᛗ-ᚢᚩᚷ-ᚠᚪᚩᛡᛝᛒᛠᚦᚳᚪ-ᚱᛡᛏ-ᛟᚹᚠᚣᛝᚢᚣᛁ-ᛚᛏᚫᚫ-ᚪ-ᚱᛈᚠᛗᚹᚩᛞ-ᛠᛒᛈ-ᛝᛟ-ᚾᚷᛗ-ᛡᛖᚩ-ᚾᛚᛉᛝ-ᛁᛡᚫᛗ-ᚻᛖᚹᛗ-ᛝᛈᛇᛗᛡᛄ-ᚫᚩᛡ-ᚠᚣᛉᛟᚫᚦ-ᚫᛒᚩ-ᚪᚦᛄᚱᛄᚾᚦ-ᛡᚠᚪᛏᚾᚻ-ᚷᚢ-ᛞ-ᚳᚦᚢᚱᚢᛟ-ᛞᚻᚱ-ᚷᚹᛏᛈᛖᚠ-ᚪᚻᛠᚦᛞᚱᚠ-ᛖᛄᚫ-ᚾᚳᚻᚹ-ᛇᛡᛈᛠᚹ-ᛗᛚ-ᚹᛟᚹᛠ-ᚪᚾᚪ-ᚳᚪ-ᚷᛚᚦᛒᚩᚹᚢ-ᚷᛚᚠᛋᚻ-ᚾᛉᛝᛗ-ᛖᚦᚢᛝᛡ-ᛈᚣᚢ-ᛉᚷᚷ-ᚹᛞᛁᛋ-ᚦᛡᛡᛈᚳᚪᚩ-ᚢᛗᚢᛉᚩᚣᚻᛏ-ᚩᚫᛗᚢ-ᚩᚾᛏᛠᛒᛟᛒᚠᛁᛈ-ᛚᛋᛝᚫᚳ-ᚫᛟᛏ-ᚢᚩᛉᚾᛡᛋᚠᛖ-ᛉᚱ-ᛗᚩᚩᚫ-ᚠᚢᚦᛖᛞᚾᚣ-ᛡᛋ-ᛋᚱᛚᛟ-ᚢᚻ-ᚢᚾᛈ-ᛁᚻ-ᛖᛉ-ᚦᛞᛗ-ᛈᛟᚠ-ᛈᚠᛝᚫᛝᛋ-ᛟᛄᚹ-ᛠᛒᚣ-ᛟᚹᛞ-ᚠᚣᛄᛁᛏᛉᛚ-ᚩᚦᛝ-ᚠᚪᛋᛡᛁᚻᛒᚱ-ᚪᚢᚣ-ᚫᚢ-ᛟᛠᚪᚣ-ᛖᛟᚫ-ᛖᛈᚠᛒ-ᛈᛄᛁ-ᛋᛝᛒ-ᚱᚦᚳᛇ-ᛚᛁᚢᛈᛏᚳᛒᛉ-ᛖᚪᚣᚠᛗᚳᚣᚱ-ᚻᚹᛏᚾᛡᛉᚫᚦᛟ-ᚳᚹ-ᛠᚠ-ᛏᛠ-ᛝᚩᚻ-ᛡᛠᛒᛋᚻᛟ-ᚫᛁ-ᛠᛏᛁᛋ-ᛏᚫᚻᚱ-ᚻᛄᛋᛡᚹᚾᚾᛡᚹᛚ-ᚢᛖ-ᛏ-ᚱᛝᚳᚣ-ᚪᛉᛇᛝᛋᛖᛇᛁᚻᚾ-ᚷ-ᚹᛉᚳᛉᚣ-ᛋᛈᚳᛟᚱ-ᛒᚣᛄᛝᛖᛁ-ᚾᚷᚪ-ᚣᚷ-ᛚᛒ-ᚢᛄᚩ-ᛝᛉᛉᚪᛖ-ᛒᚦᛉᛡᚱ-ᛏᚷᚹᛄᛋᛁᚠ-ᛠᛁᛡᚦᛝᚾᛖᚾᚠᚩᛗᛖᚣᚪ-ᚳᛖᚳᚹᚪᚫᚹ-ᛇᚢᚦᚻᛉᚢᚾ-ᛠᛚᚢᚾᚦᛈᛋᚢᛈᚱ-ᛞᚫᛟᚱᛡᚫᚪᚢ-ᚢᛗᛚᚦᛠ-ᛚᛝᛈᚣ-ᚩᛋᛟᚪᚱᛗᚦᛟᛈ-ᛚᛋ-ᛏᛁᚠᛋᛖᚹᛝ-ᛗᛞᚩ-ᛠᚫᛡᛒᛏᚩᛋ-ᛖᛏᚪᚠ-ᚫᛒ-ᛚᚾ-ᛋᚪᛉᛟ-ᚾᛚᚹᛖ-ᚩᛚᛁᛄᛏ-ᛒᚪᚠᛉᛏ-ᚩᛟᛄ-ᚾᚷᛋ-ᚷᛚᚷᛠ-ᛒᚷᛖᚩᚪᚩᛖᛞ-ᚷᛇᛗ-ᚳᚱᚷ-ᛈᛞᚩᚠᚹᛇ-ᛠᛞᚣᛝ-ᚾᛁᚠᛈᛚ-ᛖᛟ-ᚢᚳᛗ-ᛚᚫᛏᛉᛄᚱᛉ-ᛁᛠᚷᛚ-ᚷᚳᛋᚩᛝ-ᚫᚦ-ᛗᚻᛟᚠ-ᚱᛋᚳᚦ-ᚣᚩ-ᛒᛁᚫᚻᛖᚢᛏᛚᛚ-ᛇᚷᛟᚣ-ᛒᚾᚦᚻ-ᛠᛖᛄᛒᚾᛁᛚᛠᚱ-ᛄᚠᚳᛋᛝᚳᛈ-ᚷᚻᛋᛗ-ᛇᛞᛇ-ᚣ-ᛡᛖᛏᛠᚢᛡ-ᚩᚾᛠᚩ-ᛄᚣᛇᛉᛠᚪᛡ-ᚾᛞᛝᚻ-ᛈᛠᚻᛡᚢ-ᛝᚻᚦᛈ-ᛉᚢ-ᛠᚣᛈᛟᚦᛋᚣᛈ-ᚠᛏ-ᛒᛁᛟᚪᚷᛚ-ᛠᚻ-ᛝᛁᛡᛚᛝᚾᛞᚪᛈᚷ-ᚾᛏᚦᛋᛒ-ᛋᛋᛠ-ᚷᚳ-ᛠᛗᚢ-ᛖᛉᛒᚷᚫᚠᚩᛁᛉ-ᚠᚪ-ᛠᚱᛇ-ᚩᛁᛞᛋᛚᚦᛖᛒᛇ-ᛟᚷᚣᚷᚾᚷ-ᚦᚠᚳᛗ-ᚩᛖᛖ-ᚩᚠᛒᚻᛝ-ᚳᛁᛄᚪᚾᚩᚪ-ᛈᚻᚱᛗ-ᚱᛗᛟ-ᚦᚷᛄ-ᛒᚱᚦᚪᛠ-ᛉᛖᛡᛞᚦ-ᚱᛝᛄᛒ-ᚾᛏᚣ-ᛏᛋᛒᚾᚫ-ᚢᛖᛁᚩᛡ-ᛄᛇᚢᚦᛚᚳᛖ-ᛚᛁ-ᛒᚢᚠᚪᚱᛠ-ᛗᛒ-ᛞᛉᛗ-ᚢᛠᛏᚣ-ᚪᛄᛈᚢᛈᛠᚣᚷ-ᛗᛡᛗᚢᚪᛗᛝ-ᚣᛡ-ᚪᛖᛏ-ᛖᛋᚪᛟ-ᚳᚻᛁᛋᚠᛁᚾ-ᛈᛟᛝ-ᛇᚦᚣᛏᚫᛉ-ᛖᛟᛏ-ᛞᛡᛚᛖᛈᛏᚪ-ᛏᚠᚱᚾ-ᚪᛠᚱ-ᛠᚳ-ᚾᚻᚹᛒᛇᛋ-ᛁᚻᚣᛋᚹᚩᛉᚹ-ᚩᛝᚢ-ᚻᛝᛟ-ᛏᛚᚠ-ᛄᚷᛏᛝᛄᛝ-
+English Sentence: UA-WINGGXDG-IBI-EOTBIY-EAGSAEPWMEA-EOJEO-WHI-GEABUYHY-INGWURS-OIOFIOEA-DOETHMCKNX-DTHEREOCK-AJSOE-UWRT-SEST-YREAAEND-PBIOSUDEYTH-LWOES-GLJ-AEEOCKTHWM-UOG-FAOIOINGBEATHCKA-RIOT-OEWFYINGUYI-LTAEAE-A-RPFMWOD-EABP-INGOE-NGM-IOEO-NLXING-IIOAEM-HEWM-INGPEOMIOJ-AEOIO-FYXOEAETH-AEBO-ATHJRJNTH-IOFATNH-GU-D-CKTHURUOE-DHR-GWTPEF-AHEATHDRF-EJAE-NCKHW-EOIOPEAW-ML-WOEWEA-ANA-CKA-GLTHBOWU-GLFSH-NXINGM-ETHUINGIO-PYU-XGG-WDIS-THIOIOPCKAO-UMUXOYHT-OAEMU-ONTEABOEBFIP-LSINGAECK-AEOET-UOXNIOSFE-XR-MOOAE-FUTHEDNY-IOS-SRLOE-UH-UNP-IH-EX-THDM-POEF-PFINGAEINGS-OEJW-EABY-OEWD-FYJITXL-OTHING-FASIOIHBR-AUY-AEU-OEEAAY-EOEAE-EPFB-PJI-SINGB-RTHCKEO-LIUPTCKBX-EAYFMCKYR-HWTNIOXAETHOE-CKW-EAF-TEA-INGOH-IOEABSHOE-AEI-EATIS-TAEHR-HJSIOWNNIOWL-UE-T-RINGCKY-AXEOINGSEEOIHN-G-WXCKXY-SPCKOER-BYJINGEI-NGA-YG-LB-UJO-INGXXAE-BTHXIOR-TGWJSIF-EAIIOTHINGNENFOMEYA-CKECKWAAEW-EOUTHHXUN-EALUNTHPSUPR-DAEOERIOAEAU-UMLTHEA-LINGPY-OSOEARMTHOEP-LS-TIFSEWING-MDO-EAAEIOBTOS-ETAF-AEB-LN-SAXOE-NLWE-OLIJT-BAFXT-OOEJ-NGS-GLGEA-BGEOAOED-GEOM-CKRG-PDOFWEO-EADYING-NIFPL-EOE-UCKM-LAETXJRX-IEAGL-GCKSOING-AETH-MHOEF-RSCKTH-YO-BIAEHEUTLL-EOGOEY-BNTHH-EAEJBNILEAR-JFCKSINGCKP-GHSM-EODEO-Y-IOETEAUIO-ONEAO-JYEOXEAAIO-NDINGH-PEAHIOU-INGHTHP-XU-EAYPOETHSYP-FT-BIOEAGL-EAH-INGIIOLINGNDAPG-NTTHSB-SSEA-GCK-EAMU-EXBGAEFOIX-FA-EAREO-OIDSLTHEBEO-OEGYGNG-THFCKM-OEE-OFBHING-CKIJANOA-PHRM-RMOE-THGJ-BRTHAEA-XEIODTH-RINGJB-NTY-TSBNAE-UEIOIO-JEOUTHLCKE-LI-BUFAREA-MB-DXM-UEATY-AJPUPEAYG-MIOMUAMING-YIO-AET-ESAOE-CKHISFIN-POEING-EOTHYTAEX-EOET-DIOLEPTA-TFRN-AEAR-EACK-NHWBEOS-IHYSWOXW-OINGU-HINGOE-TLF-JGTINGJING-
+Total Characters: 1245 | PRIME: false
+Total Runes: 1021 | PRIME: true
+Total Spaces: 224 | PRIME: false
+GP Sum: 52024 | PRIME: false
+IoC: 0.023046526943788014
+==========================
+== Line Characteristics
+==========================
+Line: ᚢᚪ-ᚹᛝᚷᛉᛞᚷ-ᛁᛒᛁ-ᛇᛏᛒᛁᚣ.ᛠᚷᛋᚫ
+English Line: UA-WINGGXDG-IBI-EOTBIY.EAGSAE
+Total Characters: 24 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 1066 | PRIME: false
+IoC: 0.02766798418972332
+
+Line: ᛈᚹᛗᛠ-ᛇᛄᛇ-ᚹᚻᛁ-ᚷᛠᛒᚢᚣᚻᚣ-
+English Line: PWMEA-EOJEO-WHI-GEABUYHY-
+Total Characters: 21 | PRIME: false
+Total Runes: 17 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 853 | PRIME: true
+IoC: 0.023809523809523808
+
+Line: ᛝᚹᚢᚱᛋ-ᚩᛡᚠᛡᛠ-ᛞᛟᚦᛗᚳᚾᛉ-
+English Line: INGWURS-OIOFIOEA-DOETHMCKNX-
+Total Characters: 20 | PRIME: false
+Total Runes: 17 | PRIME: true
+Total Spaces: 3 | PRIME: true
+GP Sum: 834 | PRIME: false
+IoC: 0.005263157894736842
+
+Line: ᛞᚦᛖᚱᛇᚳ-ᚪᛄᛋᛟ-ᚢᚹᚱᛏ-ᛋᛖᛋᛏ-ᚣᚱᛠᚫᚾ
+English Line: DTHEREOCK-AJSOE-UWRT-SEST-YREAAEN
+Total Characters: 27 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 1173 | PRIME: false
+IoC: 0.022792022792022793
+
+Line: ᛞ-ᛈᛒᛡᛋᚢᛞᛖᚣᚦ-ᛚᚹᛟᛋ-ᚷᛚᛄ-ᚫᛖᚩᚳᚦᚹ
+English Line: D-PBIOSUDEYTH-LWOES-GLJ-AEEOCKTHW
+Total Characters: 27 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 1187 | PRIME: true
+IoC: 0.017094017094017096
+
+Line: ᛗ-ᚢᚩᚷ-ᚠᚪᚩᛡᛝᛒᛠᚦᚳᚪ-ᚱᛡᛏ-ᛟᚹᚠᚣᛝᚢ
+English Line: M-UOG-FAOIOINGBEATHCKA-RIOT-OEWFYINGU
+Total Characters: 27 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 1141 | PRIME: false
+IoC: 0.017094017094017096
+
+Line: ᚣᛁ-ᛚᛏᚫᚫ-ᚪ-ᚱᛈᚠᛗᚹᚩᛞ-ᛠᛒᛈ-ᛝᛟ-ᚾᚷᛗ-
+English Line: YI-LTAEAE-A-RPFMWOD-EABP-INGOE-NGM-
+Total Characters: 29 | PRIME: true
+Total Runes: 22 | PRIME: false
+Total Spaces: 7 | PRIME: true
+GP Sum: 1299 | PRIME: false
+IoC: 0.007389162561576354
+
+Line: ᛡᛖᚩ-ᚾᛚᛉᛝ-ᛁᛡᚫᛗ-ᚻᛖᚹᛗ-ᛝᛈᛇᛗᛡᛄ-ᚫ
+English Line: IOEO-NLXING-IIOAEM-HEWM-INGPEOMIOJ-AE
+Total Characters: 27 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1378 | PRIME: false
+IoC: 0.02564102564102564
+
+Line: ᚩᛡ-ᚠᚣᛉᛟᚫᚦ-ᚫᛒᚩ-ᚪᚦᛄᚱᛄᚾᚦ-ᛡᚠᚪᛏᚾᚻ-ᚷ
+English Line: OIO-FYXOEAETH-AEBO-ATHJRJNTH-IOFATNH-G
+Total Characters: 30 | PRIME: false
+Total Runes: 25 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1179 | PRIME: false
+IoC: 0.022988505747126436
+
+Line: ᚢ-ᛞ-ᚳᚦᚢᚱᚢᛟ-ᛞᚻᚱ-ᚷᚹᛏᛈᛖᚠ-ᚪᚻᛠᚦ
+English Line: U-D-CKTHURUOE-DHR-GWTPEF-AHEATH
+Total Characters: 26 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 774 | PRIME: false
+IoC: 0.021538461538461538
+
+Line: ᛞᚱᚠ-ᛖᛄᚫ-ᚾᚳᚻᚹ-ᛇᛡᛈᛠᚹ-ᛗᛚ-ᚹᛟᚹᛠ-ᚪ
+English Line: DRF-EJAE-NCKHW-EOIOPEAW-ML-WOEWEA-A
+Total Characters: 28 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1181 | PRIME: true
+IoC: 0.018518518518518517
+
+Line: ᚾᚪ-ᚳᚪ-ᚷᛚᚦᛒᚩᚹᚢ-ᚷᛚᚠᛋᚻ-ᚾᛉᛝᛗ-ᛖᚦᚢᛝ
+English Line: NA-CKA-GLTHBOWU-GLFSH-NXINGM-ETHUING
+Total Characters: 29 | PRIME: true
+Total Runes: 24 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 969 | PRIME: false
+IoC: 0.017241379310344827
+
+Line: ᛡ-ᛈᚣᚢ-ᛉᚷᚷ-ᚹᛞᛁᛋ-ᚦᛡᛡᛈᚳᚪᚩ-ᚢᛗᚢ
+English Line: IO-PYU-XGG-WDIS-THIOIOPCKAO-UMU
+Total Characters: 26 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 985 | PRIME: false
+IoC: 0.024615384615384615
+
+Line: ᛉᚩᚣᚻᛏ-ᚩᚫᛗᚢ-ᚩᚾᛏᛠᛒᛟᛒᚠᛁᛈ-ᛚᛋᛝᚫᚳ
+English Line: XOYHT-OAEMU-ONTEABOEBFIP-LSINGAECK
+Total Characters: 27 | PRIME: false
+Total Runes: 24 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 1225 | PRIME: false
+IoC: 0.017094017094017096
+
+Line: -ᚫᛟᛏ-ᚢᚩᛉᚾᛡᛋᚠᛖ-ᛉᚱ-ᛗᚩᚩᚫ-ᚠᚢᚦᛖᛞᚾ
+English Line: -AEOET-UOXNIOSFE-XR-MOOAE-FUTHEDN
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 997 | PRIME: true
+IoC: 0.023809523809523808
+
+Line: ᚣ-ᛡᛋ-ᛋᚱᛚᛟ-ᚢᚻ.ᚢᚾᛈ-ᛁᚻ-ᛖᛉ-ᚦᛞᛗ-ᛈᛟ
+English Line: Y-IOS-SRLOE-UH.UNP-IH-EX-THDM-POE
+Total Characters: 29 | PRIME: true
+Total Runes: 21 | PRIME: false
+Total Spaces: 7 | PRIME: true
+GP Sum: 1043 | PRIME: false
+IoC: 0.013227513227513227
+
+Line: ᚠ-ᛈᚠᛝᚫᛝᛋ-ᛟᛄᚹ-ᛠᛒᚣ-ᛟᚹᛞ.ᚠᚣᛄᛁᛏᛉ
+English Line: F-PFINGAEINGS-OEJW-EABY-OEWD.FYJITX
+Total Characters: 27 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1241 | PRIME: false
+IoC: 0.024615384615384615
+
+Line: ᛚ-ᚩᚦᛝ-ᚠᚪᛋᛡᛁᚻᛒᚱ-ᚪᚢᚣ-ᚫᚢ-ᛟᛠᚪᚣ-ᛖᛟ
+English Line: L-OTHING-FASIOIHBR-AUY-AEU-OEEAAY-EOE
+Total Characters: 29 | PRIME: true
+Total Runes: 23 | PRIME: true
+Total Spaces: 6 | PRIME: false
+GP Sum: 1398 | PRIME: false
+IoC: 0.014778325123152709
+
+Line: ᚫ-ᛖᛈᚠᛒ-ᛈᛄᛁ.ᛋᛝᛒ-ᚱᚦᚳᛇ-ᛚᛁᚢᛈᛏᚳᛒᛉ-
+English Line: AE-EPFB-PJI.SINGB-RTHCKEO-LIUPTCKBX-
+Total Characters: 29 | PRIME: true
+Total Runes: 23 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 978 | PRIME: false
+IoC: 0.021164021164021163
+
+Line: ᛖᚪᚣᚠᛗᚳᚣᚱ-ᚻᚹᛏᚾᛡᛉᚫᚦᛟ-ᚳᚹ-ᛠᚠ-ᛏ
+English Line: EAYFMCKYR-HWTNIOXAETHOE-CKW-EAF-T
+Total Characters: 26 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1142 | PRIME: false
+IoC: 0.015384615384615385
+
+Line: ᛠ-ᛝᚩᚻ-ᛡᛠᛒᛋᚻᛟ-ᚫᛁ-ᛠᛏᛁᛋ-ᛏᚫᚻᚱ-ᚻᛄ
+English Line: EA-INGOH-IOEABSHOE-AEI-EATIS-TAEHR-HJ
+Total Characters: 28 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1292 | PRIME: false
+IoC: 0.03439153439153439
+
+Line: ᛋᛡᚹᚾᚾᛡᚹᛚ-ᚢᛖ-ᛏ-ᚱᛝᚳᚣ-ᚪᛉᛇᛝᛋᛖᛇᛁ
+English Line: SIOWNNIOWL-UE-T-RINGCKY-AXEOINGSEEOI
+Total Characters: 27 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 1227 | PRIME: false
+IoC: 0.019943019943019943
+
+Line: ᚻᚾ-ᚷ-ᚹᛉᚳᛉᚣ-ᛋᛈᚳᛟᚱ-ᛒᚣᛄᛝᛖᛁ-ᚾᚷᚪ-
+English Line: HN-G-WXCKXY-SPCKOER-BYJINGEI-NGA-
+Total Characters: 28 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1022 | PRIME: false
+IoC: 0.013227513227513227
+
+Line: ᚣᚷ-ᛚᛒ-ᚢᛄᚩ-ᛝᛉᛉᚪᛖ-ᛒᚦᛉᛡᚱ.ᛏᚷᚹᛄᛋ
+English Line: YG-LB-UJO-INGXXAE-BTHXIOR.TGWJS
+Total Characters: 27 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1054 | PRIME: false
+IoC: 0.018461538461538463
+
+Line: ᛁᚠ-ᛠᛁᛡᚦᛝᚾᛖᚾᚠᚩᛗᛖᚣᚪ-ᚳᛖᚳᚹᚪᚫᚹ-ᛇ
+English Line: IF-EAIIOTHINGNENFOMEYA-CKECKWAAEW-EO
+Total Characters: 27 | PRIME: false
+Total Runes: 24 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 1206 | PRIME: false
+IoC: 0.02564102564102564
+
+Line: ᚢᚦᚻᛉᚢᚾ-ᛠᛚᚢᚾᚦᛈᛋᚢᛈᚱ-ᛞᚫᛟᚱᛡᚫᚪ
+English Line: UTHHXUN-EALUNTHPSUPR-DAEOERIOAEA
+Total Characters: 25 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 2 | PRIME: true
+GP Sum: 1071 | PRIME: false
+IoC: 0.03666666666666667
+
+Line: ᚢ-ᚢᛗᛚᚦᛠ-ᛚᛝᛈᚣ-ᚩᛋᛟᚪᚱᛗᚦᛟᛈ-ᛚᛋ-ᛏᛁ
+English Line: U-UMLTHEA-LINGPY-OSOEARMTHOEP-LS-TI
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 1231 | PRIME: true
+IoC: 0.023809523809523808
+
+Line: ᚠᛋᛖᚹᛝ-ᛗᛞᚩ-ᛠᚫᛡᛒᛏᚩᛋ-ᛖᛏᚪᚠ-ᚫᛒ-ᛚᚾ-
+English Line: FSEWING-MDO-EAAEIOBTOS-ETAF-AEB-LN-
+Total Characters: 29 | PRIME: true
+Total Runes: 23 | PRIME: true
+Total Spaces: 6 | PRIME: false
+GP Sum: 1373 | PRIME: true
+IoC: 0.017241379310344827
+
+Line: ᛋᚪᛉᛟ-ᚾᛚᚹᛖ-ᚩᛚᛁᛄᛏ-ᛒᚪᚠᛉᛏ-ᚩᛟᛄ-ᚾᚷᛋ-
+English Line: SAXOE-NLWE-OLIJT-BAFXT-OOEJ-NGS-
+Total Characters: 30 | PRIME: false
+Total Runes: 24 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1167 | PRIME: false
+IoC: 0.020689655172413793
+
+Line: ᚷᛚᚷᛠ-ᛒᚷᛖᚩᚪᚩᛖᛞ-ᚷᛇᛗ-ᚳᚱᚷ-ᛈᛞᚩᚠᚹ
+English Line: GLGEA-BGEOAOED-GEOM-CKRG-PDOFW
+Total Characters: 27 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 958 | PRIME: false
+IoC: 0.042735042735042736
+
+Line: ᛇ-ᛠᛞᚣᛝ-ᚾᛁᚠᛈᛚ.ᛖᛟ-ᚢᚳᛗ-ᛚᚫᛏᛉᛄᚱ
+English Line: EO-EADYING-NIFPL.EOE-UCKM-LAETXJR
+Total Characters: 26 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1164 | PRIME: false
+IoC: 0.0033333333333333335
+
+Line: ᛉ-ᛁᛠᚷᛚ-ᚷᚳᛋᚩᛝ-ᚫᚦ-ᛗᚻᛟᚠ-ᚱᛋᚳᚦ-ᚣᚩ-ᛒᛁ
+English Line: X-IEAGL-GCKSOING-AETH-MHOEF-RSCKTH-YO-BI
+Total Characters: 31 | PRIME: true
+Total Runes: 24 | PRIME: false
+Total Spaces: 7 | PRIME: true
+GP Sum: 1015 | PRIME: false
+IoC: 0.012903225806451613
+
+Line: ᚫᚻᛖᚢᛏᛚᛚ-ᛇᚷᛟᚣ-ᛒᚾᚦᚻ-ᛠᛖᛄᛒᚾᛁᛚᛠ
+English Line: AEHEUTLL-EOGOEY-BNTHH-EAEJBNILEA
+Total Characters: 26 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 3 | PRIME: true
+GP Sum: 1277 | PRIME: true
+IoC: 0.024615384615384615
+
+Line: ᚱ-ᛄᚠᚳᛋᛝᚳᛈ-ᚷᚻᛋᛗ-ᛇᛞᛇ-ᚣ-ᛡᛖᛏᛠᚢ
+English Line: R-JFCKSINGCKP-GHSM-EODEO-Y-IOETEAU
+Total Characters: 26 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1034 | PRIME: false
+IoC: 0.009230769230769232
+
+Line: ᛡ-ᚩᚾᛠᚩ-ᛄᚣᛇᛉᛠᚪᛡ-ᚾᛞᛝᚻ-ᛈᛠᚻᛡ
+English Line: IO-ONEAO-JYEOXEAAIO-NDINGH-PEAHIO
+Total Characters: 24 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1302 | PRIME: false
+IoC: 0.03260869565217391
+
+Line: ᚢ-ᛝᚻᚦᛈ-ᛉᚢ-ᛠᚣᛈᛟᚦᛋᚣᛈ-ᚠᛏ-ᛒᛁᛟᚪᚷ
+English Line: U-INGHTHP-XU-EAYPOETHSYP-FT-BIOEAG
+Total Characters: 27 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1095 | PRIME: false
+IoC: 0.019943019943019943
+
+Line: ᛚ-ᛠᚻ-ᛝᛁᛡᛚᛝᚾᛞᚪᛈᚷ-ᚾᛏᚦᛋᛒ-ᛋᛋᛠ-ᚷᚳ
+English Line: L-EAH-INGIIOLINGNDAPG-NTTHSB-SSEA-GCK
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 1301 | PRIME: true
+IoC: 0.021164021164021163
+
+Line: -ᛠᛗᚢ-ᛖᛉᛒᚷᚫᚠᚩᛁᛉ.ᚠᚪ-ᛠᚱᛇ-ᚩᛁᛞᛋᛚ
+English Line: -EAMU-EXBGAEFOIX.FA-EAREO-OIDSL
+Total Characters: 27 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1076 | PRIME: false
+IoC: 0.015384615384615385
+
+Line: ᚦᛖᛒᛇ-ᛟᚷᚣᚷᚾᚷ-ᚦᚠᚳᛗ-ᚩᛖᛖ-ᚩᚠᛒᚻᛝ-ᚳᛁ
+English Line: THEBEO-OEGYGNG-THFCKM-OEE-OFBHING-CKI
+Total Characters: 29 | PRIME: true
+Total Runes: 24 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 888 | PRIME: false
+IoC: 0.027093596059113302
+
+Line: ᛄᚪᚾᚩᚪ-ᛈᚻᚱᛗ-ᚱᛗᛟ-ᚦᚷᛄ-ᛒᚱᚦᚪᛠ-ᛉᛖᛡ
+English Line: JANOA-PHRM-RMOE-THGJ-BRTHAEA-XEIO
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 1143 | PRIME: false
+IoC: 0.023809523809523808
+
+Line: ᛞᚦ-ᚱᛝᛄᛒ-ᚾᛏᚣ-ᛏᛋᛒᚾᚫ-ᚢᛖᛁᚩᛡ-ᛄᛇᚢᚦᛚ
+English Line: DTH-RINGJB-NTY-TSBNAE-UEIOIO-JEOUTHL
+Total Characters: 29 | PRIME: true
+Total Runes: 24 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1150 | PRIME: false
+IoC: 0.014778325123152709
+
+Line: ᚳᛖ-ᛚᛁ-ᛒᚢᚠᚪᚱᛠ-ᛗᛒ-ᛞᛉᛗ-ᚢᛠᛏᚣ-ᚪᛄ
+English Line: CKE-LI-BUFAREA-MB-DXM-UEATY-AJ
+Total Characters: 27 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1214 | PRIME: false
+IoC: 0.014245014245014245
+
+Line: ᛈᚢᛈᛠᚣᚷ-ᛗᛡᛗᚢᚪᛗᛝ-ᚣᛡ.ᚪᛖᛏ-ᛖ
+English Line: PUPEAYG-MIOMUAMING-YIO.AET-E
+Total Characters: 23 | PRIME: true
+Total Runes: 19 | PRIME: true
+Total Spaces: 3 | PRIME: true
+GP Sum: 1317 | PRIME: false
+IoC: 0.03896103896103896
+
+Line: ᛋᚪᛟ-ᚳᚻᛁᛋᚠᛁᚾ-ᛈᛟᛝ-ᛇᚦᚣᛏᚫᛉ-ᛖᛟᛏ-ᛞᛡ
+English Line: SAOE-CKHISFIN-POEING-EOTHYTAEX-EOET-DIO
+Total Characters: 29 | PRIME: true
+Total Runes: 24 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 1381 | PRIME: true
+IoC: 0.014778325123152709
+
+Line: ᛚᛖᛈᛏᚪ-ᛏᚠᚱᚾ-ᚪᛠᚱ-ᛠᚳ-ᚾᚻᚹᛒᛇᛋ-ᛁᚻᚣ
+English Line: LEPTA-TFRN-AEAR-EACK-NHWBEOS-IHY
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 1162 | PRIME: false
+IoC: 0.015873015873015872
+
+Line: ᛋᚹᚩᛉᚹ-ᚩᛝᚢ-ᚻᛝᛟ-ᛏᛚᚠ-ᛄᚷᛏᛝᛄᛝ.
+English Line: SWOXW-OINGU-HINGOE-TLF-JGTINGJING.
+Total Characters: 25 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 861 | PRIME: false
+IoC: 0.036231884057971016

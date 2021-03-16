@@ -86,6 +86,23 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
     });
   }
 
+  final _$primeHighlightDropdownValueAtom =
+      Atom(name: '_AnalyzeStateBase.primeHighlightDropdownValue');
+
+  @override
+  String get primeHighlightDropdownValue {
+    _$primeHighlightDropdownValueAtom.reportRead();
+    return super.primeHighlightDropdownValue;
+  }
+
+  @override
+  set primeHighlightDropdownValue(String value) {
+    _$primeHighlightDropdownValueAtom
+        .reportWrite(value, super.primeHighlightDropdownValue, () {
+      super.primeHighlightDropdownValue = value;
+    });
+  }
+
   final _$repeatedGramsSortedByAtom =
       Atom(name: '_AnalyzeStateBase.repeatedGramsSortedBy');
 
@@ -100,6 +117,73 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
     _$repeatedGramsSortedByAtom.reportWrite(value, super.repeatedGramsSortedBy,
         () {
       super.repeatedGramsSortedBy = value;
+    });
+  }
+
+  final _$similarGramsSortedByAtom =
+      Atom(name: '_AnalyzeStateBase.similarGramsSortedBy');
+
+  @override
+  String get similarGramsSortedBy {
+    _$similarGramsSortedByAtom.reportRead();
+    return super.similarGramsSortedBy;
+  }
+
+  @override
+  set similarGramsSortedBy(String value) {
+    _$similarGramsSortedByAtom.reportWrite(value, super.similarGramsSortedBy,
+        () {
+      super.similarGramsSortedBy = value;
+    });
+  }
+
+  final _$selectedRepeatedGramsAtom =
+      Atom(name: '_AnalyzeStateBase.selectedRepeatedGrams');
+
+  @override
+  ObservableList<LiberTextClass> get selectedRepeatedGrams {
+    _$selectedRepeatedGramsAtom.reportRead();
+    return super.selectedRepeatedGrams;
+  }
+
+  @override
+  set selectedRepeatedGrams(ObservableList<LiberTextClass> value) {
+    _$selectedRepeatedGramsAtom.reportWrite(value, super.selectedRepeatedGrams,
+        () {
+      super.selectedRepeatedGrams = value;
+    });
+  }
+
+  final _$selectedSimilarGramsAtom =
+      Atom(name: '_AnalyzeStateBase.selectedSimilarGrams');
+
+  @override
+  ObservableList<LiberTextClass> get selectedSimilarGrams {
+    _$selectedSimilarGramsAtom.reportRead();
+    return super.selectedSimilarGrams;
+  }
+
+  @override
+  set selectedSimilarGrams(ObservableList<LiberTextClass> value) {
+    _$selectedSimilarGramsAtom.reportWrite(value, super.selectedSimilarGrams,
+        () {
+      super.selectedSimilarGrams = value;
+    });
+  }
+
+  final _$selectedFrequenciesAtom =
+      Atom(name: '_AnalyzeStateBase.selectedFrequencies');
+
+  @override
+  ObservableList<LiberTextClass> get selectedFrequencies {
+    _$selectedFrequenciesAtom.reportRead();
+    return super.selectedFrequencies;
+  }
+
+  @override
+  set selectedFrequencies(ObservableList<LiberTextClass> value) {
+    _$selectedFrequenciesAtom.reportWrite(value, super.selectedFrequencies, () {
+      super.selectedFrequencies = value;
     });
   }
 
@@ -129,11 +213,13 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
   }
 
   @override
-  void select_rune(String rune, int index, String type) {
+  void select_rune(String rune, int index, String type,
+      {bool ignoreDuplicates = false}) {
     final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
         name: '_AnalyzeStateBase.select_rune');
     try {
-      return super.select_rune(rune, index, type);
+      return super
+          .select_rune(rune, index, type, ignoreDuplicates: ignoreDuplicates);
     } finally {
       _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
     }
@@ -151,11 +237,13 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
   }
 
   @override
-  void highlight_rune(String rune, int index, String type) {
+  void highlight_rune(String rune, int index, String type,
+      {bool ignoreDuplicates = false, Color color = null}) {
     final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
         name: '_AnalyzeStateBase.highlight_rune');
     try {
-      return super.highlight_rune(rune, index, type);
+      return super.highlight_rune(rune, index, type,
+          ignoreDuplicates: ignoreDuplicates, color: color);
     } finally {
       _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
     }
@@ -173,11 +261,11 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
   }
 
   @override
-  void highlight_gram(String gram) {
+  void highlight_gram(String gram, {Color color = null}) {
     final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
         name: '_AnalyzeStateBase.highlight_gram');
     try {
-      return super.highlight_gram(gram);
+      return super.highlight_gram(gram, color: color);
     } finally {
       _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
     }
@@ -272,11 +360,55 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
   }
 
   @override
+  void changePrimeHighlightDropdownValue(String value) {
+    final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
+        name: '_AnalyzeStateBase.changePrimeHighlightDropdownValue');
+    try {
+      return super.changePrimeHighlightDropdownValue(value);
+    } finally {
+      _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void onPrimeHighlightDonePressed() {
+    final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
+        name: '_AnalyzeStateBase.onPrimeHighlightDonePressed');
+    try {
+      return super.onPrimeHighlightDonePressed();
+    } finally {
+      _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void onHighlightRegexDonePressed(String regex) {
+    final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
+        name: '_AnalyzeStateBase.onHighlightRegexDonePressed');
+    try {
+      return super.onHighlightRegexDonePressed(regex);
+    } finally {
+      _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   void changeGramSortedBy(String value) {
     final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
         name: '_AnalyzeStateBase.changeGramSortedBy');
     try {
       return super.changeGramSortedBy(value);
+    } finally {
+      _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void changeSimilarGramSortedBy(String value) {
+    final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
+        name: '_AnalyzeStateBase.changeSimilarGramSortedBy');
+    try {
+      return super.changeSimilarGramSortedBy(value);
     } finally {
       _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
     }
@@ -290,7 +422,12 @@ highlighedRunes: ${highlighedRunes},
 readingMode: ${readingMode},
 cipherMode: ${cipherMode},
 highlightDropdownValue: ${highlightDropdownValue},
-repeatedGramsSortedBy: ${repeatedGramsSortedBy}
+primeHighlightDropdownValue: ${primeHighlightDropdownValue},
+repeatedGramsSortedBy: ${repeatedGramsSortedBy},
+similarGramsSortedBy: ${similarGramsSortedBy},
+selectedRepeatedGrams: ${selectedRepeatedGrams},
+selectedSimilarGrams: ${selectedSimilarGrams},
+selectedFrequencies: ${selectedFrequencies}
     ''';
   }
 }

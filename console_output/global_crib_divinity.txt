@@ -1,0 +1,219 @@
+Starting global crib with output settings...
+shiftsum | shiftdifferencessum | cribword | shiftlist | shiftdifferences | shiftlistfacts | shiftsinwordform | shiftsingpform
+Results for cross0.txt
+ioo(0) 136 | 52 | divinity | [21, 27, 17, 22, 26, 9, 11, 3] | [6, 10, 5, 4, 17, 2, 8] | [ad, dad] | INGIOBOEYNJO | ING?IO?GEA?Y?ER(UB) 
+ioo(1) 63 | 74 | divinity | [8, 14, 18, 0, 12, 0, 11, 0] | [6, 4, 18, 12, 12, 11, 11] | [hr, dhr] | HXEFEOFJF | J(PAE)XNEONRN 
+ioo(2) 136 | 80 | divinity | [27, 25, 18, 1, 24, 22, 4, 15] | [2, 7, 17, 23, 2, 18, 11] | [ad, dhr] | IOAEEUAOERS | ?IO?OEXTSEA?R?L 
+ioo(3) 72 | 53 | divinity | [5, 9, 20, 4, 5, 2, 7, 20] | [4, 11, 16, 1, 3, 5, 13] | [hr, dad] | CNLRCTHWL | THEIO?R?TH(FID)OIO 
+Results for cross1.txt
+ioo(0) 93 | 68 | divinity | [21, 12, 3, 20, 27, 5, 4, 1] | [9, 9, 17, 7, 22, 1, 3] | [ad, dhr] | INGEOOLIOCRU | INGEO(UB)IO?IO?TH?R?T 
+ioo(1) 141 | 69 | divinity | [28, 14, 24, 11, 6, 13, 26, 19] | [14, 10, 13, 5, 7, 13, 7] | [ad, dhr] | EAXAJGPYM | ?EA?(PAE)SR?G?(CM)?Y?W 
+Results for cross2.txt
+ioo(0) 137 | 55 | divinity | [19, 14, 19, 20, 19, 28, 4, 14] | [5, 5, 1, 1, 9, 24, 10] | [hr, dhr] | MXMLMEARX | W(PAE)WIOW?EA??R?(PAE) 
+ioo(1) 72 | 61 | divinity | [10, 0, 5, 21, 19, 8, 0, 9] | [10, 5, 16, 2, 11, 8, 9] | [hr, dad] | IFCINGMHFN | ANTHINGWJNE 
+ioo(2) 141 | 93 | divinity | [8, 27, 2, 17, 27, 15, 24, 21] | [19, 25, 15, 10, 12, 9, 3] | [hr, dad] | HIOTHBIOSAING | J?IO?(FID)G?IO?LSING 
+Results for spiral3.txt
+ioo(0) 126 | 88 | divinity | [15, 26, 4, 19, 4, 9, 26, 23] | [11, 22, 15, 15, 5, 17, 3] | [hr, dhr] | SYRMRNYD | L?Y??R?W?R?E?Y?H 
+ioo(1) 84 | 70 | divinity | [20, 0, 25, 25, 6, 5, 1, 2] | [20, 25, 0, 19, 1, 4, 1] | [hr, dhr] | LFAEAEGCUTH | IONOEOE?G?THT(FID) 
+Results for spiral4.txt
+ioo(0) 86 | 82 | divinity | [3, 3, 13, 0, 27, 9, 18, 13] | [0, 10, 13, 27, 18, 9, 5] | [hr, dad] | OOPFIONEP | (UB)(UB)(CM)N?IO?EX(CM) 
+ioo(1) 112 | 95 | divinity | [21, 7, 28, 4, 22, 14, 12, 4] | [14, 21, 24, 18, 8, 2, 8] | [hr, dhr] | INGWEAROEXEOR | INGO?EA??R?EA(PAE)EO?R? 
+ioo(2) 110 | 79 | divinity | [15, 20, 23, 11, 8, 3, 28, 2] | [5, 3, 12, 3, 5, 25, 26] | [ad, dhr] | SLDJHOEATH | LIOHRJ(UB)?EA?(FID) 
+Results for spiral5.txt
+ioo(0) 99 | 75 | divinity | [11, 5, 21, 8, 17, 12, 21, 4] | [6, 16, 13, 9, 5, 9, 17] | [hr, dhr] | JCINGHBEOINGR | RTHINGJGEOING?R? 
+ioo(1) 83 | 97 | divinity | [8, 1, 25, 1, 11, 12, 2, 23] | [7, 24, 24, 10, 1, 10, 21] | [hr, dhr] | HUAEUJEOTHD | JTOETREO(FID)H 
+ioo(2) 100 | 78 | divinity | [8, 16, 11, 21, 2, 21, 17, 4] | [8, 5, 10, 19, 19, 4, 13] | [hr, dhr] | HTJINGTHINGBR | JYRING(FID)INGG?R? 
+Results for spiral6.txt
+ioo(0) 126 | 41 | divinity | [0, 14, 15, 16, 21, 28, 17, 15] | [14, 1, 1, 5, 7, 11, 2] | [hr, dhr] | FXSTINGEABS | N(PAE)LYING?EA?GL 
+ioo(1) 91 | 49 | divinity | [2, 15, 9, 8, 20, 11, 15, 11] | [13, 6, 1, 12, 9, 4, 4] | [hr, dhr] | THSNHLJSJ | (FID)LEJIORLR 
+Results for spiral7.txt
+ioo(0) 103 | 74 | divinity | [11, 27, 21, 18, 0, 3, 18, 5] | [16, 6, 3, 18, 3, 15, 13] | [hr, dhr] | JIOINGEFOEC | R?IO?INGXN(UB)XTH 
+Results for branch8.txt
+ioo(0) 114 | 61 | divinity | [7, 4, 18, 24, 22, 3, 16, 20] | [3, 14, 6, 2, 19, 13, 4] | [ad, dad] | WREAOEOTL | O?R?XSEA(UB)YIO 
+ioo(1) 113 | 76 | divinity | [1, 27, 21, 23, 12, 20, 2, 7] | [26, 6, 2, 11, 8, 18, 5] | [ad, dad] | UIOINGDEOLTHW | T?IO?INGHEOIO(FID)O 
+ioo(2) 124 | 51 | divinity | [2, 22, 23, 9, 13, 20, 20, 15] | [20, 1, 14, 4, 7, 0, 5] | [hr, dad] | THOEDNPLLS | (FID)EAHE(CM)IOIOL 
+ioo(3) 106 | 47 | divinity | [23, 28, 14, 10, 12, 1, 6, 12] | [5, 14, 4, 2, 11, 5, 6] | [hr, dhr] | DEAXIEOUGEO | H?EA?(PAE)AEOT?G?EO 
+Results for branch9.txt
+ioo(0) 88 | 29 | divinity | [5, 10, 5, 4, 17, 16, 17, 14] | [5, 5, 1, 13, 1, 1, 3] | [hr, diffs_is_odd, dhr] | CICRBTBX | THATH?R?GYG(PAE) 
+ioo(1) 124 | 54 | divinity | [24, 18, 6, 7, 22, 12, 13, 22] | [6, 12, 1, 15, 10, 1, 9] | [hr, dhr] | AEGWOEEOPOE | SX?G?OEAEO(CM)EA 
+ioo(2) 155 | 77 | divinity | [26, 8, 26, 27, 11, 25, 17, 15] | [18, 18, 1, 16, 14, 8, 2] | [hr, dhr] | YHYIOJAEBS | ?Y?J?Y??IO?ROEGL 
+ioo(3) 118 | 69 | divinity | [27, 3, 2, 14, 17, 11, 26, 18] | [24, 1, 12, 3, 6, 15, 8] | [ad, dad] | IOOTHXBJYE | ?IO?(UB)(FID)(PAE)GR?Y?X 
+ioo(4) 154 | 48 | divinity | [23, 25, 25, 11, 20, 16, 23, 11] | [2, 0, 14, 9, 4, 7, 12] | [hr, dad] | DAEAEJLTDJ | HOEOERIOYHR 
+Results for branch10.txt
+ioo(0) 60 | 66 | divinity | [15, 2, 1, 12, 7, 2, 18, 3] | [13, 1, 11, 5, 5, 16, 15] | [hr, dhr] | STHUEOWTHEO | L(FID)TEOO(FID)X(UB) 
+ioo(1) 101 | 83 | divinity | [18, 0, 26, 19, 13, 7, 15, 3] | [18, 26, 7, 6, 6, 8, 12] | [ad, dhr] | EFYMPWSO | XN?Y?W(CM)OL(UB) 
+ioo(2) 103 | 59 | divinity | [24, 22, 7, 9, 23, 12, 1, 5] | [2, 15, 2, 14, 11, 11, 4] | [ad, dhr] | AOEWNDEOUC | SEAOEHEOTTH 
+Results for branch11.txt
+ioo(0) 94 | 66 | divinity | [22, 11, 1, 14, 23, 20, 3, 0] | [11, 10, 13, 9, 3, 17, 3] | [ad, dhr] | OEJUXDLOF | EART(PAE)HIO(UB)N 
+Results for branch12.txt
+Results for branch13.txt
+ioo(0) 138 | 67 | divinity | [26, 19, 19, 24, 8, 20, 5, 17] | [7, 0, 5, 16, 12, 15, 12] | [hr, dhr] | YMMAHLCB | ?Y?WWSJIOTHG 
+Results for branch14.txt
+ioo(0) 145 | 37 | divinity | [20, 14, 17, 27, 24, 16, 12, 15] | [6, 3, 10, 3, 8, 4, 3] | [ad, dhr] | LXBIOATEOS | IO(PAE)G?IO?SYEOL 
+ioo(1) 120 | 71 | divinity | [14, 16, 24, 0, 6, 22, 15, 23] | [2, 8, 24, 6, 16, 7, 8] | [ad, dhr] | XTAFGOESD | (PAE)YSN?G?EALH 
+Results for mobius15.txt
+ioo(0) 68 | 57 | divinity | [13, 3, 7, 23, 14, 4, 0, 4] | [10, 4, 16, 9, 10, 4, 4] | [hr, dhr] | POWDXRFR | (CM)(UB)OH(PAE)?R?N?R? 
+ioo(1) 131 | 67 | divinity | [8, 3, 22, 5, 18, 27, 25, 23] | [5, 19, 17, 13, 9, 2, 2] | [ad, dhr] | HOOECEIOAED | J(UB)EATHX?IO?OEH 
+Results for mobius16.txt
+ioo(0) 105 | 85 | divinity | [9, 13, 4, 18, 0, 24, 15, 22] | [4, 9, 14, 18, 24, 9, 7] | [ad, dhr] | NPREFASOE | E(CM)?R?XNSLEA 
+ioo(1) 118 | 85 | divinity | [17, 25, 13, 22, 22, 1, 18, 0] | [8, 12, 9, 0, 21, 17, 18] | [hr, dad] | BAEPOEOEUEF | GOE(CM)EAEATXN 
+ioo(2) 73 | 81 | divinity | [7, 1, 1, 1, 15, 28, 0, 20] | [6, 0, 0, 14, 13, 28, 20] | [hr, dhr] | WUUUSEAFL | OTTTL?EA?NIO 
+ioo(3) 127 | 81 | divinity | [3, 25, 28, 11, 18, 3, 19, 20] | [22, 3, 17, 7, 15, 16, 1] | [hr, dad] | OAEEAJEOML | (UB)OE?EA?RX(UB)WIO 
+Results for mobius17.txt
+ioo(0) 118 | 72 | divinity | [11, 28, 17, 17, 27, 11, 0, 7] | [17, 11, 0, 10, 16, 11, 7] | [hr, dhr] | JEABBIOJFW | R?EA?GG?IO?RNO 
+ioo(1) 135 | 75 | divinity | [18, 23, 20, 17, 8, 26, 4, 19] | [5, 3, 3, 9, 18, 22, 15] | [ad, dhr] | EDLBHYRM | XHIOGJ?Y??R?W 
+ioo(2) 81 | 50 | divinity | [0, 0, 0, 21, 28, 9, 11, 12] | [0, 0, 21, 7, 19, 2, 1] | [hr, dhr] | FFFINGEANJEO | NNNING?EA?EREO 
+ioo(3) 130 | 50 | divinity | [8, 19, 14, 19, 12, 25, 17, 16] | [11, 5, 5, 7, 13, 8, 1] | [hr, dhr] | HMXMEOAEBT | JW(PAE)WEOOEGY 
+Results for mobius18.txt
+ioo(0) 97 | 78 | divinity | [25, 3, 16, 21, 12, 5, 14, 1] | [22, 13, 5, 9, 7, 9, 13] | [ad, dhr] | AEOTINGEOCXU | OE(UB)YINGEOTH(PAE)T 
+ioo(1) 91 | 50 | divinity | [20, 2, 5, 19, 18, 17, 6, 4] | [18, 3, 14, 1, 1, 11, 2] | [ad, dhr] | LTHCMEBGR | IO(FID)THWXG?G??R? 
+ioo(2) 118 | 60 | divinity | [4, 21, 25, 13, 15, 15, 5, 20] | [17, 4, 12, 2, 0, 10, 15] | [hr, dad] | RINGAEPSSCL | ?R?INGOE(CM)LLTHIO 
+ioo(3) 87 | 51 | divinity | [5, 17, 24, 8, 13, 13, 5, 2] | [12, 7, 16, 5, 0, 8, 3] | [hr, dad] | CBAHPPCTH | THGSJ(CM)(CM)TH(FID) 
+Results for mobius19.txt
+ioo(0) 92 | 96 | divinity | [2, 27, 2, 1, 21, 23, 16, 0] | [25, 25, 1, 20, 2, 7, 16] | [hr, dhr] | THIOTHUINGDTF | (FID)?IO?(FID)TINGHYN 
+ioo(1) 128 | 98 | divinity | [9, 2, 24, 14, 23, 26, 3, 27] | [7, 22, 10, 9, 3, 23, 24] | [ad, dad] | NTHAXDYOIO | E(FID)S(PAE)H?Y?(UB)?IO? 
+ioo(2) 109 | 75 | divinity | [3, 15, 5, 15, 2, 23, 20, 26] | [12, 10, 10, 13, 21, 3, 6] | [hr, dhr] | OSCSTHDLY | (UB)LTHL(FID)HIO?Y? 
+Results for mobius20.txt
+ioo(0) 96 | 64 | divinity | [19, 12, 1, 13, 24, 18, 8, 1] | [7, 11, 12, 11, 6, 10, 7] | [hr, dhr] | MEOUPAEHU | WEOT(CM)SXJT 
+ioo(1) 145 | 62 | divinity | [27, 17, 16, 10, 28, 21, 9, 17] | [10, 1, 6, 18, 7, 12, 8] | [hr, dad] | IOBTIEAINGNB | ?IO?GYA?EA?INGEG 
+ioo(2) 137 | 76 | divinity | [26, 24, 11, 6, 26, 16, 6, 22] | [2, 13, 5, 20, 10, 10, 16] | [hr, dhr] | YAJGYTGOE | ?Y?SR?G??Y?Y?G?EA 
+ioo(3) 123 | 66 | divinity | [9, 5, 15, 9, 24, 16, 28, 17] | [4, 10, 6, 15, 8, 12, 11] | [hr, dad] | NCSNATEAB | ETHLESY?EA?G 
+ioo(4) 138 | 73 | divinity | [20, 20, 27, 9, 3, 20, 28, 11] | [0, 7, 18, 6, 17, 8, 17] | [hr, dhr] | LLIONOLEAJ | IOIO?IO?E(UB)IO?EA?R 
+ioo(5) 106 | 79 | divinity | [23, 2, 6, 15, 21, 1, 18, 20] | [21, 4, 9, 6, 20, 17, 2] | [ad, dad] | DTHGSINGUEL | H(FID)?G?LINGTXIO 
+ioo(6) 75 | 66 | divinity | [10, 13, 3, 7, 2, 24, 14, 2] | [3, 10, 4, 5, 22, 10, 12] | [hr, dhr] | IPOWTHAXTH | A(CM)(UB)O(FID)S(PAE)(FID) 
+Results for mobius21.txt
+ioo(0) 117 | 50 | divinity | [15, 12, 5, 16, 25, 21, 18, 5] | [3, 7, 11, 9, 4, 3, 13] | [hr, dhr] | SEOCTAEINGEC | LEOTHYOEINGXTH 
+ioo(1) 108 | 135 | divinity | [4, 19, 4, 28, 23, 1, 28, 1] | [15, 15, 24, 5, 22, 27, 27] | [hr, dhr] | RMREADUEAU | ?R?W?R??EA?HT?EA?T 
+ioo(2) 107 | 111 | divinity | [0, 27, 4, 26, 11, 17, 7, 15] | [27, 23, 22, 15, 6, 10, 8] | [ad, dad] | FIORYJBWS | N?IO??R??Y?RGOL 
+ioo(3) 158 | 46 | divinity | [27, 18, 20, 25, 12, 13, 24, 19] | [9, 2, 5, 13, 1, 11, 5] | [ad, dhr] | IOELAEEOPAM | ?IO?XIOOEEO(CM)SW 
+ioo(4) 84 | 64 | divinity | [16, 3, 23, 11, 6, 13, 6, 6] | [13, 20, 12, 5, 7, 7, 0] | [hr, dhr] | TODJGPGG | Y(UB)HR?G?(CM)?G??G? 
+Results for mobius22.txt
+Results for mayfly23.txt
+ioo(0) 94 | 89 | divinity | [5, 25, 14, 15, 4, 26, 3, 2] | [20, 11, 1, 11, 22, 23, 1] | [ad, dhr] | CAEXSRYOTH | THOE(PAE)L?R??Y?(UB)(FID) 
+ioo(1) 153 | 41 | divinity | [28, 26, 28, 16, 12, 20, 10, 13] | [2, 2, 12, 4, 8, 10, 3] | [hr, dhr] | EAYEATEOLIP | ?EA??Y??EA?YEOIOA(CM) 
+Results for mayfly24.txt
+ioo(0) 99 | 48 | divinity | [7, 9, 0, 4, 23, 16, 21, 19] | [2, 9, 4, 19, 7, 5, 2] | [ad, dhr] | WNFRDTINGM | OEN?R?HYINGW 
+ioo(1) 127 | 78 | divinity | [7, 22, 13, 28, 18, 5, 13, 21] | [15, 9, 15, 10, 13, 8, 8] | [hr, dhr] | WOEPEAECPING | OEA(CM)?EA?XTH(CM)ING 
+ioo(2) 87 | 85 | divinity | [6, 14, 14, 17, 1, 27, 1, 7] | [8, 0, 3, 16, 26, 26, 6] | [hr, dhr] | GXXBUIOUW | ?G?(PAE)(PAE)GT?IO?TO 
+ioo(3) 78 | 89 | divinity | [26, 0, 0, 3, 7, 24, 1, 17] | [26, 0, 3, 4, 17, 23, 16] | [hr, dad] | YFFOWAUB | ?Y?NN(UB)OSTG 
+ioo(4) 133 | 67 | divinity | [24, 14, 25, 19, 10, 24, 10, 7] | [10, 11, 6, 9, 14, 14, 3] | [hr, dhr] | AXAEMIAIW | S(PAE)OEWASAO 
+ioo(5) 79 | 46 | divinity | [1, 4, 11, 11, 6, 8, 25, 13] | [3, 7, 0, 5, 2, 17, 12] | [hr, dad] | URJJGHAEP | T?R?RR?G?JOE(CM) 
+Results for mayfly25.txt
+ioo(0) 104 | 42 | divinity | [0, 15, 21, 23, 18, 15, 8, 4] | [15, 6, 2, 5, 3, 7, 4] | [hr, dad] | FSINGDESHR | NLINGHXLJ?R? 
+ioo(1) 152 | 73 | divinity | [23, 25, 17, 22, 15, 22, 2, 26] | [2, 8, 5, 7, 7, 20, 24] | [hr, dhr] | DAEBOESOETHY | HOEGEALEA(FID)?Y? 
+Results for mayfly26.txt
+ioo(0) 98 | 53 | divinity | [5, 16, 12, 12, 22, 5, 10, 16] | [11, 4, 0, 10, 17, 5, 6] | [hr, dad] | CTEOEOOECIT | THYEOEOEATHAY 
+ioo(1) 75 | 58 | divinity | [1, 1, 12, 20, 4, 18, 10, 9] | [0, 11, 8, 16, 14, 8, 1] | [hr, dhr] | UUEOLREIN | TTEOIO?R?XAE 
+ioo(2) 159 | 82 | divinity | [16, 27, 25, 5, 27, 22, 27, 10] | [11, 2, 20, 22, 5, 5, 17] | [hr, dhr] | TIOAECIOOEIOI | Y?IO?OETH?IO?EA?IO?A 
+Results for wingtree27.txt
+Results for wingtree28.txt
+ioo(0) 81 | 86 | divinity | [16, 6, 18, 5, 16, 4, 16, 0] | [10, 12, 13, 11, 12, 12, 16] | [hr, dhr] | TGECTRTF | Y?G?XTHY?R?YN 
+ioo(1) 88 | 54 | divinity | [23, 21, 9, 1, 11, 17, 5, 1] | [2, 12, 8, 10, 6, 12, 4] | [is_odd, hr, diffs_is_even, dhr] | DINGNUJBCU | HINGETRGTHT 
+ioo(2) 115 | 68 | divinity | [21, 9, 23, 17, 19, 2, 5, 19] | [12, 14, 6, 2, 17, 3, 14] | [hr, dhr] | INGNDBMTHCM | INGEHGW(FID)THW 
+Results for wingtree29.txt
+ioo(0) 143 | 73 | divinity | [20, 15, 24, 5, 25, 17, 22, 15] | [5, 9, 19, 20, 8, 5, 7] | [hr, dhr] | LSACAEBOES | IOLSTHOEGEAL 
+ioo(1) 81 | 54 | divinity | [27, 8, 16, 10, 14, 0, 3, 3] | [19, 8, 6, 4, 14, 3, 0] | [hr, dad] | IOHTIXFOO | ?IO?JYA(PAE)N(UB)(UB) 
+ioo(2) 84 | 77 | divinity | [13, 7, 18, 12, 1, 8, 23, 2] | [6, 11, 6, 11, 7, 15, 21] | [ad, dhr] | PWEEOUHDTH | (CM)OXEOTJH(FID) 
+Results for wingtree30.txt
+Results for wingtree31.txt
+ioo(0) 107 | 58 | divinity | [8, 24, 16, 11, 7, 4, 11, 26] | [16, 8, 5, 4, 3, 7, 15] | [hr, dad] | HATJWRJY | JSYRO?R?R?Y? 
+ioo(1) 134 | 121 | divinity | [23, 27, 2, 27, 1, 25, 21, 8] | [4, 25, 25, 26, 24, 4, 13] | [hr, dhr] | DIOTHIOUAEINGH | H?IO?(FID)?IO?TOEINGJ 
+ioo(2) 142 | 87 | divinity | [24, 23, 2, 27, 17, 18, 26, 5] | [1, 21, 25, 10, 1, 8, 21] | [ad, dhr] | ADTHIOBEYC | SH(FID)?IO?GX?Y?TH 
+ioo(3) 89 | 65 | divinity | [10, 14, 9, 6, 26, 4, 5, 15] | [4, 5, 3, 20, 22, 1, 10] | [ad, dad] | IXNGYRCS | A(PAE)E?G??Y??R?THL 
+Results for wingtree32.txt
+ioo(0) 133 | 62 | divinity | [13, 7, 14, 23, 5, 17, 27, 27] | [6, 7, 9, 18, 12, 10, 0] | [hr, dad] | PWXDCBIOIO | (CM)O(PAE)HTHG?IO??IO? 
+ioo(1) 103 | 70 | divinity | [28, 11, 2, 9, 8, 20, 7, 18] | [17, 9, 7, 1, 12, 13, 11] | [ad, dad] | EAJTHNHLWE | ?EA?R(FID)EJIOOX 
+ioo(2) 107 | 77 | divinity | [15, 26, 5, 20, 11, 14, 16, 0] | [11, 21, 15, 9, 3, 2, 16] | [ad, dad] | SYCLJXTF | L?Y?THIOR(PAE)YN 
+Results for cuneiform33.txt
+ioo(0) 143 | 79 | divinity | [20, 24, 28, 0, 15, 26, 21, 9] | [4, 4, 28, 15, 11, 5, 12] | [ad, dhr] | LAEAFSYINGN | IOS?EA?NL?Y?INGE 
+ioo(1) 123 | 57 | divinity | [1, 1, 24, 25, 17, 9, 20, 26] | [0, 23, 1, 8, 8, 11, 6] | [hr, dhr] | UUAAEBNLY | TTSOEGEIO?Y? 
+ioo(2) 111 | 45 | divinity | [25, 24, 2, 6, 7, 19, 14, 14] | [1, 22, 4, 1, 12, 5, 0] | [hr, dhr] | AEATHGWMXX | OES(FID)?G?OW(PAE)(PAE) 
+Results for cuneiform34.txt
+ioo(0) 83 | 69 | divinity | [6, 23, 3, 0, 5, 20, 15, 11] | [17, 20, 3, 5, 15, 5, 4] | [ad, dhr] | GDOFCLSJ | ?G?H(UB)NTHIOLR 
+ioo(1) 112 | 69 | divinity | [12, 28, 12, 13, 12, 6, 2, 27] | [16, 16, 1, 1, 6, 4, 25] | [hr, dhr] | EOEAEOPEOGTHIO | EO?EA?EO(CM)EO?G?(FID)?IO? 
+Results for cuneiform35.txt
+ioo(0) 116 | 52 | divinity | [9, 23, 21, 19, 9, 16, 6, 13] | [14, 2, 2, 10, 7, 10, 7] | [hr, dhr] | NDINGMNTGP | EHINGWEY?G?(CM) 
+ioo(1) 84 | 53 | divinity | [2, 12, 24, 13, 9, 13, 10, 1] | [10, 12, 11, 4, 4, 3, 9] | [hr, dhr] | THEOAPNPIU | (FID)EOS(CM)E(CM)AT 
+ioo(2) 91 | 64 | divinity | [22, 4, 2, 16, 12, 19, 16, 0] | [18, 2, 14, 4, 7, 3, 16] | [hr, dad] | OERTHTEOMTF | EA?R?(FID)YEOWYN 
+ioo(3) 131 | 61 | divinity | [19, 25, 17, 24, 13, 23, 6, 4] | [6, 8, 7, 11, 10, 17, 2] | [ad, dad] | MAEBAPDGR | WOEGS(CM)H?G??R? 
+ioo(4) 93 | 83 | divinity | [16, 15, 19, 5, 12, 1, 24, 1] | [1, 4, 14, 7, 11, 23, 23] | [hr, dhr] | TSMCEOUAU | YLWTHEOTST 
+ioo(5) 70 | 68 | divinity | [0, 20, 25, 10, 1, 9, 1, 4] | [20, 5, 15, 9, 8, 8, 3] | [hr, dhr] | FLAEIUNUR | NIOOEATET?R? 
+Results for cuneiform36.txt
+ioo(0) 84 | 88 | divinity | [25, 4, 7, 24, 5, 14, 0, 5] | [21, 3, 17, 19, 9, 14, 5] | [hr, dad] | AERWACXFC | OE?R?OSTH(PAE)NTH 
+ioo(1) 59 | 48 | divinity | [5, 12, 22, 12, 2, 0, 5, 1] | [7, 10, 10, 10, 2, 5, 4] | [hr, dhr] | CEOOEEOTHFCU | THEOEAEO(FID)NTHT 
+ioo(2) 115 | 99 | divinity | [23, 12, 5, 1, 15, 28, 3, 28] | [11, 7, 4, 14, 13, 25, 25] | [hr, dhr] | DEOCUSEAOEA | HEOTHTL?EA?(UB)?EA? 
+ioo(3) 72 | 67 | divinity | [16, 7, 20, 3, 0, 0, 17, 9] | [9, 13, 17, 3, 0, 17, 8] | [hr, dhr] | TWLOFFBN | YOIO(UB)NNGE 
+Results for cuneiform37.txt
+ioo(0) 149 | 92 | divinity | [25, 11, 26, 13, 20, 7, 28, 19] | [14, 15, 13, 7, 13, 21, 9] | [ad, dhr] | AEJYPLWEAM | OER?Y?(CM)IOO?EA?W 
+ioo(1) 114 | 73 | divinity | [12, 12, 0, 24, 16, 6, 23, 21] | [0, 12, 24, 8, 10, 17, 2] | [hr, dad] | EOEOFATGDING | EOEONSY?G?HING 
+Results for cuneiform38.txt
+ioo(0) 84 | 34 | divinity | [10, 11, 19, 15, 17, 2, 4, 6] | [1, 8, 4, 2, 15, 2, 2] | [ad, dhr] | IJMSBTHRG | ARWLG(FID)?R??G? 
+Results for cuneiform39.txt
+ioo(0) 115 | 107 | divinity | [3, 11, 26, 9, 26, 2, 22, 16] | [8, 15, 17, 17, 24, 20, 6] | [hr, dhr] | OJYNYTHOET | (UB)R?Y?E?Y?(FID)EAY 
+Results for spiralbranch40.txt
+Results for spiralbranch41.txt
+ioo(0) 139 | 55 | divinity | [23, 21, 21, 2, 17, 12, 23, 20] | [2, 0, 19, 15, 5, 11, 3] | [hr, dad] | DINGINGTHBEODL | HINGING(FID)GEOHIO 
+ioo(1) 92 | 46 | divinity | [11, 8, 8, 14, 23, 23, 0, 5] | [3, 0, 6, 9, 0, 23, 5] | [hr, dhr] | JHHXDDFC | RJJ(PAE)HHNTH 
+ioo(2) 121 | 89 | divinity | [28, 26, 3, 0, 24, 21, 2, 17] | [2, 23, 3, 24, 3, 19, 15] | [ad, dhr] | EAYOFAINGTHB | ?EA??Y?(UB)NSING(FID)G 
+Results for spiralbranch42.txt
+ioo(0) 126 | 63 | divinity | [20, 10, 18, 6, 14, 19, 26, 13] | [10, 8, 12, 8, 5, 7, 13] | [ad, dhr] | LIEGXMYP | IOAX?G?(PAE)W?Y?(CM) 
+ioo(1) 77 | 84 | divinity | [9, 11, 3, 20, 4, 23, 6, 1] | [2, 8, 17, 16, 19, 17, 5] | [ad, dhr] | NJOLRDGU | ER(UB)IO?R?H?G?T 
+ioo(2) 121 | 54 | divinity | [16, 6, 22, 18, 8, 19, 16, 16] | [10, 16, 4, 10, 11, 3, 0] | [hr, dhr] | TGOEEHMTT | Y?G?EAXJWYY 
+ioo(3) 169 | 31 | divinity | [18, 17, 21, 26, 24, 28, 16, 19] | [1, 4, 5, 2, 4, 12, 3] | [ad, dhr] | EBINGYAEATM | XGING?Y?S?EA?YW 
+ioo(4) 133 | 47 | divinity | [16, 19, 13, 20, 23, 16, 21, 5] | [3, 6, 7, 3, 7, 5, 16] | [hr, dhr] | TMPLDTINGC | YW(CM)IOHYINGTH 
+Results for spiralbranch43.txt
+ioo(0) 82 | 44 | divinity | [11, 20, 24, 9, 4, 5, 8, 1] | [9, 4, 15, 5, 1, 3, 7] | [ad, dad] | JLANRCHU | RIOSE?R?THJT 
+ioo(1) 149 | 46 | divinity | [20, 19, 24, 13, 20, 17, 24, 12] | [1, 5, 11, 7, 3, 7, 12] | [hr, dhr] | LMAPLBAEO | IOWS(CM)IOGSEO 
+ioo(2) 163 | 49 | divinity | [5, 27, 26, 23, 19, 18, 27, 18] | [22, 1, 3, 4, 1, 9, 9] | [hr, dhr] | CIOYDMEIOE | TH?IO??Y?HWX?IO?X 
+ioo(3) 154 | 102 | divinity | [23, 28, 17, 24, 1, 26, 10, 25] | [5, 11, 7, 23, 25, 16, 15] | [ad, dad] | DEABAUYIAE | H?EA?GST?Y?AOE 
+ioo(4) 140 | 56 | divinity | [2, 27, 21, 19, 16, 25, 16, 14] | [25, 6, 2, 3, 9, 9, 2] | [hr, dhr] | THIOINGMTAETX | (FID)?IO?INGWYOEY(PAE) 
+Results for spiralbranch44.txt
+ioo(0) 91 | 43 | divinity | [8, 10, 17, 5, 9, 12, 9, 21] | [2, 7, 12, 4, 3, 3, 12] | [hr, dhr] | HIBCNEONING | JAGTHEEOEING 
+ioo(1) 109 | 65 | divinity | [11, 1, 28, 17, 12, 10, 10, 20] | [10, 27, 11, 5, 2, 0, 10] | [hr, dhr] | JUEABEOIIL | RT?EA?GEOAAIO 
+ioo(2) 98 | 91 | divinity | [4, 3, 15, 4, 23, 0, 24, 25] | [1, 12, 11, 19, 23, 24, 1] | [hr, dhr] | ROSRDFAAE | ?R?(UB)L?R?HNSOE 
+ioo(3) 115 | 84 | divinity | [20, 14, 5, 27, 17, 6, 2, 24] | [6, 9, 22, 10, 11, 4, 22] | [ad, dhr] | LXCIOBGTHA | IO(PAE)TH?IO?G?G?(FID)S 
+Results for spiralbranch45.txt
+ioo(0) 50 | 42 | divinity | [7, 0, 1, 1, 0, 19, 17, 5] | [7, 1, 0, 1, 19, 2, 12] | [hr, dhr] | WFUUFMBC | ONTTNWGTH 
+ioo(1) 118 | 79 | divinity | [27, 10, 23, 0, 8, 18, 14, 18] | [17, 13, 23, 8, 10, 4, 4] | [hr, dhr] | IOIDFHEXE | ?IO?AHNJX(PAE)X 
+ioo(2) 136 | 39 | divinity | [23, 16, 14, 16, 20, 13, 10, 24] | [7, 2, 2, 4, 7, 3, 14] | [hr, dhr] | DTXTLPIA | HY(PAE)YIO(CM)AS 
+ioo(3) 105 | 59 | divinity | [5, 17, 2, 6, 18, 14, 17, 26] | [12, 15, 4, 12, 4, 3, 9] | [hr, dhr] | CBTHGEXBY | THG(FID)?G?X(PAE)G?Y? 
+Results for spiralbranch46.txt
+ioo(0) 118 | 106 | divinity | [24, 6, 0, 27, 4, 24, 15, 18] | [18, 6, 27, 23, 20, 9, 3] | [hr, dad] | AGFIORASE | S?G?N?IO??R?SLX 
+ioo(1) 91 | 66 | divinity | [4, 21, 8, 19, 4, 12, 11, 12] | [17, 13, 11, 15, 8, 1, 1] | [hr, dhr] | RINGHMREOJEO | ?R?INGJW?R?EOREO 
+ioo(2) 155 | 63 | divinity | [21, 28, 12, 19, 16, 7, 24, 28] | [7, 16, 7, 3, 9, 17, 4] | [hr, dhr] | INGEAEOMTWAEA | ING?EA?EOWYOS?EA? 
+ioo(3) 140 | 79 | divinity | [27, 10, 18, 24, 18, 2, 13, 28] | [17, 8, 6, 6, 16, 11, 15] | [hr, dhr] | IOIEAETHPEA | ?IO?AXSX(FID)(CM)?EA? 
+Results for spiralbranch47.txt
+ioo(0) 157 | 42 | divinity | [23, 18, 19, 21, 25, 13, 23, 15] | [5, 1, 2, 4, 12, 10, 8] | [hr, dad] | DEMINGAEPDS | HXWINGOE(CM)HL 
+ioo(1) 128 | 72 | divinity | [23, 28, 28, 14, 6, 25, 1, 3] | [5, 0, 14, 8, 19, 24, 2] | [hr, dad] | DEAEAXGAEUO | H?EA??EA?(PAE)?G?OET(UB) 
+ioo(2) 131 | 48 | divinity | [2, 26, 25, 25, 21, 17, 13, 2] | [24, 1, 0, 4, 4, 4, 11] | [hr, dhr] | THYAEAEINGBPTH | (FID)?Y?OEOEINGG(CM)(FID) 
+Results for spiralbranch48.txt
+ioo(0) 159 | 33 | divinity | [25, 25, 17, 9, 17, 17, 23, 26] | [0, 8, 8, 8, 0, 6, 3] | [hr, dhr] | AEAEBNBBDY | OEOEGEGGH?Y? 
+ioo(1) 141 | 60 | divinity | [28, 11, 16, 20, 6, 13, 21, 26] | [17, 5, 4, 14, 7, 8, 5] | [ad, dhr] | EAJTLGPINGY | ?EA?RYIO?G?(CM)ING?Y? 
+ioo(2) 119 | 55 | divinity | [25, 0, 10, 7, 10, 23, 22, 22] | [25, 10, 3, 3, 13, 1, 0] | [hr, dhr] | AEFIWIDOEOE | OENAOAHEAEA 
+ioo(3) 88 | 51 | divinity | [18, 19, 0, 13, 17, 14, 4, 3] | [1, 19, 13, 4, 3, 10, 1] | [ad, dhr] | EMFPBXRO | XWN(CM)G(PAE)?R?(UB) 
+Results for spiralbranch49.txt
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+ioo(0) 99 | 88 | divinity | [1, 20, 8, 18, 9, 13, 3, 27] | [19, 12, 10, 9, 4, 10, 24] | [ad, dhr] | ULHENPOIO | TIOJXE(CM)(UB)?IO? 
+ioo(1) 126 | 59 | divinity | [21, 13, 20, 25, 11, 5, 7, 24] | [8, 7, 5, 14, 6, 2, 17] | [ad, dad] | INGPLAEJCWA | ING(CM)IOOERTHOS 
+ioo(2) 109 | 69 | divinity | [3, 22, 16, 25, 25, 8, 0, 10] | [19, 6, 9, 0, 17, 8, 10] | [hr, dad] | OOETAEAEHFI | (UB)EAYOEOEJNA 
+ioo(3) 106 | 64 | divinity | [25, 18, 25, 2, 10, 15, 4, 7] | [7, 7, 23, 8, 5, 11, 3] | [hr, dhr] | AEEAETHISRW | OEXOE(FID)AL?R?O 
+Results for spiralbranch54.txt
+ioo(0) 161 | 70 | divinity | [27, 14, 11, 28, 13, 26, 25, 17] | [13, 3, 17, 15, 13, 1, 8] | [ad, dhr] | IOXJEAPYAEB | ?IO?(PAE)R?EA?(CM)?Y?OEG 
+ioo(1) 101 | 39 | divinity | [1, 3, 2, 14, 16, 13, 28, 24] | [2, 1, 12, 2, 3, 15, 4] | [ad, dhr] | UOTHXTPEAA | T(UB)(FID)(PAE)Y(CM)?EA?S 
+ioo(2) 130 | 51 | divinity | [5, 2, 7, 19, 28, 24, 17, 28] | [3, 5, 12, 9, 4, 7, 11] | [hr, dad] | CTHWMEAABEA | TH(FID)OW?EA?SG?EA? 
+ioo(3) 103 | 45 | divinity | [5, 12, 13, 12, 19, 17, 5, 20] | [7, 1, 1, 7, 2, 12, 15] | [hr, dhr] | CEOPEOMBCL | THEO(CM)EOWGTHIO 
+ioo(4) 126 | 92 | divinity | [7, 28, 9, 22, 10, 18, 23, 9] | [21, 19, 13, 12, 8, 5, 14] | [hr, dad] | WEANOEIEDN | O?EA?EEAAXHE 
+ioo(5) 144 | 51 | divinity | [25, 6, 3, 15, 21, 27, 23, 24] | [19, 3, 12, 6, 6, 4, 1] | [ad, dhr] | AEGOSINGIODA | OE?G?(UB)LING?IO?HS 
+Results for hollow54.txt
+ioo(0) 146 | 73 | divinity | [25, 11, 22, 17, 22, 4, 23, 22] | [14, 11, 5, 5, 18, 19, 1] | [hr, dhr] | AEJOEBOERDOE | OEREAGEA?R?HEA 
+ioo(1) 117 | 58 | divinity | [4, 13, 12, 11, 21, 26, 8, 22] | [9, 1, 1, 10, 5, 18, 14] | [ad, dhr] | RPEOJINGYHOE | ?R?(CM)EORING?Y?JEA 
+ioo(2) 95 | 84 | divinity | [9, 1, 26, 18, 1, 10, 19, 11] | [8, 25, 8, 17, 9, 9, 8] | [hr, dhr] | NUYEUIMJ | ET?Y?XTAWR 
+ioo(3) 126 | 47 | divinity | [25, 22, 12, 16, 14, 17, 4, 16] | [3, 10, 4, 2, 3, 13, 12] | [hr, dhr] | AEOEEOTXBRT | OEEAEOY(PAE)G?R?Y 
+ioo(4) 76 | 56 | divinity | [15, 25, 2, 8, 11, 9, 1, 5] | [10, 23, 6, 3, 2, 8, 4] | [ad, dad] | SAETHHJNUC | LOE(FID)JRETTH 
+ioo(5) 73 | 66 | divinity | [24, 10, 3, 2, 4, 23, 7, 0] | [14, 7, 1, 2, 19, 16, 7] | [ad, dhr] | AIOTHRDWF | SA(UB)(FID)?R?HON 
+Results for hollow55.txt
+Results for spiralbranch55.txt
+ioo(0) 158 | 51 | divinity | [25, 28, 17, 27, 26, 7, 14, 14] | [3, 11, 10, 1, 19, 7, 0] | [hr, dad] | AEEABIOYWXX | OE?EA?G?IO??Y?O(PAE)(PAE) 

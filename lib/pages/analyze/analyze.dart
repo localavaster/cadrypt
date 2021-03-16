@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 
-import '../../models/crib_settings.dart';
 import './widgets/cipher_grid_container.dart';
 import './widgets/console_container.dart';
 import './widgets/frequency_container.dart';
@@ -10,9 +10,10 @@ import './widgets/selection_container.dart';
 import './widgets/statistics_container.dart';
 
 import 'analyze_state.dart';
+import 'widgets/similar_ngram_container.dart';
 
 class AnalyzePage extends StatefulWidget {
-  AnalyzePage({Key key}) : super(key: key);
+  const AnalyzePage({Key key}) : super(key: key);
 
   @override
   _AnalyzePageState createState() => _AnalyzePageState();
@@ -20,10 +21,8 @@ class AnalyzePage extends StatefulWidget {
 
 class _AnalyzePageState extends State<AnalyzePage> {
   final mainScrollController = ScrollController();
-  final frequencyScrollController = ScrollController();
-  final ngramScrollController = ScrollController();
 
-  final AnalyzeState state = AnalyzeState();
+  final AnalyzeState state = GetIt.I<AnalyzeState>();
 
   @override
   void initState() {
@@ -47,7 +46,7 @@ class _AnalyzePageState extends State<AnalyzePage> {
                   const SizedBox(width: 8),
                   SelectionContainer(state: state),
                   const SizedBox(width: 8),
-                  FrequencyContainer(frequencyScrollController: frequencyScrollController, state: state),
+                  FrequencyContainer(state: state),
                 ],
               ),
             ),
@@ -55,6 +54,7 @@ class _AnalyzePageState extends State<AnalyzePage> {
               padding: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16.0),
               child: Row(
                 children: [
+                  // ignore: prefer_const_constructors
                   StatisticsContainer(),
                   const SizedBox(
                     width: 8,
@@ -63,28 +63,15 @@ class _AnalyzePageState extends State<AnalyzePage> {
                   const SizedBox(
                     width: 8,
                   ),
-                  Expanded(
-                    child: SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.33,
-                      child: Material(
-                        elevation: 2,
-                        color: Theme.of(context).cardColor,
-                        child: Column(
-                          children: const [
-                            Text('Misc'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
+                  SimilarGramsContainer(state: state),
                   const SizedBox(
                     width: 8,
                   ),
-                  RepeatedGramsContainer(ngramScrollController: ngramScrollController, state: state),
+                  RepeatedGramsContainer(state: state),
                 ],
               ),
             ),
-            ConsoleContainer(),
+            const ConsoleContainer(),
           ],
         ),
       ),

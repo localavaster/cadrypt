@@ -1,0 +1,573 @@
+Starting global crib with output settings...
+shiftsum | shiftdifferencessum | cribword | shiftlist | shiftdifferences | shiftlistfacts | shiftsinwordform | shiftsingpform
+Results for cross0.txt
+ioo(0) 75 | 14 | seek | [16, 22, 17, 20] | [6, 5, 3] | [ad, diffs_decremental, dad] | TOEBL | YEAGIO 
+ioo(1) 92 | 16 | seek | [22, 28, 20, 22] | [6, 8, 2] | [is_even, hr, diffs_is_even, dad] | OEEALOE | EA?EA?IOEA 
+ioo(2) 29 | 12 | seek | [9, 3, 8, 9] | [6, 5, 1] | [hr, diffs_decremental, dad] | NOHN | E(UB)JE 
+ioo(3) 49 | 45 | seek | [1, 19, 7, 22] | [18, 12, 15] | [ad, dad] | UMWOE | TWOEA 
+ioo(4) 52 | 50 | seek | [11, 20, 0, 21] | [9, 20, 21] | [ad, diffs_incremental, dad] | JLFING | RIONING 
+ioo(5) 38 | 40 | seek | [8, 25, 3, 2] | [17, 22, 1] | [ad, dad] | HAEOTH | JOE(UB)(FID) 
+ioo(6) 64 | 37 | seek | [4, 27, 20, 13] | [23, 7, 7] | [ad, diffs_decremental, diffs_is_odd, dhr, diffs_all_prime] | RIOLP | ?R??IO?IO(CM) 
+ioo(7) 56 | 40 | seek | [11, 21, 5, 19] | [10, 16, 14] | [is_odd, ad, diffs_is_even, dad] | JINGCM | RINGTHW 
+ioo(8) 33 | 42 | seek | [4, 23, 2, 4] | [19, 21, 2] | [hr, dad] | RDTHR | ?R?H(FID)?R? 
+ioo(9) 40 | 32 | seek | [7, 5, 1, 27] | [2, 4, 26] | [is_odd, ad, diffs_incremental, diffs_is_even, dad] | WCUIO | OTHT?IO? 
+ioo(10) 43 | 34 | seek | [8, 6, 1, 28] | [2, 5, 27] | [ad, diffs_incremental, dad] | HGUEA | J?G?T?EA? 
+Results for cross1.txt
+ioo(0) 69 | 15 | seek | [19, 15, 13, 22] | [4, 2, 9] | [ad, dad] | MSPOE | WL(CM)EA 
+ioo(1) 68 | 28 | seek | [11, 25, 21, 11] | [14, 4, 10] | [is_odd, hr, diffs_is_even, dad] | JAEINGJ | ROEINGR 
+ioo(2) 44 | 32 | seek | [10, 22, 10, 2] | [12, 12, 8] | [is_even, hr, diffs_decremental, diffs_is_even, dhr] | IOEITH | AEAA(FID) 
+ioo(3) 52 | 23 | seek | [19, 11, 16, 6] | [8, 5, 10] | [ad, dad] | MJTG | WRY?G? 
+ioo(4) 75 | 9 | seek | [14, 18, 22, 21] | [4, 4, 1] | [ad, diffs_decremental, dhr] | XEOEING | (PAE)XEAING 
+ioo(5) 67 | 36 | seek | [5, 25, 26, 11] | [20, 1, 15] | [ad, dad] | CAEYJ | THOE?Y?R 
+Results for cross2.txt
+ioo(0) 68 | 10 | seek | [15, 13, 19, 21] | [2, 6, 2] | [is_odd, ad, diffs_is_even, dhr] | SPMING | L(CM)WING 
+ioo(1) 69 | 32 | seek | [12, 26, 13, 18] | [14, 13, 5] | [ad, diffs_decremental, dad] | EOYPE | EO?Y?(CM)X 
+ioo(2) 36 | 29 | seek | [27, 4, 5, 0] | [23, 1, 5] | [ad, diffs_is_odd, dad] | IORCF | ?IO??R?THN 
+Results for spiral3.txt
+ioo(0) 40 | 47 | seek | [0, 24, 15, 1] | [24, 9, 14] | [ad, dad] | FASU | NSLT 
+ioo(1) 36 | 7 | seek | [12, 10, 9, 5] | [2, 1, 4] | [decremental, ad, dad] | EOINC | EOAETH 
+ioo(2) 54 | 19 | seek | [4, 8, 19, 23] | [4, 11, 4] | [incremental, ad, dhr] | RHMD | ?R?JWH 
+ioo(3) 30 | 23 | seek | [2, 5, 16, 7] | [3, 11, 9] | [ad, diffs_is_odd, dad] | THCTW | (FID)THYO 
+ioo(4) 90 | 20 | seek | [25, 21, 27, 17] | [4, 6, 10] | [is_odd, ad, diffs_incremental, diffs_is_even, dad] | AEINGIOB | OEING?IO?G 
+ioo(5) 42 | 18 | seek | [19, 5, 9, 9] | [14, 4, 0] | [is_odd, hr, diffs_decremental, diffs_is_even, dad] | MCNN | WTHEE 
+Results for spiral4.txt
+ioo(0) 78 | 21 | seek | [27, 14, 15, 22] | [13, 1, 7] | [ad, diffs_is_odd, dad] | IOXSOE | ?IO?(PAE)LEA 
+ioo(1) 62 | 25 | seek | [5, 12, 25, 20] | [7, 13, 5] | [ad, diffs_is_odd, dad, diffs_all_prime] | CEOAEL | THEOOEIO 
+ioo(2) 27 | 23 | seek | [20, 2, 4, 1] | [18, 2, 3] | [ad, dad] | LTHRU | IO(FID)?R?T 
+ioo(3) 71 | 26 | seek | [16, 10, 25, 20] | [6, 15, 5] | [ad, dad] | TIAEL | YAOEIO 
+ioo(4) 68 | 23 | seek | [27, 21, 16, 4] | [6, 5, 12] | [decremental, ad, dad] | IOINGTR | ?IO?INGY?R? 
+ioo(5) 66 | 37 | seek | [17, 4, 17, 28] | [13, 13, 11] | [hr, diffs_decremental, diffs_is_odd, dhr, diffs_all_prime] | BRBEA | G?R?G?EA? 
+ioo(6) 44 | 19 | seek | [10, 4, 13, 17] | [6, 9, 4] | [ad, dad] | IRPB | A?R?(CM)G 
+ioo(7) 89 | 12 | seek | [27, 25, 22, 15] | [2, 3, 7] | [decremental, ad, diffs_incremental, dad, diffs_all_prime] | IOAEOES | ?IO?OEEAL 
+ioo(8) 52 | 44 | seek | [4, 25, 21, 2] | [21, 4, 19] | [ad, dad] | RAEINGTH | ?R?OEING(FID) 
+ioo(9) 65 | 48 | seek | [19, 27, 2, 17] | [8, 25, 15] | [ad, dad] | MIOTHB | W?IO?(FID)G 
+ioo(10) 83 | 22 | seek | [28, 17, 22, 16] | [11, 5, 6] | [ad, dad] | EABOET | ?EA?GEAY 
+ioo(11) 54 | 39 | seek | [15, 0, 21, 18] | [15, 21, 3] | [ad, diffs_is_odd, dad] | SFINGE | LNINGX 
+ioo(12) 55 | 36 | seek | [12, 2, 13, 28] | [10, 11, 15] | [ad, diffs_incremental, dad] | EOTHPEA | EO(FID)(CM)?EA? 
+Results for spiral5.txt
+ioo(0) 62 | 29 | seek | [20, 5, 18, 19] | [15, 13, 1] | [ad, diffs_decremental, diffs_is_odd, dad] | LCEM | IOTHXW 
+ioo(1) 86 | 13 | seek | [16, 24, 25, 21] | [8, 1, 4] | [ad, dad] | TAAEING | YSOEING 
+ioo(2) 46 | 35 | seek | [3, 10, 5, 28] | [7, 5, 23] | [ad, diffs_is_odd, dad, diffs_all_prime] | OICEA | (UB)ATH?EA? 
+ioo(3) 46 | 26 | seek | [11, 3, 11, 21] | [8, 8, 10] | [is_odd, hr, diffs_incremental, diffs_is_even, dhr] | JOJING | R(UB)RING 
+ioo(4) 54 | 29 | seek | [14, 5, 20, 15] | [9, 15, 5] | [ad, diffs_is_odd, dad] | XCLS | (PAE)THIOL 
+ioo(5) 79 | 21 | seek | [24, 14, 16, 25] | [10, 2, 9] | [ad, dad] | AXTAE | S(PAE)YOE 
+ioo(6) 60 | 48 | seek | [22, 5, 23, 10] | [17, 18, 13] | [ad, dad] | OECDI | EATHHA 
+ioo(7) 54 | 21 | seek | [15, 22, 9, 8] | [7, 13, 1] | [ad, diffs_is_odd, dad] | SOENH | LEAEJ 
+ioo(8) 51 | 33 | seek | [11, 7, 23, 10] | [4, 16, 13] | [ad, dad] | JWDI | ROHA 
+ioo(9) 82 | 16 | seek | [24, 22, 24, 12] | [2, 2, 12] | [is_even, hr, diffs_incremental, diffs_is_even, dhr] | AOEAEO | SEASEO 
+ioo(10) 58 | 43 | seek | [25, 6, 19, 8] | [19, 13, 11] | [ad, diffs_decremental, diffs_is_odd, dad, diffs_all_prime] | AEGMH | OE?G?WJ 
+ioo(11) 54 | 32 | seek | [10, 24, 14, 6] | [14, 10, 8] | [is_even, ad, diffs_decremental, diffs_is_even, dad] | IAXG | AS(PAE)?G? 
+ioo(12) 70 | 37 | seek | [28, 6, 15, 21] | [22, 9, 6] | [ad, diffs_decremental, dad] | EAGSING | ?EA??G?LING 
+Results for spiral6.txt
+ioo(0) 73 | 10 | seek | [15, 14, 21, 23] | [1, 7, 2] | [ad, dad] | SXINGD | L(PAE)INGH 
+ioo(1) 73 | 33 | seek | [9, 27, 25, 12] | [18, 2, 13] | [ad, dad] | NIOAEEO | E?IO?OEEO 
+ioo(2) 67 | 42 | seek | [20, 9, 26, 12] | [11, 17, 14] | [ad, dad] | LNYEO | IOE?Y?EO 
+ioo(3) 55 | 46 | seek | [19, 0, 9, 27] | [19, 9, 18] | [ad, dad] | MFNIO | WNE?IO? 
+ioo(4) 94 | 11 | seek | [17, 24, 25, 28] | [7, 1, 3] | [incremental, ad, diffs_is_odd, dad] | BAAEEA | GSOE?EA? 
+ioo(5) 59 | 36 | seek | [8, 26, 11, 14] | [18, 15, 3] | [ad, diffs_decremental, dad] | HYJX | J?Y?R(PAE) 
+ioo(6) 52 | 26 | seek | [4, 12, 22, 14] | [8, 10, 8] | [is_even, ad, diffs_is_even, dhr] | REOOEX | ?R?EOEA(PAE) 
+Results for spiral7.txt
+ioo(0) 63 | 36 | seek | [13, 1, 24, 25] | [12, 23, 1] | [ad, dad] | PUAAE | (CM)TSOE 
+ioo(1) 43 | 37 | seek | [13, 9, 21, 0] | [4, 12, 21] | [ad, diffs_incremental, dad] | PNINGF | (CM)EINGN 
+ioo(2) 39 | 27 | seek | [19, 2, 10, 8] | [17, 8, 2] | [ad, diffs_decremental, dad] | MTHIH | W(FID)AJ 
+ioo(3) 45 | 31 | seek | [12, 8, 20, 5] | [4, 12, 15] | [ad, diffs_incremental, dad] | EOHLC | EOJIOTH 
+ioo(4) 35 | 37 | seek | [5, 9, 21, 0] | [4, 12, 21] | [ad, diffs_incremental, dad] | CNINGF | THEINGN 
+ioo(5) 31 | 22 | seek | [2, 4, 3, 22] | [2, 1, 19] | [ad, dad] | THROOE | (FID)?R?(UB)EA 
+ioo(6) 65 | 36 | seek | [23, 8, 21, 13] | [15, 13, 8] | [ad, diffs_decremental, dad] | DHINGP | HJING(CM) 
+ioo(7) 28 | 24 | seek | [5, 12, 2, 9] | [7, 10, 7] | [ad, dhr] | CEOTHN | THEO(FID)E 
+ioo(8) 65 | 38 | seek | [26, 21, 2, 16] | [5, 19, 14] | [ad, dad] | YINGTHT | ?Y?ING(FID)Y 
+ioo(9) 67 | 41 | seek | [7, 27, 13, 20] | [20, 14, 7] | [ad, diffs_decremental, dad] | WIOPL | O?IO?(CM)IO 
+Results for branch8.txt
+ioo(0) 88 | 22 | seek | [28, 21, 25, 14] | [7, 4, 11] | [ad, dad] | EAINGAEX | ?EA?INGOE(PAE) 
+ioo(1) 81 | 21 | seek | [6, 21, 27, 27] | [15, 6, 0] | [incremental, hr, diffs_decremental, dad] | GINGIOIO | ?G?ING?IO??IO? 
+ioo(2) 40 | 22 | seek | [0, 2, 20, 18] | [2, 18, 2] | [is_even, ad, diffs_is_even, dhr] | FTHLE | N(FID)IOX 
+ioo(3) 50 | 37 | seek | [27, 3, 12, 8] | [24, 9, 4] | [ad, diffs_decremental, dad] | IOOEOH | ?IO?(UB)EOJ 
+ioo(4) 53 | 42 | seek | [11, 2, 25, 15] | [9, 23, 10] | [ad, dad] | JTHAES | R(FID)OEL 
+ioo(5) 72 | 33 | seek | [27, 18, 23, 4] | [9, 5, 19] | [ad, diffs_is_odd, dad] | IOEDR | ?IO?XH?R? 
+ioo(6) 57 | 48 | seek | [26, 7, 20, 4] | [19, 13, 16] | [ad, dad] | YWLR | ?Y?OIO?R? 
+ioo(7) 42 | 35 | seek | [17, 7, 0, 18] | [10, 7, 18] | [ad, dad] | BWFE | GONX 
+ioo(8) 71 | 46 | seek | [25, 16, 3, 27] | [9, 13, 24] | [ad, diffs_incremental, dad] | AETOIO | OEY(UB)?IO? 
+ioo(9) 33 | 34 | seek | [5, 11, 0, 17] | [6, 11, 17] | [ad, all_primes, diffs_incremental, dad] | CJFB | THRNG 
+Results for branch9.txt
+ioo(0) 67 | 30 | seek | [1, 19, 26, 21] | [18, 7, 5] | [ad, diffs_decremental, dad] | UMYING | TW?Y?ING 
+ioo(1) 65 | 7 | seek | [13, 15, 19, 18] | [2, 4, 1] | [ad, dad] | PSME | (CM)LWX 
+ioo(2) 80 | 43 | seek | [25, 8, 27, 20] | [17, 19, 7] | [ad, diffs_is_odd, dad, diffs_all_prime] | AEHIOL | OEJ?IO?IO 
+ioo(3) 53 | 34 | seek | [22, 5, 16, 10] | [17, 11, 6] | [ad, diffs_decremental, dad] | OECTI | EATHYA 
+ioo(4) 65 | 28 | seek | [20, 24, 21, 0] | [4, 3, 21] | [ad, dad] | LAINGF | IOSINGN 
+ioo(5) 96 | 11 | seek | [28, 21, 22, 25] | [7, 1, 3] | [ad, diffs_is_odd, dad] | EAINGOEAE | ?EA?INGEAOE 
+ioo(6) 41 | 28 | seek | [26, 4, 7, 4] | [22, 3, 3] | [hr, diffs_decremental, dhr] | YRWR | ?Y??R?O?R? 
+ioo(7) 39 | 22 | seek | [0, 4, 13, 22] | [4, 9, 9] | [incremental, ad, diffs_incremental, dhr] | FRPOE | N?R?(CM)EA 
+Results for branch10.txt
+ioo(0) 57 | 17 | seek | [20, 13, 9, 15] | [7, 4, 6] | [ad, dad] | LPNS | IO(CM)EL 
+ioo(1) 83 | 20 | seek | [14, 26, 25, 18] | [12, 1, 7] | [ad, dad] | XYAEE | (PAE)?Y?OEX 
+ioo(2) 56 | 28 | seek | [3, 17, 13, 23] | [14, 4, 10] | [is_odd, ad, all_primes, diffs_is_even, dad] | OBPD | (UB)G(CM)H 
+ioo(3) 26 | 19 | seek | [8, 4, 1, 13] | [4, 3, 12] | [ad, dad] | HRUP | J?R?T(CM) 
+ioo(4) 41 | 23 | seek | [0, 1, 17, 23] | [1, 16, 6] | [incremental, ad, dad] | FUBD | NTGH 
+ioo(5) 70 | 19 | seek | [26, 15, 12, 17] | [11, 3, 5] | [ad, diffs_is_odd, dad, diffs_all_prime] | YSEOB | ?Y?LEOG 
+ioo(6) 37 | 51 | seek | [5, 0, 26, 6] | [5, 26, 20] | [ad, dad] | CFYG | THN?Y??G? 
+ioo(7) 60 | 40 | seek | [1, 24, 14, 21] | [23, 10, 7] | [ad, diffs_decremental, dad] | UAXING | TS(PAE)ING 
+ioo(8) 47 | 59 | seek | [5, 22, 0, 20] | [17, 22, 20] | [ad, dad] | COEFL | THEANIO 
+ioo(9) 33 | 41 | seek | [0, 20, 4, 9] | [20, 16, 5] | [ad, diffs_decremental, dad] | FLRN | NIO?R?E 
+Results for branch11.txt
+ioo(0) 67 | 27 | seek | [12, 26, 16, 13] | [14, 10, 3] | [ad, diffs_decremental, dad] | EOYTP | EO?Y?Y(CM) 
+ioo(1) 80 | 7 | seek | [16, 20, 21, 23] | [4, 1, 2] | [incremental, ad, dad] | TLINGD | YIOINGH 
+ioo(2) 71 | 49 | seek | [25, 2, 16, 28] | [23, 14, 12] | [ad, diffs_decremental, dad] | AETHTEA | OE(FID)Y?EA? 
+ioo(3) 39 | 27 | seek | [4, 2, 20, 13] | [2, 18, 7] | [ad, dad] | RTHLP | ?R?(FID)IO(CM) 
+ioo(4) 76 | 28 | seek | [22, 9, 23, 22] | [13, 14, 1] | [hr, dad] | OENDOE | EAEHEA 
+ioo(5) 56 | 8 | seek | [19, 12, 12, 13] | [7, 0, 1] | [hr, dad] | MEOEOP | WEOEO(CM) 
+ioo(6) 69 | 14 | seek | [23, 23, 14, 9] | [0, 9, 5] | [decremental, hr, dad] | DDXN | HH(PAE)E 
+ioo(7) 92 | 31 | seek | [26, 27, 12, 27] | [1, 15, 15] | [hr, diffs_incremental, diffs_is_odd, dhr] | YIOEOIO | ?Y??IO?EO?IO? 
+ioo(8) 35 | 15 | seek | [0, 11, 13, 11] | [11, 2, 2] | [hr, all_primes, diffs_decremental, dhr, diffs_all_prime] | FJPJ | NR(CM)R 
+Results for branch12.txt
+ioo(0) 76 | 9 | seek | [16, 16, 19, 25] | [0, 3, 6] | [incremental, hr, diffs_incremental, dad] | TTMAE | YYWOE 
+ioo(1) 56 | 25 | seek | [14, 13, 6, 23] | [1, 7, 17] | [ad, diffs_incremental, diffs_is_odd, dad] | XPGD | (PAE)(CM)?G?H 
+ioo(2) 43 | 8 | seek | [8, 11, 10, 14] | [3, 1, 4] | [ad, dad] | HJIX | JRA(PAE) 
+ioo(3) 69 | 33 | seek | [4, 21, 27, 17] | [17, 6, 10] | [ad, dad] | RINGIOB | ?R?ING?IO?G 
+ioo(4) 59 | 31 | seek | [22, 8, 18, 11] | [14, 10, 7] | [ad, diffs_decremental, dad] | OEHEJ | EAJXR 
+ioo(5) 51 | 40 | seek | [5, 27, 10, 9] | [22, 17, 1] | [ad, diffs_decremental, dad] | CIOIN | TH?IO?AE 
+ioo(6) 62 | 36 | seek | [7, 26, 20, 9] | [19, 6, 11] | [ad, dad] | WYLN | O?Y?IOE 
+ioo(7) 69 | 24 | seek | [21, 27, 10, 11] | [6, 17, 1] | [ad, dad] | INGIOIJ | ING?IO?AR 
+ioo(8) 37 | 16 | seek | [3, 12, 9, 13] | [9, 3, 4] | [ad, dad] | OEONP | (UB)EOE(CM) 
+ioo(9) 65 | 8 | seek | [13, 13, 18, 21] | [0, 5, 3] | [incremental, hr, dad, diffs_all_prime] | PPEING | (CM)(CM)XING 
+ioo(10) 36 | 41 | seek | [1, 22, 5, 8] | [21, 17, 3] | [ad, diffs_decremental, diffs_is_odd, dad] | UOECH | TEATHJ 
+ioo(11) 49 | 18 | seek | [5, 17, 16, 11] | [12, 1, 5] | [ad, dad] | CBTJ | THGYR 
+ioo(12) 70 | 17 | seek | [8, 20, 19, 23] | [12, 1, 4] | [ad, dad] | HLMD | JIOWH 
+ioo(13) 43 | 26 | seek | [14, 20, 9, 0] | [6, 11, 9] | [ad, dad] | XLNF | (PAE)IOEN 
+ioo(14) 64 | 38 | seek | [27, 17, 3, 17] | [10, 14, 14] | [is_odd, hr, diffs_incremental, diffs_is_even, dhr] | IOBOB | ?IO?G(UB)G 
+Results for branch13.txt
+ioo(0) 49 | 44 | seek | [23, 7, 18, 1] | [16, 11, 17] | [ad, dad] | DWEU | HOXT 
+ioo(1) 57 | 34 | seek | [28, 14, 3, 12] | [14, 11, 9] | [ad, diffs_decremental, dad] | EAXOEO | ?EA?(PAE)(UB)EO 
+ioo(2) 53 | 42 | seek | [3, 27, 14, 9] | [24, 13, 5] | [ad, diffs_decremental, dad] | OIOXN | (UB)?IO?(PAE)E 
+ioo(3) 32 | 22 | seek | [11, 1, 11, 9] | [10, 10, 2] | [is_odd, hr, diffs_decremental, diffs_is_even, dhr] | JUJN | RTRE 
+ioo(4) 27 | 10 | seek | [11, 9, 6, 1] | [2, 3, 5] | [decremental, ad, diffs_incremental, dad, diffs_all_prime] | JNGU | RE?G?T 
+ioo(5) 73 | 28 | seek | [16, 20, 11, 26] | [4, 9, 15] | [ad, diffs_incremental, dad] | TLJY | YIOR?Y? 
+ioo(6) 79 | 12 | seek | [17, 24, 19, 19] | [7, 5, 0] | [hr, diffs_decremental, dad, diffs_all_prime] | BAMM | GSWW 
+ioo(7) 63 | 46 | seek | [12, 25, 6, 20] | [13, 19, 14] | [ad, dad] | EOAEGL | EOOE?G?IO 
+ioo(8) 59 | 27 | seek | [0, 9, 23, 27] | [9, 14, 4] | [incremental, ad, dad] | FNDIO | NEH?IO? 
+ioo(9) 75 | 50 | seek | [16, 25, 6, 28] | [9, 19, 22] | [ad, diffs_incremental, dad] | TAEGEA | YOE?G??EA? 
+ioo(10) 60 | 23 | seek | [8, 18, 13, 21] | [10, 5, 8] | [ad, dad] | HEPING | JX(CM)ING 
+ioo(11) 66 | 32 | seek | [26, 16, 6, 18] | [10, 10, 12] | [is_even, ad, diffs_incremental, diffs_is_even, dhr] | YTGE | ?Y?Y?G?X 
+ioo(12) 62 | 36 | seek | [13, 12, 28, 9] | [1, 16, 19] | [ad, diffs_incremental, dad] | PEOEAN | (CM)EO?EA?E 
+ioo(13) 57 | 27 | seek | [12, 21, 9, 15] | [9, 12, 6] | [ad, dad] | EOINGNS | EOINGEL 
+ioo(14) 77 | 24 | seek | [20, 26, 13, 18] | [6, 13, 5] | [ad, dad] | LYPE | IO?Y?(CM)X 
+ioo(15) 63 | 13 | seek | [14, 12, 14, 23] | [2, 2, 9] | [hr, diffs_incremental, dhr] | XEOXD | (PAE)EO(PAE)H 
+ioo(16) 50 | 42 | seek | [5, 26, 8, 11] | [21, 18, 3] | [ad, diffs_decremental, dad] | CYHJ | TH?Y?JR 
+ioo(17) 56 | 46 | seek | [0, 24, 26, 6] | [24, 2, 20] | [is_even, ad, diffs_is_even, dad] | FAYG | NS?Y??G? 
+Results for branch14.txt
+ioo(0) 48 | 28 | seek | [14, 14, 2, 18] | [0, 12, 16] | [is_even, hr, diffs_incremental, diffs_is_even, dad] | XXTHE | (PAE)(PAE)(FID)X 
+ioo(1) 40 | 25 | seek | [7, 8, 3, 22] | [1, 5, 19] | [ad, diffs_incremental, diffs_is_odd, dad] | WHOOE | OJ(UB)EA 
+ioo(2) 78 | 41 | seek | [28, 9, 24, 17] | [19, 15, 7] | [ad, diffs_decremental, diffs_is_odd, dad] | EANAB | ?EA?ESG 
+Results for mobius15.txt
+ioo(0) 42 | 24 | seek | [14, 12, 2, 14] | [2, 10, 12] | [is_even, hr, diffs_incremental, diffs_is_even, dad] | XEOTHX | (PAE)EO(FID)(PAE) 
+ioo(1) 82 | 25 | seek | [24, 12, 21, 25] | [12, 9, 4] | [ad, diffs_decremental, dad] | AEOINGAE | SEOINGOE 
+ioo(2) 90 | 13 | seek | [14, 26, 25, 25] | [12, 1, 0] | [hr, diffs_decremental, dad] | XYAEAE | (PAE)?Y?OEOE 
+ioo(3) 28 | 19 | seek | [17, 5, 6, 0] | [12, 1, 6] | [ad, dad] | BCGF | GTH?G?N 
+ioo(4) 86 | 21 | seek | [15, 27, 26, 18] | [12, 1, 8] | [ad, dad] | SIOYE | L?IO??Y?X 
+ioo(5) 49 | 22 | seek | [16, 12, 5, 16] | [4, 7, 11] | [hr, diffs_incremental, dad] | TEOCT | YEOTHY 
+ioo(6) 62 | 22 | seek | [7, 9, 25, 21] | [2, 16, 4] | [is_odd, ad, diffs_is_even, dad] | WNAEING | OEOEING 
+ioo(7) 57 | 38 | seek | [18, 13, 2, 24] | [5, 11, 22] | [ad, diffs_incremental, dad] | EPTHA | X(CM)(FID)S 
+Results for mobius16.txt
+ioo(0) 56 | 18 | seek | [22, 17, 7, 10] | [5, 10, 3] | [ad, dad] | OEBWI | EAGOA 
+ioo(1) 63 | 26 | seek | [27, 18, 17, 1] | [9, 1, 16] | [decremental, ad, dad] | IOEBU | ?IO?XGT 
+ioo(2) 58 | 35 | seek | [20, 4, 11, 23] | [16, 7, 12] | [ad, dad] | LRJD | IO?R?RH 
+ioo(3) 64 | 23 | seek | [28, 10, 11, 15] | [18, 1, 4] | [ad, dad] | EAIJS | ?EA?ARL 
+ioo(4) 59 | 57 | seek | [5, 23, 5, 26] | [18, 18, 21] | [hr, diffs_incremental, dhr] | CDCY | THHTH?Y? 
+ioo(5) 49 | 39 | seek | [11, 0, 22, 16] | [11, 22, 6] | [ad, dad] | JFOET | RNEAY 
+ioo(6) 68 | 9 | seek | [15, 16, 15, 22] | [1, 1, 7] | [hr, diffs_incremental, diffs_is_odd, dhr] | STSOE | LYLEA 
+ioo(7) 65 | 10 | seek | [12, 14, 17, 22] | [2, 3, 5] | [incremental, ad, diffs_incremental, dad, diffs_all_prime] | EOXBOE | EO(PAE)GEA 
+Results for mobius17.txt
+ioo(0) 65 | 37 | seek | [12, 6, 28, 19] | [6, 22, 9] | [ad, dad] | EOGEAM | EO?G??EA?W 
+ioo(1) 46 | 23 | seek | [6, 9, 20, 11] | [3, 11, 9] | [ad, diffs_is_odd, dad] | GNLJ | ?G?EIOR 
+ioo(2) 81 | 11 | seek | [23, 22, 16, 20] | [1, 6, 4] | [ad, dad] | DOETL | HEAYIO 
+ioo(3) 82 | 17 | seek | [12, 22, 21, 27] | [10, 1, 6] | [ad, dad] | EOOEINGIO | EOEAING?IO? 
+ioo(4) 62 | 19 | seek | [26, 13, 14, 9] | [13, 1, 5] | [ad, diffs_is_odd, dad] | YPXN | ?Y?(CM)(PAE)E 
+ioo(5) 39 | 18 | seek | [20, 12, 5, 2] | [8, 7, 3] | [decremental, ad, diffs_decremental, dad] | LEOCTH | IOEOTH(FID) 
+ioo(6) 50 | 24 | seek | [0, 8, 22, 20] | [8, 14, 2] | [is_even, ad, diffs_is_even, dad] | FHOEL | NJEAIO 
+ioo(7) 44 | 26 | seek | [10, 4, 6, 24] | [6, 2, 18] | [is_even, ad, diffs_is_even, dad] | IRGA | A?R??G?S 
+ioo(8) 74 | 21 | seek | [20, 14, 23, 17] | [6, 9, 6] | [ad, dhr] | LXDB | IO(PAE)HG 
+ioo(9) 71 | 21 | seek | [24, 13, 19, 15] | [11, 6, 4] | [ad, diffs_decremental, dad] | APMS | S(CM)WL 
+ioo(10) 65 | 32 | seek | [1, 22, 25, 17] | [21, 3, 8] | [ad, dad] | UOEAEB | TEAOEG 
+ioo(11) 35 | 15 | seek | [7, 11, 13, 4] | [4, 2, 9] | [ad, dad] | WJPR | OR(CM)?R? 
+ioo(12) 67 | 41 | seek | [13, 2, 28, 24] | [11, 26, 4] | [ad, dad] | PTHEAA | (CM)(FID)?EA?S 
+Results for mobius18.txt
+ioo(0) 68 | 44 | seek | [21, 14, 28, 5] | [7, 14, 23] | [ad, diffs_incremental, dad] | INGXEAC | ING(PAE)?EA?TH 
+ioo(1) 64 | 19 | seek | [24, 23, 12, 5] | [1, 11, 7] | [decremental, ad, diffs_is_odd, dad] | ADEOC | SHEOTH 
+ioo(2) 65 | 18 | seek | [6, 20, 21, 18] | [14, 1, 3] | [ad, dad] | GLINGE | ?G?IOINGX 
+ioo(3) 24 | 20 | seek | [1, 5, 13, 5] | [4, 8, 8] | [is_odd, hr, diffs_incremental, diffs_is_even, dhr] | UCPC | TTH(CM)TH 
+ioo(4) 25 | 14 | seek | [9, 5, 2, 9] | [4, 3, 7] | [hr, dad] | NCTHN | ETH(FID)E 
+ioo(5) 44 | 31 | seek | [7, 15, 20, 2] | [8, 5, 18] | [ad, dad] | WSLTH | OLIO(FID) 
+ioo(6) 58 | 53 | seek | [14, 1, 28, 15] | [13, 27, 13] | [ad, diffs_is_odd, dhr] | XUEAS | (PAE)T?EA?L 
+ioo(7) 58 | 48 | seek | [19, 4, 24, 11] | [15, 20, 13] | [ad, dad] | MRAJ | W?R?SR 
+ioo(8) 60 | 11 | seek | [15, 11, 16, 18] | [4, 5, 2] | [ad, dad] | SJTE | LRYX 
+ioo(9) 30 | 29 | seek | [8, 1, 0, 21] | [7, 1, 21] | [ad, diffs_is_odd, dad] | HUFING | JTNING 
+Results for mobius19.txt
+ioo(0) 52 | 12 | seek | [18, 14, 14, 6] | [4, 0, 8] | [decremental, is_even, hr, diffs_is_even, dad] | EXXG | X(PAE)(PAE)?G? 
+ioo(1) 63 | 45 | seek | [26, 10, 22, 5] | [16, 12, 17] | [ad, dad] | YIOEC | ?Y?AEATH 
+ioo(2) 51 | 16 | seek | [16, 17, 16, 2] | [1, 1, 14] | [hr, diffs_incremental, dhr] | TBTTH | YGY(FID) 
+ioo(3) 62 | 25 | seek | [25, 17, 18, 2] | [8, 1, 16] | [ad, dad] | AEBETH | OEGX(FID) 
+ioo(4) 61 | 13 | seek | [18, 21, 11, 11] | [3, 10, 0] | [hr, dad] | EINGJJ | XINGRR 
+ioo(5) 57 | 17 | seek | [10, 17, 19, 11] | [7, 2, 8] | [ad, dad] | IBMJ | AGWR 
+ioo(6) 49 | 63 | seek | [1, 28, 4, 16] | [27, 24, 12] | [ad, diffs_decremental, dad] | UEART | T?EA??R?Y 
+ioo(7) 46 | 14 | seek | [8, 9, 17, 12] | [1, 8, 5] | [ad, dad] | HNBEO | JEGEO 
+ioo(8) 26 | 25 | seek | [9, 0, 1, 16] | [9, 1, 15] | [ad, diffs_is_odd, dad] | NFUT | ENTY 
+ioo(9) 65 | 33 | seek | [27, 14, 6, 18] | [13, 8, 12] | [ad, dad] | IOXGE | ?IO?(PAE)?G?X 
+Results for mobius20.txt
+ioo(0) 46 | 15 | seek | [15, 8, 13, 10] | [7, 5, 3] | [ad, diffs_decremental, diffs_is_odd, dad, diffs_all_prime] | SHPI | LJ(CM)A 
+ioo(1) 49 | 14 | seek | [15, 16, 15, 3] | [1, 1, 12] | [hr, diffs_incremental, dhr] | STSO | LYL(UB) 
+ioo(2) 65 | 36 | seek | [25, 12, 21, 7] | [13, 9, 14] | [ad, dad] | AEEOINGW | OEEOINGO 
+ioo(3) 46 | 11 | seek | [6, 9, 16, 15] | [3, 7, 1] | [ad, diffs_is_odd, dad] | GNTS | ?G?EYL 
+ioo(4) 57 | 43 | seek | [26, 11, 1, 19] | [15, 10, 18] | [ad, dad] | YJUM | ?Y?RTW 
+ioo(5) 60 | 62 | seek | [20, 2, 28, 10] | [18, 26, 18] | [is_even, ad, diffs_is_even, dhr] | LTHEAI | IO(FID)?EA?A 
+ioo(6) 72 | 27 | seek | [21, 27, 10, 14] | [6, 17, 4] | [ad, dad] | INGIOIX | ING?IO?A(PAE) 
+ioo(7) 93 | 14 | seek | [19, 25, 22, 27] | [6, 3, 5] | [ad, dad] | MAEOEIO | WOEEA?IO? 
+ioo(8) 70 | 33 | seek | [24, 8, 21, 17] | [16, 13, 4] | [ad, diffs_decremental, dad] | AHINGB | SJINGG 
+ioo(9) 59 | 29 | seek | [1, 17, 15, 26] | [16, 2, 11] | [ad, dad] | UBSY | TGL?Y? 
+ioo(10) 66 | 44 | seek | [12, 28, 26, 0] | [16, 2, 26] | [is_even, ad, diffs_is_even, dad] | EOEAYF | EO?EA??Y?N 
+ioo(11) 48 | 23 | seek | [12, 4, 17, 15] | [8, 13, 2] | [ad, dad] | EORBS | EO?R?GL 
+Results for mobius21.txt
+ioo(0) 69 | 63 | seek | [27, 6, 28, 8] | [21, 22, 20] | [ad, dad] | IOGEAH | ?IO??G??EA?J 
+ioo(1) 22 | 11 | seek | [12, 8, 1, 1] | [4, 7, 0] | [decremental, hr, dad] | EOHUU | EOJTT 
+ioo(2) 89 | 24 | seek | [27, 19, 26, 17] | [8, 7, 9] | [ad, dad] | IOMYB | ?IO?W?Y?G 
+ioo(3) 72 | 27 | seek | [18, 8, 21, 25] | [10, 13, 4] | [ad, dad] | EHINGAE | XJINGOE 
+ioo(4) 100 | 20 | seek | [28, 18, 26, 28] | [10, 8, 2] | [is_even, hr, diffs_decremental, diffs_is_even, dad] | EAEYEA | ?EA?X?Y??EA? 
+ioo(5) 95 | 10 | seek | [17, 25, 26, 27] | [8, 1, 1] | [incremental, ad, diffs_decremental, dhr] | BAEYIO | GOE?Y??IO? 
+ioo(6) 64 | 56 | seek | [25, 11, 27, 1] | [14, 16, 26] | [is_odd, ad, diffs_incremental, diffs_is_even, dad] | AEJIOU | OER?IO?T 
+Results for mobius22.txt
+ioo(0) 74 | 17 | seek | [9, 19, 20, 26] | [10, 1, 6] | [incremental, ad, dad] | NMLY | EWIO?Y? 
+ioo(1) 58 | 75 | seek | [3, 26, 1, 28] | [23, 25, 27] | [ad, diffs_incremental, diffs_is_odd, dad] | OYUEA | (UB)?Y?T?EA? 
+ioo(2) 73 | 26 | seek | [15, 22, 13, 23] | [7, 9, 10] | [ad, diffs_incremental, dad] | SOEPD | LEA(CM)H 
+ioo(3) 46 | 12 | seek | [7, 10, 10, 19] | [3, 0, 9] | [incremental, hr, dad] | WIIM | OAAW 
+ioo(4) 78 | 29 | seek | [26, 25, 8, 19] | [1, 17, 11] | [ad, diffs_is_odd, dad] | YAEHM | ?Y?OEJW 
+Results for mayfly23.txt
+ioo(0) 74 | 26 | seek | [9, 22, 26, 17] | [13, 4, 9] | [ad, dad] | NOEYB | EEA?Y?G 
+ioo(1) 59 | 10 | seek | [15, 18, 15, 11] | [3, 3, 4] | [hr, diffs_incremental, dhr] | SESJ | LXLR 
+ioo(2) 37 | 41 | seek | [0, 0, 26, 11] | [0, 26, 15] | [hr, dad] | FFYJ | NN?Y?R 
+ioo(3) 37 | 33 | seek | [5, 18, 4, 10] | [13, 14, 6] | [ad, dad] | CERI | THX?R?A 
+ioo(4) 59 | 55 | seek | [5, 27, 7, 20] | [22, 20, 13] | [ad, diffs_decremental, dad] | CIOWL | TH?IO?OIO 
+ioo(5) 66 | 53 | seek | [23, 2, 25, 16] | [21, 23, 9] | [ad, diffs_is_odd, dad] | DTHAET | H(FID)OEY 
+ioo(6) 54 | 24 | seek | [24, 9, 7, 14] | [15, 2, 7] | [ad, dad] | ANWX | SEO(PAE) 
+ioo(7) 54 | 44 | seek | [22, 0, 18, 14] | [22, 18, 4] | [is_even, ad, diffs_decremental, diffs_is_even, dad] | OEFEX | EANX(PAE) 
+ioo(8) 64 | 35 | seek | [9, 19, 10, 26] | [10, 9, 16] | [ad, dad] | NMIY | EWA?Y? 
+Results for mayfly24.txt
+ioo(0) 60 | 27 | seek | [23, 16, 19, 2] | [7, 3, 17] | [ad, diffs_is_odd, dad, diffs_all_prime] | DTMTH | HYW(FID) 
+ioo(1) 66 | 36 | seek | [21, 4, 18, 23] | [17, 14, 5] | [ad, diffs_decremental, dad] | INGRED | ING?R?XH 
+ioo(2) 65 | 35 | seek | [23, 25, 3, 14] | [2, 22, 11] | [ad, dad] | DAEOX | HOE(UB)(PAE) 
+ioo(3) 57 | 43 | seek | [21, 5, 21, 10] | [16, 16, 11] | [hr, diffs_decremental, dhr] | INGCINGI | INGTHINGA 
+ioo(4) 50 | 40 | seek | [17, 7, 1, 25] | [10, 6, 24] | [is_odd, ad, diffs_is_even, dad] | BWUAE | GOTOE 
+ioo(5) 52 | 16 | seek | [4, 14, 14, 20] | [10, 0, 6] | [incremental, is_even, hr, diffs_is_even, dad] | RXXL | ?R?(PAE)(PAE)IO 
+ioo(6) 34 | 43 | seek | [0, 15, 2, 17] | [15, 13, 15] | [ad, diffs_is_odd, dhr] | FSTHB | NL(FID)G 
+ioo(7) 44 | 22 | seek | [7, 10, 6, 21] | [3, 4, 15] | [ad, diffs_incremental, dad] | WIGING | OA?G?ING 
+ioo(8) 50 | 35 | seek | [3, 24, 11, 12] | [21, 13, 1] | [ad, diffs_decremental, diffs_is_odd, dad] | OAJEO | (UB)SREO 
+ioo(9) 54 | 17 | seek | [18, 13, 16, 7] | [5, 3, 9] | [ad, diffs_is_odd, dad] | EPTW | X(CM)YO 
+ioo(10) 71 | 31 | seek | [13, 27, 21, 10] | [14, 6, 11] | [ad, dad] | PIOINGI | (CM)?IO?INGA 
+ioo(11) 55 | 27 | seek | [1, 7, 19, 28] | [6, 12, 9] | [incremental, ad, dad] | UWMEA | TOW?EA? 
+ioo(12) 58 | 33 | seek | [18, 3, 16, 21] | [15, 13, 5] | [ad, diffs_decremental, diffs_is_odd, dad] | EOTING | X(UB)YING 
+Results for mayfly25.txt
+ioo(0) 53 | 26 | seek | [5, 3, 24, 21] | [2, 21, 3] | [ad, dad] | COAING | TH(UB)SING 
+ioo(1) 60 | 63 | seek | [3, 27, 6, 24] | [24, 21, 18] | [ad, diffs_decremental, dad] | OIOGA | (UB)?IO??G?S 
+ioo(2) 48 | 33 | seek | [0, 6, 25, 17] | [6, 19, 8] | [ad, dad] | FGAEB | N?G?OEG 
+ioo(3) 56 | 42 | seek | [23, 2, 18, 13] | [21, 16, 5] | [ad, diffs_decremental, dad] | DTHEP | H(FID)X(CM) 
+ioo(4) 62 | 39 | seek | [20, 2, 17, 23] | [18, 15, 6] | [ad, diffs_decremental, dad] | LTHBD | IO(FID)GH 
+ioo(5) 42 | 19 | seek | [13, 5, 8, 16] | [8, 3, 8] | [ad, dhr] | PCHT | (CM)THJY 
+ioo(6) 66 | 23 | seek | [24, 10, 17, 15] | [14, 7, 2] | [ad, diffs_decremental, dad] | AIBS | SAGL 
+ioo(7) 51 | 50 | seek | [4, 19, 4, 24] | [15, 15, 20] | [hr, diffs_incremental, dhr] | RMRA | ?R?W?R?S 
+ioo(8) 86 | 28 | seek | [18, 26, 16, 26] | [8, 10, 10] | [is_even, hr, diffs_incremental, diffs_is_even, dhr] | EYTY | X?Y?Y?Y? 
+ioo(9) 68 | 39 | seek | [26, 17, 4, 21] | [9, 13, 17] | [ad, diffs_incremental, diffs_is_odd, dad] | YBRING | ?Y?G?R?ING 
+ioo(10) 38 | 35 | seek | [2, 20, 13, 3] | [18, 7, 10] | [ad, dad] | THLPO | (FID)IO(CM)(UB) 
+ioo(11) 79 | 20 | seek | [20, 19, 26, 14] | [1, 7, 12] | [ad, diffs_incremental, dad] | LMYX | IOW?Y?(PAE) 
+Results for mayfly26.txt
+ioo(0) 74 | 30 | seek | [17, 20, 10, 27] | [3, 10, 17] | [ad, diffs_incremental, dad] | BLIIO | GIOA?IO? 
+ioo(1) 34 | 20 | seek | [23, 5, 3, 3] | [18, 2, 0] | [decremental, is_odd, hr, all_primes, diffs_decremental, diffs_is_even, dad] | DCOO | HTH(UB)(UB) 
+ioo(2) 46 | 24 | seek | [6, 19, 13, 8] | [13, 6, 5] | [ad, diffs_decremental, dad] | GMPH | ?G?W(CM)J 
+ioo(3) 57 | 12 | seek | [16, 11, 16, 14] | [5, 5, 2] | [hr, diffs_decremental, dhr, diffs_all_prime] | TJTX | YRY(PAE) 
+ioo(4) 75 | 13 | seek | [27, 19, 15, 14] | [8, 4, 1] | [decremental, ad, diffs_decremental, dad] | IOMSX | ?IO?WL(PAE) 
+ioo(5) 55 | 44 | seek | [18, 3, 22, 12] | [15, 19, 10] | [ad, dad] | EOOEEO | X(UB)EAEO 
+ioo(6) 73 | 28 | seek | [15, 10, 27, 21] | [5, 17, 6] | [ad, dad] | SIIOING | LA?IO?ING 
+ioo(7) 52 | 54 | seek | [3, 26, 6, 17] | [23, 20, 11] | [ad, diffs_decremental, dad] | OYGB | (UB)?Y??G?G 
+ioo(8) 31 | 25 | seek | [1, 11, 15, 4] | [10, 4, 11] | [ad, dad] | UJSR | TRL?R? 
+Results for wingtree27.txt
+ioo(0) 55 | 39 | seek | [5, 26, 16, 8] | [21, 10, 8] | [ad, diffs_decremental, dad] | CYTH | TH?Y?YJ 
+ioo(1) 21 | 20 | seek | [18, 1, 2, 0] | [17, 1, 2] | [ad, dad] | EUTHF | XT(FID)N 
+ioo(2) 67 | 38 | seek | [3, 22, 15, 27] | [19, 7, 12] | [ad, dad] | OOESIO | (UB)EAL?IO? 
+ioo(3) 79 | 34 | seek | [26, 15, 10, 28] | [11, 5, 18] | [ad, dad] | YSIEA | ?Y?LA?EA? 
+ioo(4) 45 | 36 | seek | [13, 17, 0, 15] | [4, 17, 15] | [ad, dad] | PBFS | (CM)GNL 
+ioo(5) 45 | 41 | seek | [11, 27, 3, 4] | [16, 24, 1] | [ad, dad] | JIOOR | R?IO?(UB)?R? 
+ioo(6) 67 | 37 | seek | [14, 2, 26, 25] | [12, 24, 1] | [ad, dad] | XTHYAE | (PAE)(FID)?Y?OE 
+ioo(7) 50 | 26 | seek | [18, 15, 3, 14] | [3, 12, 11] | [ad, dad] | ESOX | XL(UB)(PAE) 
+ioo(8) 49 | 61 | seek | [15, 4, 28, 2] | [11, 24, 26] | [ad, diffs_incremental, dad] | SREATH | L?R??EA?(FID) 
+ioo(9) 37 | 17 | seek | [11, 3, 11, 12] | [8, 8, 1] | [hr, diffs_decremental, dhr] | JOJEO | R(UB)REO 
+ioo(10) 36 | 19 | seek | [8, 4, 5, 19] | [4, 1, 14] | [ad, dad] | HRCM | J?R?THW 
+ioo(11) 61 | 38 | seek | [8, 24, 25, 4] | [16, 1, 21] | [ad, dad] | HAAER | JSOE?R? 
+Results for wingtree28.txt
+ioo(0) 38 | 12 | seek | [7, 12, 8, 11] | [5, 4, 3] | [ad, diffs_decremental, dad] | WEOHJ | OEOJR 
+ioo(1) 48 | 63 | seek | [17, 1, 26, 4] | [16, 25, 22] | [ad, dad] | BUYR | GT?Y??R? 
+ioo(2) 83 | 31 | seek | [25, 25, 9, 24] | [0, 16, 15] | [hr, dad] | AEAENA | OEOEES 
+ioo(3) 53 | 30 | seek | [14, 23, 14, 2] | [9, 9, 12] | [hr, diffs_incremental, dhr] | XDXTH | (PAE)H(PAE)(FID) 
+ioo(4) 45 | 39 | seek | [17, 3, 1, 24] | [14, 2, 23] | [ad, dad] | BOUA | G(UB)TS 
+ioo(5) 73 | 43 | seek | [19, 2, 24, 28] | [17, 22, 4] | [ad, dad] | MTHAEA | W(FID)S?EA? 
+ioo(6) 47 | 44 | seek | [6, 24, 5, 12] | [18, 19, 7] | [ad, dad] | GACEO | ?G?STHEO 
+Results for wingtree29.txt
+ioo(0) 41 | 23 | seek | [20, 4, 6, 11] | [16, 2, 5] | [ad, dad] | LRGJ | IO?R??G?R 
+ioo(1) 91 | 14 | seek | [21, 21, 28, 21] | [0, 7, 7] | [hr, diffs_incremental, dhr, diffs_all_prime] | INGINGEAING | INGING?EA?ING 
+ioo(2) 66 | 16 | seek | [14, 11, 17, 24] | [3, 6, 7] | [ad, diffs_incremental, dad] | XJBA | (PAE)RGS 
+ioo(3) 68 | 40 | seek | [25, 8, 22, 13] | [17, 14, 9] | [ad, diffs_decremental, dad] | AEHOEP | OEJEA(CM) 
+ioo(4) 76 | 26 | seek | [2, 23, 23, 28] | [21, 0, 5] | [incremental, hr, dad] | THDDEA | (FID)HH?EA? 
+ioo(5) 92 | 11 | seek | [21, 22, 27, 22] | [1, 5, 5] | [hr, diffs_incremental, diffs_is_odd, dhr] | INGOEIOOE | INGEA?IO?EA 
+ioo(6) 70 | 14 | seek | [12, 13, 19, 26] | [1, 6, 7] | [incremental, ad, diffs_incremental, dad] | EOPMY | EO(CM)W?Y? 
+ioo(7) 46 | 47 | seek | [1, 15, 4, 26] | [14, 11, 22] | [ad, dad] | USRY | TL?R??Y? 
+ioo(8) 48 | 30 | seek | [24, 3, 9, 12] | [21, 6, 3] | [ad, diffs_decremental, dad] | AONEO | S(UB)EEO 
+ioo(9) 68 | 10 | seek | [19, 14, 18, 17] | [5, 4, 1] | [ad, diffs_decremental, dad] | MXEB | W(PAE)XG 
+ioo(10) 40 | 29 | seek | [18, 2, 5, 15] | [16, 3, 10] | [ad, dad] | ETHCS | X(FID)THL 
+ioo(11) 48 | 29 | seek | [3, 14, 21, 10] | [11, 7, 11] | [ad, diffs_is_odd, dhr, diffs_all_prime] | OXINGI | (UB)(PAE)INGA 
+ioo(12) 36 | 26 | seek | [4, 8, 18, 6] | [4, 10, 12] | [is_even, ad, diffs_incremental, diffs_is_even, dad] | RHEG | ?R?JX?G? 
+ioo(13) 28 | 20 | seek | [3, 7, 3, 15] | [4, 4, 12] | [is_odd, hr, diffs_incremental, diffs_is_even, dhr] | OWOS | (UB)O(UB)L 
+ioo(14) 46 | 48 | seek | [27, 2, 14, 3] | [25, 12, 11] | [ad, diffs_decremental, dad] | IOTHXO | ?IO?(FID)(PAE)(UB) 
+Results for wingtree30.txt
+ioo(0) 51 | 31 | seek | [8, 6, 24, 13] | [2, 18, 11] | [ad, dad] | HGAP | J?G?S(CM) 
+ioo(1) 36 | 26 | seek | [3, 8, 4, 21] | [5, 4, 17] | [ad, dad] | OHRING | (UB)J?R?ING 
+ioo(2) 20 | 20 | seek | [11, 0, 6, 3] | [11, 6, 3] | [ad, diffs_decremental, dad] | JFGO | RN?G?(UB) 
+ioo(3) 92 | 12 | seek | [16, 21, 27, 28] | [5, 6, 1] | [incremental, ad, dad] | TINGIOEA | YING?IO??EA? 
+ioo(4) 61 | 17 | seek | [8, 18, 20, 15] | [10, 2, 5] | [ad, dad] | HELS | JXIOL 
+ioo(5) 49 | 34 | seek | [6, 14, 23, 6] | [8, 9, 17] | [hr, diffs_incremental, dad] | GXDG | ?G?(PAE)H?G? 
+ioo(6) 51 | 22 | seek | [19, 7, 8, 17] | [12, 1, 9] | [ad, dad] | MWHB | WOJG 
+ioo(7) 24 | 12 | seek | [8, 6, 2, 8] | [2, 4, 6] | [is_even, hr, diffs_incremental, diffs_is_even, dad] | HGTHH | J?G?(FID)J 
+ioo(8) 74 | 47 | seek | [26, 9, 26, 13] | [17, 17, 13] | [hr, diffs_decremental, diffs_is_odd, dhr, diffs_all_prime] | YNYP | ?Y?E?Y?(CM) 
+Results for wingtree31.txt
+ioo(0) 63 | 30 | seek | [26, 12, 7, 18] | [14, 5, 11] | [ad, dad] | YEOWE | ?Y?EOOX 
+ioo(1) 50 | 72 | seek | [24, 1, 25, 0] | [23, 24, 25] | [ad, diffs_incremental, dad] | AUAEF | STOEN 
+ioo(2) 59 | 20 | seek | [10, 13, 22, 14] | [3, 9, 8] | [ad, dad] | IPOEX | A(CM)EA(PAE) 
+ioo(3) 52 | 21 | seek | [24, 13, 6, 9] | [11, 7, 3] | [ad, diffs_decremental, diffs_is_odd, dad, diffs_all_prime] | APGN | S(CM)?G?E 
+ioo(4) 47 | 18 | seek | [9, 8, 7, 23] | [1, 1, 16] | [ad, diffs_incremental, dhr] | NHWD | EJOH 
+ioo(5) 40 | 15 | seek | [1, 11, 12, 16] | [10, 1, 4] | [incremental, ad, dad] | UJEOT | TREOY 
+ioo(6) 86 | 36 | seek | [12, 28, 18, 28] | [16, 10, 10] | [is_even, hr, diffs_decremental, diffs_is_even, dhr] | EOEAEEA | EO?EA?X?EA? 
+ioo(7) 57 | 23 | seek | [4, 21, 17, 15] | [17, 4, 2] | [ad, diffs_decremental, dad] | RINGBS | ?R?INGGL 
+ioo(8) 74 | 30 | seek | [27, 28, 6, 13] | [1, 22, 7] | [ad, dad] | IOEAGP | ?IO??EA??G?(CM) 
+ioo(9) 67 | 17 | seek | [16, 23, 15, 13] | [7, 8, 2] | [ad, dad] | TDSP | YHL(CM) 
+ioo(10) 45 | 42 | seek | [8, 25, 4, 8] | [17, 21, 4] | [hr, dad] | HAERH | JOE?R?J 
+Results for wingtree32.txt
+ioo(0) 85 | 26 | seek | [15, 28, 19, 23] | [13, 9, 4] | [ad, diffs_decremental, dad] | SEAMD | L?EA?WH 
+ioo(1) 48 | 37 | seek | [0, 24, 13, 11] | [24, 11, 2] | [ad, diffs_decremental, dad] | FAPJ | NS(CM)R 
+ioo(2) 61 | 40 | seek | [9, 17, 28, 7] | [8, 11, 21] | [ad, diffs_incremental, dad] | NBEAW | EG?EA?O 
+Results for cuneiform33.txt
+ioo(0) 48 | 44 | seek | [26, 5, 15, 2] | [21, 10, 13] | [ad, dad] | YCSTH | ?Y?THL(FID) 
+ioo(1) 69 | 26 | seek | [19, 22, 9, 19] | [3, 13, 10] | [hr, dad] | MOENM | WEAEW 
+ioo(2) 88 | 22 | seek | [17, 26, 28, 17] | [9, 2, 11] | [hr, dad] | BYEAB | G?Y??EA?G 
+ioo(3) 70 | 19 | seek | [8, 10, 25, 27] | [2, 15, 2] | [incremental, ad, dhr] | HIAEIO | JAOE?IO? 
+ioo(4) 76 | 20 | seek | [28, 13, 17, 18] | [15, 4, 1] | [ad, diffs_decremental, dad] | EAPBE | ?EA?(CM)GX 
+ioo(5) 49 | 21 | seek | [21, 13, 5, 10] | [8, 8, 5] | [ad, diffs_decremental, dhr] | INGPCI | ING(CM)THA 
+ioo(6) 56 | 27 | seek | [5, 17, 12, 22] | [12, 5, 10] | [ad, dad] | CBEOOE | THGEOEA 
+Results for cuneiform34.txt
+ioo(0) 30 | 25 | seek | [22, 1, 2, 5] | [21, 1, 3] | [ad, diffs_is_odd, dad] | OEUTHC | EAT(FID)TH 
+ioo(1) 52 | 40 | seek | [8, 2, 26, 16] | [6, 24, 10] | [is_even, ad, diffs_is_even, dad] | HTHYT | J(FID)?Y?Y 
+ioo(2) 43 | 48 | seek | [7, 1, 26, 9] | [6, 25, 17] | [ad, dad] | WUYN | OT?Y?E 
+ioo(3) 90 | 26 | seek | [25, 13, 25, 27] | [12, 12, 2] | [is_odd, hr, diffs_decremental, diffs_is_even, dhr] | AEPAEIO | OE(CM)OE?IO? 
+ioo(4) 52 | 50 | seek | [13, 2, 26, 11] | [11, 24, 15] | [ad, dad] | PTHYJ | (CM)(FID)?Y?R 
+ioo(5) 40 | 21 | seek | [8, 3, 10, 19] | [5, 7, 9] | [ad, diffs_incremental, diffs_is_odd, dad] | HOIM | J(UB)AW 
+ioo(6) 72 | 35 | seek | [27, 7, 16, 22] | [20, 9, 6] | [ad, diffs_decremental, dad] | IOWTOE | ?IO?OYEA 
+ioo(7) 90 | 32 | seek | [27, 11, 25, 27] | [16, 14, 2] | [is_odd, hr, diffs_decremental, diffs_is_even, dad] | IOJAEIO | ?IO?ROE?IO? 
+ioo(8) 40 | 50 | seek | [2, 17, 1, 20] | [15, 16, 19] | [ad, diffs_incremental, dad] | THBUL | (FID)GTIO 
+ioo(9) 44 | 23 | seek | [2, 17, 16, 9] | [15, 1, 7] | [ad, diffs_is_odd, dad] | THBTN | (FID)GYE 
+ioo(10) 60 | 24 | seek | [9, 12, 24, 15] | [3, 12, 9] | [ad, dad] | NEOAS | EEOSL 
+ioo(11) 54 | 31 | seek | [21, 8, 17, 8] | [13, 9, 9] | [hr, diffs_decremental, diffs_is_odd, dhr] | INGHBH | INGJGJ 
+ioo(12) 66 | 25 | seek | [7, 5, 26, 28] | [2, 21, 2] | [ad, dhr] | WCYEA | OTH?Y??EA? 
+Results for cuneiform35.txt
+ioo(0) 68 | 35 | seek | [6, 27, 16, 19] | [21, 11, 3] | [ad, diffs_decremental, diffs_is_odd, dad] | GIOTM | ?G??IO?YW 
+ioo(1) 33 | 12 | seek | [17, 6, 5, 5] | [11, 1, 0] | [decremental, hr, diffs_decremental, dad] | BGCC | G?G?THTH 
+ioo(2) 68 | 34 | seek | [25, 25, 3, 15] | [0, 22, 12] | [is_odd, hr, diffs_is_even, dad] | AEAEOS | OEOE(UB)L 
+ioo(3) 32 | 37 | seek | [6, 17, 0, 9] | [11, 17, 9] | [ad, diffs_is_odd, dad] | GBFN | ?G?GNE 
+ioo(4) 15 | 7 | seek | [4, 6, 4, 1] | [2, 2, 3] | [hr, diffs_incremental, dhr, diffs_all_prime] | RGRU | ?R??G??R?T 
+ioo(5) 61 | 42 | seek | [24, 7, 4, 26] | [17, 3, 22] | [ad, dad] | AWRY | SO?R??Y? 
+ioo(6) 47 | 34 | seek | [24, 7, 2, 14] | [17, 5, 12] | [ad, dad] | AWTHX | SO(FID)(PAE) 
+ioo(7) 54 | 13 | seek | [20, 16, 11, 7] | [4, 5, 4] | [decremental, ad, dhr] | LTJW | IOYRO 
+ioo(8) 47 | 36 | seek | [5, 23, 8, 11] | [18, 15, 3] | [ad, diffs_decremental, dad] | CDHJ | THHJR 
+Results for cuneiform36.txt
+ioo(0) 39 | 18 | seek | [15, 18, 3, 3] | [3, 15, 0] | [hr, dad] | SEOO | LX(UB)(UB) 
+ioo(1) 58 | 24 | seek | [5, 13, 23, 17] | [8, 10, 6] | [is_odd, ad, all_primes, diffs_is_even, dad] | CPDB | TH(CM)HG 
+ioo(2) 86 | 16 | seek | [18, 24, 26, 18] | [6, 2, 8] | [is_even, hr, diffs_is_even, dad] | EAYE | XS?Y?X 
+ioo(3) 59 | 33 | seek | [17, 2, 20, 20] | [15, 18, 0] | [hr, dad] | BTHLL | G(FID)IOIO 
+Results for cuneiform37.txt
+ioo(0) 40 | 32 | seek | [23, 8, 0, 9] | [15, 8, 9] | [ad, dad] | DHFN | HJNE 
+ioo(1) 65 | 44 | seek | [23, 12, 25, 5] | [11, 13, 20] | [ad, diffs_incremental, dad] | DEOAEC | HEOOETH 
+ioo(2) 44 | 38 | seek | [1, 10, 24, 9] | [9, 14, 15] | [ad, diffs_incremental, dad] | UIAN | TASE 
+ioo(3) 55 | 16 | seek | [19, 17, 16, 3] | [2, 1, 13] | [decremental, ad, dad] | MBTO | WGY(UB) 
+ioo(4) 54 | 17 | seek | [19, 18, 15, 2] | [1, 3, 13] | [decremental, ad, diffs_incremental, diffs_is_odd, dad] | MESTH | WXL(FID) 
+ioo(5) 61 | 50 | seek | [14, 26, 3, 18] | [12, 23, 15] | [ad, dad] | XYOE | (PAE)?Y?(UB)X 
+ioo(6) 52 | 25 | seek | [19, 6, 15, 12] | [13, 9, 3] | [ad, diffs_decremental, diffs_is_odd, dad] | MGSEO | W?G?LEO 
+ioo(7) 60 | 40 | seek | [21, 20, 0, 19] | [1, 20, 19] | [ad, dad] | INGLFM | INGIONW 
+ioo(8) 43 | 54 | seek | [18, 2, 21, 2] | [16, 19, 19] | [hr, diffs_incremental, dhr] | ETHINGTH | X(FID)ING(FID) 
+ioo(9) 69 | 13 | seek | [17, 13, 17, 22] | [4, 4, 5] | [hr, diffs_incremental, dhr] | BPBOE | G(CM)GEA 
+ioo(10) 63 | 18 | seek | [24, 18, 9, 12] | [6, 9, 3] | [ad, dad] | AENEO | SXEEO 
+ioo(11) 57 | 37 | seek | [18, 17, 1, 21] | [1, 16, 20] | [ad, diffs_incremental, dad] | EBUING | XGTING 
+ioo(12) 34 | 21 | seek | [21, 7, 6, 0] | [14, 1, 6] | [decremental, ad, dad] | INGWGF | INGO?G?N 
+Results for cuneiform38.txt
+ioo(0) 53 | 32 | seek | [0, 15, 12, 26] | [15, 3, 14] | [ad, dad] | FSEOY | NLEO?Y? 
+ioo(1) 54 | 36 | seek | [3, 24, 18, 9] | [21, 6, 9] | [ad, dad] | OAEN | (UB)SXE 
+ioo(2) 29 | 29 | seek | [1, 4, 18, 6] | [3, 14, 12] | [ad, dad] | UREG | T?R?X?G? 
+ioo(3) 47 | 10 | seek | [18, 10, 9, 10] | [8, 1, 1] | [hr, diffs_decremental, dhr] | EINI | XAEA 
+ioo(4) 78 | 45 | seek | [21, 2, 27, 28] | [19, 25, 1] | [ad, diffs_is_odd, dad] | INGTHIOEA | ING(FID)?IO??EA? 
+Results for cuneiform39.txt
+ioo(0) 42 | 20 | seek | [23, 5, 7, 7] | [18, 2, 0] | [is_odd, hr, all_primes, diffs_decremental, diffs_is_even, dad] | DCWW | HTHOO 
+ioo(1) 34 | 8 | seek | [10, 8, 6, 10] | [2, 2, 4] | [is_even, hr, diffs_incremental, diffs_is_even, dhr] | IHGI | AJ?G?A 
+ioo(2) 44 | 33 | seek | [20, 5, 2, 17] | [15, 3, 15] | [ad, diffs_is_odd, dhr] | LCTHB | IOTH(FID)G 
+ioo(3) 63 | 25 | seek | [20, 15, 21, 7] | [5, 6, 14] | [ad, diffs_incremental, dad] | LSINGW | IOLINGO 
+ioo(4) 53 | 51 | seek | [20, 8, 24, 1] | [12, 16, 23] | [ad, diffs_incremental, dad] | LHAU | IOJST 
+ioo(5) 80 | 47 | seek | [27, 5, 26, 22] | [22, 21, 4] | [ad, diffs_decremental, dad] | IOCYOE | ?IO?TH?Y?EA 
+ioo(6) 70 | 17 | seek | [20, 23, 12, 15] | [3, 11, 3] | [ad, diffs_is_odd, dhr, diffs_all_prime] | LDEOS | IOHEOL 
+ioo(7) 52 | 51 | seek | [2, 21, 6, 23] | [19, 15, 17] | [ad, diffs_is_odd, dad] | THINGGD | (FID)ING?G?H 
+ioo(8) 69 | 44 | seek | [23, 1, 22, 23] | [22, 21, 1] | [hr, diffs_decremental, dad] | DUOED | HTEAH 
+Results for spiralbranch40.txt
+ioo(0) 63 | 21 | seek | [26, 10, 14, 13] | [16, 4, 1] | [ad, diffs_decremental, dad] | YIXP | ?Y?A(PAE)(CM) 
+ioo(1) 39 | 15 | seek | [4, 6, 16, 13] | [2, 10, 3] | [ad, dad] | RGTP | ?R??G?Y(CM) 
+ioo(2) 70 | 33 | seek | [7, 25, 26, 12] | [18, 1, 14] | [ad, dad] | WAEYEO | OOE?Y?EO 
+ioo(3) 85 | 18 | seek | [18, 26, 25, 16] | [8, 1, 9] | [ad, dad] | EYAET | X?Y?OEY 
+ioo(4) 93 | 12 | seek | [23, 22, 27, 21] | [1, 5, 6] | [ad, diffs_incremental, dad] | DOEIOING | HEA?IO?ING 
+ioo(5) 77 | 12 | seek | [15, 20, 23, 19] | [5, 3, 4] | [ad, dad] | SLDM | LIOHW 
+ioo(6) 67 | 42 | seek | [25, 19, 2, 21] | [6, 17, 19] | [ad, diffs_incremental, dad] | AEMTHING | OEW(FID)ING 
+ioo(7) 47 | 34 | seek | [20, 7, 2, 18] | [13, 5, 16] | [ad, dad] | LWTHE | IOO(FID)X 
+ioo(8) 40 | 32 | seek | [7, 2, 20, 11] | [5, 18, 9] | [ad, dad] | WTHLJ | O(FID)IOR 
+ioo(9) 46 | 34 | seek | [1, 11, 7, 27] | [10, 4, 20] | [is_odd, ad, diffs_is_even, dad] | UJWIO | TRO?IO? 
+ioo(10) 61 | 36 | seek | [17, 16, 3, 25] | [1, 13, 22] | [ad, diffs_incremental, dad] | BTOAE | GY(UB)OE 
+ioo(11) 62 | 33 | seek | [15, 4, 17, 26] | [11, 13, 9] | [ad, diffs_is_odd, dad] | SRBY | L?R?G?Y? 
+ioo(12) 61 | 25 | seek | [14, 25, 11, 11] | [11, 14, 0] | [hr, dad] | XAEJJ | (PAE)OERR 
+ioo(13) 87 | 16 | seek | [19, 26, 25, 17] | [7, 1, 8] | [ad, dad] | MYAEB | W?Y?OEG 
+ioo(14) 61 | 54 | seek | [2, 27, 10, 22] | [25, 17, 12] | [ad, diffs_decremental, dad] | THIOIOE | (FID)?IO?AEA 
+Results for spiralbranch41.txt
+ioo(0) 47 | 24 | seek | [2, 5, 22, 18] | [3, 17, 4] | [ad, dad] | THCOEE | (FID)THEAX 
+ioo(1) 79 | 22 | seek | [17, 20, 27, 15] | [3, 7, 12] | [ad, diffs_incremental, dad] | BLIOS | GIO?IO?L 
+ioo(2) 55 | 21 | seek | [18, 17, 19, 1] | [1, 2, 18] | [ad, diffs_incremental, dad] | EBMU | XGWT 
+ioo(3) 72 | 20 | seek | [26, 17, 19, 10] | [9, 2, 9] | [ad, dhr] | YBMI | ?Y?GWA 
+ioo(4) 74 | 14 | seek | [22, 23, 13, 16] | [1, 10, 3] | [ad, dad] | OEDPT | EAH(CM)Y 
+ioo(5) 86 | 24 | seek | [17, 26, 28, 15] | [9, 2, 13] | [ad, dad] | BYEAS | G?Y??EA?L 
+ioo(6) 83 | 27 | seek | [18, 28, 16, 21] | [10, 12, 5] | [ad, dad] | EEATING | X?EA?YING 
+ioo(7) 47 | 32 | seek | [13, 1, 18, 15] | [12, 17, 3] | [ad, dad] | PUES | (CM)TXL 
+ioo(8) 63 | 62 | seek | [3, 26, 7, 27] | [23, 19, 20] | [ad, dad] | OYWIO | (UB)?Y?O?IO? 
+ioo(9) 62 | 52 | seek | [13, 25, 3, 21] | [12, 22, 18] | [is_odd, ad, diffs_is_even, dad] | PAEOING | (CM)OE(UB)ING 
+ioo(10) 52 | 39 | seek | [3, 7, 28, 14] | [4, 21, 14] | [ad, dad] | OWEAX | (UB)O?EA?(PAE) 
+ioo(11) 52 | 68 | seek | [28, 2, 22, 0] | [26, 20, 22] | [is_even, ad, diffs_is_even, dad] | EATHOEF | ?EA?(FID)EAN 
+ioo(12) 49 | 30 | seek | [22, 7, 14, 6] | [15, 7, 8] | [ad, dad] | OEWXG | EAO(PAE)?G? 
+Results for spiralbranch42.txt
+ioo(0) 75 | 52 | seek | [28, 20, 1, 26] | [8, 19, 25] | [ad, diffs_incremental, dad] | EALUY | ?EA?IOT?Y? 
+ioo(1) 36 | 21 | seek | [14, 6, 3, 13] | [8, 3, 10] | [ad, dad] | XGOP | (PAE)?G?(UB)(CM) 
+ioo(2) 70 | 24 | seek | [26, 27, 13, 4] | [1, 14, 9] | [ad, dad] | YIOPR | ?Y??IO?(CM)?R? 
+ioo(3) 77 | 21 | seek | [17, 23, 15, 22] | [6, 8, 7] | [ad, dad] | BDSOE | GHLEA 
+ioo(4) 71 | 27 | seek | [23, 11, 21, 16] | [12, 10, 5] | [ad, diffs_decremental, dad] | DJINGT | HRINGY 
+ioo(5) 58 | 21 | seek | [1, 19, 18, 20] | [18, 1, 2] | [ad, dad] | UMEL | TWXIO 
+ioo(6) 68 | 26 | seek | [12, 19, 25, 12] | [7, 6, 13] | [hr, dad] | EOMAEEO | EOWOEEO 
+ioo(7) 41 | 26 | seek | [20, 3, 6, 12] | [17, 3, 6] | [ad, dad] | LOGEO | IO(UB)?G?EO 
+ioo(8) 75 | 12 | seek | [22, 20, 21, 12] | [2, 1, 9] | [ad, dad] | OELINGEO | EAIOINGEO 
+ioo(9) 50 | 8 | seek | [13, 12, 10, 15] | [1, 2, 5] | [ad, diffs_incremental, dad] | PEOIS | (CM)EOAL 
+ioo(10) 21 | 15 | seek | [14, 3, 1, 3] | [11, 2, 2] | [hr, diffs_decremental, dhr, diffs_all_prime] | XOUO | (PAE)(UB)T(UB) 
+Results for spiralbranch43.txt
+ioo(0) 73 | 56 | seek | [24, 0, 27, 22] | [24, 27, 5] | [ad, dad] | AFIOOE | SN?IO?EA 
+ioo(1) 59 | 18 | seek | [20, 21, 14, 4] | [1, 7, 10] | [ad, diffs_incremental, dad] | LINGXR | IOING(PAE)?R? 
+ioo(2) 85 | 28 | seek | [22, 26, 13, 24] | [4, 13, 11] | [ad, dad] | OEYPA | EA?Y?(CM)S 
+ioo(3) 55 | 23 | seek | [17, 23, 7, 8] | [6, 16, 1] | [ad, dad] | BDWH | GHOJ 
+ioo(4) 51 | 59 | seek | [2, 27, 5, 17] | [25, 22, 12] | [ad, diffs_decremental, dad] | THIOCB | (FID)?IO?THG 
+ioo(5) 79 | 11 | seek | [19, 23, 21, 16] | [4, 2, 5] | [ad, dad] | MDINGT | WHINGY 
+ioo(6) 75 | 28 | seek | [5, 25, 26, 19] | [20, 1, 7] | [ad, dad] | CAEYM | THOE?Y?W 
+ioo(7) 68 | 45 | seek | [22, 0, 23, 23] | [22, 23, 0] | [hr, dad] | OEFDD | EANHH 
+ioo(8) 73 | 29 | seek | [23, 20, 8, 22] | [3, 12, 14] | [ad, diffs_incremental, dad] | DLHOE | HIOJEA 
+ioo(9) 62 | 43 | seek | [18, 20, 1, 23] | [2, 19, 22] | [ad, diffs_incremental, dad] | ELUD | XIOTH 
+ioo(10) 82 | 21 | seek | [25, 25, 26, 6] | [0, 1, 20] | [hr, diffs_incremental, dad] | AEAEYG | OEOE?Y??G? 
+Results for spiralbranch44.txt
+ioo(0) 49 | 25 | seek | [2, 11, 21, 15] | [9, 10, 6] | [ad, dad] | THJINGS | (FID)RINGL 
+ioo(1) 69 | 30 | seek | [24, 7, 18, 20] | [17, 11, 2] | [ad, diffs_decremental, dad, diffs_all_prime] | AWEL | SOXIO 
+ioo(2) 51 | 24 | seek | [25, 9, 6, 11] | [16, 3, 5] | [ad, dad] | AENGJ | OEE?G?R 
+ioo(3) 72 | 13 | seek | [11, 20, 19, 22] | [9, 1, 3] | [ad, diffs_is_odd, dad] | JLMOE | RIOWEA 
+ioo(4) 35 | 35 | seek | [19, 1, 11, 4] | [18, 10, 7] | [ad, diffs_decremental, dad] | MUJR | WTR?R? 
+ioo(5) 57 | 17 | seek | [2, 17, 19, 19] | [15, 2, 0] | [incremental, hr, all_primes, diffs_decremental, dad] | THBMM | (FID)GWW 
+ioo(6) 53 | 31 | seek | [25, 8, 14, 6] | [17, 6, 8] | [ad, dad] | AEHXG | OEJ(PAE)?G? 
+ioo(7) 62 | 26 | seek | [3, 23, 19, 17] | [20, 4, 2] | [is_odd, ad, all_primes, diffs_decremental, diffs_is_even, dad] | ODMB | (UB)HWG 
+ioo(8) 80 | 19 | seek | [12, 15, 28, 25] | [3, 13, 3] | [ad, diffs_is_odd, dhr, diffs_all_prime] | EOSEAAE | EOL?EA?OE 
+ioo(9) 85 | 9 | seek | [20, 24, 22, 19] | [4, 2, 3] | [ad, dad] | LAOEM | IOSEAW 
+ioo(10) 65 | 33 | seek | [20, 14, 6, 25] | [6, 8, 19] | [ad, diffs_incremental, dad] | LXGAE | IO(PAE)?G?OE 
+ioo(11) 34 | 26 | seek | [18, 1, 5, 10] | [17, 4, 5] | [ad, dad] | EUCI | XTTHA 
+Results for spiralbranch45.txt
+ioo(0) 37 | 55 | seek | [7, 3, 27, 0] | [4, 24, 27] | [ad, diffs_incremental, dad] | WOIOF | O(UB)?IO?N 
+ioo(1) 75 | 18 | seek | [22, 20, 23, 10] | [2, 3, 13] | [ad, diffs_incremental, dad, diffs_all_prime] | OELDI | EAIOHA 
+ioo(2) 49 | 49 | seek | [9, 1, 27, 12] | [8, 26, 15] | [ad, dad] | NUIOEO | ET?IO?EO 
+ioo(3) 43 | 20 | seek | [9, 9, 18, 7] | [0, 9, 11] | [hr, diffs_incremental, dad] | NNEW | EEXO 
+ioo(4) 47 | 39 | seek | [11, 11, 25, 0] | [0, 14, 25] | [hr, diffs_incremental, dad] | JJAEF | RROEN 
+ioo(5) 52 | 49 | seek | [1, 20, 7, 24] | [19, 13, 17] | [ad, diffs_is_odd, dad, diffs_all_prime] | ULWA | TIOOS 
+ioo(6) 81 | 29 | seek | [25, 16, 12, 28] | [9, 4, 16] | [ad, dad] | AETEOEA | OEYEO?EA? 
+ioo(7) 31 | 31 | seek | [0, 8, 18, 5] | [8, 10, 13] | [ad, diffs_incremental, dad] | FHEC | NJXTH 
+Results for spiralbranch46.txt
+ioo(0) 48 | 16 | seek | [8, 11, 9, 20] | [3, 2, 11] | [ad, dad, diffs_all_prime] | HJNL | JREIO 
+ioo(1) 59 | 38 | seek | [4, 25, 22, 8] | [21, 3, 14] | [ad, dad] | RAEOEH | ?R?OEEAJ 
+ioo(2) 54 | 43 | seek | [26, 2, 5, 21] | [24, 3, 16] | [ad, dad] | YTHCING | ?Y?(FID)THING 
+ioo(3) 50 | 27 | seek | [6, 17, 20, 7] | [11, 3, 13] | [ad, diffs_is_odd, dad, diffs_all_prime] | GBLW | ?G?GIOO 
+ioo(4) 21 | 19 | seek | [10, 2, 0, 9] | [8, 2, 9] | [ad, dad] | ITHFN | A(FID)NE 
+ioo(5) 53 | 38 | seek | [8, 10, 27, 8] | [2, 17, 19] | [hr, diffs_incremental, dad, diffs_all_prime] | HIIOH | JA?IO?J 
+ioo(6) 61 | 33 | seek | [28, 13, 17, 3] | [15, 4, 14] | [ad, dad] | EAPBO | ?EA?(CM)G(UB) 
+ioo(7) 68 | 38 | seek | [10, 20, 10, 28] | [10, 10, 18] | [is_even, hr, diffs_incremental, diffs_is_even, dhr] | ILIEA | AIOA?EA? 
+ioo(8) 83 | 32 | seek | [5, 28, 23, 27] | [23, 5, 4] | [ad, diffs_decremental, dad] | CEADIO | TH?EA?H?IO? 
+ioo(9) 62 | 30 | seek | [16, 5, 17, 24] | [11, 12, 7] | [ad, dad] | TCBA | YTHGS 
+ioo(10) 68 | 56 | seek | [10, 26, 6, 26] | [16, 20, 20] | [is_even, hr, diffs_incremental, diffs_is_even, dhr] | IYGY | A?Y??G??Y? 
+ioo(11) 82 | 25 | seek | [28, 18, 13, 23] | [10, 5, 10] | [ad, dhr] | EAEPD | ?EA?X(CM)H 
+ioo(12) 78 | 9 | seek | [16, 22, 21, 19] | [6, 1, 2] | [ad, dad] | TOEINGM | YEAINGW 
+ioo(13) 36 | 15 | seek | [11, 10, 13, 2] | [1, 3, 11] | [ad, diffs_incremental, diffs_is_odd, dad] | JIPTH | RA(CM)(FID) 
+Results for spiralbranch47.txt
+ioo(0) 83 | 15 | seek | [15, 14, 26, 28] | [1, 12, 2] | [ad, dad] | SXYEA | L(PAE)?Y??EA? 
+ioo(1) 49 | 34 | seek | [24, 7, 14, 4] | [17, 7, 10] | [ad, dad] | AWXR | SO(PAE)?R? 
+ioo(2) 43 | 20 | seek | [6, 2, 17, 18] | [4, 15, 1] | [ad, dad] | GTHBE | ?G?(FID)GX 
+ioo(3) 44 | 39 | seek | [4, 21, 6, 13] | [17, 15, 7] | [ad, diffs_decremental, diffs_is_odd, dad] | RINGGP | ?R?ING?G?(CM) 
+ioo(4) 68 | 24 | seek | [3, 20, 24, 21] | [17, 4, 3] | [ad, diffs_decremental, dad] | OLAING | (UB)IOSING 
+ioo(5) 47 | 26 | seek | [26, 6, 5, 10] | [20, 1, 5] | [ad, dad] | YGCI | ?Y??G?THA 
+ioo(6) 47 | 32 | seek | [2, 21, 16, 8] | [19, 5, 8] | [ad, dad] | THINGTH | (FID)INGYJ 
+ioo(7) 78 | 42 | seek | [26, 28, 4, 20] | [2, 24, 16] | [is_even, ad, diffs_is_even, dad] | YEARL | ?Y??EA??R?IO 
+ioo(8) 49 | 27 | seek | [9, 14, 6, 20] | [5, 8, 14] | [ad, diffs_incremental, dad] | NXGL | E(PAE)?G?IO 
+Results for spiralbranch48.txt
+ioo(0) 85 | 16 | seek | [22, 16, 21, 26] | [6, 5, 5] | [ad, diffs_decremental, dhr] | OETINGY | EAYING?Y? 
+ioo(1) 42 | 17 | seek | [5, 14, 15, 8] | [9, 1, 7] | [ad, diffs_is_odd, dad] | CXSH | TH(PAE)LJ 
+ioo(2) 59 | 35 | seek | [27, 5, 15, 12] | [22, 10, 3] | [ad, diffs_decremental, dad] | IOCSEO | ?IO?THLEO 
+ioo(3) 59 | 42 | seek | [12, 27, 20, 0] | [15, 7, 20] | [ad, dad] | EOIOLF | EO?IO?ION 
+ioo(4) 43 | 30 | seek | [27, 5, 8, 3] | [22, 3, 5] | [ad, dad] | IOCHO | ?IO?THJ(UB) 
+ioo(5) 59 | 23 | seek | [12, 8, 22, 17] | [4, 14, 5] | [ad, dad] | EOHOEB | EOJEAG 
+ioo(6) 64 | 27 | seek | [15, 26, 11, 12] | [11, 15, 1] | [ad, diffs_is_odd, dad] | SYJEO | L?Y?REO 
+ioo(7) 68 | 14 | seek | [12, 11, 23, 22] | [1, 12, 1] | [ad, dhr] | EOJDOE | EORHEA 
+ioo(8) 69 | 22 | seek | [17, 20, 11, 21] | [3, 9, 10] | [ad, diffs_incremental, dad] | BLJING | GIORING 
+ioo(9) 33 | 31 | seek | [0, 19, 7, 7] | [19, 12, 0] | [hr, all_primes, diffs_decremental, dad] | FMWW | NWOO 
+Results for spiralbranch49.txt
+ioo(0) 70 | 44 | seek | [24, 3, 17, 26] | [21, 14, 9] | [ad, diffs_decremental, dad] | AOBY | S(UB)G?Y? 
+ioo(1) 42 | 48 | seek | [2, 9, 27, 4] | [7, 18, 23] | [ad, diffs_incremental, dad] | THNIOR | (FID)E?IO??R? 
+ioo(2) 22 | 9 | seek | [1, 8, 7, 6] | [7, 1, 1] | [ad, diffs_decremental, diffs_is_odd, dhr] | UHWG | TJO?G? 
+ioo(3) 32 | 37 | seek | [15, 0, 13, 4] | [15, 13, 9] | [ad, diffs_decremental, diffs_is_odd, dad] | SFPR | LN(CM)?R? 
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+ioo(0) 70 | 49 | seek | [26, 18, 1, 25] | [8, 17, 24] | [ad, diffs_incremental, dad] | YEUAE | ?Y?XTOE 
+ioo(1) 26 | 6 | seek | [6, 4, 8, 8] | [2, 4, 0] | [is_even, hr, diffs_is_even, dad] | GRHH | ?G??R?JJ 
+ioo(2) 78 | 13 | seek | [21, 23, 22, 12] | [2, 1, 10] | [ad, dad] | INGDOEEO | INGHEAEO 
+Results for spiralbranch54.txt
+ioo(0) 35 | 21 | seek | [16, 8, 2, 9] | [8, 6, 7] | [ad, dad] | THTHN | YJ(FID)E 
+ioo(1) 45 | 35 | seek | [8, 14, 22, 1] | [6, 8, 21] | [ad, diffs_incremental, dad] | HXOEU | J(PAE)EAT 
+ioo(2) 27 | 13 | seek | [11, 11, 1, 4] | [0, 10, 3] | [hr, dad] | JJUR | RRT?R? 
+ioo(3) 18 | 27 | seek | [2, 1, 14, 1] | [1, 13, 13] | [hr, diffs_incremental, diffs_is_odd, dhr] | THUXU | (FID)T(PAE)T 
+ioo(4) 46 | 32 | seek | [21, 11, 1, 13] | [10, 10, 12] | [is_odd, ad, diffs_incremental, diffs_is_even, dhr] | INGJUP | INGRT(CM) 
+ioo(5) 32 | 54 | seek | [6, 1, 25, 0] | [5, 24, 25] | [ad, diffs_incremental, dad] | GUAEF | ?G?TOEN 
+ioo(6) 62 | 42 | seek | [17, 17, 1, 27] | [0, 16, 26] | [is_odd, hr, diffs_incremental, diffs_is_even, dad] | BBUIO | GGT?IO? 
+ioo(7) 45 | 37 | seek | [16, 8, 0, 21] | [8, 8, 21] | [ad, diffs_incremental, dhr] | THFING | YJNING 
+ioo(8) 54 | 52 | seek | [25, 4, 20, 5] | [21, 16, 15] | [ad, diffs_decremental, dad] | AERLC | OE?R?IOTH 
+ioo(9) 56 | 14 | seek | [7, 13, 15, 21] | [6, 2, 6] | [incremental, is_odd, ad, diffs_is_even, dhr] | WPSING | O(CM)LING 
+ioo(10) 61 | 24 | seek | [25, 20, 15, 1] | [5, 5, 14] | [decremental, ad, diffs_incremental, dhr] | AELSU | OEIOLT 
+Results for hollow54.txt
+ioo(0) 53 | 9 | seek | [18, 14, 12, 9] | [4, 2, 3] | [decremental, ad, dad] | EXEON | X(PAE)EOE 
+ioo(1) 88 | 28 | seek | [26, 21, 13, 28] | [5, 8, 15] | [ad, diffs_incremental, dad] | YINGPEA | ?Y?ING(CM)?EA? 
+ioo(2) 59 | 44 | seek | [28, 4, 17, 10] | [24, 13, 7] | [ad, diffs_decremental, dad] | EARBI | ?EA??R?GA 
+ioo(3) 60 | 46 | seek | [7, 27, 9, 17] | [20, 18, 8] | [is_odd, ad, diffs_decremental, diffs_is_even, dad] | WIONB | O?IO?EG 
+ioo(4) 59 | 28 | seek | [28, 26, 5, 0] | [2, 21, 5] | [decremental, ad, dad] | EAYCF | ?EA??Y?THN 
+ioo(5) 50 | 46 | seek | [4, 16, 4, 26] | [12, 12, 22] | [is_even, hr, diffs_incremental, diffs_is_even, dhr] | RTRY | ?R?Y?R??Y? 
+ioo(6) 27 | 48 | seek | [0, 0, 25, 2] | [0, 25, 23] | [hr, dad] | FFAETH | NNOE(FID) 
+Results for hollow55.txt
+ioo(0) 34 | 48 | seek | [10, 1, 21, 2] | [9, 20, 19] | [ad, dad] | IUINGTH | ATING(FID) 
+ioo(1) 44 | 44 | seek | [2, 19, 23, 0] | [17, 4, 23] | [ad, all_primes, dad] | THMDF | (FID)WHN 
+Results for spiralbranch55.txt
+ioo(0) 40 | 36 | seek | [8, 4, 0, 28] | [4, 4, 28] | [is_even, ad, diffs_incremental, diffs_is_even, dhr] | HRFEA | J?R?N?EA? 
+ioo(1) 55 | 44 | seek | [2, 17, 8, 28] | [15, 9, 20] | [ad, dad] | THBHEA | (FID)GJ?EA? 
+ioo(2) 42 | 33 | seek | [3, 21, 12, 6] | [18, 9, 6] | [ad, diffs_decremental, dad] | OINGEOG | (UB)INGEO?G? 
+ioo(3) 47 | 32 | seek | [11, 9, 2, 25] | [2, 7, 23] | [ad, diffs_incremental, dad, diffs_all_prime] | JNTHAE | RE(FID)OE 
+ioo(4) 36 | 23 | seek | [3, 11, 6, 16] | [8, 5, 10] | [ad, dad] | OJGT | (UB)R?G?Y 
+ioo(5) 66 | 34 | seek | [21, 25, 5, 15] | [4, 20, 10] | [is_odd, ad, diffs_is_even, dad] | INGAECS | INGOETHL 
+ioo(6) 98 | 15 | seek | [21, 28, 23, 26] | [7, 5, 3] | [ad, diffs_decremental, diffs_is_odd, dad, diffs_all_prime] | INGEADY | ING?EA?H?Y? 
+ioo(7) 65 | 17 | seek | [23, 19, 17, 6] | [4, 2, 11] | [decremental, ad, dad] | DMBG | HWG?G? 

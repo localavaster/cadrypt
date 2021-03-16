@@ -1,0 +1,120 @@
+==========================
+== Entire Page Statistics
+==========================
+Total Words: 17 | PRIME: true
+Total Unique Words: 17 | PRIME: true
+Repeated Words: []
+Total Runes: 76 | PRIME: false
+Total Spaces: 16 | PRIME: false
+Total Periods: 0 | PRIME: true
+Total GP sum: 3651 | PRIME: false
+Total Sentences: 1 | PRIME: false
+Total Lines: 4 | PRIME: false
+==========================
+== Character Frequencies
+==========================
+ᚣ 0 | PRIME: true
+ᚩ 0 | PRIME: true
+ᚾ 0 | PRIME: true
+ᛏ 0 | PRIME: true
+ᚪ 1 | PRIME: false
+ᚱ 1 | PRIME: false
+ᛄ 1 | PRIME: false
+ᛚ 1 | PRIME: false
+ᛟ 1 | PRIME: false
+ᚫ 2 | PRIME: true
+ᚹ 2 | PRIME: true
+ᚻ 2 | PRIME: true
+ᛈ 2 | PRIME: true
+ᛝ 2 | PRIME: true
+ᛡ 2 | PRIME: true
+ᚠ 3 | PRIME: true
+ᚢ 3 | PRIME: true
+ᚷ 3 | PRIME: true
+ᛞ 3 | PRIME: true
+ᛠ 3 | PRIME: true
+ᚦ 4 | PRIME: false
+ᛉ 4 | PRIME: false
+ᚳ 5 | PRIME: true
+ᛁ 5 | PRIME: true
+ᛇ 5 | PRIME: true
+ᛒ 5 | PRIME: true
+ᛖ 5 | PRIME: true
+ᛗ 5 | PRIME: true
+ᛋ 6 | PRIME: false
+==========================
+== Character Frequencies As Sums
+==========================
+ᚣ 0 | PRIME: true
+ᚩ 0 | PRIME: true
+ᚾ 0 | PRIME: true
+ᛏ 0 | PRIME: true
+ᚪ 97 | PRIME: true
+ᚱ 11 | PRIME: true
+ᛄ 37 | PRIME: true
+ᛚ 73 | PRIME: true
+ᛟ 83 | PRIME: true
+ᚫ 202 | PRIME: false
+ᚹ 38 | PRIME: false
+ᚻ 46 | PRIME: false
+ᛈ 86 | PRIME: false
+ᛝ 158 | PRIME: false
+ᛡ 214 | PRIME: false
+ᚠ 6 | PRIME: false
+ᚢ 9 | PRIME: false
+ᚷ 51 | PRIME: false
+ᛞ 267 | PRIME: false
+ᛠ 327 | PRIME: false
+ᚦ 20 | PRIME: false
+ᛉ 188 | PRIME: false
+ᚳ 65 | PRIME: false
+ᛁ 155 | PRIME: false
+ᛇ 205 | PRIME: false
+ᛒ 305 | PRIME: false
+ᛖ 335 | PRIME: false
+ᛗ 355 | PRIME: false
+ᛋ 318 | PRIME: false
+==========================
+== Sentence Characteristics
+==========================
+Sentence: ᛝ-ᚫᛗᛁᚹ-ᛋᛒ-ᛉᛗ-ᛋᛇᚷᛞᚦᚫ-ᚠᛡᚪᛒᚳᚢ-ᚹᚱ-ᛒᛠᚠᛉᛁᛗᚢᚳᛈᚻᛝᛚᛇ-ᛗᛋᛞᛡᛈᚠ-ᛒᚻᛇᚳ-ᛇᛖ-ᛠᛖᛁᚷᛉᚷᛋ-ᛖᛋᛇᚦᚦᛖᛋ-ᚦᛟ-ᚳᛠᛁᛗᚳᛉ-ᛞᛄᚢ-ᛒᛖᛁ
+English Sentence: ING-AEMIW-SB-XM-SEOGDTHAE-FIOABCKU-WR-BEAFXIMUCKPHINGLEO-MSDIOPF-BHEOCK-EOE-EAEIGXGS-ESEOTHTHES-THOE-CKEAIMCKX-DJU-BEI
+Total Characters: 92 | PRIME: false
+Total Runes: 76 | PRIME: false
+Total Spaces: 16 | PRIME: false
+GP Sum: 3651 | PRIME: false
+IoC: 0.025800286669851888
+==========================
+== Line Characteristics
+==========================
+Line: ᛝ-ᚫᛗᛁᚹ-ᛋᛒ-ᛉᛗ-ᛋᛇᚷᛞᚦᚫ-ᚠᛡᚪᛒᚳᚢ-ᚹᚱ-ᛒ
+English Line: ING-AEMIW-SB-XM-SEOGDTHAE-FIOABCKU-WR-B
+Total Characters: 31 | PRIME: true
+Total Runes: 24 | PRIME: false
+Total Spaces: 7 | PRIME: true
+GP Sum: 1213 | PRIME: true
+IoC: 0.015053763440860216
+
+Line: ᛠᚠᛉᛁᛗᚢᚳᛈᚻᛝᛚᛇ-ᛗᛋᛞᛡᛈᚠ-ᛒᚻᛇᚳ-
+English Line: EAFXIMUCKPHINGLEO-MSDIOPF-BHEOCK-
+Total Characters: 25 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 1038 | PRIME: false
+IoC: 0.02
+
+Line: ᛇᛖ-ᛠᛖᛁᚷᛉᚷᛋ-ᛖᛋᛇᚦᚦᛖᛋ-ᚦᛟ-ᚳᛠᛁᛗ
+English Line: EOE-EAEIGXGS-ESEOTHTHES-THOE-CKEAIM
+Total Characters: 26 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 1052 | PRIME: false
+IoC: 0.04923076923076923
+
+Line: ᚳᛉ-ᛞᛄᚢ-ᛒᛖᛁ
+English Line: CKX-DJU-BEI
+Total Characters: 10 | PRIME: false
+Total Runes: 8 | PRIME: false
+Total Spaces: 2 | PRIME: true
+GP Sum: 348 | PRIME: false
+IoC: 0.0

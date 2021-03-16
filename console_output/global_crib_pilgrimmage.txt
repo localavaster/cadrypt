@@ -1,0 +1,88 @@
+Starting global crib with output settings...
+shiftsum | shiftdifferencessum | cribword | shiftlist | shiftdifferences | shiftlistfacts | shiftsinwordform | shiftsingpform
+Results for cross0.txt
+ioo(0) 152 | 85 | pilgrimmage | [25, 8, 16, 11, 20, 5, 3, 22, 15, 15, 12] | [17, 8, 5, 9, 15, 2, 19, 7, 0, 3] | [hr, dad] | AEHTJLCOOESSEO | OEJYRIOTH(UB)EALLEO 
+ioo(1) 134 | 111 | pilgrimmage | [2, 3, 25, 23, 9, 20, 2, 7, 26, 8, 9] | [1, 22, 2, 14, 11, 18, 5, 19, 18, 1] | [hr, dhr] | THOAEDNLTHWYHN | (FID)(UB)OEHEIO(FID)O?Y?JE 
+Results for cross1.txt
+Results for cross2.txt
+Results for spiral3.txt
+ioo(0) 192 | 115 | pilgrimmage | [28, 27, 1, 28, 27, 6, 6, 21, 21, 8, 19] | [1, 26, 27, 1, 21, 0, 15, 0, 13, 11] | [hr, dhr] | EAIOUEAIOGGINGINGHM | ?EA??IO?T?EA??IO??G??G?INGINGJW 
+ioo(1) 117 | 89 | pilgrimmage | [2, 4, 12, 2, 3, 13, 0, 28, 24, 18, 11] | [2, 8, 10, 1, 10, 13, 28, 4, 6, 7] | [hr, dhr] | THREOTHOPFEAAEJ | (FID)?R?EO(FID)(UB)(CM)N?EA?SXR 
+Results for spiral4.txt
+Results for spiral5.txt
+Results for spiral6.txt
+Results for spiral7.txt
+Results for branch8.txt
+Results for branch9.txt
+ioo(0) 149 | 138 | pilgrimmage | [9, 27, 9, 25, 10, 1, 3, 25, 7, 20, 13] | [18, 18, 16, 15, 9, 2, 22, 18, 13, 7] | [hr, dhr] | NIONAEIUOAEWLP | E?IO?EOEAT(UB)OEOIO(CM) 
+ioo(1) 191 | 69 | pilgrimmage | [16, 0, 20, 24, 15, 15, 19, 15, 24, 22, 21] | [16, 20, 4, 9, 0, 4, 4, 9, 2, 1] | [hr, dhr] | TFLASSMSAOEING | YNIOSLLWLSEAING 
+Results for branch10.txt
+ioo(0) 204 | 83 | pilgrimmage | [19, 24, 22, 28, 19, 14, 24, 11, 24, 15, 4] | [5, 2, 6, 9, 5, 10, 13, 13, 9, 11] | [hr, dhr] | MAOEEAMXAJASR | WSEA?EA?W(PAE)SRSL?R? 
+Results for branch11.txt
+ioo(0) 149 | 106 | pilgrimmage | [12, 2, 9, 25, 1, 10, 13, 24, 25, 26, 2] | [10, 7, 16, 24, 9, 3, 11, 1, 1, 24] | [hr, dhr] | EOTHNAEUIPAAEYTH | EO(FID)EOETA(CM)SOE?Y?(FID) 
+ioo(1) 155 | 67 | pilgrimmage | [7, 14, 13, 19, 18, 21, 13, 19, 27, 4, 0] | [7, 1, 6, 1, 3, 8, 6, 8, 23, 4] | [hr, dhr] | WXPMEINGPMIORF | O(PAE)(CM)WXING(CM)W?IO??R?N 
+ioo(2) 124 | 69 | pilgrimmage | [1, 6, 9, 11, 4, 20, 25, 15, 9, 6, 18] | [5, 3, 2, 7, 16, 5, 10, 6, 3, 12] | [hr, dhr] | UGNJRLAESNGE | T?G?ER?R?IOOELE?G?X 
+Results for branch12.txt
+Results for branch13.txt
+Results for branch14.txt
+Results for mobius15.txt
+Results for mobius16.txt
+Results for mobius17.txt
+Results for mobius18.txt
+Results for mobius19.txt
+Results for mobius20.txt
+Results for mobius21.txt
+ioo(0) 176 | 88 | pilgrimmage | [24, 20, 17, 3, 12, 15, 27, 22, 8, 4, 24] | [4, 3, 14, 9, 3, 12, 5, 14, 4, 20] | [hr, dhr] | ALBOEOSIOOEHRA | SIOG(UB)EOL?IO?EAJ?R?S 
+ioo(1) 118 | 63 | pilgrimmage | [18, 8, 12, 5, 2, 5, 2, 7, 24, 16, 19] | [10, 4, 7, 3, 3, 3, 5, 17, 8, 3] | [hr, dhr] | EHEOCTHCTHWATM | XJEOTH(FID)TH(FID)OSYW 
+ioo(2) 173 | 127 | pilgrimmage | [6, 19, 11, 8, 27, 15, 25, 23, 2, 26, 11] | [13, 8, 3, 19, 12, 10, 2, 21, 24, 15] | [hr, dad] | GMJHIOSAEDTHYJ | ?G?WRJ?IO?LOEH(FID)?Y?R 
+Results for mobius22.txt
+ioo(0) 178 | 101 | pilgrimmage | [14, 19, 8, 20, 20, 21, 1, 26, 22, 24, 3] | [5, 11, 12, 0, 1, 20, 25, 4, 2, 21] | [hr, dad] | XMHLLINGUYOEAO | (PAE)WJIOIOINGT?Y?EAS(UB) 
+Results for mayfly23.txt
+Results for mayfly24.txt
+Results for mayfly25.txt
+Results for mayfly26.txt
+Results for wingtree27.txt
+Results for wingtree28.txt
+ioo(0) 112 | 70 | pilgrimmage | [15, 3, 20, 17, 5, 12, 13, 11, 14, 1, 1] | [12, 17, 3, 12, 7, 1, 2, 3, 13, 0] | [hr, dhr] | SOLBCEOPJXUU | L(UB)IOGTHEO(CM)R(PAE)TT 
+Results for wingtree29.txt
+ioo(0) 107 | 100 | pilgrimmage | [0, 12, 4, 16, 19, 25, 3, 7, 19, 0, 2] | [12, 8, 12, 3, 6, 22, 4, 12, 19, 2] | [hr, dhr] | FEORTMAEOWMFTH | NEO?R?YWOE(UB)OWN(FID) 
+Results for wingtree30.txt
+ioo(0) 109 | 106 | pilgrimmage | [13, 4, 18, 10, 21, 4, 25, 12, 0, 1, 1] | [9, 14, 8, 11, 17, 21, 13, 12, 1, 0] | [hr, dad] | PREIINGRAEEOFUU | (CM)?R?XAING?R?OEEONTT 
+Results for wingtree31.txt
+Results for wingtree32.txt
+ioo(0) 138 | 132 | pilgrimmage | [23, 11, 17, 1, 13, 9, 25, 3, 23, 4, 9] | [12, 6, 16, 12, 4, 16, 22, 20, 19, 5] | [hr, dhr] | DJBUPNAEODRN | HRGT(CM)EOE(UB)H?R?E 
+ioo(1) 204 | 105 | pilgrimmage | [24, 22, 28, 12, 10, 26, 4, 25, 25, 23, 5] | [2, 6, 16, 2, 16, 22, 21, 0, 2, 18] | [hr, dhr] | AOEEAEOIYRAEAEDC | SEA?EA?EOA?Y??R?OEOEHTH 
+Results for cuneiform33.txt
+Results for cuneiform34.txt
+Results for cuneiform35.txt
+ioo(0) 124 | 72 | pilgrimmage | [9, 15, 15, 5, 17, 17, 19, 0, 2, 16, 9] | [6, 0, 10, 12, 0, 2, 19, 2, 14, 7] | [hr, dhr] | NSSCBBMFTHTN | ELLTHGGWN(FID)YE 
+Results for cuneiform36.txt
+ioo(0) 156 | 124 | pilgrimmage | [28, 11, 26, 14, 6, 20, 7, 10, 27, 3, 4] | [17, 15, 12, 8, 14, 13, 3, 17, 24, 1] | [ad, dhr] | EAJYXGLWIIOOR | ?EA?R?Y?(PAE)?G?IOOA?IO?(UB)?R? 
+Results for cuneiform37.txt
+Results for cuneiform38.txt
+ioo(0) 152 | 107 | pilgrimmage | [25, 3, 14, 2, 0, 16, 17, 1, 19, 27, 28] | [22, 11, 12, 2, 16, 1, 16, 18, 8, 1] | [ad, dhr] | AEOXTHFTBUMIOEA | OE(UB)(PAE)(FID)NYGTW?IO??EA? 
+Results for cuneiform39.txt
+Results for spiralbranch40.txt
+Results for spiralbranch41.txt
+Results for spiralbranch42.txt
+Results for spiralbranch43.txt
+ioo(0) 182 | 77 | pilgrimmage | [4, 22, 22, 19, 28, 11, 18, 22, 23, 6, 7] | [18, 0, 3, 9, 17, 7, 4, 1, 17, 1] | [hr, dhr] | ROEOEMEAJEOEDGW | ?R?EAEAW?EA?RXEAH?G?O 
+ioo(1) 150 | 70 | pilgrimmage | [6, 11, 6, 18, 17, 19, 24, 20, 27, 0, 2] | [5, 5, 12, 1, 2, 5, 4, 7, 27, 2] | [hr, dhr] | GJGEBMALIOFTH | ?G?R?G?XGWSIO?IO?N(FID) 
+Results for spiralbranch44.txt
+ioo(0) 164 | 132 | pilgrimmage | [26, 5, 27, 20, 27, 14, 8, 2, 27, 6, 2] | [21, 22, 7, 7, 13, 6, 6, 25, 21, 4] | [hr, dhr] | YCIOLIOXHTHIOGTH | ?Y?TH?IO?IO?IO?(PAE)J(FID)?IO??G?(FID) 
+Results for spiralbranch45.txt
+Results for spiralbranch46.txt
+Results for spiralbranch47.txt
+ioo(0) 162 | 58 | pilgrimmage | [14, 16, 27, 26, 14, 17, 16, 6, 5, 3, 18] | [2, 11, 1, 12, 3, 1, 10, 1, 2, 15] | [hr, dhr] | XTIOYXBTGCOE | (PAE)Y?IO??Y?(PAE)GY?G?TH(UB)X 
+ioo(1) 115 | 106 | pilgrimmage | [15, 1, 21, 4, 5, 1, 13, 0, 9, 21, 25] | [14, 20, 17, 1, 4, 12, 13, 9, 12, 4] | [hr, dhr] | SUINGRCUPFNINGAE | LTING?R?THT(CM)NEINGOE 
+Results for spiralbranch48.txt
+Results for spiralbranch49.txt
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+Results for spiralbranch54.txt
+Results for hollow54.txt
+Results for hollow55.txt
+Results for spiralbranch55.txt
+ioo(0) 155 | 96 | pilgrimmage | [20, 17, 3, 21, 27, 14, 20, 22, 1, 8, 2] | [3, 14, 18, 6, 13, 6, 2, 21, 7, 6] | [hr, dhr] | LBOINGIOXLOEUHTH | IOG(UB)ING?IO?(PAE)IOEATJ(FID) 

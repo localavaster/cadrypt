@@ -1,16 +1,18 @@
-import 'package:cicadrypt/widgets/container_header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
+import '../../../widgets/container_header.dart';
 import '../analyze_state.dart';
 
 class HighlightContainer extends StatelessWidget {
-  const HighlightContainer({
-    Key key,
+  HighlightContainer({
     @required this.state,
-  }) : super(key: key);
+  }) : super();
 
   final AnalyzeState state;
+
+  final highlightWordTextController = TextEditingController();
+  final highlightWordFocusNode = FocusNode();
 
   @override
   Widget build(BuildContext context) {
@@ -37,78 +39,106 @@ class HighlightContainer extends StatelessWidget {
                               child: DropdownButton<String>(
                                   isDense: true,
                                   value: state.highlightDropdownValue,
-                                  items: [
-                                    const DropdownMenuItem(
+                                  items: const [
+                                    DropdownMenuItem(
                                       value: 'f',
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(horizontal: 4.0),
                                         child: Text('F', style: TextStyle(fontSize: 14)),
                                       ),
                                     ),
-                                    const DropdownMenuItem(
+                                    DropdownMenuItem(
+                                      value: 'i',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('I', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
+                                      value: 'repeatedpatterns',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Repeated Patterns', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
                                       value: 'doubleletters',
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(horizontal: 4.0),
                                         child: Text('Double Letters', style: TextStyle(fontSize: 14)),
                                       ),
                                     ),
-                                    const DropdownMenuItem(
+                                    DropdownMenuItem(
+                                      value: 'neardoubleletters',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Near Double Letters', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
+                                      value: 'near2doubleletters',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Near (2) Dbl Letters', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
                                       value: 'doubleletterrunes',
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(horizontal: 4.0),
                                         child: Text('Double Letter Runes', style: TextStyle(fontSize: 14)),
                                       ),
                                     ),
-                                    const DropdownMenuItem(
+                                    DropdownMenuItem(
                                       value: 'smallwords',
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(horizontal: 4.0),
                                         child: Text('Small Words', style: TextStyle(fontSize: 14)),
                                       ),
                                     ),
-                                    const DropdownMenuItem(
+                                    DropdownMenuItem(
                                       value: 'repeatwords',
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(horizontal: 4.0),
                                         child: Text('Repeated words', style: TextStyle(fontSize: 14)),
                                       ),
                                     ),
-                                    const DropdownMenuItem(
+                                    DropdownMenuItem(
                                       value: 'allvowels',
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(horizontal: 4.0),
                                         child: Text('Vowels (AEIOU, AE, IO)', style: TextStyle(fontSize: 14)),
                                       ),
                                     ),
-                                    const DropdownMenuItem(
+                                    DropdownMenuItem(
                                       value: 'vowels',
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(horizontal: 4.0),
                                         child: Text('Vowels (AEIOU)', style: TextStyle(fontSize: 14)),
                                       ),
                                     ),
-                                    const DropdownMenuItem(
-                                      value: '-',
+                                    DropdownMenuItem(
+                                      value: 'englishtrigrams',
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(horizontal: 4.0),
-                                        child: Text('------', style: TextStyle(fontSize: 14)),
+                                        child: Text('English Trigrams', style: TextStyle(fontSize: 14)),
                                       ),
                                     ),
-                                    const DropdownMenuItem(
+                                    DropdownMenuItem(
                                       value: 'rows',
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(horizontal: 4.0),
                                         child: Text('Rows', style: TextStyle(fontSize: 14)),
                                       ),
                                     ),
-                                    const DropdownMenuItem(
+                                    DropdownMenuItem(
                                       value: 'columns',
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(horizontal: 4.0),
                                         child: Text('Columns', style: TextStyle(fontSize: 14)),
                                       ),
                                     ),
-                                    const DropdownMenuItem(
+                                    DropdownMenuItem(
                                       value: 'checkerboard',
                                       child: Padding(
                                         padding: EdgeInsets.symmetric(horizontal: 4.0),
@@ -116,7 +146,7 @@ class HighlightContainer extends StatelessWidget {
                                       ),
                                     )
                                   ],
-                                  onChanged: (value) => state.changeHighlightDropdownValue(value)),
+                                  onChanged: state.changeHighlightDropdownValue),
                             ),
                           ),
                         );
@@ -129,6 +159,156 @@ class HighlightContainer extends StatelessWidget {
                       child: Material(
                         child: InkWell(
                           onTap: state.onHighlightDonePressed,
+                          child: const Icon(
+                            Icons.done,
+                            size: 16,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                child: Row(
+                  children: [
+                    Observer(
+                      builder: (_) {
+                        return Expanded(
+                          child: Material(
+                            child: DropdownButtonHideUnderline(
+                              child: DropdownButton<String>(
+                                  isDense: true,
+                                  value: state.primeHighlightDropdownValue,
+                                  items: const [
+                                    DropdownMenuItem(
+                                      value: 'primepairs',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Prime Pairs', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
+                                      value: 'primetriads',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Prime Triads', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
+                                      value: 'primequartet',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Prime Quartet', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
+                                      value: 'primefives',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Prime Fives', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
+                                      value: 'specialprimerun',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Special Prime Run', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
+                                      value: 'primewordrun',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Prime Word Run', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
+                                      value: 'primesentencerun',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Prime Sentence Run', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
+                                      value: 'primestoprun',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Prime Stop Run', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
+                                      value: 'primerun',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Prime Run', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                    DropdownMenuItem(
+                                      value: 'reverseprimerun',
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                                        child: Text('Reverse Prime Run', style: TextStyle(fontSize: 14)),
+                                      ),
+                                    ),
+                                  ],
+                                  onChanged: state.changePrimeHighlightDropdownValue),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                    const SizedBox(width: 2),
+                    SizedBox(
+                      width: 24,
+                      height: 24,
+                      child: Material(
+                        child: InkWell(
+                          onTap: state.onPrimeHighlightDonePressed,
+                          child: const Icon(
+                            Icons.done,
+                            size: 16,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: SizedBox(
+                        height: 24,
+                        child: TextField(
+                          decoration: const InputDecoration().copyWith(
+                            labelStyle: const TextStyle(fontSize: 12),
+                            labelText: 'Highlight Regex',
+                            isDense: true,
+                            floatingLabelBehavior: FloatingLabelBehavior.never,
+                            border: const OutlineInputBorder(borderRadius: BorderRadius.zero, borderSide: BorderSide(color: Colors.transparent)),
+                            enabledBorder: const OutlineInputBorder(borderRadius: BorderRadius.zero, borderSide: BorderSide(color: Colors.transparent)),
+                            focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.zero, borderSide: BorderSide(color: Colors.transparent)),
+                          ),
+                          cursorHeight: 12,
+                          controller: highlightWordTextController,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 2),
+                    SizedBox(
+                      width: 24,
+                      height: 24,
+                      child: Material(
+                        child: InkWell(
+                          onTap: () {
+                            WidgetsBinding.instance.focusManager.primaryFocus?.unfocus();
+
+                            state.onHighlightRegexDonePressed(highlightWordTextController.text);
+                          },
                           child: const Icon(
                             Icons.done,
                             size: 16,

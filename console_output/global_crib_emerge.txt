@@ -1,0 +1,312 @@
+Starting global crib with output settings...
+shiftsum | shiftdifferencessum | cribword | shiftlist | shiftdifferences | shiftlistfacts | shiftsinwordform | shiftsingpform
+Results for cross0.txt
+ioo(0) 40 | 33 | emerge | [0, 8, 11, 10, 0, 11] | [8, 3, 1, 10, 11] | [hr, dad] | FHJIFJ | NJRANR 
+ioo(1) 109 | 37 | emerge | [28, 15, 25, 19, 11, 11] | [13, 10, 6, 8, 0] | [hr, dad] | EASAEMJJ | ?EA?LOEWRR 
+ioo(2) 95 | 60 | emerge | [10, 21, 20, 16, 0, 28] | [11, 1, 4, 16, 28] | [ad, dad] | IINGLTFEA | AINGIOYN?EA? 
+ioo(3) 76 | 66 | emerge | [11, 24, 7, 9, 0, 25] | [13, 17, 2, 9, 25] | [ad, dad] | JAWNFAE | RSOENOE 
+ioo(4) 55 | 42 | emerge | [11, 1, 18, 8, 10, 7] | [10, 17, 10, 2, 3] | [ad, dhr] | JUEHIW | RTXJAO 
+Results for cross1.txt
+ioo(0) 111 | 50 | emerge | [15, 27, 14, 19, 25, 11] | [12, 13, 5, 6, 14] | [ad, dad] | SIOXMAEJ | L?IO?(PAE)WOER 
+ioo(1) 83 | 53 | emerge | [7, 18, 20, 28, 2, 8] | [11, 2, 8, 26, 6] | [ad, dad] | WELEATHH | OXIO?EA?(FID)J 
+ioo(2) 91 | 74 | emerge | [24, 10, 26, 8, 19, 4] | [14, 16, 18, 11, 15] | [ad, dad] | AIYHMR | SA?Y?JW?R? 
+ioo(3) 95 | 47 | emerge | [3, 23, 23, 28, 12, 6] | [20, 0, 5, 16, 6] | [hr, dad] | ODDEAEOG | (UB)HH?EA?EO?G? 
+ioo(4) 88 | 41 | emerge | [17, 6, 9, 17, 25, 14] | [11, 3, 8, 8, 11] | [hr, dhr] | BGNBAEX | G?G?EGOE(PAE) 
+ioo(5) 116 | 45 | emerge | [16, 25, 28, 8, 20, 19] | [9, 3, 20, 12, 1] | [ad, dad] | TAEEAHLM | YOE?EA?JIOW 
+ioo(6) 71 | 29 | emerge | [11, 14, 5, 17, 12, 12] | [3, 9, 12, 5, 0] | [hr, dad] | JXCBEOEO | R(PAE)THGEOEO 
+ioo(7) 86 | 42 | emerge | [21, 8, 1, 20, 19, 17] | [13, 7, 19, 1, 2] | [ad, dad] | INGHULMB | INGJTIOWG 
+ioo(8) 58 | 46 | emerge | [0, 9, 13, 25, 5, 6] | [9, 4, 12, 20, 1] | [ad, dad] | FNPAECG | NE(CM)OETH?G? 
+Results for cross2.txt
+ioo(0) 103 | 63 | emerge | [20, 18, 28, 14, 0, 23] | [2, 10, 14, 14, 23] | [ad, diffs_incremental, dhr] | LEEAXFD | IOX?EA?(PAE)NH 
+ioo(1) 74 | 61 | emerge | [0, 13, 21, 12, 3, 25] | [13, 8, 9, 9, 22] | [ad, dhr] | FPINGEOOAE | N(CM)INGEO(UB)OE 
+ioo(2) 54 | 44 | emerge | [10, 24, 5, 3, 2, 10] | [14, 19, 2, 1, 8] | [hr, dad] | IACOTHI | ASTH(UB)(FID)A 
+Results for spiral3.txt
+ioo(0) 85 | 48 | emerge | [14, 27, 15, 5, 14, 10] | [13, 12, 10, 9, 4] | [hr, diffs_decremental, dad] | XIOSCXI | (PAE)?IO?LTH(PAE)A 
+ioo(1) 98 | 55 | emerge | [10, 25, 13, 25, 16, 9] | [15, 12, 12, 9, 7] | [hr, diffs_decremental, dhr] | IAEPAETN | AOE(CM)OEYE 
+ioo(2) 62 | 65 | emerge | [16, 21, 2, 1, 21, 1] | [5, 19, 1, 20, 20] | [hr, dhr] | TINGTHUINGU | YING(FID)TINGT 
+ioo(3) 67 | 80 | emerge | [5, 9, 0, 23, 3, 27] | [4, 9, 23, 20, 24] | [ad, dad] | CNFDOIO | THENH(UB)?IO? 
+ioo(4) 63 | 36 | emerge | [19, 26, 13, 0, 2, 3] | [7, 13, 13, 2, 1] | [ad, dhr] | MYPFTHO | W?Y?(CM)N(FID)(UB) 
+ioo(5) 49 | 40 | emerge | [20, 6, 10, 2, 9, 2] | [14, 4, 8, 7, 7] | [hr, dhr] | LGITHNTH | IO?G?A(FID)E(FID) 
+ioo(6) 96 | 31 | emerge | [11, 11, 25, 24, 11, 14] | [0, 14, 1, 13, 3] | [hr, dad] | JJAEAJX | RROESR(PAE) 
+Results for spiral4.txt
+ioo(0) 62 | 63 | emerge | [12, 0, 23, 24, 0, 3] | [12, 23, 1, 24, 3] | [hr, dad] | EOFDAFO | EONHSN(UB) 
+ioo(1) 47 | 47 | emerge | [1, 4, 3, 4, 27, 8] | [3, 1, 1, 23, 19] | [hr, diffs_is_odd, dhr] | URORIOH | T?R?(UB)?R??IO?J 
+ioo(2) 56 | 40 | emerge | [7, 2, 22, 8, 8, 9] | [5, 20, 14, 0, 1] | [hr, dad] | WTHOEHHN | O(FID)EAJJE 
+ioo(3) 106 | 57 | emerge | [20, 12, 28, 26, 5, 15] | [8, 16, 2, 21, 10] | [ad, dad] | LEOEAYCS | IOEO?EA??Y?THL 
+ioo(4) 55 | 27 | emerge | [0, 0, 0, 12, 16, 27] | [0, 0, 12, 4, 11] | [incremental, hr, dhr] | FFFEOTIO | NNNEOY?IO? 
+ioo(5) 64 | 49 | emerge | [1, 14, 1, 9, 21, 18] | [13, 13, 8, 12, 3] | [hr, dhr] | UXUNINGE | T(PAE)TEINGX 
+Results for spiral5.txt
+ioo(0) 107 | 41 | emerge | [0, 25, 17, 17, 23, 25] | [25, 8, 0, 6, 2] | [hr, dad] | FAEBBDAE | NOEGGHOE 
+ioo(1) 76 | 58 | emerge | [23, 4, 23, 17, 6, 3] | [19, 19, 6, 11, 3] | [hr, dhr] | DRDBGO | H?R?HG?G?(UB) 
+ioo(2) 69 | 61 | emerge | [4, 0, 25, 18, 5, 17] | [4, 25, 7, 13, 12] | [ad, dad] | RFAEECB | ?R?NOEXTHG 
+ioo(3) 106 | 27 | emerge | [21, 14, 8, 19, 22, 22] | [7, 6, 11, 3, 0] | [hr, dad] | INGXHMOEOE | ING(PAE)JWEAEA 
+ioo(4) 44 | 41 | emerge | [8, 17, 1, 8, 3, 7] | [9, 16, 7, 5, 4] | [hr, dad] | HBUHOW | JGTJ(UB)O 
+ioo(5) 51 | 50 | emerge | [4, 21, 3, 1, 12, 10] | [17, 18, 2, 11, 2] | [ad, dhr] | RINGOUEOI | ?R?ING(UB)TEOA 
+Results for spiral6.txt
+ioo(0) 111 | 64 | emerge | [25, 15, 27, 4, 17, 23] | [10, 12, 23, 13, 6] | [ad, dad] | AESIORBD | OEL?IO??R?GH 
+ioo(1) 42 | 47 | emerge | [9, 4, 8, 0, 17, 4] | [5, 4, 8, 17, 13] | [hr, dad] | NRHFBR | E?R?JNG?R? 
+ioo(2) 57 | 31 | emerge | [5, 5, 15, 20, 8, 4] | [0, 10, 5, 12, 4] | [hr, dad] | CCSLHR | THTHLIOJ?R? 
+ioo(3) 117 | 42 | emerge | [25, 28, 27, 28, 0, 9] | [3, 1, 1, 28, 9] | [hr, dhr] | AEEAIOEAFN | OE?EA??IO??EA?NE 
+ioo(4) 98 | 47 | emerge | [8, 22, 9, 16, 24, 19] | [14, 13, 7, 8, 5] | [ad, dad] | HOENTAM | JEAEYSW 
+ioo(5) 107 | 62 | emerge | [24, 17, 22, 16, 0, 28] | [7, 5, 6, 16, 28] | [ad, dad] | ABOETFEA | SGEAYN?EA? 
+ioo(6) 36 | 43 | emerge | [7, 1, 6, 16, 0, 6] | [6, 5, 10, 16, 6] | [hr, dhr] | WUGTFG | OT?G?YN?G? 
+Results for spiral7.txt
+ioo(0) 89 | 67 | emerge | [26, 15, 12, 1, 26, 9] | [11, 3, 11, 25, 17] | [hr, diffs_is_odd, dhr] | YSEOUYN | ?Y?LEOT?Y?E 
+ioo(1) 106 | 87 | emerge | [27, 25, 1, 24, 5, 24] | [2, 24, 23, 19, 19] | [hr, dhr] | IOAEUACA | ?IO?OETSTHS 
+ioo(2) 62 | 33 | emerge | [9, 1, 4, 3, 21, 24] | [8, 3, 1, 18, 3] | [ad, dhr] | NUROINGA | ET?R?(UB)INGS 
+ioo(3) 105 | 54 | emerge | [17, 27, 24, 11, 3, 23] | [10, 3, 13, 8, 20] | [ad, dad] | BIOAJOD | G?IO?SR(UB)H 
+ioo(4) 75 | 48 | emerge | [5, 17, 24, 21, 1, 7] | [12, 7, 3, 20, 6] | [ad, dad] | CBAINGUW | THGSINGTO 
+ioo(5) 62 | 25 | emerge | [10, 15, 14, 8, 12, 3] | [5, 1, 6, 4, 9] | [ad, dad] | ISXHEOO | AL(PAE)JEO(UB) 
+ioo(6) 83 | 34 | emerge | [16, 18, 4, 4, 19, 22] | [2, 14, 0, 15, 3] | [hr, dad] | TERRMOE | YX?R??R?WEA 
+Results for branch8.txt
+ioo(0) 67 | 46 | emerge | [15, 4, 18, 12, 5, 13] | [11, 14, 6, 7, 8] | [ad, dad] | SREEOCP | L?R?XEOTH(CM) 
+ioo(1) 93 | 37 | emerge | [17, 27, 16, 9, 8, 16] | [10, 11, 7, 1, 8] | [hr, dad] | BIOTNHT | G?IO?YEJY 
+ioo(2) 104 | 55 | emerge | [20, 23, 10, 28, 10, 13] | [3, 13, 18, 18, 3] | [hr, dhr] | LDIEAIP | IOHA?EA?A(CM) 
+ioo(3) 57 | 43 | emerge | [1, 10, 8, 17, 5, 16] | [9, 2, 9, 12, 11] | [ad, dhr] | UIHBCT | TAJGTHY 
+ioo(4) 92 | 60 | emerge | [0, 12, 26, 16, 26, 12] | [12, 14, 10, 10, 14] | [is_even, hr, diffs_is_even, dhr] | FEOYTYEO | NEO?Y?Y?Y?EO 
+ioo(5) 95 | 36 | emerge | [15, 23, 20, 25, 7, 5] | [8, 3, 5, 18, 2] | [ad, dad] | SDLAEWC | LHIOOEOTH 
+ioo(6) 124 | 28 | emerge | [26, 13, 21, 24, 20, 20] | [13, 8, 3, 4, 0] | [hr, dad] | YPINGALL | ?Y?(CM)INGSIOIO 
+Results for branch9.txt
+ioo(0) 68 | 52 | emerge | [24, 8, 1, 14, 17, 4] | [16, 7, 13, 3, 13] | [ad, dhr] | AHUXBR | SJT(PAE)G?R? 
+ioo(1) 81 | 28 | emerge | [13, 10, 11, 22, 16, 9] | [3, 1, 11, 6, 7] | [ad, dad] | PIJOETN | (CM)AREAYE 
+ioo(2) 76 | 32 | emerge | [23, 15, 8, 13, 14, 3] | [8, 7, 5, 1, 11] | [ad, dad] | DSHPXO | HLJ(CM)(PAE)(UB) 
+ioo(3) 42 | 26 | emerge | [10, 7, 1, 3, 3, 18] | [3, 6, 2, 0, 15] | [hr, dad] | IWUOOE | AOT(UB)(UB)X 
+ioo(4) 79 | 25 | emerge | [20, 17, 11, 5, 11, 15] | [3, 6, 6, 6, 4] | [hr, dhr] | LBJCJS | IOGRTHRL 
+ioo(5) 61 | 66 | emerge | [6, 8, 27, 2, 0, 18] | [2, 19, 25, 2, 18] | [ad, dhr] | GHIOTHFE | ?G?J?IO?(FID)NX 
+Results for branch10.txt
+ioo(0) 93 | 57 | emerge | [27, 3, 20, 21, 16, 6] | [24, 17, 1, 5, 10] | [ad, dad] | IOOLINGTG | ?IO?(UB)IOINGY?G? 
+Results for branch11.txt
+ioo(0) 77 | 90 | emerge | [20, 10, 1, 26, 0, 20] | [10, 9, 25, 26, 20] | [hr, dad] | LIUYFL | IOAT?Y?NIO 
+ioo(1) 78 | 17 | emerge | [11, 11, 6, 14, 18, 18] | [0, 5, 8, 4, 0] | [hr, dhr] | JJGXEE | RR?G?(PAE)XX 
+Results for branch12.txt
+ioo(0) 64 | 38 | emerge | [28, 15, 6, 2, 9, 4] | [13, 9, 4, 7, 5] | [ad, dad] | EASGTHNR | ?EA?L?G?(FID)E?R? 
+ioo(1) 78 | 68 | emerge | [9, 6, 27, 3, 10, 23] | [3, 21, 24, 7, 13] | [ad, dad] | NGIOOID | E?G??IO?(UB)AH 
+ioo(2) 93 | 33 | emerge | [11, 5, 18, 14, 23, 22] | [6, 13, 4, 9, 1] | [ad, dad] | JCEXDOE | RTHX(PAE)HEA 
+Results for branch13.txt
+ioo(0) 63 | 33 | emerge | [17, 12, 11, 7, 0, 16] | [5, 1, 4, 7, 16] | [ad, dad] | BEOJWFT | GEORONY 
+ioo(1) 75 | 50 | emerge | [14, 18, 6, 12, 3, 22] | [4, 12, 6, 9, 19] | [ad, dad] | XEGEOOOE | (PAE)X?G?EO(UB)EA 
+ioo(2) 44 | 60 | emerge | [0, 13, 7, 2, 20, 2] | [13, 6, 5, 18, 18] | [hr, dhr] | FPWTHLTH | N(CM)O(FID)IO(FID) 
+ioo(3) 44 | 34 | emerge | [18, 3, 6, 4, 1, 12] | [15, 3, 2, 3, 11] | [ad, dhr] | EOGRUEO | X(UB)?G??R?TEO 
+ioo(4) 74 | 16 | emerge | [13, 14, 7, 13, 14, 13] | [1, 7, 6, 1, 1] | [hr, dhr] | PXWPXP | (CM)(PAE)O(CM)(PAE)(CM) 
+ioo(5) 86 | 82 | emerge | [6, 28, 10, 25, 5, 12] | [22, 18, 15, 20, 7] | [ad, dad] | GEAIAECEO | ?G??EA?AOETHEO 
+ioo(6) 85 | 62 | emerge | [26, 26, 1, 12, 2, 18] | [0, 25, 11, 10, 16] | [hr, dad] | YYUEOTHE | ?Y??Y?TEO(FID)X 
+ioo(7) 78 | 52 | emerge | [6, 28, 21, 8, 11, 4] | [22, 7, 13, 3, 7] | [ad, dhr] | GEAINGHJR | ?G??EA?INGJR?R? 
+Results for branch14.txt
+ioo(0) 89 | 31 | emerge | [4, 18, 20, 18, 20, 9] | [14, 2, 2, 2, 11] | [hr, dhr] | RELELN | ?R?XIOXIOE 
+ioo(1) 52 | 35 | emerge | [5, 6, 10, 1, 8, 22] | [1, 4, 9, 7, 14] | [ad, dad] | CGIUHOE | TH?G?ATJEA 
+ioo(2) 48 | 49 | emerge | [9, 1, 8, 21, 9, 0] | [8, 7, 13, 12, 9] | [hr, dad] | NUHINGNF | ETJINGEN 
+ioo(3) 111 | 18 | emerge | [18, 19, 19, 14, 15, 26] | [1, 0, 5, 1, 11] | [hr, dhr] | EMMXSY | XWW(PAE)L?Y? 
+ioo(4) 112 | 30 | emerge | [20, 8, 11, 23, 24, 26] | [12, 3, 12, 1, 2] | [ad, dhr] | LHJDAY | IOJRHS?Y? 
+ioo(5) 108 | 29 | emerge | [16, 14, 16, 9, 26, 27] | [2, 2, 7, 17, 1] | [hr, dhr] | TXTNYIO | Y(PAE)YE?Y??IO? 
+ioo(6) 89 | 61 | emerge | [26, 5, 12, 20, 7, 19] | [21, 7, 8, 13, 12] | [ad, dad] | YCEOLWM | ?Y?THEOIOOW 
+Results for mobius15.txt
+ioo(0) 93 | 49 | emerge | [12, 16, 25, 8, 7, 25] | [4, 9, 17, 1, 18] | [hr, dad] | EOTAEHWAE | EOYOEJOOE 
+ioo(1) 76 | 86 | emerge | [4, 24, 9, 27, 2, 10] | [20, 15, 18, 25, 8] | [ad, dad] | RANIOTHI | ?R?SE?IO?(FID)A 
+ioo(2) 102 | 35 | emerge | [28, 18, 7, 7, 21, 21] | [10, 11, 0, 14, 0] | [hr, dhr] | EAEWWINGING | ?EA?XOOINGING 
+ioo(3) 127 | 61 | emerge | [25, 0, 28, 28, 22, 24] | [25, 28, 0, 6, 2] | [hr, dad] | AEFEAEAOEA | OEN?EA??EA?EAS 
+Results for mobius16.txt
+ioo(0) 53 | 54 | emerge | [3, 17, 26, 0, 4, 3] | [14, 9, 26, 4, 1] | [hr, dad] | OBYFRO | (UB)G?Y?N?R?(UB) 
+ioo(1) 99 | 50 | emerge | [27, 14, 9, 21, 23, 5] | [13, 5, 12, 2, 18] | [ad, dad] | IOXNINGDC | ?IO?(PAE)EINGHTH 
+ioo(2) 97 | 68 | emerge | [9, 28, 26, 2, 19, 13] | [19, 2, 24, 17, 6] | [ad, dad] | NEAYTHMP | E?EA??Y?(FID)W(CM) 
+ioo(3) 71 | 27 | emerge | [16, 23, 9, 7, 9, 7] | [7, 14, 2, 2, 2] | [hr, dhr] | TDNWNW | YHEOEO 
+ioo(4) 68 | 58 | emerge | [19, 4, 10, 10, 24, 1] | [15, 6, 0, 14, 23] | [hr, dad] | MRIIAU | W?R?AAST 
+ioo(5) 75 | 40 | emerge | [4, 19, 18, 23, 7, 4] | [15, 1, 5, 16, 3] | [hr, dad] | RMEDWR | ?R?WXHO?R? 
+Results for mobius17.txt
+ioo(0) 78 | 35 | emerge | [11, 14, 10, 15, 22, 6] | [3, 4, 5, 7, 16] | [ad, diffs_incremental, dad] | JXISOEG | R(PAE)ALEA?G? 
+ioo(1) 102 | 29 | emerge | [27, 23, 21, 22, 3, 6] | [4, 2, 1, 19, 3] | [ad, dad] | IODINGOEOG | ?IO?HINGEA(UB)?G? 
+ioo(2) 104 | 51 | emerge | [20, 14, 20, 21, 4, 25] | [6, 6, 1, 17, 21] | [hr, dhr] | LXLINGRAE | IO(PAE)IOING?R?OE 
+ioo(3) 60 | 42 | emerge | [3, 7, 7, 23, 19, 1] | [4, 0, 16, 4, 18] | [is_odd, hr, diffs_is_even, dhr] | OWWDMU | (UB)OOHWT 
+ioo(4) 68 | 35 | emerge | [24, 15, 8, 1, 11, 9] | [9, 7, 7, 10, 2] | [ad, dhr] | ASHUJN | SLJTRE 
+ioo(5) 57 | 51 | emerge | [11, 5, 7, 22, 2, 10] | [6, 2, 15, 20, 8] | [ad, dad] | JCWOETHI | RTHOEA(FID)A 
+ioo(6) 93 | 41 | emerge | [14, 5, 13, 12, 28, 21] | [9, 8, 1, 16, 7] | [ad, dad] | XCPEOEAING | (PAE)TH(CM)EO?EA?ING 
+Results for mobius18.txt
+ioo(0) 69 | 70 | emerge | [10, 5, 22, 8, 22, 2] | [5, 17, 14, 14, 20] | [hr, dhr] | ICOEHOETH | ATHEAJEA(FID) 
+ioo(1) 81 | 46 | emerge | [5, 14, 18, 28, 7, 9] | [9, 4, 10, 21, 2] | [ad, dad] | CXEEAWN | TH(PAE)X?EA?OE 
+ioo(2) 41 | 19 | emerge | [5, 10, 8, 11, 3, 4] | [5, 2, 3, 8, 1] | [ad, dad] | CIHJOR | THAJR(UB)?R? 
+ioo(3) 105 | 45 | emerge | [24, 14, 18, 18, 6, 25] | [10, 4, 0, 12, 19] | [hr, dad] | AXEEGAE | S(PAE)XX?G?OE 
+Results for mobius19.txt
+ioo(0) 100 | 58 | emerge | [14, 20, 11, 26, 9, 20] | [6, 9, 15, 17, 11] | [hr, dad] | XLJYNL | (PAE)IOR?Y?EIO 
+ioo(1) 89 | 25 | emerge | [5, 20, 20, 15, 13, 16] | [15, 0, 5, 2, 3] | [hr, dad] | CLLSPT | THIOIOL(CM)Y 
+ioo(2) 99 | 45 | emerge | [25, 13, 21, 7, 17, 16] | [12, 8, 14, 10, 1] | [ad, dad] | AEPINGWBT | OE(CM)INGOGY 
+ioo(3) 78 | 71 | emerge | [13, 8, 23, 4, 22, 8] | [5, 15, 19, 18, 14] | [hr, dad] | PHDROEH | (CM)JH?R?EAJ 
+ioo(4) 54 | 35 | emerge | [6, 9, 19, 4, 9, 7] | [3, 10, 15, 5, 2] | [hr, dad] | GNMRNW | ?G?EW?R?EO 
+ioo(5) 71 | 52 | emerge | [3, 24, 15, 19, 9, 1] | [21, 9, 4, 10, 8] | [ad, dad] | OASMNU | (UB)SLWET 
+Results for mobius20.txt
+ioo(0) 70 | 68 | emerge | [0, 7, 23, 4, 22, 14] | [7, 16, 19, 18, 8] | [ad, dad] | FWDROEX | NOH?R?EA(PAE) 
+ioo(1) 65 | 51 | emerge | [25, 4, 7, 18, 9, 2] | [21, 3, 11, 9, 7] | [ad, diffs_is_odd, dad] | AERWENTH | OE?R?OXE(FID) 
+ioo(2) 96 | 44 | emerge | [21, 21, 2, 17, 14, 21] | [0, 19, 15, 3, 7] | [hr, dad] | INGINGTHBXING | INGING(FID)G(PAE)ING 
+ioo(3) 71 | 81 | emerge | [25, 0, 7, 11, 28, 0] | [25, 7, 4, 17, 28] | [hr, dad] | AEFWJEAF | OENOR?EA?N 
+Results for mobius21.txt
+ioo(0) 76 | 51 | emerge | [5, 28, 16, 15, 4, 8] | [23, 12, 1, 11, 4] | [ad, dad] | CEATSRH | TH?EA?YL?R?J 
+ioo(1) 97 | 41 | emerge | [18, 20, 6, 6, 26, 21] | [2, 14, 0, 20, 5] | [hr, dad] | ELGGYING | XIO?G??G??Y?ING 
+ioo(2) 114 | 30 | emerge | [11, 16, 24, 27, 23, 13] | [5, 8, 3, 4, 10] | [ad, dad] | JTAIODP | RYS?IO?H(CM) 
+Results for mobius22.txt
+ioo(0) 103 | 18 | emerge | [16, 13, 13, 14, 25, 22] | [3, 0, 1, 11, 3] | [hr, dhr] | TPPXAEOE | Y(CM)(CM)(PAE)OEEA 
+ioo(1) 97 | 21 | emerge | [13, 15, 22, 23, 12, 12] | [2, 7, 1, 11, 0] | [hr, dad] | PSOEDEOEO | (CM)LEAHEOEO 
+Results for mayfly23.txt
+ioo(0) 81 | 45 | emerge | [18, 2, 17, 10, 17, 17] | [16, 15, 7, 7, 0] | [hr, diffs_decremental, dhr] | ETHBIBB | X(FID)GAGG 
+ioo(1) 39 | 35 | emerge | [5, 12, 0, 0, 6, 16] | [7, 12, 0, 6, 10] | [hr, dad] | CEOFFGT | THEONN?G?Y 
+ioo(2) 61 | 41 | emerge | [8, 14, 10, 21, 3, 5] | [6, 4, 11, 18, 2] | [ad, dad] | HXIINGOC | J(PAE)AING(UB)TH 
+ioo(3) 107 | 35 | emerge | [3, 23, 23, 15, 21, 22] | [20, 0, 8, 6, 1] | [hr, dad] | ODDSINGOE | (UB)HHLINGEA 
+ioo(4) 93 | 36 | emerge | [11, 7, 25, 18, 19, 13] | [4, 18, 7, 1, 6] | [ad, dad] | JWAEEMP | ROOEXW(CM) 
+ioo(5) 59 | 36 | emerge | [9, 10, 6, 12, 3, 19] | [1, 4, 6, 9, 16] | [ad, diffs_incremental, dad] | NIGEOOM | EA?G?EO(UB)W 
+ioo(6) 68 | 60 | emerge | [16, 12, 12, 0, 24, 4] | [4, 0, 12, 24, 20] | [is_even, hr, diffs_is_even, dad] | TEOEOFAR | YEOEONS?R? 
+ioo(7) 93 | 32 | emerge | [17, 17, 27, 9, 12, 11] | [0, 10, 18, 3, 1] | [hr, dad] | BBIONEOJ | GG?IO?EEOR 
+Results for mayfly24.txt
+ioo(0) 99 | 56 | emerge | [24, 10, 3, 21, 15, 26] | [14, 7, 18, 6, 11] | [ad, dad] | AIOINGSY | SA(UB)INGL?Y? 
+ioo(1) 63 | 47 | emerge | [9, 9, 28, 11, 2, 4] | [0, 19, 17, 9, 2] | [hr, dad] | NNEAJTHR | EE?EA?R(FID)?R? 
+Results for mayfly25.txt
+ioo(0) 107 | 55 | emerge | [28, 7, 22, 17, 12, 21] | [21, 15, 5, 5, 9] | [ad, diffs_is_odd, dhr] | EAWOEBEOING | ?EA?OEAGEOING 
+ioo(1) 91 | 87 | emerge | [24, 4, 14, 25, 1, 23] | [20, 10, 11, 24, 22] | [ad, dad] | ARXAEUD | S?R?(PAE)OETH 
+Results for mayfly26.txt
+ioo(0) 74 | 62 | emerge | [28, 20, 4, 20, 0, 2] | [8, 16, 16, 20, 2] | [is_even, hr, diffs_is_even, dhr] | EALRLFTH | ?EA?IO?R?ION(FID) 
+ioo(1) 50 | 41 | emerge | [4, 16, 8, 2, 3, 17] | [12, 8, 6, 1, 14] | [ad, dad] | RTHTHOB | ?R?YJ(FID)(UB)G 
+ioo(2) 107 | 50 | emerge | [28, 11, 11, 20, 27, 10] | [17, 0, 9, 7, 17] | [hr, dhr] | EAJJLIOI | ?EA?RRIO?IO?A 
+ioo(3) 99 | 32 | emerge | [23, 12, 8, 12, 19, 25] | [11, 4, 4, 7, 6] | [hr, dhr] | DEOHEOMAE | HEOJEOWOE 
+ioo(4) 101 | 34 | emerge | [20, 18, 18, 13, 6, 26] | [2, 0, 5, 7, 20] | [hr, dad] | LEEPGY | IOXX(CM)?G??Y? 
+ioo(5) 90 | 41 | emerge | [22, 16, 27, 17, 5, 3] | [6, 11, 10, 12, 2] | [ad, dad] | OETIOBCO | EAY?IO?GTH(UB) 
+Results for wingtree27.txt
+ioo(0) 67 | 80 | emerge | [18, 9, 14, 0, 26, 0] | [9, 5, 14, 26, 26] | [hr, dhr] | ENXFYF | XE(PAE)N?Y?N 
+Results for wingtree28.txt
+ioo(0) 122 | 57 | emerge | [15, 26, 23, 6, 28, 24] | [11, 3, 17, 22, 4] | [ad, dad] | SYDGEAA | L?Y?H?G??EA?S 
+ioo(1) 62 | 49 | emerge | [21, 6, 2, 19, 8, 6] | [15, 4, 17, 11, 2] | [hr, dad] | INGGTHMHG | ING?G?(FID)WJ?G? 
+ioo(2) 63 | 18 | emerge | [5, 3, 6, 13, 17, 19] | [2, 3, 7, 4, 2] | [ad, dhr] | COGPBM | TH(UB)?G?(CM)GW 
+ioo(3) 89 | 61 | emerge | [10, 21, 23, 6, 22, 7] | [11, 2, 17, 16, 15] | [ad, dad] | IINGDGOEW | AINGH?G?EAO 
+ioo(4) 97 | 47 | emerge | [14, 24, 17, 5, 20, 17] | [10, 7, 12, 15, 3] | [hr, dad] | XABCLB | (PAE)SGTHIOG 
+Results for wingtree29.txt
+ioo(0) 67 | 30 | emerge | [13, 11, 15, 20, 3, 5] | [2, 4, 5, 17, 2] | [ad, dhr] | PJSLOC | (CM)RLIO(UB)TH 
+ioo(1) 66 | 77 | emerge | [4, 21, 3, 11, 24, 3] | [17, 18, 8, 13, 21] | [hr, dad] | RINGOJAO | ?R?ING(UB)RS(UB) 
+ioo(2) 55 | 40 | emerge | [21, 0, 9, 6, 6, 13] | [21, 9, 3, 0, 7] | [hr, dad] | INGFNGGP | INGNE?G??G?(CM) 
+ioo(3) 73 | 39 | emerge | [5, 10, 18, 19, 5, 16] | [5, 8, 1, 14, 11] | [hr, dad] | CIEMCT | THAXWTHY 
+ioo(4) 66 | 31 | emerge | [18, 13, 20, 7, 7, 1] | [5, 7, 13, 0, 6] | [hr, dad] | EPLWWU | X(CM)IOOOT 
+Results for wingtree30.txt
+ioo(0) 78 | 48 | emerge | [7, 14, 5, 11, 26, 15] | [7, 9, 6, 15, 11] | [ad, dad] | WXCJYS | O(PAE)THR?Y?L 
+ioo(1) 98 | 39 | emerge | [17, 15, 5, 24, 21, 16] | [2, 10, 19, 3, 5] | [ad, dad] | BSCAINGT | GLTHSINGY 
+ioo(2) 71 | 37 | emerge | [3, 8, 17, 14, 21, 8] | [5, 9, 3, 7, 13] | [hr, diffs_is_odd, dad] | OHBXINGH | (UB)JG(PAE)INGJ 
+ioo(3) 95 | 32 | emerge | [15, 12, 11, 18, 26, 13] | [3, 1, 7, 8, 13] | [ad, dad] | SEOJEYP | LEORX?Y?(CM) 
+ioo(4) 114 | 40 | emerge | [14, 28, 27, 25, 18, 2] | [14, 1, 2, 7, 16] | [ad, dad] | XEAIOAEETH | (PAE)?EA??IO?OEX(FID) 
+ioo(5) 103 | 30 | emerge | [7, 22, 24, 23, 16, 11] | [15, 2, 1, 7, 5] | [ad, dad] | WOEADTJ | OEASHYR 
+Results for wingtree31.txt
+ioo(0) 76 | 43 | emerge | [2, 20, 19, 5, 15, 15] | [18, 1, 14, 10, 0] | [hr, dad] | THLMCSS | (FID)IOWTHLL 
+ioo(1) 75 | 80 | emerge | [27, 1, 9, 28, 9, 1] | [26, 8, 19, 19, 8] | [hr, dhr] | IOUNEANU | ?IO?TE?EA?ET 
+ioo(2) 83 | 29 | emerge | [21, 27, 9, 8, 10, 8] | [6, 18, 1, 2, 2] | [hr, dhr] | INGIONHIH | ING?IO?EJAJ 
+ioo(3) 94 | 55 | emerge | [0, 19, 24, 8, 20, 23] | [19, 5, 16, 12, 3] | [ad, dad] | FMAHLD | NWSJIOH 
+ioo(4) 70 | 50 | emerge | [22, 19, 5, 17, 1, 6] | [3, 14, 12, 16, 5] | [ad, dad] | OEMCBUG | EAWTHGT?G? 
+Results for wingtree32.txt
+ioo(0) 96 | 45 | emerge | [3, 27, 23, 23, 14, 6] | [24, 4, 0, 9, 8] | [hr, dad] | OIODDXG | (UB)?IO?HH(PAE)?G? 
+Results for cuneiform33.txt
+ioo(0) 98 | 31 | emerge | [8, 9, 20, 27, 19, 15] | [1, 11, 7, 8, 4] | [ad, dad] | HNLIOMS | JEIO?IO?WL 
+ioo(1) 63 | 50 | emerge | [14, 11, 20, 3, 13, 2] | [3, 9, 17, 10, 11] | [ad, dad] | XJLOPTH | (PAE)RIO(UB)(CM)(FID) 
+ioo(2) 95 | 67 | emerge | [5, 27, 8, 23, 20, 12] | [22, 19, 15, 3, 8] | [ad, dad] | CIOHDLEO | TH?IO?JHIOEO 
+Results for cuneiform34.txt
+ioo(0) 99 | 54 | emerge | [27, 12, 23, 11, 7, 19] | [15, 11, 12, 4, 12] | [ad, dhr] | IOEODJWM | ?IO?EOHROW 
+ioo(1) 98 | 41 | emerge | [18, 13, 23, 20, 7, 17] | [5, 10, 3, 13, 10] | [ad, dhr] | EPDLWB | X(CM)HIOOG 
+ioo(2) 68 | 50 | emerge | [23, 0, 2, 7, 9, 27] | [23, 2, 5, 2, 18] | [ad, dhr] | DFTHWNIO | HN(FID)OE?IO? 
+ioo(3) 85 | 75 | emerge | [8, 4, 26, 1, 21, 25] | [4, 22, 25, 20, 4] | [ad, dhr] | HRYUINGAE | J?R??Y?TINGOE 
+Results for cuneiform35.txt
+ioo(0) 95 | 36 | emerge | [21, 23, 8, 16, 18, 9] | [2, 15, 8, 2, 9] | [ad, dhr] | INGDHTEN | INGHJYXE 
+ioo(1) 63 | 57 | emerge | [10, 5, 0, 27, 14, 7] | [5, 5, 27, 13, 7] | [ad, diffs_is_odd, dhr] | ICFIOXW | ATHN?IO?(PAE)O 
+Results for cuneiform36.txt
+ioo(0) 109 | 39 | emerge | [25, 19, 26, 18, 19, 2] | [6, 7, 8, 1, 17] | [hr, dad] | AEMYEMTH | OEW?Y?XW(FID) 
+ioo(1) 142 | 16 | emerge | [24, 20, 23, 26, 27, 22] | [4, 3, 3, 1, 5] | [ad, dhr] | ALDYIOOE | SIOH?Y??IO?EA 
+ioo(2) 95 | 38 | emerge | [12, 12, 26, 26, 17, 2] | [0, 14, 0, 9, 15] | [hr, dhr] | EOEOYYBTH | EOEO?Y??Y?G(FID) 
+ioo(3) 92 | 55 | emerge | [17, 20, 8, 17, 26, 4] | [3, 12, 9, 9, 22] | [hr, dhr] | BLHBYR | GIOJG?Y??R? 
+Results for cuneiform37.txt
+ioo(0) 73 | 53 | emerge | [3, 26, 24, 3, 9, 8] | [23, 2, 21, 6, 1] | [hr, dad] | OYAONH | (UB)?Y?S(UB)EJ 
+ioo(1) 58 | 89 | emerge | [3, 27, 0, 0, 22, 6] | [24, 27, 0, 22, 16] | [hr, dad] | OIOFFOEG | (UB)?IO?NNEA?G? 
+ioo(2) 63 | 69 | emerge | [5, 21, 3, 22, 6, 6] | [16, 18, 19, 16, 0] | [hr, dhr] | CINGOOEGG | THING(UB)EA?G??G? 
+ioo(3) 94 | 41 | emerge | [10, 17, 16, 7, 25, 19] | [7, 1, 9, 18, 6] | [ad, dad] | IBTWAEM | AGYOOEW 
+Results for cuneiform38.txt
+ioo(0) 78 | 64 | emerge | [12, 6, 16, 8, 28, 8] | [6, 10, 8, 20, 20] | [is_even, hr, diffs_is_even, dhr] | EOGTHEAH | EO?G?YJ?EA?J 
+ioo(1) 95 | 68 | emerge | [9, 6, 27, 14, 28, 11] | [3, 21, 13, 14, 17] | [ad, dad] | NGIOXEAJ | E?G??IO?(PAE)?EA?R 
+ioo(2) 92 | 57 | emerge | [19, 6, 25, 27, 11, 4] | [13, 19, 2, 16, 7] | [ad, dad] | MGAEIOJR | W?G?OE?IO?R?R? 
+ioo(3) 64 | 39 | emerge | [19, 17, 1, 4, 15, 8] | [2, 16, 3, 11, 7] | [ad, dad] | MBURSH | WGT?R?LJ 
+ioo(4) 53 | 40 | emerge | [7, 4, 4, 21, 16, 1] | [3, 0, 17, 5, 15] | [hr, dad] | WRRINGTU | O?R??R?INGYT 
+Results for cuneiform39.txt
+ioo(0) 103 | 52 | emerge | [28, 11, 2, 18, 24, 20] | [17, 9, 16, 6, 4] | [ad, dad] | EAJTHEAL | ?EA?R(FID)XSIO 
+ioo(1) 95 | 61 | emerge | [21, 8, 6, 25, 11, 24] | [13, 2, 19, 14, 13] | [ad, dhr] | INGHGAEJA | INGJ?G?OERS 
+ioo(2) 81 | 54 | emerge | [1, 26, 17, 13, 7, 17] | [25, 9, 4, 6, 10] | [hr, dad] | UYBPWB | T?Y?G(CM)OG 
+ioo(3) 77 | 43 | emerge | [1, 7, 18, 13, 10, 28] | [6, 11, 5, 3, 18] | [ad, dad] | UWEPIEA | TOX(CM)A?EA? 
+ioo(4) 124 | 35 | emerge | [17, 28, 23, 18, 14, 24] | [11, 5, 5, 4, 10] | [ad, dhr] | BEADEXA | G?EA?HX(PAE)S 
+ioo(5) 82 | 83 | emerge | [18, 0, 26, 3, 16, 19] | [18, 26, 23, 13, 3] | [ad, dad] | EFYOTM | XN?Y?(UB)YW 
+ioo(6) 56 | 50 | emerge | [6, 17, 27, 1, 1, 4] | [11, 10, 26, 0, 3] | [hr, dad] | GBIOUUR | ?G?G?IO?TT?R? 
+ioo(7) 70 | 43 | emerge | [8, 5, 2, 19, 25, 11] | [3, 3, 17, 6, 14] | [ad, dhr] | HCTHMAEJ | JTH(FID)WOER 
+ioo(8) 100 | 62 | emerge | [11, 19, 27, 1, 21, 21] | [8, 8, 26, 20, 0] | [is_odd, hr, diffs_is_even, dhr] | JMIOUINGING | RW?IO?TINGING 
+Results for spiralbranch40.txt
+ioo(0) 91 | 48 | emerge | [15, 20, 12, 18, 5, 21] | [5, 8, 6, 13, 16] | [ad, dad] | SLEOECING | LIOEOXTHING 
+ioo(1) 75 | 88 | emerge | [0, 26, 6, 7, 28, 8] | [26, 20, 1, 21, 20] | [ad, dhr] | FYGWEAH | N?Y??G?O?EA?J 
+ioo(2) 63 | 62 | emerge | [4, 15, 2, 19, 21, 2] | [11, 13, 17, 2, 19] | [hr, dad, diffs_all_prime] | RSTHMINGTH | ?R?L(FID)WING(FID) 
+Results for spiralbranch41.txt
+ioo(0) 99 | 50 | emerge | [26, 7, 1, 19, 20, 26] | [19, 6, 18, 1, 6] | [hr, dhr] | YWUMLY | ?Y?OTWIO?Y? 
+ioo(1) 73 | 70 | emerge | [4, 5, 28, 6, 4, 26] | [1, 23, 22, 2, 22] | [hr, dhr] | RCEAGRY | ?R?TH?EA??G??R??Y? 
+ioo(2) 72 | 32 | emerge | [13, 10, 4, 2, 22, 21] | [3, 6, 2, 20, 1] | [ad, dad] | PIRTHOEING | (CM)A?R?(FID)EAING 
+ioo(3) 96 | 42 | emerge | [25, 21, 2, 9, 18, 21] | [4, 19, 7, 9, 3] | [hr, dad] | AEINGTHNEING | OEING(FID)EXING 
+Results for spiralbranch42.txt
+ioo(0) 98 | 40 | emerge | [15, 22, 7, 19, 16, 19] | [7, 15, 12, 3, 3] | [hr, dhr] | SOEWMTM | LEAOWYW 
+ioo(1) 86 | 42 | emerge | [7, 18, 9, 17, 22, 13] | [11, 9, 8, 5, 9] | [ad, dhr] | WENBOEP | OXEGEA(CM) 
+ioo(2) 73 | 48 | emerge | [5, 2, 15, 7, 25, 19] | [3, 13, 8, 18, 6] | [ad, dad] | CTHSWAEM | TH(FID)LOOEW 
+ioo(3) 76 | 43 | emerge | [6, 16, 8, 6, 23, 17] | [10, 8, 2, 17, 6] | [hr, dad] | GTHGDB | ?G?YJ?G?HG 
+ioo(4) 101 | 55 | emerge | [7, 25, 23, 5, 21, 20] | [18, 2, 18, 16, 1] | [ad, dhr] | WAEDCINGL | OOEHTHINGIO 
+Results for spiralbranch43.txt
+ioo(0) 73 | 47 | emerge | [6, 19, 9, 20, 12, 7] | [13, 10, 11, 8, 5] | [ad, dad] | GMNLEOW | ?G?WEIOEOO 
+ioo(1) 75 | 61 | emerge | [0, 25, 27, 13, 1, 9] | [25, 2, 14, 12, 8] | [ad, dad] | FAEIOPUN | NOE?IO?(CM)TE 
+ioo(2) 59 | 60 | emerge | [7, 23, 4, 9, 15, 1] | [16, 19, 5, 6, 14] | [ad, dad] | WDRNSU | OH?R?ELT 
+ioo(3) 62 | 34 | emerge | [1, 10, 3, 10, 17, 21] | [9, 7, 7, 7, 4] | [hr, diffs_decremental, dhr] | UIOIBING | TA(UB)AGING 
+Results for spiralbranch44.txt
+ioo(0) 95 | 51 | emerge | [11, 19, 22, 25, 2, 16] | [8, 3, 3, 23, 14] | [ad, dhr] | JMOEAETHT | RWEAOE(FID)Y 
+ioo(1) 74 | 52 | emerge | [19, 4, 10, 22, 16, 3] | [15, 6, 12, 6, 13] | [ad, dhr] | MRIOETO | W?R?AEAY(UB) 
+ioo(2) 122 | 44 | emerge | [25, 22, 19, 28, 9, 19] | [3, 3, 9, 19, 10] | [hr, dhr] | AEOEMEANM | OEEAW?EA?EW 
+ioo(3) 93 | 40 | emerge | [13, 20, 7, 7, 19, 27] | [7, 13, 0, 12, 8] | [hr, dad] | PLWWMIO | (CM)IOOOW?IO? 
+ioo(4) 100 | 49 | emerge | [25, 24, 1, 5, 19, 26] | [1, 23, 4, 14, 7] | [ad, dad] | AEAUCMY | OESTTHW?Y? 
+Results for spiralbranch45.txt
+ioo(0) 89 | 62 | emerge | [26, 3, 17, 24, 13, 6] | [23, 14, 7, 11, 7] | [ad, dhr] | YOBAPG | ?Y?(UB)GS(CM)?G? 
+ioo(1) 76 | 37 | emerge | [1, 1, 19, 19, 12, 24] | [0, 18, 0, 7, 12] | [hr, dhr] | UUMMEOA | TTWWEOS 
+ioo(2) 85 | 42 | emerge | [1, 15, 11, 10, 27, 21] | [14, 4, 1, 17, 6] | [ad, dad] | USJIIOING | TLRA?IO?ING 
+ioo(3) 68 | 55 | emerge | [2, 17, 16, 7, 1, 25] | [15, 1, 9, 6, 24] | [ad, dad] | THBTWUAE | (FID)GYOTOE 
+ioo(4) 118 | 39 | emerge | [10, 22, 27, 28, 24, 7] | [12, 5, 1, 4, 17] | [ad, dad] | IOEIOEAAW | AEA?IO??EA?SO 
+ioo(5) 86 | 56 | emerge | [14, 26, 18, 7, 1, 20] | [12, 8, 11, 6, 19] | [ad, dad] | XYEWUL | (PAE)?Y?XOTIO 
+Results for spiralbranch46.txt
+ioo(0) 111 | 53 | emerge | [27, 24, 14, 1, 17, 28] | [3, 10, 13, 16, 11] | [ad, dad] | IOAXUBEA | ?IO?S(PAE)TG?EA? 
+ioo(1) 61 | 52 | emerge | [4, 13, 10, 5, 23, 6] | [9, 3, 5, 18, 17] | [ad, dad] | RPICDG | ?R?(CM)ATHH?G? 
+ioo(2) 94 | 33 | emerge | [16, 22, 25, 14, 6, 11] | [6, 3, 11, 8, 5] | [ad, dad] | TOEAEXGJ | YEAOE(PAE)?G?R 
+Results for spiralbranch47.txt
+ioo(0) 106 | 32 | emerge | [28, 17, 9, 14, 16, 22] | [11, 8, 5, 2, 6] | [ad, dad] | EABNXTOE | ?EA?GE(PAE)YEA 
+ioo(1) 112 | 32 | emerge | [26, 16, 24, 20, 12, 14] | [10, 8, 4, 8, 2] | [is_even, ad, diffs_is_even, dhr] | YTALEOX | ?Y?YSIOEO(PAE) 
+ioo(2) 98 | 58 | emerge | [2, 15, 28, 19, 10, 24] | [13, 13, 9, 9, 14] | [ad, dhr] | THSEAMIA | (FID)L?EA?WAS 
+ioo(3) 144 | 24 | emerge | [16, 28, 27, 21, 26, 26] | [12, 1, 6, 5, 0] | [hr, dad] | TEAIOINGYY | Y?EA??IO?ING?Y??Y? 
+ioo(4) 75 | 49 | emerge | [1, 11, 21, 23, 5, 14] | [10, 10, 2, 18, 9] | [ad, dhr] | UJINGDCX | TRINGHTH(PAE) 
+ioo(5) 93 | 27 | emerge | [26, 22, 7, 8, 15, 15] | [4, 15, 1, 7, 0] | [hr, dad] | YOEWHSS | ?Y?EAOJLL 
+ioo(6) 90 | 50 | emerge | [15, 18, 10, 26, 8, 13] | [3, 8, 16, 18, 5] | [ad, dad] | SEIYHP | LXA?Y?J(CM) 
+Results for spiralbranch48.txt
+ioo(0) 93 | 57 | emerge | [28, 2, 13, 17, 22, 11] | [26, 11, 4, 5, 11] | [ad, dhr] | EATHPBOEJ | ?EA?(FID)(CM)GEAR 
+ioo(1) 92 | 58 | emerge | [18, 17, 4, 28, 11, 14] | [1, 13, 24, 17, 3] | [ad, dad] | EBREAJX | XG?R??EA?R(PAE) 
+ioo(2) 98 | 73 | emerge | [14, 21, 5, 27, 10, 21] | [7, 16, 22, 17, 11] | [hr, dad] | XINGCIOIING | (PAE)INGTH?IO?AING 
+ioo(3) 55 | 30 | emerge | [3, 13, 12, 8, 4, 15] | [10, 1, 4, 4, 11] | [ad, dhr] | OPEOHRS | (UB)(CM)EOJ?R?L 
+ioo(4) 86 | 59 | emerge | [12, 24, 12, 5, 22, 11] | [12, 12, 7, 17, 11] | [hr, dhr] | EOAEOCOEJ | EOSEOTHEAR 
+Results for spiralbranch49.txt
+ioo(0) 63 | 71 | emerge | [1, 25, 7, 2, 18, 10] | [24, 18, 5, 16, 8] | [ad, dad] | UAEWTHEI | TOEO(FID)XA 
+ioo(1) 87 | 39 | emerge | [0, 18, 11, 20, 21, 17] | [18, 7, 9, 1, 4] | [ad, dad] | FEJLINGB | NXRIOINGG 
+ioo(2) 56 | 84 | emerge | [0, 5, 24, 3, 22, 2] | [5, 19, 21, 19, 20] | [ad, dhr] | FCAOOETH | NTHS(UB)EA(FID) 
+ioo(3) 63 | 35 | emerge | [4, 22, 18, 7, 7, 5] | [18, 4, 11, 0, 2] | [hr, dad] | ROEEWWC | ?R?EAXOOTH 
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+ioo(0) 62 | 27 | emerge | [11, 8, 2, 10, 11, 20] | [3, 6, 8, 1, 9] | [hr, dad] | JHTHIJL | RJ(FID)ARIO 
+Results for spiralbranch54.txt
+ioo(0) 66 | 44 | emerge | [18, 26, 17, 0, 5, 0] | [8, 9, 17, 5, 5] | [hr, dhr] | EYBFCF | X?Y?GNTHN 
+ioo(1) 88 | 50 | emerge | [26, 13, 10, 1, 12, 26] | [13, 3, 9, 11, 14] | [hr, dad] | YPIUEOY | ?Y?(CM)ATEO?Y? 
+ioo(2) 68 | 49 | emerge | [11, 1, 4, 17, 25, 10] | [10, 3, 13, 8, 15] | [ad, dad] | JURBAEI | RT?R?GOEA 
+Results for hollow54.txt
+ioo(0) 55 | 34 | emerge | [3, 12, 9, 3, 9, 19] | [9, 3, 6, 6, 10] | [hr, dhr] | OEONONM | (UB)EOE(UB)EW 
+ioo(1) 84 | 59 | emerge | [4, 18, 23, 5, 7, 27] | [14, 5, 18, 2, 20] | [ad, dad] | REDCWIO | ?R?XHTHO?IO? 
+ioo(2) 89 | 48 | emerge | [16, 16, 11, 19, 27, 0] | [0, 5, 8, 8, 27] | [hr, diffs_incremental, dhr] | TTJMIOF | YYRW?IO?N 
+ioo(3) 89 | 67 | emerge | [5, 28, 18, 28, 6, 4] | [23, 10, 10, 22, 2] | [hr, dhr] | CEAEEAGR | TH?EA?X?EA??G??R? 
+Results for hollow55.txt
+ioo(0) 116 | 35 | emerge | [26, 22, 17, 19, 25, 7] | [4, 5, 2, 6, 18] | [ad, dad] | YOEBMAEW | ?Y?EAGWOEO 
+ioo(1) 78 | 43 | emerge | [11, 8, 6, 13, 28, 12] | [3, 2, 7, 15, 16] | [ad, dad] | JHGPEAEO | RJ?G?(CM)?EA?EO 
+ioo(2) 72 | 82 | emerge | [1, 25, 5, 23, 7, 11] | [24, 20, 18, 16, 4] | [is_odd, ad, diffs_decremental, diffs_is_even, dad] | UAECDWJ | TOETHHOR 
+ioo(3) 114 | 41 | emerge | [16, 9, 21, 15, 28, 25] | [7, 12, 6, 13, 3] | [ad, dad] | TNINGSEAAE | YEINGL?EA?OE 
+Results for spiralbranch55.txt
+ioo(0) 59 | 41 | emerge | [12, 12, 1, 14, 17, 3] | [0, 11, 13, 3, 14] | [hr, dad] | EOEOUXBO | EOEOT(PAE)G(UB) 
+ioo(1) 77 | 39 | emerge | [13, 23, 5, 7, 15, 14] | [10, 18, 2, 8, 1] | [ad, dad] | PDCWSX | (CM)HTHOL(PAE) 

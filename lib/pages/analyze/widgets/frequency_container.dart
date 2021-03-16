@@ -1,21 +1,20 @@
-import 'package:cicadrypt/constants/runes.dart';
-import 'package:cicadrypt/global/cipher.dart';
-import 'package:cicadrypt/pages/analyze/widgets/frequency_bar_chart.dart';
-import 'package:cicadrypt/widgets/container_header.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
-import 'package:sortedmap/sortedmap.dart';
+import 'package:collection/collection.dart';
 
+import '../../../constants/runes.dart';
+import '../../../global/cipher.dart';
+import '../../../widgets/container_header.dart';
 import '../analyze_state.dart';
+import 'frequency_bar_chart.dart';
 
 class FrequencyContainer extends StatelessWidget {
-  const FrequencyContainer({
-    Key key,
-    @required this.frequencyScrollController,
+  FrequencyContainer({
     @required this.state,
-  }) : super(key: key);
+  }) : super();
 
-  final ScrollController frequencyScrollController;
+  final ScrollController frequencyScrollController = ScrollController();
   final AnalyzeState state;
 
   @override
@@ -38,39 +37,48 @@ class FrequencyContainer extends StatelessWidget {
                 child: Material(
                   child: Builder(
                     builder: (context) {
-                      final cipher_frequency = GetIt.instance<Cipher>().get_character_frequencies();
+                      final cipher_frequency = GetIt.instance<Cipher>().frequencies;
 
-                      final sorted_cipher_frequency = SortedMap.from(cipher_frequency, const Ordering.byValue());
+                      final sorted_entries = cipher_frequency.entries.sortedBy<num>((element) => element.value);
+
+                      final sorted_cipher_frequency = Map.fromEntries(sorted_entries);
 
                       return Scrollbar(
                         thickness: 4,
                         controller: frequencyScrollController,
                         isAlwaysShown: true,
                         child: ListView.builder(
+                          padding: EdgeInsets.zero,
                           itemCount: sorted_cipher_frequency.keys.length,
                           itemBuilder: (context, index) {
-                            final rune = sorted_cipher_frequency.keys.toList().reversed.elementAt(index);
-                            String runeInEnglish = '';
-                            try {
-                              runeInEnglish = runeToEnglish[rune];
-                            } catch (e) {
-                              runeInEnglish = '';
-                            }
+                            final text = sorted_cipher_frequency.keys.toList().reversed.elementAt(index);
+
                             final count = sorted_cipher_frequency.values.toList().reversed.elementAt(index).toString();
                             final count_percent = GetIt.instance<Cipher>().get_frequency_percent(int.parse(count));
 
-                            return TextButton(
-                              onPressed: () {
-                                state.highlight_all_instances_of_rune(rune);
-                              },
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [Text('$rune | ${runeInEnglish}', style: const TextStyle(color: Colors.white)), Text('${count_percent.toStringAsFixed(1)}% | $count', style: const TextStyle(color: Colors.white))],
+                            return Observer(builder: (_) {
+                              return Material(
+                                color: state.selectedFrequencies.contains(text) ? Colors.cyan.withOpacity(0.22) : Theme.of(context).scaffoldBackgroundColor,
+                                child: InkWell(
+                                  onTap: () {
+                                    if (state.selectedFrequencies.contains(text)) {
+                                      state.selectedFrequencies.remove(text);
+                                    } else {
+                                      state.selectedFrequencies.add(text);
+                                    }
+
+                                    state.highlight_all_instances_of_rune(text.rune);
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 2),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [Text('${text.rune} | ${text.english}', style: const TextStyle(color: Colors.white)), Text('${count_percent.toStringAsFixed(1)}% | $count', style: const TextStyle(color: Colors.white))],
+                                    ),
+                                  ),
                                 ),
-                              ),
-                            );
+                              );
+                            });
                           },
                         ),
                       );
@@ -85,7 +93,7 @@ class FrequencyContainer extends StatelessWidget {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        showDialog(context: context, builder: (context) => FrequencyBarChart());
+                        showDialog(context: context, builder: (context) => const FrequencyBarChart());
                       },
                       child: const Text(
                         'View Graph',

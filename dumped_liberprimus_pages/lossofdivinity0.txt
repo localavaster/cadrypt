@@ -1,0 +1,408 @@
+==========================
+== Entire Page Statistics
+==========================
+Total Words: 181 | PRIME: true
+Total Unique Words: 93 | PRIME: false
+Repeated Words: [ᚦᛖ, ᛚᚩᛋᛋ, ᚩᚠ, ᛞᛁᚢᛁᚾᛁᛏᚣ, ᛒᛖᚻᚪᚢᛡᚱᛋ, ᚳᚩᚾᛋᚢᛗᛈᛏᛡᚾ, ᚹᛖ, ᛒᛖᚳᚪᚢᛋᛖ, ᛞᛖᚳᛖᛈᛏᛡᚾ, ᚾᚩᛏ, ᚻᚪᚢᛖ, ᛖᚾᚩᚢᚷᚻ, ᚩᚱ, ᚦᛖᚱᛖ, ᛁᛋ, ᚹᚻᚪᛏ, ᚪᚾᛞ, ᚹᛁᛚᛚ, ᛒᛖ, ᛋᛏᚱᚩᛝ, ᛏᚩ, ᛗᚩᛋᛏ, ᚦᛝᛋ, ᚪᚱᛖ, ᚹᚩᚱᚦ, ᛈᚱᛖᛋᛖᚱᚢᚪᛏᛡᚾ, ᛚᚩᛋᛖ, ᚦᛖᛗ, ᚪᛞᚻᛖᚱᛖᚾᚳᛖ, ᚠᚩᛚᛚᚩᚹ, ᛋᚩ, ᚦᚪᛏ, ᚳᚪᚾ, ᛒᛖᛚᚩᛝ, ᚱᛁᚷᚻᛏ, ᚩᚢᚱ, ᚣᚩᚢ, ᚩᚹᚾ, ᛈᚱᚩᚷᚱᚪᛗ]
+Total Runes: 755 | PRIME: false
+Total Spaces: 183 | PRIME: false
+Total Periods: 0 | PRIME: true
+Total GP sum: 32811 | PRIME: false
+Total Sentences: 1 | PRIME: false
+Total Lines: 40 | PRIME: false
+==========================
+== Character Frequencies
+==========================
+ᚫ 0 | PRIME: true
+ᛄ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛠ 6 | PRIME: false
+ᚠ 8 | PRIME: false
+ᛡ 9 | PRIME: false
+ᚣ 10 | PRIME: false
+ᛝ 12 | PRIME: false
+ᚷ 13 | PRIME: true
+ᛈ 14 | PRIME: false
+ᛒ 19 | PRIME: true
+ᛗ 19 | PRIME: true
+ᛞ 21 | PRIME: false
+ᚻ 22 | PRIME: false
+ᚦ 26 | PRIME: false
+ᚳ 26 | PRIME: false
+ᛚ 26 | PRIME: false
+ᚹ 35 | PRIME: false
+ᛁ 38 | PRIME: false
+ᚢ 39 | PRIME: false
+ᛋ 45 | PRIME: false
+ᚪ 47 | PRIME: true
+ᚾ 48 | PRIME: false
+ᛏ 49 | PRIME: false
+ᚱ 50 | PRIME: false
+ᚩ 70 | PRIME: false
+ᛖ 103 | PRIME: true
+==========================
+== Character Frequencies As Sums
+==========================
+ᚫ 0 | PRIME: true
+ᛄ 0 | PRIME: true
+ᛇ 0 | PRIME: true
+ᛉ 0 | PRIME: true
+ᛟ 0 | PRIME: true
+ᛠ 654 | PRIME: false
+ᚠ 16 | PRIME: false
+ᛡ 963 | PRIME: false
+ᚣ 1030 | PRIME: false
+ᛝ 948 | PRIME: false
+ᚷ 221 | PRIME: false
+ᛈ 602 | PRIME: false
+ᛒ 1159 | PRIME: false
+ᛗ 1349 | PRIME: false
+ᛞ 1869 | PRIME: false
+ᚻ 506 | PRIME: false
+ᚦ 130 | PRIME: false
+ᚳ 338 | PRIME: false
+ᛚ 1898 | PRIME: false
+ᚹ 665 | PRIME: false
+ᛁ 1178 | PRIME: false
+ᚢ 117 | PRIME: false
+ᛋ 2385 | PRIME: false
+ᚪ 4559 | PRIME: false
+ᚾ 1392 | PRIME: false
+ᛏ 2891 | PRIME: false
+ᚱ 550 | PRIME: false
+ᚩ 490 | PRIME: false
+ᛖ 6901 | PRIME: false
+==========================
+== Sentence Characteristics
+==========================
+Sentence: ᚦᛖ-ᛚᚩᛋᛋ-ᚩᚠ-ᛞᛁᚢᛁᚾᛁᛏᚣ-ᚦᛖ-ᚳᛁᚱᚳᚢᛗᚠᛖᚱᛖᚾᚳᛖ-ᛈᚱᚪᚳᛏᛁᚳᛖᛋ-ᚦᚱᛖᛖ-ᛒᛖᚻᚪᚢᛡᚱᛋ-ᚹᚻᛁᚳᚻ-ᚳᚪᚢᛋᛖ-ᚦᛖ-ᛚᚩᛋᛋ-ᚩᚠ-ᛞᛁᚢᛁᚾᛁᛏᚣ-ᚳᚩᚾᛋᚢᛗᛈᛏᛡᚾ-ᚹᛖ-ᚳᚩᚾᛋᚢᛗᛖ-ᛏᚩᚩ-ᛗᚢᚳᚻ-ᛒᛖᚳᚪᚢᛋᛖ-ᚹᛖ-ᛒᛖᛚᛖᛁᚢᛖ-ᚦᛖ-ᚠᚩᛚᛚᚩᚹᛝ-ᛏᚹᚩ-ᛖᚱᚱᚩᚱᛋ-ᚹᛁᚦᛁᚾ-ᚦᛖ-ᛞᛖᚳᛖᛈᛏᛡᚾ-1-ᚹᛖ-ᛞᚩ-ᚾᚩᛏ-ᚻᚪᚢᛖ-ᛖᚾᚩᚢᚷᚻ-ᚩᚱ-ᚦᛖᚱᛖ-ᛁᛋ-ᚾᚩᛏ-ᛖᚾᚩᚢᚷᚻ-2-ᚹᛖ-ᚻᚪᚢᛖ-ᚹᚻᚪᛏ-ᚹᛖ-ᚻᚪᚢᛖ-ᚾᚩᚹ-ᛒᚣ-ᛚᚢᚳᚳ-ᚪᚾᛞ-ᚹᛖ-ᚹᛁᛚᛚ-ᚾᚩᛏ-ᛒᛖ-ᛋᛏᚱᚩᛝ-ᛖᚾᚩᚢᚷᚻ-ᛚᚪᛏᛖᚱ-ᛏᚩ-ᚩᛒᛏᚪᛁᚾ-ᚹᚻᚪᛏ-ᚹᛖ-ᚾᛖᛖᛞ-ᛗᚩᛋᛏ-ᚦᛝᛋ-ᚪᚱᛖ-ᚾᚩᛏ-ᚹᚩᚱᚦ-ᚳᚩᚾᛋᚢᛗᛝ-ᛈᚱᛖᛋᛖᚱᚢᚪᛏᛡᚾ-ᚹᛖ-ᛈᚱᛖᛋᛖᚱᚢᛖ-ᚦᛝᛋ-ᛒᛖᚳᚪᚢᛋᛖ-ᚹᛖ-ᛒᛖᛚᛁᛖᚢᛖ-ᚹᛖ-ᚪᚱᛖ-ᚹᛠᚳ-ᛁᚠ-ᚹᛖ-ᛚᚩᛋᛖ-ᚦᛖᛗ-ᚹᛖ-ᚹᛁᛚᛚ-ᚾᚩᛏ-ᛒᛖ-ᛋᛏᚱᚩᛝ-ᛖᚾᚩᚢᚷᚻ-ᛏᚩ-ᚷᚪᛁᚾ-ᚦᛖᛗ-ᚪᚷᚪᛁᚾ-ᚦᛁᛋ-ᛁᛋ-ᚦᛖ-ᛞᛖᚳᛖᛈᛏᛡᚾ-ᛗᚩᛋᛏ-ᚦᛝᛋ-ᚪᚱᛖ-ᚾᚩᛏ-ᚹᚩᚱᚦ-ᛈᚱᛖᛋᛖᚱᚢᛝ-ᚪᛞᚻᛖᚱᛖᚾᚳᛖ-ᚹᛖ-ᚠᚩᛚᛚᚩᚹ-ᛞᚩᚷᛗᚪ-ᛋᚩ-ᚦᚪᛏ-ᚹᛖ-ᚳᚪᚾ-ᛒᛖᛚᚩᛝ-ᚪᚾᛞ-ᛒᛖ-ᚱᛁᚷᚻᛏ-ᚩᚱ-ᚹᛖ-ᚠᚩᛚᛚᚩᚹ-ᚱᛠᛋᚩᚾ-ᛋᚩ-ᚹᛖ-ᚳᚪᚾ-ᛒᛖᛚᚩᛝ-ᚪᚾᛞ-ᛒᛖ-ᚱᛁᚷᚻᛏ-ᚦᛖᚱᛖ-ᛁᛋ-ᚾᚩᚦᛝ-ᛏᚩ-ᛒᛖ-ᚱᛁᚷᚻᛏ-ᚪᛒᚩᚢᛏ-ᛏᚩ-ᛒᛖᛚᚩᛝ-ᛁᛋ-ᛞᛠᚦ-ᛁᛏ-ᛁᛋ-ᚦᛖ-ᛒᛖᚻᚪᚢᛡᚱᛋ-ᚩᚠ-ᚳᚩᚾᛋᚢᛗᛈᛏᛡᚾ-ᛈᚱᛖᛋᛖᚱᚢᚪᛏᛡᚾ-ᚪᚾᛞ-ᚪᛞᚻᛖᚱᛖᚾᚳᛖ-ᚦᚪᛏ-ᚻᚪᚢᛖ-ᚢᛋ-ᛚᚩᛋᛖ-ᚩᚢᚱ-ᛈᚱᛁᛗᚪᛚᛁᛏᚣ-ᚪᚾᛞ-ᚦᚢᛋ-ᚩᚢᚱ-ᛞᛁᚢᛁᚾᛁᛏᚣ-ᛋᚩᛗᛖ-ᚹᛁᛋᛞᚩᛗ-ᚪᛗᚪᛋᛋ-ᚷᚱᛠᛏ-ᚹᛠᛚᚦ-ᚾᛖᚢᛖᚱ-ᛒᛖᚳᚩᛗᛖ-ᚪᛏᛏᚪᚳᚻᛖᛞ-ᛏᚩ-ᚹᚻᚪᛏ-ᚣᚩᚢ-ᚩᚹᚾ-ᛒᛖ-ᛈᚱᛖᛈᚪᚱᛖᛞ-ᛏᚩ-ᛞᛖᛋᛏᚱᚩᚣ-ᚪᛚᛚ-ᚦᚪᛏ-ᚣᚩᚢ-ᚩᚹᚾ-ᚪᚾ-ᛁᚾᛋᛏᚱᚢᚳᛏᛡᚾ-ᛈᚱᚩᚷᚱᚪᛗ-ᚣᚩᚢᚱ-ᛗᛁᚾᛞ-ᛈᚱᚩᚷᚱᚪᛗ-ᚱᛠᛚᛁᛏᚣ-
+English Sentence: THE-LOSS-OF-DIUINITY-THE-CKIRCKUMFERENCKE-PRACKTICKES-THREE-BEHAUIORS-WHICKH-CKAUSE-THE-LOSS-OF-DIUINITY-CKONSUMPTION-WE-CKONSUME-TOO-MUCKH-BECKAUSE-WE-BELEIUE-THE-FOLLOWING-TWO-ERRORS-WITHIN-THE-DECKEPTION-1-WE-DO-NOT-HAUE-ENOUGH-OR-THERE-IS-NOT-ENOUGH-2-WE-HAUE-WHAT-WE-HAUE-NOW-BY-LUCKCK-AND-WE-WILL-NOT-BE-STROING-ENOUGH-LATER-TO-OBTAIN-WHAT-WE-NEED-MOST-THINGS-ARE-NOT-WORTH-CKONSUMING-PRESERUATION-WE-PRESERUE-THINGS-BECKAUSE-WE-BELIEUE-WE-ARE-WEACK-IF-WE-LOSE-THEM-WE-WILL-NOT-BE-STROING-ENOUGH-TO-GAIN-THEM-AGAIN-THIS-IS-THE-DECKEPTION-MOST-THINGS-ARE-NOT-WORTH-PRESERUING-ADHERENCKE-WE-FOLLOW-DOGMA-SO-THAT-WE-CKAN-BELOING-AND-BE-RIGHT-OR-WE-FOLLOW-REASON-SO-WE-CKAN-BELOING-AND-BE-RIGHT-THERE-IS-NOTHING-TO-BE-RIGHT-ABOUT-TO-BELOING-IS-DEATH-IT-IS-THE-BEHAUIORS-OF-CKONSUMPTION-PRESERUATION-AND-ADHERENCKE-THAT-HAUE-US-LOSE-OUR-PRIMALITY-AND-THUS-OUR-DIUINITY-SOME-WISDOM-AMASS-GREAT-WEALTH-NEUER-BECKOME-ATTACKHED-TO-WHAT-YOU-OWN-BE-PREPARED-TO-DESTROY-ALL-THAT-YOU-OWN-AN-INSTRUCKTION-PROGRAM-YOUR-MIND-PROGRAM-REALITY-
+Total Characters: 940 | PRIME: false
+Total Runes: 755 | PRIME: false
+Total Spaces: 183 | PRIME: false
+GP Sum: 32811 | PRIME: false
+IoC: 0.03964929127802063
+==========================
+== Line Characteristics
+==========================
+Line: ᚦᛖ-ᛚᚩᛋᛋ-ᚩᚠ-ᛞᛁᚢᛁᚾᛁᛏᚣ.ᚦᛖ-ᚳᛁᚱᚳᚢ
+English Line: THE-LOSS-OF-DIUINITY.THE-CKIRCKU
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 786 | PRIME: false
+IoC: 0.03418803418803419
+
+Line: ᛗᚠᛖᚱᛖᚾᚳᛖ-ᛈᚱᚪᚳᛏᛁᚳᛖᛋ-ᚦᚱᛖ
+English Line: MFERENCKE-PRACKTICKES-THRE
+Total Characters: 22 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 2 | PRIME: true
+GP Sum: 797 | PRIME: true
+IoC: 0.06926406926406926
+
+Line: ᛖ-ᛒᛖᚻᚪᚢᛡᚱᛋ-ᚹᚻᛁᚳᚻ-ᚳᚪᚢᛋᛖ-ᚦ
+English Line: E-BEHAUIORS-WHICKH-CKAUSE-TH
+Total Characters: 24 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 4 | PRIME: false
+GP Sum: 836 | PRIME: false
+IoC: 0.036231884057971016
+
+Line: ᛖ-ᛚᚩᛋᛋ-ᚩᚠ-ᛞᛁᚢᛁᚾᛁᛏᚣ.
+English Line: E-LOSS-OF-DIUINITY.
+Total Characters: 19 | PRIME: true
+Total Runes: 15 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 638 | PRIME: false
+IoC: 0.032679738562091505
+
+Line: ᚳᚩᚾᛋᚢᛗᛈᛏᛡᚾ.ᚹᛖ-ᚳᚩᚾᛋᚢᛗᛖ-ᛏᚩᚩ
+English Line: CKONSUMPTION.WE-CKONSUME-TOO
+Total Characters: 25 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 2 | PRIME: true
+GP Sum: 816 | PRIME: false
+IoC: 0.05434782608695652
+
+Line: -ᛗᚢᚳᚻ-ᛒᛖᚳᚪᚢᛋᛖ-ᚹᛖ-ᛒᛖᛚᛖᛁᚢᛖ-ᚦᛖ-
+English Line: -MUCKH-BECKAUSE-WE-BELEIUE-THE-
+Total Characters: 28 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 998 | PRIME: false
+IoC: 0.06878306878306878
+
+Line: ᚠᚩᛚᛚᚩᚹᛝ-ᛏᚹᚩ-ᛖᚱᚱᚩᚱᛋ-ᚹᛁᚦᛁᚾ-ᚦᛖ-ᛞᛖᚳ
+English Line: FOLLOWING-TWO-ERRORS-WITHIN-THE-DECK
+Total Characters: 31 | PRIME: true
+Total Runes: 26 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 861 | PRIME: false
+IoC: 0.03870967741935484
+
+Line: ᛖᛈᛏᛡᚾ.
+English Line: EPTION.
+Total Characters: 6 | PRIME: false
+Total Runes: 5 | PRIME: true
+Total Spaces: 0 | PRIME: true
+GP Sum: 305 | PRIME: false
+IoC: 0.0
+
+Line: 1-ᚹᛖ-ᛞᚩ-ᚾᚩᛏ-ᚻᚪᚢᛖ-ᛖᚾᚩᚢᚷᚻ-
+English Line: 1-WE-DO-NOT-HAUE-ENOUGH-
+Total Characters: 24 | PRIME: false
+Total Runes: 17 | PRIME: true
+Total Spaces: 6 | PRIME: false
+GP Sum: 613 | PRIME: true
+IoC: 0.03557312252964427
+
+Line: ᚩᚱ-ᚦᛖᚱᛖ-ᛁᛋ-ᚾᚩᛏ-ᛖᚾᚩᚢᚷᚻ.
+English Line: OR-THERE-IS-NOT-ENOUGH.
+Total Characters: 22 | PRIME: false
+Total Runes: 17 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 493 | PRIME: false
+IoC: 0.0380952380952381
+
+Line: 2-ᚹᛖ-ᚻᚪᚢᛖ-ᚹᚻᚪᛏ-ᚹᛖ-ᚻᚪᚢᛖ-ᚾ
+English Line: 2-WE-HAUE-WHAT-WE-HAUE-N
+Total Characters: 24 | PRIME: false
+Total Runes: 17 | PRIME: true
+Total Spaces: 6 | PRIME: false
+GP Sum: 779 | PRIME: false
+IoC: 0.06324110671936758
+
+Line: ᚩᚹ-ᛒᚣ-ᛚᚢᚳᚳ.ᚪᚾᛞ-ᚹᛖ-ᚹᛁᛚᛚ-ᚾᚩᛏ-
+English Line: OW-BY-LUCKCK.AND-WE-WILL-NOT-
+Total Characters: 27 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 884 | PRIME: false
+IoC: 0.027692307692307693
+
+Line: ᛒᛖ-ᛋᛏᚱᚩᛝ-ᛖᚾᚩᚢᚷᚻ-ᛚᚪᛏᛖᚱ-ᛏ
+English Line: BE-STROING-ENOUGH-LATER-T
+Total Characters: 23 | PRIME: true
+Total Runes: 19 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 849 | PRIME: false
+IoC: 0.03162055335968379
+
+Line: ᚩ-ᚩᛒᛏᚪᛁᚾ-ᚹᚻᚪᛏ-ᚹᛖ-ᚾᛖᛖᛞ.
+English Line: O-OBTAIN-WHAT-WE-NEED.
+Total Characters: 22 | PRIME: false
+Total Runes: 17 | PRIME: true
+Total Spaces: 4 | PRIME: false
+GP Sum: 827 | PRIME: true
+IoC: 0.0380952380952381
+
+Line: ᛗᚩᛋᛏ-ᚦᛝᛋ-ᚪᚱᛖ-ᚾᚩᛏ-ᚹᚩᚱᚦ-ᚳᚩᚾᛋᚢᛗ
+English Line: MOST-THINGS-ARE-NOT-WORTH-CKONSUM
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 815 | PRIME: false
+IoC: 0.037037037037037035
+
+Line: ᛝ.
+English Line: ING.
+Total Characters: 2 | PRIME: true
+Total Runes: 1 | PRIME: false
+Total Spaces: 0 | PRIME: true
+GP Sum: 79 | PRIME: true
+IoC: 0.0
+
+Line: ᛈᚱᛖᛋᛖᚱᚢᚪᛏᛡᚾ.ᚹᛖ-ᛈᚱᛖᛋᛖᚱᚢᛖ-
+English Line: PRESERUATION.WE-PRESERUE-
+Total Characters: 24 | PRIME: false
+Total Runes: 21 | PRIME: false
+Total Spaces: 2 | PRIME: true
+GP Sum: 955 | PRIME: false
+IoC: 0.09486166007905138
+
+Line: ᚦᛝᛋ-ᛒᛖᚳᚪᚢᛋᛖ-ᚹᛖ-ᛒᛖᛚᛁᛖᚢᛖ-ᚹᛖ-ᚪᚱ
+English Line: THINGS-BECKAUSE-WE-BELIEUE-WE-AR
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 1147 | PRIME: false
+IoC: 0.06878306878306878
+
+Line: ᛖ-ᚹᛠᚳ.ᛁᚠ-ᚹᛖ-ᛚᚩᛋᛖ-ᚦᛖᛗ-ᚹᛖ-ᚹᛁᛚᛚ-ᚾᚩ
+English Line: E-WEACK.IF-WE-LOSE-THEM-WE-WILL-NO
+Total Characters: 31 | PRIME: true
+Total Runes: 23 | PRIME: true
+Total Spaces: 7 | PRIME: true
+GP Sum: 988 | PRIME: false
+IoC: 0.04827586206896552
+
+Line: ᛏ-ᛒᛖ-ᛋᛏᚱᚩᛝ-ᛖᚾᚩᚢᚷᚻ-ᛏᚩ-ᚷᚪᛁᚾ-ᚦᛖᛗ-
+English Line: T-BE-STROING-ENOUGH-TO-GAIN-THEM-
+Total Characters: 30 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 7 | PRIME: true
+GP Sum: 925 | PRIME: false
+IoC: 0.02528735632183908
+
+Line: ᚪᚷᚪᛁᚾ.ᚦᛁᛋ-ᛁᛋ-ᚦᛖ-ᛞᛖᚳᛖᛈᛏᛡᚾ.
+English Line: AGAIN.THIS-IS-THE-DECKEPTION.
+Total Characters: 25 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 990 | PRIME: false
+IoC: 0.039525691699604744
+
+Line: ᛗᚩᛋᛏ-ᚦᛝᛋ-ᚪᚱᛖ-ᚾᚩᛏ-ᚹᚩᚱᚦ-ᛈᚱᛖᛋᛖᚱᚢ
+English Line: MOST-THINGS-ARE-NOT-WORTH-PRESERU
+Total Characters: 29 | PRIME: true
+Total Runes: 24 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 894 | PRIME: false
+IoC: 0.04187192118226601
+
+Line: ᛝ.
+English Line: ING.
+Total Characters: 2 | PRIME: true
+Total Runes: 1 | PRIME: false
+Total Spaces: 0 | PRIME: true
+GP Sum: 79 | PRIME: true
+IoC: 0.0
+
+Line: ᚪᛞᚻᛖᚱᛖᚾᚳᛖ.ᚹᛖ-ᚠᚩᛚᛚᚩᚹ-ᛞᚩᚷᛗᚪ-
+English Line: ADHERENCKE.WE-FOLLOW-DOGMA-
+Total Characters: 26 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 1011 | PRIME: false
+IoC: 0.043333333333333335
+
+Line: ᛋᚩ-ᚦᚪᛏ-ᚹᛖ-ᚳᚪᚾ-ᛒᛖᛚᚩᛝ-ᚪᚾᛞ-ᛒᛖ-ᚱᛁᚷᚻ
+English Line: SO-THAT-WE-CKAN-BELOING-AND-BE-RIGH
+Total Characters: 31 | PRIME: true
+Total Runes: 24 | PRIME: false
+Total Spaces: 7 | PRIME: true
+GP Sum: 1158 | PRIME: false
+IoC: 0.01935483870967742
+
+Line: ᛏ.ᚩᚱ-ᚹᛖ-ᚠᚩᛚᛚᚩᚹ-ᚱᛠᛋᚩᚾ-ᛋᚩ-ᚹᛖ-ᚳᚪᚾ-
+English Line: T.OR-WE-FOLLOW-REASON-SO-WE-CKAN-
+Total Characters: 31 | PRIME: true
+Total Runes: 23 | PRIME: true
+Total Spaces: 7 | PRIME: true
+GP Sum: 838 | PRIME: false
+IoC: 0.041379310344827586
+
+Line: ᛒᛖᛚᚩᛝ-ᚪᚾᛞ-ᛒᛖ-ᚱᛁᚷᚻᛏ.
+English Line: BELOING-AND-BE-RIGHT.
+Total Characters: 19 | PRIME: true
+Total Runes: 15 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 771 | PRIME: false
+IoC: 0.013071895424836602
+
+Line: ᚦᛖᚱᛖ-ᛁᛋ-ᚾᚩᚦᛝ-ᛏᚩ-ᛒᛖ-ᚱᛁᚷᚻᛏ-ᚪᛒᚩᚢᛏ.
+English Line: THERE-IS-NOTHING-TO-BE-RIGHT-ABOUT.
+Total Characters: 31 | PRIME: true
+Total Runes: 24 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 916 | PRIME: false
+IoC: 0.029885057471264367
+
+Line: ᛏᚩ-ᛒᛖᛚᚩᛝ-ᛁᛋ-ᛞᛠᚦ.
+English Line: TO-BELOING-IS-DEATH.
+Total Characters: 16 | PRIME: false
+Total Runes: 12 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 640 | PRIME: false
+IoC: 0.009523809523809525
+
+Line: ᛁᛏ-ᛁᛋ-ᚦᛖ-ᛒᛖᚻᚪᚢᛡᚱᛋ-ᚩᚠ-ᚳᚩᚾᛋᚢᛗᛈᛏ
+English Line: IT-IS-THE-BEHAUIORS-OF-CKONSUMPT
+Total Characters: 29 | PRIME: true
+Total Runes: 24 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 955 | PRIME: false
+IoC: 0.019704433497536946
+
+Line: ᛡᚾ.ᛈᚱᛖᛋᛖᚱᚢᚪᛏᛡᚾ.ᚪᚾᛞ-ᚪᛞᚻᛖᚱᛖᚾ
+English Line: ION.PRESERUATION.AND-ADHEREN
+Total Characters: 26 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 1 | PRIME: false
+GP Sum: 1281 | PRIME: false
+IoC: 0.07246376811594203
+
+Line: ᚳᛖ-ᚦᚪᛏ-ᚻᚪᚢᛖ-ᚢᛋ-ᛚᚩᛋᛖ-ᚩᚢᚱ-ᛈᚱᛁᛗᚪᛚ
+English Line: CKE-THAT-HAUE-US-LOSE-OUR-PRIMAL
+Total Characters: 30 | PRIME: false
+Total Runes: 24 | PRIME: false
+Total Spaces: 6 | PRIME: false
+GP Sum: 1034 | PRIME: false
+IoC: 0.029885057471264367
+
+Line: ᛁᛏᚣ.ᚪᚾᛞ-ᚦᚢᛋ-ᚩᚢᚱ-ᛞᛁᚢᛁᚾᛁᛏᚣ.
+English Line: ITY.AND-THUS-OUR-DIUINITY.
+Total Characters: 25 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 866 | PRIME: false
+IoC: 0.05138339920948617
+
+Line: ᛋᚩᛗᛖ-ᚹᛁᛋᛞᚩᛗ.ᚪᛗᚪᛋᛋ-ᚷᚱᛠᛏ-ᚹ
+English Line: SOME-WISDOM.AMASS-GREAT-W
+Total Characters: 24 | PRIME: false
+Total Runes: 20 | PRIME: false
+Total Spaces: 3 | PRIME: true
+GP Sum: 1054 | PRIME: false
+IoC: 0.04743083003952569
+
+Line: ᛠᛚᚦ.ᚾᛖᚢᛖᚱ-ᛒᛖᚳᚩᛗᛖ-ᚪᛏᛏᚪ
+English Line: EALTH.NEUER-BECKOME-ATTA
+Total Characters: 21 | PRIME: false
+Total Runes: 18 | PRIME: false
+Total Spaces: 2 | PRIME: true
+GP Sum: 962 | PRIME: false
+IoC: 0.042105263157894736
+
+Line: ᚳᚻᛖᛞ-ᛏᚩ-ᚹᚻᚪᛏ-ᚣᚩᚢ-ᚩᚹᚾ.ᛒᛖ-
+English Line: CKHED-TO-WHAT-YOU-OWN.BE-
+Total Characters: 24 | PRIME: false
+Total Runes: 18 | PRIME: false
+Total Spaces: 5 | PRIME: true
+GP Sum: 752 | PRIME: false
+IoC: 0.02766798418972332
+
+Line: ᛈᚱᛖᛈᚪᚱᛖᛞ-ᛏᚩ-ᛞᛖᛋᛏᚱᚩᚣ-ᚪᛚᛚ-ᚦᚪᛏ-
+English Line: PREPARED-TO-DESTROY-ALL-THAT-
+Total Characters: 28 | PRIME: false
+Total Runes: 23 | PRIME: true
+Total Spaces: 5 | PRIME: true
+GP Sum: 1287 | PRIME: false
+IoC: 0.042328042328042326
+
+Line: ᚣᚩᚢ-ᚩᚹᚾ.
+English Line: YOU-OWN.
+Total Characters: 8 | PRIME: false
+Total Runes: 6 | PRIME: false
+Total Spaces: 1 | PRIME: false
+GP Sum: 168 | PRIME: false
+IoC: 0.047619047619047616
+
+Line: ᚪᚾ-ᛁᚾᛋᛏᚱᚢᚳᛏᛡᚾ.ᛈᚱᚩᚷᚱᚪᛗ-ᚣᚩᚢ
+English Line: AN-INSTRUCKTION.PROGRAM-YOU
+Total Characters: 25 | PRIME: false
+Total Runes: 22 | PRIME: false
+Total Spaces: 2 | PRIME: true
+GP Sum: 890 | PRIME: false
+IoC: 0.036231884057971016
+
+Line: ᚱ-ᛗᛁᚾᛞ.ᛈᚱᚩᚷᚱᚪᛗ-ᚱᛠᛚᛁᛏᚣ.
+English Line: R-MIND.PROGRAM-REALITY.
+Total Characters: 22 | PRIME: false
+Total Runes: 18 | PRIME: false
+Total Spaces: 2 | PRIME: true
+GP Sum: 874 | PRIME: false
+IoC: 0.042105263157894736

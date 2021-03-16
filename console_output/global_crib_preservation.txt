@@ -1,0 +1,88 @@
+Starting global crib with output settings...
+shiftsum | shiftdifferencessum | cribword | shiftlist | shiftdifferences | shiftlistfacts | shiftsinwordform | shiftsingpform
+Results for cross0.txt
+ioo(0) 181 | 62 | preservation | [25, 14, 18, 2, 6, 11, 21, 17, 23, 23, 21] | [11, 4, 16, 4, 5, 10, 4, 6, 0, 2] | [hr, dhr] | AEXETHGJINGBDDING | OE(PAE)X(FID)?G?RINGGHHING 
+ioo(1) 163 | 90 | preservation | [2, 9, 27, 14, 24, 26, 20, 2, 5, 16, 18] | [7, 18, 13, 10, 2, 6, 18, 3, 11, 2] | [hr, dhr] | THNIOXAYLTHCTE | (FID)E?IO?(PAE)S?Y?IO(FID)THYX 
+Results for cross1.txt
+Results for cross2.txt
+Results for spiral3.txt
+ioo(0) 163 | 112 | preservation | [28, 4, 3, 19, 13, 12, 24, 16, 0, 16, 28] | [24, 1, 16, 6, 1, 12, 8, 16, 16, 12] | [hr, dhr] | EAROMPEOATFTEA | ?EA??R?(UB)W(CM)EOSYNY?EA? 
+ioo(1) 175 | 80 | preservation | [2, 10, 14, 22, 18, 19, 18, 23, 3, 26, 20] | [8, 4, 8, 4, 1, 1, 5, 20, 23, 6] | [hr, dhr] | THIXOEEMEDOYL | (FID)A(PAE)EAXWXH(UB)?Y?IO 
+Results for spiral4.txt
+Results for spiral5.txt
+Results for spiral6.txt
+Results for spiral7.txt
+Results for branch8.txt
+Results for branch9.txt
+ioo(0) 178 | 83 | preservation | [9, 4, 11, 16, 25, 7, 21, 20, 15, 28, 22] | [5, 7, 5, 9, 18, 14, 1, 5, 13, 6] | [ad, dhr] | NRJTAEWINGLSEAOE | E?R?RYOEOINGIOL?EA?EA 
+ioo(1) 104 | 91 | preservation | [16, 6, 22, 15, 1, 21, 8, 10, 3, 1, 1] | [10, 16, 7, 14, 20, 13, 2, 7, 2, 0] | [hr, dhr] | TGOESUINGHIOUU | Y?G?EALTINGJA(UB)TT 
+Results for branch10.txt
+ioo(0) 146 | 122 | preservation | [19, 1, 24, 19, 5, 20, 13, 6, 3, 23, 13] | [18, 23, 5, 14, 15, 7, 7, 3, 20, 10] | [hr, dhr] | MUAMCLPGODP | WTSWTHIO(CM)?G?(UB)H(CM) 
+Results for branch11.txt
+ioo(0) 120 | 65 | preservation | [12, 8, 11, 16, 16, 16, 2, 19, 4, 5, 11] | [4, 3, 5, 0, 0, 14, 17, 15, 1, 6] | [hr, dhr] | EOHJTTTTHMRCJ | EOJRYYY(FID)W?R?THR 
+ioo(1) 126 | 106 | preservation | [7, 20, 15, 10, 4, 27, 2, 14, 6, 12, 9] | [13, 5, 5, 6, 23, 25, 12, 8, 6, 3] | [ad, dhr] | WLSIRIOTHXGEON | OIOLA?R??IO?(FID)(PAE)?G?EOE 
+ioo(2) 153 | 84 | preservation | [1, 12, 11, 2, 19, 26, 14, 10, 17, 14, 27] | [11, 1, 9, 17, 7, 12, 4, 7, 3, 13] | [hr, dhr] | UEOJTHMYXIBXIO | TEOR(FID)W?Y?(PAE)AG(PAE)?IO? 
+Results for branch12.txt
+Results for branch13.txt
+Results for branch14.txt
+Results for mobius15.txt
+Results for mobius16.txt
+Results for mobius17.txt
+Results for mobius18.txt
+Results for mobius19.txt
+Results for mobius20.txt
+Results for mobius21.txt
+ioo(0) 205 | 42 | preservation | [24, 26, 19, 23, 27, 21, 16, 17, 16, 12, 4] | [2, 7, 4, 4, 6, 5, 1, 1, 4, 8] | [hr, dhr] | AYMDIOINGTBTEOR | S?Y?WH?IO?INGYGYEO?R? 
+ioo(1) 176 | 82 | preservation | [18, 14, 14, 25, 17, 11, 20, 2, 3, 24, 28] | [4, 0, 11, 8, 6, 9, 18, 1, 21, 4] | [hr, dhr] | EXXAEBJLTHOAEA | X(PAE)(PAE)OEGRIO(FID)(UB)S?EA? 
+ioo(2) 173 | 108 | preservation | [6, 25, 13, 28, 13, 21, 14, 18, 10, 5, 20] | [19, 12, 15, 15, 8, 7, 4, 8, 5, 15] | [hr, dhr] | GAEPEAPINGXEICL | ?G?OE(CM)?EA?(CM)ING(PAE)XATHIO 
+Results for mobius22.txt
+ioo(0) 149 | 94 | preservation | [14, 25, 10, 11, 6, 27, 19, 21, 1, 3, 12] | [11, 15, 1, 5, 21, 8, 2, 20, 2, 9] | [ad, dhr] | XAEIJGIOMINGUOEO | (PAE)OEAR?G??IO?WINGT(UB)EO 
+Results for mayfly23.txt
+Results for mayfly24.txt
+Results for mayfly25.txt
+Results for mayfly26.txt
+Results for wingtree27.txt
+Results for wingtree28.txt
+ioo(0) 141 | 97 | preservation | [15, 9, 22, 8, 20, 18, 2, 6, 22, 9, 10] | [6, 13, 14, 12, 2, 16, 4, 16, 13, 1] | [hr, dhr] | SNOEHLETHGOENI | LEEAJIOX(FID)?G?EAEA 
+Results for wingtree29.txt
+ioo(0) 107 | 121 | preservation | [0, 18, 6, 7, 5, 2, 21, 2, 27, 8, 11] | [18, 12, 1, 2, 3, 19, 19, 25, 19, 3] | [hr, dhr] | FEGWCTHINGTHIOHJ | NX?G?OTH(FID)ING(FID)?IO?JR 
+Results for wingtree30.txt
+ioo(0) 109 | 55 | preservation | [13, 10, 20, 1, 7, 10, 14, 7, 8, 9, 10] | [3, 10, 19, 6, 3, 4, 7, 1, 1, 1] | [hr, dhr] | PILUWIXWHNI | (CM)AIOTOA(PAE)OJEA 
+Results for wingtree31.txt
+Results for wingtree32.txt
+ioo(0) 196 | 85 | preservation | [23, 17, 19, 21, 28, 15, 14, 27, 2, 12, 18] | [6, 2, 2, 7, 13, 1, 13, 25, 10, 6] | [ad, dhr] | DBMINGEASXIOTHEOE | HGWING?EA?L(PAE)?IO?(FID)EOX 
+ioo(1) 146 | 128 | preservation | [24, 28, 1, 3, 25, 3, 22, 20, 4, 2, 14] | [4, 27, 2, 22, 22, 19, 2, 16, 2, 12] | [hr, dhr] | AEAUOAEOOELRTHX | S?EA?T(UB)OE(UB)EAIO?R?(FID)(PAE) 
+Results for cuneiform33.txt
+Results for cuneiform34.txt
+Results for cuneiform35.txt
+ioo(0) 182 | 131 | preservation | [9, 21, 17, 25, 3, 23, 8, 24, 10, 24, 18] | [12, 4, 8, 22, 20, 15, 16, 14, 14, 6] | [hr, dhr] | NINGBAEODHAIAE | EINGGOE(UB)HJSASX 
+Results for cuneiform36.txt
+ioo(0) 185 | 95 | preservation | [28, 17, 28, 5, 21, 26, 25, 5, 6, 11, 13] | [11, 11, 23, 16, 5, 1, 20, 1, 5, 2] | [hr, dhr] | EABEACINGYAECGJP | ?EA?G?EA?THING?Y?OETH?G?R(CM) 
+Results for cuneiform37.txt
+Results for cuneiform38.txt
+ioo(0) 181 | 103 | preservation | [25, 9, 16, 22, 15, 22, 6, 25, 27, 6, 8] | [16, 7, 6, 7, 7, 16, 19, 2, 21, 2] | [hr, dhr] | AENTOESOEGAEIOGH | OEEYEALEA?G?OE?IO??G?J 
+Results for cuneiform39.txt
+Results for spiralbranch40.txt
+Results for spiralbranch41.txt
+Results for spiralbranch42.txt
+Results for spiralbranch43.txt
+ioo(0) 153 | 98 | preservation | [4, 28, 24, 10, 14, 17, 7, 17, 2, 14, 16] | [24, 4, 14, 4, 3, 10, 10, 15, 12, 2] | [hr, dhr] | REAAIXBWBTHXT | ?R??EA?SA(PAE)GOG(FID)(PAE)Y 
+ioo(1) 121 | 77 | preservation | [6, 17, 8, 9, 3, 25, 13, 15, 6, 8, 11] | [11, 9, 1, 6, 22, 12, 2, 9, 2, 3] | [hr, dhr] | GBHNOAEPSGHJ | ?G?GJE(UB)OE(CM)L?G?JR 
+Results for spiralbranch44.txt
+ioo(0) 164 | 83 | preservation | [26, 11, 0, 11, 13, 20, 26, 26, 6, 14, 11] | [15, 11, 11, 2, 7, 6, 0, 20, 8, 3] | [hr, dhr] | YJFJPLYYGXJ | ?Y?RNR(CM)IO?Y??Y??G?(PAE)R 
+Results for spiralbranch45.txt
+Results for spiralbranch46.txt
+Results for spiralbranch47.txt
+ioo(0) 133 | 139 | preservation | [14, 22, 0, 17, 0, 23, 5, 1, 13, 11, 27] | [8, 22, 17, 17, 23, 18, 4, 12, 2, 16] | [hr, dhr] | XOEFBFDCUPJIO | (PAE)EANGNHTHT(CM)R?IO? 
+ioo(1) 144 | 98 | preservation | [15, 7, 23, 24, 20, 7, 2, 24, 17, 0, 5] | [8, 16, 1, 4, 13, 5, 22, 7, 17, 5] | [hr, dhr] | SWDALWTHABFC | LOHSIOO(FID)SGNTH 
+Results for spiralbranch48.txt
+Results for spiralbranch49.txt
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+Results for spiralbranch54.txt
+Results for hollow54.txt
+Results for hollow55.txt
+Results for spiralbranch55.txt
+ioo(0) 155 | 75 | preservation | [20, 23, 5, 12, 13, 20, 9, 17, 9, 16, 11] | [3, 18, 7, 1, 7, 11, 8, 8, 7, 5] | [hr, dhr] | LDCEOPLNBNTJ | IOHTHEO(CM)IOEGEYR 

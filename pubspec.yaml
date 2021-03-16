@@ -26,20 +26,21 @@ dependencies:
   auto_size_text: ^2.1.0
   characters: ^1.0.0
   cupertino_icons: ^1.0.0
-  desktop_window: ^0.3.0
-  dio: ^3.0.10
-  equatable: ^1.2.5
-  fl_chart: ^0.12.2
+  desktop_window: ^0.4.0
+  dio: ^4.0.0-beta7
+  equatable: ^2.0.0
+  fl_chart: ^0.20.1
   flutter_mobx: ^1.1.0+2
   get_it: ^5.0.4
-  google_fonts: ^1.1.1
-  html: ^0.14.0+4
+  google_fonts: ^2.0.0
+  html: ^0.15.0
   math_expressions: ^2.0.2
   mobx: ^1.2.1+4
   sortedmap: ^0.4.2+1
   string_splitter: ^0.1.0+5
-  supercharged_dart: ^1.4.0
+  supercharged_dart: ^2.0.0
   text: ^0.1.1
+  trotter: ^1.2.0
   unicode: ^0.2.4
 
 dev_dependencies:
@@ -64,6 +65,9 @@ flutter:
     - family: SegoeUISymbol
       fonts:
         - asset: assets/fonts/seguisym.ttf
+    - family: RobotoMono
+      fonts:
+        - asset: assets/fonts/robotomono.ttf
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

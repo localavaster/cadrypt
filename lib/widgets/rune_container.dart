@@ -1,23 +1,22 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:cicadrypt/global/keyboard_listener.dart';
+import 'package:cicadrypt/constants/libertext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
+import 'package:supercharged_dart/supercharged_dart.dart';
 
 import '../constants/runes.dart';
-import '../global/cipher.dart';
+import '../global/keyboard_listener.dart';
 import '../models/rune_selection.dart';
 import '../pages/analyze/analyze_state.dart';
 
-import 'package:supercharged_dart/supercharged_dart.dart';
-
 class RuneContainer extends StatefulWidget {
-  RuneContainer(this.state, this.index, this.rune, {Key key}) : super(key: key);
+  const RuneContainer(this.state, this.index, this.rune, {Key key}) : super(key: key);
 
   final AnalyzeState state;
   final int index;
-  final String rune;
+  final LiberTextClass rune;
 
   @override
   _RuneContainerState createState() => _RuneContainerState();
@@ -28,7 +27,7 @@ class _RuneContainerState extends State<RuneContainer> {
     switch (widget.state.readingMode) {
       case 'rune':
         {
-          return widget.rune;
+          return widget.rune.rune;
         }
         break;
       case 'english':
@@ -36,26 +35,18 @@ class _RuneContainerState extends State<RuneContainer> {
           if (runeToEnglish.containsKey(widget.rune)) {
             return runeToEnglish[widget.rune];
           } else {
-            return widget.rune;
+            return widget.rune.english;
           }
         }
         break;
       case 'value':
         {
-          if (runePositions.containsKey(widget.rune)) {
-            return runePositions[widget.rune];
-          } else {
-            return widget.rune;
-          }
+          return widget.rune.index.first.toString();
         }
         break;
       case 'prime':
         {
-          if (runePrimes.containsKey(widget.rune)) {
-            return runePrimes[widget.rune];
-          } else {
-            return widget.rune;
-          }
+          return widget.rune.prime.first.toString();
         }
         break;
       case 'index':
@@ -66,7 +57,7 @@ class _RuneContainerState extends State<RuneContainer> {
 
       default:
         {
-          return widget.rune;
+          return widget.rune.rune;
         }
     }
   }
@@ -93,7 +84,7 @@ class _RuneContainerState extends State<RuneContainer> {
   Color get_color(BuildContext context) {
     if (widget.state.readingMode == 'color') {
       try {
-        final index = runeToEnglish.keys.toList().indexOf(widget.rune);
+        final index = widget.rune.index.first;
         if (index == -1) {
           return const Color.fromARGB(255, 0, 0, 0);
         }
@@ -108,7 +99,7 @@ class _RuneContainerState extends State<RuneContainer> {
       }
     }
 
-    final runeComparison = RuneSelection(widget.index, widget.rune, '');
+    final runeComparison = RuneSelection(widget.index, widget.rune.rune, '');
     final selectedRunes = List<String>.generate(widget.state.selectedRunes.length, (index) => widget.state.selectedRunes[index].rune);
 
     if (widget.state.selectedRunes.contains(runeComparison)) {
@@ -139,21 +130,24 @@ class _RuneContainerState extends State<RuneContainer> {
             final alreadySelectedRunes = List<int>.generate(widget.state.selectedRunes.length, (index) => widget.state.selectedRunes[index].index);
 
             if (alreadySelectedRunes.isEmpty) {
-              widget.state.select_rune(widget.rune, widget.index, 'mouse');
+              widget.state.select_rune(widget.rune.rune, widget.index, 'mouse');
               return;
             } else {
-              final sorted = alreadySelectedRunes.sortedByNum((element) => element);
+              final min = alreadySelectedRunes.min();
+              int max = alreadySelectedRunes.max();
 
-              for (int i = sorted.first + 1; i != widget.index + 1; i++) {
-                widget.state.select_rune('auto', i, 'mouse');
+              if (max == min) max = widget.index;
+
+              for (int i = min; i != max + 1; i++) {
+                widget.state.select_rune('auto', i, 'mouse', ignoreDuplicates: true);
               }
             }
           } else {
-            widget.state.select_rune(widget.rune, widget.index, 'mouse');
+            widget.state.select_rune(widget.rune.rune, widget.index, 'mouse');
           }
         },
         onDoubleTap: () {
-          widget.state.highlight_all_instances_of_rune(widget.rune);
+          widget.state.highlight_all_instances_of_rune(widget.rune.rune);
         },
         child: Container(
           decoration: BoxDecoration(
@@ -177,33 +171,9 @@ class _RuneContainerState extends State<RuneContainer> {
     );
   }
 
-  Widget _buildSpecialRuneContainer(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        widget.state.clear_selected_runes();
-      },
-      child: Container(
-        decoration: BoxDecoration(
-          border: Border.all(color: Theme.of(context).cardColor, width: 0.5),
-          color: Colors.black.withOpacity(0.165),
-        ),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Observer(builder: (context) {
-      final bool isSpecialGridCell = [
-        '%',
-        '&',
-        r'$',
-      ].contains(widget.rune);
-
-      if (isSpecialGridCell) {
-        return _buildSpecialRuneContainer(context);
-      }
-
       return _buildRuneContainer();
     });
   }

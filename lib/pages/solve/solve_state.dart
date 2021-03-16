@@ -1,18 +1,18 @@
-import 'package:cicadrypt/global/cipher.dart';
-import 'package:cicadrypt/models/console_command.dart';
-import 'package:cicadrypt/models/console_state.dart';
-import 'package:cicadrypt/models/crib_settings.dart';
-import 'package:cicadrypt/services/crib.dart';
+import 'package:cicadrypt/global/settings.dart';
+import 'package:cicadrypt/pages/analyze/analyze_state.dart';
+import 'package:cicadrypt/services/crib_cache.dart';
 import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
-import 'package:get_it/get_it.dart';
 import 'package:get_it/get_it.dart';
 import 'package:mobx/mobx.dart';
 import 'package:supercharged_dart/supercharged_dart.dart';
+import 'package:collection/collection.dart';
 
 import '../../constants/runes.dart' as c;
 import '../../constants/runes.dart';
-import '../../constants/runes.dart';
+import '../../global/cipher.dart';
+import '../../models/console_state.dart';
+import '../../models/crib_settings.dart';
+import '../../services/crib.dart';
 
 part 'solve_state.g.dart';
 
@@ -49,10 +49,13 @@ abstract class _SolveStateBase with Store {
   void load_cipher_into_controller() {
     final cipher = GetIt.I<Cipher>();
 
+    final formatted_cipher = cipher.raw_cipher.join('').replaceAll('%', '').replaceAll(r'$', '').replaceAll('&', '').replaceAll(' ', '-').replaceAll('.', '-');
+    final split_cipher = formatted_cipher.split('-').chunked(8);
+
     this.cipher.clear();
-    for (final line in cipher.raw_cipher) {
-      if (['%', r'$', '&'].contains(line[0])) continue;
-      this.cipher.text += '${line.trim()}\n';
+
+    for (final chunk in split_cipher) {
+      this.cipher.text += '${chunk.join('-').trim()}\n';
     }
   }
 
@@ -75,6 +78,9 @@ abstract class _SolveStateBase with Store {
     'skip_stream': [],
     'vigenere': [String],
     'atbash': [],
+    'homophones': [],
+    // utils
+    'skip_index': [],
     // statistics
     'ioc': [],
   };
@@ -86,7 +92,10 @@ abstract class _SolveStateBase with Store {
     'stream': 'A stream of shifts, 1, 3, 5 would shift the ciphers characters by 1, 3 and 5 repeatedly, example "stream(1, 3, 5)"',
     'skip_stream': 'The same as stream, but will not continue the key if it passes over an invalid runephabet character',
     'atbash': 'Reverses the alphabet and shifts accordingly, similar to Atbash, or inversing',
+    'homophones': 'Uses homophones from the crib cache and applies them to words',
   };
+
+  final List<int> indexes_to_skip = [];
 
   bool is_valid_command(String command, String args) {
     if (!valid_commands.keys.contains(command)) {
@@ -108,9 +117,7 @@ abstract class _SolveStateBase with Store {
 
     final command_args = command.trim().allBetween('(', ')');
 
-    print('executing $command_name with $command_args');
-
-    bool is_valid = is_valid_command(command_name, command_args);
+    final bool is_valid = is_valid_command(command_name, command_args);
 
     if (!is_valid) {
       console.write_to_console('ERROR: Invalid command -> $command');
@@ -141,6 +148,14 @@ abstract class _SolveStateBase with Store {
           return true; // no output for this one
         }
         break;
+
+      case 'skip_index':
+        {
+          final indexes = List<int>.generate(command_args.split(', ').length, (index) => int.parse(command_args.split(', ')[index]));
+
+          indexes.forEach(indexes_to_skip.add);
+        }
+        break;
       case 'clear':
         {
           console.clear_console();
@@ -159,14 +174,9 @@ abstract class _SolveStateBase with Store {
           final buffer = StringBuffer();
 
           final List<String> cipherWords = GetIt.I<Cipher>().raw_cipher.join('').replaceAll('-', ' ').replaceAll('.', ' . ').replaceAll('%', '').replaceAll('&', '').replaceAll(r'$', '').split(' ');
-          //cipherWords.removeWhere((element) => ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].contains(element));
 
-          //print(cipherWords);
           final List<String> realWords = [];
-          final cribSettings = CribSettings();
-          cribSettings.filters.add('onlypuregpshifts');
-          cribSettings.filters.add('hasplaintext');
-          cribSettings.wordFilters.add('onlylp');
+          final cribSettings = GetIt.I<AnalyzeState>().cribSettings;
 
           for (final word in cipherWords) {
             if (word == '.') {
@@ -188,9 +198,9 @@ abstract class _SolveStateBase with Store {
               continue;
             }
 
-            cribber.matches = cribber.matches.sortedByNum((element) => element.shift_sum);
+            cribber.matches.sortedBy<num>((element) => element.shift_sum);
 
-            realWords.add(cribber.matches.first.crib);
+            realWords.add(cribber.matches.first.cribbed_word);
           }
 
           this.cipher.text = realWords.join(' ');
@@ -260,7 +270,7 @@ abstract class _SolveStateBase with Store {
             console.write_to_console('Streaming with a random value -> $streams');
           }
 
-          print(streams);
+          final testBuffer = StringBuffer();
 
           final buffer = StringBuffer();
 
@@ -272,7 +282,17 @@ abstract class _SolveStateBase with Store {
               continue;
             }
 
-            final shifted_letter_index = (runes.indexOf(character) - (streams[stream_position % streams.length]) % 29) % 29;
+            if (indexes_to_skip.contains(stream_position)) {
+              continue;
+            }
+
+            final key_part = streams[stream_position % streams.length] % runes.length;
+
+            if (key_part == 0) {
+              testBuffer.write(c.runeToEnglish[character]);
+            }
+
+            final shifted_letter_index = (runes.indexOf(character) - key_part) % 29;
 
             final shifted_letter = runes[shifted_letter_index];
             buffer.write(shifted_letter);
@@ -315,6 +335,36 @@ abstract class _SolveStateBase with Store {
         }
         break;
 
+      case 'homophones':
+        {
+          final homophones = GetIt.I<CribCache>().calculate_homophones();
+
+          final buffer = StringBuffer();
+
+          for (final character in this.cipher.text.characters) {
+            if (!GetIt.I<Settings>().get_alphabet().contains(character)) {
+              buffer.write(character);
+              continue;
+            }
+
+            final letter_homophones = homophones[character].toSet().toList();
+
+            if (letter_homophones.isEmpty) {
+              buffer.write(character.toLowerCase());
+              continue;
+            }
+
+            if (letter_homophones.length == 1) {
+              buffer.write('${letter_homophones.join().toUpperCase()}');
+            } else {
+              buffer.write('(${letter_homophones.join().toUpperCase()})');
+            }
+          }
+
+          this.cipher.text = buffer.toString();
+        }
+        break;
+
       case 'atbash':
         {
           final reversedRuneAlphabet = List<String>.from(c.runes).reversed.toList();
@@ -327,7 +377,7 @@ abstract class _SolveStateBase with Store {
               continue;
             }
 
-            final reversed_letter_index = (reversedRuneAlphabet.indexOf(character));
+            final reversed_letter_index = reversedRuneAlphabet.indexOf(character);
 
             final shifted_letter = runes[reversed_letter_index];
             buffer.write(shifted_letter);
@@ -361,8 +411,6 @@ abstract class _SolveStateBase with Store {
 
           double get_index_of_coincidence() {
             final flat_cipher = this.cipher.text.replaceAll(' ', '').replaceAll('.', '').replaceAll('\n', '');
-
-            print(flat_cipher);
 
             final length = flat_cipher.length;
 

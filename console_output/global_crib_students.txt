@@ -1,0 +1,279 @@
+Starting global crib with output settings...
+shiftsum | shiftlist | shiftsinwordform | cribword
+Results for cross0.txt
+Results for cross1.txt
+Results for cross2.txt
+Results for spiral3.txt
+Results for spiral4.txt
+Results for spiral5.txt
+Results for spiral6.txt
+Results for spiral7.txt
+Results for branch8.txt
+Results for branch9.txt
+Results for branch10.txt
+Results for branch11.txt
+Results for branch12.txt
+Results for branch13.txt
+Results for branch14.txt
+Results for mobius15.txt
+Results for mobius16.txt
+Results for mobius17.txt
+Results for mobius18.txt
+Results for mobius19.txt
+Results for mobius20.txt
+Results for mobius21.txt
+Results for mobius22.txt
+Results for mayfly23.txt
+Results for mayfly24.txt
+Results for mayfly25.txt
+Results for mayfly26.txt
+Results for wingtree27.txt
+Results for wingtree28.txt
+Results for wingtree29.txt
+Results for wingtree30.txt
+Results for wingtree31.txt
+Results for wingtree32.txt
+Results for cuneiform33.txt
+Results for cuneiform34.txt
+Results for cuneiform35.txt
+Results for cuneiform36.txt
+Results for cuneiform37.txt
+Results for cuneiform38.txt
+Results for cuneiform39.txt
+Results for spiralbranch40.txt
+Results for spiralbranch41.txt
+Results for spiralbranch42.txt
+Results for spiralbranch43.txt
+Results for spiralbranch44.txt
+Results for spiralbranch45.txt
+Results for spiralbranch46.txt
+Results for spiralbranch47.txt
+Results for spiralbranch48.txt
+Results for spiralbranch49.txt
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+Results for spiralbranch54.txt
+Results for hollow54.txt
+Results for hollow55.txt
+Results for spiralbranch55.txt
+Starting global crib with output settings...
+shiftsum | shiftlist | shiftsinwordform | cribword
+Results for cross0.txt
+ioo(0) 99 | [0, 21, 17, 9, 17, 10, 11, 14] | FINGBNBIJX | students 
+ioo(1) 84 | [16, 8, 18, 16, 3, 1, 11, 11] | THETOUJJ | students 
+ioo(2) 128 | [6, 19, 18, 17, 15, 23, 4, 26] | GMEBSDRY | students 
+ioo(3) 93 | [13, 3, 20, 20, 25, 3, 7, 2] | POLLAEOWTH | students 
+Results for cross1.txt
+ioo(0) 56 | [0, 6, 3, 7, 18, 6, 4, 12] | FGOWEGREO | students 
+ioo(1) 133 | [7, 8, 24, 27, 26, 14, 26, 1] | WHAIOYXYU | students 
+Results for cross2.txt
+ioo(0) 100 | [27, 8, 19, 7, 10, 0, 4, 25] | IOHMWIFRAE | students 
+ioo(1) 93 | [18, 23, 5, 8, 10, 9, 0, 20] | EDCHINFL | students 
+ioo(2) 104 | [16, 21, 2, 4, 18, 16, 24, 3] | TINGTHRETAO | students 
+Results for spiral3.txt
+ioo(0) 118 | [23, 20, 4, 6, 24, 10, 26, 5] | DLRGAIYC | students 
+ioo(1) 134 | [28, 23, 25, 12, 26, 6, 1, 13] | EADAEEOYGUP | students 
+Results for spiral4.txt
+ioo(0) 136 | [11, 26, 13, 16, 18, 10, 18, 24] | JYPTEIEA | students 
+ioo(1) 104 | [0, 1, 28, 20, 13, 15, 12, 15] | FUEALPSEOS | students 
+ioo(2) 160 | [23, 14, 23, 27, 28, 4, 28, 13] | DXDIOEAREAP | students 
+Results for spiral5.txt
+ioo(0) 149 | [19, 28, 21, 24, 8, 13, 21, 15] | MEAINGAHPINGS | students 
+ioo(1) 104 | [16, 24, 25, 17, 2, 13, 2, 5] | TAAEBTHPTHC | students 
+ioo(2) 121 | [16, 10, 11, 8, 22, 22, 17, 15] | TIJHOEOEBS | students 
+Results for spiral6.txt
+ioo(0) 89 | [8, 8, 15, 3, 12, 0, 17, 26] | HHSOEOFBY | students 
+ioo(1) 112 | [10, 9, 9, 24, 11, 12, 15, 22] | INNAJEOSOE | students 
+Results for spiral7.txt
+ioo(0) 124 | [19, 21, 21, 5, 20, 4, 18, 16] | MINGINGCLRET | students 
+Results for branch8.txt
+ioo(0) 106 | [15, 27, 18, 11, 13, 4, 16, 2] | SIOEJPRTTH | students 
+ioo(1) 105 | [9, 21, 21, 10, 3, 21, 2, 18] | NINGINGIOINGTHE | students 
+ioo(2) 145 | [10, 16, 23, 25, 4, 21, 20, 26] | ITDAERINGLY | students 
+ioo(3) 98 | [2, 22, 14, 26, 3, 2, 6, 23] | THOEXYOTHGD | students 
+Results for branch9.txt
+ioo(0) 109 | [13, 4, 5, 20, 8, 17, 17, 25] | PRCLHBBAE | students 
+ioo(1) 87 | [3, 12, 6, 23, 13, 13, 13, 4] | OEOGDPPPR | students 
+ioo(2) 118 | [5, 2, 26, 14, 2, 26, 17, 26] | CTHYXTHYBY | students 
+ioo(3) 81 | [6, 26, 2, 1, 8, 12, 26, 0] | GYTHUHEOYF | students 
+ioo(4) 146 | [2, 19, 25, 27, 11, 17, 23, 22] | THMAEIOJBDOE | students 
+Results for branch10.txt
+ioo(0) 139 | [23, 25, 1, 28, 27, 3, 18, 14] | DAEUEAIOOEX | students 
+ioo(1) 122 | [26, 23, 26, 6, 4, 8, 15, 14] | YDYGRHSX | students 
+ioo(2) 95 | [3, 16, 7, 25, 14, 13, 1, 16] | OTWAEXPUT | students 
+Results for branch11.txt
+ioo(0) 57 | [1, 5, 1, 1, 14, 21, 3, 11] | UCUUXINGOJ | students 
+Results for branch12.txt
+Results for branch13.txt
+ioo(0) 130 | [5, 13, 19, 11, 28, 21, 5, 28] | CPMJEAINGCEA | students 
+Results for branch14.txt
+ioo(0) 137 | [28, 8, 17, 14, 15, 17, 12, 26] | EAHBXSBEOY | students 
+ioo(1) 141 | [22, 10, 24, 16, 26, 23, 15, 5] | OEIATYDSC | students 
+Results for mobius15.txt
+ioo(0) 89 | [21, 26, 7, 10, 5, 5, 0, 15] | INGYWICCFS | students 
+ioo(1) 152 | [16, 26, 22, 21, 9, 28, 25, 5] | TYOEINGNEAAEC | students 
+Results for mobius16.txt
+ioo(0) 97 | [17, 7, 4, 5, 20, 25, 15, 4] | BWRCLAESR | students 
+ioo(1) 110 | [25, 19, 13, 9, 13, 2, 18, 11] | AEMPNPTHEJ | students 
+ioo(2) 65 | [15, 24, 1, 17, 6, 0, 0, 2] | SAUBGFFTH | students 
+ioo(3) 119 | [11, 19, 28, 27, 9, 4, 19, 2] | JMEAIONRMTH | students 
+Results for mobius17.txt
+ioo(0) 110 | [19, 22, 17, 4, 18, 12, 0, 18] | MOEBREEOFE | students 
+ioo(1) 127 | [26, 17, 20, 4, 28, 27, 4, 1] | YBLREAIORU | students 
+ioo(2) 102 | [8, 23, 0, 8, 19, 10, 11, 23] | HDFHMIJD | students 
+ioo(3) 122 | [16, 13, 14, 6, 3, 26, 17, 27] | TPXGOYBIO | students 
+Results for mobius18.txt
+ioo(0) 89 | [4, 26, 16, 8, 3, 6, 14, 12] | RYTHOGXEO | students 
+ioo(1) 112 | [28, 25, 5, 6, 9, 18, 6, 15] | EAAECGNEGS | students 
+ioo(2) 81 | [12, 15, 25, 0, 6, 16, 5, 2] | EOSAEFGTCTH | students 
+ioo(3) 108 | [13, 11, 24, 24, 4, 14, 5, 13] | PJAARXCP | students 
+Results for mobius19.txt
+ioo(0) 113 | [10, 21, 2, 17, 12, 24, 16, 11] | IINGTHBEOATJ | students 
+ioo(1) 120 | [17, 25, 24, 1, 14, 27, 3, 9] | BAEAUXIOON | students 
+ioo(2) 101 | [11, 9, 5, 2, 22, 24, 20, 8] | JNCTHOEALH | students 
+Results for mobius20.txt
+ioo(0) 88 | [27, 6, 1, 0, 15, 19, 8, 12] | IOGUFSMHEO | students 
+ioo(1) 137 | [6, 11, 16, 26, 19, 22, 9, 28] | GJTYMOENEA | students 
+ioo(2) 100 | [5, 18, 11, 22, 17, 17, 6, 4] | CEJOEBBGR | students 
+ioo(3) 173 | [17, 28, 15, 25, 15, 17, 28, 28] | BEASAESBEAEA | students 
+ioo(4) 188 | [28, 14, 27, 25, 23, 21, 28, 22] | EAXIOAEDINGEAOE | students 
+ioo(5) 69 | [2, 25, 6, 2, 12, 2, 18, 2] | THAEGTHEOTHETH | students 
+ioo(6) 125 | [18, 7, 3, 23, 22, 25, 14, 13] | EWODOEAEXP | students 
+Results for mobius21.txt
+ioo(0) 109 | [23, 6, 5, 3, 16, 22, 18, 16] | DGCOTOEET | students 
+ioo(1) 100 | [12, 13, 4, 15, 14, 2, 28, 12] | EOPRSXTHEAEO | students 
+ioo(2) 99 | [8, 21, 4, 13, 2, 18, 7, 26] | HINGRPTHEWY | students 
+ioo(3) 92 | [6, 12, 20, 12, 3, 14, 24, 1] | GEOLEOOXAU | students 
+ioo(4) 163 | [24, 26, 23, 27, 26, 14, 6, 17] | AYDIOYXGB | students 
+Results for mobius22.txt
+Results for mayfly23.txt
+ioo(0) 115 | [13, 19, 14, 2, 24, 27, 3, 13] | PMXTHAIOOP | students 
+ioo(1) 116 | [7, 20, 28, 3, 3, 21, 10, 24] | WLEAOOINGIA | students 
+Results for mayfly24.txt
+ioo(0) 91 | [15, 3, 0, 20, 14, 17, 21, 1] | SOFLXBINGU | students 
+ioo(1) 90 | [15, 16, 13, 15, 9, 6, 13, 3] | STPSNGPO | students 
+ioo(2) 108 | [14, 8, 14, 4, 21, 28, 1, 18] | XHXRINGEAUE | students 
+ioo(3) 128 | [5, 23, 0, 19, 27, 25, 1, 28] | CDFMIOAEUEA | students 
+ioo(4) 96 | [3, 8, 25, 6, 1, 25, 10, 18] | OHAEGUAEIE | students 
+ioo(5) 158 | [9, 27, 11, 27, 26, 9, 25, 24] | NIOJIOYNAEA | students 
+Results for mayfly25.txt
+ioo(0) 96 | [8, 9, 21, 10, 9, 16, 8, 15] | HNINGINTHS | students 
+ioo(1) 86 | [2, 19, 17, 9, 6, 23, 2, 8] | THMBNGDTHH | students 
+Results for mayfly26.txt
+ioo(0) 119 | [13, 10, 12, 28, 13, 6, 10, 27] | PIEOEAPGIIO | students 
+ioo(1) 125 | [9, 24, 12, 7, 24, 19, 10, 20] | NAEOWAMIL | students 
+ioo(2) 180 | [24, 21, 25, 21, 18, 23, 27, 21] | AINGAEINGEDIOING | students 
+Results for wingtree27.txt
+Results for wingtree28.txt
+ioo(0) 102 | [24, 0, 18, 21, 7, 5, 16, 11] | AFEINGWCTJ | students 
+ioo(1) 80 | [2, 15, 9, 17, 2, 18, 5, 12] | THSNBTHECEO | students 
+ioo(2) 49 | [0, 3, 23, 4, 10, 3, 5, 1] | FODRIOCU | students 
+Results for wingtree29.txt
+ioo(0) 164 | [28, 9, 24, 21, 16, 18, 22, 26] | EANAINGTEOEY | students 
+ioo(1) 73 | [6, 2, 16, 26, 5, 1, 3, 14] | GTHTYCUOX | students 
+ioo(2) 134 | [21, 1, 18, 28, 21, 9, 23, 13] | INGUEEAINGNDP | students 
+Results for wingtree30.txt
+Results for wingtree31.txt
+ioo(0) 128 | [16, 18, 16, 27, 27, 5, 11, 8] | TETIOIOCJH | students 
+ioo(1) 126 | [2, 21, 2, 14, 21, 26, 21, 19] | THINGTHXINGYINGM | students 
+ioo(2) 105 | [3, 17, 2, 14, 8, 19, 26, 16] | OBTHXHMYT | students 
+ioo(3) 110 | [18, 8, 9, 22, 17, 5, 5, 26] | EHNOEBCCY | students 
+Results for wingtree32.txt
+ioo(0) 125 | [21, 1, 14, 10, 25, 18, 27, 9] | INGUXIAEEION | students 
+ioo(1) 95 | [7, 5, 2, 25, 28, 21, 7, 0] | WCTHAEEAINGWF | students 
+ioo(2) 99 | [23, 20, 5, 7, 2, 15, 16, 11] | DLCWTHSTJ | students 
+Results for cuneiform33.txt
+ioo(0) 164 | [28, 18, 28, 16, 6, 27, 21, 20] | EAEEATGIOINGL | students 
+ioo(1) 115 | [9, 24, 24, 12, 8, 10, 20, 8] | NAAEOHILH | students 
+ioo(2) 132 | [4, 18, 2, 22, 27, 20, 14, 25] | RETHOEIOLXAE | students 
+Results for cuneiform34.txt
+ioo(0) 133 | [14, 17, 3, 16, 25, 21, 15, 22] | XBOTAEINGSOE | students 
+ioo(1) 75 | [20, 22, 12, 0, 3, 7, 2, 9] | LOEEOFOWTHN | students 
+Results for cuneiform35.txt
+ioo(0) 108 | [17, 17, 21, 6, 0, 17, 6, 24] | BBINGGFBGA | students 
+ioo(1) 76 | [10, 6, 24, 0, 0, 14, 10, 12] | IGAFFXIEO | students 
+ioo(2) 83 | [1, 27, 2, 3, 3, 20, 16, 11] | UIOTHOOLTJ | students 
+ioo(3) 123 | [27, 19, 17, 11, 4, 24, 6, 15] | IOMBJRAGS | students 
+ioo(4) 114 | [24, 9, 19, 21, 3, 2, 24, 12] | ANMINGOTHAEO | students 
+ioo(5) 120 | [8, 14, 25, 26, 21, 10, 1, 15] | HXAEYINGIUS | students 
+Results for cuneiform36.txt
+ioo(0) 105 | [4, 27, 7, 11, 25, 15, 0, 16] | RIOWJAESFT | students 
+ioo(1) 109 | [13, 6, 22, 28, 22, 1, 5, 12] | PGOEEAOEUCEO | students 
+ioo(2) 49 | [2, 6, 5, 17, 6, 0, 3, 10] | THGCBGFOI | students 
+ioo(3) 122 | [24, 1, 20, 19, 20, 1, 17, 20] | AULMLUBL | students 
+Results for cuneiform37.txt
+ioo(0) 83 | [4, 5, 26, 0, 11, 8, 28, 1] | RCYFJHEAU | students 
+ioo(1) 77 | [20, 6, 0, 11, 7, 7, 23, 3] | LGFJWWDO | students 
+Results for cuneiform38.txt
+ioo(0) 76 | [18, 5, 19, 2, 8, 3, 4, 17] | ECMTHHORB | students 
+Results for cuneiform39.txt
+ioo(0) 136 | [11, 5, 26, 25, 17, 3, 22, 27] | JCYAEBOOEIO | students 
+Results for spiralbranch40.txt
+Results for spiralbranch41.txt
+ioo(0) 102 | [2, 15, 21, 18, 8, 13, 23, 2] | THSINGEHPDTH | students 
+ioo(1) 84 | [19, 2, 8, 1, 14, 24, 0, 16] | MTHHUXAFT | students 
+ioo(2) 113 | [7, 20, 3, 16, 15, 22, 2, 28] | WLOTSOETHEA | students 
+Results for spiralbranch42.txt
+ioo(0) 147 | [28, 4, 18, 22, 5, 20, 26, 24] | EAREOECLYA | students 
+ioo(1) 98 | [17, 5, 3, 7, 24, 24, 6, 12] | BCOWAAGEO | students 
+ioo(2) 142 | [24, 0, 22, 5, 28, 20, 16, 27] | AFOECEALTIO | students 
+ioo(3) 103 | [26, 11, 21, 13, 15, 0, 16, 1] | YJINGPSFTU | students 
+ioo(4) 125 | [24, 13, 13, 7, 14, 17, 21, 16] | APPWXBINGT | students 
+Results for spiralbranch43.txt
+ioo(0) 132 | [19, 14, 24, 25, 24, 6, 8, 12] | MXAAEAGHEO | students 
+ioo(1) 141 | [28, 13, 24, 0, 11, 18, 24, 23] | EAPAFJEAD | students 
+ioo(2) 126 | [13, 21, 26, 10, 10, 19, 27, 0] | PINGYIIMIOF | students 
+ioo(3) 117 | [2, 22, 17, 11, 21, 27, 10, 7] | THOEBJINGIOIW | students 
+ioo(4) 132 | [10, 21, 21, 6, 7, 26, 16, 25] | IINGINGGWYTAE | students 
+Results for spiralbranch44.txt
+ioo(0) 83 | [16, 4, 17, 21, 0, 13, 9, 3] | TRBINGFPNO | students 
+ioo(1) 101 | [19, 24, 28, 4, 3, 11, 10, 2] | MAEAROJITH | students 
+ioo(2) 119 | [12, 26, 15, 20, 14, 1, 24, 7] | EOYSLXUAW | students 
+ioo(3) 78 | [28, 8, 5, 14, 8, 7, 2, 6] | EAHCXHWTHG | students 
+Results for spiralbranch45.txt
+ioo(0) 129 | [15, 23, 1, 17, 20, 20, 17, 16] | SDUBLLBT | students 
+ioo(1) 110 | [6, 4, 23, 16, 28, 19, 14, 0] | GRDTEAMXF | students 
+ioo(2) 70 | [2, 10, 14, 3, 11, 14, 10, 6] | THIXOJXIG | students 
+ioo(3) 97 | [13, 11, 2, 22, 9, 15, 17, 8] | PJTHOENSBH | students 
+Results for spiralbranch46.txt
+ioo(0) 81 | [3, 0, 0, 14, 24, 25, 15, 0] | OFFXAAESF | students 
+ioo(1) 112 | [12, 15, 8, 6, 24, 13, 11, 23] | EOSHGAPJD | students 
+ioo(2) 89 | [0, 22, 12, 6, 7, 8, 24, 10] | FOEEOGWHAI | students 
+ioo(3) 74 | [6, 4, 18, 11, 9, 3, 13, 10] | GREJNOPI | students 
+Results for spiralbranch47.txt
+ioo(0) 120 | [2, 12, 19, 8, 16, 14, 23, 26] | THEOMHTXDY | students 
+ioo(1) 120 | [2, 22, 28, 1, 26, 26, 1, 14] | THOEEAUYYUX | students 
+ioo(2) 123 | [10, 20, 25, 12, 12, 18, 13, 13] | ILAEEOEOEPP | students 
+Results for spiralbranch48.txt
+ioo(0) 122 | [4, 19, 17, 25, 8, 18, 23, 8] | RMBAEHEDH | students 
+ioo(1) 104 | [7, 5, 16, 7, 26, 14, 21, 8] | WCTWYXINGH | students 
+ioo(2) 111 | [4, 23, 10, 23, 1, 24, 22, 4] | RDIDUAOER | students 
+ioo(3) 80 | [26, 13, 0, 0, 8, 15, 4, 14] | YPFFHSRX | students 
+Results for spiralbranch49.txt
+Results for spiralbranch50.txt
+Results for spiralbranch51.txt
+Results for spiralbranch52.txt
+Results for spiralbranch53.txt
+ioo(0) 62 | [9, 14, 8, 5, 0, 14, 3, 9] | NXHCFXON | students 
+ioo(1) 60 | [0, 7, 20, 12, 2, 6, 7, 6] | FWLEOTHGWG | students 
+ioo(2) 101 | [11, 16, 16, 12, 16, 9, 0, 21] | JTTEOTNFING | students 
+ioo(3) 98 | [4, 12, 25, 18, 1, 16, 4, 18] | REOAEEUTRE | students 
+Results for spiralbranch54.txt
+ioo(0) 124 | [6, 8, 11, 15, 4, 27, 25, 28] | GHJSRIOAEEA | students 
+ioo(1) 93 | [9, 26, 2, 1, 7, 14, 28, 6] | NYTHUWXEAG | students 
+ioo(2) 122 | [13, 25, 7, 6, 19, 25, 17, 10] | PAEWGMAEBI | students 
+ioo(3) 95 | [13, 6, 13, 28, 10, 18, 5, 2] | PGPEAIECTH | students 
+ioo(4) 118 | [15, 22, 9, 9, 1, 19, 23, 20] | SOENNUMDL | students 
+ioo(5) 78 | [4, 0, 3, 2, 12, 28, 23, 6] | RFOTHEOEADG | students 
+Results for hollow54.txt
+ioo(0) 80 | [4, 5, 22, 4, 13, 5, 23, 4] | RCOERPCDR | students 
+ioo(1) 109 | [12, 7, 12, 27, 12, 27, 8, 4] | EOWEOIOEOIOHR | students 
+ioo(2) 145 | [17, 24, 26, 5, 21, 11, 19, 22] | BAYCINGJMOE | students 
+ioo(3) 89 | [4, 16, 12, 3, 5, 18, 4, 27] | RTEOOCERIO | students 
+ioo(4) 97 | [23, 19, 2, 24, 2, 10, 1, 16] | DMTHATHIUT | students 
+ioo(5) 94 | [3, 4, 3, 18, 24, 24, 7, 11] | OROEAAWJ | students 
+Results for hollow55.txt
+Results for spiralbranch55.txt
+ioo(0) 121 | [4, 22, 17, 14, 17, 8, 14, 25] | ROEBXBHXAE | students 

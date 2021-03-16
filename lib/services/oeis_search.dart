@@ -3,19 +3,10 @@ import 'package:dio/dio.dart';
 
 // A class containing functions relating to https://www.oeis.org
 class OEISLookUp {
-  final bool localLookUp;
-  List<String> localSequences;
-
-  List<List<int>> localSequencesList;
-
-  File localFile;
-  File cacheFile;
-  Dio client;
-
   OEISLookUp({this.localLookUp}) {
     if (!localLookUp) {
-      BaseOptions options = BaseOptions(
-        baseUrl: "https://www.oeis.org/",
+      final BaseOptions options = BaseOptions(
+        baseUrl: 'https://www.oeis.org/',
         connectTimeout: 5000,
         receiveTimeout: 3000,
       );
@@ -36,6 +27,15 @@ class OEISLookUp {
       localSequences = localFile.readAsLinesSync().toSet().toList();
     }
   }
+
+  final bool localLookUp;
+  List<String> localSequences;
+
+  List<List<int>> localSequencesList;
+
+  File localFile;
+  File cacheFile;
+  Dio client;
 
   void cache_sequence_to_file(String sequence) {
     cacheFile.writeAsStringSync('$sequence\n', mode: FileMode.append);

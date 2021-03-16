@@ -1,34 +1,66 @@
 import 'dart:io';
 
-import 'package:cicadrypt/constants/runes.dart';
-import 'package:cicadrypt/services/crib.dart';
-import 'package:cicadrypt/services/oeis_scraper.dart';
-import 'package:flutter/services.dart';
-
-import 'global/keyboard_listener.dart';
+import 'package:cicadrypt/dialogs/select_challenge_cipher.dart';
+import 'package:cicadrypt/dialogs/select_liber_primus_page.dart';
+import 'package:cicadrypt/models/gram.dart';
+import 'package:cicadrypt/pages/analyze/analyze_state.dart';
+import 'package:cicadrypt/tools/dumppages.dart';
+import 'package:cicadrypt/tools/findcribintersects.dart';
+import 'package:cicadrypt/tools/globalfindcribs.dart';
+import 'package:cicadrypt/tools/solvedwordcount.dart';
+import 'package:desktop_window/desktop_window.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
 import 'package:supercharged_dart/supercharged_dart.dart';
-import 'package:desktop_window/desktop_window.dart';
 
+import 'dialogs/select_cipher_from_path.dart';
 import 'global/cipher.dart';
-import 'models/console_state.dart';
-import 'models/crib_settings.dart';
+import 'global/keyboard_listener.dart';
+import 'global/settings.dart';
 import 'pages/analyze/analyze.dart';
+import 'pages/misc/misc.dart';
 import 'pages/solve/solve.dart';
 import 'services/crib_cache.dart';
+import 'tools/cribsmallwords.dart';
+import 'tools/factor.dart';
+import 'tools/findcribs.dart';
+import 'tools/ioc.dart';
+import 'tools/largest_words.dart';
+import 'tools/prime.dart';
+import 'tools/sequence_finder.dart';
+import 'tools/shuffle.dart';
+import 'tools/wordlist.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await DesktopWindow.setWindowSize(const Size(880, 880));
+  GetIt.instance.registerSingleton(Settings());
 
   GetIt.instance.registerSingleton(Cipher([]));
-  GetIt.instance<Cipher>().load_from_file('${Directory.current.path}/solved_liberprimus_pages/lossofdivinity0.txt');
+
+  // load a random unsolved page
+  final basePath = Directory('${Directory.current.path}/liberprimus_pages/');
+
+  // 3 shuffles the magic number baby
+  final rawFileList = basePath.listSync()
+    ..shuffle()
+    ..shuffle()
+    ..shuffle()
+    ..removeWhere((element) => !element.path.contains(('chapter')));
+
+  // remove the huge one, loading takes way too long
+  rawFileList.removeWhere((element) => element.path.contains('spiralbranch') && !element.path.contains('number'));
+  rawFileList.removeWhere((element) => element.path.contains('mobius') && !element.path.contains('number'));
+
+  print('Loading Page: ${rawFileList.first.path}');
+  GetIt.instance<Cipher>().load_from_file(rawFileList.first.path);
 
   GetIt.instance.registerSingleton(Keyboard());
 
   GetIt.instance.registerSingleton(CribCache());
+
+  GetIt.instance.registerSingleton(AnalyzeState());
 
   runApp(MyApp());
 }
@@ -59,14 +91,14 @@ class MyApp extends StatelessWidget {
           fontFamily: 'SegoeUISymbol',
           inputDecorationTheme: const InputDecorationTheme(filled: true),
         ),
-        home: MainPage(),
+        home: const MainPage(),
       ),
     );
   }
 }
 
 class MainPage extends StatefulWidget {
-  MainPage({Key key}) : super(key: key);
+  const MainPage({Key key}) : super(key: key);
 
   @override
   _MainPageState createState() => _MainPageState();
@@ -106,427 +138,19 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                         switch (result) {
                           case 0:
                             {
-                              showDialog<void>(
-                                barrierColor: Colors.black.withOpacity(0.30),
-                                context: context,
-                                builder: (context) => AlertDialog(
-                                  contentPadding: EdgeInsets.zero,
-                                  content: Builder(
-                                    builder: (context) {
-                                      // ignore: strict_raw_type
-                                      final pathKey = GlobalKey<FormFieldState>();
-                                      final pathTextController = TextEditingController();
-                                      final width = MediaQuery.of(context).size.width * 0.70;
-                                      final height = MediaQuery.of(context).size.height * 0.30;
-                                      return Container(
-                                        width: width,
-                                        height: height,
-                                        child: Material(
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                              children: [
-                                                const Text('Load cipher from path'),
-                                                Row(
-                                                  children: [
-                                                    Expanded(
-                                                      child: TextFormField(
-                                                        key: pathKey,
-                                                        controller: pathTextController,
-                                                        decoration: const InputDecoration().copyWith(hintText: 'C:/Users/null/Desktop/cipher_0.txt'),
-                                                        validator: (value) {
-                                                          if (value.isEmpty) {
-                                                            return 'Must not be empty.';
-                                                          }
-
-                                                          if (!value.endsWith('.txt')) {
-                                                            return 'Must be a .txt file';
-                                                          }
-
-                                                          return null;
-                                                        },
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                                Row(
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                  children: [
-                                                    TextButton(
-                                                      onPressed: () => Navigator.of(context).pop(),
-                                                      child: const Text('Cancel', style: TextStyle(color: Colors.white)),
-                                                    ),
-                                                    TextButton(
-                                                      onPressed: () {
-                                                        final isValid = pathKey.currentState.validate();
-                                                        if (!isValid) return;
-
-                                                        setState(() {
-                                                          print(pathTextController.text);
-                                                          GetIt.I<Cipher>().load_from_file(pathTextController.text);
-                                                        });
-                                                        Navigator.of(context).pop();
-                                                      },
-                                                      child: const Text('Load', style: TextStyle(color: Colors.white)),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      );
-                                    },
-                                  ),
-                                ),
-                              );
+                              selectCipherFromPath(context, setState);
                             }
                             break;
 
                           case 1:
                             {
-                              showDialog<void>(
-                                barrierColor: Colors.black.withOpacity(0.30),
-                                context: context,
-                                builder: (context) => AlertDialog(
-                                  contentPadding: EdgeInsets.zero,
-                                  content: Builder(
-                                    builder: (context) {
-                                      final width = MediaQuery.of(context).size.width * 0.30;
-                                      final height = MediaQuery.of(context).size.height * 0.80;
-                                      return Container(
-                                        width: width,
-                                        height: height,
-                                        child: Material(
-                                          color: Theme.of(context).cardColor,
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                              children: [
-                                                const Text('Liber Primus Pages'),
-                                                Builder(builder: (_) {
-                                                  final basePath = Directory('${Directory.current.path}/liberprimus_pages/');
-
-                                                  final rawFileList = basePath.listSync();
-
-                                                  List<String> pagesSortedByNum;
-
-                                                  try {
-                                                    print('a');
-                                                    final pages = List<String>.generate(rawFileList.length, (index) => rawFileList[index].path.split('/').last).sortedByString((element) => element);
-                                                    pages.removeWhere((element) => !element.endsWith('.txt'));
-                                                    print('b');
-
-                                                    final numberRegex = RegExp('[^0-9]');
-                                                    print('c');
-                                                    pagesSortedByNum = pages.sortedByNum((element) {
-                                                      //print('parsing $element');
-                                                      return int.parse(element.replaceAll(numberRegex, ''));
-                                                    });
-                                                  } catch (e) {
-                                                    print(e);
-                                                  }
-
-                                                  return Expanded(
-                                                    child: Padding(
-                                                      padding: const EdgeInsets.all(8),
-                                                      child: Material(
-                                                        color: Theme.of(context).scaffoldBackgroundColor,
-                                                        child: ListView.builder(
-                                                          itemCount: pagesSortedByNum.length,
-                                                          itemBuilder: (context, index) {
-                                                            final rawPageName = pagesSortedByNum[index];
-                                                            final pageName = pagesSortedByNum[index].replaceAll('.txt', '');
-
-                                                            return Material(
-                                                              color: Theme.of(context).scaffoldBackgroundColor,
-                                                              child: InkWell(
-                                                                onTap: () {
-                                                                  print('loading ${basePath.path + rawPageName}');
-                                                                  setState(() {
-                                                                    GetIt.I<Cipher>().load_from_file(basePath.path + rawPageName);
-                                                                  });
-
-                                                                  Navigator.of(context).pop();
-                                                                },
-                                                                child: Padding(
-                                                                  padding: const EdgeInsets.all(4.0),
-                                                                  child: Row(
-                                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                    children: [Text(pageName), const Icon(Icons.arrow_right)],
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            );
-                                                          },
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  );
-                                                }),
-                                                Row(
-                                                  children: [
-                                                    Expanded(
-                                                      child: Padding(
-                                                        padding: const EdgeInsets.all(8.0),
-                                                        child: Material(
-                                                          child: TextButton(
-                                                            onPressed: () {
-                                                              Navigator.of(context).pop();
-                                                            },
-                                                            child: const Text(
-                                                              'Close',
-                                                              style: TextStyle(color: Colors.white),
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                )
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      );
-                                    },
-                                  ),
-                                ),
-                              );
+                              selectLiberPrimusPageDialog(context, setState);
                             }
                             break;
 
                           case 2:
                             {
-                              showDialog<void>(
-                                barrierColor: Colors.black.withOpacity(0.30),
-                                context: context,
-                                builder: (context) => AlertDialog(
-                                  contentPadding: EdgeInsets.zero,
-                                  content: Builder(
-                                    builder: (context) {
-                                      final width = MediaQuery.of(context).size.width * 0.30;
-                                      final height = MediaQuery.of(context).size.height * 0.80;
-                                      return Container(
-                                        width: width,
-                                        height: height,
-                                        child: Material(
-                                          color: Theme.of(context).cardColor,
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                              children: [
-                                                const Text('Solved Liber Primus Pages'),
-                                                Builder(builder: (_) {
-                                                  final basePath = Directory('${Directory.current.path}/solved_liberprimus_pages/');
-
-                                                  final rawFileList = basePath.listSync();
-
-                                                  List<String> pagesSortedByNum;
-
-                                                  try {
-                                                    print('a');
-                                                    final pages = List<String>.generate(rawFileList.length, (index) => rawFileList[index].path.split('/').last).sortedByString((element) => element);
-                                                    pages.removeWhere((element) => !element.endsWith('.txt'));
-                                                    print('b');
-
-                                                    final numberRegex = RegExp('[^0-9]');
-                                                    print('c');
-                                                    pagesSortedByNum = pages.sortedByNum((element) {
-                                                      //print('parsing $element');
-                                                      return int.parse(element.replaceAll(numberRegex, ''));
-                                                    });
-                                                  } catch (e) {
-                                                    print(e);
-                                                  }
-
-                                                  return Expanded(
-                                                    child: Padding(
-                                                      padding: const EdgeInsets.all(8),
-                                                      child: Material(
-                                                        color: Theme.of(context).scaffoldBackgroundColor,
-                                                        child: ListView.builder(
-                                                          itemCount: pagesSortedByNum.length,
-                                                          itemBuilder: (context, index) {
-                                                            final rawPageName = pagesSortedByNum[index];
-                                                            final pageName = pagesSortedByNum[index].replaceAll('.txt', '');
-
-                                                            return Material(
-                                                              color: Theme.of(context).scaffoldBackgroundColor,
-                                                              child: InkWell(
-                                                                onTap: () {
-                                                                  print('loading ${basePath.path + rawPageName}');
-                                                                  setState(() {
-                                                                    GetIt.I<Cipher>().load_from_file(basePath.path + rawPageName);
-                                                                  });
-
-                                                                  Navigator.of(context).pop();
-                                                                },
-                                                                child: Padding(
-                                                                  padding: const EdgeInsets.all(4.0),
-                                                                  child: Row(
-                                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                    children: [Text(pageName), const Icon(Icons.arrow_right)],
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            );
-                                                          },
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  );
-                                                }),
-                                                Row(
-                                                  children: [
-                                                    Expanded(
-                                                      child: Padding(
-                                                        padding: const EdgeInsets.all(8.0),
-                                                        child: Material(
-                                                          child: TextButton(
-                                                            onPressed: () {
-                                                              Navigator.of(context).pop();
-                                                            },
-                                                            child: const Text(
-                                                              'Close',
-                                                              style: TextStyle(color: Colors.white),
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                )
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      );
-                                    },
-                                  ),
-                                ),
-                              );
-                            }
-                            break;
-
-                          case 3:
-                            {
-                              showDialog<void>(
-                                barrierColor: Colors.black.withOpacity(0.30),
-                                context: context,
-                                builder: (context) => AlertDialog(
-                                  contentPadding: EdgeInsets.zero,
-                                  content: Builder(
-                                    builder: (context) {
-                                      final width = MediaQuery.of(context).size.width * 0.30;
-                                      final height = MediaQuery.of(context).size.height * 0.80;
-                                      return Container(
-                                        width: width,
-                                        height: height,
-                                        child: Material(
-                                          color: Theme.of(context).cardColor,
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                              children: [
-                                                const Text('Challenge / Training pages'),
-                                                Builder(builder: (_) {
-                                                  final basePath = Directory('${Directory.current.path}/training_pages/');
-
-                                                  final rawFileList = basePath.listSync();
-
-                                                  List<String> pagesSortedByNum;
-
-                                                  try {
-                                                    print('a');
-                                                    final pages = List<String>.generate(rawFileList.length, (index) => rawFileList[index].path.split('/').last).sortedByString((element) => element);
-                                                    pages.removeWhere((element) => !element.endsWith('.txt'));
-                                                    print('b');
-
-                                                    final numberRegex = RegExp('[^0-9]');
-                                                    print('c');
-                                                    pagesSortedByNum = pages.sortedByNum((element) {
-                                                      //print('parsing $element');
-                                                      return int.parse(element.replaceAll(numberRegex, ''));
-                                                    });
-                                                  } catch (e) {
-                                                    print(e);
-                                                  }
-
-                                                  return Expanded(
-                                                    child: Padding(
-                                                      padding: const EdgeInsets.all(8),
-                                                      child: Material(
-                                                        color: Theme.of(context).scaffoldBackgroundColor,
-                                                        child: ListView.builder(
-                                                          itemCount: pagesSortedByNum.length,
-                                                          itemBuilder: (context, index) {
-                                                            final rawPageName = pagesSortedByNum[index];
-                                                            final pageName = pagesSortedByNum[index].replaceAll('.txt', '');
-
-                                                            return Material(
-                                                              color: Theme.of(context).scaffoldBackgroundColor,
-                                                              child: InkWell(
-                                                                onTap: () {
-                                                                  print('loading ${basePath.path + rawPageName}');
-                                                                  setState(() {
-                                                                    GetIt.I<Cipher>().load_from_file(basePath.path + rawPageName);
-                                                                  });
-
-                                                                  Navigator.of(context).pop();
-                                                                },
-                                                                child: Padding(
-                                                                  padding: const EdgeInsets.all(4.0),
-                                                                  child: Row(
-                                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                    children: [Text(pageName), const Icon(Icons.arrow_right)],
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            );
-                                                          },
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  );
-                                                }),
-                                                Row(
-                                                  children: [
-                                                    Expanded(
-                                                      child: Padding(
-                                                        padding: const EdgeInsets.all(8.0),
-                                                        child: Material(
-                                                          child: TextButton(
-                                                            onPressed: () {
-                                                              Navigator.of(context).pop();
-                                                            },
-                                                            child: const Text(
-                                                              'Close',
-                                                              style: TextStyle(color: Colors.white),
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                )
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      );
-                                    },
-                                  ),
-                                ),
-                              );
+                              selectChallengeCipher(context, setState);
                             }
                             break;
                         }
@@ -542,10 +166,6 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                         ),
                         const PopupMenuItem<int>(
                           value: 2,
-                          child: Text('Load solved page from LP'),
-                        ),
-                        const PopupMenuItem<int>(
-                          value: 3,
                           child: Text('Load challenge/training page'),
                         ),
                       ],
@@ -553,6 +173,140 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                         padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                         child: Text(
                           'File',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    PopupMenuButton<int>(
+                      onSelected: (int result) {
+                        switch (result) {
+                          case 0:
+                            {
+                              toolIocAnalysis(context);
+                            }
+                            break;
+
+                          case 1:
+                            {
+                              toolShuffleTest(context);
+                            }
+                            break;
+
+                          case 2:
+                            {
+                              toolFactorAnalysis(context);
+                            }
+                            break;
+
+                          case 3:
+                            {
+                              toolLargestWords(context);
+                            }
+                            break;
+
+                          case 4:
+                            {
+                              toolSequenceFinder(context);
+                            }
+                            break;
+
+                          case 5:
+                            {
+                              toolWordListViewer(context);
+                            }
+                            break;
+
+                          case 6:
+                            {
+                              toolPrimeAnalysis(context);
+                            }
+                            break;
+
+                          case 7:
+                            {
+                              toolCribSmallWords(context);
+                            }
+                            break;
+                          case 8:
+                            {
+                              toolDumpPageInfo(context);
+                            }
+                            break;
+                          case 9:
+                            {
+                              toolFindCribs(context);
+                            }
+                            break;
+
+                          case 10:
+                            {
+                              toolGlobalFindCribs(context);
+                            }
+                            break;
+                          case 11:
+                            {
+                              toolSolvedWordCount(context);
+                            }
+                            break;
+                        }
+                      },
+                      itemBuilder: (BuildContext context) => <PopupMenuEntry<int>>[
+                        const PopupMenuItem<int>(value: 0, child: Text('IoC Analysis')),
+                        const PopupMenuItem<int>(value: 1, child: Text('Shuffle Test')),
+                        const PopupMenuItem<int>(value: 2, child: Text('Factor Analysis')),
+                        const PopupMenuItem<int>(value: 3, child: Text('Largest Words')),
+                        const PopupMenuItem<int>(value: 4, child: Text('Sequence Finder')),
+                        const PopupMenuItem<int>(value: 5, child: Text('Word List Viewer')),
+                        const PopupMenuItem<int>(value: 6, child: Text('Prime Analysis')),
+                        const PopupMenuItem<int>(value: 7, child: Text('Crib Small Words')),
+                        const PopupMenuItem<int>(value: 8, child: Text('Dump Pages')),
+                        const PopupMenuItem<int>(value: 9, child: Text('Find Cribs')),
+                        const PopupMenuItem<int>(value: 10, child: Text('Global Find Cribs')),
+                        const PopupMenuItem<int>(value: 11, child: Text('Solved Word Count')),
+                      ],
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                        child: Text(
+                          'Tools',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    Expanded(child: Container()),
+                    PopupMenuButton<int>(
+                      onSelected: (int result) {
+                        switch (result) {
+                          case 0:
+                            {
+                              setState(() {
+                                GetIt.instance<Settings>().switch_to_cicada_mode();
+                              });
+                            }
+                            break;
+
+                          case 1:
+                            {
+                              setState(() {
+                                GetIt.instance<Settings>().switch_to_english_mode();
+                              });
+                            }
+                            break;
+                        }
+                      },
+                      itemBuilder: (BuildContext context) => <PopupMenuEntry<int>>[
+                        const PopupMenuItem<int>(
+                          value: 0,
+                          child: Text('Cicada'),
+                        ),
+                        const PopupMenuItem<int>(
+                          value: 1,
+                          child: Text('English'),
+                        ),
+                      ],
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                        child: Text(
+                          'Cipher Language',
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
@@ -570,7 +324,7 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                 child: TabBar(
                   onTap: (index) {},
                   controller: tabController,
-                  tabs: const [Tab(text: 'Analyze'), Tab(text: 'Solve'), Tab(text: 'Train')],
+                  tabs: const [Tab(text: 'Analyze'), Tab(text: 'Solve'), Tab(text: 'Misc')],
                 ),
               ),
             ),
@@ -581,7 +335,7 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                 children: [
                   AnalyzePage(),
                   SolvePage(),
-                  Container(),
+                  MiscPage(),
                 ],
               ),
             ),
