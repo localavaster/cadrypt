@@ -8,8 +8,10 @@ https://www.discord.gg/PuyyVnybRK
  
 # Current features
 - Basic Solving using a console
+- General cipher tools
 - Full cribbing functionality, aswell as neat and maybe useful extension methods / filtering methods
-- Fully functioning cipher grid with multiple view modes (Regular, Flat, True to LP, 5x5, 3x3,)
+- Sentence cribbing (Some sentences have been prime)
+- Fully functioning cipher grid with multiple view modes (Regular, Flat, True to LP, 5x5, 3x3 and more)
 - Load any page from the liber primus, aswell as solved ones.
 - nGram visualization
 - Frequency visualization
@@ -17,6 +19,7 @@ https://www.discord.gg/PuyyVnybRK
 - Statistics on a cipher (IoC, nGram Ratio, Entropy)
 - Highlight areas of interest (double letters, small words, double rune letters, etc)
 - Distance calculator
+- Homophone analysis (by cribbing)
 - Much more
 
 # Road map
