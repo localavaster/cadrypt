@@ -33,8 +33,8 @@ Future<void> selectLiberPrimusPageDialog(BuildContext context, Function globalSe
   List<String> all_pages = [];
 
   final directorys_to_search = [
-    Directory('${Directory.current.path}/liberprimus_pages'),
-    Directory('${Directory.current.path}/solved_liberprimus_pages'),
+    Directory('${Directory.current.path}/liberprimus_pages/'.replaceAll(RegExp(r'[\/]'), '/')),
+    Directory('${Directory.current.path}/solved_liberprimus_pages/'.replaceAll(RegExp(r'[\/]'), '/')),
   ];
 
   for (final directory in directorys_to_search) {

@@ -31,7 +31,7 @@ Future<void> selectChallengeCipher(BuildContext context, Function globalSetState
                   children: [
                     const Text('Challenge / Training pages'),
                     Builder(builder: (_) {
-                      final basePath = Directory('${Directory.current.path}/training_pages/');
+                      final basePath = Directory('${Directory.current.path}/training_pages/'.replaceAll(RegExp(r'[\/]'), '/'));
 
                       final rawFileList = basePath.listSync();
 

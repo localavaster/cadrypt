@@ -80,7 +80,7 @@ void toolGlobalFindCribs(BuildContext context) {
                               final console = GetIt.I.get<ConsoleState>(instanceName: 'analyze');
                               final analyze_state = GetIt.I.get<AnalyzeState>();
 
-                              final page_directory = Directory('${Directory.current.path}/liberprimus_pages/');
+                              final page_directory = Directory('${Directory.current.path}/liberprimus_pages/'.replaceAll(RegExp(r'[\/]'), '/'));
                               List<FileSystemEntity> pages = page_directory.listSync();
                               pages.removeWhere((element) => element.path.contains('chapter'));
 

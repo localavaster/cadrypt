@@ -28,7 +28,7 @@ Future<void> toolSolvedWordCount(BuildContext context) async {
 
   final console_state = GetIt.I.get<ConsoleState>(instanceName: 'analyze');
 
-  final paths = [Directory('${Directory.current.path}/solved_liberprimus_pages/')];
+  final paths = [Directory('${Directory.current.path}/solved_liberprimus_pages/'.replaceAll(RegExp(r'[\/]'), '/'))];
 
   // word, seen count
   Map<String, int> results = {};

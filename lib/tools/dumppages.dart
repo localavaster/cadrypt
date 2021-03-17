@@ -78,11 +78,11 @@ class BodyInformation {
 Future<void> toolDumpPageInfo(BuildContext context) async {
   final console_state = GetIt.I.get<ConsoleState>(instanceName: 'analyze');
 
-  final paths = ['${Directory.current.path}/liberprimus_pages/', '${Directory.current.path}/solved_liberprimus_pages/'];
+  final paths = ['${Directory.current.path}/liberprimus_pages/'.replaceAll(RegExp(r'[\/]'), '/'), '${Directory.current.path}/solved_liberprimus_pages/'.replaceAll(RegExp(r'[\/]'), '/')];
 
   for (final path in paths) {
     final basePath = Directory(path);
-    final outputPath = Directory('${Directory.current.path}/dumped_liberprimus_pages/');
+    final outputPath = Directory('${Directory.current.path}/dumped_liberprimus_pages/'.replaceAll(RegExp(r'[\/]'), '/'));
 
     for (final file in basePath.listSync()) {
       final page_name = file.path.split('/').last;

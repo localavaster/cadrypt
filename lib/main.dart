@@ -40,7 +40,7 @@ Future<void> main() async {
   GetIt.instance.registerSingleton(Cipher([]));
 
   // load a random unsolved page
-  final basePath = Directory('${Directory.current.path}/liberprimus_pages/');
+  final basePath = Directory('${Directory.current.path}/liberprimus_pages/'.replaceAll(RegExp(r'[\/]'), '/'));
 
   // 3 shuffles the magic number baby
   final rawFileList = basePath.listSync()
