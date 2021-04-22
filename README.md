@@ -2,7 +2,7 @@
 
 A tool designed to assist with solving pages in the Liber Primus
 
-![Alt Text](https://cdn.discordapp.com/attachments/585524644740857882/821572861579100171/Screen_Shot_2021-03-16_at_8.37.00_PM.png)
+![Alt Text](https://i.imgur.com/rSCeeIc.png)
  
 # Current features
 - Basic Solving using a console
