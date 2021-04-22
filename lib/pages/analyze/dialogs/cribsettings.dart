@@ -66,7 +66,60 @@ Future<void> dialogCribSettings(BuildContext context, AnalyzeState state) {
                                       child: Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
                                         Center(
                                           child: Text(
-                                            'Part of Speech',
+                                            'Crib Direction (whether shifts are - or +)',
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                        )
+                                      ]),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 32),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: DropdownButtonFormField<String>(
+                                              onChanged: (String value) {
+                                                setState(() {
+                                                  state.cribSettings.shiftMode = value;
+                                                });
+                                              },
+                                              value: state.cribSettings.shiftMode,
+                                              items: const [
+                                                DropdownMenuItem(
+                                                  value: 'negative',
+                                                  child: Text('Negative'),
+                                                ),
+                                                DropdownMenuItem(
+                                                  value: 'positive',
+                                                  child: Text('Positive'),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 4.0),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                              child: Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 32.0),
+                                            child: Container(height: 2, width: double.infinity, color: Theme.of(context).cardColor),
+                                          ))
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(bottom: 4.0),
+                                      child: Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
+                                        Center(
+                                          child: Text(
+                                            'Part of Speech / Word List',
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               fontSize: 16,
@@ -255,7 +308,6 @@ Future<void> dialogCribSettings(BuildContext context, AnalyzeState state) {
                                           children: [
                                             Expanded(
                                               child: DropdownButtonFormField<String>(
-                                                  isDense: true,
                                                   value: state.cribSettings.outputSortedBy,
                                                   items: const [
                                                     DropdownMenuItem(

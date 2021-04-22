@@ -13,208 +13,159 @@ analyzer:
 
 linter:
   rules:
-    #- public_member_api_docs
-    #- lines_longer_than_80_chars
-    - annotate_overrides
-    - await_only_futures
-    - cancel_subscriptions
-    - close_sinks
-    - hash_and_equals
-    - implementation_imports
-    - package_api_docs
-    - package_names
-    - package_prefixed_library_names
-    - test_types_in_equals
-    - unnecessary_getters_setters
-    - always_declare_return_types
-    - void_checks
-    - type_annotate_public_apis
-    - avoid_slow_async_io
-    - invariant_booleans
-    - iterable_contains_unrelated_type
-    - list_remove_unrelated_type
-    - literal_only_boolean_expressions
-    - no_adjacent_strings_in_list
-    - prefer_void_to_null
-    - always_require_non_null_named_parameters
-    - directives_ordering
-    - only_throw_errors
-    - prefer_adjacent_string_concatenation
-    - prefer_asserts_in_initializer_lists
-    - prefer_conditional_assignment
-    - prefer_const_constructors
-    - prefer_const_constructors_in_immutables
-    - prefer_typing_uninitialized_variables
-    - unnecessary_null_aware_assignments
-    - unnecessary_overrides
-    - use_function_type_syntax_for_parameters
-    - use_string_buffers
-    - use_to_and_as_if_applicable
-    - use_full_hex_values_for_flutter_colors
-    - prefer_spread_collections
-    - prefer_inlined_adds
-    - prefer_for_elements_to_map_fromIterable
-    - prefer_if_elements_to_conditional_expressions
-    - unnecessary_parenthesis
-    - prefer_collection_literals
-    - prefer_const_declarations
-    - prefer_null_aware_operators
-    - always_put_required_named_parameters_first
-    - avoid_catching_errors
-    - avoid_double_and_int_checks
-    - avoid_implementing_value_types
-    - avoid_js_rounded_ints
-    - avoid_null_checks_in_equality_operators
-    - avoid_private_typedef_functions
-    - prefer_final_fields
-    - avoid_returning_null
-    - avoid_returning_null_for_future
-    - avoid_returning_null_for_void
-    - avoid_returning_this
-    - avoid_single_cascade_in_expression_statements
-    - avoid_unused_constructor_parameters
-    - avoid_void_async
-    - join_return_with_assignment
-    - parameter_assignments
-    - prefer_final_in_for_each
-    - prefer_foreach
-    - prefer_generic_function_type_aliases
-    - prefer_if_null_operators
-    - prefer_initializing_formals
-    - provide_deprecation_message
-    # flutter style
-    # - sort_child_properties_last
-    - sort_pub_dependencies
-    - sort_unnamed_constructors_first
-    - unnecessary_await_in_return
-    - unsafe_html
-    - file_names
-    #
-
-    #- always_specify_types
-    #- avoid_annotating_with_dynamic
-    #- avoid_as
-    - avoid_bool_literals_in_conditional_expressions
-
-    - avoid_empty_else
-    - avoid_equals_and_hash_code_on_mutable_classes
-    - avoid_escaping_inner_quotes
-    - avoid_field_initializers_in_const_classes
-    - avoid_function_literals_in_foreach_calls
-    - avoid_init_to_null
-
-
-    - avoid_positional_boolean_parameters
-    - avoid_print
-
-    - avoid_redundant_argument_values
-    - avoid_relative_lib_imports
-    - avoid_renaming_method_parameters
-    - avoid_return_types_on_setters
-
-    - avoid_setters_without_getters
-    - avoid_shadowing_type_parameters
-
-    - avoid_type_to_string
-    - avoid_types_as_parameter_names
-
-    - avoid_unnecessary_containers
-
-    - avoid_web_libraries_in_flutter
-
-    - cast_nullable_to_non_nullable
-
-    - comment_references
-    - control_flow_in_finally
-    - curly_braces_in_flow_control_structures
-    #- diagnostic_describe_all_properties
-
-    - do_not_use_environment
-    - empty_catches
-    - empty_constructor_bodies
-    - empty_statements
-    - exhaustive_cases
-
-
-
-
-
-    - missing_whitespace_between_adjacent_strings
-
-    - no_default_cases
-    - no_duplicate_case_values
-    - no_logic_in_create_state
-    - no_runtimeType_toString
-    - null_check_on_nullable_type_parameter
-    - null_closures
-
-    - one_member_abstracts
-
-    - overridden_fields
-
-    - prefer_asserts_with_message
-
-    - prefer_const_literals_to_create_immutables
-    - prefer_constructors_over_static_methods
-    - prefer_contains
-
-    - prefer_equal_for_default_values
-
-
-    - prefer_final_locals
-
-    - prefer_function_declarations_over_variables
-
-
-    - prefer_interpolation_to_compose_strings
-    - prefer_is_empty
-    - prefer_is_not_empty
-    - prefer_is_not_operator
-    - prefer_iterable_whereType
-    - prefer_mixin
-
-    - prefer_relative_imports
-    - prefer_single_quotes
-
-
-    - recursive_getters
-    - sized_box_for_whitespace
-    - slash_for_doc_comments
-    - sort_child_properties_last
-    - sort_constructors_first
-
-    - throw_in_finally
-    - tighten_type_of_initializing_formals
-
-    - type_init_formals
-    #- unawaited_futures
-
-    - unnecessary_brace_in_string_interps
-    - unnecessary_const
-
-
-    - unnecessary_lambdas
-    - unnecessary_new
-
-    - unnecessary_null_checks
-    - unnecessary_null_in_if_null_operators
-    - unnecessary_nullable_for_final_variable_declarations
-
-    - unnecessary_raw_strings
-    - unnecessary_statements
-    - unnecessary_string_escapes
-    - unnecessary_string_interpolations
-    - unnecessary_this
-    - unrelated_type_equality_checks
-
-    - use_is_even_rather_than_modulo
-
-    - use_late_for_private_fields_and_variables
-    - use_raw_strings
-    - use_rethrow_when_possible
-    - use_setters_to_change_properties
-
-    - valid_regexps
+    non_constant_identifier_names: false
+    annotate_overrides: true
+    await_only_futures: true
+    cancel_subscriptions: true
+    close_sinks: true
+    hash_and_equals: true
+    implementation_imports: true
+    package_api_docs: true
+    package_names: true
+    package_prefixed_library_names: true
+    test_types_in_equals: true
+    unnecessary_getters_setters: true
+    always_declare_return_types: true
+    void_checks: true
+    type_annotate_public_apis: true
+    avoid_slow_async_io: true
+    invariant_booleans: true
+    iterable_contains_unrelated_type: true
+    list_remove_unrelated_type: true
+    literal_only_boolean_expressions: true
+    no_adjacent_strings_in_list: true
+    prefer_void_to_null: true
+    always_require_non_null_named_parameters: true
+    directives_ordering: true
+    only_throw_errors: true
+    prefer_adjacent_string_concatenation: true
+    prefer_asserts_in_initializer_lists: true
+    prefer_conditional_assignment: true
+    prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
+    prefer_typing_uninitialized_variables: true
+    unnecessary_null_aware_assignments: true
+    unnecessary_overrides: true
+    use_function_type_syntax_for_parameters: true
+    use_string_buffers: true
+    use_to_and_as_if_applicable: true
+    use_full_hex_values_for_flutter_colors: true
+    prefer_spread_collections: true
+    prefer_inlined_adds: true
+    prefer_for_elements_to_map_fromIterable: true
+    prefer_if_elements_to_conditional_expressions: true
+    unnecessary_parenthesis: true
+    prefer_collection_literals: true
+    prefer_const_declarations: true
+    prefer_null_aware_operators: true
+    always_put_required_named_parameters_first: true
+    avoid_catching_errors: true
+    avoid_double_and_int_checks: true
+    avoid_implementing_value_types: true
+    avoid_js_rounded_ints: true
+    avoid_null_checks_in_equality_operators: true
+    avoid_private_typedef_functions: true
+    prefer_final_fields: true
+    avoid_returning_null: true
+    avoid_returning_null_for_future: true
+    avoid_returning_null_for_void: true
+    avoid_returning_this: true
+    avoid_single_cascade_in_expression_statements: true
+    avoid_unused_constructor_parameters: true
+    avoid_void_async: true
+    join_return_with_assignment: true
+    parameter_assignments: true
+    prefer_final_in_for_each: true
+    prefer_foreach: true
+    prefer_generic_function_type_aliases: true
+    prefer_if_null_operators: true
+    prefer_initializing_formals: true
+    provide_deprecation_message: true
+    sort_pub_dependencies: true
+    sort_unnamed_constructors_first: true
+    unnecessary_await_in_return: true
+    unsafe_html: true
+    file_names: true
+    avoid_bool_literals_in_conditional_expressions: true
+    avoid_empty_else: true
+    avoid_equals_and_hash_code_on_mutable_classes: true
+    avoid_escaping_inner_quotes: true
+    avoid_field_initializers_in_const_classes: true
+    avoid_function_literals_in_foreach_calls: true
+    avoid_init_to_null: true
+    avoid_positional_boolean_parameters: true
+    avoid_print: true
+    avoid_redundant_argument_values: true
+    avoid_relative_lib_imports: true
+    avoid_renaming_method_parameters: true
+    avoid_return_types_on_setters: true
+    avoid_setters_without_getters: true
+    avoid_shadowing_type_parameters: true
+    avoid_type_to_string: true
+    avoid_types_as_parameter_names: true
+    avoid_unnecessary_containers: true
+    avoid_web_libraries_in_flutter: true
+    cast_nullable_to_non_nullable: true
+    comment_references: true
+    control_flow_in_finally: true
+    curly_braces_in_flow_control_structures: true
+    do_not_use_environment: true
+    empty_catches: true
+    empty_constructor_bodies: true
+    empty_statements: true
+    exhaustive_cases: true
+    missing_whitespace_between_adjacent_strings: true
+    no_default_cases: true
+    no_duplicate_case_values: true
+    no_logic_in_create_state: true
+    no_runtimeType_toString: true
+    null_check_on_nullable_type_parameter: true
+    null_closures: true
+    one_member_abstracts: true
+    overridden_fields: true
+    prefer_asserts_with_message: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_constructors_over_static_methods: true
+    prefer_contains: true
+    prefer_equal_for_default_values: true
+    prefer_final_locals: true
+    prefer_function_declarations_over_variables: true
+    prefer_interpolation_to_compose_strings: true
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    prefer_is_not_operator: true
+    prefer_iterable_whereType: true
+    prefer_mixin: true
+    prefer_relative_imports: true
+    prefer_single_quotes: true
+    recursive_getters: true
+    sized_box_for_whitespace: true
+    slash_for_doc_comments: true
+    sort_child_properties_last: true
+    sort_constructors_first: true
+    throw_in_finally: true
+    tighten_type_of_initializing_formals: true
+    type_init_formals: true
+    unnecessary_brace_in_string_interps: true
+    unnecessary_const: true
+    unnecessary_lambdas: true
+    unnecessary_new: true
+    unnecessary_null_checks: true
+    unnecessary_null_in_if_null_operators: true
+    unnecessary_nullable_for_final_variable_declarations: true
+    unnecessary_raw_strings: true
+    unnecessary_statements: true
+    unnecessary_string_escapes: true
+    unnecessary_string_interpolations: true
+    unnecessary_this: true
+    unrelated_type_equality_checks: true
+    use_is_even_rather_than_modulo: true
+    use_late_for_private_fields_and_variables: true
+    use_raw_strings: true
+    use_rethrow_when_possible: true
+    use_setters_to_change_properties: true
+    valid_regexps: true
+  
 
 
     

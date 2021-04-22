@@ -41,44 +41,21 @@ class OEISLookUp {
     cacheFile.writeAsStringSync('$sequence\n', mode: FileMode.append);
   }
 
-  bool localOeisContainsSequnece(List<int> sequence) {
-    final sequence_formatted = ',${sequence.getRange(0, 6.clamp(0, sequence.length).toInt()).join(',')}';
+  int localOeisContainsSequnece(List<int> sequence) {
+    final sequenceFormatted = ',${sequence.getRange(0, 6.clamp(0, sequence.length).toInt()).join(',')}';
 
     final invalidCacheFileLines = cacheFile.readAsLinesSync();
-    final sequenceInInvalidCache = invalidCacheFileLines.where((element) => element == sequence_formatted);
-    if (sequenceInInvalidCache.isNotEmpty) return false;
+    final sequenceInInvalidCache = invalidCacheFileLines.where((element) => element == sequenceFormatted);
+    if (sequenceInInvalidCache.isNotEmpty) return -1;
 
+    int sequence_number = 1;
     for (final oeisSequence in localSequences) {
-      if (oeisSequence.contains(sequence_formatted)) return true;
+      if (oeisSequence.contains(sequenceFormatted)) return sequence_number;
+
+      sequence_number++;
     }
 
-    cache_sequence_to_file(sequence_formatted);
-    return false;
-  }
-
-  Future<bool> internetOeisContainsSequence(List<int> sequence) async {
-    /*List<int> firstPartOfSequence = List<int>.from(sequence).sublist(0, 5.clamp(0, sequence.length).toInt());
-    print('checking sequence $firstPartOfSequence');
-
-    final invalidCacheFileLines = cacheFile.readAsLinesSync();
-    if (invalidCacheFileLines.contains(firstPartOfSequence.join(','))) {
-      return false;
-    }
-
-    final request = await client.get('search', queryParameters: {
-      'q': firstPartOfSequence.join(','),
-      'language': 'english',
-      'go': 'search',
-    });
-
-    final response_body = request.data.toString();
-
-    if (response_body.contains('Sorry, but')) {
-      // truly not the best, but is it worth parsing html? // TODO: find a keyword closer to the beginning of the HTML body or recode this entirely
-      cache_sequence_to_file(firstPartOfSequence);
-      return false;
-    } else {
-      return true;
-    }*/
+    cache_sequence_to_file(sequenceFormatted);
+    return -1;
   }
 }

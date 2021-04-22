@@ -1,17 +1,17 @@
 import 'dart:io';
 
 import 'package:characters/characters.dart';
-import 'package:cicadrypt/constants/libertext.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
 import 'package:mobx/mobx.dart';
 import 'package:supercharged_dart/supercharged_dart.dart';
-import 'package:collection/collection.dart';
 
+import '../../constants/extensions.dart';
+import '../../constants/libertext.dart';
 import '../../constants/runes.dart';
 import '../../constants/utils.dart';
-import '../../constants/extensions.dart';
 import '../../global/cipher.dart';
 import '../../models/console_state.dart';
 import '../../models/crib_settings.dart';
@@ -23,6 +23,8 @@ part 'analyze_state.g.dart';
 class AnalyzeState = _AnalyzeStateBase with _$AnalyzeState;
 
 abstract class _AnalyzeStateBase with Store {
+  final global_key = GlobalKey<State>();
+
   @action
   String get_grid_cipher() {
     if (cipherMode == 'regular') {
@@ -42,9 +44,9 @@ abstract class _AnalyzeStateBase with Store {
       final temporary = GetIt.I<Cipher>().raw_cipher.join().replaceAll(RegExp(r'[$%&]'), '');
       final result = <String>[];
 
-      final split_sentences = temporary.split('.');
+      final splitSentences = temporary.split('.');
 
-      for (final line in split_sentences) {
+      for (final line in splitSentences) {
         final modifiedLine = '$line.';
         if (modifiedLine.length > GetIt.I<Cipher>().longest_row) {
           // get remainder of longest row, then pad by it
@@ -65,48 +67,46 @@ abstract class _AnalyzeStateBase with Store {
         }
       }
 
-      result.forEach(print);
-
       result.removeWhere((element) => element.startsWith('.') && element.endsWith('%') && element.characters.elementAt(15) == '%');
 
       return result.join();
     } else if (cipherMode == '2x2') {
       // not the best
-      final flat_cipher = GetIt.I<Cipher>().get_flat_cipher();
+      final flatCipher = GetIt.I<Cipher>().get_flat_cipher();
       final StringBuffer buffer = StringBuffer();
 
-      for (int i = 0; i <= flat_cipher.length; i = i + 2) {
-        buffer.write('${flat_cipher.split('').sublist(i, (i + 2).clamp(0, flat_cipher.length).toInt()).join()} ');
+      for (int i = 0; i <= flatCipher.length; i = i + 2) {
+        buffer.write('${flatCipher.split('').sublist(i, (i + 2).clamp(0, flatCipher.length).toInt()).join()} ');
       }
 
       return buffer.toString();
     } else if (cipherMode == '3x3') {
       // not the best
-      final flat_cipher = GetIt.I<Cipher>().get_flat_cipher();
+      final flatCipher = GetIt.I<Cipher>().get_flat_cipher();
       final StringBuffer buffer = StringBuffer();
 
-      for (int i = 0; i <= flat_cipher.length; i = i + 3) {
-        buffer.write('${flat_cipher.split('').sublist(i, (i + 3).clamp(0, flat_cipher.length).toInt()).join()} ');
+      for (int i = 0; i <= flatCipher.length; i = i + 3) {
+        buffer.write('${flatCipher.split('').sublist(i, (i + 3).clamp(0, flatCipher.length).toInt()).join()} ');
       }
 
       return buffer.toString();
     } else if (cipherMode == '4x4') {
       // not the best
-      final flat_cipher = GetIt.I<Cipher>().get_flat_cipher();
+      final flatCipher = GetIt.I<Cipher>().get_flat_cipher();
       final StringBuffer buffer = StringBuffer();
 
-      for (int i = 0; i <= flat_cipher.length; i = i + 4) {
-        buffer.write('${flat_cipher.split('').sublist(i, (i + 4).clamp(0, flat_cipher.length).toInt()).join()} ');
+      for (int i = 0; i <= flatCipher.length; i = i + 4) {
+        buffer.write('${flatCipher.split('').sublist(i, (i + 4).clamp(0, flatCipher.length).toInt()).join()} ');
       }
 
       return buffer.toString();
     } else if (cipherMode == '5x5') {
       // not the best
-      final flat_cipher = GetIt.I<Cipher>().get_flat_cipher();
+      final flatCipher = GetIt.I<Cipher>().get_flat_cipher();
       final StringBuffer buffer = StringBuffer();
 
-      for (int i = 0; i <= flat_cipher.length; i = i + 5) {
-        buffer.write('${flat_cipher.split('').sublist(i, (i + 5).clamp(0, flat_cipher.length).toInt()).join()} ');
+      for (int i = 0; i <= flatCipher.length; i = i + 5) {
+        buffer.write('${flatCipher.split('').sublist(i, (i + 5).clamp(0, flatCipher.length).toInt()).join()} ');
       }
 
       return buffer.toString();
@@ -153,9 +153,9 @@ abstract class _AnalyzeStateBase with Store {
   @action
   void select_rune(String rune, int index, String type, {bool ignoreDuplicates = false}) {
     if (rune == 'auto') {
-      final grid_cipher = get_grid_cipher();
+      final gridCipher = get_grid_cipher();
       // ignore: parameter_assignments
-      rune = grid_cipher.split('').elementAt(index);
+      rune = gridCipher.split('').elementAt(index);
       if (['%', r'$', '&'].contains(rune)) return;
     }
     selectedRunes ??= ObservableList();
@@ -176,9 +176,9 @@ abstract class _AnalyzeStateBase with Store {
   void select_runes(String runes, String type) {
     selectedRunes ??= ObservableList();
 
-    final split_runes = runes.split('');
+    final splitRunes = runes.split('');
 
-    final selections = List<RuneSelection>.generate(split_runes.length, (index) => RuneSelection(-1, split_runes[index], type));
+    final selections = List<RuneSelection>.generate(splitRunes.length, (index) => RuneSelection(-1, splitRunes[index], type));
 
     selections.forEach((selection) {
       selectedRunes.add(selection);
@@ -189,7 +189,7 @@ abstract class _AnalyzeStateBase with Store {
   ObservableList<RuneSelection> highlighedRunes = ObservableList();
 
   @action
-  void highlight_rune(String rune, int index, String type, {bool ignoreDuplicates = false, Color color = null}) {
+  void highlight_rune(String rune, int index, String type, {bool ignoreDuplicates = false, Color color}) {
     highlighedRunes ??= ObservableList();
 
     final selection = RuneSelection(index, rune, type, color: color);
@@ -220,8 +220,16 @@ abstract class _AnalyzeStateBase with Store {
   }
 
   @action
-  void highlight_gram(String gram, {Color color = null}) {
-    final pattern = RegExp('($gram)');
+  void highlight_gram(String gram, {Color color}) {
+    final buffer = StringBuffer(); // fix spaces, not the best
+    for (int i = 0; i < gram.length; i++) {
+      final character = gram.characters.elementAt(i);
+
+      buffer.write(character);
+      if (i != gram.length - 1) buffer.write('[ .%]*');
+    }
+    print(buffer.toString());
+    final pattern = RegExp('(${buffer.toString()})');
     final matches = pattern.allMatches(get_grid_cipher());
 
     matches.forEach((match) {
@@ -264,13 +272,41 @@ abstract class _AnalyzeStateBase with Store {
   }
 
   @action
+  void select_highlighted_runes() {
+    final highlightedIndexes = List<int>.generate(highlighedRunes.length, (index) => highlighedRunes[index].index);
+    final gridCipher = get_grid_cipher();
+
+    for (int i = 0; i < gridCipher.length; i++) {
+      final character = gridCipher.characters.elementAt(i);
+
+      if (highlightedIndexes.contains(i)) {
+        select_rune(character, i, 'mouse');
+      }
+    }
+  }
+
+  @action
+  void select_non_highlighted_runes() {
+    final highlightedIndexes = List<int>.generate(highlighedRunes.length, (index) => highlighedRunes[index].index);
+    final gridCipher = get_grid_cipher();
+
+    for (int i = 0; i < gridCipher.length; i++) {
+      final character = gridCipher.characters.elementAt(i);
+
+      if (!highlightedIndexes.contains(i)) {
+        select_rune(character, i, 'mouse');
+      }
+    }
+  }
+
+  @action
   void get_distance_between_selected_runes() {
     final indexes = List<int>.generate(selectedRunes.length, (index) => selectedRunes[index].index);
 
     final distance = (indexes[0] - indexes[1]).abs();
 
     GetIt.I.get<ConsoleState>(instanceName: 'analyze').write_to_console('Distance: ${selectedRunes[0].rune} <-> ${selectedRunes[1].rune} == $distance');
-    GetIt.I.get<ConsoleState>(instanceName: 'analyze').write_to_console('Factors of (${distance}): ${distance.factors()}');
+    GetIt.I.get<ConsoleState>(instanceName: 'analyze').write_to_console('Factors of ($distance): ${distance.factors()}');
   }
 
   @action
@@ -301,33 +337,33 @@ abstract class _AnalyzeStateBase with Store {
 
     //
 
-    final gp_word = <List<String>>[];
+    final gpWord = <List<String>>[];
 
-    final reversed_map = {for (var e in runePrimes.entries) int.parse(e.value): e.key};
+    final reversedMap = {for (var e in runePrimes.entries) int.parse(e.value): e.key};
 
     for (final rune in selectedRuneLetters) {
-      final gp_possibilities = get_gp_modulos(runes.indexOf(rune));
+      final gpPossibilities = get_gp_modulos(runes.indexOf(rune));
 
       final poss = <String>[];
-      for (final p in gp_possibilities) {
-        poss.add(runeToEnglish[reversed_map[p]]);
+      for (final p in gpPossibilities) {
+        poss.add(runeToEnglish[reversedMap[p]]);
       }
 
-      gp_word.add(poss);
+      gpWord.add(poss);
     }
-    console.write_to_console('GP: $gp_word');
+    console.write_to_console('GP: $gpWord');
 
-    final flat_gp = gp_word.expand((element) => element).toList();
-    final flat_gp_to_indexes = List<int>.generate(flat_gp.length, (index) {
-      int idx = runeEnglish.indexOf(flat_gp[index].toLowerCase());
-      if (idx == -1) idx = altRuneEnglish.indexOf(flat_gp[index].toLowerCase());
+    final flatGp = gpWord.expand((element) => element).toList();
+    final flatGpToIndexes = List<int>.generate(flatGp.length, (index) {
+      int idx = runeEnglish.indexOf(flatGp[index].toLowerCase());
+      if (idx == -1) idx = altRuneEnglish.indexOf(flatGp[index].toLowerCase());
 
       return idx;
     });
 
-    final atbashedGP = List<String>.generate(flat_gp_to_indexes.length, (index) {
-      int idx = runeEnglish.indexOf(flat_gp[index].toLowerCase());
-      if (idx == -1) idx = altRuneEnglish.indexOf(flat_gp[index].toLowerCase());
+    final atbashedGP = List<String>.generate(flatGpToIndexes.length, (index) {
+      int idx = runeEnglish.indexOf(flatGp[index].toLowerCase());
+      if (idx == -1) idx = altRuneEnglish.indexOf(flatGp[index].toLowerCase());
 
       return runeEnglish[idx];
     });
@@ -393,14 +429,14 @@ abstract class _AnalyzeStateBase with Store {
           //TODO: all letters
 
           final Map<String, List<int>> letterIndexesOfOccurence = {};
-          final grid_cipher = get_grid_cipher();
-          for (int i = 0; i < grid_cipher.length; i++) {
-            final current_character = grid_cipher.characters.elementAt(i);
-            if (['%', r'$', '&', ' ', '-'].contains(current_character)) continue;
+          final gridCipher = get_grid_cipher();
+          for (int i = 0; i < gridCipher.length; i++) {
+            final currentCharacter = gridCipher.characters.elementAt(i);
+            if (['%', r'$', '&', ' ', '-'].contains(currentCharacter)) continue;
 
-            letterIndexesOfOccurence[current_character] ??= [];
+            letterIndexesOfOccurence[currentCharacter] ??= [];
 
-            letterIndexesOfOccurence[current_character].add(i);
+            letterIndexesOfOccurence[currentCharacter].add(i);
           }
 
           final Map<int, int> seenFactors = {};
@@ -467,16 +503,16 @@ abstract class _AnalyzeStateBase with Store {
 
       case 'neardoubleletters':
         {
-          final int space = 2;
+          const int space = 2;
           final List<int> indexesToHighlight = [];
-          final grid_cipher = get_grid_cipher();
-          for (int i = 0; i < grid_cipher.length - space; i++) {
-            final current_character = grid_cipher.characters.elementAt(i);
-            if (['%', r'$', '&'].contains(current_character)) continue;
+          final gridCipher = get_grid_cipher();
+          for (int i = 0; i < gridCipher.length - space; i++) {
+            final currentCharacter = gridCipher.characters.elementAt(i);
+            if (['%', r'$', '&'].contains(currentCharacter)) continue;
 
-            final next_character = grid_cipher.characters.elementAt(i + space);
+            final nextCharacter = gridCipher.characters.elementAt(i + space);
 
-            if (current_character == next_character) indexesToHighlight.add(i);
+            if (currentCharacter == nextCharacter) indexesToHighlight.add(i);
           }
 
           indexesToHighlight.forEach((match) {
@@ -490,14 +526,14 @@ abstract class _AnalyzeStateBase with Store {
         {
           const int space = 3;
           final List<int> indexesToHighlight = [];
-          final grid_cipher = get_grid_cipher();
-          for (int i = 0; i < grid_cipher.length - space; i++) {
-            final current_character = grid_cipher.characters.elementAt(i);
-            if (['%', r'$', '&'].contains(current_character)) continue;
+          final gridCipher = get_grid_cipher();
+          for (int i = 0; i < gridCipher.length - space; i++) {
+            final currentCharacter = gridCipher.characters.elementAt(i);
+            if (['%', r'$', '&'].contains(currentCharacter)) continue;
 
-            final next_character = grid_cipher.characters.elementAt(i + space);
+            final nextCharacter = gridCipher.characters.elementAt(i + space);
 
-            if (current_character == next_character) indexesToHighlight.add(i);
+            if (currentCharacter == nextCharacter) indexesToHighlight.add(i);
           }
 
           indexesToHighlight.forEach((match) {
@@ -510,6 +546,17 @@ abstract class _AnalyzeStateBase with Store {
       case 'doubleletterrunes':
         {
           final pattern = RegExp('[ᚦᛇᛝᚫᛡᛠ]', dotAll: true);
+          final matches = pattern.allMatches(cipher);
+
+          matches.forEach((match) {
+            highlight_rune('', match.start, 'highlighter');
+          });
+        }
+        break;
+
+      case 'singleletterrunes':
+        {
+          final pattern = RegExp('[^ᚦᛇᛝᚫᛡᛠ]', dotAll: true);
           final matches = pattern.allMatches(cipher);
 
           matches.forEach((match) {
@@ -608,9 +655,9 @@ abstract class _AnalyzeStateBase with Store {
 
       case 'englishtrigrams':
         {
-          final english_trigrams = File('${Directory.current.path}/english_statistics/english_trigrams.txt').readAsLinesSync();
+          final englishTrigrams = File('${Directory.current.path}/english_statistics/english_trigrams.txt').readAsLinesSync();
 
-          for (final t in english_trigrams) {
+          for (final t in englishTrigrams) {
             final split = t.split(' ');
             final trigram = split.first;
             final count = int.parse(split.last);
@@ -641,15 +688,15 @@ abstract class _AnalyzeStateBase with Store {
       case 'rows':
         {
           final rows = GetIt.I<Cipher>().raw_cipher.length;
-          final row_length = get_grid_x_axis_count();
+          final rowLength = get_grid_x_axis_count();
 
           for (int x = 0; x < rows; x++) {
             if (x.isOdd) continue;
 
-            final row_start = row_length * x;
-            final row_end = row_start + row_length;
+            final rowStart = rowLength * x;
+            final rowEnd = rowStart + rowLength;
 
-            for (int i = row_start; i < row_end; i++) {
+            for (int i = rowStart; i < rowEnd; i++) {
               highlight_rune('', i, 'highlighter');
             }
           }
@@ -659,13 +706,13 @@ abstract class _AnalyzeStateBase with Store {
       case 'columns':
         {
           final columns = GetIt.I<Cipher>().raw_cipher.length;
-          final row_length = get_grid_x_axis_count();
+          final rowLength = get_grid_x_axis_count();
 
           for (int x = 0; x < columns; x++) {
-            final row_start = row_length * x;
-            final row_end = row_start + row_length;
+            final rowStart = rowLength * x;
+            final rowEnd = rowStart + rowLength;
 
-            for (int i = row_start; i < row_end; i = i + 2) {
+            for (int i = rowStart; i < rowEnd; i = i + 2) {
               highlight_rune('', i, 'highlighter');
             }
           }
@@ -680,6 +727,72 @@ abstract class _AnalyzeStateBase with Store {
             if (x.isOdd) continue;
 
             highlight_rune('', x, 'highlighter');
+          }
+        }
+        break;
+
+      case 'samegpwords':
+        {
+          final formattedCipher = cipher.replaceAll(RegExp(r'[%$&]'), '').replaceAll('.', ' ').replaceAll('-', ' ').split(' ');
+
+          //formatted_cipher.removeWhere((element) => element.length == 1);
+
+          int x = 0;
+          final alreadyFound = <String>[];
+          for (final word in formattedCipher) {
+            if (alreadyFound.contains(word)) continue;
+            final sum = LiberText(word).prime_sum;
+            final duplicateSums = <String>[];
+
+            for (final match in formattedCipher) {
+              if (match == word) continue;
+
+              if (match.length != word.length) continue;
+
+              final matchSum = LiberText(match).prime_sum;
+
+              if (matchSum == sum) duplicateSums.add(LiberText(match).rune);
+            }
+
+            if (duplicateSums.isNotEmpty) {
+              alreadyFound.addAll(duplicateSums);
+              alreadyFound.add(word);
+              if (word.length >= 2) {
+                x++;
+                print('Group $x ${duplicateSums.length + 1}');
+                print(word);
+                duplicateSums.forEach(print);
+              }
+
+              final baseColor = randomColor();
+              final originalPattern = RegExp('[-%&. ]($word)[-%&. ]');
+              final matches = originalPattern.allMatches(cipher);
+
+              for (final match in matches) {
+                for (int i = match.start + 1; i < match.end - 1; i++) {
+                  highlight_rune('', i, 'highlighter', color: baseColor, ignoreDuplicates: true);
+                }
+              }
+
+              for (final sumword in duplicateSums) {
+                final originalPattern = RegExp('[-%&. ]($sumword)[-%&. ]');
+                final matches = originalPattern.allMatches(cipher);
+                for (final match in matches) {
+                  for (int i = match.start + 1; i < match.end - 1; i++) {
+                    highlight_rune('', i, 'highlighter', color: baseColor, ignoreDuplicates: true);
+                  }
+                }
+              }
+              /*matches.forEach((match) {
+                if (match.start != match.end) {
+                  for (int i = match.start; i < match.end - 1; i++) {
+                    highlight_rune('', i, 'highlighter', color: color);
+                  }
+                } else {
+                  highlight_rune('', match.start, 'highlighter', color: color);
+                }
+              });*/
+            }
           }
         }
         break;
@@ -704,14 +817,14 @@ abstract class _AnalyzeStateBase with Store {
           for (int i = 0; i < cipher.length; i = i + 2) {
             final characters = [cipher.characters.elementAt(i), cipher.characters.elementAt(i + 1)];
 
-            final character_values = <int>[];
+            final characterValues = <int>[];
             for (final character in characters) {
               if (!runes.contains(character)) continue;
 
-              character_values.add(int.parse(runePrimes[character]));
+              characterValues.add(int.parse(runePrimes[character]));
             }
 
-            final sum = character_values.sum;
+            final sum = characterValues.sum;
 
             if (is_prime(sum)) {
               final col = get_prime_color(sum);
@@ -728,14 +841,14 @@ abstract class _AnalyzeStateBase with Store {
           for (int i = 0; i < cipher.length; i = i + 3) {
             final characters = [cipher.characters.elementAt(i), cipher.characters.elementAt(i + 1), cipher.characters.elementAt(i + 2)];
 
-            final character_values = <int>[];
+            final characterValues = <int>[];
             for (final character in characters) {
               if (!runes.contains(character)) continue;
 
-              character_values.add(int.parse(runePrimes[character]));
+              characterValues.add(int.parse(runePrimes[character]));
             }
 
-            final sum = character_values.sum;
+            final sum = characterValues.sum;
 
             if (is_prime(sum)) {
               final col = get_prime_color(sum);
@@ -753,14 +866,14 @@ abstract class _AnalyzeStateBase with Store {
           for (int i = 0; i < cipher.length; i = i + 4) {
             final characters = [cipher.characters.elementAt(i), cipher.characters.elementAt(i + 1), cipher.characters.elementAt(i + 2), cipher.characters.elementAt(i + 3)];
 
-            final character_values = <int>[];
+            final characterValues = <int>[];
             for (final character in characters) {
               if (!runes.contains(character)) continue;
 
-              character_values.add(int.parse(runePrimes[character]));
+              characterValues.add(int.parse(runePrimes[character]));
             }
 
-            final sum = character_values.sum;
+            final sum = characterValues.sum;
 
             if (is_prime(sum)) {
               final col = get_prime_color(sum);
@@ -779,14 +892,14 @@ abstract class _AnalyzeStateBase with Store {
           for (int i = 0; i < cipher.length; i = i + 5) {
             final characters = [cipher.characters.elementAt(i), cipher.characters.elementAt(i + 1), cipher.characters.elementAt(i + 2), cipher.characters.elementAt(i + 3), cipher.characters.elementAt(i + 4)];
 
-            final character_values = <int>[];
+            final characterValues = <int>[];
             for (final character in characters) {
               if (!runes.contains(character)) continue;
 
-              character_values.add(int.parse(runePrimes[character]));
+              characterValues.add(int.parse(runePrimes[character]));
             }
 
-            final sum = character_values.sum;
+            final sum = characterValues.sum;
 
             if (is_prime(sum)) {
               final col = get_prime_color(sum);
@@ -803,25 +916,25 @@ abstract class _AnalyzeStateBase with Store {
 
       case 'specialprimerun':
         {
-          final special_values = [1311];
+          final specialValues = [1311];
 
-          for (final value in special_values) {
+          for (final value in specialValues) {
             offsetloop:
             for (int offset = 0; offset < cipher.length; offset++) {
-              final current_values = <int>[];
+              final currentValues = <int>[];
               for (int i = offset; i < cipher.length; i++) {
                 final character = cipher.characters.elementAt(i);
 
                 if (!runes.contains(character)) continue;
 
-                current_values.add(int.parse(runePrimes[character]));
+                currentValues.add(int.parse(runePrimes[character]));
 
-                final sum = current_values.sum;
+                final sum = currentValues.sum;
 
                 if (sum == value) {
                   final col = randomColor();
 
-                  highlight_rune('', i - (current_values.length - 1), 'highlighter', color: col);
+                  highlight_rune('', i - (currentValues.length - 1), 'highlighter', color: col);
                   highlight_rune('', i, 'highlighter', color: col);
                 }
 
@@ -834,15 +947,15 @@ abstract class _AnalyzeStateBase with Store {
 
       case 'primerun':
         {
-          final gp_values = <int>[];
+          final gpValues = <int>[];
           for (int i = 0; i < cipher.length; i++) {
             final character = cipher.characters.elementAt(i);
 
             if (!runes.contains(character)) continue;
 
-            gp_values.add(int.parse(runePrimes[character]));
+            gpValues.add(int.parse(runePrimes[character]));
 
-            final sum = gp_values.sum;
+            final sum = gpValues.sum;
 
             if (!is_prime(sum)) {
               highlight_rune('', i, 'highlighter');
@@ -855,29 +968,29 @@ abstract class _AnalyzeStateBase with Store {
 
       case 'primestoprun':
         {
-          final gp_values = <int>[];
+          final gpValues = <int>[];
           for (int i = 0; i < cipher.length; i++) {
             final character = cipher.characters.elementAt(i);
 
             if (!runes.contains(character)) {
-              gp_values.add(0);
+              gpValues.add(0);
               continue;
             }
 
-            gp_values.add(int.parse(runePrimes[character]));
+            gpValues.add(int.parse(runePrimes[character]));
 
-            if (gp_values.where((element) => element != 0).length <= 1) continue;
+            if (gpValues.where((element) => element != 0).length <= 1) continue;
 
-            final sum = gp_values.sum;
+            final sum = gpValues.sum;
 
             if (is_prime(sum)) {
               // + 1 to shift to right
               final col = get_prime_color(sum);
-              for (int x = (i - (gp_values.length)) + 1; x < (i + 1); x++) {
+              for (int x = (i - (gpValues.length)) + 1; x < (i + 1); x++) {
                 highlight_rune('', x, 'highlighter', color: col);
               }
 
-              gp_values.clear();
+              gpValues.clear();
             }
           }
         }
@@ -885,18 +998,18 @@ abstract class _AnalyzeStateBase with Store {
 
       case 'primewordrun':
         {
-          final formatted_cipher = cipher.replaceAll('%', '').replaceAll('.', ' ').split(' ');
+          final formattedCipher = cipher.replaceAll('%', '').replaceAll('.', ' ').split(' ');
 
-          formatted_cipher.removeWhere((element) => element.length == 1);
+          formattedCipher.removeWhere((element) => element.length == 1);
 
-          for (final word in formatted_cipher) {
-            final split_word = word.split('');
+          for (final word in formattedCipher) {
+            final splitWord = word.split('');
 
-            split_word.removeWhere((element) => !runes.contains(element));
+            splitWord.removeWhere((element) => !runes.contains(element));
 
-            final gp_values = List<int>.generate(split_word.length, (index) => int.parse(runePrimes[split_word[index]]));
+            final gpValues = List<int>.generate(splitWord.length, (index) => int.parse(runePrimes[splitWord[index]]));
 
-            final sum = gp_values.sum;
+            final sum = gpValues.sum;
 
             if (is_prime(sum)) {
               final color = get_prime_color(sum);
@@ -919,18 +1032,18 @@ abstract class _AnalyzeStateBase with Store {
 
       case 'primesentencerun':
         {
-          final formatted_cipher = cipher.replaceAll('%', '').split('.');
+          final formattedCipher = cipher.replaceAll('%', '').split('.');
 
-          formatted_cipher.removeWhere((element) => element.length == 1);
+          formattedCipher.removeWhere((element) => element.length == 1);
 
-          for (final word in formatted_cipher) {
-            final split_word = word.split('');
+          for (final word in formattedCipher) {
+            final splitWord = word.split('');
 
-            split_word.removeWhere((element) => !runes.contains(element));
+            splitWord.removeWhere((element) => !runes.contains(element));
 
-            final gp_values = List<int>.generate(split_word.length, (index) => int.parse(runePrimes[split_word[index]]));
+            final gpValues = List<int>.generate(splitWord.length, (index) => int.parse(runePrimes[splitWord[index]]));
 
-            final sum = gp_values.sum;
+            final sum = gpValues.sum;
 
             if (is_prime(sum)) {
               final color = get_prime_color(sum);
@@ -953,15 +1066,15 @@ abstract class _AnalyzeStateBase with Store {
 
       case 'reverseprimerun':
         {
-          final gp_values = <int>[];
+          final gpValues = <int>[];
           for (int i = cipher.length - 1; i != -1; i--) {
             final character = cipher.characters.elementAt(i);
 
             if (!runes.contains(character)) continue;
 
-            gp_values.add(int.parse(runePrimes[character]));
+            gpValues.add(int.parse(runePrimes[character]));
 
-            final sum = gp_values.sum;
+            final sum = gpValues.sum;
 
             if (!is_prime(sum)) {
               highlight_rune('', i, 'highlighter');
@@ -990,6 +1103,48 @@ abstract class _AnalyzeStateBase with Store {
         highlight_rune('', match.start, 'highlighter');
       }
     });
+  }
+
+  @action
+  void onHighlightEveryNthCharacterDonePressed(String number) {
+    final cipher = get_grid_cipher();
+
+    final parsedNumber = int.tryParse(number);
+
+    if (parsedNumber == null) return;
+
+    for (int i = 0; i < cipher.length; i++) {
+      if (i % parsedNumber == 0) highlight_rune('', i, 'highlighter');
+    }
+  }
+
+  @action
+  void onHighlightSimplePatternDonePressed(String pattern) {
+    final cipher = get_grid_cipher();
+
+    final formattedPattern = pattern.trim().toLowerCase();
+    final formattedKey = formattedPattern.allAfter(' ');
+
+    final characterToHighlight = formattedPattern.characters.first;
+
+    final highlightKey = List<bool>.generate(formattedKey.length, (index) {
+      final character = formattedKey.characters.elementAt(index);
+
+      if (character == characterToHighlight) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+
+    int keyPosition = 0;
+    for (int i = 0; i < cipher.length; i++) {
+      final keyValue = highlightKey[(i % highlightKey.length)];
+      if (keyValue == true) {
+        highlight_rune('', i, 'highlighter');
+      }
+      keyPosition++;
+    }
   }
 
   @observable

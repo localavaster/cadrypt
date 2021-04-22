@@ -26,7 +26,6 @@ dependencies:
   auto_size_text: ^2.1.0
   characters: ^1.0.0
   cupertino_icons: ^1.0.0
-  desktop_window: ^0.4.0
   dio: ^4.0.0-beta7
   equatable: ^2.0.0
   fl_chart: ^0.20.1
@@ -36,7 +35,6 @@ dependencies:
   html: ^0.15.0
   math_expressions: ^2.0.2
   mobx: ^1.2.1+4
-  sortedmap: ^0.4.2+1
   string_splitter: ^0.1.0+5
   supercharged_dart: ^2.0.0
   text: ^0.1.1

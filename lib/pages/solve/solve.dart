@@ -109,10 +109,10 @@ class _SolvePageState extends State<SolvePage> with AutomaticKeepAliveClientMixi
                             const SizedBox(height: 8),
                             RawKeyboardListener(
                               onKey: (event) {
-                                final event_type = event.runtimeType;
-                                final key_id = event.logicalKey.keyId;
+                                final eventType = event.runtimeType;
+                                final keyId = event.logicalKey.keyId;
 
-                                if (key_id == 4295426088 && event_type == RawKeyDownEvent) // enter
+                                if (keyId == 4295426088 && eventType == RawKeyDownEvent) // enter
                                 {
                                   inputGlobalKey.currentState.save();
                                 }

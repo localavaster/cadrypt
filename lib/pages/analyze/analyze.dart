@@ -36,6 +36,7 @@ class _AnalyzePageState extends State<AnalyzePage> {
       thickness: 2,
       controller: mainScrollController,
       child: SingleChildScrollView(
+        controller: mainScrollController,
         child: Column(
           children: [
             Padding(

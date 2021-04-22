@@ -238,7 +238,7 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
 
   @override
   void highlight_rune(String rune, int index, String type,
-      {bool ignoreDuplicates = false, Color color = null}) {
+      {bool ignoreDuplicates = false, Color color}) {
     final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
         name: '_AnalyzeStateBase.highlight_rune');
     try {
@@ -261,7 +261,7 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
   }
 
   @override
-  void highlight_gram(String gram, {Color color = null}) {
+  void highlight_gram(String gram, {Color color}) {
     final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
         name: '_AnalyzeStateBase.highlight_gram');
     try {
@@ -288,6 +288,28 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
         name: '_AnalyzeStateBase.copy_selected_runes');
     try {
       return super.copy_selected_runes();
+    } finally {
+      _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void select_highlighted_runes() {
+    final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
+        name: '_AnalyzeStateBase.select_highlighted_runes');
+    try {
+      return super.select_highlighted_runes();
+    } finally {
+      _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void select_non_highlighted_runes() {
+    final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
+        name: '_AnalyzeStateBase.select_non_highlighted_runes');
+    try {
+      return super.select_non_highlighted_runes();
     } finally {
       _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
     }
@@ -387,6 +409,28 @@ mixin _$AnalyzeState on _AnalyzeStateBase, Store {
         name: '_AnalyzeStateBase.onHighlightRegexDonePressed');
     try {
       return super.onHighlightRegexDonePressed(regex);
+    } finally {
+      _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void onHighlightEveryNthCharacterDonePressed(String number) {
+    final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
+        name: '_AnalyzeStateBase.onHighlightEveryNthCharacterDonePressed');
+    try {
+      return super.onHighlightEveryNthCharacterDonePressed(number);
+    } finally {
+      _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void onHighlightSimplePatternDonePressed(String pattern) {
+    final _$actionInfo = _$_AnalyzeStateBaseActionController.startAction(
+        name: '_AnalyzeStateBase.onHighlightSimplePatternDonePressed');
+    try {
+      return super.onHighlightSimplePatternDonePressed(pattern);
     } finally {
       _$_AnalyzeStateBaseActionController.endAction(_$actionInfo);
     }

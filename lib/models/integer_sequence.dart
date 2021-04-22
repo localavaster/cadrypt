@@ -1,4 +1,3 @@
-import 'package:supercharged_dart/supercharged_dart.dart';
 import 'package:collection/collection.dart';
 
 class Sequence {

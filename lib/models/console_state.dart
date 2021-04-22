@@ -1,10 +1,10 @@
 import 'dart:io';
 
-import 'package:cicadrypt/models/console_command.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:supercharged_dart/supercharged_dart.dart';
 
-import 'package:flutter/services.dart';
+import 'console_command.dart';
 
 class ConsoleState {
   ConsoleState();
@@ -55,28 +55,28 @@ class ConsoleState {
     return true;
   }
 
-  void execute_command(String execution) {
+  void execute_command(Function setState, String execution) {
     if (execution.isEmpty) return;
 
-    String command_name = execution.allBefore('(');
-    if (command_name == null || command_name.isEmpty) command_name = execution;
+    String commandName = execution.allBefore('(');
+    if (commandName == null || commandName.isEmpty) commandName = execution;
 
-    if (command_name == 'help') {
-      final help_command = commands.where((cmd) => cmd.name == 'help').first;
+    if (commandName == 'help') {
+      final helpCommand = commands.where((cmd) => cmd.name == 'help').first;
       final allCommands = commands;
 
-      help_command.call([allCommands]);
+      helpCommand.call([allCommands]);
       return;
     }
 
-    if (!is_valid_command(command_name)) return;
+    if (!is_valid_command(commandName)) return;
 
-    final raw_command_args = execution.allBetween('(', ')').split(',');
-    final command_args = List<String>.generate(raw_command_args.length, (index) => raw_command_args[index].trim());
+    final rawCommandArgs = execution.allBetween('(', ')').split(',');
+    final commandArgs = List<String>.generate(rawCommandArgs.length, (index) => rawCommandArgs[index].trim());
 
-    final command = commands.where((cmd) => cmd.name == command_name).first;
+    final command = commands.where((cmd) => cmd.name == commandName).first;
 
-    command.call(command_args);
+    command.call(commandArgs);
   }
 
   // UI

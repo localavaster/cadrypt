@@ -1,7 +1,6 @@
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
-import 'package:collection/collection.dart';
 
 import '../constants/runes.dart';
 import '../constants/utils.dart';
@@ -15,9 +14,9 @@ void toolPrimeAnalysis(BuildContext context) {
 
     results[i] ??= 0;
     for (final gram in grams) {
-      final gram_split = gram.gram.rune.split('');
+      final gramSplit = gram.gram.rune.split('');
 
-      final sum = List<int>.generate(gram_split.length, (index) => int.parse(runePrimes[gram_split[index]])).sum;
+      final sum = List<int>.generate(gramSplit.length, (index) => int.parse(runePrimes[gramSplit[index]])).sum;
 
       if (is_prime(sum)) {
         results[i]++;

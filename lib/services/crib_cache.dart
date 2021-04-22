@@ -1,9 +1,8 @@
-import 'package:cicadrypt/constants/runes.dart';
-import 'package:cicadrypt/global/settings.dart';
-import 'package:get_it/get_it.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
 import 'package:collection/collection.dart';
+import 'package:get_it/get_it.dart';
 
+import '../constants/runes.dart';
+import '../global/settings.dart';
 import '../models/crib_match.dart';
 
 class CribCache {
@@ -14,6 +13,8 @@ class CribCache {
   }
 
   void add(CribMatch match) {
+    if (cache.where((element) => element.cribbed_word == match.cribbed_word && element.shift_sum == match.shift_sum).isNotEmpty) return;
+
     cache.add(match);
   }
 
@@ -86,27 +87,27 @@ class CribCache {
 
   Map<String, List<String>> calculate_homophones() {
     final homophones = <String, List<String>>{};
-    List<String> alphabet = GetIt.I<Settings>().get_alphabet();
+    final List<String> alphabet = runes;
 
     alphabet.forEach((element) {
       homophones[element] = [];
     });
 
     for (final crib in cache) {
-      final crib_word = crib.original_word.split('');
-      List<String> real_word = [];
+      final cribWord = crib.original_word.split('');
+      List<String> realWord = [];
       if (GetIt.I<Settings>().is_cicada_mode()) {
-        real_word = gematriaRegex.allMatches(crib.cribbed_word.toLowerCase()).map((e) => e.group(0)).toList();
+        realWord = gematriaRegex.allMatches(crib.cribbed_word.toLowerCase()).map((e) => e.group(0)).toList();
       } else {
-        real_word = crib.cribbed_word.split('');
+        realWord = crib.cribbed_word.split('');
       }
 
-      for (int i = 0; i < crib_word.length; i++) {
-        final crib_letter = crib_word[i];
-        final real_letter = real_word[i];
+      for (int i = 0; i < cribWord.length; i++) {
+        final cribLetter = cribWord[i];
+        final realLetter = realWord[i];
 
-        if (!homophones[crib_letter].contains(crib_letter)) {
-          homophones[crib_letter].add(real_letter);
+        if (!homophones[cribLetter].contains(cribLetter)) {
+          homophones[cribLetter].add(realLetter);
         }
       }
     }

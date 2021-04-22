@@ -55,19 +55,19 @@ bool is_prime(int number) {
 bool is_emirp(int number) {
   if (is_prime(number) == false) return false;
 
-  final reversed_number = int.parse(number.toString().split('').reversed.toList().join());
+  final reversedNumber = int.parse(number.toString().split('').reversed.toList().join());
 
-  if (number == reversed_number) return false;
+  if (number == reversedNumber) return false;
 
-  return is_prime(reversed_number);
+  return is_prime(reversedNumber);
 }
 
 bool is_palindromic_prime(int number) {
   if (is_prime(number) == false) return false;
 
-  final reversed_number = int.parse(number.toString().split('').reversed.toList().join());
+  final reversedNumber = int.parse(number.toString().split('').reversed.toList().join());
 
-  if (number == reversed_number) return true;
+  if (number == reversedNumber) return true;
 
   return false;
 }
@@ -86,9 +86,9 @@ bool is_special_prime(int number) {
 }
 
 bool is_chen_prime(int number) {
-  final chen_number = number + 2;
+  final chenNumber = number + 2;
 
-  if (is_prime(chen_number) || is_semi_prime(number)) return true;
+  if (is_prime(chenNumber) || is_semi_prime(number)) return true;
 
   return false;
 }
@@ -98,6 +98,7 @@ bool is_semi_prime(int number) {
 
   for (int i = 2; cnt < 2 && i * i <= number; ++i) {
     while (number % i == 0) {
+      // ignore: parameter_assignments
       number ~/= i;
       cnt++;
     }
@@ -126,8 +127,8 @@ Color get_prime_color(int number) {
 
   final List<String> types = get_prime_types(number);
 
-  final green_shades = [100, 200, 300, 400, 500, 600, 700, 800, 900]..shuffle();
-  if (types.isEmpty) return Colors.green[green_shades.first];
+  final greenShades = [100, 200, 300, 400, 500, 600, 700, 800, 900]..shuffle();
+  if (types.isEmpty) return Colors.green[greenShades.first];
 
   Color col;
 
@@ -165,20 +166,24 @@ Color get_prime_color(int number) {
   return col;
 }
 
+int round_to_whole(int number, int wholeNumber) {
+  return number + ((number % wholeNumber) - wholeNumber).abs();
+}
+
 Color randomColor() {
-  return Color.fromARGB(255, rng.nextInt(255), rng.nextInt(255), rng.nextInt(255));
+  return Color.fromARGB(255, round_to_whole(rng.nextInt(255), 17), round_to_whole(rng.nextInt(255), 17), round_to_whole(rng.nextInt(255), 17));
 }
 
 // not p
 
-List<int> get_gp_modulos(int gp_value) {
+List<int> get_gp_modulos(int gpValue) {
   final List<int> results = [];
 
   for (int i = 0; i < 29; i++) {
     final rune = runes[i];
-    final rune_value = int.parse(runePrimes[rune]);
+    final runeValue = int.parse(runePrimes[rune]);
 
-    if (rune_value % 29 == gp_value) results.add(rune_value);
+    if (runeValue % 29 == gpValue) results.add(runeValue);
   }
 
   return results;

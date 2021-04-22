@@ -58,24 +58,24 @@ void toolSequenceFinder(BuildContext context) {
 
                               print(numerical);
 
-                              final oeis_db = File('${Directory.current.path}/mod29_oeis_sequences.txt').readAsLinesSync();
+                              final oeisDb = File('${Directory.current.path}/mod29_oeis_sequences.txt').readAsLinesSync();
 
-                              for (int i = 0; i < oeis_db.length; i++) {
-                                final oeis_sequence = oeis_db[i];
+                              for (int i = 0; i < oeisDb.length; i++) {
+                                final oeisSequence = oeisDb[i];
 
                                 for (int shift = 0; shift < runes.length; shift++) {
-                                  final add_sequence = '${List<int>.generate(numerical.length, (index) => (numerical[index] + shift) % runes.length).join(',')},';
+                                  final addSequence = '${List<int>.generate(numerical.length, (index) => (numerical[index] + shift) % runes.length).join(',')},';
 
-                                  results[add_sequence] ??= [];
+                                  results[addSequence] ??= [];
 
                                   //final mul_sequence = List<int>.generate(numerical.length, (index) => (numerical[index] * shift) % runes.length).join(',') + ',';
 
                                   //results[mul_sequence] ??= [];
 
-                                  if (oeis_sequence.contains(add_sequence)) {
-                                    results[add_sequence].add(SequenceResult(
+                                  if (oeisSequence.contains(addSequence)) {
+                                    results[addSequence].add(SequenceResult(
                                       original_sequence: sequence.join(','),
-                                      modified_sequence: add_sequence,
+                                      modified_sequence: addSequence,
                                       shift: shift,
                                       oeisIndex: i + 1,
                                     ));

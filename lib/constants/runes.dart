@@ -1,14 +1,16 @@
 // ENGLISH RELATED
 final List<String> alphabet = 'abcdefghijklmnopqrstuvwxyz'.toLowerCase().split('');
 
+final List<String> numbers = '0123456789'.split('');
+
 // CICADA RELATED
-final gematriaRegex = RegExp('((th)|(ing)|(ea)|(oe)|(io)|(eo))|(.)', dotAll: true, caseSensitive: false);
+final gematriaRegex = RegExp('((th)|(eo)|(ng)|(ing)|(oe)|(ae)|(io)|(ea))|(.)', dotAll: true, caseSensitive: false);
 
 const List<String> runes = ['ᚠ', 'ᚢ', 'ᚦ', 'ᚩ', 'ᚱ', 'ᚳ', 'ᚷ', 'ᚹ', 'ᚻ', 'ᚾ', 'ᛁ', 'ᛄ', 'ᛇ', 'ᛈ', 'ᛉ', 'ᛋ', 'ᛏ', 'ᛒ', 'ᛖ', 'ᛗ', 'ᛚ', 'ᛝ', 'ᛟ', 'ᛞ', 'ᚪ', 'ᚫ', 'ᚣ', 'ᛡ', 'ᛠ'];
 
 const List<String> doubleRunes = ['ᛇ', 'ᛝ', 'ᛟ', 'ᚫ', 'ᛡ', 'ᛠ'];
 
-const List<String> runeEnglish = ['f', 'u', 'th', 'o', 'r', 'c', 'g', 'w', 'h', 'n', 'i', 'j', 'eo', 'p', 'x', 's', 't', 'b', 'e', 'm', 'l', 'ing', 'oe', 'd', 'a', 'ae', 'y', 'io', 'ea'];
+const List<String> runeEnglish = ['f', 'u', 'th', 'o', 'r', 'c', 'g', 'w', 'h', 'n', 'i', 'j', 'eo', 'p', 'x', 's', 't', 'b', 'e', 'm', 'l', 'ng', 'oe', 'd', 'a', 'ae', 'y', 'io', 'ea'];
 
 const List<String> altRuneEnglish = ['', 'v', '', '', '', 'k', '', '', '', '', '', '', '', '', '', 'z', 't', 'b', 'e', 'm', 'l', 'ing', 'oe', 'd', 'a', 'ae', 'y', 'io', 'ea'];
 
@@ -60,7 +62,7 @@ final List<int> square_sums = [
   341,
   138,
   272,
-].toSet().toList();
+];
 
 class Conversions {
   static int runeToPrime(String rune) {

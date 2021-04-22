@@ -1,35 +1,35 @@
 import 'dart:io';
 
-import 'package:cicadrypt/dialogs/select_challenge_cipher.dart';
-import 'package:cicadrypt/dialogs/select_liber_primus_page.dart';
-import 'package:cicadrypt/models/gram.dart';
-import 'package:cicadrypt/pages/analyze/analyze_state.dart';
-import 'package:cicadrypt/tools/dumppages.dart';
-import 'package:cicadrypt/tools/findcribintersects.dart';
-import 'package:cicadrypt/tools/globalfindcribs.dart';
-import 'package:cicadrypt/tools/solvedwordcount.dart';
-import 'package:desktop_window/desktop_window.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
 
+import 'dialogs/select_challenge_cipher.dart';
+import 'dialogs/select_cicada_message.dart';
 import 'dialogs/select_cipher_from_path.dart';
+import 'dialogs/select_liber_primus_page.dart';
 import 'global/cipher.dart';
 import 'global/keyboard_listener.dart';
 import 'global/settings.dart';
 import 'pages/analyze/analyze.dart';
+import 'pages/analyze/analyze_state.dart';
 import 'pages/misc/misc.dart';
 import 'pages/solve/solve.dart';
 import 'services/crib_cache.dart';
+import 'services/oeis_scraper.dart';
+import 'tools/comparepages.dart';
 import 'tools/cribsmallwords.dart';
+import 'tools/dumppages.dart';
 import 'tools/factor.dart';
 import 'tools/findcribs.dart';
+import 'tools/frequencyanalysis.dart';
+import 'tools/globalfindcribs.dart';
+import 'tools/globalsentencematcher.dart';
 import 'tools/ioc.dart';
 import 'tools/largest_words.dart';
 import 'tools/prime.dart';
 import 'tools/sequence_finder.dart';
-import 'tools/shuffle.dart';
+import 'tools/solvedwordcount.dart';
 import 'tools/wordlist.dart';
 
 Future<void> main() async {
@@ -37,7 +37,7 @@ Future<void> main() async {
 
   GetIt.instance.registerSingleton(Settings());
 
-  GetIt.instance.registerSingleton(Cipher([]));
+  GetIt.instance.registerSingleton(Cipher());
 
   // load a random unsolved page
   final basePath = Directory('${Directory.current.path}/liberprimus_pages/'.replaceAll(RegExp(r'[\/]'), '/'));
@@ -49,8 +49,8 @@ Future<void> main() async {
     ..shuffle()
     ..removeWhere((element) => !element.path.contains(('chapter')));
 
-  // remove the huge one, loading takes way too long
-  rawFileList.removeWhere((element) => element.path.contains('spiralbranch') && !element.path.contains('number'));
+  // remove the huge ones, loading takes way too long
+  rawFileList.removeWhere((element) => element.path.contains('spiralbranch'));
   rawFileList.removeWhere((element) => element.path.contains('mobius') && !element.path.contains('number'));
 
   print('Loading Page: ${rawFileList.first.path}');
@@ -73,12 +73,12 @@ class MyApp extends StatelessWidget {
     return RawKeyboardListener(
       focusNode: focusNode,
       onKey: (event) {
-        final keyboard_listener = GetIt.I<Keyboard>();
+        final keyboardListener = GetIt.I<Keyboard>();
 
         if (event.runtimeType == RawKeyDownEvent) {
-          keyboard_listener.onKeyDown(event.logicalKey.keyId);
+          keyboardListener.onKeyDown(event.logicalKey.keyId);
         } else if (event.runtimeType == RawKeyUpEvent) {
-          keyboard_listener.onKeyUp(event.logicalKey.keyId);
+          keyboardListener.onKeyUp(event.logicalKey.keyId);
         }
       },
       child: MaterialApp(
@@ -144,11 +144,17 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
 
                           case 1:
                             {
-                              selectLiberPrimusPageDialog(context, setState);
+                              selectCicadaMessage(context, setState);
                             }
                             break;
 
                           case 2:
+                            {
+                              selectLiberPrimusPageDialog(context, setState);
+                            }
+                            break;
+
+                          case 3:
                             {
                               selectChallengeCipher(context, setState);
                             }
@@ -162,11 +168,15 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                         ),
                         const PopupMenuItem<int>(
                           value: 1,
-                          child: Text('Load page from LP'),
+                          child: Text('Load Cicada Message'),
                         ),
                         const PopupMenuItem<int>(
                           value: 2,
-                          child: Text('Load challenge/training page'),
+                          child: Text('Load Page from LP'),
+                        ),
+                        const PopupMenuItem<int>(
+                          value: 3,
+                          child: Text('Load Challenge/Training page'),
                         ),
                       ],
                       child: const Padding(
@@ -178,7 +188,7 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                       ),
                     ),
                     PopupMenuButton<int>(
-                      onSelected: (int result) {
+                      onSelected: (int result) async {
                         switch (result) {
                           case 0:
                             {
@@ -188,81 +198,102 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
 
                           case 1:
                             {
-                              toolShuffleTest(context);
+                              toolFrequencyAnalysis(context);
                             }
                             break;
 
                           case 2:
                             {
-                              toolFactorAnalysis(context);
+                              await OEISParser().parse_sequences();
+                              //toolShuffleTest(context);
                             }
                             break;
 
                           case 3:
                             {
-                              toolLargestWords(context);
+                              toolFactorAnalysis(context);
                             }
                             break;
 
                           case 4:
                             {
-                              toolSequenceFinder(context);
+                              toolLargestWords(context);
                             }
                             break;
 
                           case 5:
                             {
-                              toolWordListViewer(context);
+                              toolSequenceFinder(context);
                             }
                             break;
 
                           case 6:
                             {
-                              toolPrimeAnalysis(context);
+                              toolWordListViewer(context);
                             }
                             break;
 
                           case 7:
                             {
+                              toolPrimeAnalysis(context);
+                            }
+                            break;
+
+                          case 8:
+                            {
                               toolCribSmallWords(context);
                             }
                             break;
-                          case 8:
+                          case 9:
                             {
                               toolDumpPageInfo(context);
                             }
                             break;
-                          case 9:
+                          case 10:
                             {
                               toolFindCribs(context);
                             }
                             break;
 
-                          case 10:
+                          case 11:
                             {
                               toolGlobalFindCribs(context);
                             }
                             break;
-                          case 11:
+                          case 12:
+                            {
+                              toolGlobalFindSentence(context);
+                            }
+                            break;
+                          case 13:
                             {
                               toolSolvedWordCount(context);
+                            }
+                            break;
+                          case 14:
+                            {
+                              toolComparePages(context);
+                              //toolEnglishWordCount(context);
                             }
                             break;
                         }
                       },
                       itemBuilder: (BuildContext context) => <PopupMenuEntry<int>>[
                         const PopupMenuItem<int>(value: 0, child: Text('IoC Analysis')),
-                        const PopupMenuItem<int>(value: 1, child: Text('Shuffle Test')),
-                        const PopupMenuItem<int>(value: 2, child: Text('Factor Analysis')),
-                        const PopupMenuItem<int>(value: 3, child: Text('Largest Words')),
-                        const PopupMenuItem<int>(value: 4, child: Text('Sequence Finder')),
-                        const PopupMenuItem<int>(value: 5, child: Text('Word List Viewer')),
-                        const PopupMenuItem<int>(value: 6, child: Text('Prime Analysis')),
-                        const PopupMenuItem<int>(value: 7, child: Text('Crib Small Words')),
-                        const PopupMenuItem<int>(value: 8, child: Text('Dump Pages')),
-                        const PopupMenuItem<int>(value: 9, child: Text('Find Cribs')),
-                        const PopupMenuItem<int>(value: 10, child: Text('Global Find Cribs')),
-                        const PopupMenuItem<int>(value: 11, child: Text('Solved Word Count')),
+                        const PopupMenuItem<int>(value: 1, child: Text('Frequency Analysis')),
+                        const PopupMenuItem<int>(value: 2, child: Text('Shuffle Test')),
+                        const PopupMenuItem<int>(value: 3, child: Text('Factor Analysis')),
+                        const PopupMenuItem<int>(value: 4, child: Text('Largest Words')),
+                        const PopupMenuItem<int>(value: 5, child: Text('Sequence Finder')),
+                        const PopupMenuItem<int>(value: 6, child: Text('Word List Viewer')),
+                        const PopupMenuItem<int>(value: 7, child: Text('Prime Analysis')),
+                        const PopupMenuItem<int>(value: 8, child: Text('Crib Small Words')),
+                        const PopupMenuItem<int>(value: 9, child: Text('Dump Pages')),
+                        const PopupMenuItem<int>(value: 10, child: Text('Find Cribs')),
+                        const PopupMenuItem<int>(value: 11, child: Text('Global Find Cribs')),
+                        const PopupMenuItem<int>(value: 12, child: Text('Global Find Sentence')),
+                        const PopupMenuItem<int>(value: 13, child: Text('Solved Word Count')),
+                        const PopupMenuItem<int>(value: 14, child: Text('Compare Pages')),
                       ],
                       child: const Padding(
                         padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
@@ -333,7 +364,9 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                 controller: tabController,
                 physics: const NeverScrollableScrollPhysics(),
                 children: [
-                  AnalyzePage(),
+                  AnalyzePage(
+                    key: GetIt.I<AnalyzeState>().global_key,
+                  ),
                   SolvePage(),
                   MiscPage(),
                 ],

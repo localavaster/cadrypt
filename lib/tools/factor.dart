@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
 import 'package:collection/collection.dart';
 
 import '../constants/extensions.dart';
@@ -23,7 +22,7 @@ void toolFactorAnalysis(BuildContext context) {
   print('Even Factors: ${evenFactors.length}');
   print('Odd Factors: ${oddFactors.length}');
 
-  final Map<int, List<int>> common_factors = {};
+  final Map<int, List<int>> commonFactors = {};
 
   allFactors.forEach((element) {
     final count = factors[element];
@@ -34,18 +33,18 @@ void toolFactorAnalysis(BuildContext context) {
 
     final elementFactors = element.factors();
 
-    common_factors[element] ??= [];
+    commonFactors[element] ??= [];
 
     elementFactors.forEach((eFactor) {
       if (factorsExceptSelf.contains(eFactor)) {
-        common_factors[element].add(eFactor);
+        commonFactors[element].add(eFactor);
       }
     });
   });
 
   print('Chained Factors');
 
-  common_factors.forEach((key, value) {
+  commonFactors.forEach((key, value) {
     if (value.isNotEmpty) {
       print('$key - $value');
     }

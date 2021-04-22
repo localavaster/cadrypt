@@ -19,28 +19,32 @@ class OEISParser {
   File sequenceFile;
   File modifiedSequenceFile;
 
-  void write_invalid_sequence() {
-    modifiedSequenceFile.writeAsStringSync('0,0,0,\n', mode: FileMode.append);
+  void write_invalid_sequence(int index) {
+    modifiedSequenceFile.writeAsStringSync('$index 0,0,0\n', mode: FileMode.append);
   }
 
-  void write_sequence_to_file(List<int> sequence) {
-    modifiedSequenceFile.writeAsStringSync('${sequence.join(',')}\n', mode: FileMode.append);
+  void write_sequence_to_file(int index, List<int> sequence) {
+    modifiedSequenceFile.writeAsStringSync('$index ${sequence.join(',')}\n', mode: FileMode.append);
   }
 
   Future<void> parse_sequences() async {
     final timeStarted = DateTime.now();
     final sequences = sequenceFile.readAsLinesSync();
+
+    int i = 1;
     for (final sequence in sequences) {
       final split = sequence.split(' ,');
 
       //final sequence_identifier = split.first;
-      final sequence_list = split.last.split(',')..removeLast();
+      final sequenceList = split.last.split(',')..removeLast();
 
       try {
-        write_sequence_to_file(List<int>.generate(sequence_list.length, (index) => int.parse(sequence_list[index]) % 29));
+        write_sequence_to_file(i, List<int>.generate(sequenceList.length, (index) => int.parse(sequenceList[index]) % 29));
       } on FormatException catch (e) {
-        write_invalid_sequence();
+        write_invalid_sequence(i);
       }
+
+      i++;
     }
     final timeEnded = DateTime.now();
 

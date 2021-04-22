@@ -2,29 +2,17 @@ import 'dart:io';
 import 'dart:math' as math;
 
 import 'package:characters/characters.dart';
-import 'package:cicadrypt/constants/libertext.dart';
-import 'package:get_it/get_it.dart';
+import 'package:collection/collection.dart';
 import 'package:string_splitter/string_splitter.dart';
 import 'package:supercharged_dart/supercharged_dart.dart';
-import 'package:collection/collection.dart';
 
 import '../constants/extensions.dart';
+import '../constants/libertext.dart';
 import '../constants/runes.dart';
 import '../constants/timer.dart';
 import '../models/gram.dart';
-import 'settings.dart';
-
-class HeaderBoundary {
-  HeaderBoundary(this.start, this.end);
-  int start;
-  int end;
-}
 
 class Cipher {
-  Cipher(this.raw_cipher) {
-    cipher = raw_cipher.join();
-  }
-
   List<String> raw_cipher;
   String cipher;
   int flat_cipher_length = 0;
@@ -33,16 +21,56 @@ class Cipher {
   Map<LiberTextClass, int> repeated_ngrams = {};
   Map<NGram, List<NGram>> similar_ngrams = {};
   //
+
   String current_cipher_file = '';
   int longest_row = 0;
   List<int> spacer_row_indexes = [];
-
-  List<HeaderBoundary> headers = [];
 
   bool load_from_file(String path) {
     try {
       final List<String> parsed = [];
       final List<String> unparsed = File(path).readAsLinesSync();
+
+      final t1 = TimeCode(identifier: 'Parse Cipher');
+      cipher_length = unparsed.join().length;
+      flat_cipher_length = unparsed.join().replaceAll('-', '').replaceAll('.', '').replaceAll(' ', '').replaceAll(RegExp(r'[$%&]'), '').length;
+
+      for (final line in unparsed) {
+        final formatted = line.replaceAll('-', ' ').toLowerCase();
+        parsed.add(formatted);
+      }
+
+      raw_cipher = parsed;
+
+      final frequencie = TimeCode(identifier: 'Parse Frequencies');
+      spacer_row_indexes = get_spacer_row_indexes();
+      longest_row = get_longest_row();
+      frequencies = get_character_frequencies();
+      frequencie.stop_print();
+
+      final ngramtimer = TimeCode(identifier: 'Parse Repeated nGram');
+      cached_ngrams.clear();
+      repeated_ngrams = get_repeated_grams();
+      ngramtimer.stop_print();
+
+      final similarngramtimer = TimeCode(identifier: 'Parse Similar nGram');
+      similar_ngrams = get_similar_grams();
+      similarngramtimer.stop_print();
+
+      t1.stop_print();
+
+      current_cipher_file = path;
+    } on Exception catch (e) {
+      return false;
+    }
+
+    return true;
+  }
+
+  bool load_from_text(String text) {
+    try {
+      final List<String> parsed = [];
+      final List<String> unparsed = text.split('\n');
 
       final t1 = TimeCode(identifier: 'Parse Cipher');
       cipher_length = unparsed.join().length;
@@ -68,8 +96,6 @@ class Cipher {
       ngramtimer.stop_print();
 
       t1.stop_print();
-
-      current_cipher_file = path;
     } on Exception catch (e) {
       return false;
     }
@@ -91,9 +117,9 @@ class Cipher {
   }
 
   int get_longest_row() {
-    final sorted_row_lengths = List<int>.generate(raw_cipher.length, (index) => raw_cipher[index].length).toList().sorted((a, b) => b.compareTo(a));
+    final sortedRowLengths = List<int>.generate(raw_cipher.length, (index) => raw_cipher[index].length).toList().sorted((a, b) => b.compareTo(a));
 
-    return sorted_row_lengths.first;
+    return sortedRowLengths.first;
   }
 
   String get_flat_cipher() {
@@ -105,11 +131,10 @@ class Cipher {
   }
 
   Map<LiberTextClass, int> get_character_frequencies() {
-    final alphabet = GetIt.I<Settings>().get_alphabet();
     final Map<LiberTextClass, int> seen = {};
 
     for (final character in raw_cipher.join().characters) {
-      if (!alphabet.contains(character)) continue;
+      if (!runes.contains(character) && !alphabet.contains(character) && !numbers.contains(character)) continue;
 
       final text = LiberText(character);
 
@@ -129,7 +154,7 @@ class Cipher {
 
   int get_regex_frequency(String pattern) {
     final regex = RegExp('($pattern)');
-    final matches = regex.allMatches(this.raw_cipher.join());
+    final matches = regex.allMatches(raw_cipher.join());
 
     return matches.length;
   }
@@ -154,30 +179,28 @@ class Cipher {
     return runeToEnglish[rune].length == 2;
   }
 
-  double get_index_of_coincidence({String text = null}) {
-    final List<String> alphabet = GetIt.I<Settings>().get_alphabet();
-
-    String flat_cipher = get_flat_cipher();
+  double get_index_of_coincidence({String text}) {
+    String flatCipher = get_flat_cipher();
     if (text != null) {
-      flat_cipher = text.replaceAll(RegExp('[ .]'), '');
+      flatCipher = text.replaceAll(RegExp('[^${runes.join()}]'), '');
     }
-    flat_cipher = flat_cipher.replaceAll(RegExp(r'\d'), '');
+    flatCipher = flatCipher.replaceAll(RegExp(r'\d'), '');
 
-    final length = flat_cipher.length;
+    final length = flatCipher.length;
 
-    final chunked_cipher = flat_cipher.split('');
-    final letters_in_cipher = chunked_cipher.toSet();
-    final frequencies = {for (final letter in letters_in_cipher) letter: chunked_cipher.count((e) => e == letter)}; // fastest frequency counter in the west
+    final chunkedCipher = flatCipher.split('');
+    final lettersInCipher = chunkedCipher.toSet();
+    final frequencies = {for (final letter in lettersInCipher) letter: chunkedCipher.count((e) => e == letter)}; // fastest frequency counter in the west
 
-    final frequency_sum = alphabet.sumByDouble((s) => frequencies.containsKey(s) ? frequencies[s] * (frequencies[s] - 1) : 0.0);
+    final frequencySum = runes.sumByDouble((s) => frequencies.containsKey(s) ? frequencies[s] * (frequencies[s] - 1) : 0.0);
 
-    if (frequency_sum == 0.0) return 0.0;
+    if (frequencySum == 0.0) return 0.0;
 
-    return frequency_sum / (length * (length - 1));
+    return frequencySum / (length * (length - 1));
   }
 
   double get_entropy() {
-    final occurences = this.get_character_frequencies().values.toList();
+    final occurences = get_character_frequencies().values.toList();
     final total = occurences.sum;
     double sum = 0.0;
 
@@ -188,21 +211,39 @@ class Cipher {
     return sum;
   }
 
+  double get_average_letter_distance() {
+    final flatCipher = get_flat_cipher();
+
+    final List<int> distances = [];
+
+    for (int i = 0; i < flatCipher.length - 1; i++) {
+      final currentCharacter = flatCipher.characters.elementAt(i);
+      final nextCharacter = flatCipher.characters.elementAt(i + 1);
+
+      final currentCharacterIdx = runes.indexOf(currentCharacter);
+      final nextCharacterIdx = runes.indexOf(nextCharacter);
+
+      distances.add((currentCharacterIdx - nextCharacterIdx).abs());
+    }
+
+    return distances.average;
+  }
+
   double get_average_distance_until_letter_repeat() {
     // first, iterate the entire text
-    final flat_cipher = get_flat_cipher();
+    final flatCipher = get_flat_cipher();
 
-    final letter_seen_indexes = <String, List<int>>{};
+    final letterSeenIndexes = <String, List<int>>{};
 
-    flat_cipher.characters.forEachIndexed((index, rune) {
-      letter_seen_indexes[rune] ??= [];
+    flatCipher.characters.forEachIndexed((index, rune) {
+      letterSeenIndexes[rune] ??= [];
 
-      letter_seen_indexes[rune].add(index);
+      letterSeenIndexes[rune].add(index);
     });
 
     final List<int> distances = [];
 
-    for (final seenIndexes in letter_seen_indexes.values) {
+    for (final seenIndexes in letterSeenIndexes.values) {
       for (int i = 0; i < seenIndexes.length - 1; i++) {
         try {
           final current = seenIndexes[i];
@@ -224,21 +265,21 @@ class Cipher {
 
   double get_average_distance_until_double_rune_repeat() {
     // first, iterate the entire text
-    final flat_cipher = get_flat_cipher();
+    final flatCipher = get_flat_cipher();
 
-    final letter_seen_indexes = <String, List<int>>{};
+    final letterSeenIndexes = <String, List<int>>{};
 
-    flat_cipher.characters.forEachIndexed((index, rune) {
+    flatCipher.characters.forEachIndexed((index, rune) {
       if (doubleRunes.contains(rune)) {
-        letter_seen_indexes[rune] ??= [];
+        letterSeenIndexes[rune] ??= [];
 
-        letter_seen_indexes[rune].add(index);
+        letterSeenIndexes[rune].add(index);
       }
     });
 
     final List<int> distances = [];
 
-    for (final seenIndexes in letter_seen_indexes.values) {
+    for (final seenIndexes in letterSeenIndexes.values) {
       for (int i = 0; i < seenIndexes.length; i++) {
         try {
           final current = seenIndexes[i];
@@ -253,28 +294,28 @@ class Cipher {
       }
     }
 
-    if (distances == null || distances.average == null) return 0.0;
+    if (distances == null || distances.isEmpty || distances.average == null) return 0.0;
 
     return distances.average;
   }
 
   double get_average_distance_until_rune_repeat(String runeToFind) {
     // first, iterate the entire text
-    final flat_cipher = get_flat_cipher();
+    final flatCipher = get_flat_cipher();
 
-    final letter_seen_indexes = <String, List<int>>{};
+    final letterSeenIndexes = <String, List<int>>{};
 
-    flat_cipher.characters.forEachIndexed((index, rune) {
+    flatCipher.characters.forEachIndexed((index, rune) {
       if (rune == runeToFind) {
-        letter_seen_indexes[rune] ??= [];
+        letterSeenIndexes[rune] ??= [];
 
-        letter_seen_indexes[rune].add(index);
+        letterSeenIndexes[rune].add(index);
       }
     });
 
     final List<int> distances = [];
 
-    for (final seenIndexes in letter_seen_indexes.values) {
+    for (final seenIndexes in letterSeenIndexes.values) {
       for (int i = 0; i < seenIndexes.length; i++) {
         try {
           final current = seenIndexes[i];
@@ -289,41 +330,145 @@ class Cipher {
       }
     }
 
-    if (distances == null || distances.average == null) return 0.0;
+    if (distances == null || distances.isEmpty || distances.average == null) return 0.0;
 
     return distances.average;
+  }
+
+  // useful for bigram substitution and such, shows how much of the text is unique bigrams, a low value could mean a bigram cipher
+  // mono substitution is around 0.30 for a gramsize of 2
+  double gram_ratio(int gramSize) {
+    final flatCipher = get_flat_cipher().replaceAll(RegExp('[^${runes.join()}]'), '');
+    final amountOfBigramsInText = flatCipher.length / gramSize;
+    final bigrams = <String>[];
+
+    for (int i = 0; i < flatCipher.length; i = i + gramSize) {
+      try {
+        final bigram = flatCipher.substring(i, (i + gramSize).clamp(0, flatCipher.length).toInt());
+        if (bigram.length != gramSize) continue;
+        if (!bigrams.contains(bigram)) bigrams.add(bigram);
+      } catch (e) {
+        continue;
+      }
+    }
+    return bigrams.length / amountOfBigramsInText;
+  }
+
+  // aka where the most grams are repeated
+  List<dynamic> get_gram_ratio_peak(int gramSize) {
+    final chunkSizes = <int>[32, 64, 96, 128, 192, 256, 320];
+    final flatCipher = get_flat_cipher().replaceAll(RegExp('[^${runes.join()}]'), '');
+
+    if (flatCipher.isEmpty) return [];
+
+    // save our results
+    final List<List<dynamic>> results = [];
+
+    // split it into chunks
+
+    for (final chunk_size in chunkSizes) {
+      for (int i = 0; i < flatCipher.length - chunk_size; i++) {
+        final cipherChunk = flatCipher.substring(i, i + chunk_size);
+        final amountOfBigramsInText = cipherChunk.length / gramSize;
+        final bigrams = <String>[];
+
+        for (int i = 0; i < cipherChunk.length; i = i + gramSize) {
+          try {
+            final bigram = cipherChunk.substring(i, (i + gramSize).clamp(0, cipherChunk.length).toInt());
+            if (bigram.length != gramSize) continue;
+            if (!bigrams.contains(bigram)) bigrams.add(bigram);
+          } catch (e) {
+            continue;
+          }
+        }
+
+        results.add([(bigrams.length / amountOfBigramsInText).toStringAsFixed(2), i.toDouble(), (i + chunk_size).toDouble()]);
+      }
+    }
+
+    return results.sortedBy<num>((element) => double.parse(element.first.toString())).first;
+  }
+
+  // aka where the least grams are repeated
+  List<double> get_gram_ratio_low(int gramSize) {
+    final chunkSizes = <int>[32, 64, 96, 128, 192, 256, 320];
+    final flatCipher = get_flat_cipher().replaceAll(RegExp('[^${runes.join()}]'), '');
+
+    if (flatCipher.isEmpty) return [];
+
+    // save our results
+    final List<List<double>> results = [];
+
+    // split it into chunks
+
+    for (final chunk_size in chunkSizes) {
+      for (int i = 0; i < flatCipher.length - chunk_size; i++) {
+        final cipherChunk = flatCipher.substring(i, i + chunk_size);
+        final amountOfBigramsInText = cipherChunk.length / gramSize;
+        final bigrams = <String>[];
+
+        for (int i = 0; i < cipherChunk.length; i = i + gramSize) {
+          try {
+            final bigram = cipherChunk.substring(i, i + gramSize);
+            if (bigram.length != gramSize) continue;
+            if (!bigrams.contains(bigram)) bigrams.add(bigram);
+          } catch (e) {
+            continue;
+          }
+        }
+
+        results.add([bigrams.length / amountOfBigramsInText, i.toDouble(), (i + chunk_size).toDouble()]);
+      }
+    }
+
+    return results.sortedBy<num>((element) => element.first).last;
+  }
+
+  double get_gp_sum_ratio() {
+    final cipherWords = get_cipher_words();
+    final uniqueSums = <int>[];
+
+    for (final word in cipherWords) {
+      final sum = LiberText(word).prime.sum;
+      if (uniqueSums.contains(sum)) continue;
+
+      uniqueSums.add(sum);
+    }
+
+    return uniqueSums.length / cipherWords.length;
   }
 
   double get_normalized_bigram_repeats() {
     // not dry
     final bigrams = get_ngrams(2);
-    final repeated_bigrams = <LiberTextClass, int>{};
+    final repeatedBigrams = <LiberTextClass, int>{};
     for (final bigram in bigrams) {
       final count = bigrams.count((string) => string == bigram);
       if (count <= 1) continue;
 
-      if (!repeated_bigrams.containsKey(bigram)) {
-        repeated_bigrams[bigram.gram] = count;
+      if (!repeatedBigrams.containsKey(bigram)) {
+        repeatedBigrams[bigram.gram] = count;
       }
     }
 
-    final int sum_of_bigram_occurences = repeated_bigrams.values.sum;
-    final int pattern_character_occurences = (sum_of_bigram_occurences * 2).toInt();
+    final int sumOfBigramOccurences = repeatedBigrams.values.sum;
+    final int patternCharacterOccurences = (sumOfBigramOccurences * 2).toInt();
 
-    if (cipher_length == 0 || pattern_character_occurences == 0) return 0.0;
+    if (cipher_length == 0 || patternCharacterOccurences == 0) return 0.0;
 
-    return pattern_character_occurences / cipher_length;
+    return patternCharacterOccurences / cipher_length;
   }
 
-  List<NGram> get_ngrams(int n, {String text = null}) {
+  Map<int, List<NGram>> cached_ngrams = {};
+
+  List<NGram> get_ngrams(int n, {String text}) {
     if (cached_ngrams.containsKey(n)) return cached_ngrams[n];
 
-    final flat_cipher = text ?? get_flat_cipher();
-    final split_cipher = flat_cipher.split('');
+    final flatCipher = text ?? get_flat_cipher();
 
     final List<NGram> result = [];
-    for (int i = 0; i < flat_cipher.length; i += 1) {
-      final gram = split_cipher.sublist(i, (i + n).clamp(0, flat_cipher.length).toInt()).join();
+    for (int i = 0; i < flatCipher.length; i += 1) {
+      final gram = flatCipher.substring(i, (i + n).clamp(0, flatCipher.length).toInt());
       if (gram.length != n) continue;
 
       result.add(NGram(startIndex: i, gram: LiberText(gram)));
@@ -333,20 +478,18 @@ class Cipher {
     return result;
   }
 
-  Map<int, List<NGram>> cached_ngrams = {};
-
-  Map<LiberTextClass, int> get_repeated_ngrams(int n, {String text = null}) {
+  Map<NGram, int> get_repeated_ngrams(int n, {String text}) {
     final ngrams = get_ngrams(n, text: text);
 
-    final Map<LiberTextClass, int> repeated = {};
+    final Map<NGram, int> repeated = {};
 
     for (final gram in ngrams) {
-      final count = ngrams.count((string) => string == gram);
+      final count = ngrams.count((string) => string.gram == gram.gram);
 
       if (count == 1) continue;
 
       if (!repeated.containsKey(gram)) {
-        repeated[gram.gram] = count;
+        repeated[gram] = count;
       }
     }
 
@@ -376,19 +519,36 @@ class Cipher {
   Map<NGram, List<NGram>> get_similar_grams() {
     final Map<NGram, List<NGram>> repeated = {};
 
-    for (int gramsize = 3; gramsize < 8; gramsize++) {
-      final grams = get_ngrams(gramsize);
-      final similarity_threshold = (gramsize * 0.34).floor();
+    for (int gramsize = 3; gramsize < 6; gramsize++) {
+      final allGrams = get_ngrams(gramsize);
+      final repeatedGrams = get_repeated_ngrams(gramsize).keys.toList();
+      final similarityThreshold = (gramsize * 0.34).floor();
 
-      for (final gram in grams) {
-        final similar_grams = grams.where((_gram) => _gram != gram && gram.similarity(_gram, threshold: similarity_threshold + 1) <= similarity_threshold).toList();
+      if (repeatedGrams.isEmpty) {
+        print('repeated_grams is empty');
+        for (final gram in allGrams) {
+          final similarGrams = allGrams.where((_gram) => _gram != gram && gram.length == _gram.length && gram.similarity(_gram, threshold: similarityThreshold + 1) <= similarityThreshold).toList();
 
-        if (similar_grams.length <= 1) continue;
+          if (similarGrams.length <= 1) continue;
 
-        if (gramsize == 3 && similar_grams.length <= 2) continue;
+          if (gramsize == 3 && similarGrams.length <= 2) continue;
 
-        if (repeated.keys.where((element) => element.gram == gram.gram).isEmpty) {
-          repeated[gram] = similar_grams;
+          if (repeated.keys.where((element) => element.gram == gram.gram).isEmpty) {
+            repeated[gram] = similarGrams;
+          }
+        }
+      } else {
+        print('repeated_grams is not empty');
+        for (final gram in repeatedGrams) {
+          final similarGrams = allGrams.where((_gram) => _gram != gram && gram.length == _gram.length && gram.similarity(_gram, threshold: similarityThreshold + 1) <= similarityThreshold).toList();
+
+          if (similarGrams.length <= 1) continue;
+
+          if (gramsize == 3 && similarGrams.length <= 2) continue;
+
+          if (repeated.keys.where((element) => element.gram == gram.gram).isEmpty) {
+            repeated[gram] = similarGrams;
+          }
         }
       }
     }
@@ -397,7 +557,7 @@ class Cipher {
   }
 
   List<String> get_characters_not_used() {
-    final characters = List<String>.from(GetIt.I<Settings>().get_alphabet())..removeWhere((element) => raw_cipher.join('').contains(element));
+    final characters = List<String>.from(runes)..removeWhere((element) => raw_cipher.join('').contains(element));
 
     return characters;
   }
@@ -425,18 +585,18 @@ class Cipher {
   Map<int, double> get_word_periodic_iocs() {
     final Map<int, double> periodicIoCs = {};
 
-    final cipher_words = get_cipher_words().sortedBy<num>((element) => element.length);
+    final cipherWords = get_cipher_words().sortedBy<num>((element) => element.length);
 
-    final grouped_cipher_words = <int, StringBuffer>{};
+    final groupedCipherWords = <int, StringBuffer>{};
 
-    for (final word in cipher_words) {
-      grouped_cipher_words[word.length] ??= StringBuffer();
+    for (final word in cipherWords) {
+      groupedCipherWords[word.length] ??= StringBuffer();
 
-      grouped_cipher_words[word.length].write(word);
+      groupedCipherWords[word.length].write(word);
     }
 
-    for (final length in grouped_cipher_words.keys) {
-      final ioc = get_index_of_coincidence(text: grouped_cipher_words[length].toString());
+    for (final length in groupedCipherWords.keys) {
+      final ioc = get_index_of_coincidence(text: groupedCipherWords[length].toString());
 
       periodicIoCs[length] = ioc;
     }
@@ -447,12 +607,12 @@ class Cipher {
   Map<int, double> get_ioc_history() {
     final Map<int, double> history = {};
 
-    final flat_cipher = get_flat_cipher();
+    final flatCipher = get_flat_cipher();
 
-    for (int i = 0; i < flat_cipher.length; i++) {
-      final sub_flat_cipher = flat_cipher.substring(0, i);
+    for (int i = 0; i < flatCipher.length; i++) {
+      final subFlatCipher = flatCipher.substring(0, i);
 
-      final ioc = get_index_of_coincidence(text: sub_flat_cipher);
+      final ioc = get_index_of_coincidence(text: subFlatCipher);
 
       history[i] = ioc;
     }
@@ -463,15 +623,15 @@ class Cipher {
   Map<List<int>, double> find_best_ioc() {
     final Map<List<int>, double> history = {};
 
-    final flat_cipher = get_flat_cipher();
+    final flatCipher = get_flat_cipher();
 
-    for (int s = 0; s < flat_cipher.length; s++) {
-      for (int e = s; e < flat_cipher.length; e++) {
-        final sub_flat_cipher = flat_cipher.substring(s, e);
+    for (int s = 0; s < flatCipher.length; s++) {
+      for (int e = s; e < flatCipher.length; e++) {
+        final subFlatCipher = flatCipher.substring(s, e);
 
-        if (sub_flat_cipher.length <= 20) continue;
+        if (subFlatCipher.length <= 20) continue;
 
-        final ioc = get_index_of_coincidence(text: sub_flat_cipher);
+        final ioc = get_index_of_coincidence(text: subFlatCipher);
 
         if (ioc >= 0.1) continue;
 
@@ -533,19 +693,17 @@ class Cipher {
 
     // analyze tri repeating letters
     final Map<String, List<int>> letterIndexesOfOccurence = {};
-    final flat_cipher = get_flat_cipher();
-    for (int i = 0; i < flat_cipher.length; i++) {
-      final current_character = flat_cipher.characters.elementAt(i);
-      if (['%', r'$', '&', ' ', '-'].contains(current_character)) continue;
+    final flatCipher = get_flat_cipher();
+    for (int i = 0; i < flatCipher.length; i++) {
+      final currentCharacter = flatCipher.characters.elementAt(i);
+      if (['%', r'$', '&', ' ', '-'].contains(currentCharacter)) continue;
 
-      letterIndexesOfOccurence[current_character] ??= [];
+      letterIndexesOfOccurence[currentCharacter] ??= [];
 
-      letterIndexesOfOccurence[current_character].add(i);
+      letterIndexesOfOccurence[currentCharacter].add(i);
     }
 
     letterIndexesOfOccurence.forEach((key, value) {
-      final letter = key;
-
       for (int i = 0; i < value.length - 2; i++) {
         final curIndex = value[i];
         final nextIndex = value[i + 1];
@@ -573,4 +731,6 @@ class Cipher {
   }
 
   //////////////////////////////////////////
+  // experimental
+
 }

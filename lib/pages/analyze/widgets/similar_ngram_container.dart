@@ -1,12 +1,10 @@
-import 'package:cicadrypt/models/gram.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
-import 'package:sortedmap/sortedmap.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
-import 'package:collection/collection.dart';
 
 import '../../../global/cipher.dart';
+import '../../../models/gram.dart';
 import '../../../widgets/container_header.dart';
 import '../analyze_state.dart';
 
@@ -29,7 +27,7 @@ class _SimilarGramsContainerState extends State<SimilarGramsContainer> {
     return Material(
       elevation: 2,
       child: Container(
-        height: MediaQuery.of(context).size.height * 0.33,
+        height: MediaQuery.of(context).size.height * 0.4125,
         width: MediaQuery.of(context).size.width * 0.20,
         color: Theme.of(context).cardColor,
         child: Column(
@@ -44,21 +42,23 @@ class _SimilarGramsContainerState extends State<SimilarGramsContainer> {
                 child: Material(
                   child: Observer(
                     builder: (context) {
-                      Map<NGram, List<NGram>> grams = GetIt.instance<Cipher>().similar_ngrams;
+                      final Map<NGram, List<NGram>> grams = GetIt.instance<Cipher>().similar_ngrams;
 
-                      Map<NGram, List<NGram>> sorted_grams = {};
-                      List<NGram> sorted_keys = List<NGram>.from(grams.keys);
+                      final Map<NGram, List<NGram>> sortedGrams = {};
+                      List<NGram> sortedKeys = List<NGram>.from(grams.keys);
 
                       if (widget.state.similarGramsSortedBy == 'count') {
-                        sorted_keys = sorted_keys.sortedBy<num>((element) => grams[element].length);
+                        sortedKeys = sortedKeys.sortedBy<num>((element) => grams[element].length);
                       } else if (widget.state.similarGramsSortedBy == 'gramlength') {
-                        sorted_keys = sorted_keys.sortedBy<num>((element) => element.length);
+                        sortedKeys = sortedKeys.sortedBy<num>((element) => element.length);
+                      } else if (widget.state.similarGramsSortedBy == 'largest') {
+                        sortedKeys = sortedKeys.sortedBy<String>((element) => element.gram.rune);
                       } else if (widget.state.similarGramsSortedBy == 'indexofoccurence') {
-                        sorted_keys = sorted_keys.sortedBy<num>((element) => element.startIndex);
+                        sortedKeys = sortedKeys.sortedBy<num>((element) => element.startIndex);
                       }
 
-                      for (final key in sorted_keys) {
-                        sorted_grams[key] = grams[key];
+                      for (final key in sortedKeys) {
+                        sortedGrams[key] = grams[key];
                       }
 
                       return Scrollbar(
@@ -66,11 +66,12 @@ class _SimilarGramsContainerState extends State<SimilarGramsContainer> {
                         controller: similar_ngram_scroll_controller,
                         isAlwaysShown: true,
                         child: ListView.builder(
+                          controller: similar_ngram_scroll_controller,
                           padding: EdgeInsets.zero,
-                          itemCount: sorted_grams.length,
+                          itemCount: sortedGrams.length,
                           itemBuilder: (context, index) {
-                            final gram = sorted_grams.keys.toList().reversed.elementAt(index);
-                            final count = sorted_grams[gram].length;
+                            final gram = sortedGrams.keys.toList().reversed.elementAt(index);
+                            final count = sortedGrams[gram].length;
 
                             final bool specialGram = gram.gram.rune.contains(RegExp('[ᛗᚠ]'));
 
@@ -86,8 +87,8 @@ class _SimilarGramsContainerState extends State<SimilarGramsContainer> {
                                     }
                                     widget.state.highlight_gram(gram.gram.rune, color: Colors.green);
 
-                                    for (final similar_gram in sorted_grams[gram]) {
-                                      widget.state.highlight_gram(similar_gram.gram.rune);
+                                    for (final similar_gram in sortedGrams[gram]) {
+                                      widget.state.highlight_gram(similar_gram.gram.text);
                                     }
                                   },
                                   child: Padding(
@@ -125,28 +126,28 @@ class _SimilarGramsContainerState extends State<SimilarGramsContainer> {
                                 value: 'count',
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 8.0),
-                                  child: Text('Sorted by Frequency', style: TextStyle(fontSize: 14)),
+                                  child: Text('Sort by Frequency', style: TextStyle(fontSize: 12)),
                                 ),
                               ),
                               DropdownMenuItem(
                                 value: 'largest',
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 8.0),
-                                  child: Text('Sorted by Character', style: TextStyle(fontSize: 14)),
+                                  child: Text('Sort by Character', style: TextStyle(fontSize: 12)),
                                 ),
                               ),
                               DropdownMenuItem(
                                 value: 'gramlength',
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 8.0),
-                                  child: Text('Sorted by Gram Length', style: TextStyle(fontSize: 14)),
+                                  child: Text('Sort by Gram Length', style: TextStyle(fontSize: 12)),
                                 ),
                               ),
                               DropdownMenuItem(
                                 value: 'indexofoccurence',
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 8.0),
-                                  child: Text('Sorted by Index', style: TextStyle(fontSize: 14)),
+                                  child: Text('Sort by Index', style: TextStyle(fontSize: 12)),
                                 ),
                               ),
                             ],

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
 import 'package:collection/collection.dart';
 
 import '../global/cipher.dart';
@@ -9,7 +8,7 @@ import '../models/crib_settings.dart';
 import '../services/crib.dart';
 
 Future<void> toolCribSmallWords(BuildContext context) async {
-  final console_state = GetIt.I.get<ConsoleState>(instanceName: 'analyze');
+  final consoleState = GetIt.I.get<ConsoleState>(instanceName: 'analyze');
 
   final cipher = GetIt.I<Cipher>().raw_cipher.join().replaceAll(RegExp(r'[%$&]'), '').replaceAll('.', '-').replaceAll(' ', '-');
 
@@ -17,7 +16,7 @@ Future<void> toolCribSmallWords(BuildContext context) async {
 
   words.removeWhere((element) => element.length > 2);
 
-  console_state.write_to_console('Total small words: ${words.length}');
+  consoleState.write_to_console('Total small words: ${words.length}');
 
   final settings = CribSettings();
   settings.wordFilters.add('onlylp');
@@ -40,9 +39,9 @@ Future<void> toolCribSmallWords(BuildContext context) async {
   }
 
   results.forEach((key, value) {
-    console_state.write_to_console('-> $key');
+    consoleState.write_to_console('-> $key');
     value.sortedBy<num>((element) => int.parse(element.split('|').first.trim())).forEach((element) {
-      console_state.write_to_console('---> $element');
+      consoleState.write_to_console('---> $element');
     });
   });
 }

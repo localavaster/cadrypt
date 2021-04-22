@@ -2,14 +2,13 @@ import 'dart:collection';
 import 'dart:io';
 import 'dart:math';
 
-import 'package:cicadrypt/models/crib_match.dart';
-import 'package:flutter/material.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
-import 'package:trotter/trotter.dart' as trotter;
 import 'package:collection/collection.dart';
+import 'package:flutter/material.dart';
+import 'package:trotter/trotter.dart' as trotter;
 
 import '../constants/runes.dart';
 import '../constants/utils.dart';
+import '../models/crib_match.dart';
 import '../models/crib_settings.dart';
 import '../models/sentence_crib_match.dart';
 import 'crib.dart';
@@ -22,12 +21,6 @@ class SentenceCrib {
   final List<String> runeWords;
   List<SentenceCribMatch> matches = [];
 
-  List<List<int>> generate_sentences(List<List<int>> words) {
-    final List<List<int>> results = [];
-
-    for (int word_amt = 0; word_amt < words.length; word_amt++) {}
-  }
-
   Future<List<SentenceCribMatch>> sentenceCrib() async {
     List<List<int>> possibleWords = [];
     print('Generating possible words');
@@ -37,8 +30,8 @@ class SentenceCrib {
 
       List<CribMatch> matches = await crib.wordCrib();
 
-      if (matches.length > 500) {
-        matches = matches.sublist(0, 500);
+      if (matches.length > 1000) {
+        matches = matches.sublist(0, 1000);
       }
 
       matches.forEach((element) {
@@ -51,7 +44,7 @@ class SentenceCrib {
 
     possibleWords.removeWhere((element) => element.contains(null));
 
-    final reversed_map = {for (var e in letterToPrime.entries) e.value: e.key};
+    final reversedMap = {for (var e in letterToPrime.entries) e.value: e.key};
 
     bool shouldContinue = false;
     await showDialog<void>(
@@ -97,7 +90,7 @@ class SentenceCrib {
                                           return const Text('DUMMYZERO', style: TextStyle(height: 1.0));
                                         }
 
-                                        return Text(List<String>.generate(word.length, (index) => reversed_map[word[index]]).join(), style: const TextStyle(height: 1.0));
+                                        return Text(List<String>.generate(word.length, (index) => reversedMap[word[index]]).join(), style: const TextStyle(height: 1.0));
                                       }),
                                     ),
                                     Row(
@@ -162,16 +155,16 @@ class SentenceCrib {
     print('Total possible words: ${possibleWords.length}');
 
     // now lets create a file
-    final output_file = File('${Directory.current.path}/cribs/sentences/${runeWords.join('_')}.txt');
+    final outputFile = File('${Directory.current.path}/cribs/sentences/${runeWords.join('_')}.txt');
 
-    if (output_file.existsSync()) {
-      output_file.deleteSync();
-      output_file.createSync();
+    if (outputFile.existsSync()) {
+      outputFile.deleteSync();
+      outputFile.createSync();
     } else {
-      output_file.createSync();
+      outputFile.createSync();
     }
 
-    final output_sink = output_file.openWrite(mode: FileMode.append);
+    final outputSink = outputFile.openWrite(mode: FileMode.append);
     //time to generate permutations
     int totalRuneCharacters = 0;
     for (final word in runeWords) {
@@ -186,20 +179,20 @@ class SentenceCrib {
       useLoop = true;
     }
 
-    final highest_possible_number = 109 * runeWordsLengthSum;
-    final sieved_primes = prime_sieve(highest_possible_number);
+    final highestPossibleNumber = 109 * runeWordsLengthSum;
+    final sievedPrimes = prime_sieve(highestPossibleNumber);
 
     // what are the odds?
-    sieved_primes.removeWhere((element) => element <= (3 * totalRuneCharacters.floor()));
+    sievedPrimes.removeWhere((element) => element <= (3 * totalRuneCharacters.floor()));
     //sieved_primes.removeWhere((element) => element >= (105 * (totalRuneCharacters / 3).floor()));
 
-    final binary_tree = SplayTreeSet<int>.from(sieved_primes.reversed); // place highest first, splay tree will give faster results as we go on,
+    final binaryTree = SplayTreeSet<int>.from(sievedPrimes.reversed); // place highest first, splay tree will give faster results as we go on,
 
-    print('Total Primes: ${sieved_primes.length}');
-    print('First Prime: ${sieved_primes.first}');
-    print('Last Prime: ${sieved_primes.last}');
+    print('Total Primes: ${sievedPrimes.length}');
+    print('First Prime: ${sievedPrimes.first}');
+    print('Last Prime: ${sievedPrimes.last}');
 
-    final time_now = DateTime.now();
+    final timeNow = DateTime.now();
 
     if (useLoop) {
       // why did i write these out by hand, o(n) is clearly p
@@ -217,16 +210,16 @@ class SentenceCrib {
             }
 
             if (iterations % 1000000 == 0) {
-              await output_sink.flush();
+              await outputSink.flush();
             }
 
             final word = firstWords[first] + secondWords[second];
 
             final sum = word.sum;
 
-            if (!binary_tree.contains(sum)) continue;
+            if (!binaryTree.contains(sum)) continue;
 
-            output_sink.writeln('$word.$sum');
+            outputSink.writeln('$word.$sum');
           }
         }
       } else if (pairsToGenerate == 3) {
@@ -245,16 +238,16 @@ class SentenceCrib {
               }
 
               if (iterations % 1000000 == 0) {
-                await output_sink.flush();
+                await outputSink.flush();
               }
 
               final word = firstWords[first] + secondWords[second] + thirdWords[third];
 
               final sum = word.sum;
 
-              if (!binary_tree.contains(sum)) continue;
+              if (!binaryTree.contains(sum)) continue;
 
-              output_sink.writeln('$word.$sum');
+              outputSink.writeln('$word.$sum');
             }
           }
         }
@@ -276,30 +269,30 @@ class SentenceCrib {
                 }
 
                 if (iterations % 1000000 == 0) {
-                  await output_sink.flush();
+                  await outputSink.flush();
                 }
 
                 final word = firstWords[first] + secondWords[second] + thirdWords[third] + fourthWords[fourth];
 
                 final sum = word.sum;
 
-                if (!binary_tree.contains(sum)) continue;
+                if (!binaryTree.contains(sum)) continue;
 
-                output_sink.writeln('$word.$sum');
+                outputSink.writeln('$word.$sum');
               }
             }
           }
         }
       }
     } else {
-      final possible_sentences = trotter.Combinations(pairsToGenerate, possibleWords);
+      final possibleSentences = trotter.Combinations(pairsToGenerate, possibleWords);
 
-      print('Total Permutations: ${possible_sentences.length}');
-      print('Sample Permutation: ${possible_sentences.iterable.elementAt(0)}');
+      print('Total Permutations: ${possibleSentences.length}');
+      print('Sample Permutation: ${possibleSentences.iterable.elementAt(0)}');
 
       int iterations = 0;
       permLoop:
-      for (final p in possible_sentences()) {
+      for (final p in possibleSentences()) {
         iterations++;
 
         if (iterations % 100000 == 0) {
@@ -307,7 +300,7 @@ class SentenceCrib {
         }
 
         if (iterations % 1000000 == 0) {
-          await output_sink.flush();
+          await outputSink.flush();
         }
 
         if (p[0].length != runeWords[0].length) continue;
@@ -330,41 +323,41 @@ class SentenceCrib {
 
         final sum = joined.sum;
 
-        if (!binary_tree.contains(sum)) continue;
+        if (!binaryTree.contains(sum)) continue;
 
         //results.add(joined); memory is a fickle thing...
 
-        output_sink.writeln('$joined.$sum');
+        outputSink.writeln('$joined.$sum');
       }
     }
 
     print('Finished iterating possibilities');
 
-    await output_sink.flush();
-    await output_sink.close();
+    await outputSink.flush();
+    await outputSink.close();
 
     print('Sink closed');
 
-    final time_ended = DateTime.now();
+    final timeEnded = DateTime.now();
 
-    final time_difference = time_ended.difference(time_now);
+    final timeDifference = timeEnded.difference(timeNow);
 
-    final readable_output_file = File('${Directory.current.path}/cribs/sentences/${runeWords.join('_')}_readable.txt');
-    if (readable_output_file.existsSync()) {
-      readable_output_file.deleteSync();
-      readable_output_file.createSync();
+    final readableOutputFile = File('${Directory.current.path}/cribs/sentences/${runeWords.join('_')}_readable.txt');
+    if (readableOutputFile.existsSync()) {
+      readableOutputFile.deleteSync();
+      readableOutputFile.createSync();
     } else {
-      readable_output_file.createSync();
+      readableOutputFile.createSync();
     }
-    final readable_output_sink = readable_output_file.openWrite(mode: FileMode.append);
+    final readableOutputSink = readableOutputFile.openWrite(mode: FileMode.append);
 
-    final output_file_lines = output_file.readAsLinesSync();
+    final outputFileLines = outputFile.readAsLinesSync();
     int iterations = 0;
-    for (final element in output_file_lines) {
+    for (final element in outputFileLines) {
       iterations++;
 
       if (iterations % 100000 == 0) {
-        await readable_output_sink.flush();
+        await readableOutputSink.flush();
       }
 
       if (useLoop) {
@@ -372,7 +365,7 @@ class SentenceCrib {
         final word = formatted[0].split(',');
         final sum = formatted[1];
 
-        final letters = List<String>.generate(word.length, (index) => reversed_map[int.parse(word[index])]);
+        final letters = List<String>.generate(word.length, (index) => reversedMap[int.parse(word[index])]);
         final words = <String>[];
 
         int offset = 0;
@@ -384,13 +377,13 @@ class SentenceCrib {
 
         final bool emirp = is_emirp(int.parse(sum));
 
-        readable_output_sink.writeln('${words.join(' ')} $sum $emirp');
+        readableOutputSink.writeln('${words.join(' ')} $sum $emirp');
       } else {
         final formatted = element.replaceAll('(', '').replaceAll(')', '').replaceAll(' ', '').split('.');
         final word = formatted[0].split(',');
         final sum = formatted[1];
 
-        final letters = List<String>.generate(word.length, (index) => reversed_map[int.parse(word[index])]);
+        final letters = List<String>.generate(word.length, (index) => reversedMap[int.parse(word[index])]);
         final words = <String>[];
 
         int offset = 0;
@@ -402,19 +395,19 @@ class SentenceCrib {
 
         final bool emirp = is_emirp(int.parse(sum));
 
-        readable_output_sink.writeln('${words.join(' ')} $sum $emirp');
+        readableOutputSink.writeln('${words.join(' ')} $sum $emirp');
       }
     }
 
     print('Finished readable output');
 
-    await readable_output_sink.flush();
-    await readable_output_sink.close();
+    await readableOutputSink.flush();
+    await readableOutputSink.close();
 
     print('Sink closed');
 
     print('Finished, time took V');
-    print(time_difference);
-    print(time_difference.inMilliseconds);
+    print(timeDifference);
+    print(timeDifference.inMilliseconds);
   }
 }

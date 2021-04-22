@@ -1,6 +1,7 @@
 import 'package:characters/characters.dart';
-import 'package:cicadrypt/constants/libertext.dart';
 import 'package:equatable/equatable.dart';
+
+import '../constants/libertext.dart';
 
 class NGram extends Equatable {
   NGram({this.startIndex, this.gram}) : length = gram.rune.length;
@@ -19,13 +20,19 @@ class NGram extends Equatable {
   int similarity(NGram other, {int threshold}) {
     int different = 0;
 
+    if (other.gram.rune.split('').reversed.toList().join() == gram.rune) return different;
+
     for (int i = 0; i < length; i++) {
-      final this_character = gram.rune.characters.elementAt(i);
-      final other_character = other.gram.rune.characters.elementAt(i);
+      try {
+        final thisCharacter = gram.rune.characters.elementAt(i);
+        final otherCharacter = other.gram.rune.characters.elementAt(i);
 
-      if (this_character != other_character) different++;
+        if (thisCharacter != otherCharacter) different++;
 
-      if (different >= threshold) break;
+        if (different >= threshold) break;
+      } catch (e) {
+        print('NGram->similarity: $e\n${gram.rune}\n${other.gram.rune}');
+      }
     }
 
     return different;

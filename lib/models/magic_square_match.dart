@@ -16,6 +16,6 @@ class MagicSquareMatch {
       runeBuffer.write(primeRuneMap[prime]);
     }
 
-    return '$sum | ${word.toLowerCase()} | ${runeBuffer.toString()} | $values';
+    return '$sum | ${values.length} | ${word.toLowerCase()} | ${runeBuffer.toString()} | $values';
   }
 }

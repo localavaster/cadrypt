@@ -1,7 +1,7 @@
-import 'package:cicadrypt/constants/runes.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
+import '../../../constants/runes.dart';
 import '../../../global/cipher.dart';
 import '../../../widgets/container_header.dart';
 import '../../../widgets/container_item.dart';
@@ -15,7 +15,7 @@ class StatisticsContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: SizedBox(
-        height: MediaQuery.of(context).size.height * 0.33,
+        height: MediaQuery.of(context).size.height * 0.4125,
         child: Material(
           elevation: 2,
           color: Theme.of(context).cardColor,
@@ -40,7 +40,12 @@ class StatisticsContainer extends StatelessWidget {
                       name: 'Entropy',
                       value: GetIt.I<Cipher>().get_entropy().toStringAsFixed(6),
                     ),
-                    ContainerItem(name: 'n. Bigrams', value: GetIt.I<Cipher>().get_normalized_bigram_repeats().toStringAsFixed(6)),
+                    ContainerItem(name: 'Bigram Ratio', value: GetIt.I<Cipher>().gram_ratio(2).toStringAsFixed(4)),
+                    ContainerItem(name: 'Bigram Peak', value: GetIt.I<Cipher>().get_gram_ratio_peak(2).toString()),
+                    ContainerItem(name: 'Bigram Low', value: GetIt.I<Cipher>().get_gram_ratio_low(2).toString()),
+                    ContainerItem(name: 'Trigram Ratio', value: GetIt.I<Cipher>().gram_ratio(3).toStringAsFixed(4)),
+                    ContainerItem(name: 'Same-GP Ratio', value: GetIt.I<Cipher>().get_gp_sum_ratio().toStringAsFixed(4)),
+                    ContainerItem(name: 'Avg. Letter Distance', value: GetIt.I<Cipher>().get_average_letter_distance().toStringAsFixed(1)),
                     ContainerItem(name: 'Avg. Rune Repeat Dist.', value: GetIt.I<Cipher>().get_average_distance_until_letter_repeat().toStringAsFixed(1)),
                     ContainerItem(name: 'Avg. Dbl Rune Repeat Dist.', value: GetIt.I<Cipher>().get_average_distance_until_double_rune_repeat().toStringAsFixed(1)),
                     ContainerItem(name: 'Avg. X Repeat Dist.', value: GetIt.I<Cipher>().get_average_distance_until_rune_repeat('ᛉ').toStringAsFixed(1)),

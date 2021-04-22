@@ -1,6 +1,6 @@
-import 'package:cicadrypt/constants/utils.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
 import 'package:collection/collection.dart';
+
+import 'utils.dart';
 
 extension CryptoUtils on int {
   List<int> factors({bool skipOne = false}) {
@@ -21,7 +21,7 @@ extension CryptoUtils on int {
       return -1;
     }
 
-    return this.modPow(modulo - 2, modulo);
+    return modPow(modulo - 2, modulo);
   }
 }
 
@@ -39,15 +39,15 @@ extension CryptoListExtensions on List<int> {
   }
 
   bool is_incremental() {
-    final sorted_by_number = sortedBy<num>((element) => element);
+    final sortedByNumber = sortedBy<num>((element) => element);
 
-    return listIntEquals.equals(this, sorted_by_number) == true;
+    return listIntEquals.equals(this, sortedByNumber) == true;
   }
 
   bool is_decremental() {
-    final sorted_by_number = sortedBy<num>((element) => element).reversed.toList();
+    final sortedByNumber = sortedBy<num>((element) => element).reversed.toList();
 
-    return listIntEquals.equals(this, sorted_by_number) == true;
+    return listIntEquals.equals(this, sortedByNumber) == true;
   }
 
   bool is_odd() {
@@ -60,15 +60,15 @@ extension CryptoListExtensions on List<int> {
 
   // Only one number present in list
   bool is_all_different() {
-    return this.toSet().toList().length == length;
+    return toSet().toList().length == length;
   }
 
   bool has_repeats() {
-    return this.toSet().toList().length != length;
+    return toSet().toList().length != length;
   }
 
   bool all_primes() {
-    return where((element) => is_prime(element)).length == length;
+    return where(is_prime).length == length;
   }
 
   List<int> differences() {

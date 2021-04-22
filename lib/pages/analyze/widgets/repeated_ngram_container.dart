@@ -1,11 +1,9 @@
-import 'package:cicadrypt/constants/libertext.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
-import 'package:sortedmap/sortedmap.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
-import 'package:collection/collection.dart';
 
+import '../../../constants/libertext.dart';
 import '../../../global/cipher.dart';
 import '../../../widgets/container_header.dart';
 import '../analyze_state.dart';
@@ -28,7 +26,7 @@ class _RepeatedGramsContainerState extends State<RepeatedGramsContainer> {
     return Material(
       elevation: 2,
       child: Container(
-        height: MediaQuery.of(context).size.height * 0.33,
+        height: MediaQuery.of(context).size.height * 0.4125,
         width: MediaQuery.of(context).size.width * 0.20,
         color: Theme.of(context).cardColor,
         child: Column(
@@ -45,21 +43,21 @@ class _RepeatedGramsContainerState extends State<RepeatedGramsContainer> {
                     builder: (context) {
                       final grams = GetIt.instance<Cipher>().repeated_ngrams;
 
-                      var sorted_grams = <LiberTextClass, int>{};
+                      var sortedGrams = <LiberTextClass, int>{};
 
                       if (widget.state.repeatedGramsSortedBy == 'count') {
-                        final sorted_entries = grams.entries.sortedBy<num>((element) => element.value);
+                        final sortedEntries = grams.entries.sortedBy<num>((element) => element.value);
 
-                        sorted_grams = Map.fromEntries(sorted_entries);
+                        sortedGrams = Map.fromEntries(sortedEntries);
                       } else if (widget.state.repeatedGramsSortedBy == 'largest') {
-                        final sorted_entries = grams.entries.sortedBy<String>((element) => element.key.rune);
+                        final sortedEntries = grams.entries.sortedBy<String>((element) => element.key.rune);
 
-                        sorted_grams = Map.fromEntries(sorted_entries);
+                        sortedGrams = Map.fromEntries(sortedEntries);
                       } else if (widget.state.repeatedGramsSortedBy == 'gramlength') {
-                        final gram_keys = List<LiberTextClass>.from(grams.keys).sortedBy<num>((element) => element.rune.length);
+                        final gramKeys = List<LiberTextClass>.from(grams.keys).sortedBy<num>((element) => element.rune.length);
 
-                        for (final key in gram_keys) {
-                          sorted_grams[key] = grams[key];
+                        for (final key in gramKeys) {
+                          sortedGrams[key] = grams[key];
                         }
                       }
 
@@ -68,11 +66,12 @@ class _RepeatedGramsContainerState extends State<RepeatedGramsContainer> {
                         controller: ngramScrollController,
                         isAlwaysShown: true,
                         child: ListView.builder(
+                          controller: ngramScrollController,
                           padding: EdgeInsets.zero,
-                          itemCount: sorted_grams.length,
+                          itemCount: sortedGrams.length,
                           itemBuilder: (context, index) {
-                            final gram = sorted_grams.keys.toList().reversed.elementAt(index);
-                            final count = sorted_grams[gram];
+                            final gram = sortedGrams.keys.toList().reversed.elementAt(index);
+                            final count = sortedGrams[gram];
 
                             final bool specialGram = gram.rune.contains('ᚠ');
 
@@ -86,7 +85,7 @@ class _RepeatedGramsContainerState extends State<RepeatedGramsContainer> {
                                     } else {
                                       widget.state.selectedRepeatedGrams.add(gram);
                                     }
-                                    widget.state.highlight_gram(gram.rune);
+                                    widget.state.highlight_gram(gram.text);
                                   },
                                   child: Padding(
                                     padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 2),
@@ -123,21 +122,21 @@ class _RepeatedGramsContainerState extends State<RepeatedGramsContainer> {
                                 value: 'count',
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 8.0),
-                                  child: Text('Sorted by Frequency', style: TextStyle(fontSize: 14)),
+                                  child: Text('Sort by Frequency', style: TextStyle(fontSize: 12)),
                                 ),
                               ),
                               DropdownMenuItem(
                                 value: 'largest',
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 8.0),
-                                  child: Text('Sorted by Character', style: TextStyle(fontSize: 14)),
+                                  child: Text('Sort by Character', style: TextStyle(fontSize: 12)),
                                 ),
                               ),
                               DropdownMenuItem(
                                 value: 'gramlength',
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 8.0),
-                                  child: Text('Sorted by Gram Length', style: TextStyle(fontSize: 14)),
+                                  child: Text('Sort by Gram Length', style: TextStyle(fontSize: 12)),
                                 ),
                               ),
                             ],

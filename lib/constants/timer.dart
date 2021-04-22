@@ -4,9 +4,9 @@ class TimeCode {
   final String identifier;
 
   void stop_print() {
-    final stop_time = DateTime.now();
+    final stopTime = DateTime.now();
 
-    print('$identifier | ${stop_time.difference(start_time)}');
+    print('$identifier | ${stopTime.difference(start_time)}');
   }
 
   int stop() {

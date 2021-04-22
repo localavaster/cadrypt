@@ -3,7 +3,6 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 import 'package:collection/collection.dart';
 
-import '../../../constants/runes.dart';
 import '../../../global/cipher.dart';
 import '../../../widgets/container_header.dart';
 import '../analyze_state.dart';
@@ -37,24 +36,25 @@ class FrequencyContainer extends StatelessWidget {
                 child: Material(
                   child: Builder(
                     builder: (context) {
-                      final cipher_frequency = GetIt.instance<Cipher>().frequencies;
+                      final cipherFrequency = GetIt.instance<Cipher>().frequencies;
 
-                      final sorted_entries = cipher_frequency.entries.sortedBy<num>((element) => element.value);
+                      final sortedEntries = cipherFrequency.entries.sortedBy<num>((element) => element.value);
 
-                      final sorted_cipher_frequency = Map.fromEntries(sorted_entries);
+                      final sortedCipherFrequency = Map.fromEntries(sortedEntries);
 
                       return Scrollbar(
                         thickness: 4,
                         controller: frequencyScrollController,
                         isAlwaysShown: true,
                         child: ListView.builder(
+                          controller: frequencyScrollController,
                           padding: EdgeInsets.zero,
-                          itemCount: sorted_cipher_frequency.keys.length,
+                          itemCount: sortedCipherFrequency.keys.length,
                           itemBuilder: (context, index) {
-                            final text = sorted_cipher_frequency.keys.toList().reversed.elementAt(index);
+                            final text = sortedCipherFrequency.keys.toList().reversed.elementAt(index);
 
-                            final count = sorted_cipher_frequency.values.toList().reversed.elementAt(index).toString();
-                            final count_percent = GetIt.instance<Cipher>().get_frequency_percent(int.parse(count));
+                            final count = sortedCipherFrequency.values.toList().reversed.elementAt(index).toString();
+                            final countPercent = GetIt.instance<Cipher>().get_frequency_percent(int.parse(count));
 
                             return Observer(builder: (_) {
                               return Material(
@@ -73,7 +73,7 @@ class FrequencyContainer extends StatelessWidget {
                                     padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 2),
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [Text('${text.rune} | ${text.english}', style: const TextStyle(color: Colors.white)), Text('${count_percent.toStringAsFixed(1)}% | $count', style: const TextStyle(color: Colors.white))],
+                                      children: [Text('${text.rune} | ${text.english}', style: const TextStyle(color: Colors.white)), Text('${countPercent.toStringAsFixed(1)}% | $count', style: const TextStyle(color: Colors.white))],
                                     ),
                                   ),
                                 ),

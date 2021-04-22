@@ -1,12 +1,11 @@
 import 'dart:io';
 
-import 'package:cicadrypt/global/cipher.dart';
-import 'package:cicadrypt/pages/analyze/analyze_state.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:collection/collection.dart';
 
-import 'package:supercharged_dart/supercharged_dart.dart';
+import '../global/cipher.dart';
+import '../pages/analyze/analyze_state.dart';
 
 Future<void> selectChallengeCipher(BuildContext context, Function globalSetState) {
   return showDialog<void>(

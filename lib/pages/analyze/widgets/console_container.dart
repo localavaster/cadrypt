@@ -1,9 +1,9 @@
-import 'package:cicadrypt/pages/analyze/constants/console_commands.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../../models/console_state.dart';
+import '../constants/console_commands.dart';
 
 class ConsoleContainer extends StatefulWidget {
   const ConsoleContainer({
@@ -30,7 +30,7 @@ class _ConsoleContainerState extends State<ConsoleContainer> with AutomaticKeepA
     GetIt.I.registerSingleton(ConsoleState(), instanceName: 'analyze');
 
     // initialize commands
-    for (final command in analyze_console_commands) {
+    for (final command in AnalyzeConsoleCommands().analyze_console_commands) {
       get_console_state().commands.add(command);
     }
 
@@ -100,10 +100,10 @@ class _ConsoleContainerState extends State<ConsoleContainer> with AutomaticKeepA
                         padding: const EdgeInsets.only(top: 4.0),
                         child: RawKeyboardListener(
                           onKey: (event) {
-                            final event_type = event.runtimeType;
-                            final key_id = event.logicalKey.keyId;
+                            final eventType = event.runtimeType;
+                            final keyId = event.logicalKey.keyId;
 
-                            if (key_id == 4295426088 && event_type == RawKeyDownEvent) // enter
+                            if (keyId == 4295426088 && eventType == RawKeyDownEvent) // enter
                             {
                               get_console_state().inputGlobalKey.currentState.save();
                             }
@@ -130,7 +130,7 @@ class _ConsoleContainerState extends State<ConsoleContainer> with AutomaticKeepA
                             onSaved: (value) {
                               // ghetto, but flutter desktop is still alpha
 
-                              get_console_state().execute_command(value);
+                              get_console_state().execute_command(setState, value);
 
                               get_console_state().inputController.clear();
                             },

@@ -1,9 +1,8 @@
-import 'package:cicadrypt/services/crib_cache.dart';
+import 'package:cicadrypt/pages/analyze/dialogs/magicsquarecribsettings.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
-import 'package:collection/collection.dart';
 
 import '../../../constants/runes.dart';
 import '../../../constants/utils.dart';
@@ -12,6 +11,7 @@ import '../../../models/console_state.dart';
 import '../../../models/magic_square_settings.dart';
 import '../../../pages/analyze/dialogs/cribsettings.dart';
 import '../../../services/crib.dart';
+import '../../../services/crib_cache.dart';
 import '../../../services/magic_square.dart';
 import '../../../services/sentence_crib.dart';
 import '../../../widgets/container_header.dart';
@@ -30,6 +30,7 @@ class SelectionContainer extends StatefulWidget {
 }
 
 class _SelectionContainerState extends State<SelectionContainer> {
+  final scrollController = ScrollController();
   final manualCribTextController = TextEditingController();
 
   @override
@@ -41,7 +42,7 @@ class _SelectionContainerState extends State<SelectionContainer> {
         width: MediaQuery.of(context).size.width * 0.20,
         color: Theme.of(context).cardColor,
         child: Column(
-          mainAxisSize: MainAxisSize.min,
+          //controller: scrollController,
           children: [
             const ContainerHeader(
               name: 'Selection',
@@ -65,7 +66,7 @@ class _SelectionContainerState extends State<SelectionContainer> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             SizedBox(
-                              width: (MediaQuery.of(context).size.width * 0.20) - 8, // shitty hardcode -_-
+                              width: (MediaQuery.of(context).size.width * 0.20) - 12, // shitty hardcode -_-
                               child: SingleChildScrollView(
                                 scrollDirection: Axis.horizontal,
                                 child: ListView.builder(
@@ -103,6 +104,7 @@ class _SelectionContainerState extends State<SelectionContainer> {
                         ))),
                       ),*/
                       ContainerItem(name: 'Selected', value: mouseSelectedRunes.length.toString()),
+                      ContainerItem(name: 'Unique Selected', value: List<String>.generate(mouseSelectedRunes.length, (index) => mouseSelectedRunes[index].rune).toSet().length.toString()),
                       //ContainerItem(name: 'Indexes', value: List<int>.generate(mouseSelectedRunes.length, (index) => mouseSelectedRunes[index].index).toString()),
                       ContainerItem(
                         name: 'Total Freq.',
@@ -125,7 +127,7 @@ class _SelectionContainerState extends State<SelectionContainer> {
                         value: GetIt.I<Cipher>().get_index_of_coincidence(text: List<String>.generate(mouseSelectedRunes.length, (index) => mouseSelectedRunes[index].rune).join()).toStringAsFixed(8),
                       ),
                       Observer(builder: (_) {
-                        final gp_sum_list = List<int>.generate(mouseSelectedRunes.length, (index) {
+                        final gpSumList = List<int>.generate(mouseSelectedRunes.length, (index) {
                           final rune = mouseSelectedRunes[index].rune;
 
                           if (!runePrimes.containsKey(rune)) {
@@ -134,9 +136,9 @@ class _SelectionContainerState extends State<SelectionContainer> {
 
                           return int.parse(runePrimes[rune]);
                         });
-                        gp_sum_list.removeWhere((element) => element == null);
+                        gpSumList.removeWhere((element) => element == null);
 
-                        final sum = gp_sum_list.sum;
+                        final sum = gpSumList.sum;
                         return ContainerItem(
                           name: 'GP Sum',
                           value: sum.toString(),
@@ -194,12 +196,12 @@ class _SelectionContainerState extends State<SelectionContainer> {
                         onPressed: () async {
                           final console = GetIt.I.get<ConsoleState>(instanceName: 'analyze');
                           final runeSelection = List<String>.generate(widget.state.selectedRunes.length, (index) => widget.state.selectedRunes[index].rune).join();
-                          final cribber = MagicSquareCrib(MagicSquareCribSettings(), runeSelection);
+                          final cribber = MagicSquareCrib(widget.state.magicSquareCribSettings, runeSelection);
 
                           try {
                             console.write_to_console('=== Finding words with prime sum of $runeSelection');
 
-                            await cribber.start_crib();
+                            cribber.start_crib();
 
                             console.write_to_console('=== Found ${cribber.matches.length} possible matches');
 
@@ -221,137 +223,7 @@ class _SelectionContainerState extends State<SelectionContainer> {
                         color: Theme.of(context).cardColor,
                         child: InkWell(
                             onTap: () {
-                              showDialog<void>(
-                                barrierColor: Colors.black.withOpacity(0.30),
-                                context: context,
-                                builder: (context) => AlertDialog(
-                                  contentPadding: EdgeInsets.zero,
-                                  content: Builder(
-                                    builder: (context) {
-                                      final width = MediaQuery.of(context).size.width * 0.70;
-                                      final height = MediaQuery.of(context).size.height * 0.60;
-                                      return StatefulBuilder(builder: (context, setState) {
-                                        return SizedBox(
-                                          width: width,
-                                          height: height,
-                                          child: Material(
-                                            color: Theme.of(context).scaffoldBackgroundColor,
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                              children: [
-                                                Material(
-                                                  color: Theme.of(context).cardColor,
-                                                  child: Row(
-                                                    mainAxisAlignment: MainAxisAlignment.center,
-                                                    children: const [
-                                                      Padding(
-                                                        padding: EdgeInsets.symmetric(vertical: 8.0),
-                                                        child: Text('Magic Square Crib Settings', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, height: 1.0)),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                                Builder(
-                                                  builder: (_) {
-                                                    return Expanded(
-                                                      child: Padding(
-                                                        padding: const EdgeInsets.all(8),
-                                                        child: Material(
-                                                          child: SingleChildScrollView(
-                                                            child: Column(
-                                                              children: [
-                                                                Padding(
-                                                                  padding: const EdgeInsets.only(bottom: 8.0),
-                                                                  child: Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
-                                                                    Center(
-                                                                      child: Text(
-                                                                        'Validations',
-                                                                        style: TextStyle(
-                                                                          fontWeight: FontWeight.bold,
-                                                                          fontSize: 16,
-                                                                        ),
-                                                                      ),
-                                                                    )
-                                                                  ]),
-                                                                ),
-                                                                Row(
-                                                                  children: [
-                                                                    const Padding(
-                                                                      padding: EdgeInsets.all(8.0),
-                                                                      child: Text('Maximum Word Length'),
-                                                                    ),
-                                                                    Expanded(
-                                                                      child: DropdownButtonFormField<int>(
-                                                                        value: widget.state.magicSquareCribSettings.maximumLength,
-                                                                        onChanged: (value) {
-                                                                          setState(() {
-                                                                            widget.state.magicSquareCribSettings.maximumLength = value;
-                                                                          });
-                                                                        },
-                                                                        items: List.generate(
-                                                                          16,
-                                                                          (index) => DropdownMenuItem(
-                                                                            value: index,
-                                                                            child: Text(
-                                                                              index.toString(),
-                                                                            ),
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                  ],
-                                                                ),
-                                                                Padding(
-                                                                  padding: const EdgeInsets.symmetric(vertical: 8.0),
-                                                                  child: Row(
-                                                                    children: [
-                                                                      Expanded(
-                                                                          child: Padding(
-                                                                        padding: const EdgeInsets.symmetric(horizontal: 64.0),
-                                                                        child: Container(height: 1, width: double.infinity, color: Theme.of(context).cardColor),
-                                                                      ))
-                                                                    ],
-                                                                  ),
-                                                                ),
-                                                              ],
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    );
-                                                  },
-                                                ),
-                                                Row(
-                                                  children: [
-                                                    Expanded(
-                                                      child: Material(
-                                                        color: Theme.of(context).cardColor,
-                                                        child: TextButton(
-                                                          onPressed: () {
-                                                            Navigator.of(context).pop();
-                                                          },
-                                                          child: const Padding(
-                                                            padding: EdgeInsets.symmetric(vertical: 8.0),
-                                                            child: Text(
-                                                              'Close',
-                                                              style: TextStyle(color: Colors.white),
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                )
-                                              ],
-                                            ),
-                                          ),
-                                        );
-                                      });
-                                    },
-                                  ),
-                                ),
-                              );
+                              dialogMSCribSettings(context, widget.state);
                             },
                             child: const Icon(Icons.settings_sharp, size: 16)),
                       ),
@@ -384,14 +256,14 @@ class _SelectionContainerState extends State<SelectionContainer> {
                       child: TextButton(
                         onPressed: () async {
                           final runeSelection = List<String>.generate(widget.state.selectedRunes.length, (index) => widget.state.selectedRunes[index].rune).join().split(RegExp('[\. ]'));
-                          final sentence_cribber = SentenceCrib(
+                          final sentenceCribber = SentenceCrib(
                             context,
                             widget.state.cribSettings,
                             runeSelection,
                           );
 
                           try {
-                            sentence_cribber.sentenceCrib();
+                            sentenceCribber.sentenceCrib();
                           } catch (e) {
                             print(e);
                           }

@@ -1,10 +1,9 @@
-import 'package:cicadrypt/constants/libertext.dart';
+import 'package:collection/collection.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
-import 'package:collection/collection.dart';
 
+import '../../../constants/libertext.dart';
 import '../../../global/cipher.dart';
 
 class FrequencyBarChart extends StatefulWidget {

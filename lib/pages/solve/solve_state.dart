@@ -1,18 +1,17 @@
-import 'package:cicadrypt/global/settings.dart';
-import 'package:cicadrypt/pages/analyze/analyze_state.dart';
-import 'package:cicadrypt/services/crib_cache.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:mobx/mobx.dart';
 import 'package:supercharged_dart/supercharged_dart.dart';
-import 'package:collection/collection.dart';
 
+import '../../constants/libertext.dart';
 import '../../constants/runes.dart' as c;
 import '../../constants/runes.dart';
 import '../../global/cipher.dart';
 import '../../models/console_state.dart';
-import '../../models/crib_settings.dart';
 import '../../services/crib.dart';
+import '../../services/crib_cache.dart';
+import '../analyze/analyze_state.dart';
 
 part 'solve_state.g.dart';
 
@@ -49,12 +48,12 @@ abstract class _SolveStateBase with Store {
   void load_cipher_into_controller() {
     final cipher = GetIt.I<Cipher>();
 
-    final formatted_cipher = cipher.raw_cipher.join('').replaceAll('%', '').replaceAll(r'$', '').replaceAll('&', '').replaceAll(' ', '-').replaceAll('.', '-');
-    final split_cipher = formatted_cipher.split('-').chunked(8);
+    final formattedCipher = cipher.raw_cipher.join('').replaceAll('%', '').replaceAll(r'$', '').replaceAll('&', '').replaceAll(' ', '-').replaceAll('.', '-');
+    final splitCipher = formattedCipher.split('-').chunked(8);
 
     this.cipher.clear();
 
-    for (final chunk in split_cipher) {
+    for (final chunk in splitCipher) {
       this.cipher.text += '${chunk.join('-').trim()}\n';
     }
   }
@@ -110,24 +109,24 @@ abstract class _SolveStateBase with Store {
   }
 
   bool execute_command(String command) {
-    String command_name = command.trim().allBefore('(');
-    if (command_name == '') {
-      command_name = command;
+    String commandName = command.trim().allBefore('(');
+    if (commandName == '') {
+      commandName = command;
     }
 
-    final command_args = command.trim().allBetween('(', ')');
+    final commandArgs = command.trim().allBetween('(', ')');
 
-    final bool is_valid = is_valid_command(command_name, command_args);
+    final bool isValid = is_valid_command(commandName, commandArgs);
 
-    if (!is_valid) {
+    if (!isValid) {
       console.write_to_console('ERROR: Invalid command -> $command');
       return false;
     }
 
-    switch (command_name) {
+    switch (commandName) {
       case 'help': // redundant code below, written at 6 am
         {
-          if (command_args == '') {
+          if (commandArgs == '') {
             console.write_to_console('Executing commands');
             console.write_to_console('To execute a command simply type in the command name and the arguments for it, Some commands do not need args, such as reverse, so you can type "reverse" or "reverse()", however some commands do need arguments.');
             console.write_to_console('For more information on a command, execute help(command_name)');
@@ -137,12 +136,12 @@ abstract class _SolveStateBase with Store {
             });
             console.write_to_console('...with many more to come');
           } else {
-            if (!command_help.keys.contains(command_args)) {
+            if (!command_help.keys.contains(commandArgs)) {
               console.write_to_console('Invalid command used with help');
               return true;
             }
 
-            console.write_to_console('${command_args} : ${command_help[command_args]}');
+            console.write_to_console('$commandArgs : ${command_help[commandArgs]}');
           }
 
           return true; // no output for this one
@@ -151,7 +150,7 @@ abstract class _SolveStateBase with Store {
 
       case 'skip_index':
         {
-          final indexes = List<int>.generate(command_args.split(', ').length, (index) => int.parse(command_args.split(', ')[index]));
+          final indexes = List<int>.generate(commandArgs.split(', ').length, (index) => int.parse(commandArgs.split(', ')[index]));
 
           indexes.forEach(indexes_to_skip.add);
         }
@@ -165,25 +164,20 @@ abstract class _SolveStateBase with Store {
 
       case 'reset':
         {
-          this.load_cipher_into_controller();
+          load_cipher_into_controller();
         }
         break;
 
       case 'crib':
         {
-          final buffer = StringBuffer();
+          final List<String> cipherWords = GetIt.I<Cipher>().raw_cipher.join('').replaceAll('-', ' ').replaceAll('.', ' ').replaceAll('%', '').replaceAll('&', '').replaceAll(r'$', '').replaceAll(RegExp("[^${runes.join('')} ]"), ' ').split(' ');
 
-          final List<String> cipherWords = GetIt.I<Cipher>().raw_cipher.join('').replaceAll('-', ' ').replaceAll('.', ' . ').replaceAll('%', '').replaceAll('&', '').replaceAll(r'$', '').split(' ');
+          print(cipherWords);
 
           final List<String> realWords = [];
           final cribSettings = GetIt.I<AnalyzeState>().cribSettings;
 
           for (final word in cipherWords) {
-            if (word == '.') {
-              realWords.add('.');
-              continue;
-            }
-
             if (word.contains(RegExp(r'\d'))) {
               realWords.add(word);
               continue;
@@ -198,12 +192,32 @@ abstract class _SolveStateBase with Store {
               continue;
             }
 
+            if (cribber.matches.length != 1) {
+              final sameLengthMatches = cribber.matches.where((element) => LiberText(word).rune.length == LiberText(element.cribbed_word).rune.length).length;
+              if (sameLengthMatches != 0 && sameLengthMatches <= 8) {
+                final sameLength = cribber.matches.where((element) => LiberText(word).rune.length == LiberText(element.cribbed_word).rune.length).toList();
+                final strings = List<String>.generate(sameLength.length, (index) => sameLength[index].cribbed_word);
+                realWords.add(strings.join('_').toUpperCase());
+
+                continue;
+              }
+
+              if (cribber.matches.length <= 8) {
+                final strings = List<String>.generate(cribber.matches.length, (index) => cribber.matches[index].cribbed_word);
+                realWords.add(strings.join('_').toUpperCase());
+                continue;
+              }
+
+              realWords.add(word);
+              continue;
+            }
+
             cribber.matches.sortedBy<num>((element) => element.shift_sum);
 
-            realWords.add(cribber.matches.first.cribbed_word);
+            realWords.add(cribber.matches.first.cribbed_word.toUpperCase());
           }
 
-          this.cipher.text = realWords.join(' ');
+          cipher.text = LiberText(realWords.join(' ')).rune;
         }
         break;
 
@@ -211,26 +225,26 @@ abstract class _SolveStateBase with Store {
         {
           final buffer = StringBuffer();
 
-          for (final character in this.cipher.text.characters) {
+          for (final character in cipher.text.characters) {
             if (!runes.contains(character)) {
               buffer.write(character);
               continue;
             }
 
-            final shifted_letter_index = (runes.indexOf(character) - int.parse(command_args)) % 29;
+            final shiftedLetterIndex = (runes.indexOf(character) - int.parse(commandArgs)) % 29;
 
-            final shifted_letter = runes[shifted_letter_index];
-            buffer.write(shifted_letter);
+            final shiftedLetter = runes[shiftedLetterIndex];
+            buffer.write(shiftedLetter);
           }
 
-          this.cipher.text = buffer.toString();
+          cipher.text = buffer.toString();
         }
         break;
       case 'stream':
         {
           List<int> streams = [];
           try {
-            streams = List<int>.generate(command_args.split(', ').length, (index) => int.parse(command_args.split(', ')[index]));
+            streams = List<int>.generate(commandArgs.split(', ').length, (index) => int.parse(commandArgs.split(', ')[index]));
           } catch (e) {
             print('$e');
             final copyPossibilities = <int>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]..shuffle();
@@ -240,21 +254,21 @@ abstract class _SolveStateBase with Store {
 
           final buffer = StringBuffer();
 
-          int stream_position = 0;
-          for (final character in this.cipher.text.characters) {
+          int streamPosition = 0;
+          for (final character in cipher.text.characters) {
             if (!runes.contains(character)) {
               buffer.write(character);
               continue;
             }
 
-            final shifted_letter_index = (runes.indexOf(character) - (streams[stream_position % streams.length]) % 29) % 29;
+            final shiftedLetterIndex = (runes.indexOf(character) - (streams[streamPosition % streams.length]) % 29) % 29;
 
-            final shifted_letter = runes[shifted_letter_index];
-            buffer.write(shifted_letter);
-            stream_position++;
+            final shiftedLetter = runes[shiftedLetterIndex];
+            buffer.write(shiftedLetter);
+            streamPosition++;
           }
 
-          this.cipher.text = buffer.toString();
+          cipher.text = buffer.toString();
         }
         break;
 
@@ -262,7 +276,7 @@ abstract class _SolveStateBase with Store {
         {
           List<int> streams = [];
           try {
-            final splitEnglishWord = gematriaRegex.allMatches(command_args).map((e) => e.group(0)).toList(); // slow
+            final splitEnglishWord = gematriaRegex.allMatches(commandArgs).map((e) => e.group(0)).toList(); // slow
             streams = List<int>.generate(splitEnglishWord.length, (index) => c.runeEnglish.indexOf(splitEnglishWord[index].toLowerCase()));
           } catch (e) {
             final copyPossibilities = <int>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]..shuffle();
@@ -274,32 +288,32 @@ abstract class _SolveStateBase with Store {
 
           final buffer = StringBuffer();
 
-          int stream_position = 0;
-          for (final character in this.cipher.text.characters) {
+          int streamPosition = 0;
+          for (final character in cipher.text.characters) {
             if (!runes.contains(character)) {
               buffer.write(character);
 
               continue;
             }
 
-            if (indexes_to_skip.contains(stream_position)) {
+            if (indexes_to_skip.contains(streamPosition)) {
               continue;
             }
 
-            final key_part = streams[stream_position % streams.length] % runes.length;
+            final keyPart = streams[streamPosition % streams.length] % runes.length;
 
-            if (key_part == 0) {
+            if (keyPart == 0) {
               testBuffer.write(c.runeToEnglish[character]);
             }
 
-            final shifted_letter_index = (runes.indexOf(character) - key_part) % 29;
+            final shiftedLetterIndex = (runes.indexOf(character) - keyPart) % 29;
 
-            final shifted_letter = runes[shifted_letter_index];
-            buffer.write(shifted_letter);
-            stream_position++;
+            final shiftedLetter = runes[shiftedLetterIndex];
+            buffer.write(shiftedLetter);
+            streamPosition++;
           }
 
-          this.cipher.text = buffer.toString();
+          cipher.text = buffer.toString();
         }
         break;
 
@@ -307,7 +321,7 @@ abstract class _SolveStateBase with Store {
         {
           List<int> streams = [];
           try {
-            streams = List<int>.generate(command_args.split(', ').length, (index) => int.parse(command_args.split(', ')[index]));
+            streams = List<int>.generate(commandArgs.split(', ').length, (index) => int.parse(commandArgs.split(', ')[index]));
           } catch (e) {
             final copyPossibilities = <int>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]..shuffle();
             streams = copyPossibilities.sublist(0, 16);
@@ -316,22 +330,22 @@ abstract class _SolveStateBase with Store {
 
           final buffer = StringBuffer();
 
-          int stream_position = 0;
-          for (final character in this.cipher.text.characters) {
+          int streamPosition = 0;
+          for (final character in cipher.text.characters) {
             if (!runes.contains(character)) {
               buffer.write(character);
-              stream_position--;
+              streamPosition--;
               continue;
             }
 
-            final shifted_letter_index = (runes.indexOf(character) - (streams[stream_position % streams.length]) % 29) % 29;
+            final shiftedLetterIndex = (runes.indexOf(character) - (streams[streamPosition % streams.length]) % 29) % 29;
 
-            final shifted_letter = runes[shifted_letter_index];
-            buffer.write(shifted_letter);
-            stream_position++;
+            final shiftedLetter = runes[shiftedLetterIndex];
+            buffer.write(shiftedLetter);
+            streamPosition++;
           }
 
-          this.cipher.text = buffer.toString();
+          cipher.text = buffer.toString();
         }
         break;
 
@@ -341,27 +355,27 @@ abstract class _SolveStateBase with Store {
 
           final buffer = StringBuffer();
 
-          for (final character in this.cipher.text.characters) {
-            if (!GetIt.I<Settings>().get_alphabet().contains(character)) {
+          for (final character in cipher.text.characters) {
+            if (!runes.contains(character)) {
               buffer.write(character);
               continue;
             }
 
-            final letter_homophones = homophones[character].toSet().toList();
+            final letterHomophones = homophones[character].toSet().toList();
 
-            if (letter_homophones.isEmpty) {
+            if (letterHomophones.isEmpty) {
               buffer.write(character.toLowerCase());
               continue;
             }
 
-            if (letter_homophones.length == 1) {
-              buffer.write('${letter_homophones.join().toUpperCase()}');
+            if (letterHomophones.length == 1) {
+              buffer.write(letterHomophones.join().toUpperCase());
             } else {
-              buffer.write('(${letter_homophones.join().toUpperCase()})');
+              buffer.write('(${letterHomophones.join().toUpperCase()})');
             }
           }
 
-          this.cipher.text = buffer.toString();
+          cipher.text = buffer.toString();
         }
         break;
 
@@ -371,19 +385,19 @@ abstract class _SolveStateBase with Store {
 
           final buffer = StringBuffer();
 
-          for (final character in this.cipher.text.characters) {
+          for (final character in cipher.text.characters) {
             if (!runes.contains(character)) {
               buffer.write(character);
               continue;
             }
 
-            final reversed_letter_index = reversedRuneAlphabet.indexOf(character);
+            final reversedLetterIndex = reversedRuneAlphabet.indexOf(character);
 
-            final shifted_letter = runes[reversed_letter_index];
-            buffer.write(shifted_letter);
+            final shiftedLetter = runes[reversedLetterIndex];
+            buffer.write(shiftedLetter);
           }
 
-          this.cipher.text = buffer.toString();
+          cipher.text = buffer.toString();
         }
         break;
 
@@ -394,7 +408,7 @@ abstract class _SolveStateBase with Store {
           Map<String, int> get_character_frequencies({bool runeOnly = true}) {
             final Map<String, int> seen = {};
 
-            for (final character in this.cipher.text.characters) {
+            for (final character in cipher.text.characters) {
               if (runeOnly) {
                 if (!runeToEnglish.containsKey(character)) continue;
               }
@@ -410,25 +424,25 @@ abstract class _SolveStateBase with Store {
           }
 
           double get_index_of_coincidence() {
-            final flat_cipher = this.cipher.text.replaceAll(' ', '').replaceAll('.', '').replaceAll('\n', '');
+            final flatCipher = cipher.text.replaceAll(' ', '').replaceAll('.', '').replaceAll('\n', '');
 
-            final length = flat_cipher.length;
+            final length = flatCipher.length;
 
             final frequency = get_character_frequencies();
 
             final List<String> alphabet = runeToEnglish.keys.toList();
 
-            double frequency_sum = 0.0;
+            double frequencySum = 0.0;
 
             alphabet.forEach((rune) {
               if (frequency.containsKey(rune)) {
-                frequency_sum += frequency[rune] * (frequency[rune] - 1);
+                frequencySum += frequency[rune] * (frequency[rune] - 1);
               }
             });
 
-            if (frequency_sum == 0.0) return 0.0;
+            if (frequencySum == 0.0) return 0.0;
 
-            return frequency_sum / (length * (length - 1));
+            return frequencySum / (length * (length - 1));
           }
 
           console.write_to_console('IoC: ${get_index_of_coincidence().toStringAsFixed(8)}');
@@ -436,7 +450,7 @@ abstract class _SolveStateBase with Store {
         break;
     }
 
-    console.write_to_console('Executed $command_name with args: $command_args');
+    console.write_to_console('Executed $commandName with args: $commandArgs');
     return true;
   }
 }

@@ -1,11 +1,11 @@
 import 'dart:io';
 
-import 'package:cicadrypt/global/cipher.dart';
-import 'package:cicadrypt/pages/analyze/analyze_state.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
-import 'package:collection/collection.dart';
+import '../global/cipher.dart';
+import '../pages/analyze/analyze_state.dart';
 
 enum CurrentPageFilter {
   all,
@@ -24,26 +24,29 @@ String pageFilterToString(CurrentPageFilter filter) {
       return 'Solved';
     case CurrentPageFilter.deciphered:
       return 'Plaintext';
+
+    default:
+      return 'All';
   }
 }
 
 Future<void> selectLiberPrimusPageDialog(BuildContext context, Function globalSetState) {
-  CurrentPageFilter current_page_filter = CurrentPageFilter.all;
+  CurrentPageFilter currentPageFilter = CurrentPageFilter.all;
 
-  List<String> all_pages = [];
+  final List<String> allPages = [];
 
-  final directorys_to_search = [
+  final directorysToSearch = [
     Directory('${Directory.current.path}/liberprimus_pages/'.replaceAll(RegExp(r'[\/]'), '/')),
     Directory('${Directory.current.path}/solved_liberprimus_pages/'.replaceAll(RegExp(r'[\/]'), '/')),
   ];
 
-  for (final directory in directorys_to_search) {
+  for (final directory in directorysToSearch) {
     final files = directory.listSync()..removeWhere((element) => !element.path.endsWith('.txt'));
 
-    files.forEach((element) => all_pages.add(element.path));
+    files.forEach((element) => allPages.add(element.path));
   }
 
-  List<String> visible_pages = List<String>.from(all_pages);
+  List<String> visiblePages = List<String>.from(allPages);
 
   return showDialog<void>(
     barrierColor: Colors.black.withOpacity(0.30),
@@ -83,34 +86,34 @@ Future<void> selectLiberPrimusPageDialog(BuildContext context, Function globalSe
                                 height: 26,
                                 width: double.infinity,
                                 child: Material(
-                                  color: filter == current_page_filter ? Colors.cyan.withOpacity(0.22) : Colors.black.withOpacity(0.22),
+                                  color: filter == currentPageFilter ? Colors.cyan.withOpacity(0.22) : Colors.black.withOpacity(0.22),
                                   child: InkWell(
                                     onTap: () => setState(() {
-                                      current_page_filter = filter;
+                                      currentPageFilter = filter;
 
                                       switch (filter) {
                                         case CurrentPageFilter.all:
                                           {
-                                            visible_pages = List<String>.from(all_pages);
+                                            visiblePages = List<String>.from(allPages);
                                           }
                                           break;
                                         case CurrentPageFilter.unsolved:
                                           {
-                                            visible_pages = List<String>.from(all_pages);
-                                            visible_pages.removeWhere((element) => element.contains('solved_liberprimus'));
+                                            visiblePages = List<String>.from(allPages);
+                                            visiblePages.removeWhere((element) => element.contains('solved_liberprimus'));
                                           }
                                           break;
                                         case CurrentPageFilter.solved:
                                           {
-                                            visible_pages = List<String>.from(all_pages);
-                                            visible_pages.removeWhere((element) => !element.contains('solved_liberprimus'));
-                                            visible_pages.removeWhere((element) => element.split('/').last.contains('deciphered'));
+                                            visiblePages = List<String>.from(allPages);
+                                            visiblePages.removeWhere((element) => !element.contains('solved_liberprimus'));
+                                            visiblePages.removeWhere((element) => element.split('/').last.contains('deciphered'));
                                           }
                                           break;
                                         case CurrentPageFilter.deciphered:
                                           {
-                                            visible_pages = List<String>.from(all_pages);
-                                            visible_pages.removeWhere((element) => !element.split('/').last.contains('deciphered'));
+                                            visiblePages = List<String>.from(allPages);
+                                            visiblePages.removeWhere((element) => !element.split('/').last.contains('deciphered'));
                                           }
                                           break;
                                       }
@@ -127,7 +130,7 @@ Future<void> selectLiberPrimusPageDialog(BuildContext context, Function globalSe
                       ),
                     ),
                     Builder(builder: (_) {
-                      final rawFileList = visible_pages;
+                      final rawFileList = visiblePages;
 
                       List<String> pagesSortedByNum;
 
@@ -152,8 +155,8 @@ Future<void> selectLiberPrimusPageDialog(BuildContext context, Function globalSe
                             child: ListView.builder(
                               itemCount: pagesSortedByNum.length,
                               itemBuilder: (context, index) {
-                                final page_path = pagesSortedByNum[index];
-                                final page_name = pagesSortedByNum[index].split('/').last.replaceAll('.txt', '');
+                                final pagePath = pagesSortedByNum[index];
+                                final pageName = pagesSortedByNum[index].split('/').last.replaceAll('.txt', '');
 
                                 return Material(
                                   color: Theme.of(context).scaffoldBackgroundColor,
@@ -164,7 +167,7 @@ Future<void> selectLiberPrimusPageDialog(BuildContext context, Function globalSe
                                         state.clear_selected_runes();
                                         state.highlighedRunes.clear();
 
-                                        GetIt.I<Cipher>().load_from_file(page_path);
+                                        GetIt.I<Cipher>().load_from_file(pagePath);
                                       });
 
                                       Navigator.of(context).pop();
@@ -173,7 +176,7 @@ Future<void> selectLiberPrimusPageDialog(BuildContext context, Function globalSe
                                       padding: const EdgeInsets.all(4.0),
                                       child: Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [Text(page_name), const Icon(Icons.arrow_right)],
+                                        children: [Text(pageName), const Icon(Icons.arrow_right)],
                                       ),
                                     ),
                                   ),

@@ -1,4 +1,5 @@
 import 'package:characters/characters.dart';
+import 'package:collection/collection.dart';
 import 'package:equatable/equatable.dart';
 
 import 'runes.dart';
@@ -18,6 +19,7 @@ class LiberTextClass extends Equatable {
   String _cached_rune;
   List<int> _cached_prime;
   List<int> _cached_index;
+  int _cached_sum;
 
   String get english => _get_english();
   String _get_english() {
@@ -42,10 +44,10 @@ class LiberTextClass extends Equatable {
   String _get_rune() {
     if (_cached_rune != null && _cached_rune.isNotEmpty) return _cached_rune;
 
-    final text_split = gematriaRegex.allMatches(text).map((e) => e.group(0)).toList();
+    final textSplit = gematriaRegex.allMatches(text).map((e) => e.group(0)).toList();
 
-    final rune = List<String>.generate(text_split.length, (index) {
-      final character = text_split[index];
+    final rune = List<String>.generate(textSplit.length, (index) {
+      final character = textSplit[index];
       int idx = runeEnglish.indexOf(character);
       if (idx == -1) idx = altRuneEnglish.indexOf(character);
 
@@ -63,7 +65,7 @@ class LiberTextClass extends Equatable {
   List<int> _get_prime() {
     if (_cached_prime != null && _cached_prime.isNotEmpty) return _cached_prime;
 
-    final runified = this.rune.split('');
+    final runified = rune.split('');
 
     final primified = <int>[];
 
@@ -71,7 +73,7 @@ class LiberTextClass extends Equatable {
       if (runes.contains(rune)) {
         primified.add(int.parse(runePrimes[rune]));
       } else {
-        primified.add(-1);
+        primified.add(0);
       }
     }
 
@@ -84,7 +86,7 @@ class LiberTextClass extends Equatable {
   List<int> _get_index() {
     if (_cached_index != null && _cached_index.isNotEmpty) return _cached_index;
 
-    final runified = this.rune.split('');
+    final runified = rune.split('');
 
     final indexified = <int>[];
 
@@ -95,6 +97,17 @@ class LiberTextClass extends Equatable {
     if (_cached_index == null || _cached_index.isEmpty) _cached_index = indexified;
 
     return indexified;
+  }
+
+  int get prime_sum => _get_sum();
+  int _get_sum() {
+    if (_cached_sum != null) return _cached_sum;
+
+    final sum = prime.sum;
+
+    _cached_sum ??= sum;
+
+    return sum;
   }
 
   @override

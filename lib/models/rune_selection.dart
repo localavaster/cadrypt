@@ -2,7 +2,7 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
 class RuneSelection extends Equatable {
-  const RuneSelection(this.index, this.rune, this.type, {this.color = null});
+  const RuneSelection(this.index, this.rune, this.type, {this.color});
 
   final String rune;
   final int index;

@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import '../constants/libertext.dart';
+
 import '../constants/runes.dart';
 
 class CribChipFilter {
@@ -30,6 +32,7 @@ final cribFilters = <CribChipFilter>[
   CribChipFilter(text: 'Only Even Shifts', value: 'onlyevenshifts'),
   CribChipFilter(text: 'Only Odd Shifts', value: 'onlyoddshifts'),
   CribChipFilter(text: 'No Zero Shift Differences', value: 'nozeroshiftdifferences'),
+  CribChipFilter(text: 'Only words with same GP sum', value: 'onlywordswithsamegpsum')
 ];
 
 final cribWordFilters = <CribChipFilter>[
@@ -54,7 +57,7 @@ final cribOutputSelection = <CribChipFilter>[
   CribChipFilter(text: 'Shift List Facts', value: 'shiftlistfacts'),
 ];
 
-enum CribPartOfSpeech { all, noun, verb, adjective, adverb }
+enum CribPartOfSpeech { all, noun, verb, adjective, adverb, magic_square_words }
 
 class CribSettings {
   CribPartOfSpeech pos = CribPartOfSpeech.all;
@@ -72,6 +75,8 @@ class CribSettings {
   String endsWith = '';
   String startsWith = '';
   String pattern = '';
+
+  String shiftMode = 'negative';
 
   @override
   String toString() {
@@ -95,22 +100,30 @@ class CribSettings {
       case CribPartOfSpeech.adverb:
         return File('${Directory.current.path}/english_words/adverbs');
 
+      case CribPartOfSpeech.magic_square_words:
+        return File('${Directory.current.path}/english_words/square_sum_words');
+
       // ignore: no_default_cases
       default:
         return File('${Directory.current.path}/english_words/all');
     }
   }
 
-  List<String> get_crib_words({int minimumLength, int maximumLengthOffset, List<String> onlyIncludeWords}) {
-    final words = get_crib_file().readAsLinesSync();
+  List<String> get_crib_words({String wordBeingCribbed, List<String> onlyIncludeWords}) {
+    final words = get_crib_file().readAsLinesSync()..removeWhere((element) => LiberText(element).rune.length != wordBeingCribbed.length);
 
-    words.removeWhere((word) => word.length < minimumLength - 1 || word.length > (minimumLength + maximumLengthOffset));
+    if (filters.length == 1 && filters.contains('onlywordswithsamegpsum')) {
+      final cipheredWordSum = LiberText(wordBeingCribbed).prime_sum;
+
+      words.removeWhere((word) => LiberText(word).prime_sum != cipheredWordSum);
+    }
 
     if (filters.contains('novowelstart')) {
       words.removeWhere((word) => word.startsWith(RegExp('[aeiouAEIOU]')));
     }
 
     if (filters.contains('noplural')) {
+      // terrible
       words.removeWhere((word) => word.endsWith('s'));
     }
 

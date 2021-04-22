@@ -1,17 +1,14 @@
-import 'package:cicadrypt/global/settings.dart';
-import 'package:equatable/equatable.dart';
-import 'package:get_it/get_it.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
 import 'package:collection/collection.dart';
+import 'package:equatable/equatable.dart';
 
+import '../constants/extensions.dart';
 import '../constants/runes.dart';
 import '../constants/utils.dart';
-import '../constants/extensions.dart';
 
 class CribMatch extends Equatable {
-  CribMatch(this.original_word, this.cribbed_word, this.cribbed_word_split, this.shifts, this.matching_homophones)
+  CribMatch(this.original_word, this.cribbed_word, this.cribbed_word_split, this.shifts, this.matching_homophones, this.extra_information)
       : shift_sum = shifts.sum,
-        shift_word = List<String>.generate(shifts.length, (index) => GetIt.I<Settings>().get_alphabet(english: true)[shifts[index]].toUpperCase()).join(),
+        shift_word = List<String>.generate(shifts.length, (index) => runeEnglish[shifts[index]].toUpperCase()).join(),
         shift_rune_word = List<String>.generate(shifts.length, (index) => runes[shifts[index]]).join() {
     final buffer = StringBuffer();
 
@@ -49,6 +46,8 @@ class CribMatch extends Equatable {
       return letterToPrime.values.elementAt(idx);
     });
   }
+
+  final List<String> extra_information;
 
   final String original_word;
   final String cribbed_word;
@@ -108,17 +107,17 @@ class CribMatch extends Equatable {
   List<List<String>> get_shift_word_gp_possibilities() {
     final result = <List<String>>[];
 
-    final reversed_map = {for (var e in runePrimes.entries) int.parse(e.value): e.key};
+    final reversedMap = {for (var e in runePrimes.entries) int.parse(e.value): e.key};
 
     for (final shift in shifts) {
-      final gp_possibilities = get_gp_modulos(shift);
+      final gpPossibilities = get_gp_modulos(shift);
 
-      final shift_p = <String>[];
-      for (final p in gp_possibilities) {
-        shift_p.add(runeToEnglish[reversed_map[p]]);
+      final shiftP = <String>[];
+      for (final p in gpPossibilities) {
+        shiftP.add(runeToEnglish[reversedMap[p]]);
       }
 
-      result.add(shift_p);
+      result.add(shiftP);
     }
 
     return result;
@@ -148,13 +147,18 @@ class CribMatch extends Equatable {
   }
 
   String runeWordToEnglishForm() {
-    final split_rune_word = original_word.split('');
+    final splitRuneWord = original_word.split('');
 
-    return List<String>.generate(split_rune_word.length, (index) => runeToEnglish[split_rune_word[index]]).join();
+    return List<String>.generate(splitRuneWord.length, (index) => runeToEnglish[splitRuneWord[index]]).join();
   }
 
   String toConsoleString(List<String> outputSettings) {
     final buffer = StringBuffer();
+
+    if (extra_information != null && extra_information.isNotEmpty) {
+      buffer.write('${extra_information} | ');
+    }
+
     outputSettings.forEach((element) {
       switch (element) {
         case 'shiftsum':
@@ -203,7 +207,7 @@ class CribMatch extends Equatable {
   @override
   String toString() {
     final buffer = StringBuffer();
-    //buffer.write('$crib | ${shiftToRuneForm()}');
+
     buffer.writeAll(['$shift_sum', ' | ', cribbed_word, ' | ', '$shifts', ' | ', (runeWordToEnglishForm()), ' | ', shift_word, ' | ', shift_word_using_gp, ' | ', '${get_shift_word_gp_possibilities()},']);
 
     return buffer.toString();

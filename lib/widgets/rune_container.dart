@@ -1,11 +1,11 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:cicadrypt/constants/libertext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 import 'package:supercharged_dart/supercharged_dart.dart';
 
+import '../constants/libertext.dart';
 import '../constants/runes.dart';
 import '../global/keyboard_listener.dart';
 import '../models/rune_selection.dart';
@@ -100,7 +100,7 @@ class _RuneContainerState extends State<RuneContainer> {
     }
 
     final runeComparison = RuneSelection(widget.index, widget.rune.rune, '');
-    final selectedRunes = List<String>.generate(widget.state.selectedRunes.length, (index) => widget.state.selectedRunes[index].rune);
+    //final selectedRunes = List<String>.generate(widget.state.selectedRunes.length, (index) => widget.state.selectedRunes[index].rune);
 
     if (widget.state.selectedRunes.contains(runeComparison)) {
       return widget.state.selectedRunes.where((element) => element == runeComparison).first.get_highlighted_color(context);
@@ -124,9 +124,9 @@ class _RuneContainerState extends State<RuneContainer> {
       onExit: (event) {},
       child: GestureDetector(
         onTap: () {
-          final keyboard_listener = GetIt.I<Keyboard>();
+          final keyboardListener = GetIt.I<Keyboard>();
 
-          if (keyboard_listener.keysPressed.contains(4295426273)) {
+          if (keyboardListener.keysPressed.contains(4295426273)) {
             final alreadySelectedRunes = List<int>.generate(widget.state.selectedRunes.length, (index) => widget.state.selectedRunes[index].index);
 
             if (alreadySelectedRunes.isEmpty) {

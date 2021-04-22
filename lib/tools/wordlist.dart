@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
 import 'package:collection/collection.dart';
 
 void toolWordListViewer(BuildContext context) {
@@ -9,7 +8,6 @@ void toolWordListViewer(BuildContext context) {
   final wordFile = File('${Directory.current.path}/english_words/cicada');
   final wordList = wordFile.readAsLinesSync().sortedBy<num>((element) => element.length);
 
-  final maxWordLength = 16;
   int currentSelectedWordLength = 1;
 
   List<String> visibleWordList = List.from(wordList)..removeWhere((element) => element.length != currentSelectedWordLength);

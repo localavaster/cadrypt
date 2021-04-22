@@ -1,8 +1,7 @@
-import 'package:cicadrypt/global/settings.dart';
-import 'package:get_it/get_it.dart';
-import 'package:supercharged_dart/supercharged_dart.dart';
 import 'package:collection/collection.dart';
+import 'package:get_it/get_it.dart';
 
+import '../constants/extensions.dart';
 import '../constants/runes.dart';
 import '../constants/utils.dart';
 import '../models/crib_match.dart';
@@ -12,19 +11,7 @@ import 'oeis_search.dart';
 
 class Crib {
   Crib(this.settings, this.runeWord) : splitRuneWord = runeWord.split('') {
-    if (GetIt.I<Settings>().is_cicada_mode()) {
-      try {
-        splitRuneWordEnglish = List<String>.generate(runeWord.split('').length, (index) => runeToEnglish[runeWord.split('')[index]].toLowerCase());
-      } catch (e) {
-        print('crib.dart:19 -> $e');
-      }
-    } else {
-      try {
-        splitRuneWordEnglish = splitRuneWord;
-      } catch (e) {
-        print('crib.dart:19 -> $e');
-      }
-    }
+    splitRuneWordEnglish = List<String>.generate(splitRuneWord.length, (index) => runeToEnglish[splitRuneWord[index]].toLowerCase());
   }
 
   final CribSettings settings;
@@ -36,30 +23,55 @@ class Crib {
 
   List<CribMatch> matches = [];
 
-  List<int> shifts_to_get_word(List<String> splitEnglishWord) {
+  List<int> negative_shifts_to_get_word(List<String> splitEnglishWord) {
     final List<int> shifts = [];
 
     splitRuneWord.forEachIndexed((index, rune) {
       if (splitRuneWord.length == 1 && splitEnglishWord.length != 1) return;
 
       if (splitRuneWord.length == splitEnglishWord.length) {
-        final runeIndex = GetIt.I<Settings>().get_alphabet().indexOf(rune);
+        final runeIndex = runes.indexOf(rune);
 
-        int englishIndex = GetIt.I<Settings>().get_alphabet().indexOf(splitEnglishWord.elementAt(index));
+        int englishIndex = runeEnglish.indexOf(splitEnglishWord.elementAt(index));
 
-        if (GetIt.I<Settings>().is_cicada_mode()) {
-          englishIndex = runeEnglish.indexOf(splitEnglishWord.elementAt(index));
-
-          if (englishIndex == -1) {
-            englishIndex = altRuneEnglish.indexOf(splitEnglishWord.elementAt(index));
-          }
+        if (englishIndex == -1) {
+          englishIndex = altRuneEnglish.indexOf(splitEnglishWord.elementAt(index));
         }
 
         if (englishIndex == -1) {
           print('Word List Error: cannot find ${splitEnglishWord[index]} in ${splitEnglishWord.join()}');
         }
 
-        final difference = (runeIndex - englishIndex) % GetIt.I<Settings>().get_alphabet().length;
+        final difference = (runeIndex - englishIndex) % runes.length;
+
+        shifts.add(difference);
+      }
+    });
+
+    return shifts;
+    // shifts
+  }
+
+  List<int> positive_shifts_to_get_word(List<String> splitEnglishWord) {
+    final List<int> shifts = [];
+
+    splitRuneWord.forEachIndexed((index, rune) {
+      if (splitRuneWord.length == 1 && splitEnglishWord.length != 1) return;
+
+      if (splitRuneWord.length == splitEnglishWord.length) {
+        final runeIndex = runes.indexOf(rune);
+
+        int englishIndex = runeEnglish.indexOf(splitEnglishWord.elementAt(index));
+
+        if (englishIndex == -1) {
+          englishIndex = altRuneEnglish.indexOf(splitEnglishWord.elementAt(index));
+        }
+
+        if (englishIndex == -1) {
+          print('Word List Error: cannot find ${splitEnglishWord[index]} in ${splitEnglishWord.join()}');
+        }
+
+        final difference = (runeIndex - (englishIndex + runes.length)).abs() % runes.length;
 
         shifts.add(difference);
       }
@@ -70,10 +82,7 @@ class Crib {
   }
 
   Future<List<CribMatch>> wordCrib({List<String> onlyIncludeWords}) async {
-    final program_settings = GetIt.I<Settings>();
-
-    final runeWordLength = runeWord.length;
-    final possibleWords = settings.get_crib_words(minimumLength: runeWordLength, maximumLengthOffset: 3, onlyIncludeWords: onlyIncludeWords);
+    final possibleWords = settings.get_crib_words(wordBeingCribbed: runeWord, onlyIncludeWords: onlyIncludeWords);
 
     OEISLookUp oeis;
     if (settings.filters.contains('shiftisinoeis')) {
@@ -87,15 +96,8 @@ class Crib {
 
     wordLoop:
     for (final word in possibleWords) {
-      List<String> splitEnglishWord = [];
-
-      if (program_settings.is_cicada_mode()) {
-        splitEnglishWord = gematriaRegex.allMatches(word.toLowerCase()).map((e) => e.group(0)).toList(); // slow
-      } else {
-        splitEnglishWord = word.toLowerCase().split('');
-      }
-
-      if (splitEnglishWord.length != splitRuneWord.length) continue;
+      final List<String> extra_information = [];
+      final List<String> splitEnglishWord = gematriaRegex.allMatches(word.toLowerCase()).map((e) => e.group(0)).toList(); // slow
 
       if (settings.wordFilters.contains('onlymagicsquaresums')) {
         final primeListOfWord = <int>[];
@@ -113,30 +115,30 @@ class Crib {
         if (!square_sums.contains(sum)) continue wordLoop;
       }
 
-      int matching_homophones = 0;
+      int matchingHomophones = 0;
       if (settings.wordFilters.contains('usecribcachehomophones')) {
         for (int i = 0; i < runeWord.length; i++) {
-          final original_rune_letter = runeWord.split('')[i];
-          final hps = homophones[original_rune_letter];
+          final originalRuneLetter = runeWord.split('')[i];
+          final hps = homophones[originalRuneLetter];
           if (hps.isEmpty) continue;
 
-          final crib_english_letter = splitEnglishWord[i];
+          final cribEnglishLetter = splitEnglishWord[i];
 
-          if (hps.contains(crib_english_letter)) matching_homophones++;
+          if (hps.contains(cribEnglishLetter)) matchingHomophones++;
         }
 
-        if (matching_homophones == 0) continue wordLoop;
+        if (matchingHomophones == 0) continue wordLoop;
       }
 
       if (settings.filters.contains('noplaintext')) {
-        int same_letters = 0;
+        int sameLetters = 0;
         splitEnglishWord.forEachIndexed((index, wordLetter) {
           final runeLetter = splitRuneWordEnglish[index].toLowerCase();
 
-          if (wordLetter.toLowerCase() == runeLetter) same_letters++;
+          if (wordLetter.toLowerCase() == runeLetter) sameLetters++;
         });
 
-        if (same_letters != 0) continue wordLoop;
+        if (sameLetters != 0) continue wordLoop;
       }
 
       if (settings.filters.contains('nodoubleletters')) {
@@ -145,24 +147,16 @@ class Crib {
         }
       }
 
-      final List<int> shifts = shifts_to_get_word(splitEnglishWord);
+      List<int> shifts = [];
+      if (settings.shiftMode == 'negative') shifts = negative_shifts_to_get_word(splitEnglishWord);
+      if (settings.shiftMode == 'positive') shifts = positive_shifts_to_get_word(splitEnglishWord);
 
       if (settings.filters.contains('onlyincshifts')) {
-        for (int i = 0; i < (shifts.length - 1); i++) {
-          final current = shifts[i];
-          final next = shifts[i + 1];
-
-          if (next < current) continue wordLoop;
-        }
+        if (!shifts.is_incremental()) continue wordLoop;
       }
 
       if (settings.filters.contains('onlydecshifts')) {
-        for (int i = 0; i < (shifts.length - 1); i++) {
-          final current = shifts[i];
-          final next = shifts[i + 1];
-
-          if (current < next) continue wordLoop;
-        }
+        if (!shifts.is_decremental()) continue wordLoop;
       }
 
       if (settings.filters.contains('onlyunique')) {
@@ -174,14 +168,14 @@ class Crib {
       }
 
       if (settings.filters.contains('hasplaintext')) {
-        int same_letters = 0;
+        int sameLetters = 0;
         splitEnglishWord.forEachIndexed((index, wordLetter) {
           final runeLetter = splitRuneWordEnglish[index].toLowerCase();
 
-          if (wordLetter.toLowerCase() == runeLetter) same_letters++;
+          if (wordLetter.toLowerCase() == runeLetter) sameLetters++;
         });
 
-        if (same_letters != 1) continue wordLoop;
+        if (sameLetters != 1) continue wordLoop;
       }
 
       if (settings.filters.contains('nouncommonshifts')) {
@@ -212,9 +206,11 @@ class Crib {
       }
 
       if (settings.filters.contains('shiftisinoeis')) {
-        final bool sequenceInOEIS = oeis.localOeisContainsSequnece(shifts);
+        final int sequenceInOEIS = oeis.localOeisContainsSequnece(shifts);
 
-        if (sequenceInOEIS == false) continue wordLoop;
+        if (sequenceInOEIS == -1) continue wordLoop;
+
+        extra_information.add('sequence: ${sequenceInOEIS}');
       } // mfw time complexity
 
       if (settings.interruptors.isNotEmpty) {
@@ -222,22 +218,22 @@ class Crib {
 
         if (!shifts.contains(0)) continue wordLoop;
 
-        final indexes_of_zero = <int>[];
+        final indexesOfZero = <int>[];
 
         for (int i = 0; i < shifts.length; i++) {
           final shift = shifts[i];
 
-          if (shift == 0) indexes_of_zero.add(i);
+          if (shift == 0) indexesOfZero.add(i);
         }
 
-        final plaintext_letters = List<String>.generate(indexes_of_zero.length, (index) => splitEnglishWord[indexes_of_zero[index]]);
+        final plaintextLetters = List<String>.generate(indexesOfZero.length, (index) => splitEnglishWord[indexesOfZero[index]]);
 
-        for (final plaintext in plaintext_letters) {
+        for (final plaintext in plaintextLetters) {
           if (!interruptors.contains(plaintext)) continue wordLoop;
         }
       }
 
-      matches.add(CribMatch(runeWord, word, splitEnglishWord, shifts, matching_homophones));
+      matches.add(CribMatch(runeWord, word, splitEnglishWord, shifts, matchingHomophones, extra_information));
     }
 
     if (settings.filters.contains('nozeroshiftdifferences')) {
@@ -276,7 +272,6 @@ class Crib {
     if (settings.filters.contains('onlycloseshifts')) {
       matches.removeWhere((match) => match.is_far_shift);
     }
-
     //eoeislookup?.client?.close(force: true);
 
     if (matches.length == 1) {
