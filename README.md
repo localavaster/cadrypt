@@ -37,7 +37,13 @@ TODO
 **Running it without prebuilt files**
 Refer to https://flutter.dev/desktop#set-up and wiki, The build process should be similar for all 3 operating systems.
 
-For any questions, refer to FAQ
+For any questions, refer to FAQ,
+
+NOTE: You will have to copy over some folders and files to where cadrypt is located if you are doing a "flutter build" command, Otherwise if you are using "flutter run -d device_name --release", you do not have to copy over any files or folders
+
+The files and folders you will have to copy are...
+folders: assets, cribs, cicada_messages, solved_liberprimus_pages, liberprimus_pages, training_pages, english_words, english_statistics,
+files: raw_oeis_sequences(? maybe), mod29_oeis_sequences, invalid_oeis_sequence_cache
 
 # FAQ / I'm having an issue
 Check out the wiki.
