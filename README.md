@@ -34,6 +34,10 @@ Navigate to releases, download zip, extract, run.
 - Linux
 TODO
 
+NOTE: If you are experiencing a blank screen when you launch, Cadrypt takes a little bit of time to load a page when you first launch it, This is because of the "Repeated Similar nGrams" feature.
+
+To fix this, you just have to wait a minute or two for the page to load in, you can also remove this feature entirely if you comment it out in global/cipher.dart
+
 **Running it without prebuilt files**
 Refer to https://flutter.dev/desktop#set-up and wiki, The build process should be similar for all 3 operating systems.
 
