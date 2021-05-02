@@ -57,5 +57,11 @@ or contact me on discord avaster#5567
 # Contributing
 All contributions are welcome
 
+If the codebase is confusing or you have questions about contributing, feel free to contact me on discord
+
+avaster#5567
+
+or create an Issue
+
 # License
 GPL v3
