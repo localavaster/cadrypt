@@ -67,7 +67,8 @@ class SentenceCrib {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('Total permutations ${pow(possibleWords.length, runeWords.length)}'),
+                      Text(
+                          'Total permutations ${pow(possibleWords.length, runeWords.length)}'),
                       Text('Total words ${possibleWords.length}'),
                       Expanded(
                         child: ListView.builder(
@@ -77,34 +78,52 @@ class SentenceCrib {
                           itemBuilder: (context, index) {
                             final word = possibleWords[index];
                             return Container(
-                              color: index.isOdd ? Colors.black.withOpacity(0.22) : Colors.black.withOpacity(0.37),
+                              color: index.isOdd
+                                  ? Colors.black.withOpacity(0.22)
+                                  : Colors.black.withOpacity(0.37),
                               child: Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 4, horizontal: 8),
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 8.0),
                                       child: Builder(builder: (context) {
                                         if (word.length == 1 && word[0] == 0) {
-                                          return const Text('DUMMYZERO', style: TextStyle(height: 1.0));
+                                          return const Text('DUMMYZERO',
+                                              style: TextStyle(height: 1.0));
                                         }
 
-                                        return Text(List<String>.generate(word.length, (index) => reversedMap[word[index]]).join(), style: const TextStyle(height: 1.0));
+                                        return Text(
+                                            List<String>.generate(
+                                                word.length,
+                                                (index) => reversedMap[
+                                                    word[index]]).join(),
+                                            style:
+                                                const TextStyle(height: 1.0));
                                       }),
                                     ),
                                     Row(
                                       children: [
-                                        Text(word.length.toString(), style: const TextStyle(height: 1.0)),
+                                        Text(word.length.toString(),
+                                            style:
+                                                const TextStyle(height: 1.0)),
                                         const SizedBox(width: 4),
                                         Material(
                                           child: InkWell(
                                             onTap: () {
                                               setState(() {
-                                                possibleWords.removeWhere((element) => element == possibleWords[index]);
+                                                possibleWords.removeWhere(
+                                                    (element) =>
+                                                        element ==
+                                                        possibleWords[index]);
                                               });
                                             },
-                                            child: const Icon(Icons.close, size: 18, color: Colors.white),
+                                            child: const Icon(Icons.close,
+                                                size: 18, color: Colors.white),
                                           ),
                                         ),
                                       ],
@@ -118,8 +137,10 @@ class SentenceCrib {
                       ),
                       Row(children: [
                         Expanded(
-                          child: FlatButton(
-                            color: Colors.red,
+                          child: TextButton(
+                            style: ButtonStyle(
+                                backgroundColor:
+                                    MaterialStateProperty.all(Colors.red)),
                             onPressed: () {
                               shouldContinue = false;
                               Navigator.of(context).pop();
@@ -128,8 +149,10 @@ class SentenceCrib {
                           ),
                         ),
                         Expanded(
-                          child: FlatButton(
-                            color: Colors.green[300],
+                          child: TextButton(
+                            style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(
+                                    Colors.green[300])),
                             onPressed: () {
                               shouldContinue = true;
                               Navigator.of(context).pop();
@@ -155,7 +178,8 @@ class SentenceCrib {
     print('Total possible words: ${possibleWords.length}');
 
     // now lets create a file
-    final outputFile = File('${Directory.current.path}/cribs/sentences/${runeWords.join('_')}.txt');
+    final outputFile = File(
+        '${Directory.current.path}/cribs/sentences/${runeWords.join('_')}.txt');
 
     if (outputFile.existsSync()) {
       outputFile.deleteSync();
@@ -171,7 +195,8 @@ class SentenceCrib {
       totalRuneCharacters += word.length;
     }
 
-    final runeWordsLength = List<int>.generate(runeWords.length, (index) => runeWords[index].length);
+    final runeWordsLength = List<int>.generate(
+        runeWords.length, (index) => runeWords[index].length);
     final runeWordsLengthSum = runeWordsLength.sum;
     bool useLoop = false;
     final int pairsToGenerate = runeWords.length;
@@ -183,10 +208,12 @@ class SentenceCrib {
     final sievedPrimes = prime_sieve(highestPossibleNumber);
 
     // what are the odds?
-    sievedPrimes.removeWhere((element) => element <= (3 * totalRuneCharacters.floor()));
+    sievedPrimes
+        .removeWhere((element) => element <= (3 * totalRuneCharacters.floor()));
     //sieved_primes.removeWhere((element) => element >= (105 * (totalRuneCharacters / 3).floor()));
 
-    final binaryTree = SplayTreeSet<int>.from(sievedPrimes.reversed); // place highest first, splay tree will give faster results as we go on,
+    final binaryTree = SplayTreeSet<int>.from(sievedPrimes
+        .reversed); // place highest first, splay tree will give faster results as we go on,
 
     print('Total Primes: ${sievedPrimes.length}');
     print('First Prime: ${sievedPrimes.first}');
@@ -199,8 +226,14 @@ class SentenceCrib {
       if (pairsToGenerate == 2) {
         int iterations = 0;
 
-        final List<List<int>> firstWords = possibleWords.where((element) => element.length == runeWords.first.length).toSet().toList();
-        final List<List<int>> secondWords = possibleWords.where((element) => element.length == runeWords[1].length).toSet().toList();
+        final List<List<int>> firstWords = possibleWords
+            .where((element) => element.length == runeWords.first.length)
+            .toSet()
+            .toList();
+        final List<List<int>> secondWords = possibleWords
+            .where((element) => element.length == runeWords[1].length)
+            .toSet()
+            .toList();
         for (int first = 0; first < firstWords.length; first++) {
           for (int second = 0; second < secondWords.length; second++) {
             iterations++;
@@ -225,9 +258,18 @@ class SentenceCrib {
       } else if (pairsToGenerate == 3) {
         int iterations = 0;
 
-        final List<List<int>> firstWords = possibleWords.where((element) => element.length == runeWords[0].length).toSet().toList();
-        final List<List<int>> secondWords = possibleWords.where((element) => element.length == runeWords[1].length).toSet().toList();
-        final List<List<int>> thirdWords = possibleWords.where((element) => element.length == runeWords[2].length).toSet().toList();
+        final List<List<int>> firstWords = possibleWords
+            .where((element) => element.length == runeWords[0].length)
+            .toSet()
+            .toList();
+        final List<List<int>> secondWords = possibleWords
+            .where((element) => element.length == runeWords[1].length)
+            .toSet()
+            .toList();
+        final List<List<int>> thirdWords = possibleWords
+            .where((element) => element.length == runeWords[2].length)
+            .toSet()
+            .toList();
         for (int first = 0; first < firstWords.length; first++) {
           for (int second = 0; second < secondWords.length; second++) {
             for (int third = 0; third < thirdWords.length; third++) {
@@ -241,7 +283,8 @@ class SentenceCrib {
                 await outputSink.flush();
               }
 
-              final word = firstWords[first] + secondWords[second] + thirdWords[third];
+              final word =
+                  firstWords[first] + secondWords[second] + thirdWords[third];
 
               final sum = word.sum;
 
@@ -254,10 +297,22 @@ class SentenceCrib {
       } else if (pairsToGenerate == 4) {
         int iterations = 0;
 
-        final List<List<int>> firstWords = possibleWords.where((element) => element.length == runeWords[0].length).toSet().toList();
-        final List<List<int>> secondWords = possibleWords.where((element) => element.length == runeWords[1].length).toSet().toList();
-        final List<List<int>> thirdWords = possibleWords.where((element) => element.length == runeWords[2].length).toSet().toList();
-        final List<List<int>> fourthWords = possibleWords.where((element) => element.length == runeWords[3].length).toSet().toList();
+        final List<List<int>> firstWords = possibleWords
+            .where((element) => element.length == runeWords[0].length)
+            .toSet()
+            .toList();
+        final List<List<int>> secondWords = possibleWords
+            .where((element) => element.length == runeWords[1].length)
+            .toSet()
+            .toList();
+        final List<List<int>> thirdWords = possibleWords
+            .where((element) => element.length == runeWords[2].length)
+            .toSet()
+            .toList();
+        final List<List<int>> fourthWords = possibleWords
+            .where((element) => element.length == runeWords[3].length)
+            .toSet()
+            .toList();
         for (int first = 0; first < firstWords.length; first++) {
           for (int second = 0; second < secondWords.length; second++) {
             for (int third = 0; third < thirdWords.length; third++) {
@@ -272,7 +327,10 @@ class SentenceCrib {
                   await outputSink.flush();
                 }
 
-                final word = firstWords[first] + secondWords[second] + thirdWords[third] + fourthWords[fourth];
+                final word = firstWords[first] +
+                    secondWords[second] +
+                    thirdWords[third] +
+                    fourthWords[fourth];
 
                 final sum = word.sum;
 
@@ -285,7 +343,8 @@ class SentenceCrib {
         }
       }
     } else {
-      final possibleSentences = trotter.Combinations(pairsToGenerate, possibleWords);
+      final possibleSentences =
+          trotter.Combinations(pairsToGenerate, possibleWords);
 
       print('Total Permutations: ${possibleSentences.length}');
       print('Sample Permutation: ${possibleSentences.iterable.elementAt(0)}');
@@ -342,14 +401,16 @@ class SentenceCrib {
 
     final timeDifference = timeEnded.difference(timeNow);
 
-    final readableOutputFile = File('${Directory.current.path}/cribs/sentences/${runeWords.join('_')}_readable.txt');
+    final readableOutputFile = File(
+        '${Directory.current.path}/cribs/sentences/${runeWords.join('_')}_readable.txt');
     if (readableOutputFile.existsSync()) {
       readableOutputFile.deleteSync();
       readableOutputFile.createSync();
     } else {
       readableOutputFile.createSync();
     }
-    final readableOutputSink = readableOutputFile.openWrite(mode: FileMode.append);
+    final readableOutputSink =
+        readableOutputFile.openWrite(mode: FileMode.append);
 
     final outputFileLines = outputFile.readAsLinesSync();
     int iterations = 0;
@@ -361,11 +422,16 @@ class SentenceCrib {
       }
 
       if (useLoop) {
-        final formatted = element.replaceAll('[', '').replaceAll(']', '').replaceAll(' ', '').split('.');
+        final formatted = element
+            .replaceAll('[', '')
+            .replaceAll(']', '')
+            .replaceAll(' ', '')
+            .split('.');
         final word = formatted[0].split(',');
         final sum = formatted[1];
 
-        final letters = List<String>.generate(word.length, (index) => reversedMap[int.parse(word[index])]);
+        final letters = List<String>.generate(
+            word.length, (index) => reversedMap[int.parse(word[index])]);
         final words = <String>[];
 
         int offset = 0;
@@ -379,11 +445,16 @@ class SentenceCrib {
 
         readableOutputSink.writeln('${words.join(' ')} $sum $emirp');
       } else {
-        final formatted = element.replaceAll('(', '').replaceAll(')', '').replaceAll(' ', '').split('.');
+        final formatted = element
+            .replaceAll('(', '')
+            .replaceAll(')', '')
+            .replaceAll(' ', '')
+            .split('.');
         final word = formatted[0].split(',');
         final sum = formatted[1];
 
-        final letters = List<String>.generate(word.length, (index) => reversedMap[int.parse(word[index])]);
+        final letters = List<String>.generate(
+            word.length, (index) => reversedMap[int.parse(word[index])]);
         final words = <String>[];
 
         int offset = 0;
@@ -409,5 +480,7 @@ class SentenceCrib {
     print('Finished, time took V');
     print(timeDifference);
     print(timeDifference.inMilliseconds);
+
+    return [];
   }
 }

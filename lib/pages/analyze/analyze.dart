@@ -6,9 +6,8 @@ import './widgets/console_container.dart';
 import './widgets/frequency_container.dart';
 import './widgets/highlight_container.dart';
 import './widgets/repeated_ngram_container.dart';
-import './widgets/selection_container.dart';
+import './widgets/selection_container.dart' as cadrypt_widgets;
 import './widgets/statistics_container.dart';
-
 import 'analyze_state.dart';
 import 'widgets/similar_ngram_container.dart';
 
@@ -45,14 +44,15 @@ class _AnalyzePageState extends State<AnalyzePage> {
                 children: [
                   CipherContainer(state: state),
                   const SizedBox(width: 8),
-                  SelectionContainer(state: state),
+                  cadrypt_widgets.SelectionContainer(state: state),
                   const SizedBox(width: 8),
                   FrequencyContainer(state: state),
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16.0),
+              padding:
+                  const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16.0),
               child: Row(
                 children: [
                   // ignore: prefer_const_constructors

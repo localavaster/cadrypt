@@ -10,7 +10,11 @@ class SequenceResult {
   final int shift;
   final int oeisIndex;
 
-  SequenceResult({this.original_sequence, this.modified_sequence, this.shift, this.oeisIndex});
+  SequenceResult(
+      {this.original_sequence,
+      this.modified_sequence,
+      this.shift,
+      this.oeisIndex});
 }
 
 void toolSequenceFinder(BuildContext context) {
@@ -40,7 +44,10 @@ void toolSequenceFinder(BuildContext context) {
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
                           controller: sequenceTextController,
-                          decoration: const InputDecoration().copyWith(labelText: 'Sequence', hintText: 'Sequence separated by commas (1,2,3,4)'),
+                          decoration: const InputDecoration().copyWith(
+                              labelText: 'Sequence',
+                              hintText:
+                                  'Sequence separated by commas (1,2,3,4)'),
                         ),
                       ),
                       Padding(
@@ -48,23 +55,35 @@ void toolSequenceFinder(BuildContext context) {
                         child: SizedBox(
                           width: double.infinity,
                           height: 40,
-                          child: FlatButton(
-                            color: Theme.of(context).backgroundColor,
+                          child: TextButton(
+                            style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(
+                                    Theme.of(context).backgroundColor)),
                             onPressed: () {
                               // results are {sequence, line numbers}
                               final results = <String, List<SequenceResult>>{};
-                              final sequence = sequenceTextController.text.replaceAll(' ', '').trim().split(',');
-                              final numerical = List<int>.generate(sequence.length, (index) => int.tryParse(sequence[index]));
+                              final sequence = sequenceTextController.text
+                                  .replaceAll(' ', '')
+                                  .trim()
+                                  .split(',');
+                              final numerical = List<int>.generate(
+                                  sequence.length,
+                                  (index) => int.tryParse(sequence[index]));
 
                               print(numerical);
 
-                              final oeisDb = File('${Directory.current.path}/mod29_oeis_sequences.txt').readAsLinesSync();
+                              final oeisDb = File(
+                                      '${Directory.current.path}/mod29_oeis_sequences.txt')
+                                  .readAsLinesSync();
 
                               for (int i = 0; i < oeisDb.length; i++) {
                                 final oeisSequence = oeisDb[i];
 
-                                for (int shift = 0; shift < runes.length; shift++) {
-                                  final addSequence = '${List<int>.generate(numerical.length, (index) => (numerical[index] + shift) % runes.length).join(',')},';
+                                for (int shift = 0;
+                                    shift < runes.length;
+                                    shift++) {
+                                  final addSequence =
+                                      '${List<int>.generate(numerical.length, (index) => (numerical[index] + shift) % runes.length).join(',')},';
 
                                   results[addSequence] ??= [];
 
@@ -90,7 +109,8 @@ void toolSequenceFinder(BuildContext context) {
                                   print('==$key');
                                   print('==shift: ${value.first.shift}');
                                   value.forEach((result) {
-                                    print('- https://oeis.org/A${result.oeisIndex.toString().padLeft(6, '0')}');
+                                    print(
+                                        '- https://oeis.org/A${result.oeisIndex.toString().padLeft(6, '0')}');
                                   });
                                 }
                               });
